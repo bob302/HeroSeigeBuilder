@@ -1,21 +1,18 @@
-import { Stat } from '@/models/Stat'
-import { Item } from '@/models/Item'
+import { Equipment, Stat } from '@/models/Equipment'
 
 export class ItemParser {
-  static parseItem (rawItem: any): Item {
-    console.log(rawItem)
+  static parseItem (rawItem: any): Equipment {
     return {
       name: rawItem.name,
       type: rawItem.type,
       subtype: rawItem.subtype,
       tier: rawItem.tier,
-      stats: rawItem.stats.map(ItemParser.parseStat),
+      rarity: rawItem.rarity,
+      level: rawItem.level,
       sockets: rawItem.sockets,
       image: rawItem.image,
-      combinedType: rawItem.combinedType,
-      equipmentType: rawItem.equipmentType,
-      rarity: rawItem.rarity,
-      baseType: rawItem.baseType,
+      stats: rawItem.stats.map(ItemParser.parseStat),
+      oneHanded: rawItem.oneHanded,
       isLoading: true
     }
   }

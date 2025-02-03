@@ -1,4 +1,4 @@
-import { Stat } from '@/models/Stat'
+import { Stat } from '@/models/Equipment'
 
 export class StatParser {
   static parseStats (statsString: string): Stat[] {

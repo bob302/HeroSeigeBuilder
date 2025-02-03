@@ -17,28 +17,35 @@
   <ItemStatsComponent
     v-if="showStats"
     :name="name"
-    :combined-item-type="combinedItemType"
+    :type="type"
+    :subtype="subtype"
+    :combined-item-type="combinedType"
     :rarity="rarity"
     :stats="stats"
     :tier="tier"
+    :one-handed="oneHanded"
     :x="tooltipX"
     :y="tooltipY"
+    :level="level"
   />
 </template>
 
 <script setup lang="ts">
-import { defineProps, ref, watch } from 'vue'
+import { computed, defineProps, ref } from 'vue'
 import SocketComponent from './SocketComponent.vue'
 import ItemStatsComponent from './ItemStatsComponent.vue'
-import { Stat } from '@/models/Stat'
+import { Stat } from '@/models/Equipment'
 
 const props = defineProps<{
   image?: string
   name: string
-  combinedItemType: string
+  type: string
+  subtype: string
   rarity: string
+  oneHanded: boolean
   stats: Stat[]
   tier: string
+  level: string
   sockets: { enhanced: boolean }[]
 }>()
 
@@ -46,6 +53,10 @@ const frameSrc = '/img/editor/item-frame.png'
 const showStats = ref(false)
 const tooltipX = ref(0)
 const tooltipY = ref(0)
+
+const combinedType = computed(() => {
+  return `${props.rarity} ${props.subtype}`
+})
 
 const updateTooltipPosition = (event: MouseEvent) => {
   tooltipX.value = event.clientX + 15

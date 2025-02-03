@@ -4,23 +4,26 @@
   <div class="preview-container">
   <ItemFrameComponent
     :name=item.name
-    :combined-item-type="item.combinedType"
+    :type="type"
+    :subtype="subtype"
+    :rarity="rarity"
     :image="item.image"
     :sockets="item.sockets.list"
     :stats="item.stats"
+    :one-handed="item.oneHanded"
     :tier="item.tier"
-    :rarity="item.rarity"
+    :level="item.level"
   />
 </div>
 <div class="editor-container">
   <div class="column-left">
     <!-- SOCKETS -->
     <div class="item-sockets-container">
-    <label class="block mt-3">Сокеты:</label>
+    <label class="block mt-3">Sockets:</label>
     <!-- SOCKETS CONTROLS -->
     <div class="sockets-controls flex gap-2 mt-2">
-      <button @click="addSocket(item)" class="bg-blue-600 px-4 py-2 rounded">Добавить сокет</button>
-      <button @click="removeSocket(item)" class="bg-red-600 px-4 py-2 rounded">Удалить сокет</button>
+      <button @click="addSocket(item)" class="bg-blue-600 px-4 py-2 rounded">Add Socket</button>
+      <button @click="removeSocket(item)" class="bg-red-600 px-4 py-2 rounded">Remove Socket</button>
     </div>
     <!-- SOCKETS CONTAINER -->
     <div class="sockets flex gap-2 mt-2">
@@ -39,73 +42,83 @@
     </div>
     <!-- IMAGE -->
     <div class="item-image-container">
-      <label class="block mt-3">Изображение:</label>
+      <label class="block mt-3">Item Image:</label>
       <input type="file" @change="onFileChange" class="w-full p-2 bg-gray-800 rounded border border-gray-700" />
     </div>
     <!-- SAVE -->
     <div class="item-save-container">
-      <button @click="saveItem" class="mt-4 bg-green-600 px-4 py-2 w-full rounded">Сохранить (Скопировать JSON)</button>
+      <button @click="saveItem" class="mt-4 bg-green-600 px-4 py-2 w-full rounded">Save (Copy JSON)</button>
     </div>
     </div>
   </div>
   <div class="column-right">
 <!-- ADD ITEM -->
 <div class="item-add-container">
-    <h2 class="text-2xl font-bold mb-4 text-center">Настойки предмета</h2>
+    <h2 class="text-2xl font-bold mb-4 text-center">Item Settings</h2>
   </div>
   <!-- NAME -->
   <div class="item-name-container">
-    <label class="text">Название:</label>
+    <label class="text">Item Name:</label>
     <input class="input" v-model="item.name"/>
   </div>
   <!-- TIER -->
   <div class="item-tier-container">
-    <label class="block mt-3">Тир:</label>
-    <select v-model="item.tier" class="w-full p-2 bg-gray-800 rounded border border-gray-700">
-      <option class="tier-ss">SS</option>
-      <option class="tier-s">S</option>
-      <option class="tier-a">A</option>
-      <option class="tier-b">B</option>
-      <option class="tier-c">C</option>
-      <option class="tier-d">D</option>
+    <label class="block mt-3">Tier:</label>
+    <select v-model="item.tier">
+      <option v-for="tier in tierTypes" :key="tier" :value="tier">
+        {{ tier }}
+      </option>
     </select>
+  </div>
+    <!-- LEVEL -->
+    <div class="item-level-container">
+    <label class="text">Level:</label>
+    <input class="input" type="range" min="0" max="100" v-model="item.level"/>
   </div>
   <!-- RARITY -->
   <div class="item-rarity-container">
-    <label class="block mt-3">Редкость:</label>
-    <select v-model="item.rarity" class="w-full p-2 bg-gray-800 rounded border border-gray-700">
-      <option disabled value="">Выберите редкость</option>
-      <option v-for="rarity in equipmentRarities" :key="rarity" :value="rarity">{{ rarity }}</option>
+    <label class="block mt-3">Rarity:</label>
+    <select v-model="item.rarity">
+      <option v-for="rarity in equipmentRarities" :key="rarity" :value="rarity">
+        {{ rarity }}
+      </option>
     </select>
   </div>
   <!-- TYPE -->
   <div class="item-type-container">
-    <label class="block mt-3">Тип:</label>
-    <select v-model="item.equipmentType" class="w-full p-2 bg-gray-800 rounded border border-gray-700">
-      <option disabled value="">Выберите тип</option>
-      <option v-for="type in equipmentTypes" :key="type" :value="type">{{ type }}</option>
+    <label class="block mt-3">Type:</label>
+    <select v-model="item.type">
+      <option v-for="type in equipmentTypes" :key="type" :value="type">
+        {{ type }}
+      </option>
     </select>
   </div>
   <!-- SUBTYPE -->
-  <div class="item-subtype-container">
-    <label v-if="item.equipmentType" class="block mt-3">Подтип:</label>
-    <select v-if="item.equipmentType" v-model="item.subtype" class="w-full p-2 bg-gray-800 rounded border border-gray-700">
-      <option disabled value="">Выберите подтип</option>
-      <option v-for="subtype in getSubtypes(item.equipmentType)" :key="subtype" :value="subtype">{{ subtype }}</option>
+  <div v-if="item.subtype" class="item-subtype-container">
+    <label class="block mt-3">Subtype:</label>
+    <select v-model="item.subtype">
+      <option v-for="subtype in getSubtypes(item.type)" :key="subtype" :value="subtype">
+        {{ subtype }}
+      </option>
     </select>
   </div>
+  <!-- ONE HANDED -->
+   <div v-if="item.type === 'Weapon'" class="item-onehanded-container">
+    <label class="block mt-3">One Handed?:</label>
+    <input type="checkbox" v-model="item.oneHanded" class="w-full bg-gray-800 p-1 rounded" />
+   </div>
     <!-- TEXTAREA ДЛЯ ВВОДА СТАТОВ -->
     <div class="stat-parser-container">
-    <label class="block mt-3">Вставьте статы:</label>
+    <label class="block mt-3">Parse stats:</label>
     <textarea
       v-model="statsInput"
       class="w-full h-24 p-2 mt-2 bg-gray-800 border border-gray-700 rounded"
-      placeholder="Введите статы..."
+      placeholder="Enter stats..."
     ></textarea>
-    <button @click="parseStats" class="mt-2 bg-green-600 px-4 py-2 rounded">Парсить</button>
+    <button @click="parseStats" class="mt-2 bg-green-600 px-4 py-2 rounded">Parse Stats</button>
   </div>
   <div class="item-parser-container">
-    <label class="block mt-3">Парсить предмет:</label>
+    <label class="block mt-3">Parse Item:</label>
 <textarea v-model="rawInput" class="w-full h-32 p-2 border rounded" placeholder="Paste JSON here..."></textarea>
     <button @click="parseItem" class="mt-2 px-4 py-2 bg-blue-500 text-white rounded">Parse Item</button>
   </div>
@@ -114,13 +127,12 @@
 </div>
   <!-- STAT TABLE -->
 <div class="stat-table-container">
-  <label class="block mt-3">Свойства:</label>
-  <table class="w-full mt-2 border border-gray-700">
+  <table class="stat-table">
     <thead>
       <tr class="bg-gray-800">
-        <th class="p-2 border border-gray-700">Стат</th>
-        <th class="p-2 border border-gray-700">Особый</th>
-        <th class="p-2 border border-gray-700">Удалить</th>
+        <th class="p-2 border border-gray-700">Stat</th>
+        <th class="p-2 border border-gray-700">Special</th>
+        <th class="p-2 border border-gray-700">Remove</th>
       </tr>
     </thead>
     <tbody>
@@ -139,28 +151,41 @@
       </template>
       <template v-else>
         <tr>
-          <td colspan="5" class="p-2 text-center text-gray-500">Загрузка...</td>
+          <td colspan="5" class="p-2 text-center text-gray-500">Loading...</td>
         </tr>
       </template>
     </tbody>
   </table>
   <!-- ADD STAT -->
-  <button @click="addStat" class="mt-3 bg-blue-600 px-4 py-2 rounded">Добавить стат</button>
+  <button @click="addStat" class="mt-3 bg-blue-600 px-4 py-2 rounded">Add Stat</button>
 </div>
 </div>
 
 </template>
 
 <script setup lang="ts">
-// TODO: REWRITE THIS BS
-import { ref, computed, watch } from 'vue'
+import { ref, computed } from 'vue'
 import ItemFrameComponent from '@/components/ItemFrameComponent.vue'
-import { Item } from '@/models/Item'
 import { Socket } from '@/models/Socket'
 import { StatParser } from '@/services/StatParser'
 import { ItemParser } from '@/services/ItemParser'
+import { Equipment, EquipmentRarity, EquipmentSubtypes, EquipmentTier, EquipmentType } from '@/models/Equipment'
 
-const statsInput = ref('')
+const item = ref<Equipment>({
+  name: 'Generic Sword',
+  type: EquipmentType.Weapon,
+  oneHanded: false,
+  subtype: 'Sword',
+  tier: EquipmentTier.S,
+  level: '100',
+  stats: [],
+  sockets: { amount: 0, list: [] },
+  image: '',
+  rarity: EquipmentRarity.Satanic,
+  isLoading: false
+})
+
+// Parse Item
 const rawInput = ref('')
 
 const parseItem = async () => {
@@ -176,6 +201,9 @@ const parseItem = async () => {
   rawInput.value = ''
 }
 
+// Stats
+const statsInput = ref('')
+
 const parseStats = () => {
   const parsedStats = StatParser.parseStats(statsInput.value)
   item.value.stats.push(...parsedStats)
@@ -186,25 +214,11 @@ const addStat = () => {
   item.value.stats.push({ raw: '', name: '', value: 0, range: { from: 0, to: 0 }, type: 'flat', special: false })
 }
 
-const removeStat = (item: Item, index: number) => {
+const removeStat = (item: Equipment, index: number) => {
   item.stats.splice(index, 1)
 }
 
-const item = ref<Item>({
-  name: '',
-  type: 'Weapon',
-  subtype: '',
-  tier: 'D',
-  stats: [],
-  sockets: { amount: 0, list: [] },
-  image: '',
-  combinedType: '',
-  equipmentType: '',
-  rarity: '',
-  baseType: '',
-  isLoading: false
-})
-
+// Image
 const onFileChange = (event: Event) => {
   const input = event.target as HTMLInputElement
   const file = input.files?.[0]
@@ -216,79 +230,31 @@ const onFileChange = (event: Event) => {
     reader.readAsDataURL(file)
   }
 }
+// Equipment Misc
+const equipmentRarities = Object.values(EquipmentRarity)
+const equipmentTypes = Object.values(EquipmentType)
+const tierTypes = Object.values(EquipmentTier)
 
-const getSubtypes = (type: string): string[] => {
-  switch (type) {
-    case 'Weapon':
-      return weaponTypes
-    case 'Armor':
-      return armorTypes
-    case 'Jewellery':
-      return jewelleryTypes
-    case 'Special':
-      return specialTypes
-    default:
-      return []
-  }
+const type = computed(() => item.value.type)
+const subtype = computed(() => item.value.subtype)
+const rarity = computed(() => item.value.rarity)
+
+const getSubtypes = (type: EquipmentType) => {
+  return EquipmentSubtypes[type] || []
 }
 
-const equipmentRarities = ['Satanic', 'Set', 'Heroic', 'Mythic', 'Angelic', 'Unholy']
-const equipmentTypes = ['Weapon', 'Armor', 'Jewellery', 'Special']
-
-const weaponTypes = [
-  'Sword',
-  'Dagger',
-  'Mace',
-  'Axe',
-  'Claw',
-  'Polearm',
-  'Chainsaw',
-  'Staff',
-  'Cane',
-  'Wand',
-  'Book',
-  'Spellblade',
-  'Bow',
-  'Gun',
-  'Flask',
-  'Throwing Weapon'
-]
-
-const armorTypes = ['Helmet', 'Body Armor', 'Gloves', 'Boots', 'Shield']
-const jewelleryTypes = ['Amulet', 'Ring', 'Belt']
-const specialTypes = ['Charm', 'Glyph', 'Relic', 'Potion']
-
-const saveItem = () => {
-  const json = JSON.stringify(item.value, null, 2)
-  navigator.clipboard.writeText(json).then(() => {
-    alert('JSON скопирован в буфер обмена!')
-  })
-}
-
-const combinedType = computed(() => {
-  return `${item.value.rarity} ${item.value.subtype}`
-})
-
-watch([() => item.value.rarity, () => item.value.subtype], () => {
-  item.value.combinedType = combinedType.value
-})
-
-watch(() => item.value.stats, (newStats, oldStats) => {
-  item.value.stats = newStats
-  console.log('Stats updated:', newStats)
-}, { deep: true })
-
+// Sockets
 const normalSocketImage = '/img/editor/socket-normal.png'
 const enhancedSocketImage = '/img/editor/socket-enhanced.png'
 
-const addSocket = (item: Item) => {
+const addSocket = (item: Equipment) => {
   if (item.sockets.list.length < 6) {
     item.sockets.list.push({ enhanced: false })
     item.sockets.amount++
   }
 }
 
-const removeSocket = (item: Item) => {
+const removeSocket = (item: Equipment) => {
   if (item.sockets.list.length > 0) {
     item.sockets.list.pop()
     item.sockets.amount--
@@ -299,14 +265,17 @@ const toggleEnhanced = (socket: Socket) => {
   socket.enhanced = !socket.enhanced
 }
 
+// Save
+const saveItem = () => {
+  const json = JSON.stringify(item.value, null, 2)
+  navigator.clipboard.writeText(json).then(() => {
+    alert('JSON скопирован в буфер обмена!')
+  })
+}
+
 </script>
 
 <style scoped>
-body {
-  background-color: #121212;
-  font-family: 'Inter', sans-serif;
-}
-
 form {
   max-width: 700px;
   background: #1e1e1e;
@@ -443,6 +412,15 @@ th {
 
 .editor-page-container {
   background-color: #444;
+}
+
+.stat-table {
+  border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
 </style>
