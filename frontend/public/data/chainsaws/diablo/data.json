@@ -1,0 +1,21 @@
+{
+    "Item": "Diablo",
+    "Tier": "SS",
+    "Level": "100",
+    "Damage": "332.55303-363",
+    "APS": "0.750.75",
+    "DPS": "250.00227-273",
+    "Type": "Chainsaw",
+    "Rarity": "Heroic",
+    "Stats": [
+        "40% Chance when Casting [Tire Fire] Level 48",
+        "+[320-365]% Enhanced Damage",
+        "+[3-5] to All Skills",
+        "+[12-20] to [Moonshine Molotov]",
+        "+[70-120]% Faster Cast Rate",
+        "+20 to All Attributes",
+        "+[666-6666] to Fire Skill Damage",
+        "Fire Skill Damage increased by [16-66]%",
+        "Attacks can hit multiple enemies"
+    ]
+}

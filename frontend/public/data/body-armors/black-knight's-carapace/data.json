@@ -1,0 +1,18 @@
+{
+    "Item": "Black Knight's Carapace",
+    "Tier": "C",
+    "Level": "26",
+    "Defense": "67.8040-96",
+    "Type": "Body Armor",
+    "Rarity": "Satanic",
+    "Stats": [
+        "15% Chance when Struck [Impale] Level 13",
+        "+[80-100]% Enhanced Defense",
+        "+10 to Strength",
+        "+15 to Vitality",
+        "Physical Damage Taken Reduced by [5-10]%",
+        "Magic Damage Taken Reduced by [5-10]%",
+        "+125 Defense (Based on Level)",
+        "Socketed (2-4)"
+    ]
+}

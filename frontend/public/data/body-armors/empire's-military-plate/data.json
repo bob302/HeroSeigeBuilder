@@ -1,0 +1,15 @@
+{
+    "Item": "Empire's Military Plate",
+    "Tier": "S",
+    "Level": "74",
+    "Defense": "903.75788-1020",
+    "Type": "Body Armor",
+    "Rarity": "Satanic",
+    "Stats": [
+        "+[275-325]% Enhanced Defense",
+        "+[40-50] to Vitality",
+        "Physical Damage Taken Reduced by [18-25]%",
+        "+[30-40]% Increased Magic Find",
+        "Socketed (0-3)"
+    ]
+}

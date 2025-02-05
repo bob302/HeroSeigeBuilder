@@ -1,0 +1,19 @@
+{
+    "Item": "Arch Angel's Phase Blade",
+    "Tier": "SS",
+    "Level": "100",
+    "Damage": "214.40186-244",
+    "APS": "2.312.14-2.47",
+    "DPS": "499.50398-601",
+    "Type": "Sword",
+    "Rarity": "Heroic",
+    "Stats": [
+        "20% Chance when Striking [Holy Hammer] Level 68",
+        "+[220-280]% Enhanced Damage",
+        "+[30-50]% Increased Attack Speed",
+        "+[1185-1320] to Attack Rating",
+        "+[15-25] to All Attributes",
+        "+[2475-2685] to Additive Arcane Damage",
+        "Arcane Skill Damage increased by [25-50]%"
+    ]
+}

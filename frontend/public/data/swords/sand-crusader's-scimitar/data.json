@@ -1,0 +1,20 @@
+{
+    "Item": "Sand Crusader's Scimitar",
+    "Tier": "B",
+    "Level": "42",
+    "Damage": "78.4068-90",
+    "APS": "2.061.97-2.14",
+    "DPS": "162.50133-192",
+    "Type": "Sword",
+    "Rarity": "Satanic",
+    "Stats": [
+        "+[180-220]% Enhanced Damage",
+        "+[20-30]% Increased Attack Speed",
+        "+10% Chance for a Deadly Blow",
+        "+165 to Attack Rating",
+        "+7% Mana stolen per Hit",
+        "+30% of target Defense ignored",
+        "+10 to Dexterity",
+        "Attack Damage increased by [5-10]%"
+    ]
+}

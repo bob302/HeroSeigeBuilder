@@ -1,0 +1,23 @@
+{
+    "Item": "Daisy",
+    "Tier": "SS",
+    "Level": "97",
+    "Damage": "529.25481-578",
+    "APS": "1.251.25",
+    "DPS": "662.00601-723",
+    "Type": "Sword",
+    "Rarity": "Satanic",
+    "Stats": [
+        "+[675-750]% Enhanced Damage",
+        "+[1-4] to Physical Skills",
+        "+30% Increased Attack Rating",
+        "+[10-25]% Life stolen per Hit",
+        "+[25-45]% Increased Critical Strike Damage",
+        "Slows target by [40-60]%",
+        "+45 to Strength",
+        "+[30-50] to Dexterity",
+        "+[15-30] Life After each Kill",
+        "Attacks can hit multiple enemies",
+        "Socketed (0-2)"
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "Item": "Cuirass of Blood",
+    "Tier": "S",
+    "Level": "74",
+    "Defense": "652.50525-780",
+    "Type": "Body Armor",
+    "Rarity": "Satanic",
+    "Stats": [
+        "+[150-225]% Enhanced Defense",
+        "+[1-2] to All Skills",
+        "+[20-40]% Increased Attack Speed",
+        "+[110-150] to Attack Rating",
+        "+10% Life stolen per Hit",
+        "+30% of target Defense ignored",
+        "+[15-20]% Defense vs Missiles",
+        "+75 to Damage (Based on Level)",
+        "+50 to Strength",
+        "Socketed (0-3)"
+    ]
+}

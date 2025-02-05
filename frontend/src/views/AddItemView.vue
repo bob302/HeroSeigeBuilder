@@ -3,16 +3,10 @@
 <div class="editor-page-container">
   <div class="preview-container">
   <ItemFrameComponent
-    :name=item.name
-    :type="type"
-    :subtype="subtype"
-    :rarity="rarity"
-    :image="item.image"
-    :sockets="item.sockets.list"
-    :stats="item.stats"
-    :one-handed="item.oneHanded"
-    :tier="item.tier"
-    :level="item.level"
+    :item="item"
+    :x="1"
+    :y="1"
+    :show-sockets="true"
   />
 </div>
 <div class="editor-container">
@@ -30,12 +24,12 @@
       <button
         v-for="(socket, index) in item.sockets.list"
         :key="index"
-        @click="toggleEnhanced(socket)"
+        @click="togglePrismatic(socket)"
         class="socket-button"
-        :class="{ 'enhanced': socket.enhanced }"
+        :class="{ 'prismatic': socket.prismatic }"
       >
         <img
-          :src="socket.enhanced ? enhancedSocketImage : normalSocketImage"
+          :src="socket.prismatic ? prismaticSocketImage : normalSocketImage"
           class="socket-img"
         />
       </button>
@@ -103,11 +97,11 @@
     </select>
   </div>
   <!-- ONE HANDED -->
-   <div v-if="item.type === 'Weapon'" class="item-onehanded-container">
+   <div v-if="isWeapon(item)" class="item-onehanded-container">
     <label class="block mt-3">One Handed?:</label>
-    <input type="checkbox" v-model="item.oneHanded" class="w-full bg-gray-800 p-1 rounded" />
+    <input type="checkbox" v-model="item.weaponStats.oneHanded" class="w-full bg-gray-800 p-1 rounded" />
    </div>
-    <!-- TEXTAREA ДЛЯ ВВОДА СТАТОВ -->
+    <!-- STAT PARSER -->
     <div class="stat-parser-container">
     <label class="block mt-3">Parse stats:</label>
     <textarea
@@ -117,12 +111,18 @@
     ></textarea>
     <button @click="parseStats" class="mt-2 bg-green-600 px-4 py-2 rounded">Parse Stats</button>
   </div>
+  <!-- ITEM PARSER -->
   <div class="item-parser-container">
     <label class="block mt-3">Parse Item:</label>
-<textarea v-model="rawInput" class="w-full h-32 p-2 border rounded" placeholder="Paste JSON here..."></textarea>
+    <textarea v-model="rawInput" class="w-full h-32 p-2 border rounded" placeholder="Paste JSON here..."></textarea>
     <button @click="parseItem" class="mt-2 px-4 py-2 bg-blue-500 text-white rounded">Parse Item</button>
   </div>
-
+    <!-- WIKI PARSER -->
+  <div class="item-parser-container">
+    <label class="block mt-3">Parse Wiki Item:</label>
+    <textarea v-model="wikiRawInput" class="w-full h-32 p-2 border rounded" placeholder="Paste JSON here..."></textarea>
+    <button @click="parseWikiItem" class="mt-2 px-4 py-2 bg-blue-500 text-white rounded">Parse wiki Item</button>
+  </div>
 </div>
 </div>
   <!-- STAT TABLE -->
@@ -164,22 +164,20 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed } from 'vue'
-import ItemFrameComponent from '@/components/ItemFrameComponent.vue'
-import { Socket } from '@/models/Socket'
-import { StatParser } from '@/services/StatParser'
-import { ItemParser } from '@/services/ItemParser'
-import { Equipment, EquipmentRarity, EquipmentSubtypes, EquipmentTier, EquipmentType } from '@/models/Equipment'
+import { ref, watch } from 'vue'
+import ItemFrameComponent from '../components/ItemFrameComponent.vue'
+import { StatParser } from '../services/StatParser'
+import { ItemParser } from '../services/ItemParser'
+import { ArmorEquipment, Equipment, EquipmentRarity, EquipmentSubtypes, EquipmentTier, EquipmentType, isWeapon, type Socket, WeaponEquipment } from '../models/Equipment'
 
 const item = ref<Equipment>({
-  name: 'Generic Sword',
-  type: EquipmentType.Weapon,
-  oneHanded: false,
-  subtype: 'Sword',
+  name: 'Generic Item',
+  type: EquipmentType.Special,
+  subtype: 'Charm',
   tier: EquipmentTier.S,
   level: '100',
   stats: [],
-  sockets: { amount: 0, list: [] },
+  sockets: { amount: 0, min: 0, max: 0, list: [] },
   image: '',
   rarity: EquipmentRarity.Satanic,
   isLoading: false
@@ -187,6 +185,7 @@ const item = ref<Equipment>({
 
 // Parse Item
 const rawInput = ref('')
+const wikiRawInput = ref('')
 
 const parseItem = async () => {
   item.value.isLoading = true
@@ -201,6 +200,18 @@ const parseItem = async () => {
   rawInput.value = ''
 }
 
+const parseWikiItem = async () => {
+  item.value.isLoading = true
+  try {
+    const parsedItem = await ItemParser.parseWikiItem(JSON.parse(wikiRawInput.value))
+    item.value = parsedItem
+  } catch (error) {
+    console.error('Error parsing item:', error)
+  } finally {
+    item.value.isLoading = false
+  }
+  wikiRawInput.value = ''
+}
 // Stats
 const statsInput = ref('')
 
@@ -235,21 +246,17 @@ const equipmentRarities = Object.values(EquipmentRarity)
 const equipmentTypes = Object.values(EquipmentType)
 const tierTypes = Object.values(EquipmentTier)
 
-const type = computed(() => item.value.type)
-const subtype = computed(() => item.value.subtype)
-const rarity = computed(() => item.value.rarity)
-
 const getSubtypes = (type: EquipmentType) => {
   return EquipmentSubtypes[type] || []
 }
 
 // Sockets
 const normalSocketImage = '/img/editor/socket-normal.png'
-const enhancedSocketImage = '/img/editor/socket-enhanced.png'
+const prismaticSocketImage = '/img/editor/socket-prismatic.png'
 
 const addSocket = (item: Equipment) => {
   if (item.sockets.list.length < 6) {
-    item.sockets.list.push({ enhanced: false })
+    item.sockets.list.push({ prismatic: false })
     item.sockets.amount++
   }
 }
@@ -261,8 +268,8 @@ const removeSocket = (item: Equipment) => {
   }
 }
 
-const toggleEnhanced = (socket: Socket) => {
-  socket.enhanced = !socket.enhanced
+const togglePrismatic = (socket: Socket) => {
+  socket.prismatic = !socket.prismatic
 }
 
 // Save
@@ -272,6 +279,43 @@ const saveItem = () => {
     alert('JSON скопирован в буфер обмена!')
   })
 }
+
+watch(() => item.value.type, (newType, oldType) => {
+  if (newType === oldType) return
+
+  const baseItem = {
+    name: item.value.name,
+    tier: item.value.tier,
+    level: item.value.level,
+    stats: [...item.value.stats],
+    sockets: { ...item.value.sockets },
+    image: item.value.image,
+    rarity: item.value.rarity,
+    isLoading: false
+  }
+
+  if (newType === EquipmentType.Armor) {
+    item.value = {
+      ...baseItem,
+      type: newType,
+      subtype: item.value.subtype || EquipmentSubtypes[newType]?.[0],
+      armorStats: { defense: '0' }
+    } as ArmorEquipment
+  } else if (newType === EquipmentType.Weapon) {
+    item.value = {
+      ...baseItem,
+      type: newType,
+      subtype: item.value.subtype || EquipmentSubtypes[newType]?.[0],
+      weaponStats: { APSStat: '0', attackDamageStat: '0', oneHanded: true }
+    } as WeaponEquipment
+  } else {
+    item.value = {
+      ...baseItem,
+      type: newType,
+      subtype: item.value.subtype
+    } as Equipment
+  }
+})
 
 </script>
 

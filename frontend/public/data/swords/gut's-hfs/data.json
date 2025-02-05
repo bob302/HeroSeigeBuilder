@@ -1,0 +1,23 @@
+{
+    "Item": "Gut's HFS",
+    "Tier": "SS",
+    "Level": "94",
+    "Damage": "753.00648-858",
+    "APS": "1.621.62",
+    "DPS": "1220.001050-1390",
+    "Type": "Sword",
+    "Rarity": "Satanic",
+    "Stats": [
+        "35% Chance when Attacking [Whirlwind] Level 42",
+        "+[620-680]% Enhanced Damage",
+        "+30% Increased Attack Speed",
+        "+625 to Attack Rating",
+        "+[840-880] to Additive Physical Damage",
+        "+10% Life stolen per Hit",
+        "+25% of target Defense ignored",
+        "+60 to Strength",
+        "+25 to Vitality",
+        "Attacks can hit multiple enemies",
+        "Socketed (0-3)"
+    ]
+}

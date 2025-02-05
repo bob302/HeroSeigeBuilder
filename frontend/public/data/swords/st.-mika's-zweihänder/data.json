@@ -1,0 +1,24 @@
+{
+    "Item": "St. Mika's Zweihänder",
+    "Tier": "SS",
+    "Level": "95",
+    "Damage": "893.75743-1045",
+    "APS": "2.622.44-2.8",
+    "DPS": "2369.001812-2926",
+    "Type": "Sword",
+    "Rarity": "Angelic",
+    "Stats": [
+        "18% Chance when Striking [Divine Storm] Level 89",
+        "+[725-850]% Enhanced Damage",
+        "+5 to All Skills",
+        "+[40-60]% Increased Attack Speed",
+        "+1555 to Attack Rating",
+        "+15 to Energy",
+        "+30 to Vitality",
+        "+35 to All Attributes",
+        "+[2175-2425] to Additive Lightning Damage",
+        "Lightning Skill Damage increased by [35-60]%",
+        "Attacks can hit multiple enemies",
+        "Socketed (2-6)"
+    ]
+}

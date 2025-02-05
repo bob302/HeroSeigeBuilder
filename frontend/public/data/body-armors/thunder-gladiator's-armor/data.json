@@ -1,0 +1,16 @@
+{
+    "Item": "Thunder Gladiator's Armor",
+    "Tier": "D",
+    "Level": "13",
+    "Defense": "24.8817-33",
+    "Type": "Body Armor",
+    "Rarity": "Satanic",
+    "Stats": [
+        "8% Chance when Struck [Charged Bolts] Level 6",
+        "+[70-82]% Enhanced Defense",
+        "Lightning Skill Damage increased by [4-8]%",
+        "-[20-30]% to Enemy Lightning Resistance",
+        "+40% to Lightning Resistance",
+        "Socketed (0-3)"
+    ]
+}

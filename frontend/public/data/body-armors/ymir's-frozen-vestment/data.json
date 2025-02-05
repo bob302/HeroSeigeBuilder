@@ -1,0 +1,16 @@
+{
+    "Item": "Ymir's Frozen Vestment",
+    "Tier": "A",
+    "Level": "57",
+    "Defense": "409.00338-480",
+    "Type": "Body Armor",
+    "Rarity": "Satanic",
+    "Stats": [
+        "+[160-200]% Enhanced Defense",
+        "+2 to Cold Skills",
+        "Cold Skill Damage increased by [3-12]%",
+        "+[3-5]% Cold Damage Absorbed",
+        "+45% to Cold Resistance",
+        "Socketed (0-3)"
+    ]
+}

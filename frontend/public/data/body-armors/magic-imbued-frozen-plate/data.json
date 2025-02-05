@@ -1,0 +1,16 @@
+{
+    "Item": "Magic-Imbued Frozen Plate",
+    "Tier": "C",
+    "Level": "27",
+    "Defense": "35.0022-48",
+    "Type": "Body Armor",
+    "Rarity": "Satanic",
+    "Stats": [
+        "+[1-3] to Cold Skills",
+        "Physical Damage Taken Reduced by 15%",
+        "+75% to Cold Resistance",
+        "+10% to Maximum Cold Resist",
+        "Cannot be Frozen",
+        "Socketed (1-4)"
+    ]
+}

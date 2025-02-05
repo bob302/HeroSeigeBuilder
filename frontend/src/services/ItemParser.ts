@@ -1,4 +1,6 @@
-import { Equipment, Stat } from '@/models/Equipment'
+import { ArmorEquipment, Equipment, EquipmentSubtypes, EquipmentType, WeaponEquipment, type Stat} from '../models/Equipment'
+import { StatFormatter } from '../util/StatFormatter'
+import { StatParser } from './StatParser'
 
 export class ItemParser {
   static parseItem (rawItem: any): Equipment {
@@ -12,9 +14,81 @@ export class ItemParser {
       sockets: rawItem.sockets,
       image: rawItem.image,
       stats: rawItem.stats.map(ItemParser.parseStat),
-      oneHanded: rawItem.oneHanded,
       isLoading: true
     }
+  }
+
+  static parseWikiItem (rawItem: any): Equipment {
+    const subtype = rawItem.Type
+
+    const type = Object.entries(EquipmentSubtypes).find(([key, subtypes]) =>
+      subtypes.includes(subtype)
+    )?.[0] as EquipmentType || EquipmentType.Special
+
+    let baseItem: Equipment = {
+      name: rawItem.Item,
+      type,
+      subtype,
+      tier: rawItem.Tier,
+      rarity: rawItem.Rarity,
+      level: rawItem.Level,
+      sockets: {amount: 0, min: 0, max: 0,  list: [] },
+      image: rawItem.Image,
+      stats: rawItem.Stats.map(ItemParser.parseWikiStat),
+      isLoading: true
+    }
+
+    // Socket Amount
+    const socketStat = rawItem.Stats.find((stat: string) => stat.includes("Socketed"));
+    if (socketStat) {
+      const match = socketStat.match(/Socketed \((\d+)-?(\d*)\)/);
+      const prismaticMatch = socketStat.match(/Socketed \{(\d+)-?(\d*)\}/);
+    
+      let normalSockets: number = 0;
+      let prismaticSockets: number = 0;
+    
+      if (match) {
+        const minSockets = parseInt(match[1], 10);
+        const maxSockets = match[2] ? parseInt(match[2], 10) : minSockets;
+    
+        normalSockets = maxSockets;
+      }
+    
+      if (prismaticMatch) {
+        const minSocketsPrismatic = parseInt(prismaticMatch[1], 10);
+        const maxSocketsPrismatic = prismaticMatch[2] ? parseInt(prismaticMatch[2], 10) : minSocketsPrismatic;
+    
+        prismaticSockets = maxSocketsPrismatic;
+      }
+    
+      baseItem.sockets.min = normalSockets + prismaticSockets;
+      baseItem.sockets.max = normalSockets + prismaticSockets;
+      baseItem.sockets.amount = baseItem.sockets.max;
+    
+      baseItem.sockets.list = [
+        ...Array(normalSockets).fill({ prismatic: false }),
+        ...Array(prismaticSockets).fill({ prismatic: true })
+      ];
+    }
+    
+    
+    if (type === EquipmentType.Armor) {
+      baseItem = {
+        ...baseItem,
+        armorStats: { defense: rawItem.Defense }
+      } as ArmorEquipment
+    } else if (type === EquipmentType.Weapon) {
+      baseItem = {
+        ...baseItem,
+        weaponStats: { APSStat: rawItem.APS, attackDamageStat: rawItem.Damage, oneHanded: true }
+      } as WeaponEquipment
+    }
+
+    return baseItem
+  }
+
+  static parseWikiStat (stat: any): Stat {
+    return StatParser.parseStat(StatFormatter.formatFromRangeToRangeWithValue(stat)).stat
   }
 
   static parseStat (stat: any): Stat {

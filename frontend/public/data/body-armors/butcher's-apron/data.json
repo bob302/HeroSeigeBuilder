@@ -1,0 +1,19 @@
+{
+    "Item": "Butcher's Apron",
+    "Tier": "S",
+    "Level": "74",
+    "Defense": "807.75704-912",
+    "Type": "Body Armor",
+    "Rarity": "Satanic",
+    "Stats": [
+        "+[25-40]% Enhanced Damage",
+        "+[210-280]% Enhanced Defense",
+        "Extra Damage to Bleeding Monsters [2-10]%",
+        "Replenish Life 50%",
+        "Damage Taken Reduced by [30-60]",
+        "Life Increased by [8-20]%",
+        "Magic Damage Taken Reduced by [3-10]%",
+        "+35 to Dexterity (Based on Level)",
+        "Socketed (0-3)"
+    ]
+}

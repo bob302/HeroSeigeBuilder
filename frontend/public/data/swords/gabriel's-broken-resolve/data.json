@@ -1,0 +1,23 @@
+{
+    "Item": "Gabriel's Broken Resolve",
+    "Tier": "SS",
+    "Level": "97",
+    "Damage": "510.91432-590",
+    "APS": "1.751.75",
+    "DPS": "894.50756-1033",
+    "Type": "Sword",
+    "Rarity": "Unholy",
+    "Stats": [
+        "15% Chance when Attacking [Gabriels Shadow] Level 1",
+        "+[575-666]% Enhanced Damage",
+        "+2 to All Skills",
+        "+[18-35]% Life stolen per Hit",
+        "+40% of target Defense ignored",
+        "+35 to Strength",
+        "+[15-30] to All Attributes",
+        "Unholy Stat",
+        "Unholy Stat",
+        "Unbreakable",
+        "Socketed (1-4)"
+    ]
+}

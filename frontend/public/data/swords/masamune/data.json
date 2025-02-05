@@ -1,0 +1,18 @@
+{
+    "Item": "Masamune",
+    "Tier": "S",
+    "Level": "85",
+    "Damage": "283.80255-314",
+    "APS": "1.791.79",
+    "DPS": "508.50456-561",
+    "Type": "Sword",
+    "Rarity": "Satanic",
+    "Stats": [
+        "10% Chance when Attacking [Zeal] Level 28",
+        "+[430-480]% Enhanced Damage",
+        "+20% Increased Attack Speed",
+        "+35% Chance for a Deadly Blow",
+        "+825 to Attack Rating",
+        "+30 to Dexterity"
+    ]
+}

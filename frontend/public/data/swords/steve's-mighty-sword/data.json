@@ -1,0 +1,23 @@
+{
+    "Item": "Steve's Mighty Sword",
+    "Tier": "S",
+    "Level": "58",
+    "Damage": "217.80188-249",
+    "APS": "1.831.72-1.95",
+    "DPS": "403.50322-485",
+    "Type": "Sword",
+    "Rarity": "Satanic",
+    "Stats": [
+        "8% Chance when Striking [Steves Itchy Sack] Level 39",
+        "+[290-360]% Enhanced Damage",
+        "+[15-30]% Increased Attack Speed",
+        "+[800-1000] to Attack Rating",
+        "+[101-420] to Additive Physical Damage",
+        "+40 to All Attributes",
+        "+[101-420] to Additive Arcane Damage",
+        "+[101-420] to Additive Lightning Damage",
+        "+[101-420] to Additive Poison Damage",
+        "+[101-420] to Additive Fire Damage",
+        "+[101-420] to Additive Cold Damage"
+    ]
+}

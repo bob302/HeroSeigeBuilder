@@ -1,0 +1,22 @@
+{
+    "Item": "Candy Shredder",
+    "Tier": "SS",
+    "Level": "94",
+    "Damage": "439.20418-461",
+    "APS": "2.292.21-2.38",
+    "DPS": "1010.00923-1097",
+    "Type": "Chainsaw",
+    "Rarity": "Heroic",
+    "Stats": [
+        "+220% Enhanced Damage",
+        "+[30-40]% Increased Attack Speed",
+        "+40% Chance for a Deadly Blow",
+        "+[825-935] to Attack Rating",
+        "+[8-12]% Life stolen per Hit",
+        "+[30-50]% of target Defense ignored",
+        "+[1475-1600] to Additive Arcane Damage",
+        "+17 Mana After each Kill",
+        "+400% Enhanced Damage (Based on Level)",
+        "Socketed (2-4)"
+    ]
+}

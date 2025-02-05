@@ -1,0 +1,19 @@
+{
+    "Item": "Azure's Wrath",
+    "Tier": "S",
+    "Level": "78",
+    "Damage": "205.80185-227",
+    "APS": "2.272.27",
+    "DPS": "467.50420-515",
+    "Type": "Sword",
+    "Rarity": "Satanic",
+    "Stats": [
+        "+[285-320]% Enhanced Damage",
+        "+[1-2] to All Skills",
+        "+30% Increased Attack Speed",
+        "+15 to All Attributes",
+        "+[1125-1300] to Additive Arcane Damage",
+        "+[1125-1300] to Additive Cold Damage",
+        "+3 to Light Radius"
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "Item": "Justiciar's Thunder Armor",
+    "Tier": "A",
+    "Level": "57",
+    "Defense": "357.50299-416",
+    "Type": "Body Armor",
+    "Rarity": "Satanic",
+    "Stats": [
+        "+[130-160]% Enhanced Defense",
+        "+[10-15] to Energy",
+        "+10 to Vitality",
+        "+[230-340] to Lightning Skill Damage",
+        "+8 Mana After each Kill",
+        "+50% to Lightning Resistance",
+        "+5% to Maximum Lightning Resist",
+        "Socketed (0-3)"
+    ]
+}

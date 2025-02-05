@@ -1,0 +1,17 @@
+{
+    "Item": "Death Lord's Bone Armor",
+    "Tier": "A",
+    "Level": "57",
+    "Defense": "357.50299-416",
+    "Type": "Body Armor",
+    "Rarity": "Satanic",
+    "Stats": [
+        "+[130-160]% Enhanced Defense",
+        "+[10-20] to Energy",
+        "+[10-20] to Vitality",
+        "+[340-460] to Additive Arcane Damage",
+        "+50 to Mana (Based on Level)",
+        "+50% to Arcane Resistance",
+        "Socketed (0-3)"
+    ]
+}

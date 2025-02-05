@@ -1,0 +1,15 @@
+{
+    "Item": "Aegisweave Robes",
+    "Tier": "C",
+    "Level": "30",
+    "Defense": "51.5029-75",
+    "Type": "Body Armor",
+    "Rarity": "Satanic",
+    "Stats": [
+        "+[30-55]% Enhanced Defense",
+        "+[5-15]% Faster Cast Rate",
+        "+[4-10] to Intelligence",
+        "Replenish Mana 20%",
+        "Socketed (2-3)"
+    ]
+}

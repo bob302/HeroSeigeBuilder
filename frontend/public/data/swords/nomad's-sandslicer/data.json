@@ -1,0 +1,21 @@
+{
+    "Item": "Nomad's Sandslicer",
+    "Tier": "S",
+    "Level": "51",
+    "Damage": "583.40521-646",
+    "APS": "1.501.5",
+    "DPS": "875.50782-969",
+    "Type": "Sword",
+    "Rarity": "Satanic",
+    "Stats": [
+        "+[520-580]% Enhanced Damage",
+        "+[20-40]% Increased Movement Speed",
+        "+15% Chance for a Crushing Blow",
+        "+25% Increased Attack Rating",
+        "+40% of target Defense ignored",
+        "+30 to Strength",
+        "+30 to Dexterity",
+        "Attack Damage increased by [15-30]%",
+        "Attacks can hit multiple enemies"
+    ]
+}

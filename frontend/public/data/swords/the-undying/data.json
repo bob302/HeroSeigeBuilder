@@ -1,0 +1,20 @@
+{
+    "Item": "The Undying",
+    "Tier": "S",
+    "Level": "75",
+    "Damage": "581.50533-630",
+    "APS": "1.201.2",
+    "DPS": "698.00640-756",
+    "Type": "Sword",
+    "Rarity": "Satanic",
+    "Stats": [
+        "+[550-600]% Enhanced Damage",
+        "+[25-30] to Vitality",
+        "+[20-25] to Armor",
+        "+[1340-1560] to Additive Cold Damage",
+        "+50% of Damage Returned to the Attacker",
+        "Physical Damage Taken Reduced by 15%",
+        "Attacks can hit multiple enemies",
+        "Socketed (2-4)"
+    ]
+}

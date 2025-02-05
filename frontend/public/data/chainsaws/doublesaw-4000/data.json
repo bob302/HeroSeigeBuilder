@@ -1,0 +1,22 @@
+{
+    "Item": "Doublesaw 4000",
+    "Tier": "B",
+    "Level": "56",
+    "Damage": "128.40118-140",
+    "APS": "1.501.5",
+    "DPS": "193.00177-209",
+    "Type": "Chainsaw",
+    "Rarity": "Satanic",
+    "Stats": [
+        "10% Chance when Striking [Revved Up] Level 8",
+        "+[180-190]% Enhanced Damage",
+        "+40% Chance for a Deadly Blow",
+        "+20% Chance to Open Wounds",
+        "Slows target by 40%",
+        "+[20-30] to Strength",
+        "Attack Damage increased by [15-20]%",
+        "+[8-14] Life After each Kill",
+        "Attacks can hit multiple enemies",
+        "Socketed (3)"
+    ]
+}

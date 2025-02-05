@@ -1,0 +1,21 @@
+{
+    "Item": "Vorpal Sharktooth",
+    "Tier": "A",
+    "Level": "63",
+    "Damage": "147.57132-164",
+    "APS": "2.252.16-2.34",
+    "DPS": "334.00284-384",
+    "Type": "Chainsaw",
+    "Rarity": "Satanic",
+    "Stats": [
+        "8% Chance when Striking [Slice of Shadows] Level 13",
+        "+[255-290]% Enhanced Damage",
+        "+[20-30]% Increased Attack Speed",
+        "+[3-6]% Life stolen per Hit",
+        "+15 to Strength",
+        "+15 to Dexterity",
+        "+[825-950] to Additive Fire Damage",
+        "+[6-8] Life After each Kill",
+        "Socketed (0-2)"
+    ]
+}

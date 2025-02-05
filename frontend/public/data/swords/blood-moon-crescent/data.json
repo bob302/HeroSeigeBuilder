@@ -1,0 +1,24 @@
+{
+    "Item": "Blood Moon Crescent",
+    "Tier": "SS",
+    "Level": "100",
+    "Damage": "815.75750-882",
+    "APS": "2.442.09-2.8",
+    "DPS": "2018.501568-2469",
+    "Type": "Sword",
+    "Rarity": "Unholy",
+    "Stats": [
+        "10% Chance when Striking [Despair] Level 80",
+        "+[900-975]% Enhanced Damage",
+        "+[2-3] to All Skills",
+        "+8 to Poison Skills",
+        "+69% Increased Movement Speed",
+        "+[50-100]% Increased Attack Speed",
+        "Skill Movement Diminish decreased by 75%",
+        "+15% Life stolen per Hit",
+        "+[125-150] to Dexterity",
+        "Movement Phasing",
+        "Unbreakable",
+        "Socketed (2)"
+    ]
+}

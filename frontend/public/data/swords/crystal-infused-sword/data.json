@@ -1,0 +1,21 @@
+{
+    "Item": "Crystal Infused Sword",
+    "Tier": "D",
+    "Level": "11",
+    "Damage": "47.5040-56",
+    "APS": "1.251.25",
+    "DPS": "59.5049-70",
+    "Type": "Sword",
+    "Rarity": "Satanic",
+    "Stats": [
+        "+[180-210]% Enhanced Damage",
+        "+20% Chance for a Crushing Blow",
+        "+[3-6]% Increased Attack Rating",
+        "+[50-75] to Attack Rating",
+        "+5% Life stolen per Hit",
+        "+10 to Strength",
+        "+10 Life After each Kill",
+        "Attacks can hit multiple enemies",
+        "Socketed (0-3)"
+    ]
+}

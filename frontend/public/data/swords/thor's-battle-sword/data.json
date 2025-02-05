@@ -1,0 +1,20 @@
+{
+    "Item": "Thor's Battle Sword",
+    "Tier": "S",
+    "Level": "56",
+    "Damage": "179.40154-206",
+    "APS": "1.501.5",
+    "DPS": "269.50231-308",
+    "Type": "Sword",
+    "Rarity": "Satanic",
+    "Stats": [
+        "+[220-280]% Enhanced Damage",
+        "+[2-4] to Arcane Skills",
+        "+25 to Energy",
+        "+15 to All Attributes",
+        "Arcane Skill Damage increased by [20-35]%",
+        "Replenish Mana 30%",
+        "+[12-20] Mana After each Kill",
+        "+75% to Arcane Resistance"
+    ]
+}

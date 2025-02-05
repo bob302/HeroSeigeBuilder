@@ -1,0 +1,20 @@
+{
+    "Item": "Hiyoki's Vorpal Katana",
+    "Tier": "C",
+    "Level": "28",
+    "Damage": "103.0585-122",
+    "APS": "2.061.95-2.17",
+    "DPS": "214.50165-264",
+    "Type": "Sword",
+    "Rarity": "Satanic",
+    "Stats": [
+        "+[225-280]% Enhanced Damage",
+        "+10% Increased Movement Speed",
+        "+[30-45]% Increased Attack Speed",
+        "+[5-10]% Increased Attack Rating",
+        "+[5-10]% Life stolen per Hit",
+        "+[10-15] to Strength",
+        "Attacks can hit multiple enemies",
+        "Socketed (0-3)"
+    ]
+}

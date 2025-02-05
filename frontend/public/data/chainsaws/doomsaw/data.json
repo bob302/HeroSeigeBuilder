@@ -1,0 +1,21 @@
+{
+    "Item": "Doomsaw",
+    "Tier": "C",
+    "Level": "25",
+    "Damage": "85.7073-99",
+    "APS": "1.501.5",
+    "DPS": "129.00110-148",
+    "Type": "Chainsaw",
+    "Rarity": "Satanic",
+    "Stats": [
+        "10% Chance when Striking [Chainsaw Slash] Level 14",
+        "+[180-190]% Enhanced Damage",
+        "+[110-140] to Attack Rating",
+        "+[4-8]% Mana stolen per Hit",
+        "+[140-160] to Additive Fire Damage",
+        "Fire Skill Damage increased by [5-15]%",
+        "-30% to Enemy Fire Resistance",
+        "Attacks can hit multiple enemies",
+        "Socketed (0-3)"
+    ]
+}

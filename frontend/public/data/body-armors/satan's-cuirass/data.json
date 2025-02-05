@@ -1,0 +1,17 @@
+{
+    "Item": "Satan's Cuirass",
+    "Tier": "A",
+    "Level": "57",
+    "Defense": "393.00338-448",
+    "Type": "Body Armor",
+    "Rarity": "Satanic",
+    "Stats": [
+        "+[160-180]% Enhanced Defense",
+        "+[2-4] to Fire Skills",
+        "+20 to Vitality",
+        "+20 to All Attributes",
+        "+75% to Fire Resistance",
+        "+10% to Maximum Fire Resist",
+        "Socketed (3)"
+    ]
+}

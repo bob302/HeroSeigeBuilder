@@ -6,11 +6,11 @@
 import { computed, defineProps } from 'vue'
 
 const props = defineProps<{
-  enhanced: boolean
+  prismatic: boolean
 }>()
 
 const socketImage = computed(() =>
-  props.enhanced ? '/img/editor/socket-enhanced.png' : '/img/editor/socket-normal.png'
+  props.prismatic ? '/img/editor/socket-prismatic.png' : '/img/editor/socket-normal.png'
 )
 </script>
 

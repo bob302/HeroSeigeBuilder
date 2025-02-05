@@ -1,0 +1,16 @@
+{
+    "Item": "Mystique Allure",
+    "Tier": "A",
+    "Level": "60",
+    "Defense": "573.00486-660",
+    "Type": "Body Armor",
+    "Rarity": "Satanic",
+    "Stats": [
+        "+[260-300]% Enhanced Defense",
+        "+1 to All Skills",
+        "Physical Damage Taken Reduced by 10%",
+        "+60% Magic Find (Based on Level)",
+        "+20% to All Resistances",
+        "Socketed (0-2)"
+    ]
+}

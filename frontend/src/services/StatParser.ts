@@ -1,4 +1,4 @@
-import { Stat } from '@/models/Equipment'
+import type { Stat } from '../models/Equipment'
 
 export class StatParser {
   static parseStats (statsString: string): Stat[] {
@@ -19,10 +19,19 @@ export class StatParser {
     const valueRegex = /(?<!\[)[+-]?\d+(?:%|)(?!\])(?=\s|$)/g
     const rangeRegex = /\[(\d+)-(\d+)\]/g
     const allSkillRegex = /to All Skills/
+    const toPoisonRegex = /to Poison Skills/
+    const toFireRegex = /to Fire Skills/
+    const toColdRegex = /to Cold Skills/
+    const toArcaneRegex = /to Arcane Skills/
+    const toPhysicalRegex = /to Physical Skills/
+    const unholyStatRegex = /Unholy Stat/
+    const unbreakableRegex = /Unbreakable/
+
 
     const matches: Array<{type: string, start: number, end: number, content: string}> = []
 
     let match
+
     while ((match = valueRegex.exec(line)) !== null) {
       matches.push({
         type: 'value',
@@ -73,9 +82,9 @@ export class StatParser {
     const stat: Stat = {
       raw: line,
       name: tokens.filter(t => t.type === 'description').map(t => t.content).join(' '),
-      value,
-      range,
-      type,
+      value: value,
+      range: range,
+      type: type,
       special: false
     }
 
@@ -89,11 +98,46 @@ export class StatParser {
       return { html, stat }
     }
 
+    if (toArcaneRegex.exec(line) !== null) {
+      const html = `<div class="stat-container"><p class="stat-to-arcane">${line}</p></div>`
+      return { html, stat }
+    }
+
+    if (toColdRegex.exec(line) !== null) {
+      const html = `<div class="stat-container"><p class="stat-to-cold">${line}</p></div>`
+      return { html, stat }
+    }
+
+    if (toFireRegex.exec(line) !== null) {
+      const html = `<div class="stat-container"><p class="stat-to-fire">${line}</p></div>`
+      return { html, stat }
+    }
+
+    if (toPoisonRegex.exec(line) !== null) {
+      const html = `<div class="stat-container"><p class="stat-to-poison">${line}</p></div>`
+      return { html, stat }
+    }
+
+    if (toPhysicalRegex.exec(line) !== null) {
+      const html = `<div class="stat-container"><p class="stat-to-physical">${line}</p></div>`
+      return { html, stat }
+    }
+
+    if (unholyStatRegex.exec(line) !== null) {
+      const html = `<div class="stat-container"><p class="stat-unholy">${line}</p></div>`
+      return { html, stat }
+    }
+
+    if (unbreakableRegex.exec(line) !== null) {
+      const html = `<div class="stat-container"><p class="stat-unbreakable">${line}</p></div>`
+      return { html, stat }
+    }
+
     let html = '<div class="stat-container">'
     for (const token of tokens) {
       switch (token.type) {
         case 'value':
-          html += `<p class="stat-value">${token.content}</p>`
+          html += `<p class="stat-description">${token.content}</p>`
           break
         case 'range':
           html += `<p class="stat-range">${token.content}</p>`

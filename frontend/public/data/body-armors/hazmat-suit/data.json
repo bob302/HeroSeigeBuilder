@@ -1,0 +1,20 @@
+{
+    "Item": "Hazmat Suit",
+    "Tier": "B",
+    "Level": "40",
+    "Defense": "153.75114-194",
+    "Type": "Body Armor",
+    "Rarity": "Satanic",
+    "Stats": [
+        "+[90-115]% Enhanced Defense",
+        "+[1-2] to Poison Skills",
+        "+10 to Vitality",
+        "+[400-750] to Poison Skill Damage",
+        "-[8-20]% to Enemy Poison Resistance",
+        "+10% to All Resistances",
+        "+50% to Poison Resistance",
+        "+5% to Maximum Poison Resist",
+        "Poison Length Reduced by 50%",
+        "Socketed (1-4)"
+    ]
+}

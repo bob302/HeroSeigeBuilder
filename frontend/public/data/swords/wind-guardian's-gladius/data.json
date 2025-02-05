@@ -1,0 +1,19 @@
+{
+    "Item": "Wind Guardian's Gladius",
+    "Tier": "A",
+    "Level": "61",
+    "Damage": "122.80109-137",
+    "APS": "1.401.3-1.5",
+    "DPS": "174.00142-206",
+    "Type": "Sword",
+    "Rarity": "Satanic",
+    "Stats": [
+        "5% Chance when Struck [Sand Guardians] Level 15",
+        "+[240-280]% Enhanced Damage",
+        "+[30-50]% Increased Attack Speed",
+        "+[285-320] to Attack Rating",
+        "+20% Chance to Open Wounds",
+        "+[3-5] to All Attributes",
+        "+[530-645] to Additive Lightning Damage"
+    ]
+}

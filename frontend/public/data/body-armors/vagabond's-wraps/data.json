@@ -1,0 +1,16 @@
+{
+    "Item": "Vagabond's Wraps",
+    "Tier": "A",
+    "Level": "57",
+    "Defense": "145.00130-160",
+    "Type": "Body Armor",
+    "Rarity": "Satanic",
+    "Stats": [
+        "+1 to All Skills",
+        "+20% Increased Movement Speed",
+        "+25 to Strength",
+        "+20 to Dexterity",
+        "Physical Damage Taken Reduced by [5-15]%",
+        "Socketed (0-3)"
+    ]
+}

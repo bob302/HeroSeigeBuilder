@@ -1,0 +1,20 @@
+{
+    "Item": "St. Gabriel's Retribution",
+    "Tier": "SS",
+    "Level": "97",
+    "Damage": "715.20656-776",
+    "APS": "2.562.39-2.72",
+    "DPS": "1837.501566-2109",
+    "Type": "Sword",
+    "Rarity": "Angelic",
+    "Stats": [
+        "15% Chance when Striking [Gabriels Glory] Level 120",
+        "+[810-920]% Enhanced Damage",
+        "+[3-4] to All Skills",
+        "+[45-65]% Increased Attack Speed",
+        "+50 to All Attributes",
+        "+[15000-20000] to Additive Arcane Damage",
+        "+5 to Light Radius",
+        "Socketed (2-4)"
+    ]
+}

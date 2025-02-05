@@ -1,0 +1,21 @@
+{
+    "Item": "Eternal Glaive",
+    "Tier": "S",
+    "Level": "85",
+    "Damage": "277.20252-303",
+    "APS": "2.252.16-2.34",
+    "DPS": "626.50545-708",
+    "Type": "Sword",
+    "Rarity": "Satanic",
+    "Stats": [
+        "52% Chance when Attacking [Chainslice] Level 47",
+        "+[425-460]% Enhanced Damage",
+        "+[20-30]% Increased Attack Speed",
+        "+15% Increased Critical Strike Chance",
+        "+10% Chance for a Crushing Blow",
+        "+[450-475] to Attack Rating",
+        "+[2-5]% Mana stolen per Hit",
+        "+[10-20]% Increased Critical Strike Damage",
+        "+[20-30] to Dexterity"
+    ]
+}

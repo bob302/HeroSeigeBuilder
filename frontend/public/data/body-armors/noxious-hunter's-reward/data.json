@@ -1,0 +1,18 @@
+{
+    "Item": "Noxious Hunter's Reward",
+    "Tier": "SS",
+    "Level": "84",
+    "Defense": "944.50814-1075",
+    "Type": "Body Armor",
+    "Rarity": "Satanic",
+    "Stats": [
+        "+[270-330]% Enhanced Defense",
+        "+2 to All Skills",
+        "+[3-5] to Poison Skills",
+        "Extra Damage to Poisoned Monsters [15-30]%",
+        "-25% to Enemy Poison Resistance",
+        "+[10-20]% Poison Damage Absorbed",
+        "+[50-75]% to Poison Resistance",
+        "Socketed (1-4)"
+    ]
+}

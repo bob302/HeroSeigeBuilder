@@ -1,0 +1,23 @@
+{
+    "Item": "Hanzo's Flaming Katana",
+    "Tier": "B",
+    "Level": "34",
+    "Damage": "205.00180-230",
+    "APS": "1.441.32-1.56",
+    "DPS": "298.50238-359",
+    "Type": "Sword",
+    "Rarity": "Satanic",
+    "Stats": [
+        "100% Chance to Cast after each Kill [Scorching Flames] Level 19",
+        "18% Chance when Striking [Fire Nova] Level 27",
+        "+[350-400]% Enhanced Damage",
+        "+[10-30]% Increased Attack Speed",
+        "+444 to Attack Rating",
+        "+25 to Strength",
+        "+[225-340] to Additive Fire Damage",
+        "+[250-325] to Fire Skill Damage",
+        "Fire Skill Damage increased by [25-40]%",
+        "Attacks can hit multiple enemies",
+        "Socketed (0-3)"
+    ]
+}

@@ -1,71 +1,70 @@
 <template>
   <div
     class="container"
-    @mousemove="updateTooltipPosition"
-    @mouseenter="showStats = true"
+    @mouseover="showTooltip"
     @mouseleave="hideStats"
   >
     <!-- Frame -->
     <img :src="frameSrc" alt="Item frame" class="background" />
     <!-- Item -->
-    <img v-if="image" :src="image" class="item" />
+    <img v-if="item.image" :src="item.image" class="item" />
     <!-- Sockets -->
-    <div v-if="sockets.length" class="grid-container">
-      <SocketComponent v-for="(socket, index) in sockets.slice(0, 6)" :key="index" :enhanced="socket.enhanced" />
+    <div v-if="item.sockets.amount && showStats || showSockets " :class="socketLayoutClass" class="socket-container">
+      <div
+        v-for="(socket, index) in item.sockets.list.slice(0, 6)"
+        :key="index"
+        :class="['socket', `socket-${index + 1}`]"
+      >
+        <SocketComponent :prismatic="socket.prismatic"/>
+      </div>
     </div>
   </div>
   <ItemStatsComponent
     v-if="showStats"
-    :name="name"
-    :type="type"
-    :subtype="subtype"
-    :combined-item-type="combinedType"
-    :rarity="rarity"
-    :stats="stats"
-    :tier="tier"
-    :one-handed="oneHanded"
-    :x="tooltipX"
-    :y="tooltipY"
-    :level="level"
+    :item="item"
+    :pos="tooltipPosition"
   />
 </template>
 
 <script setup lang="ts">
-import { computed, defineProps, ref } from 'vue'
+import { computed, ref } from 'vue'
 import SocketComponent from './SocketComponent.vue'
 import ItemStatsComponent from './ItemStatsComponent.vue'
-import { Stat } from '@/models/Equipment'
+import { Equipment } from '../models/Equipment'
 
 const props = defineProps<{
-  image?: string
-  name: string
-  type: string
-  subtype: string
-  rarity: string
-  oneHanded: boolean
-  stats: Stat[]
-  tier: string
-  level: string
-  sockets: { enhanced: boolean }[]
+  item: Equipment
+  showSockets: boolean
+  x: number
+  y: number
 }>()
 
 const frameSrc = '/img/editor/item-frame.png'
 const showStats = ref(false)
-const tooltipX = ref(0)
-const tooltipY = ref(0)
+const tooltipPosition = ref({ x: 0, y: 0 })
 
-const combinedType = computed(() => {
-  return `${props.rarity} ${props.subtype}`
-})
-
-const updateTooltipPosition = (event: MouseEvent) => {
-  tooltipX.value = event.clientX + 15
-  tooltipY.value = event.clientY + 15
+const showTooltip = (event: MouseEvent) => {
+  tooltipPosition.value = {
+    x: event.clientX + 15,
+    y: event.clientY + 15
+  }
+  showStats.value = true
 }
 
 const hideStats = () => {
   showStats.value = false
 }
+
+const socketLayoutClass = computed(() => {
+  const socketCount = props.item.sockets.amount
+  if (socketCount === 1) {
+    return 'single-layout'
+  } else if (socketCount % 2 === 0) {
+    return 'even-layout'
+  } else {
+    return 'odd-layout'
+  }
+})
 </script>
 
 <style scoped>
@@ -82,21 +81,66 @@ const hideStats = () => {
 
 .item {
   position: absolute;
-  width: 80%;
-  height: 80%;
+  width: 75%;
+  height: 75%;
   object-fit: contain;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  image-rendering: pixelated;
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  gap: 5px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.item:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+  filter: brightness(1.2); 
 }
+
+.socket-container {
+  display: grid;
+  position: absolute;
+
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  gap: 0px;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.single-layout {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    ". . ."
+    ". s1 ."
+    ". . .";
+}
+
+.even-layout {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "s1 . s2"
+    "s3 . s4"
+    "s5 . s6";
+  grid-column-gap: 0.2em;
+}
+
+.odd-layout {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "s1 . s2"
+    "s3 s3 s3"
+    "s4 . s5";
+    grid-column-gap: 0.3em;
+}
+
+.socket-1 { grid-area: s1; }
+.socket-2 { grid-area: s2; }
+.socket-3 { grid-area: s3; }
+.socket-4 { grid-area: s4; }
+.socket-5 { grid-area: s5; }
+.socket-6 { grid-area: s6; }
 </style>
