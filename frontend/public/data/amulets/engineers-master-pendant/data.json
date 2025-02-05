@@ -1,0 +1,25 @@
+{
+    "Item": "Engineer's Master Pendant",
+    "Tier": "S",
+    "Level": "82",
+    "Type": "Amulet",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[10-20]% Faster Cast Rate",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[35-45] to Life",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[20-30] to Mana",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Damage Taken Reduced by [8-15]",
+            "class": "stat-default"
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+{
+    "Item": "Cocoon of the Berserker",
+    "Tier": "S",
+    "Level": "74",
+    "Defense": "909.75788-1032",
+    "Type": "Body Armor",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[175-230]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[1-2] to All Skills",
+            "class": "stat-allskills"
+        },
+        {
+            "stat": "+[475-750] to Attack Rating",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[6-8]% Life stolen per Hit",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[4-6]% Mana stolen per Hit",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+30 to Strength",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+100% Enhanced Damage (Based on Level)",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Socketed (0-3)",
+            "class": "stat-default"
+        }
+    ]
+}

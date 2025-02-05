@@ -1,0 +1,13 @@
+{
+    "Item": "Zealot's Beads of Destruction",
+    "Tier": "S",
+    "Level": "76",
+    "Type": "Charm",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[1-3] to Random Skill",
+            "class": "stat-spell"
+        }
+    ]
+}

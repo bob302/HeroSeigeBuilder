@@ -8,15 +8,45 @@
     "Type": "Chainsaw",
     "Rarity": "Satanic",
     "Stats": [
-        "+[365-380]% Enhanced Damage",
-        "+[2-4] to [Chainsaw Mastery]",
-        "+[2-5] to [Revved Up]",
-        "+[40-60]% Increased Attack Speed",
-        "+[680-700] to Attack Rating",
-        "+30 to Strength",
-        "+20 to Vitality",
-        "+[440-470] to Life",
-        "Life Increased by [2-5]%",
-        "Attacks can hit multiple enemies"
+        {
+            "stat": "+[365-380]% Enhanced Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[2-4] to [Chainsaw Mastery]",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "+[2-5] to [Revved Up]",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "+[40-60]% Increased Attack Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[680-700] to Attack Rating",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+30 to Strength",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+20 to Vitality",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[440-470] to Life",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Life Increased by [2-5]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Attacks can hit multiple enemies",
+            "class": "stat-default"
+        }
     ]
 }

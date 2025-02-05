@@ -1,0 +1,22 @@
+{
+    "Item": "Lifeward Gauntlets",
+    "Tier": "D",
+    "Level": "11",
+    "Defense": "5.454-7",
+    "Type": "Glove",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[30-40]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[2-10] to All Attributes",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+15% to All Resistances",
+            "class": "stat-default"
+        }
+    ]
+}

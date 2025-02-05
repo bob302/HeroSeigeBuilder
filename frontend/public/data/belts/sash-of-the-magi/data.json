@@ -1,0 +1,38 @@
+{
+    "Item": "Sash of the Magi",
+    "Tier": "S",
+    "Level": "97",
+    "Defense": "99.4084-116",
+    "Type": "Belt",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[60-70]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[10-20]% Faster Cast Rate",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Magic Skill Damage increased by [15-25]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[40-65] to Life",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Mana Increased by 4%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Belt Slots: 5",
+            "class": "stat-default"
+        },
+        {
+            "stat": "[Manapool Aura] Level [12-18]",
+            "class": "stat-default"
+        }
+    ]
+}

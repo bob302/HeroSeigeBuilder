@@ -8,11 +8,29 @@
     "Type": "Sword",
     "Rarity": "Satanic",
     "Stats": [
-        "10% Chance when Attacking [Zeal] Level 28",
-        "+[430-480]% Enhanced Damage",
-        "+20% Increased Attack Speed",
-        "+35% Chance for a Deadly Blow",
-        "+825 to Attack Rating",
-        "+30 to Dexterity"
+        {
+            "stat": "10% Chance when Attacking [Zeal] Level 28",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "+[430-480]% Enhanced Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+20% Increased Attack Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+35% Chance for a Deadly Blow",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+825 to Attack Rating",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+30 to Dexterity",
+            "class": "stat-default"
+        }
     ]
 }

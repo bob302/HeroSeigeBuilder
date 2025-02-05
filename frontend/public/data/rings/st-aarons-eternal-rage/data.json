@@ -1,0 +1,25 @@
+{
+    "Item": "St. Aaron's Eternal Rage",
+    "Tier": "SS",
+    "Level": "98",
+    "Type": "Ring",
+    "Rarity": "Angelic",
+    "Stats": [
+        {
+            "stat": "+3 to All Skills",
+            "class": "stat-allskills"
+        },
+        {
+            "stat": "Magic Skill Damage increased by [15-30]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Replenish Mana 30%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[30-50]% Increased Magic Find",
+            "class": "stat-default"
+        }
+    ]
+}

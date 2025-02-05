@@ -1,0 +1,30 @@
+{
+    "Item": "Zeus' Circlet",
+    "Tier": "A",
+    "Level": "64",
+    "Defense": "99.9076-125",
+    "Type": "Helmet",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[80-130]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[10-15]% Faster Cast Rate",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Lightning Skill Damage increased by [3-8]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "-[2-5]% to Enemy Lightning Resistance",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+20% to Lightning Resistance",
+            "class": "stat-default"
+        }
+    ]
+}

@@ -85,7 +85,7 @@ export class StatParser {
       value: value,
       range: range,
       type: type,
-      special: false
+      special: special
     }
 
     if (special) {

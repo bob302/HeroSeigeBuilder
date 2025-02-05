@@ -1,0 +1,48 @@
+{
+    "Item": "Angel",
+    "Tier": "S",
+    "Level": "62",
+    "Damage": "293.40234-354",
+    "APS": "2.182.18",
+    "DPS": "640.00509-771",
+    "Type": "Gun",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[430-580]% Enhanced Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+25% Increased Attack Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+15% Chance for a Crushing Blow",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+3% Increased Attack Rating",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[825-880] to Additive Physical Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+35% of target Defense ignored",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+25 to Dexterity",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+8 Life After each Kill",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+5 Mana After each Kill",
+            "class": "stat-default"
+        }
+    ]
+}

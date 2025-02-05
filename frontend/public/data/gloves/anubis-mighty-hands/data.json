@@ -1,0 +1,26 @@
+{
+    "Item": "Anubis' Mighty Hands",
+    "Tier": "S",
+    "Level": "78",
+    "Defense": "60.7546-76",
+    "Type": "Glove",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[75-100]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+1 to All Skills",
+            "class": "stat-allskills"
+        },
+        {
+            "stat": "+15 to All Attributes",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Replenish Life [15-25]%",
+            "class": "stat-default"
+        }
+    ]
+}

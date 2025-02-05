@@ -1,0 +1,50 @@
+{
+    "Item": "Giant Thorned Lizard Skin",
+    "Tier": "S",
+    "Level": "74",
+    "Defense": "877.50735-1020",
+    "Type": "Body Armor",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[250-325]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+10 to [Random Class Skill]",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "+15 to Energy",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+25 to Vitality",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Arcane Skill Damage increased by [15-30]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Lightning Skill Damage increased by [15-30]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Poison Skill Damage increased by [15-30]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Fire Skill Damage increased by [15-30]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Cold Skill Damage increased by [15-30]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Socketed (0-3)",
+            "class": "stat-default"
+        }
+    ]
+}

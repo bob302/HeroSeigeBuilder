@@ -1,0 +1,43 @@
+{
+    "Item": "Ancient Aegis",
+    "Tier": "SS",
+    "Level": "95",
+    "Defense": "527.50432-623",
+    "Block": "35",
+    "Type": "Shield",
+    "Rarity": "Heroic",
+    "Stats": [
+        {
+            "stat": "+[260-345]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[1-3] to All Skills",
+            "class": "stat-allskills"
+        },
+        {
+            "stat": "+[30-40] to Energy",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+20 to Vitality",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Magic Skill Damage increased by [15-35]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+50% Faster Hit Recovery",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[40-60]% to All Resistances",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Socketed (0-2)",
+            "class": "stat-default"
+        }
+    ]
+}

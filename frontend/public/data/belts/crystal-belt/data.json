@@ -1,0 +1,30 @@
+{
+    "Item": "Crystal Belt",
+    "Tier": "B",
+    "Level": "41",
+    "Defense": "36.2026-47",
+    "Type": "Belt",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[30-45]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[8-15] to All Attributes",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+15% Faster Hit Recovery",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[15-20]% to All Resistances",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Belt Slots: 4",
+            "class": "stat-default"
+        }
+    ]
+}

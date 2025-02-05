@@ -1,0 +1,38 @@
+{
+    "Item": "Zephy's Gown",
+    "Tier": "A",
+    "Level": "57",
+    "Defense": "330.00260-400",
+    "Type": "Body Armor",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[100-150]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+50% Increased Movement Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[6-15] Mana After each Kill",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Life Increased by [7-15]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[35-50]% to All Resistances",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[8-25]% Increased Magic Find",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Socketed (0-3)",
+            "class": "stat-default"
+        }
+    ]
+}

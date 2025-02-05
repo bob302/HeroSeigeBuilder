@@ -1,0 +1,43 @@
+{
+    "Item": "Aztec Ward",
+    "Tier": "A",
+    "Level": "52",
+    "Defense": "129.9099-161",
+    "Block": "40",
+    "Type": "Shield",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[90-130]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+2 to Poison Skills",
+            "class": "stat-poison"
+        },
+        {
+            "stat": "+[20-30]% Faster Cast Rate",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+20 to Strength",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+15 to Dexterity",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Poison Skill Damage increased by [8-20]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Replenish Life [10-20]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[20-40] to Life",
+            "class": "stat-default"
+        }
+    ]
+}

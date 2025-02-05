@@ -1,0 +1,41 @@
+{
+    "Item": "Finger of Despair",
+    "Tier": "SS",
+    "Level": "100",
+    "Type": "Charm",
+    "Rarity": "Unholy",
+    "Stats": [
+        {
+            "stat": "+3 to All Skills",
+            "class": "stat-allskills"
+        },
+        {
+            "stat": "Unholy Stat",
+            "class": "stat-unholy"
+        },
+        {
+            "stat": "Unholy Stat",
+            "class": "stat-unholy"
+        },
+        {
+            "stat": "Unholy Stat",
+            "class": "stat-unholy"
+        },
+        {
+            "stat": "+[25-50] to All Attributes",
+            "class": "stat-default"
+        },
+        {
+            "stat": "-50% to All Resistances",
+            "class": "stat-default"
+        },
+        {
+            "stat": "-10% to Maximum All Resists",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Unbreakable",
+            "class": "stat-unbreakable"
+        }
+    ]
+}

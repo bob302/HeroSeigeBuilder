@@ -1,0 +1,25 @@
+{
+    "Item": "Treasure Pendant",
+    "Tier": "A",
+    "Level": "66",
+    "Type": "Amulet",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+10% Increased Movement Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[15-20]% Extra Gold Dropped From Kills",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[10-30]% Increased Magic Find",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[1-3]% Increased Experience Gain",
+            "class": "stat-default"
+        }
+    ]
+}

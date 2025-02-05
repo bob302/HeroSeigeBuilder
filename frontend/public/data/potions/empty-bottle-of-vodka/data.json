@@ -1,0 +1,17 @@
+{
+    "Item": "Empty Bottle of Vodka",
+    "Tier": "S",
+    "Level": "68",
+    "Type": "Potion",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[1-5] to [Drunken Infused Wisdom]",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "Gain additional All Skills for its duration.",
+            "class": "item-lore"
+        }
+    ]
+}

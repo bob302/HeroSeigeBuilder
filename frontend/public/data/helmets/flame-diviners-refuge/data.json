@@ -1,0 +1,34 @@
+{
+    "Item": "Flame Diviner's Refuge",
+    "Tier": "A",
+    "Level": "52",
+    "Defense": "99.9076-125",
+    "Type": "Helmet",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[80-130]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+1 to Fire Skills",
+            "class": "stat-fire"
+        },
+        {
+            "stat": "+10 to Energy",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+15 to Life",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+30 to Mana",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+40% to Fire Resistance",
+            "class": "stat-default"
+        }
+    ]
+}

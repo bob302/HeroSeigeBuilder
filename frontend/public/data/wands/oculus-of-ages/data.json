@@ -1,0 +1,52 @@
+{
+    "Item": "Oculus of Ages",
+    "Tier": "SS",
+    "Level": "75",
+    "Damage": "37.0032-42",
+    "APS": "1.501.5",
+    "DPS": "55.5048-63",
+    "Type": "Wand",
+    "Rarity": "Heroic",
+    "Stats": [
+        {
+            "stat": "20% Chance when Struck [Teleport] Level 1",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "+[2-4] to All Skills",
+            "class": "stat-allskills"
+        },
+        {
+            "stat": "+50% Faster Cast Rate",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[7-15] Mana per second",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[15-30] to Energy",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[15-30] to Intelligence",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Magic Skill Damage increased by [20-45]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[15-30] Mana After each Kill",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[10-20]% to All Resistances",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[25-50]% Increased Magic Find",
+            "class": "stat-default"
+        }
+    ]
+}

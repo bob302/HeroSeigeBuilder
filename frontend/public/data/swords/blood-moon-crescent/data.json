@@ -8,17 +8,53 @@
     "Type": "Sword",
     "Rarity": "Unholy",
     "Stats": [
-        "10% Chance when Striking [Despair] Level 80",
-        "+[900-975]% Enhanced Damage",
-        "+[2-3] to All Skills",
-        "+8 to Poison Skills",
-        "+69% Increased Movement Speed",
-        "+[50-100]% Increased Attack Speed",
-        "Skill Movement Diminish decreased by 75%",
-        "+15% Life stolen per Hit",
-        "+[125-150] to Dexterity",
-        "Movement Phasing",
-        "Unbreakable",
-        "Socketed (2)"
+        {
+            "stat": "10% Chance when Striking [Despair] Level 80",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "+[900-975]% Enhanced Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[2-3] to All Skills",
+            "class": "stat-allskills"
+        },
+        {
+            "stat": "+8 to Poison Skills",
+            "class": "stat-poison"
+        },
+        {
+            "stat": "+69% Increased Movement Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[50-100]% Increased Attack Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Skill Movement Diminish decreased by 75%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+15% Life stolen per Hit",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[125-150] to Dexterity",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Movement Phasing",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Unbreakable",
+            "class": "stat-unbreakable"
+        },
+        {
+            "stat": "Socketed (2)",
+            "class": "stat-default"
+        }
     ]
 }

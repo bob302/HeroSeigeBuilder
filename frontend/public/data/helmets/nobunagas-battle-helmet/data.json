@@ -1,0 +1,34 @@
+{
+    "Item": "Nobunaga's Battle Helmet",
+    "Tier": "S",
+    "Level": "74",
+    "Defense": "153.50111-196",
+    "Type": "Helmet",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[85-145]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[2-3] to All Skills",
+            "class": "stat-allskills"
+        },
+        {
+            "stat": "+30% Faster Cast Rate",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+15 to Energy",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+15 to Intelligence",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Socketed (1-3)",
+            "class": "stat-default"
+        }
+    ]
+}

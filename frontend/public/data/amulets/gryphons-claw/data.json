@@ -1,0 +1,29 @@
+{
+    "Item": "Gryphon's Claw",
+    "Tier": "SS",
+    "Level": "100",
+    "Type": "Amulet",
+    "Rarity": "Heroic",
+    "Stats": [
+        {
+            "stat": "+[12-18] to [Execute]",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "+[18-25]% Increased Critical Strike Chance",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[40-50]% Increased Critical Strike Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[15-25]% Chance to Open Wounds",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[20-30] to All Attributes",
+            "class": "stat-default"
+        }
+    ]
+}

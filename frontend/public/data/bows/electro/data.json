@@ -1,0 +1,48 @@
+{
+    "Item": "Electro",
+    "Tier": "A",
+    "Level": "61",
+    "Damage": "306.00238-375",
+    "APS": "2.041.87-2.21",
+    "DPS": "636.50445-828",
+    "Type": "Bow",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[260-380]% Enhanced Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[10-30]% Increased Attack Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[180-250] to Attack Rating",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+30 to Dexterity",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[625-665] to Additive Lightning Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Lightning Skill Damage increased by [4-15]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "-[4-10]% to Enemy Lightning Resistance",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+50% to Lightning Resistance",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+5% to Maximum Lightning Resist",
+            "class": "stat-default"
+        }
+    ]
+}

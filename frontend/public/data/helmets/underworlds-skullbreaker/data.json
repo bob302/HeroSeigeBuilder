@@ -1,0 +1,38 @@
+{
+    "Item": "Underworld's Skullbreaker",
+    "Tier": "A",
+    "Level": "57",
+    "Defense": "116.4093-141",
+    "Type": "Helmet",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[120-160]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+15% Chance for a Deadly Blow",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[5-10]% Chance for a Crushing Blow",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[40-70] to Attack Rating",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[3-8]% Life stolen per Hit",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+20 to Strength",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Socketed (1-2)",
+            "class": "stat-default"
+        }
+    ]
+}

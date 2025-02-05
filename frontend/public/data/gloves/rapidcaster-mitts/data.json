@@ -1,0 +1,26 @@
+{
+    "Item": "Rapidcaster Mitts",
+    "Tier": "D",
+    "Level": "15",
+    "Defense": "4.784-7",
+    "Type": "Glove",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[10-25]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[8-20]% Faster Cast Rate",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[8-20]% Increased Attack Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Magic Skill Damage increased by [5-10]%",
+            "class": "stat-default"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "Item": "Sarcasters Coffee Mug",
+    "Tier": "S",
+    "Level": "1",
+    "Type": "Potion",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[1-5] to [Caffeinated]",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "Kahtellaa syssymmällä..",
+            "class": "item-lore"
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "Item": "Gem King's Cleaver",
+    "Tier": "SS",
+    "Level": "96",
+    "Damage": "624.00592-656",
+    "APS": "1.101.1",
+    "DPS": "687.00652-722",
+    "Type": "Axe",
+    "Rarity": "Heroic",
+    "Stats": [
+        {
+            "stat": "+700% Enhanced Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Attacks can hit multiple enemies",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Socketed (6)",
+            "class": "stat-default"
+        }
+    ]
+}

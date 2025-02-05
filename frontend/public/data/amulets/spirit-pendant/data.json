@@ -1,0 +1,25 @@
+{
+    "Item": "Spirit Pendant",
+    "Tier": "S",
+    "Level": "85",
+    "Type": "Amulet",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "Cooldown Recovery Increased by 10%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[30-45] to Life",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[15-25] to Mana",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[20-30]% to All Resistances",
+            "class": "stat-default"
+        }
+    ]
+}

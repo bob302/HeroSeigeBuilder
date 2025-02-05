@@ -1,0 +1,52 @@
+{
+    "Item": "St. Neri's Rainbow Lance",
+    "Tier": "SS",
+    "Level": "100",
+    "Damage": "547.80484-612",
+    "APS": "1.751.75",
+    "DPS": "959.00847-1071",
+    "Type": "Throwing Weapon",
+    "Rarity": "Angelic",
+    "Stats": [
+        {
+            "stat": "15% Chance when Striking [Meteor Storm] Level 95",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "+[680-750]% Enhanced Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[3-4] to All Skills",
+            "class": "stat-allskills"
+        },
+        {
+            "stat": "Attack Range Increased by [15-30]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+30% Increased Attack Rating",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[7-15]% Life stolen per Hit",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[6-15]% Mana stolen per Hit",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Magic Skill Damage increased by [35-50]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+1 to Strength (Based on Level)",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+1.25 to Dexterity (Based on Level)",
+            "class": "stat-default"
+        }
+    ]
+}

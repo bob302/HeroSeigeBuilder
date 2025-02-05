@@ -1,0 +1,13 @@
+{
+    "Item": "Tablet of Awakening",
+    "Tier": "SS",
+    "Level": "75",
+    "Type": "Charm",
+    "Rarity": "Heroic",
+    "Stats": [
+        {
+            "stat": "Socketed (1-4)",
+            "class": "stat-default"
+        }
+    ]
+}

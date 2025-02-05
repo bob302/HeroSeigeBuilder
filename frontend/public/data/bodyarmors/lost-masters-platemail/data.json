@@ -1,0 +1,46 @@
+{
+    "Item": "Lost Master's Platemail",
+    "Tier": "A",
+    "Level": "57",
+    "Defense": "357.50299-416",
+    "Type": "Body Armor",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[130-160]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+5% Mana stolen per Hit",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+20 to Strength",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+10 to Dexterity",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[145-170] to Additive Fire Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+40% to Cold Resistance",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+40% to Fire Resistance",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+40% to Lightning Resistance",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Socketed (0-3)",
+            "class": "stat-default"
+        }
+    ]
+}

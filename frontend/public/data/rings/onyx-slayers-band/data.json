@@ -1,0 +1,21 @@
+{
+    "Item": "Onyx Slayer's Band",
+    "Tier": "A",
+    "Level": "54",
+    "Type": "Ring",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[10-15]% Chance for a Deadly Blow",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[25-40]% Faster Hit Recovery",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[45-70]% of Damage Returned to the Attacker",
+            "class": "stat-default"
+        }
+    ]
+}

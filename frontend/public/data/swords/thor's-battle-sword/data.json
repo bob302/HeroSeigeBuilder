@@ -8,13 +8,37 @@
     "Type": "Sword",
     "Rarity": "Satanic",
     "Stats": [
-        "+[220-280]% Enhanced Damage",
-        "+[2-4] to Arcane Skills",
-        "+25 to Energy",
-        "+15 to All Attributes",
-        "Arcane Skill Damage increased by [20-35]%",
-        "Replenish Mana 30%",
-        "+[12-20] Mana After each Kill",
-        "+75% to Arcane Resistance"
+        {
+            "stat": "+[220-280]% Enhanced Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[2-4] to Arcane Skills",
+            "class": "stat-arcane"
+        },
+        {
+            "stat": "+25 to Energy",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+15 to All Attributes",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Arcane Skill Damage increased by [20-35]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Replenish Mana 30%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[12-20] Mana After each Kill",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+75% to Arcane Resistance",
+            "class": "stat-default"
+        }
     ]
 }

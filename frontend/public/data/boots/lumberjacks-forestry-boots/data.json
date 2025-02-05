@@ -1,0 +1,30 @@
+{
+    "Item": "Lumberjack's Forestry Boots",
+    "Tier": "A",
+    "Level": "58",
+    "Defense": "68.7051-87",
+    "Type": "Boot",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[50-80]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+40% Increased Movement Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[3-8]% Chance for a Crushing Blow",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[20-30]% Increased Critical Strike Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+25 to Dexterity",
+            "class": "stat-default"
+        }
+    ]
+}

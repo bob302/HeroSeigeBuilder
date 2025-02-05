@@ -1,0 +1,17 @@
+{
+    "Item": "Ghostly Potion",
+    "Tier": "S",
+    "Level": "68",
+    "Type": "Potion",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[1-5] to [Parallel Dimension]",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "Enhances Magic Skill Damage.",
+            "class": "item-lore"
+        }
+    ]
+}

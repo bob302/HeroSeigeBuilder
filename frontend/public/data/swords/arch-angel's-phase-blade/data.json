@@ -8,12 +8,33 @@
     "Type": "Sword",
     "Rarity": "Heroic",
     "Stats": [
-        "20% Chance when Striking [Holy Hammer] Level 68",
-        "+[220-280]% Enhanced Damage",
-        "+[30-50]% Increased Attack Speed",
-        "+[1185-1320] to Attack Rating",
-        "+[15-25] to All Attributes",
-        "+[2475-2685] to Additive Arcane Damage",
-        "Arcane Skill Damage increased by [25-50]%"
+        {
+            "stat": "20% Chance when Striking [Holy Hammer] Level 68",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "+[220-280]% Enhanced Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[30-50]% Increased Attack Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[1185-1320] to Attack Rating",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[15-25] to All Attributes",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[2475-2685] to Additive Arcane Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Arcane Skill Damage increased by [25-50]%",
+            "class": "stat-default"
+        }
     ]
 }

@@ -1,0 +1,26 @@
+{
+    "Item": "Shinobi's Deadwraps",
+    "Tier": "C",
+    "Level": "26",
+    "Defense": "7.676-10",
+    "Type": "Glove",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[15-20]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[3-7]% Increased Critical Strike Chance",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+20% Chance for a Deadly Blow",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[40-60] to Attack Rating",
+            "class": "stat-default"
+        }
+    ]
+}

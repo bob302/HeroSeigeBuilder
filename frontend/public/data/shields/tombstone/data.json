@@ -1,0 +1,55 @@
+{
+    "Item": "Tombstone",
+    "Tier": "SS",
+    "Level": "100",
+    "Defense": "2036.251710-2363",
+    "Block": "80",
+    "Type": "Shield",
+    "Rarity": "Heroic",
+    "Stats": [
+        {
+            "stat": "+[350-425]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+30 to Vitality",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[40-50] to Armor",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+666 to Life",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[50-80]% Faster Hit Recovery",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Life Increased by [4-10]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[125-175]% of Damage Returned to the Attacker",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+15% of Damage Taken goes to Mana",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Physical Damage Taken Reduced by [8-15]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[5-30]% to All Resistances",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Socketed (0-4)",
+            "class": "stat-default"
+        }
+    ]
+}

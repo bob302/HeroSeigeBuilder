@@ -1,0 +1,39 @@
+{
+    "Item": "Valkyrie's Battle Shield",
+    "Tier": "A",
+    "Level": "56",
+    "Defense": "129.9099-161",
+    "Block": "40",
+    "Type": "Shield",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[90-130]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[25-40]% Increased Chance of Blocking",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+20% Faster Cast Rate",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+235 to Lightning Skill Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[20-30] to Life",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Damage Taken Reduced by 8",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[30-50]% to Lightning Resistance",
+            "class": "stat-default"
+        }
+    ]
+}

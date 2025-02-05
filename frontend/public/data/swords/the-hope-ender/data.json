@@ -8,17 +8,53 @@
     "Type": "Sword",
     "Rarity": "Unholy",
     "Stats": [
-        "10% Chance after each Kill [Gabriels Shadow] Level 1",
-        "25% Chance when Striking [Gabriels Annihilation] Level 3",
-        "1% Chance when Struck [Demon Form] Level 60",
-        "+666% Enhanced Damage",
-        "+[4-7] to All Skills",
-        "+[10-20] to [Enraged Mania]",
-        "+[15-22]% Mana stolen per Hit",
-        "+[70-90] to Strength",
-        "+[70-90] to Dexterity",
-        "Attacks can hit multiple enemies",
-        "Unbreakable",
-        "Socketed (4-6)"
+        {
+            "stat": "10% Chance after each Kill [Gabriels Shadow] Level 1",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "25% Chance when Striking [Gabriels Annihilation] Level 3",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "1% Chance when Struck [Demon Form] Level 60",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "+666% Enhanced Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[4-7] to All Skills",
+            "class": "stat-allskills"
+        },
+        {
+            "stat": "+[10-20] to [Enraged Mania]",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "+[15-22]% Mana stolen per Hit",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[70-90] to Strength",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[70-90] to Dexterity",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Attacks can hit multiple enemies",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Unbreakable",
+            "class": "stat-unbreakable"
+        },
+        {
+            "stat": "Socketed (4-6)",
+            "class": "stat-default"
+        }
     ]
 }

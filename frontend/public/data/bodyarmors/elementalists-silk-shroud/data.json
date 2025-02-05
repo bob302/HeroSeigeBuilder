@@ -1,0 +1,38 @@
+{
+    "Item": "Elementalist's Silk Shroud",
+    "Tier": "D",
+    "Level": "10",
+    "Defense": "27.0018-36",
+    "Type": "Body Armor",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[80-100]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+1 to All Skills",
+            "class": "stat-allskills"
+        },
+        {
+            "stat": "+[10-20]% Faster Cast Rate",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Replenish Mana 10%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+2 to Light Radius",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+10% to All Resistances",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Socketed (0-3)",
+            "class": "stat-default"
+        }
+    ]
+}

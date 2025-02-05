@@ -1,0 +1,25 @@
+{
+    "Item": "Insignia of the Hunter",
+    "Tier": "S",
+    "Level": "83",
+    "Type": "Amulet",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "Attack Range Increased by 5%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[3-8]% Increased Attack Rating",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[50-80] to Additive Physical Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Attack Damage increased by [4-8]%",
+            "class": "stat-default"
+        }
+    ]
+}

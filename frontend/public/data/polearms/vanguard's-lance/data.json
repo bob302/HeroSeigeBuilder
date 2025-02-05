@@ -1,0 +1,56 @@
+{
+    "Item": "Vanguard's Lance",
+    "Tier": "B",
+    "Level": "44",
+    "Damage": "71.8063-82",
+    "APS": "2.202.2",
+    "DPS": "158.50138-179",
+    "Type": "Polearm",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[160-190]% Enhanced Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+20% Chance for a Deadly Blow",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+275 to Attack Rating",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[3-8]% Life stolen per Hit",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+10 to Strength",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+15 to Dexterity",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[320-430] to Additive Cold Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Attack Damage increased by [5-10]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[6-12] Mana After each Kill",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+75 to Attack Rating (Based on Level)",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Socketed (0-2)",
+            "class": "stat-default"
+        }
+    ]
+}

@@ -8,16 +8,49 @@
     "Type": "Sword",
     "Rarity": "Unholy",
     "Stats": [
-        "15% Chance when Attacking [Gabriels Shadow] Level 1",
-        "+[575-666]% Enhanced Damage",
-        "+2 to All Skills",
-        "+[18-35]% Life stolen per Hit",
-        "+40% of target Defense ignored",
-        "+35 to Strength",
-        "+[15-30] to All Attributes",
-        "Unholy Stat",
-        "Unholy Stat",
-        "Unbreakable",
-        "Socketed (1-4)"
+        {
+            "stat": "15% Chance when Attacking [Gabriels Shadow] Level 1",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "+[575-666]% Enhanced Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+2 to All Skills",
+            "class": "stat-allskills"
+        },
+        {
+            "stat": "+[18-35]% Life stolen per Hit",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+40% of target Defense ignored",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+35 to Strength",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[15-30] to All Attributes",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Unholy Stat",
+            "class": "stat-unholy"
+        },
+        {
+            "stat": "Unholy Stat",
+            "class": "stat-unholy"
+        },
+        {
+            "stat": "Unbreakable",
+            "class": "stat-unbreakable"
+        },
+        {
+            "stat": "Socketed (1-4)",
+            "class": "stat-default"
+        }
     ]
 }

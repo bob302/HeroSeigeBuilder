@@ -1,0 +1,25 @@
+{
+    "Item": "Chaos Gemstone",
+    "Tier": "SS",
+    "Level": "100",
+    "Type": "Charm",
+    "Rarity": "Heroic",
+    "Stats": [
+        {
+            "stat": "+[1-2] to All Skills",
+            "class": "stat-allskills"
+        },
+        {
+            "stat": "Unholy Stat",
+            "class": "stat-unholy"
+        },
+        {
+            "stat": "Unholy Stat",
+            "class": "stat-unholy"
+        },
+        {
+            "stat": "Unholy Stat",
+            "class": "stat-unholy"
+        }
+    ]
+}

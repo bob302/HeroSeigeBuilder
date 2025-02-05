@@ -1,0 +1,30 @@
+{
+    "Item": "Uabel's Gloves",
+    "Tier": "B",
+    "Level": "37",
+    "Defense": "16.8011-24",
+    "Type": "Glove",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[30-45]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+10% Faster Cast Rate",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[5-10] to Energy",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+8% of Damage Taken goes to Mana",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[10-30]% Increased Magic Find",
+            "class": "stat-default"
+        }
+    ]
+}

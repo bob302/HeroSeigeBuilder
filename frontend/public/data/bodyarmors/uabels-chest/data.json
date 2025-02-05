@@ -1,0 +1,38 @@
+{
+    "Item": "Uabel's Chest",
+    "Tier": "B",
+    "Level": "40",
+    "Defense": "139.50108-171",
+    "Type": "Body Armor",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[80-90]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+1 to All Skills",
+            "class": "stat-allskills"
+        },
+        {
+            "stat": "+10% Faster Cast Rate",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Magic Skill Damage increased by [5-10]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Replenish Mana [10-15]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[15-25] to Mana",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Socketed (0-3)",
+            "class": "stat-default"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "Item": "Elixir of Death",
+    "Tier": "S",
+    "Level": "68",
+    "Type": "Potion",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[1-5] to [Berserkers Rage]",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "Enhances all Damage dealt.",
+            "class": "item-lore"
+        }
+    ]
+}

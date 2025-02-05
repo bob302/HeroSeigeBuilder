@@ -1,0 +1,26 @@
+{
+    "Item": "Nomad's Sand Bandana",
+    "Tier": "A",
+    "Level": "55",
+    "Defense": "99.9076-125",
+    "Type": "Helmet",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[80-130]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[10-15]% Increased Attack Rating",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[2-5] to All Attributes",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Attack Damage increased by [3-8]%",
+            "class": "stat-default"
+        }
+    ]
+}

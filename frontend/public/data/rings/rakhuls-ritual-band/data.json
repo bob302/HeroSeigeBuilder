@@ -1,0 +1,13 @@
+{
+    "Item": "Rakhul's Ritual Band",
+    "Tier": "SS",
+    "Level": "100",
+    "Type": "Ring",
+    "Rarity": "Heroic",
+    "Stats": [
+        {
+            "stat": "Mirrors your other ring",
+            "class": "stat-spell"
+        }
+    ]
+}

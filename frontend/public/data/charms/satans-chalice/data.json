@@ -1,0 +1,21 @@
+{
+    "Item": "Satan's Chalice",
+    "Tier": "S",
+    "Level": "62",
+    "Type": "Charm",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[1-3] to Fire Skills",
+            "class": "stat-fire"
+        },
+        {
+            "stat": "+[5-15] to All Attributes",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[15-45]% to Fire Resistance",
+            "class": "stat-default"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "Item": "Mark of Ferocity",
+    "Tier": "A",
+    "Level": "54",
+    "Type": "Ring",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "Poison Skill Damage increased by [13-20]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[35-65] to Mana",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[35-65]% to Poison Resistance",
+            "class": "stat-default"
+        }
+    ]
+}

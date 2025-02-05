@@ -1,0 +1,30 @@
+{
+    "Item": "Enigma's Riftwalkers",
+    "Tier": "C",
+    "Level": "29",
+    "Defense": "16.0010-23",
+    "Type": "Boot",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[20-40]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+20% Increased Movement Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[4-8] to Energy",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Magic Skill Damage increased by [5-15]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Magic Damage Taken Reduced by 5%",
+            "class": "stat-default"
+        }
+    ]
+}

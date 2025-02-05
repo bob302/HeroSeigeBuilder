@@ -8,16 +8,49 @@
     "Type": "Sword",
     "Rarity": "Satanic",
     "Stats": [
-        "35% Chance when Attacking [Whirlwind] Level 42",
-        "+[620-680]% Enhanced Damage",
-        "+30% Increased Attack Speed",
-        "+625 to Attack Rating",
-        "+[840-880] to Additive Physical Damage",
-        "+10% Life stolen per Hit",
-        "+25% of target Defense ignored",
-        "+60 to Strength",
-        "+25 to Vitality",
-        "Attacks can hit multiple enemies",
-        "Socketed (0-3)"
+        {
+            "stat": "35% Chance when Attacking [Whirlwind] Level 42",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "+[620-680]% Enhanced Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+30% Increased Attack Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+625 to Attack Rating",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[840-880] to Additive Physical Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+10% Life stolen per Hit",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+25% of target Defense ignored",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+60 to Strength",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+25 to Vitality",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Attacks can hit multiple enemies",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Socketed (0-3)",
+            "class": "stat-default"
+        }
     ]
 }

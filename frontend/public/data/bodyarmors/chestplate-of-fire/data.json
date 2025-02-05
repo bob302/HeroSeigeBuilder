@@ -1,0 +1,38 @@
+{
+    "Item": "Chestplate of Fire",
+    "Tier": "A",
+    "Level": "57",
+    "Defense": "357.50299-416",
+    "Type": "Body Armor",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[130-160]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+1 to All Skills",
+            "class": "stat-allskills"
+        },
+        {
+            "stat": "-[20-25]% to Enemy Fire Resistance",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[25-35] to Life",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[10-20] Mana After each Kill",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+50 to Mana (Based on Level)",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Socketed (0-3)",
+            "class": "stat-default"
+        }
+    ]
+}

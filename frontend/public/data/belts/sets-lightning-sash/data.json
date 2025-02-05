@@ -1,0 +1,50 @@
+{
+    "Item": "Set's Lightning Sash",
+    "Tier": "SS",
+    "Level": "100",
+    "Defense": "202.50165-240",
+    "Type": "Belt",
+    "Rarity": "Heroic",
+    "Stats": [
+        {
+            "stat": "4% Chance when Attacking [Static Shock] Level 24",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "+[120-140]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[2-4] to Lightning Skills",
+            "class": "stat-lightning"
+        },
+        {
+            "stat": "+30 to Strength",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+30 to Dexterity",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Lightning Skill Damage increased by [15-25]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Replenish Mana [25-40]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[10-15]% Lightning Damage Absorbed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+10% to Maximum Lightning Resist",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Belt Slots: 5",
+            "class": "stat-default"
+        }
+    ]
+}

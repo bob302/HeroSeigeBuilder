@@ -1,0 +1,48 @@
+{
+    "Item": "Darkness",
+    "Tier": "C",
+    "Level": "30",
+    "Damage": "40.8034-48",
+    "APS": "1.791.79",
+    "DPS": "73.5061-86",
+    "Type": "Dagger",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[110-140]% Enhanced Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+20% Increased Attack Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+20% Increased Critical Strike Chance",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+30% Chance for a Crushing Blow",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[75-100] to Attack Rating",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+30% Increased Critical Strike Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+10 to Strength",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+15 to Dexterity",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Socketed (0-2)",
+            "class": "stat-default"
+        }
+    ]
+}

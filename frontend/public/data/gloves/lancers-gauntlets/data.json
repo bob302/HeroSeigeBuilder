@@ -1,0 +1,30 @@
+{
+    "Item": "Lancers Gauntlets",
+    "Tier": "A",
+    "Level": "52",
+    "Defense": "36.0029-44",
+    "Type": "Glove",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[60-80]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[2-4] to [Spiked Shields]",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "+[15-20] to Armor",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[35-50]% of Damage Returned to the Attacker",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+15% to All Resistances",
+            "class": "stat-default"
+        }
+    ]
+}

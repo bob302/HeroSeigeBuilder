@@ -1,0 +1,34 @@
+{
+    "Item": "Solar Prophet's Crown",
+    "Tier": "A",
+    "Level": "60",
+    "Defense": "125.0094-157",
+    "Type": "Helmet",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[80-130]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[1-2] to Fire Skills",
+            "class": "stat-fire"
+        },
+        {
+            "stat": "+[10-15] to Energy",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+20 to Mana",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[6-12] Mana After each Kill",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[1-5]% Fire Damage Absorbed",
+            "class": "stat-default"
+        }
+    ]
+}

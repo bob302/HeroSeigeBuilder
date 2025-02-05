@@ -1,0 +1,13 @@
+{
+    "Item": "Heart of Agony",
+    "Tier": "S",
+    "Level": "64",
+    "Type": "Charm",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[1-3] to Random Skill",
+            "class": "stat-spell"
+        }
+    ]
+}

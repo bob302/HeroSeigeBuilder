@@ -1,0 +1,42 @@
+{
+    "Item": "Heavy Duty",
+    "Tier": "C",
+    "Level": "26",
+    "Defense": "19.6012-28",
+    "Type": "Belt",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[50-70]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+15% Increased Movement Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+10 to Strength",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+10 to Vitality",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Replenish Life 20%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[25-50] to Life",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[20-30]% Faster Hit Recovery",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Belt Slots: 3",
+            "class": "stat-default"
+        }
+    ]
+}

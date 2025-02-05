@@ -1,0 +1,25 @@
+{
+    "Item": "Arcanis",
+    "Tier": "SS",
+    "Level": "100",
+    "Type": "Ring",
+    "Rarity": "Heroic",
+    "Stats": [
+        {
+            "stat": "+[3-5] to Arcane Skills",
+            "class": "stat-arcane"
+        },
+        {
+            "stat": "Arcane Skill Damage increased by [25-40]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "-[15-25]% to Enemy Arcane Resistance",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[5-10]% Arcane Damage Absorbed",
+            "class": "stat-default"
+        }
+    ]
+}

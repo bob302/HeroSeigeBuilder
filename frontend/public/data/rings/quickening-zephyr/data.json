@@ -1,0 +1,21 @@
+{
+    "Item": "Quickening Zephyr",
+    "Tier": "SS",
+    "Level": "98",
+    "Type": "Ring",
+    "Rarity": "Heroic",
+    "Stats": [
+        {
+            "stat": "+30% Increased Movement Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[40-50]% Increased Attack Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[25-35] to Dexterity",
+            "class": "stat-default"
+        }
+    ]
+}

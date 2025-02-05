@@ -1,0 +1,17 @@
+{
+    "Item": "Surströmming",
+    "Tier": "S",
+    "Level": "68",
+    "Type": "Potion",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[1-5] to [Taste of Heaven]",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "Gain Increased Life Replenish and Mana Replenish.",
+            "class": "item-lore"
+        }
+    ]
+}

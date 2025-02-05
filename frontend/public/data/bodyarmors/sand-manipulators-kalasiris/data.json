@@ -1,0 +1,38 @@
+{
+    "Item": "Sand Manipulator's Kalasiris",
+    "Tier": "A",
+    "Level": "57",
+    "Defense": "409.00338-480",
+    "Type": "Body Armor",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[160-200]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+1 to All Skills",
+            "class": "stat-allskills"
+        },
+        {
+            "stat": "Physical Damage Taken Reduced by [5-10]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+10% to All Resistances",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+45% to Arcane Resistance",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[10-20]% Increased Magic Find",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Socketed (0-3)",
+            "class": "stat-default"
+        }
+    ]
+}

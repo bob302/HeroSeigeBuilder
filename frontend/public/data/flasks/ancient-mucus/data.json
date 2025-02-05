@@ -1,0 +1,36 @@
+{
+    "Item": "Ancient Mucus",
+    "Tier": "C",
+    "Level": "26",
+    "Damage": "17.5015-20",
+    "APS": "1.251.25",
+    "DPS": "22.0019-25",
+    "Type": "Flask",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+8 to Energy",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+5 to Vitality",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[175-250] to Poison Skill Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Poison Skill Damage increased by [10-15]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Replenish Mana 25%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[10-15] Mana After each Kill",
+            "class": "stat-default"
+        }
+    ]
+}

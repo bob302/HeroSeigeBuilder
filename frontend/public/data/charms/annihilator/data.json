@@ -1,0 +1,25 @@
+{
+    "Item": "Annihilator",
+    "Tier": "S",
+    "Level": "72",
+    "Type": "Charm",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+1 to All Skills",
+            "class": "stat-allskills"
+        },
+        {
+            "stat": "+[20-35] to All Attributes",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[25-40]% to All Resistances",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[5-10]% Increased Experience Gain",
+            "class": "stat-default"
+        }
+    ]
+}

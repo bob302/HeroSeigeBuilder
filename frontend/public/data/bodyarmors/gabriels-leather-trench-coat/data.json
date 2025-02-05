@@ -1,0 +1,38 @@
+{
+    "Item": "Gabriel's Leather Trench Coat",
+    "Tier": "A",
+    "Level": "57",
+    "Defense": "357.50299-416",
+    "Type": "Body Armor",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[130-160]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+10% Increased Attack Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+3% Mana stolen per Hit",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Attack Damage increased by [5-15]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[15-25]% Faster Hit Recovery",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Physical Damage Taken Reduced by [5-12]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Socketed (0-3)",
+            "class": "stat-default"
+        }
+    ]
+}

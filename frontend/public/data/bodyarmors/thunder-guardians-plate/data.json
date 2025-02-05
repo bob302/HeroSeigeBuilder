@@ -1,0 +1,46 @@
+{
+    "Item": "Thunder Guardian's Plate",
+    "Tier": "SS",
+    "Level": "98",
+    "Defense": "1075.00875-1275",
+    "Type": "Body Armor",
+    "Rarity": "Heroic",
+    "Stats": [
+        {
+            "stat": "15% Chance when Striking [Symphony of Thunder] Level 29",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "+[250-325]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[6-8] to Lightning Skills",
+            "class": "stat-lightning"
+        },
+        {
+            "stat": "+30 to All Attributes",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Lightning Skill Damage increased by [25-40]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "-[20-25]% to Enemy Lightning Resistance",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[35-40]% to All Resistances",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[50-75]% to Lightning Resistance",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Socketed (2-4)",
+            "class": "stat-default"
+        }
+    ]
+}

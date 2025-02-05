@@ -8,13 +8,37 @@
     "Type": "Sword",
     "Rarity": "Satanic",
     "Stats": [
-        "15% Chance when Striking [Empires Slash] Level 44",
-        "+[250-300]% Enhanced Damage",
-        "+[10-30]% Increased Movement Speed",
-        "+[40-70]% Increased Attack Speed",
-        "+25% Increased Attack Rating",
-        "+[540-665] to Attack Rating",
-        "+20 to Vitality",
-        "Attacks can hit multiple enemies"
+        {
+            "stat": "15% Chance when Striking [Empires Slash] Level 44",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "+[250-300]% Enhanced Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[10-30]% Increased Movement Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[40-70]% Increased Attack Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+25% Increased Attack Rating",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[540-665] to Attack Rating",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+20 to Vitality",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Attacks can hit multiple enemies",
+            "class": "stat-default"
+        }
     ]
 }

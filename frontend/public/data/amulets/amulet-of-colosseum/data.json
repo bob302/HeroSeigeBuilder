@@ -1,0 +1,21 @@
+{
+    "Item": "Amulet of Colosseum",
+    "Tier": "SS",
+    "Level": "100",
+    "Type": "Amulet",
+    "Rarity": "Heroic",
+    "Stats": [
+        {
+            "stat": "+[2-4] to All Skills",
+            "class": "stat-allskills"
+        },
+        {
+            "stat": "+[40-80]% Faster Cast Rate",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+15 to Energy",
+            "class": "stat-default"
+        }
+    ]
+}

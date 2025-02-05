@@ -1,0 +1,29 @@
+{
+    "Item": "Rift Warrior's Skull",
+    "Tier": "S",
+    "Level": "78",
+    "Type": "Amulet",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[11-15]% Mana stolen per Hit",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+20 to Energy",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+25 to Intelligence",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Replenish Mana 25%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[10-15] Mana After each Kill",
+            "class": "stat-default"
+        }
+    ]
+}

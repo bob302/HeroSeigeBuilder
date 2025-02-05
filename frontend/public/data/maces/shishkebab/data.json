@@ -1,0 +1,64 @@
+{
+    "Item": "Shishkebab",
+    "Tier": "SS",
+    "Level": "100",
+    "Damage": "840.00680-1000",
+    "APS": "1.141.14",
+    "DPS": "958.00776-1140",
+    "Type": "Mace",
+    "Rarity": "Heroic",
+    "Stats": [
+        {
+            "stat": "22% Chance when Striking [Fresh Cut] Level 1",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "5% Chance when Attacking [Butchers Hook] Level 38",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "+[700-900]% Enhanced Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[2-3] to All Skills",
+            "class": "stat-allskills"
+        },
+        {
+            "stat": "+[3-6] to Fire Skills",
+            "class": "stat-fire"
+        },
+        {
+            "stat": "+30% Increased Movement Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[8-15]% Life stolen per Hit",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Extra Damage to Burning Monsters [25-40]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[35-60] to Strength",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[5000-8500] to Additive Fire Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+1500 to Attack Rating (Based on Level)",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Attacks can hit multiple enemies",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Socketed (3-6)",
+            "class": "stat-default"
+        }
+    ]
+}

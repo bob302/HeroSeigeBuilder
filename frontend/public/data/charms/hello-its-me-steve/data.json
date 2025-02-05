@@ -1,0 +1,13 @@
+{
+    "Item": "Hello its me, Steve!",
+    "Tier": "S",
+    "Level": "56",
+    "Type": "Charm",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[12-25] to All Attributes",
+            "class": "stat-default"
+        }
+    ]
+}

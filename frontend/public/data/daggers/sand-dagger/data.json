@@ -1,0 +1,44 @@
+{
+    "Item": "Sand Dagger",
+    "Tier": "B",
+    "Level": "41",
+    "Damage": "66.6058-76",
+    "APS": "1.451.45",
+    "DPS": "97.0084-110",
+    "Type": "Dagger",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[140-170]% Enhanced Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+1 to All Skills",
+            "class": "stat-allskills"
+        },
+        {
+            "stat": "+[140-160] to Attack Rating",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[3-6]% Life stolen per Hit",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+20% of target Defense ignored",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+20% Chance to Open Wounds",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Attack Damage increased by [10-15]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[8-15] Life After each Kill",
+            "class": "stat-default"
+        }
+    ]
+}

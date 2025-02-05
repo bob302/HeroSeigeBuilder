@@ -1,0 +1,26 @@
+{
+    "Item": "Thor's Battle Gloves",
+    "Tier": "A",
+    "Level": "52",
+    "Defense": "34.5027-42",
+    "Type": "Glove",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[50-75]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[1-3] to [Holy Aura]",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "+[10-20]% Faster Cast Rate",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+125 to Mana",
+            "class": "stat-default"
+        }
+    ]
+}

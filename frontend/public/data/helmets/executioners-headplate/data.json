@@ -1,0 +1,26 @@
+{
+    "Item": "Executioner's Headplate",
+    "Tier": "C",
+    "Level": "28",
+    "Defense": "21.8016-28",
+    "Type": "Helmet",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[30-40]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+2 to Physical Skills",
+            "class": "stat-physical"
+        },
+        {
+            "stat": "+[15-30]% Increased Attack Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[30-75] to Attack Rating",
+            "class": "stat-default"
+        }
+    ]
+}

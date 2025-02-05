@@ -1,0 +1,17 @@
+{
+    "Item": "Caffeinated Coffee Container",
+    "Tier": "S",
+    "Level": "68",
+    "Type": "Potion",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[1-5] to [The Fragrance of Dark Coffee]",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "Deal Increased Damage to Burning targets.",
+            "class": "item-lore"
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+{
+    "Item": "Pagan God's Blasphemy",
+    "Tier": "SS",
+    "Level": "98",
+    "Damage": "37.0032-42",
+    "APS": "1.001",
+    "DPS": "37.0032-42",
+    "Type": "Cane",
+    "Rarity": "Heroic",
+    "Stats": [
+        {
+            "stat": "1% Chance when Struck [Despair] Level 666",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "30% Chance when Casting [Judgement] Level 333",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "+[2-4] to All Skills",
+            "class": "stat-allskills"
+        },
+        {
+            "stat": "+40% Faster Cast Rate",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[4-8] Mana per second",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[20-40] to All Attributes",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Magic Skill Damage increased by [20-50]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[4-8] to Light Radius",
+            "class": "stat-default"
+        }
+    ]
+}

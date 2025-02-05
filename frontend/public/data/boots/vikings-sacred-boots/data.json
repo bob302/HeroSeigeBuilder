@@ -1,0 +1,30 @@
+{
+    "Item": "Viking's Sacred Boots",
+    "Tier": "A",
+    "Level": "58",
+    "Defense": "68.7051-87",
+    "Type": "Boot",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[50-80]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[25-40]% Increased Movement Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+10% Chance for a Deadly Blow",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+25 to Strength",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+15 to Dexterity",
+            "class": "stat-default"
+        }
+    ]
+}

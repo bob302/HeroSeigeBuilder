@@ -8,14 +8,41 @@
     "Type": "Sword",
     "Rarity": "Satanic",
     "Stats": [
-        "+[520-580]% Enhanced Damage",
-        "+[30-60]% Increased Attack Speed",
-        "+20% Chance for a Deadly Blow",
-        "+1225 to Attack Rating",
-        "+25% Chance to Open Wounds",
-        "+45 to Strength",
-        "+25 to Dexterity",
-        "Attack Damage increased by [20-30]%",
-        "Attacks can hit multiple enemies"
+        {
+            "stat": "+[520-580]% Enhanced Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[30-60]% Increased Attack Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+20% Chance for a Deadly Blow",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+1225 to Attack Rating",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+25% Chance to Open Wounds",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+45 to Strength",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+25 to Dexterity",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Attack Damage increased by [20-30]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Attacks can hit multiple enemies",
+            "class": "stat-default"
+        }
     ]
 }

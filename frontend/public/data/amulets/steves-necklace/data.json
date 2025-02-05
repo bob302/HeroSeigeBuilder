@@ -1,0 +1,25 @@
+{
+    "Item": "Steve's Necklace",
+    "Tier": "S",
+    "Level": "86",
+    "Type": "Amulet",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[5-15] to All Attributes",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Physical Damage Taken Reduced by [8-12]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Magic Damage Taken Reduced by [8-12]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+15% to All Resistances",
+            "class": "stat-default"
+        }
+    ]
+}

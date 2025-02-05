@@ -1,0 +1,36 @@
+{
+    "Item": "Talons of Wisdom",
+    "Tier": "C",
+    "Level": "24",
+    "Damage": "47.2039-56",
+    "APS": "1.251.25",
+    "DPS": "59.0048-70",
+    "Type": "Claw",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[140-180]% Enhanced Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+30% Faster Cast Rate",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[7-10] to Energy",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+6 to All Attributes",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Replenish Mana [15-25]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[25-30] to Mana",
+            "class": "stat-default"
+        }
+    ]
+}

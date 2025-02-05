@@ -1,0 +1,21 @@
+{
+    "Item": "Damien's Soulstone",
+    "Tier": "S",
+    "Level": "87",
+    "Type": "Amulet",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+1 to All Skills",
+            "class": "stat-allskills"
+        },
+        {
+            "stat": "Magic Skill Damage increased by [6-15]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+10% to All Resistances",
+            "class": "stat-default"
+        }
+    ]
+}

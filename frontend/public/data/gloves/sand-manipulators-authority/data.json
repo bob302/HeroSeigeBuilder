@@ -1,0 +1,30 @@
+{
+    "Item": "Sand Manipulator's Authority",
+    "Tier": "A",
+    "Level": "52",
+    "Defense": "28.5024-34",
+    "Type": "Glove",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[30-40]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[1-3] to [Dissipation]",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "+10 to Intelligence",
+            "class": "stat-default"
+        },
+        {
+            "stat": "-[5-15]% to Enemy Arcane Resistance",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Replenish Mana 25%",
+            "class": "stat-default"
+        }
+    ]
+}

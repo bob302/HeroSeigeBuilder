@@ -1,0 +1,33 @@
+{
+    "Item": "Eye of Horus",
+    "Tier": "A",
+    "Level": "65",
+    "Type": "Amulet",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+15 to Energy",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+15 to Vitality",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[8-12] Life After each Kill",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[8-12] Mana After each Kill",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Life Increased by [2-4]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Mana Increased by [2-4]%",
+            "class": "stat-default"
+        }
+    ]
+}

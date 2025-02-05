@@ -8,13 +8,37 @@
     "Type": "Sword",
     "Rarity": "Satanic",
     "Stats": [
-        "+[550-600]% Enhanced Damage",
-        "+[25-30] to Vitality",
-        "+[20-25] to Armor",
-        "+[1340-1560] to Additive Cold Damage",
-        "+50% of Damage Returned to the Attacker",
-        "Physical Damage Taken Reduced by 15%",
-        "Attacks can hit multiple enemies",
-        "Socketed (2-4)"
+        {
+            "stat": "+[550-600]% Enhanced Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[25-30] to Vitality",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[20-25] to Armor",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[1340-1560] to Additive Cold Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+50% of Damage Returned to the Attacker",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Physical Damage Taken Reduced by 15%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Attacks can hit multiple enemies",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Socketed (2-4)",
+            "class": "stat-default"
+        }
     ]
 }

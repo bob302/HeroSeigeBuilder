@@ -1,0 +1,34 @@
+{
+    "Item": "Redneck's Working Boots",
+    "Tier": "A",
+    "Level": "54",
+    "Defense": "68.7051-87",
+    "Type": "Boot",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[50-80]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+30% Increased Movement Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+15 to Dexterity",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Attack Damage increased by [12-20]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Physical Damage Taken Reduced by [5-10]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Magic Damage Taken Reduced by [5-10]%",
+            "class": "stat-default"
+        }
+    ]
+}

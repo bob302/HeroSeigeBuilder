@@ -1,0 +1,40 @@
+{
+    "Item": "Steve's Wand of Fortune",
+    "Tier": "SS",
+    "Level": "88",
+    "Damage": "27.5024-31",
+    "APS": "1.801.8",
+    "DPS": "50.0044-56",
+    "Type": "Wand",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "15% Chance when Casting [Steves Itchy Sack] Level [70-80]",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "+4 to All Skills",
+            "class": "stat-allskills"
+        },
+        {
+            "stat": "+[20-35] to Energy",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[20-35] to Intelligence",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[20-35] to Vitality",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Magic Skill Damage increased by [35-50]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Socketed (1-2)",
+            "class": "stat-default"
+        }
+    ]
+}

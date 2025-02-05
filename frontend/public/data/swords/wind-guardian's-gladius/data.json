@@ -8,12 +8,33 @@
     "Type": "Sword",
     "Rarity": "Satanic",
     "Stats": [
-        "5% Chance when Struck [Sand Guardians] Level 15",
-        "+[240-280]% Enhanced Damage",
-        "+[30-50]% Increased Attack Speed",
-        "+[285-320] to Attack Rating",
-        "+20% Chance to Open Wounds",
-        "+[3-5] to All Attributes",
-        "+[530-645] to Additive Lightning Damage"
+        {
+            "stat": "5% Chance when Struck [Sand Guardians] Level 15",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "+[240-280]% Enhanced Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[30-50]% Increased Attack Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[285-320] to Attack Rating",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+20% Chance to Open Wounds",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[3-5] to All Attributes",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[530-645] to Additive Lightning Damage",
+            "class": "stat-default"
+        }
     ]
 }

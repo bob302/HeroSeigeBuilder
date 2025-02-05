@@ -8,13 +8,37 @@
     "Type": "Sword",
     "Rarity": "Angelic",
     "Stats": [
-        "15% Chance when Striking [Gabriels Glory] Level 120",
-        "+[810-920]% Enhanced Damage",
-        "+[3-4] to All Skills",
-        "+[45-65]% Increased Attack Speed",
-        "+50 to All Attributes",
-        "+[15000-20000] to Additive Arcane Damage",
-        "+5 to Light Radius",
-        "Socketed (2-4)"
+        {
+            "stat": "15% Chance when Striking [Gabriels Glory] Level 120",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "+[810-920]% Enhanced Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[3-4] to All Skills",
+            "class": "stat-allskills"
+        },
+        {
+            "stat": "+[45-65]% Increased Attack Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+50 to All Attributes",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[15000-20000] to Additive Arcane Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+5 to Light Radius",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Socketed (2-4)",
+            "class": "stat-default"
+        }
     ]
 }

@@ -1,0 +1,25 @@
+{
+    "Item": "Tal's Deathskull",
+    "Tier": "S",
+    "Level": "92",
+    "Type": "Charm",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "Replenish Life [6-12]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Replenish Mana [6-12]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[35-50] to Life",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[35-50] to Mana",
+            "class": "stat-default"
+        }
+    ]
+}

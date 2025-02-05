@@ -1,0 +1,38 @@
+{
+    "Item": "Combat Duty Belt",
+    "Tier": "A",
+    "Level": "68",
+    "Defense": "69.0054-84",
+    "Type": "Belt",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[50-75]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+5% Chance for a Crushing Blow",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[15-20]% Increased Attack Rating",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[50-60] to Additive Physical Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+15 to Strength",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+15 to Armor",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Belt Slots: 4",
+            "class": "stat-default"
+        }
+    ]
+}

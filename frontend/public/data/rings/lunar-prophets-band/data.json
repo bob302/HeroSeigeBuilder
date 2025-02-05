@@ -1,0 +1,25 @@
+{
+    "Item": "Lunar Prophet's Band",
+    "Tier": "S",
+    "Level": "82",
+    "Type": "Ring",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+1 to Cold Skills",
+            "class": "stat-cold"
+        },
+        {
+            "stat": "Cold Skill Damage increased by [5-10]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Mana Increased by [2-4]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[15-25]% to Cold Resistance",
+            "class": "stat-default"
+        }
+    ]
+}

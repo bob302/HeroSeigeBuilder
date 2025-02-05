@@ -1,0 +1,34 @@
+{
+    "Item": "Necrocaller's Grips",
+    "Tier": "SS",
+    "Level": "100",
+    "Defense": "32.0026-38",
+    "Type": "Glove",
+    "Rarity": "Heroic",
+    "Stats": [
+        {
+            "stat": "+[2-6] to Summon Skills",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+20% Increased Summon Attack Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Summon Damage Increased by [15-40]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[20-30] to Energy",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[10-20] to All Attributes",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Mana Increased by 10%",
+            "class": "stat-default"
+        }
+    ]
+}

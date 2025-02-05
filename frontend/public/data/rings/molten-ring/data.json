@@ -1,0 +1,25 @@
+{
+    "Item": "Molten Ring",
+    "Tier": "S",
+    "Level": "88",
+    "Type": "Ring",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[240-275] to Additive Fire Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[30-45] to Life",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Life Increased by [3-5]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[15-25]% to Fire Resistance",
+            "class": "stat-default"
+        }
+    ]
+}

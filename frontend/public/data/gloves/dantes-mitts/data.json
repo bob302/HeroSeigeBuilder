@@ -1,0 +1,30 @@
+{
+    "Item": "Dante's Mitts",
+    "Tier": "A",
+    "Level": "52",
+    "Defense": "31.8026-39",
+    "Type": "Glove",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[40-60]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+10% Chance for a Deadly Blow",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+15 to Strength",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Attack Damage increased by [7-15]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[5-10] Life After each Kill",
+            "class": "stat-default"
+        }
+    ]
+}

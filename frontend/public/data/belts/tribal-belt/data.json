@@ -1,0 +1,34 @@
+{
+    "Item": "Tribal Belt",
+    "Tier": "A",
+    "Level": "50",
+    "Defense": "69.0054-84",
+    "Type": "Belt",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[50-75]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+20% Increased Attack Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+15% Chance for a Deadly Blow",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[75-100] to Attack Rating",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+10% to All Resistances",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Belt Slots: 4",
+            "class": "stat-default"
+        }
+    ]
+}

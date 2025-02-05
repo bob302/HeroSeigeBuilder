@@ -1,0 +1,34 @@
+{
+    "Item": "Veil of Mystery",
+    "Tier": "C",
+    "Level": "26",
+    "Defense": "33.0021-45",
+    "Type": "Helmet",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[75-125]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+20% Faster Cast Rate",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+15 to Energy",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+10 to Vitality",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+12 Life After each Kill",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Socketed (0-2)",
+            "class": "stat-default"
+        }
+    ]
+}

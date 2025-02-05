@@ -1,0 +1,38 @@
+{
+    "Item": "Pitfighter's Razor Belt",
+    "Tier": "C",
+    "Level": "23",
+    "Defense": "19.6012-28",
+    "Type": "Belt",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[50-70]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+25% Chance for a Deadly Blow",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+5% Increased Attack Rating",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[40-60] to Attack Rating",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+15 to Strength",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+15 to Dexterity",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Belt Slots: 3",
+            "class": "stat-default"
+        }
+    ]
+}

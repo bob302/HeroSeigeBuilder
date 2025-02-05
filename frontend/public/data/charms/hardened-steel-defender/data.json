@@ -1,0 +1,17 @@
+{
+    "Item": "Hardened Steel Defender",
+    "Tier": "S",
+    "Level": "81",
+    "Type": "Charm",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[25-40] to Armor",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Life Increased by [10-15]%",
+            "class": "stat-default"
+        }
+    ]
+}

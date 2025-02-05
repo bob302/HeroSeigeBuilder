@@ -1,0 +1,60 @@
+{
+    "Item": "Spiritus",
+    "Tier": "S",
+    "Level": "82",
+    "Damage": "171.60156-188",
+    "APS": "2.402.18-2.62",
+    "DPS": "416.00341-491",
+    "Type": "Mace",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "3% Chance when Striking [Flash Heal] Level 31",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "+[225-260]% Enhanced Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[1-2] to All Skills",
+            "class": "stat-allskills"
+        },
+        {
+            "stat": "+[25-50]% Increased Attack Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+10% Increased Critical Strike Chance",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+25% Chance for a Deadly Blow",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+15% Chance for a Crushing Blow",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[10-14]% Mana stolen per Hit",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[15-30] to Strength",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+22 to Dexterity",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[1250-1350] to Additive Arcane Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Socketed (4)",
+            "class": "stat-default"
+        }
+    ]
+}

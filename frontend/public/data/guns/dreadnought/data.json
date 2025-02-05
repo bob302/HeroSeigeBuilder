@@ -1,0 +1,32 @@
+{
+    "Item": "Dreadnought",
+    "Tier": "SS",
+    "Level": "92",
+    "Damage": "616.80572-663",
+    "APS": "1.001",
+    "DPS": "617.50572-663",
+    "Type": "Gun",
+    "Rarity": "Heroic",
+    "Stats": [
+        {
+            "stat": "+[580-620]% Enhanced Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Attack Range Increased by [10-20]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[3-6]% Increased Attack Rating",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+385 to Attack Rating",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Socketed (1)",
+            "class": "stat-default"
+        }
+    ]
+}

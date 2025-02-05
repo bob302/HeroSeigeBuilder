@@ -1,0 +1,38 @@
+{
+    "Item": "Molten Boots",
+    "Tier": "B",
+    "Level": "41",
+    "Defense": "35.6027-45",
+    "Type": "Boot",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[50-70]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+1 to Fire Skills",
+            "class": "stat-fire"
+        },
+        {
+            "stat": "+20% Increased Movement Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Fire Skill Damage increased by [12-18]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+25% Faster Hit Recovery",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[5-8]% Fire Damage Absorbed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[40-50]% to Fire Resistance",
+            "class": "stat-default"
+        }
+    ]
+}

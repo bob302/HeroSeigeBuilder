@@ -1,0 +1,29 @@
+{
+    "Item": "Scout's Medal of Honor",
+    "Tier": "A",
+    "Level": "60",
+    "Type": "Amulet",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+20% Increased Movement Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[4-8]% Increased Attack Rating",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+15 to Strength",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+10 to Dexterity",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+4 to All Attributes",
+            "class": "stat-default"
+        }
+    ]
+}

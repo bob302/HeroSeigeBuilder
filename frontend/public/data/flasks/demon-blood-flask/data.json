@@ -1,0 +1,32 @@
+{
+    "Item": "Demon Blood Flask",
+    "Tier": "B",
+    "Level": "44",
+    "Damage": "29.5026-33",
+    "APS": "1.251.25",
+    "DPS": "37.5033-42",
+    "Type": "Flask",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[1-2] to All Skills",
+            "class": "stat-allskills"
+        },
+        {
+            "stat": "+40% Faster Cast Rate",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Replenish Mana 25%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[150-200] to Mana",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+15 Mana After each Kill",
+            "class": "stat-default"
+        }
+    ]
+}

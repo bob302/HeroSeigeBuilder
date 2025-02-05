@@ -8,17 +8,53 @@
     "Type": "Sword",
     "Rarity": "Unholy",
     "Stats": [
-        "[10-15]% Chance when Casting [Supernova] Level [75-85]",
-        "+[575-625]% Enhanced Damage",
-        "+2 to All Skills",
-        "+8 to Fire Skills",
-        "+[40-55]% Faster Cast Rate",
-        "+[50-75]% Increased Attack Speed",
-        "Extra Damage to Burning Monsters [35-50]%",
-        "+[20-30] to All Attributes",
-        "+[10000-15000] to Additive Fire Damage",
-        "Fire Skill Damage increased by 35%",
-        "Unbreakable",
-        "Socketed (4)"
+        {
+            "stat": "[10-15]% Chance when Casting [Supernova] Level [75-85]",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "+[575-625]% Enhanced Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+2 to All Skills",
+            "class": "stat-allskills"
+        },
+        {
+            "stat": "+8 to Fire Skills",
+            "class": "stat-fire"
+        },
+        {
+            "stat": "+[40-55]% Faster Cast Rate",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[50-75]% Increased Attack Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Extra Damage to Burning Monsters [35-50]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[20-30] to All Attributes",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[10000-15000] to Additive Fire Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Fire Skill Damage increased by 35%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Unbreakable",
+            "class": "stat-unbreakable"
+        },
+        {
+            "stat": "Socketed (4)",
+            "class": "stat-default"
+        }
     ]
 }

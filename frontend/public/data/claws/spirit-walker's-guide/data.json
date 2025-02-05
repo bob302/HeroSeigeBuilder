@@ -1,0 +1,36 @@
+{
+    "Item": "Spirit Walker's Guide",
+    "Tier": "B",
+    "Level": "37",
+    "Damage": "78.4068-90",
+    "APS": "1.251.25",
+    "DPS": "98.5084-113",
+    "Type": "Claw",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[180-220]% Enhanced Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+1 to All Skills",
+            "class": "stat-allskills"
+        },
+        {
+            "stat": "+20% Faster Cast Rate",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Arcane Skill Damage increased by [12-25]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Replenish Mana 10%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+35 to Mana",
+            "class": "stat-default"
+        }
+    ]
+}

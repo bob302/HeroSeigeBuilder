@@ -1,0 +1,34 @@
+{
+    "Item": "Flame Diviner's Cord",
+    "Tier": "S",
+    "Level": "90",
+    "Defense": "97.2076-119",
+    "Type": "Belt",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "5% Chance when Struck [Hydra] Level 34",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "+[45-75]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Fire Skill Damage increased by [3-8]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[20-40]% to Fire Resistance",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[10-25]% Increased Magic Find",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Belt Slots: 5",
+            "class": "stat-default"
+        }
+    ]
+}

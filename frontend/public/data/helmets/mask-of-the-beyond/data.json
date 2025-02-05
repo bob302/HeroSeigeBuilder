@@ -1,0 +1,42 @@
+{
+    "Item": "Mask of the Beyond",
+    "Tier": "S",
+    "Level": "95",
+    "Defense": "276.50225-328",
+    "Type": "Helmet",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[100-135]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[5-10]% Chance for a Deadly Blow",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[5-10]% Life stolen per Hit",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[5-10]% Mana stolen per Hit",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[15-20] to Strength",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[15-20] to Dexterity",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[35-50] Life After each Kill",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+175% Enhanced Damage (Based on Level)",
+            "class": "stat-default"
+        }
+    ]
+}

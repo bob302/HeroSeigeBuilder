@@ -1,0 +1,35 @@
+{
+    "Item": "Novice's Tower",
+    "Tier": "S",
+    "Level": "92",
+    "Defense": "246.00192-300",
+    "Block": "65",
+    "Type": "Shield",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[140-200]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+45 to All Attributes",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+75% Faster Hit Recovery",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+25% Magic Find (Based on Level)",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+30% to All Resistances",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[10-20]% Increased Magic Find",
+            "class": "stat-default"
+        }
+    ]
+}

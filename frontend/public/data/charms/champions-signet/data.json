@@ -1,0 +1,13 @@
+{
+    "Item": "Champion's Signet",
+    "Tier": "S",
+    "Level": "73",
+    "Type": "Charm",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[1-3] to Random Skill",
+            "class": "stat-spell"
+        }
+    ]
+}

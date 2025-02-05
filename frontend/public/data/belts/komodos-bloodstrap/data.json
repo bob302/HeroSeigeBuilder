@@ -1,0 +1,46 @@
+{
+    "Item": "Komodos Bloodstrap",
+    "Tier": "SS",
+    "Level": "100",
+    "Defense": "90.8073-109",
+    "Type": "Belt",
+    "Rarity": "Heroic",
+    "Stats": [
+        {
+            "stat": "[5-10]% Chance after Blocking [Defunct Surgeon] Level [20-30]",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "+[40-60]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[1-2] to All Skills",
+            "class": "stat-allskills"
+        },
+        {
+            "stat": "+[10-22] to [Devout Doctor]",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "Replenish Life 15%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Life Increased by [6-10]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Physical Damage Taken Reduced by [8-14]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+410 to Life (Based on Level)",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Belt Slots: 5",
+            "class": "stat-default"
+        }
+    ]
+}

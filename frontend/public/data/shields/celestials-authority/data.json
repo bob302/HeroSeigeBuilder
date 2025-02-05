@@ -1,0 +1,43 @@
+{
+    "Item": "Celestial's Authority",
+    "Tier": "SS",
+    "Level": "95",
+    "Defense": "572.50455-690",
+    "Block": "50",
+    "Type": "Shield",
+    "Rarity": "Heroic",
+    "Stats": [
+        {
+            "stat": "+[250-360]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+1 to [Celestial Might]",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "Arcane Skill Damage increased by [30-50]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "-[50-60]% to Enemy Arcane Resistance",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[20-40]% to All Resistances",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+75% to Arcane Resistance",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+10% to Maximum Arcane Resist",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Socketed (4)",
+            "class": "stat-default"
+        }
+    ]
+}

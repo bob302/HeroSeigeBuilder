@@ -8,15 +8,45 @@
     "Type": "Chainsaw",
     "Rarity": "Satanic",
     "Stats": [
-        "+[500-550]% Enhanced Damage",
-        "+[2-4] to All Skills",
-        "+[3-6] to [Chainsaw Massacre]",
-        "+30% Chance for a Crushing Blow",
-        "+[1550-1700] to Additive Physical Damage",
-        "Slows target by 20%",
-        "Magic Skill Damage increased by [10-20]%",
-        "+100 to Strength (Based on Level)",
-        "Attacks can hit multiple enemies",
-        "Socketed (2-4)"
+        {
+            "stat": "+[500-550]% Enhanced Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[2-4] to All Skills",
+            "class": "stat-allskills"
+        },
+        {
+            "stat": "+[3-6] to [Chainsaw Massacre]",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "+30% Chance for a Crushing Blow",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[1550-1700] to Additive Physical Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Slows target by 20%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Magic Skill Damage increased by [10-20]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+100 to Strength (Based on Level)",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Attacks can hit multiple enemies",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Socketed (2-4)",
+            "class": "stat-default"
+        }
     ]
 }

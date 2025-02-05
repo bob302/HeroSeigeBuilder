@@ -1,0 +1,21 @@
+{
+    "Item": "Satanic Eye",
+    "Tier": "B",
+    "Level": "33",
+    "Type": "Ring",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+7 to All Attributes",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Magic Damage Taken Reduced by 7%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[10-30]% to All Resistances",
+            "class": "stat-default"
+        }
+    ]
+}

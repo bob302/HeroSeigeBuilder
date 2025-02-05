@@ -1,0 +1,38 @@
+{
+    "Item": "Valkyrie's Battle Raiment",
+    "Tier": "S",
+    "Level": "74",
+    "Defense": "633.00546-720",
+    "Type": "Body Armor",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[160-200]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[235-350] to Additive Lightning Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "-[7-15]% to Enemy Lightning Resistance",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Physical Damage Taken Reduced by [2-8]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+40% to Lightning Resistance",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+5% to Maximum Lightning Resist",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Socketed (0-3)",
+            "class": "stat-default"
+        }
+    ]
+}

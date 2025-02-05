@@ -1,0 +1,48 @@
+{
+    "Item": "Dark Knight's Lance",
+    "Tier": "SS",
+    "Level": "96",
+    "Damage": "337.50312-363",
+    "APS": "2.251.79-2.7",
+    "DPS": "770.00559-981",
+    "Type": "Polearm",
+    "Rarity": "Heroic",
+    "Stats": [
+        {
+            "stat": "10% Chance when Striking [Lance Thrust] Level 25",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "+[420-450]% Enhanced Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[20-80]% Increased Attack Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+20% Chance for a Crushing Blow",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+5% Increased Attack Rating",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[1240-1460] to Additive Physical Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+35% of target Defense ignored",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[10-15] to Strength",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+20% to All Resistances",
+            "class": "stat-default"
+        }
+    ]
+}

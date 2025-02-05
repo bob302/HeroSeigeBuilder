@@ -1,0 +1,25 @@
+{
+    "Item": "Shining Pearl",
+    "Tier": "S",
+    "Level": "91",
+    "Type": "Amulet",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+30 to All Attributes",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Magic Skill Damage increased by 20%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+100 to Mana (Based on Level)",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+125 to Life (Based on Level)",
+            "class": "stat-default"
+        }
+    ]
+}

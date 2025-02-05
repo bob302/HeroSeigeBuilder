@@ -1,0 +1,21 @@
+{
+    "Item": "Demon Eye Ring",
+    "Tier": "B",
+    "Level": "36",
+    "Type": "Ring",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "6% Chance when Striking [Revved Up] Level 6",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "+[80-120] to Additive Physical Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+20 to Strength",
+            "class": "stat-default"
+        }
+    ]
+}

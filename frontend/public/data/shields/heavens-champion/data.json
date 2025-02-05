@@ -1,0 +1,35 @@
+{
+    "Item": "Heaven's Champion",
+    "Tier": "S",
+    "Level": "82",
+    "Defense": "281.00232-330",
+    "Block": "60",
+    "Type": "Shield",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[190-230]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[2-4] to All Skills",
+            "class": "stat-allskills"
+        },
+        {
+            "stat": "+8% Mana stolen per Hit",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Magic Skill Damage increased by [8-15]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+40 to Mana",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[8-15] Mana After each Kill",
+            "class": "stat-default"
+        }
+    ]
+}

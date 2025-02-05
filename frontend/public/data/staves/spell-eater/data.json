@@ -1,0 +1,56 @@
+{
+    "Item": "Spell Eater",
+    "Tier": "SS",
+    "Level": "99",
+    "Damage": "50.0048-52",
+    "APS": "1.751.75",
+    "DPS": "87.5084-91",
+    "Type": "Stave",
+    "Rarity": "Heroic",
+    "Stats": [
+        {
+            "stat": "+4 to All Skills",
+            "class": "stat-allskills"
+        },
+        {
+            "stat": "+[4-8] to Arcane Skills",
+            "class": "stat-arcane"
+        },
+        {
+            "stat": "+[10-15] to [Mana Devour]",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "+[20-40]% Faster Cast Rate",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[10-15] Mana per second",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[1220-1400] to Arcane Skill Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Arcane Skill Damage increased by [25-45]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "-[20-35]% to Enemy Arcane Resistance",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[20-40]% to Arcane Resistance",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[20-40]% to Lightning Resistance",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Socketed (2-3)",
+            "class": "stat-default"
+        }
+    ]
+}

@@ -8,12 +8,33 @@
     "Type": "Sword",
     "Rarity": "Satanic",
     "Stats": [
-        "+[290-340]% Enhanced Damage",
-        "+[45-50]% Increased Attack Rating",
-        "+[345-355] to Additive Fire Damage",
-        "+[40-50] to Life",
-        "+100 to Damage (Based on Level)",
-        "+[25-40]% to Fire Resistance",
-        "Attacks can hit multiple enemies"
+        {
+            "stat": "+[290-340]% Enhanced Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[45-50]% Increased Attack Rating",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[345-355] to Additive Fire Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[40-50] to Life",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+100 to Damage (Based on Level)",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[25-40]% to Fire Resistance",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Attacks can hit multiple enemies",
+            "class": "stat-default"
+        }
     ]
 }

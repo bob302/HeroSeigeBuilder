@@ -8,17 +8,53 @@
     "Type": "Sword",
     "Rarity": "Angelic",
     "Stats": [
-        "18% Chance when Striking [Divine Storm] Level 89",
-        "+[725-850]% Enhanced Damage",
-        "+5 to All Skills",
-        "+[40-60]% Increased Attack Speed",
-        "+1555 to Attack Rating",
-        "+15 to Energy",
-        "+30 to Vitality",
-        "+35 to All Attributes",
-        "+[2175-2425] to Additive Lightning Damage",
-        "Lightning Skill Damage increased by [35-60]%",
-        "Attacks can hit multiple enemies",
-        "Socketed (2-6)"
+        {
+            "stat": "18% Chance when Striking [Divine Storm] Level 89",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "+[725-850]% Enhanced Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+5 to All Skills",
+            "class": "stat-allskills"
+        },
+        {
+            "stat": "+[40-60]% Increased Attack Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+1555 to Attack Rating",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+15 to Energy",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+30 to Vitality",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+35 to All Attributes",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[2175-2425] to Additive Lightning Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Lightning Skill Damage increased by [35-60]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Attacks can hit multiple enemies",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Socketed (2-6)",
+            "class": "stat-default"
+        }
     ]
 }

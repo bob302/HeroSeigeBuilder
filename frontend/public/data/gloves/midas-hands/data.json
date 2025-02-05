@@ -1,0 +1,30 @@
+{
+    "Item": "Midas' Hands",
+    "Tier": "SS",
+    "Level": "96",
+    "Defense": "63.3047-80",
+    "Type": "Glove",
+    "Rarity": "Heroic",
+    "Stats": [
+        {
+            "stat": "+[80-110]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+40% Magic Find (Based on Level)",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+15% to All Resistances",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+20% Extra Gold Dropped From Kills",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[4-10]% Increased Experience Gain",
+            "class": "stat-default"
+        }
+    ]
+}

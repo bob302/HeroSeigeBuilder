@@ -1,0 +1,48 @@
+{
+    "Item": "Flame of the Phoenix",
+    "Tier": "A",
+    "Level": "62",
+    "Damage": "43.5040-47",
+    "APS": "1.251.25",
+    "DPS": "54.5050-59",
+    "Type": "Stave",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "7% Chance when Casting [Blazing Trail] Level 16",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "+[2-3] to All Skills",
+            "class": "stat-allskills"
+        },
+        {
+            "stat": "+[2-3] to Fire Skills",
+            "class": "stat-fire"
+        },
+        {
+            "stat": "+[8-15] to [Phoenix Flight]",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "+[30-45]% Increased Movement Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[25-40] to Energy",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Fire Skill Damage increased by [25-40]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "-[8-15]% to Enemy Fire Resistance",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[8-15] Mana After each Kill",
+            "class": "stat-default"
+        }
+    ]
+}

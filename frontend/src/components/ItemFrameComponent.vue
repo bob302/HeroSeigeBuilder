@@ -1,13 +1,13 @@
 <template>
   <div
     class="container"
-    @mouseover="showTooltip"
-    @mouseleave="hideStats"
   >
     <!-- Frame -->
     <img :src="frameSrc" alt="Item frame" class="background" />
     <!-- Item -->
-    <img v-if="item.image" :src="item.image" class="item" />
+    <img v-if="item.image" :src="item.image" class="item"
+      @mouseover="showTooltip"
+      @mouseleave="hideStats" />
     <!-- Sockets -->
     <div v-if="item.sockets.amount && showStats || showSockets " :class="socketLayoutClass" class="socket-container">
       <div
@@ -65,6 +65,18 @@ const socketLayoutClass = computed(() => {
     return 'odd-layout'
   }
 })
+
+const color = computed(() => {
+  switch (props.item.rarity) {
+    case 'Satanic': return '#c81717'
+    case 'Angelic': return '#fdfea5'
+    case 'Unholy': return '#c73664'
+    case 'Heroic': return '#00e19a'
+    case 'Set': return '#0bb01a'
+    default: return '#ffffff'
+  }
+})
+
 </script>
 
 <style scoped>
@@ -72,6 +84,12 @@ const socketLayoutClass = computed(() => {
   position: relative;
   max-width: 124px;
   max-height: 184px;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.container:hover {
+  overflow: visible;
 }
 
 .background {
@@ -81,19 +99,20 @@ const socketLayoutClass = computed(() => {
 
 .item {
   position: absolute;
-  width: 75%;
-  height: 75%;
-  object-fit: contain;
-  left: 50%;
+  object-fit: fill;
   top: 50%;
-  transform: translate(-50%, -50%);
+  left: 45%;
+  scale: 150%;
   image-rendering: pixelated;
+  transform: translate(-25%, -25%);
   transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+  pointer-events: auto;
+  z-index: 1;
 }
 
 .item:hover {
-  transform: translate(-50%, -50%) scale(1.1);
-  filter: brightness(1.2); 
+  transform: scale(100%, 100%) scale(1.5) translate(-20%, -20%);
+  filter: drop-shadow(0.5rem 0.5rem 2rem v-bind(color));
 }
 
 .socket-container {
@@ -121,9 +140,11 @@ const socketLayoutClass = computed(() => {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas:
+    ". . ."
     "s1 . s2"
     "s3 . s4"
-    "s5 . s6";
+    "s5 . s6"
+    ". . .";
   grid-column-gap: 0.2em;
 }
 
@@ -131,9 +152,11 @@ const socketLayoutClass = computed(() => {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas:
+    ". . ."
     "s1 . s2"
     "s3 s3 s3"
-    "s4 . s5";
+    "s4 . s5"
+    ". . .";
     grid-column-gap: 0.3em;
 }
 

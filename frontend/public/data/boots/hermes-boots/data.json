@@ -1,0 +1,34 @@
+{
+    "Item": "Hermes Boots",
+    "Tier": "S",
+    "Level": "84",
+    "Defense": "222.12168-277",
+    "Type": "Boot",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[180-225]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+70% Increased Movement Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[35-50]% Increased Jumping Power",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[18-25] to All Attributes",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[50-75]% Defense vs Missiles",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[30-40]% to All Resistances",
+            "class": "stat-default"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "Item": "Dark Vial of Corrosion",
+    "Tier": "SS",
+    "Level": "100",
+    "Type": "Potion",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[1-5] to [Corrosion of Darkness]",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "Consists of an ancient mystic plague infused in darkness...",
+            "class": "item-lore"
+        }
+    ]
+}

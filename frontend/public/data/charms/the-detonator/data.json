@@ -1,0 +1,13 @@
+{
+    "Item": "The Detonator",
+    "Tier": "SS",
+    "Level": "58",
+    "Type": "Charm",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[3-8] to Explosion Skills",
+            "class": "stat-allskills"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "Item": "Elixir of Unworldly Cognition",
+    "Tier": "S",
+    "Level": "68",
+    "Type": "Potion",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[1-5] to [Untamed Knowledge]",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "Increases your Experience gained.",
+            "class": "item-lore"
+        }
+    ]
+}

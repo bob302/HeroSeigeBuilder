@@ -1,0 +1,36 @@
+{
+    "Item": "Crystal Cane of Ice",
+    "Tier": "C",
+    "Level": "24",
+    "Damage": "5.504-7",
+    "APS": "1.251.25",
+    "DPS": "7.005-9",
+    "Type": "Cane",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "15% Chance when Struck [Avalanche] Level 17",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "+1 to All Skills",
+            "class": "stat-allskills"
+        },
+        {
+            "stat": "+[4-8] Mana per second",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Replenish Mana [8-15]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[8-15] Life After each Kill",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[10-20]% to All Resistances",
+            "class": "stat-default"
+        }
+    ]
+}

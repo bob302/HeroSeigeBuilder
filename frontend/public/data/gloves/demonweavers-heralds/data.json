@@ -1,0 +1,30 @@
+{
+    "Item": "Demonweaver's Heralds",
+    "Tier": "B",
+    "Level": "44",
+    "Defense": "15.2010-21",
+    "Type": "Glove",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[20-30]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[3-5] to [Bone Storm]",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "+3 to [Single Out]",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "Cooldown Recovery Increased by 15%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+10 to Intelligence",
+            "class": "stat-default"
+        }
+    ]
+}

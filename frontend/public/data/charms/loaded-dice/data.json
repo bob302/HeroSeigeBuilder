@@ -1,0 +1,17 @@
+{
+    "Item": "Loaded Dice",
+    "Tier": "SS",
+    "Level": "99",
+    "Type": "Charm",
+    "Rarity": "Heroic",
+    "Stats": [
+        {
+            "stat": "+[1-2] to All Skills",
+            "class": "stat-allskills"
+        },
+        {
+            "stat": "+[2-6] to [Random Class Skill]",
+            "class": "stat-spell"
+        }
+    ]
+}

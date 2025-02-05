@@ -1,0 +1,48 @@
+{
+    "Item": "Rift Commander's Axe",
+    "Tier": "A",
+    "Level": "66",
+    "Damage": "262.20227-298",
+    "APS": "1.101.1",
+    "DPS": "289.00250-328",
+    "Type": "Axe",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[320-380]% Enhanced Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+10% Increased Critical Strike Chance",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[4-8]% Life stolen per Hit",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[20-30]% Increased Critical Strike Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+10 to Vitality",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Physical Damage Taken Reduced by 5%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+5% Increased Experience Gain",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Attacks can hit multiple enemies",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Socketed (0-2)",
+            "class": "stat-default"
+        }
+    ]
+}

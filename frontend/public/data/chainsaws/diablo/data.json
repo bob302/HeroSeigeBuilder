@@ -8,14 +8,41 @@
     "Type": "Chainsaw",
     "Rarity": "Heroic",
     "Stats": [
-        "40% Chance when Casting [Tire Fire] Level 48",
-        "+[320-365]% Enhanced Damage",
-        "+[3-5] to All Skills",
-        "+[12-20] to [Moonshine Molotov]",
-        "+[70-120]% Faster Cast Rate",
-        "+20 to All Attributes",
-        "+[666-6666] to Fire Skill Damage",
-        "Fire Skill Damage increased by [16-66]%",
-        "Attacks can hit multiple enemies"
+        {
+            "stat": "40% Chance when Casting [Tire Fire] Level 48",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "+[320-365]% Enhanced Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[3-5] to All Skills",
+            "class": "stat-allskills"
+        },
+        {
+            "stat": "+[12-20] to [Moonshine Molotov]",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "+[70-120]% Faster Cast Rate",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+20 to All Attributes",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[666-6666] to Fire Skill Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Fire Skill Damage increased by [16-66]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Attacks can hit multiple enemies",
+            "class": "stat-default"
+        }
     ]
 }

@@ -1,0 +1,42 @@
+{
+    "Item": "Fumacinha's Favela Flipflop",
+    "Tier": "SS",
+    "Level": "97",
+    "Defense": "134.60110-160",
+    "Type": "Boot",
+    "Rarity": "Heroic",
+    "Stats": [
+        {
+            "stat": "+[110-150]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[1-2] to All Skills",
+            "class": "stat-allskills"
+        },
+        {
+            "stat": "+[2-4] to Arcane Skills",
+            "class": "stat-arcane"
+        },
+        {
+            "stat": "+[8-12] to [Sand Gush]",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "+[3-6] to [Sand Vortex]",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "+[50-75]% Increased Movement Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[50-75]% Increased Jumping Power",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Skill Movement Diminish decreased by [25-50]%",
+            "class": "stat-default"
+        }
+    ]
+}

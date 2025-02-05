@@ -1,0 +1,30 @@
+{
+    "Item": "Lost Master's Vision",
+    "Tier": "A",
+    "Level": "57",
+    "Defense": "116.4093-141",
+    "Type": "Helmet",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[120-160]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+40% Faster Cast Rate",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+20 to Strength",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+10 to Dexterity",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+15 to Armor",
+            "class": "stat-default"
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "Item": "Winter's Bite",
+    "Tier": "SS",
+    "Level": "97",
+    "Damage": "581.50481-683",
+    "APS": "2.452.1-2.8",
+    "DPS": "1460.501010-1911",
+    "Type": "Axe",
+    "Rarity": "Heroic",
+    "Stats": [
+        {
+            "stat": "15% Chance when Striking [Breath of Ice] Level 53",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "+[675-775]% Enhanced Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[1-2] to All Skills",
+            "class": "stat-allskills"
+        },
+        {
+            "stat": "+[1-2] to Cold Skills",
+            "class": "stat-cold"
+        },
+        {
+            "stat": "+[20-60]% Increased Attack Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+15 to Attack Rating",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[7-12]% Mana stolen per Hit",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Extra Damage to Deep Frozen Monsters [10-25]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[30-50] to Dexterity",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[3-5]% Cold Damage Absorbed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Attacks can hit multiple enemies",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Cannot be Frozen",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Socketed (0-3)",
+            "class": "stat-default"
+        }
+    ]
+}

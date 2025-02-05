@@ -8,12 +8,33 @@
     "Type": "Sword",
     "Rarity": "Satanic",
     "Stats": [
-        "+[300-370]% Enhanced Damage",
-        "+50% Increased Movement Speed",
-        "+5% Increased Critical Strike Chance",
-        "+15% Increased Critical Strike Damage",
-        "+[30-45] to Strength",
-        "+30% Magic Find (Based on Level)",
-        "Attacks can hit multiple enemies"
+        {
+            "stat": "+[300-370]% Enhanced Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+50% Increased Movement Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+5% Increased Critical Strike Chance",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+15% Increased Critical Strike Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[30-45] to Strength",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+30% Magic Find (Based on Level)",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Attacks can hit multiple enemies",
+            "class": "stat-default"
+        }
     ]
 }

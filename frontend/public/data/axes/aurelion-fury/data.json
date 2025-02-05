@@ -1,0 +1,64 @@
+{
+    "Item": "Aurelion Fury",
+    "Tier": "SS",
+    "Level": "100",
+    "Damage": "1003.75879-1129",
+    "APS": "1.001",
+    "DPS": "1004.00879-1129",
+    "Type": "Axe",
+    "Rarity": "Angelic",
+    "Stats": [
+        {
+            "stat": "+[825-975]% Enhanced Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[5-8] to All Skills",
+            "class": "stat-allskills"
+        },
+        {
+            "stat": "Total Attack Speed Reduced by -75%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[7-13]% Mana stolen per Hit",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[40-65] to Vitality",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+35 to All Attributes",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Unholy Stat",
+            "class": "stat-unholy"
+        },
+        {
+            "stat": "Unholy Stat",
+            "class": "stat-unholy"
+        },
+        {
+            "stat": "+[30-40]% to All Resistances",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Unholy Stat",
+            "class": "stat-unholy"
+        },
+        {
+            "stat": "Attacks can hit multiple enemies",
+            "class": "stat-default"
+        },
+        {
+            "stat": "[Lunar Aura] Level [20-45]",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Socketed (4-6)",
+            "class": "stat-default"
+        }
+    ]
+}

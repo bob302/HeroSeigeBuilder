@@ -1,0 +1,48 @@
+{
+    "Item": "Jousting Lance",
+    "Tier": "A",
+    "Level": "62",
+    "Damage": "110.80100-123",
+    "APS": "1.001",
+    "DPS": "111.50100-123",
+    "Type": "Polearm",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "12% Chance when Struck [Combat Orders] Level 10",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "+[210-240]% Enhanced Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[3-6] to [Damage Reflect]",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "+20% Chance for a Crushing Blow",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+20 to Vitality",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[20-25]% Faster Hit Recovery",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[70-90]% of Damage Returned to the Attacker",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Physical Damage Taken Reduced by [5-10]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+15% to All Resistances",
+            "class": "stat-default"
+        }
+    ]
+}

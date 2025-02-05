@@ -34,15 +34,17 @@ export class ItemParser {
       level: rawItem.Level,
       sockets: {amount: 0, min: 0, max: 0,  list: [] },
       image: rawItem.Image,
-      stats: rawItem.Stats.map(ItemParser.parseWikiStat),
+      stats: rawItem.Stats.map((statObj: { stat: string, class: string }) => 
+        ItemParser.parseWikiStat(statObj.stat, statObj.class === 'stat-spell' ? true : false)
+      ),
       isLoading: true
     }
 
     // Socket Amount
-    const socketStat = rawItem.Stats.find((stat: string) => stat.includes("Socketed"));
+    const socketStat = rawItem.Stats.find((stat: { stat: string }) => stat.stat.includes("Socketed"));
     if (socketStat) {
-      const match = socketStat.match(/Socketed \((\d+)-?(\d*)\)/);
-      const prismaticMatch = socketStat.match(/Socketed \{(\d+)-?(\d*)\}/);
+      const match = socketStat.stat.match(/Socketed \((\d+)-?(\d*)\)/);
+      const prismaticMatch = socketStat.stat.match(/Socketed \{(\d+)-?(\d*)\}/);
     
       let normalSockets: number = 0;
       let prismaticSockets: number = 0;
@@ -87,8 +89,8 @@ export class ItemParser {
     return baseItem
   }
 
-  static parseWikiStat (stat: any): Stat {
-    return StatParser.parseStat(StatFormatter.formatFromRangeToRangeWithValue(stat)).stat
+  static parseWikiStat (stat: any, special = false): Stat {
+    return StatParser.parseStat(StatFormatter.formatFromRangeToRangeWithValue(stat), special).stat
   }
 
   static parseStat (stat: any): Stat {

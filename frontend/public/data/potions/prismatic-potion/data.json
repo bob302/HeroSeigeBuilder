@@ -1,0 +1,17 @@
+{
+    "Item": "Prismatic Potion",
+    "Tier": "S",
+    "Level": "68",
+    "Type": "Potion",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[1-5] to [Prismatic Skin]",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "Increases All Resistances.",
+            "class": "item-lore"
+        }
+    ]
+}

@@ -1,0 +1,45 @@
+{
+    "Item": "Soulforged Ring",
+    "Tier": "SS",
+    "Level": "1",
+    "Type": "Ring",
+    "Rarity": "Heroic",
+    "Stats": [
+        {
+            "stat": "+1 to All Skills",
+            "class": "stat-allskills"
+        },
+        {
+            "stat": "+8% Faster Cast Rate",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+8% Increased Attack Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+15 to All Attributes",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Life Increased by 8%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Mana Increased by 8%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+8% to All Resistances",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+4% Increased Experience Gain",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Herobound",
+            "class": "stat-spell"
+        }
+    ]
+}

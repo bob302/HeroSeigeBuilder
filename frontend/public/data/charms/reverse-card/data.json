@@ -1,0 +1,25 @@
+{
+    "Item": "Reverse Card",
+    "Tier": "SS",
+    "Level": "100",
+    "Type": "Charm",
+    "Rarity": "Angelic",
+    "Stats": [
+        {
+            "stat": "+[1-5] to [Throw Card]",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "+1 to Projectile Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+15 to All Attributes",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Piercing Attack",
+            "class": "stat-default"
+        }
+    ]
+}

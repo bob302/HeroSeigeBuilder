@@ -1,0 +1,13 @@
+{
+    "Item": "Sacred Owl",
+    "Tier": "S",
+    "Level": "68",
+    "Type": "Charm",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[1-3] to Random Skill",
+            "class": "stat-spell"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "Item": "Power of Void",
+    "Tier": "S",
+    "Level": "68",
+    "Type": "Potion",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[1-5] to [Chaos Unleashed]",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "Unleash Comets when casting any spell.",
+            "class": "item-lore"
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "Item": "Soulburn Belt",
+    "Tier": "SS",
+    "Level": "100",
+    "Defense": "202.50165-240",
+    "Type": "Belt",
+    "Rarity": "Heroic",
+    "Stats": [
+        {
+            "stat": "[3-5]% Chance when Attacking [Soulburn] Level 23",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "+[120-140]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[1-3] to Fire Skills",
+            "class": "stat-fire"
+        },
+        {
+            "stat": "Extra Damage to Burning Monsters [5-15]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+30 to Intelligence",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Fire Skill Damage increased by [15-25]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "-[15-30]% to Enemy Fire Resistance",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Replenish Mana [25-40]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[10-15]% Fire Damage Absorbed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Belt Slots: 5",
+            "class": "stat-default"
+        }
+    ]
+}

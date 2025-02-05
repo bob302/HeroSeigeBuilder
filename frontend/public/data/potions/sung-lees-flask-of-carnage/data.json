@@ -1,0 +1,17 @@
+{
+    "Item": "Sung Lee's Flask of Carnage",
+    "Tier": "SS",
+    "Level": "100",
+    "Type": "Potion",
+    "Rarity": "Heroic",
+    "Stats": [
+        {
+            "stat": "+[1-5] to [Momentary Insanity]",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "All Attacks now cause enemies to bleed.",
+            "class": "item-lore"
+        }
+    ]
+}

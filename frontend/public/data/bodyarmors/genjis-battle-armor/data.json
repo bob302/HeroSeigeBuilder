@@ -1,0 +1,38 @@
+{
+    "Item": "Genji's Battle Armor",
+    "Tier": "A",
+    "Level": "57",
+    "Defense": "393.00338-448",
+    "Type": "Body Armor",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[160-180]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+40% Increased Attack Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+20 to Dexterity",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+20 to Armor",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+350 to Life (Based on Level)",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+300 to Attack Rating (Based on Level)",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Socketed (2-4)",
+            "class": "stat-default"
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "Item": "Ymir's Frozen Shroud",
+    "Tier": "S",
+    "Level": "75",
+    "Defense": "146.00108-184",
+    "Type": "Helmet",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[80-130]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[10-20]% Faster Cast Rate",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[35-50] to Life",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Mana Increased by [5-10]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[30-45]% to Cold Resistance",
+            "class": "stat-default"
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "Item": "Rusted Spiked Shield",
+    "Tier": "C",
+    "Level": "26",
+    "Defense": "23.3020-27",
+    "Block": "60",
+    "Type": "Shield",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "18% Chance after Blocking [Fan of Knives] Level 8",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "+[40-50]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+5 to Strength",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+10 to Dexterity",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+20 to Life",
+            "class": "stat-default"
+        }
+    ]
+}

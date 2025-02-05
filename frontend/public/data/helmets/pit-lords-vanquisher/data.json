@@ -1,0 +1,38 @@
+{
+    "Item": "Pit Lord's Vanquisher",
+    "Tier": "S",
+    "Level": "90",
+    "Defense": "154.00120-188",
+    "Type": "Helmet",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[100-135]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[6-18]% Increased Critical Strike Chance",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[150-175] to Attack Rating",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[25-55]% Increased Critical Strike Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[20-35] to Strength",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[10-15] to Vitality",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+125 to Damage (Based on Level)",
+            "class": "stat-default"
+        }
+    ]
+}

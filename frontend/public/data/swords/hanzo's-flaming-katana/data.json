@@ -8,16 +8,49 @@
     "Type": "Sword",
     "Rarity": "Satanic",
     "Stats": [
-        "100% Chance to Cast after each Kill [Scorching Flames] Level 19",
-        "18% Chance when Striking [Fire Nova] Level 27",
-        "+[350-400]% Enhanced Damage",
-        "+[10-30]% Increased Attack Speed",
-        "+444 to Attack Rating",
-        "+25 to Strength",
-        "+[225-340] to Additive Fire Damage",
-        "+[250-325] to Fire Skill Damage",
-        "Fire Skill Damage increased by [25-40]%",
-        "Attacks can hit multiple enemies",
-        "Socketed (0-3)"
+        {
+            "stat": "100% Chance to Cast after each Kill [Scorching Flames] Level 19",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "18% Chance when Striking [Fire Nova] Level 27",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "+[350-400]% Enhanced Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[10-30]% Increased Attack Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+444 to Attack Rating",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+25 to Strength",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[225-340] to Additive Fire Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[250-325] to Fire Skill Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Fire Skill Damage increased by [25-40]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Attacks can hit multiple enemies",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Socketed (0-3)",
+            "class": "stat-default"
+        }
     ]
 }

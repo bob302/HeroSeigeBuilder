@@ -1,0 +1,38 @@
+{
+    "Item": "Lancer's Chestplate",
+    "Tier": "A",
+    "Level": "57",
+    "Defense": "392.50273-512",
+    "Type": "Body Armor",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[110-220]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+25 to Strength",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+15 to Dexterity",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+10 to Vitality",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Replenish Life 15%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Replenish Mana 20%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Socketed (0-3)",
+            "class": "stat-default"
+        }
+    ]
+}

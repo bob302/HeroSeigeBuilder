@@ -1,0 +1,21 @@
+{
+    "Item": "Crow's Feather",
+    "Tier": "D",
+    "Level": "1",
+    "Type": "Charm",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+15% Increased Movement Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+5 to All Attributes",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+5% to All Resistances",
+            "class": "stat-default"
+        }
+    ]
+}

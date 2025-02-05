@@ -1,0 +1,44 @@
+{
+    "Item": "Glimmerfury",
+    "Tier": "D",
+    "Level": "8",
+    "Damage": "73.2050-97",
+    "APS": "1.401.4",
+    "DPS": "103.0070-136",
+    "Type": "Bow",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[210-340]% Enhanced Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+15% Increased Movement Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+2% Increased Attack Rating",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+15 to Dexterity",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[20-30] to Additive Cold Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Cold Skill Damage increased by [5-15]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+8 Mana After each Kill",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+40% to Cold Resistance",
+            "class": "stat-default"
+        }
+    ]
+}

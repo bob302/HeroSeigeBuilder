@@ -8,12 +8,33 @@
     "Type": "Sword",
     "Rarity": "Satanic",
     "Stats": [
-        "10% Chance when Striking [Holy Hammer] Level 27",
-        "+[220-280]% Enhanced Damage",
-        "+[30-50]% Increased Attack Speed",
-        "+[185-220] to Attack Rating",
-        "+[3-5] to All Attributes",
-        "+[475-585] to Additive Arcane Damage",
-        "Arcane Skill Damage increased by [8-20]%"
+        {
+            "stat": "10% Chance when Striking [Holy Hammer] Level 27",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "+[220-280]% Enhanced Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[30-50]% Increased Attack Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[185-220] to Attack Rating",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[3-5] to All Attributes",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[475-585] to Additive Arcane Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Arcane Skill Damage increased by [8-20]%",
+            "class": "stat-default"
+        }
     ]
 }

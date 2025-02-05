@@ -1,0 +1,40 @@
+{
+    "Item": "Mimir's Corrupted Axe",
+    "Tier": "A",
+    "Level": "62",
+    "Damage": "321.80260-385",
+    "APS": "1.251.25",
+    "DPS": "402.50324-481",
+    "Type": "Throwing Weapon",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "20% Chance when Striking [Berserk] Level 12",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "+[380-520]% Enhanced Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+30% Chance for a Crushing Blow",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[275-300] to Attack Rating",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[840-980] to Additive Physical Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+10% Life stolen per Hit",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[340-400] to Additive Arcane Damage",
+            "class": "stat-default"
+        }
+    ]
+}

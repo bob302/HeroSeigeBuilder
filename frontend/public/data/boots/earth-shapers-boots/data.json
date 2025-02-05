@@ -1,0 +1,30 @@
+{
+    "Item": "Earth Shaper's Boots",
+    "Tier": "A",
+    "Level": "56",
+    "Defense": "68.7051-87",
+    "Type": "Boot",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[50-80]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[20-30]% Increased Movement Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Cooldown Recovery Increased by [5-10]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "-[7-15]% to Enemy Arcane Resistance",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+20% to All Resistances",
+            "class": "stat-default"
+        }
+    ]
+}

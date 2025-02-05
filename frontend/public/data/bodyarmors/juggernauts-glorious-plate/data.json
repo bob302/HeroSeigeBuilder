@@ -1,0 +1,34 @@
+{
+    "Item": "Juggernaut's Glorious Plate",
+    "Tier": "A",
+    "Level": "57",
+    "Defense": "425.00338-512",
+    "Type": "Body Armor",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[160-220]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+5% Mana stolen per Hit",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Slows target by 10%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+75 to Strength (Based on Level)",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+35 to Vitality (Based on Level)",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Socketed (0-3)",
+            "class": "stat-default"
+        }
+    ]
+}

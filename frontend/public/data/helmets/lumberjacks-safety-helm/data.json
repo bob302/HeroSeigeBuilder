@@ -1,0 +1,38 @@
+{
+    "Item": "Lumberjack's Safety Helm",
+    "Tier": "A",
+    "Level": "54",
+    "Defense": "99.9076-125",
+    "Type": "Helmet",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[80-130]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+1 to Physical Skills",
+            "class": "stat-physical"
+        },
+        {
+            "stat": "+15 to Strength",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+10 to Armor",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Replenish Life 15%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+15 to Life",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+15% to All Resistances",
+            "class": "stat-default"
+        }
+    ]
+}

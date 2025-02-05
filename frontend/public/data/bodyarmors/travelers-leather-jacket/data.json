@@ -1,0 +1,42 @@
+{
+    "Item": "Traveler's Leather Jacket",
+    "Tier": "A",
+    "Level": "40",
+    "Defense": "204.00156-252",
+    "Type": "Body Armor",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[160-180]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+1 to All Skills",
+            "class": "stat-allskills"
+        },
+        {
+            "stat": "+[20-30]% Increased Movement Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+10 to Dexterity",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+5 to All Attributes",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+25% Faster Hit Recovery",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+30 to Dexterity (Based on Level)",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Socketed (0-3)",
+            "class": "stat-default"
+        }
+    ]
+}

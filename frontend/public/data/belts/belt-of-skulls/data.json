@@ -1,0 +1,46 @@
+{
+    "Item": "Belt of Skulls",
+    "Tier": "SS",
+    "Level": "98",
+    "Defense": "97.2076-119",
+    "Type": "Belt",
+    "Rarity": "Heroic",
+    "Stats": [
+        {
+            "stat": "+[45-75]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[20-35]% Increased Movement Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+25% Chance for a Deadly Blow",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+15% Chance for a Crushing Blow",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[10-15]% Life stolen per Hit",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Extra Damage to Bleeding Monsters [5-15]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Attack Damage increased by [25-40]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+40% Faster Hit Recovery",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Belt Slots: 5",
+            "class": "stat-default"
+        }
+    ]
+}

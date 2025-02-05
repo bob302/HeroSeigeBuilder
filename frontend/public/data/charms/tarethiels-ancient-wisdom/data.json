@@ -1,0 +1,21 @@
+{
+    "Item": "Tarethiel's Ancient Wisdom",
+    "Tier": "SS",
+    "Level": "96",
+    "Type": "Charm",
+    "Rarity": "Heroic",
+    "Stats": [
+        {
+            "stat": "+1 to All Skills",
+            "class": "stat-allskills"
+        },
+        {
+            "stat": "+15% Faster Cast Rate",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Cooldown Recovery Increased by [15-30]%",
+            "class": "stat-default"
+        }
+    ]
+}

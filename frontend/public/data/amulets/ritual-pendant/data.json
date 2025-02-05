@@ -1,0 +1,33 @@
+{
+    "Item": "Ritual Pendant",
+    "Tier": "A",
+    "Level": "59",
+    "Type": "Amulet",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[3-6]% Life stolen per Hit",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[11-15]% Mana stolen per Hit",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+45 to Mana",
+            "class": "stat-default"
+        },
+        {
+            "stat": "-2 to Light Radius",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+10% of Damage Taken goes to Mana",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Magic Damage Taken Reduced by 10%",
+            "class": "stat-default"
+        }
+    ]
+}

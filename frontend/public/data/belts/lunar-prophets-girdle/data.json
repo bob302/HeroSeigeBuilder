@@ -1,0 +1,34 @@
+{
+    "Item": "Lunar Prophet's Girdle",
+    "Tier": "A",
+    "Level": "72",
+    "Defense": "86.1074-99",
+    "Type": "Belt",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[60-70]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[218-250] to Cold Skill Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "-[12-20]% to Enemy Cold Resistance",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+8% Cold Damage Absorbed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[40-60]% to Cold Resistance",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Belt Slots: 5",
+            "class": "stat-default"
+        }
+    ]
+}

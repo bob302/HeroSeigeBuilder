@@ -1,0 +1,38 @@
+{
+    "Item": "Odin's Battlearmor",
+    "Tier": "A",
+    "Level": "57",
+    "Defense": "357.50299-416",
+    "Type": "Body Armor",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[130-160]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+10% Faster Cast Rate",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Arcane Skill Damage increased by [5-15]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[25-35] to Life",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[25-35] to Mana",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Physical Damage Taken Reduced by [5-10]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Socketed (0-3)",
+            "class": "stat-default"
+        }
+    ]
+}

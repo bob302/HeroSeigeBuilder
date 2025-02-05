@@ -1,0 +1,25 @@
+{
+    "Item": "Fury of Tarethiel",
+    "Tier": "SS",
+    "Level": "98",
+    "Type": "Ring",
+    "Rarity": "Angelic",
+    "Stats": [
+        {
+            "stat": "+[25-50]% Enhanced Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[3-5] to Physical Skills",
+            "class": "stat-physical"
+        },
+        {
+            "stat": "+[15-25]% Chance for a Crushing Blow",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[685-725] to Attack Rating",
+            "class": "stat-default"
+        }
+    ]
+}

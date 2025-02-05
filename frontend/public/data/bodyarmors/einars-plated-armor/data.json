@@ -1,0 +1,38 @@
+{
+    "Item": "Einar's Plated Armor",
+    "Tier": "A",
+    "Level": "57",
+    "Defense": "409.00338-480",
+    "Type": "Body Armor",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[160-200]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+635 to Additive Cold Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Cold Skill Damage increased by [5-15]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[15-25]% Faster Hit Recovery",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+75 Defense (Based on Level)",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+45% to Cold Resistance",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Socketed (0-3)",
+            "class": "stat-default"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "Item": "Blood of Spartan",
+    "Tier": "S",
+    "Level": "68",
+    "Type": "Potion",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[1-5] to [Spartan Defense]",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "Enhances your Defense and Damage Return.",
+            "class": "item-lore"
+        }
+    ]
+}

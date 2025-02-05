@@ -1,0 +1,17 @@
+{
+    "Item": "Bottle of Sake",
+    "Tier": "S",
+    "Level": "68",
+    "Type": "Potion",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[1-5] to [Drunken Kung Fu]",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "Increases your Attack Damage and Critical Strike Damage.",
+            "class": "item-lore"
+        }
+    ]
+}

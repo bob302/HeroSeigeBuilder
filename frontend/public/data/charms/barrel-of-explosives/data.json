@@ -1,0 +1,13 @@
+{
+    "Item": "Barrel of Explosives",
+    "Tier": "SS",
+    "Level": "57",
+    "Type": "Charm",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "Explosion Damage increased by [15-40]%",
+            "class": "stat-default"
+        }
+    ]
+}

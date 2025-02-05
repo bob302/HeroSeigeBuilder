@@ -1,0 +1,21 @@
+{
+    "Item": "Anubis' Ankh Charm",
+    "Tier": "S",
+    "Level": "87",
+    "Type": "Charm",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "Replenish Life [15-35]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[330-380] to Life",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Life Increased by [7-15]%",
+            "class": "stat-default"
+        }
+    ]
+}

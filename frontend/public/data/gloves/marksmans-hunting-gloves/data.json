@@ -1,0 +1,26 @@
+{
+    "Item": "Marksman's Hunting Gloves",
+    "Tier": "A",
+    "Level": "52",
+    "Defense": "34.5027-42",
+    "Type": "Glove",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[50-75]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[15-30]% Increased Attack Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+125 to Attack Rating",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+5% Mana stolen per Hit",
+            "class": "stat-default"
+        }
+    ]
+}

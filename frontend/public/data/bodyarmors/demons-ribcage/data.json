@@ -1,0 +1,38 @@
+{
+    "Item": "Demon's Ribcage",
+    "Tier": "A",
+    "Level": "57",
+    "Defense": "357.50299-416",
+    "Type": "Body Armor",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[130-160]% Enhanced Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+25 to Energy",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+10 to Vitality",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+15 to Armor",
+            "class": "stat-default"
+        },
+        {
+            "stat": "-[10-20]% to Enemy Arcane Resistance",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+50% to Arcane Resistance",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Socketed (0-3)",
+            "class": "stat-default"
+        }
+    ]
+}

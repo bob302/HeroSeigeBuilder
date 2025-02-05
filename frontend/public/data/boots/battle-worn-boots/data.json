@@ -1,0 +1,34 @@
+{
+    "Item": "Battle Worn Boots",
+    "Tier": "S",
+    "Level": "75",
+    "Defense": "128.80104-154",
+    "Type": "Boot",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[100-140]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+30% Increased Movement Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[8-15]% Chance for a Deadly Blow",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[65-80] to Attack Rating",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[25-40] to Dexterity",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+25 to Vitality",
+            "class": "stat-default"
+        }
+    ]
+}

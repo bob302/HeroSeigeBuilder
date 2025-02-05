@@ -1,0 +1,39 @@
+{
+    "Item": "Wall of the Legion",
+    "Tier": "S",
+    "Level": "93",
+    "Defense": "330.00280-380",
+    "Block": "70",
+    "Type": "Shield",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[250-280]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+1 to All Skills",
+            "class": "stat-allskills"
+        },
+        {
+            "stat": "+20 to Strength",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+30 to Vitality",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[350-400]% Defense vs Missiles",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+40% to All Resistances",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Socketed (6)",
+            "class": "stat-default"
+        }
+    ]
+}

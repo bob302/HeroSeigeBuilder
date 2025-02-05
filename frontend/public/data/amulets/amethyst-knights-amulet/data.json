@@ -1,0 +1,25 @@
+{
+    "Item": "Amethyst Knight's Amulet",
+    "Tier": "B",
+    "Level": "38",
+    "Type": "Amulet",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+10 to Energy",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Arcane Skill Damage increased by [120-200]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+15% to All Resistances",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+50% to Arcane Resistance",
+            "class": "stat-default"
+        }
+    ]
+}

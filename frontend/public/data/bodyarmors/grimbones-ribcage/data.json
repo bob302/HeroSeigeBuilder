@@ -1,0 +1,42 @@
+{
+    "Item": "Grimbone's Ribcage",
+    "Tier": "SS",
+    "Level": "96",
+    "Defense": "2282.501815-2750",
+    "Type": "Body Armor",
+    "Rarity": "Heroic",
+    "Stats": [
+        {
+            "stat": "+[450-525]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+3 to All Skills",
+            "class": "stat-allskills"
+        },
+        {
+            "stat": "+[3-6] Mana per second",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[30-50] to Vitality",
+            "class": "stat-default"
+        },
+        {
+            "stat": "-20% to Enemy Arcane Resistance",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+475 to Life (Based on Level)",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[10-25]% to All Resistances",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Socketed (1-4)",
+            "class": "stat-default"
+        }
+    ]
+}

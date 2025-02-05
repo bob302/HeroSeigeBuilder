@@ -1,0 +1,44 @@
+{
+    "Item": "Buriza-Ko-Nu",
+    "Tier": "A",
+    "Level": "66",
+    "Damage": "346.80304-390",
+    "APS": "1.651.65",
+    "DPS": "572.50501-644",
+    "Type": "Bow",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "[5-10]% Chance when Striking [Trigger Finger] Level [5-10]",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "+[360-400]% Enhanced Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+10% Increased Attack Rating",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+375 to Attack Rating",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[30-40]% of target Defense ignored",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+20 to Strength",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+20 to Dexterity",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Piercing Attack",
+            "class": "stat-default"
+        }
+    ]
+}

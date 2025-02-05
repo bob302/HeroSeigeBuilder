@@ -1,0 +1,30 @@
+{
+    "Item": "Shadow's Grasp",
+    "Tier": "B",
+    "Level": "37",
+    "Defense": "16.8011-24",
+    "Type": "Glove",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[30-45]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Cooldown Recovery Increased by 20%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Arcane Skill Damage increased by [8-20]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+30 to Energy (Based on Level)",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[30-50]% to Arcane Resistance",
+            "class": "stat-default"
+        }
+    ]
+}

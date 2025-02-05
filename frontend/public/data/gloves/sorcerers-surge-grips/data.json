@@ -1,0 +1,30 @@
+{
+    "Item": "Sorcerer's Surge Grips",
+    "Tier": "C",
+    "Level": "22",
+    "Defense": "8.537-11",
+    "Type": "Glove",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[25-35]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+1 to All Skills",
+            "class": "stat-allskills"
+        },
+        {
+            "stat": "Cooldown Recovery Increased by 15%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[2-12] to Intelligence",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Replenish Mana [20-30]%",
+            "class": "stat-default"
+        }
+    ]
+}

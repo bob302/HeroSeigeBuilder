@@ -8,16 +8,49 @@
     "Type": "Sword",
     "Rarity": "Satanic",
     "Stats": [
-        "+[675-750]% Enhanced Damage",
-        "+[1-4] to Physical Skills",
-        "+30% Increased Attack Rating",
-        "+[10-25]% Life stolen per Hit",
-        "+[25-45]% Increased Critical Strike Damage",
-        "Slows target by [40-60]%",
-        "+45 to Strength",
-        "+[30-50] to Dexterity",
-        "+[15-30] Life After each Kill",
-        "Attacks can hit multiple enemies",
-        "Socketed (0-2)"
+        {
+            "stat": "+[675-750]% Enhanced Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[1-4] to Physical Skills",
+            "class": "stat-physical"
+        },
+        {
+            "stat": "+30% Increased Attack Rating",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[10-25]% Life stolen per Hit",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[25-45]% Increased Critical Strike Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Slows target by [40-60]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+45 to Strength",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[30-50] to Dexterity",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[15-30] Life After each Kill",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Attacks can hit multiple enemies",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Socketed (0-2)",
+            "class": "stat-default"
+        }
     ]
 }

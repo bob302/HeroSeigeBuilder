@@ -8,12 +8,33 @@
     "Type": "Sword",
     "Rarity": "Satanic",
     "Stats": [
-        "+[285-320]% Enhanced Damage",
-        "+[1-2] to All Skills",
-        "+30% Increased Attack Speed",
-        "+15 to All Attributes",
-        "+[1125-1300] to Additive Arcane Damage",
-        "+[1125-1300] to Additive Cold Damage",
-        "+3 to Light Radius"
+        {
+            "stat": "+[285-320]% Enhanced Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[1-2] to All Skills",
+            "class": "stat-allskills"
+        },
+        {
+            "stat": "+30% Increased Attack Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+15 to All Attributes",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[1125-1300] to Additive Arcane Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[1125-1300] to Additive Cold Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+3 to Light Radius",
+            "class": "stat-default"
+        }
     ]
 }

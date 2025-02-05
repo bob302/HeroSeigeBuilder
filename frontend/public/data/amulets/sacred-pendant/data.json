@@ -1,0 +1,25 @@
+{
+    "Item": "Sacred Pendant",
+    "Tier": "S",
+    "Level": "78",
+    "Type": "Amulet",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+15 to Energy",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Replenish Mana [10-20]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[12-24] Mana After each Kill",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+50 to Mana (Based on Level)",
+            "class": "stat-default"
+        }
+    ]
+}

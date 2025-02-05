@@ -1,0 +1,34 @@
+{
+    "Item": "Razor Knuckles",
+    "Tier": "S",
+    "Level": "78",
+    "Defense": "66.5050-84",
+    "Type": "Glove",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[90-120]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[20-30]% Increased Attack Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[7-10]% Life stolen per Hit",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+20% Chance to Open Wounds",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[40-75] to Strength",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[15-30] Life After each Kill",
+            "class": "stat-default"
+        }
+    ]
+}

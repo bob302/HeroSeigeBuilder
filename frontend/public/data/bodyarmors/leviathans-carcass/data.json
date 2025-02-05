@@ -1,0 +1,34 @@
+{
+    "Item": "Leviathan's Carcass",
+    "Tier": "S",
+    "Level": "74",
+    "Defense": "1530.001260-1800",
+    "Type": "Body Armor",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[500-650]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[60-100] to Strength",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+825 to Life",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Life Increased by [10-20]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "All Damage Taken Reduced by 25%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Socketed (2-3)",
+            "class": "stat-default"
+        }
+    ]
+}

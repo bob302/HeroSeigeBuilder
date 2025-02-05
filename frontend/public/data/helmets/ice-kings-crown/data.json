@@ -1,0 +1,38 @@
+{
+    "Item": "Ice King's Crown",
+    "Tier": "B",
+    "Level": "40",
+    "Defense": "59.4543-76",
+    "Type": "Helmet",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[65-100]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[10-15]% Faster Cast Rate",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[145-175] to Cold Skill Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Cold Skill Damage increased by [8-15]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+75 to Mana",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+75% to Cold Resistance",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Cannot be Frozen",
+            "class": "stat-default"
+        }
+    ]
+}

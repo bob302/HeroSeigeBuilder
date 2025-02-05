@@ -1,0 +1,30 @@
+{
+    "Item": "Runescribe's Striders",
+    "Tier": "D",
+    "Level": "15",
+    "Defense": "4.703-8",
+    "Type": "Boot",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[10-20]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[20-25]% Increased Movement Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+10% Faster Cast Rate",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[3-5] to Intelligence",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+30 to Mana",
+            "class": "stat-default"
+        }
+    ]
+}

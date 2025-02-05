@@ -1,0 +1,21 @@
+{
+    "Item": "Ra's Band",
+    "Tier": "B",
+    "Level": "37",
+    "Type": "Ring",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+15 to Vitality",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[35-50]% to Fire Resistance",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[10-20]% Increased Magic Find",
+            "class": "stat-default"
+        }
+    ]
+}

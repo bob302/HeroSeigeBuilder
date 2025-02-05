@@ -1,0 +1,38 @@
+{
+    "Item": "Ancient Avenger",
+    "Tier": "A",
+    "Level": "61",
+    "Defense": "99.9076-125",
+    "Type": "Helmet",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[80-130]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+10% Increased Attack Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+15% Chance for a Crushing Blow",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+5% Increased Attack Rating",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+20 to Strength",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+10 to Vitality",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Physical Damage Taken Reduced by 5%",
+            "class": "stat-default"
+        }
+    ]
+}

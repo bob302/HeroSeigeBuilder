@@ -1,0 +1,30 @@
+{
+    "Item": "Lumberjack's Safety Gloves",
+    "Tier": "S",
+    "Level": "78",
+    "Defense": "50.5037-65",
+    "Type": "Glove",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[40-70]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[2-4] to [Revved Up]",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "+15 to Strength",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[15-25] to Dexterity",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Attack Damage increased by [7-15]%",
+            "class": "stat-default"
+        }
+    ]
+}

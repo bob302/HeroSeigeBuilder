@@ -1,0 +1,17 @@
+{
+    "Item": "Witches Potion",
+    "Tier": "S",
+    "Level": "68",
+    "Type": "Potion",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[1-5] to [Conjured Replenishment]",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "Gain full Life & Mana and Increased Life & Mana Replenish.",
+            "class": "item-lore"
+        }
+    ]
+}

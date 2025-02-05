@@ -1,0 +1,34 @@
+{
+    "Item": "Grand Wizard's Silk Shoes",
+    "Tier": "S",
+    "Level": "85",
+    "Defense": "108.2089-128",
+    "Type": "Boot",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[70-100]% Enhanced Defense",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[1-3] to All Skills",
+            "class": "stat-allskills"
+        },
+        {
+            "stat": "+10% Increased Movement Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[10-20]% Faster Cast Rate",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[15-25] to Energy",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[40-60] to Mana",
+            "class": "stat-default"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "Item": "Cold Giant's Charm",
+    "Tier": "S",
+    "Level": "77",
+    "Type": "Charm",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "Cold Skill Damage increased by [7-20]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "-[3-10]% to Enemy Cold Resistance",
+            "class": "stat-default"
+        }
+    ]
+}
