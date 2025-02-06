@@ -58,20 +58,48 @@ onMounted(() => {
 })
 
 const updateTooltipPosition = () => {
-  const x = props.pos.x + (tooltipSize.value.width > 0 && props.pos.x > screenWidth / 2 ?  -tooltipSize.value.width : 0)
-  const y = props.pos.y + (tooltipSize.value.height > 0 && props.pos.y > screenHeight / 2 ? -tooltipSize.value.height * 1.05 : 0)
+  let x = props.pos.x
+  let y = props.pos.y
+
+  // Mobile
+  if (screenWidth < 768) {
+    x = (screenWidth - tooltipSize.value.width) / 2
+    y = (screenHeight - tooltipSize.value.height) / 2
+
+    if (tooltipSize.value.width * 2 > screenWidth || tooltipSize.value.height * 2 > screenHeight) {
+      x = 0
+      y = 0
+    }
+  } else {
+    if (tooltipSize.value.width > 0 && props.pos.x > screenWidth / 2) {
+      x = props.pos.x - tooltipSize.value.width
+    }
+    if (tooltipSize.value.height > 0 && props.pos.y > screenHeight / 2) {
+      y = props.pos.y - tooltipSize.value.height * 1.05
+    }
+  }
 
   tooltipPosition.value = {
-    x: x,
-    y: y
+    x,
+    y
   }
 }
 
-const tooltipStyle = computed(() => ({
-  left: `${tooltipPosition.value.x}px`,
-  top: `${tooltipPosition.value.y}px`,
-  borderColor: borderColor.value
-}))
+const tooltipStyle = computed(() => {
+  if (screenWidth < 768) {
+    return {
+      transform: `translate(${tooltipPosition.value.x}px, ${tooltipPosition.value.y}px)`,
+  borderColor: borderColor.value,
+  touchAction: 'none' // Блокировка браузерных жестов
+    };
+  } else {
+    return {
+      left: `${tooltipPosition.value.x}px`,
+      top: `${tooltipPosition.value.y}px`,
+      borderColor: borderColor.value
+    };
+  }
+});
 
 const combinedType = (item: Equipment) => {
   return `${item.rarity} ${item.subtype}`
@@ -166,19 +194,20 @@ const tierClass = computed(() => {
   position: fixed;
   background: rgba(0, 0, 0, 0.8);
   color: white;
-  padding: 10px;
+  padding: 0.8rem;
   border-radius: 5px;
   border: 2px solid;
   white-space: nowrap;
   z-index: 1000;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(5px);
+  max-width: 90vw;
+  pointer-events: none;
 }
 
 
 .item-name {
   font-weight: bold;
-  font-size: 14px;
+  font-size: 1rem;
 }
 
 .rarity {
@@ -214,6 +243,23 @@ const tierClass = computed(() => {
 .stats-list {
   list-style: none;
   padding: 0;
-  margin: 5px 0 0;
+  margin: 2rem 0 0;
+}
+
+@media (max-width: 768px) {
+  ::v-deep(.stat-container) {
+    margin-top: -2rem;
+  }
+  .tooltip {
+    padding: 0rem;
+  }
+  .stats-list {
+      margin: 0;
+  }
+  .tier-container .level-container {
+    padding-left: 0em;
+    padding-right: 0em;
+  }
+
 }
 </style>

@@ -1,6 +1,8 @@
 <template>
   <div
     class="container"
+    @click="saveItem"
+    :class="{ saved: isSaved }"
   >
     <!-- Frame -->
     <img :src="frameSrc" alt="Item frame" class="background" />
@@ -77,6 +79,18 @@ const color = computed(() => {
   }
 })
 
+const isSaved = ref(false)
+
+const saveItem = () => {
+  const json = JSON.stringify(props.item, null, 2)
+  navigator.clipboard.writeText(json).then(() => {
+    isSaved.value = true
+    setTimeout(() => {
+      isSaved.value = false
+    }, 500) // Сбрасываем эффект через 0.5 сек
+  })
+}
+
 </script>
 
 <style scoped>
@@ -90,6 +104,16 @@ const color = computed(() => {
 
 .container:hover {
   overflow: visible;
+}
+
+.container.saved {
+  animation: savedEffect 2s ease-out;
+}
+
+@keyframes savedEffect {
+  0% { filter: hue-rotate(90deg);}
+  50% { filter: hue-rotate(180deg); }
+  100% { filter: hue-rotate(270deg); }
 }
 
 .background {
@@ -166,4 +190,14 @@ const color = computed(() => {
 .socket-4 { grid-area: s4; }
 .socket-5 { grid-area: s5; }
 .socket-6 { grid-area: s6; }
+
+@media (max-width: 768px) {
+  .container.saved {
+    animation: none;
+  }
+  .item:hover {
+    transform: translate(-25%, -25%);
+    filter: none;
+  }
+}
 </style>

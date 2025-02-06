@@ -14,7 +14,13 @@ const routes = [
   {
     path: '/catalog',
     name: 'catalog',
+    // @ts-ignore
     component: () => import('../views/EquipmentCatalogView.vue') // Lazy-load
+  },
+  {
+    path: '/equipment',
+    name: 'equipment',
+    component: () => import('../views/CharacterEquipmentView.vue') // Lazy-load
   },
 ]
 
