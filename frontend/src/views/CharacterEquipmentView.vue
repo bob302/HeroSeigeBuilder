@@ -1,60 +1,127 @@
 <template>
   <div class="container">
     <div class="inventory-container">
-    <div class="helm">HELM</div>
-    <div class="amulet">AMULET</div>
-    <div class="weapon">HAND 1</div>
-    <div class="body-armour">BODY</div>
-    <div class="offhand">HAND 2</div>
-    <div class="ring">RING 1</div>
-    <div class="belt">BELT</div>
-    <div class="ring2">RING 2</div>
-    <div class="gloves">GLOVES</div>
-    <div class="flask flask1">FLASK 1</div>
-    <div class="flask flask2">FLASK 2</div>
-    <div class="flask flask3">FLASK 3</div>
-    <div class="flask flask4">FLASK 4</div>
-    <div class="boots">BOOTS</div>
-    <div class="relic relic1">RELIC</div>
-    <div class="relic relic2">RELIC</div>
-    <div class="relic relic3">RELIC</div>
-    <div class="relic relic4">RELIC</div>
-    <div class="relic relic5">RELIC</div>
-  </div>
-  <div class="charms-container">
-    <div 
-      v-for="(item, index) in inventoryItems" 
-      :key="index"
-      class="inventory-item"
-      :class="item.size"
-      :style="{
-        gridColumn: `span ${item.width}`,
-        gridRow: `span ${item.height}`
-      }"
-    >
-      {{ item.name }}
+      <div class="helm">HELM</div>
+      <div class="amulet">AMULET</div>
+      <div class="weapon">HAND 1</div>
+      <div class="body-armour">BODY</div>
+      <div class="offhand">HAND 2</div>
+      <div class="ring">RING 1</div>
+      <div class="belt">BELT</div>
+      <div class="ring2">RING 2</div>
+      <div class="gloves">GLOVES</div>
+      <div class="flask flask1">FLASK 1</div>
+      <div class="flask flask2">FLASK 2</div>
+      <div class="flask flask3">FLASK 3</div>
+      <div class="flask flask4">FLASK 4</div>
+      <div class="boots">BOOTS</div>
+      <div class="relic relic1">RELIC</div>
+      <div class="relic relic2">RELIC</div>
+      <div class="relic relic3">RELIC</div>
+      <div class="relic relic4">RELIC</div>
+      <div class="relic relic5">RELIC</div>
+    </div>
+    <div class="charms">
+      <div class="grid-wrapper">
+        <GridComponent :inventory="testInventory" @inventory-updated="handleInventoryUpdate" />
+      </div>
+      <button @click="addAnvil" class="test-button">Anvil</button>
+      <button @click="addFulgirite" class="test-button">Fulgurite</button>
+      <button @click="addMelon" class="test-button">Melon</button>
+      <button @click="findAllItemsInAllCells" class="test-button">Find</button>
     </div>
   </div>
-  </div>
-  
+
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref } from 'vue';
+import { onMounted, ref, type Ref } from 'vue';
+import { Inventory, type ItemConstructor } from '../models/Inventory';
+import GridComponent from '../components/GridComponent.vue';
+import { Equipment, EquipmentRarity, EquipmentTier, EquipmentType } from '../models/Equipment';
+import { Point2D } from '../models/Point2D';
+import { Item } from '../models/Item';
 
-// Массив предметов в инвентаре
-const inventoryItems = ref([
-  { name: "Small Charm", width: 1, height: 1, size: "c1x1" },
-  { name: "Large Charm", width: 1, height: 2, size: "c1x2" },
-  { name: "Grand Charm", width: 1, height: 3, size: "c1x3" },
-  { name: "Melon Charm", width: 2, height: 2, size: "c2x2" },
-  { name: "Eggplant Charm", width: 3, height: 2, size: "c3x2" },
-  { name: "Carrot Charm", width: 2, height: 3, size: "c2x3" },
-  { name: "Grand Melon Charm", width: 3, height: 3, size: "c3x3" },
-]);
+const testInventory: Ref<Inventory> = ref(new Inventory(new Point2D(3, 11), 44));
+
+  // debug
+  const findAllItemsInAllCells = () => {
+    const size = testInventory.value.gridSize
+
+    for (let i = 0; i < size.x; i++) {
+      for (let j = 0; j < size.y; j++) {
+        const item = testInventory.value.getItemInCell(new Point2D(i, j))
+        console.log(item);
+      }
+    }
+  }
+
+const handleInventoryUpdate = (newInventory: Inventory): void => {
+  testInventory.value = newInventory;
+}
+
+const addAnvil = () => {
+  if (testInventory.value.itemOnCursor) return
+  testInventory.value.addItem( new Item(test3.value, new Point2D(1, 1)), testInventory.value.cellSize)
+}
+
+const addMelon = () => {
+  if (testInventory.value.itemOnCursor) return
+  testInventory.value.addItem( new Item(test2.value, new Point2D(2, 2)), testInventory.value.cellSize)
+
+}
+const addFulgirite = () => {
+  if (testInventory.value.itemOnCursor) return
+  testInventory.value.addItem( new Item(test.value, new Point2D(1, 2)), testInventory.value.cellSize)
+}
+
+
+const testSrc = '/data/charms/fulgurite/icon.png'
+const testSrc2 = '/data/charms/water-melon/icon.png'
+const testSrc3 = '/data/charms/torsteins-anvil/icon.png'
+
+const test3 = ref<Equipment>({
+  name: 'Generic Item',
+  type: EquipmentType.Special,
+  subtype: 'Charm',
+  tier: EquipmentTier.S,
+  level: '100',
+  stats: [],
+  sockets: { amount: 0, min: 0, max: 0, list: [] },
+  rarity: EquipmentRarity.Heroic,
+  isLoading: false,
+  image: testSrc3
+})
+
+const test2 = ref<Equipment>({
+  name: 'Generic Item',
+  type: EquipmentType.Special,
+  subtype: 'Charm',
+  tier: EquipmentTier.S,
+  level: '100',
+  stats: [],
+  sockets: { amount: 0, min: 0, max: 0, list: [] },
+  rarity: EquipmentRarity.Angelic,
+  isLoading: false,
+  image: testSrc2
+})
+
+const test = ref<Equipment>({
+  name: 'Generic Item',
+  type: EquipmentType.Special,
+  subtype: 'Charm',
+  tier: EquipmentTier.S,
+  level: '100',
+  stats: [],
+  sockets: { amount: 0, min: 0, max: 0, list: [] },
+  rarity: EquipmentRarity.Heroic,
+  isLoading: false,
+  image: testSrc
+})
 
 onMounted(() => {
-  console.log("Items in inventory:", inventoryItems.value);
+  // debug
+  console.log("Test Inventory:", testInventory);
 });
 
 </script>
@@ -199,6 +266,18 @@ onMounted(() => {
   height: 6.7rem;
   grid-area: boots;
 
+}
+
+.grid-wrapper {
+  width: 100%; /* например */
+  height: 100%px; /* например */
+  margin: 0 auto;
+  position: relative;
+}
+
+.test-button {
+  padding: 0;
+  margin-top: 1rem;
 }
 
 </style>

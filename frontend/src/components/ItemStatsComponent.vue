@@ -57,6 +57,10 @@ onMounted(() => {
   })
 })
 
+watch(() => props.pos, () => {
+  updateTooltipPosition()
+})
+
 const updateTooltipPosition = () => {
   let x = props.pos.x
   let y = props.pos.y
@@ -89,8 +93,8 @@ const tooltipStyle = computed(() => {
   if (screenWidth < 768) {
     return {
       transform: `translate(${tooltipPosition.value.x}px, ${tooltipPosition.value.y}px)`,
-  borderColor: borderColor.value,
-  touchAction: 'none' // Блокировка браузерных жестов
+      borderColor: borderColor.value,
+      touchAction: 'none' // Блокировка браузерных жестов
     };
   } else {
     return {
@@ -140,9 +144,6 @@ const tierClass = computed(() => {
 })
 </script>
 
-
-
-
 <style scoped>
 @font-face {
   font-family: "Fenris";
@@ -179,6 +180,7 @@ const tierClass = computed(() => {
 ::v-deep(.stat-to-cold) { color: #39ddfb; font-family: 'Fenris'; font-weight: 600; }
 ::v-deep(.stat-to-poison) { color: #44de00; font-family: 'Fenris'; font-weight: 600; }
 ::v-deep(.stat-to-physical) { color: #c68a59; font-family: 'Fenris'; font-weight: 600; }
+::v-deep(.stat-to-lightning) { color: #6eedb6; font-family: 'Fenris'; font-weight: 600; }
 
 
 ::v-deep(.stat-container) {
@@ -198,8 +200,8 @@ const tierClass = computed(() => {
   border-radius: 5px;
   border: 2px solid;
   white-space: nowrap;
-  z-index: 1000;
-  backdrop-filter: blur(5px);
+  z-index: 5;
+  backdrop-filter: blur(8px);
   max-width: 90vw;
   pointer-events: none;
 }

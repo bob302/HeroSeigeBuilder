@@ -24,6 +24,7 @@ export class StatParser {
     const toColdRegex = /to Cold Skills/
     const toArcaneRegex = /to Arcane Skills/
     const toPhysicalRegex = /to Physical Skills/
+    const toLightningRegex = /to Lightning Skills/
     const unholyStatRegex = /Unholy Stat/
     const unbreakableRegex = /Unbreakable/
 
@@ -120,6 +121,12 @@ export class StatParser {
 
     if (toPhysicalRegex.exec(line) !== null) {
       const html = `<div class="stat-container"><p class="stat-to-physical">${line}</p></div>`
+      return { html, stat }
+    }
+
+    
+    if (toLightningRegex.exec(line) !== null) {
+      const html = `<div class="stat-container"><p class="stat-to-lightning">${line}</p></div>`
       return { html, stat }
     }
 

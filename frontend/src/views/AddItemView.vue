@@ -165,7 +165,7 @@
 
 <script setup lang="ts">
 import { ref, watch } from 'vue'
-import ItemFrameComponent from '../components/ItemFrameComponent.vue'
+import ItemFrameComponent from '../components/ItemFrame.vue'
 import { StatParser } from '../services/StatParser'
 import { ItemParser } from '../services/ItemParser'
 import { ArmorEquipment, Equipment, EquipmentRarity, EquipmentSubtypes, EquipmentTier, EquipmentType, isWeapon, type Socket, WeaponEquipment } from '../models/Equipment'

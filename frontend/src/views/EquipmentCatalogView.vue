@@ -32,36 +32,51 @@
     <div v-if="isLoading" class="loading">Loading...</div>
     <div v-else class="list">
       <!-- ... существующий список элементов ... -->
-      <ItemFrameComponent v-for="(item, index) in filteredItems" :show-sockets="showSockets" :key="index" :item="item" :x="index % 4" :y="Math.floor(index / 4)" />
+      <ItemDisplay v-for="(equipment, index) in filteredItems" :show-sockets="showSockets" :key="index" :equipment="equipment" 
+      @item-display-on-mouse-enter="updateStatDisplay"  
+      @item-display-on-mouse-leave="resetStatDisplay"/>
     </div>
   </div>
+  <ItemStatsComponent v-if="lookingAt" :item="lookingAt" :pos="mousePosition"></ItemStatsComponent>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { ref, onMounted, computed, watch } from 'vue';
-import ItemFrameComponent from '../components/ItemFrameComponent.vue';
 import { ItemParser } from '../services/ItemParser';
-import { EquipmentSubtypes, isValidSubtype } from '../models/Equipment';
+import { Equipment, EquipmentSubtypes, EquipmentType, isValidSubtype } from '../models/Equipment';
+import ItemDisplay from '../components/ItemDisplay.vue';
+import ItemStatsComponent from '../components/ItemStatsComponent.vue';
 
-const items = ref([]);
+const items = ref<Array<Equipment>>([]);
 const isLoading = ref(true);
 const searchQuery = ref('');
 const statQuery = ref('');
-const typeQuery = ref('');
+const typeQuery = ref<EquipmentType>(EquipmentType.Weapon);
 const subtypeQuery = ref('');
 const showSockets = ref(false)
 const isMenuOpen = ref(false);
+const mousePosition = ref({ x: 0, y: 0 });
+const lookingAt = ref<Equipment | null>(null)
 
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value;
 };
+
+const updateStatDisplay = (data: {equipment: Equipment, pos: { x: number, y: number }}) => {
+  lookingAt.value = data.equipment;
+  mousePosition.value = data.pos;
+};
+
+const resetStatDisplay = () => {
+  lookingAt.value = null
+}
 
 const fetchEquipmentData = async () => {
   try {
     const response = await fetch('/data/index.json');
     const paths = await response.json();
     
-    const itemPromises = paths.map(async (path) => {
+    const itemPromises = paths.map(async (path: string) => {
       try {
         const dataResponse = await fetch(path + '/data.json');
         const jsonData = await dataResponse.json();
@@ -202,7 +217,7 @@ onMounted(fetchEquipmentData);
     overflow-y: auto;
     flex-direction: column;
     justify-content: flex-end;
-    z-index: 100;
+    z-index: 1000;
   }
 
   .search-container.mobile-visible {
