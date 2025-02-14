@@ -1,6 +1,7 @@
 import { CellData, CellState, HightLightCellState } from "./CellData";
 import type { Equipment } from "./Equipment";
-import type { Item } from "./Item";
+import type GameContext from "./GameContext";
+import { Item } from "./Item";
 import { Point2D } from "./Point2D"
 import { SlotData } from "./SlotData";
 // TODO it's working but need to review
@@ -8,18 +9,34 @@ export type ItemConstructor = new (data: Equipment, size: Point2D) => Item;
 
 export class Inventory {
   gridSize!: Point2D;
-  cellSize!: number;
   cellsData: CellData[] = [];
   slots: SlotData[] = [];
-  itemOnCursor: SlotData | null = null;
+  parent: GameContext
   onInventoryUpdated: (() => void)[] = [];
   
-  constructor(gridSize: Point2D, cellSize: number) {
+  constructor(parent: GameContext, gridSize: Point2D) {
+    this.parent = parent
     this.gridSize = gridSize;
-    this.cellSize = cellSize;
     this.cellsData = [];
     this.slots = [];
     this.initGrid();
+  }
+
+  clear() {
+    this.slots = []
+    this.updateAllCellsAfterRemoval()
+    this.handleInventoryUpdate();
+  }
+
+  setIsUnlockedCell(coordinates: Point2D, isUnlocked: boolean) {
+    const cell = this.getCell(coordinates)
+    if (!cell) return
+    const item = this.getItemInCell(coordinates)
+    if (item) {
+      this.removeItem(item)
+    }
+    cell.setIsUnlocked(isUnlocked)
+    this.handleInventoryUpdate()
   }
   
   initGrid() {
@@ -27,10 +44,10 @@ export class Inventory {
     for (let x = 0; x < this.gridSize.x; x++) {
       for (let y = 0; y < this.gridSize.y; y++) {
         const coords = new Point2D(x, y);
-        const data = new CellData(coords, this.cellSize)
+        const data = new CellData(coords)
 
         if (x === this.gridSize.x - 1) {
-          data.isEdge = true
+          data.getCellStyle().isEdge = true
         }
 
         this.cellsData.push(data);
@@ -84,10 +101,10 @@ export class Inventory {
   isFree(coordinates: Point2D): boolean {
     if (!this.isWithinBoundaries(coordinates)) return false;
     const cell = this.getCell(coordinates);
-    return !!cell && cell.getState() === CellState.Free;
+    return !!cell && cell.getState() === CellState.Free && cell.isUnlocked();
   }
 
-  doesItemFit(sizeInCells: Point2D[], coordinates: Point2D): HightLightCellState {
+  doesItemFit(sizeInCells: Point2D[], coordinates: Point2D, swap = false): HightLightCellState {
     const conflicts = new Set<Item>();
   
     for (const offset of sizeInCells) {
@@ -99,7 +116,7 @@ export class Inventory {
       }
       
       const cell = this.getCell(targetCoords);
-      if (!cell) {
+      if (!cell || cell.isUnlocked() === false) {
         return HightLightCellState.InvalidPlacement;
       }
       
@@ -118,12 +135,9 @@ export class Inventory {
     }
     
     // Если конфликт ровно один, проверяем возможность замены
-    if (conflicts.size === 1) {
-      const conflictItem = Array.from(conflicts)[0];
-      // Если конфликтующий предмет занимает ровно одну ячейку, разрешаем замену
-  
+    if (conflicts.size === 1 && !swap) {
+
       return HightLightCellState.Replacement;
-      
     }
     
     // В остальных случаях размещение недопустимо
@@ -141,12 +155,12 @@ export class Inventory {
     });
   }
 
-  addItem(item: Item, slotSize: number): boolean {
+  addItem(item: Item): boolean {
     const itemInstance = this.createItem(item);
     const coordinates = this.findFreeSpaceForItem(itemInstance.getSizeInCells() as Point2D[]);
     if (coordinates.isValid()) {
       itemInstance.setStartCoordinates(coordinates);
-      this.slots.push(new SlotData(itemInstance, slotSize));
+      this.slots.push(new SlotData(itemInstance));
       this.updateCellsForItem(coordinates, itemInstance.getSizeInCells() as Point2D[], CellState.Occupied);
       this.handleInventoryUpdate();
       return true;
@@ -154,10 +168,10 @@ export class Inventory {
     return false;
   }
 
-  setItem(item: Item, slotSize: number, destination: Point2D): boolean {
+  setItem(item: Item, destination: Point2D): boolean {
     if (destination.isValid()) {
       item.setStartCoordinates(destination);
-      const data = new SlotData(item, slotSize);
+      const data = new SlotData(item);
       data.onCursor = false;
       this.slots.push(data);
       this.updateCellsForItem(destination, item.getSizeInCells() as Point2D[], CellState.Occupied);
@@ -180,11 +194,11 @@ export class Inventory {
     
     // Используем оригинальный экземпляр и сохраняем его вместе с координатами
     // Если требуется, можно создать новый SlotData, сохраняя переданные координаты
-    this.itemOnCursor = new SlotData(item, 44);
+    this.parent.itemOnCursor = new SlotData(item);
     // При необходимости можно восстановить координаты
     item.setStartCoordinates(currentCoords);
     
-    this.itemOnCursor.onCursor = true;
+    this.parent.itemOnCursor.onCursor = true;
   }
   
 
@@ -196,9 +210,9 @@ export class Inventory {
     this.updateCellsForItem(item.getStartCoordinates(), item.getSizeInCells() as Point2D[], CellState.Free);
 
     // Если перемещаем предмет с курсора – добавляем его в слоты
-    if (item.uniqueId === this.itemOnCursor?.item?.uniqueId) {
-      this.slots.push(new SlotData(item, 44));
-      this.itemOnCursor = null;
+    if (item.uniqueId === this.parent.itemOnCursor?.item?.uniqueId) {
+      this.slots.push(new SlotData(item));
+      this.parent.itemOnCursor = null;
     }
 
     // Обновляем координаты предмета
@@ -213,8 +227,8 @@ export class Inventory {
   private findFreeSpaceForItem(sizeInCells: Point2D[]): Point2D {
     return this.cellsData.find(cell => 
       cell.getState() === CellState.Free && 
-      (this.doesItemFit(sizeInCells, cell.coordinates) === HightLightCellState.ValidPlacement
-    || this.doesItemFit(sizeInCells, cell.coordinates) === HightLightCellState.Replacement)
+      (this.doesItemFit(sizeInCells, cell.coordinates, true) === HightLightCellState.ValidPlacement
+    || this.doesItemFit(sizeInCells, cell.coordinates, true) === HightLightCellState.Replacement)
     )?.coordinates || new Point2D(-1, -1);
   }
 
@@ -235,6 +249,12 @@ export class Inventory {
     });
     
     return conflicts;
+  }
+
+  private updateAllCellsAfterRemoval(): void {
+    this.cellsData.forEach(cell => {
+      this.setCellState(cell.coordinates, CellState.Free);
+    });
   }
 
   // Новый вспомогательный метод: обновляет ячейки после удаления предмета,
@@ -259,8 +279,8 @@ export class Inventory {
     const slotIndex = this.slots.findIndex(s => s.item?.uniqueId === slot.item?.uniqueId);
 
     // Если предмет находится на курсоре – очищаем курсор
-    if (this.itemOnCursor?.item?.uniqueId === slot.item?.uniqueId) {
-      this.itemOnCursor = null;
+    if (this.parent.itemOnCursor?.item?.uniqueId === slot.item?.uniqueId) {
+      this.parent.itemOnCursor = null;
     }
 
     // Удаляем слот из массива
@@ -283,8 +303,8 @@ export class Inventory {
     const itemSize = slot.item!.getSizeInCells() as Point2D[];
 
     // Если предмет находится на курсоре – очищаем курсор
-    if (this.itemOnCursor?.item?.uniqueId === itemToRemove.uniqueId) {
-      this.itemOnCursor = null;
+    if (this.parent.itemOnCursor?.item?.uniqueId === itemToRemove.uniqueId) {
+      this.parent.itemOnCursor = null;
     }
 
     // Сначала удаляем слот из массива, чтобы при проверке getItemInCell не вернуть удаляемый предмет
@@ -299,29 +319,32 @@ export class Inventory {
   }
 
   swapItem(item: Item, destination: Point2D) {
-    if (!this.itemOnCursor?.item) return;
+    if (this.parent.itemOnCursor === null) return;
+    if (this.parent.itemOnCursor.item === null) return;
 
     // Помещаем предмет с курсора на новую позицию и обновляем ячейки
-    this.setItem(this.itemOnCursor.item, 44, destination);
+    this.setItem(this.parent.itemOnCursor.item, destination);
     // Затем поднимаем (снимаем) заменяемый предмет.
     this.pickupItem(item);
   }
 
   placeItemOnCursor(destination: Point2D) {
-    if (!this.itemOnCursor) return;
-
-    const conflicts = this.getConflictingItems(destination, this.itemOnCursor.item!);
+    if (this.parent.itemOnCursor === null) return;
+    if (this.parent.itemOnCursor.item === null) return;
+    
+    const conflicts = this.getConflictingItems(destination, this.parent.itemOnCursor.item);
     
     if (conflicts.size > 1) return
     if (conflicts.size === 1) {
       const [toSwap] = conflicts;
       this.swapItem(toSwap, destination);
     } else {
-      this.moveItem(this.itemOnCursor, destination);
+      this.moveItem(this.parent.itemOnCursor, destination);
     }
   }
 
   handleInventoryUpdate(): void {
       this.onInventoryUpdated.forEach(callback => callback());
   }
+
 }

@@ -3,6 +3,7 @@
     "Tier": "S",
     "Level": "87",
     "Type": "Charm",
+    "Size": "2x2",
     "Rarity": "Satanic",
     "Stats": [
         {
@@ -15,6 +16,10 @@
         },
         {
             "stat": "Life Increased by [7-15]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Charm Size [2x2]",
             "class": "stat-default"
         }
     ]

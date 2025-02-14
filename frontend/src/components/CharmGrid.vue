@@ -3,7 +3,7 @@
     <!-- Cell Grid -->
     <div class="cell-grid" :style="getGridStyle()">
       <CellComponent
-        v-for="(cell, index) in this.inventory.cellsData"
+        v-for="(cell, index) in inventory.cellsData"
         :key="`cell-${cell.coordinates.x}-${cell.coordinates.y}`"
         :cellData="cell"
         :style="getCellPositionStyle(cell)"
@@ -16,20 +16,14 @@
     <!-- Slot Grid -->
     <div class="slot-grid" :style="getGridStyle()">
       <SlotComponent
-        v-for="(slotData, index) in this.inventory.slots"
+        v-for="(slotData, index) in inventory.slots"
         :key="'slot-' + index"
         :slot-data="slotData"
-        :style="this.getSlotStyle(slotData)"
+        :style="getSlotStyle(slotData)"
         :cell-size="cellSize"
         @slot-click="onSlotClick"
         @slot-mouse-enter="onSlotHover"
         @slot-mouse-leave="onSlotMouseLeave"
-      />
-<!-- Slot Grid -->
-      <DraggedSlot 
-        v-if="this.inventory.itemOnCursor" 
-        :slotData="this.inventory.itemOnCursor" 
-        ref="draggedSlot"
       />
     </div>
   </div>
@@ -45,25 +39,20 @@ import { Point2D } from '../models/Point2D';
 import CellComponent from './CellComponent.vue';
 import SlotComponent from './SlotComponent.vue';
 import DraggedSlot from './DraggedSlot.vue';
-
-type CellCache = Record<string, CellData>;
+import type { Equipment } from '../models/Equipment';
 
 @Component({
   components: {
     SlotComponent,
     CellComponent,
     DraggedSlot
-}})
-export default class GridComponent extends Vue {
+}, emits: ['slot-mouse-enter', 'slot-mouse-leave']})
+export default class CharmGrid extends Vue {
   @Prop({type: Inventory, required: true}) inventory!: Inventory
-
-  cellSize: number = 40;
-
-  mounted() {
-  }
+  @Prop({type: Number, required: false}) cellSize: number = 2.9
 
   private updateHighlight(base: Point2D, state: HightLightCellState) {
-    this.inventory.itemOnCursor!.item!.getSizeInCells().forEach(offset => {
+    this.inventory.parent.itemOnCursor!.item!.getSizeInCells().forEach(offset => {
       const coord = base.add(offset);
       const cell = this.inventory.getCell(coord)
       if (cell) {
@@ -85,9 +74,9 @@ export default class GridComponent extends Vue {
   }
 
   onClickOnCell(cellData: CellData) {
-    if (!this.inventory.itemOnCursor?.item) return;
+    if (!this.inventory.parent.itemOnCursor?.item) return;
 
-    const isValid = this.inventory.doesItemFit(this.inventory.itemOnCursor.item.getSizeInCells() as Point2D[], cellData.coordinates);
+    const isValid = this.inventory.doesItemFit(this.inventory.parent.itemOnCursor.item.getSizeInCells() as Point2D[], cellData.coordinates);
     if (isValid === HightLightCellState.ValidPlacement || isValid === HightLightCellState.Replacement) {
       this.placeItem(cellData.coordinates);
     }
@@ -95,46 +84,40 @@ export default class GridComponent extends Vue {
 
    // ПЕРЕПИСАТЬ
    onSlotClick(slotData: SlotData) {
-    if (this.inventory.itemOnCursor || !slotData.item) {
+    if (this.inventory.parent.itemOnCursor || !slotData.item) {
       this.placeItem(slotData.item?.startCoordinates!)
     } else {
     //this.inventory.removeItemBySlot(slotData)
     this.inventory.pickupItem(slotData.item)
+    this.onSlotMouseLeave()
     }
   }
 
-  onSlotHover(slot: SlotData) {
-    if (!slot.item) return
-    const cell = this.inventory.getCell(slot.item?.getStartCoordinates())
+  onSlotHover(data: {slot: SlotData, pos: {x: number, y: number}}) {
+    if (!data.slot.item) return
+    const cell = this.inventory.getCell(data.slot.item?.getStartCoordinates())
     if (!cell) return
+    this.$emit('slot-mouse-enter', {equipment: data.slot.item.data, pos: {x: data.pos.x, y: data.pos.y}})
+
     this.onCellHover(cell)
   }
 
-  onSlotMouseLeave(slot: SlotData) {
+  onSlotMouseLeave() {
+    this.$emit('slot-mouse-leave')
     this.onCellMouseLeave()
   }
 
 
   onCellHover(cell: CellData) {
-    if (!this.inventory.itemOnCursor?.item) return;
+    if (!this.inventory.parent.itemOnCursor?.item) return;
     
-    const state = this.inventory.doesItemFit(this.inventory.itemOnCursor.item.getSizeInCells() as Point2D[], cell.coordinates);
+    const state = this.inventory.doesItemFit(this.inventory.parent.itemOnCursor.item.getSizeInCells() as Point2D[], cell.coordinates);
     this.updateHighlight(cell.coordinates, state);
   }
 
   onCellMouseLeave() {
-    if (!this.inventory.itemOnCursor?.item) return;
+    if (!this.inventory.parent.itemOnCursor?.item) return;
     this.resetCellHighlights();
-  }
-
-  onItemDrop(destination: Point2D): void {
-    this.inventory.cellsData.forEach(cell => {
-      if (cell.getState() !== CellState.Occupied) {
-        cell.setState(CellState.Free)
-      } 
-    });
-
-    this.placeItem(destination)
   }
 
   getCellIndex(inCoordinates: Point2D): number {
@@ -153,6 +136,8 @@ export default class GridComponent extends Vue {
       display: 'grid',
       gridTemplateColumns: `repeat(${x}, 1fr)`,
       gridTemplateRows: `repeat(${y}, 1fr)`,
+      maxWidth: `${x * this.cellSize}rem`,
+      maxHeight: `${y * this.cellSize}rem`,
     };
   }
 
@@ -195,7 +180,7 @@ onSlotRemoved(slot: SlotData): void {
 /* Общий контейнер для слоев */
 .charm-inventory-container {
   display: grid;
-  position: relative; /* Относительное позиционирование для создания контекста */
+  position: relative;
   width: 100%;
   height: 100%;
 }
@@ -204,8 +189,6 @@ onSlotRemoved(slot: SlotData): void {
 .cell-grid {
   grid-row: 1;
   grid-column: 1;
-  width: 100%;
-  height: 100%;
   z-index: 1; /* Низкий z-index, чтобы быть ниже слотов */
 }
 
@@ -214,8 +197,6 @@ onSlotRemoved(slot: SlotData): void {
   pointer-events: none;
   grid-row: 1;
   grid-column: 1;
-  width: 100%;
-  height: 100%;
   z-index: 2; /* Высокий z-index, чтобы отображаться поверх ячеек */
 }
 </style>

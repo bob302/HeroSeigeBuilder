@@ -20,7 +20,7 @@ const routes = [
   {
     path: '/equipment',
     name: 'equipment',
-    component: () => import('../views/CharacterEquipmentView.vue') // Lazy-load
+    component: () => import('../views/InventoryEditorView.vue') // Lazy-load
   },
 ]
 

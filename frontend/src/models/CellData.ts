@@ -12,13 +12,20 @@ export enum HightLightCellState {
   None = "None"
 }
 
+export interface CellStyle {
+  width: string,
+  height: string,
+  border: string,
+  isEdge: boolean,
+  background: string
+}
 export class CellData {
   coordinates!: Point2D
-  private cellSize!: number
   private color!: string
   private state: CellState
   private highhlightState: HightLightCellState
-  isEdge: boolean = false
+  private cellStyle: CellStyle = {width: '2.9rem', height: '2.9rem', border: '8px solid', isEdge: false, background: ''}
+  private unlocked: boolean = true
 
   defaultColor: string = "black";
   validColor: string = "green";
@@ -26,12 +33,29 @@ export class CellData {
   replacementColor: string = "none";
   occupiedColor: string = "#344feb"
 
-  constructor(coordinates: Point2D, cellSize: number = 44) {
+  constructor(coordinates: Point2D) {
     this.highhlightState = HightLightCellState.None
     this.state = CellState.Free
     this.coordinates = coordinates;
-    this.cellSize = cellSize;
     this.updateColor()
+  }
+
+  getCellStyle() {
+    return this.cellStyle
+  }
+
+  setCellStyle(style: CellStyle) {
+    if (!style) return
+     this.cellStyle = style
+  }
+
+
+  isUnlocked() {
+    return this.unlocked
+  }
+
+  setIsUnlocked(isUnlocked: boolean) {
+    this.unlocked = isUnlocked
   }
 
   setHighlightState(state: HightLightCellState) {
@@ -87,13 +111,8 @@ export class CellData {
     }
   }
 
-  setCellSize(cellSize: number) {
-    this.cellSize = cellSize
-  }
-
   setData(newCoordinates: Point2D, newSize: number): void {
     this.coordinates = newCoordinates
-    this.cellSize = newSize
   }
 
 }

@@ -3,6 +3,7 @@
     "Tier": "S",
     "Level": "64",
     "Type": "Charm",
+    "Size": "1x2",
     "Rarity": "Satanic",
     "Stats": [
         {
@@ -11,6 +12,10 @@
         },
         {
             "stat": "+[15-30]% Increased Attack Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Charm Size [1x2]",
             "class": "stat-default"
         }
     ]

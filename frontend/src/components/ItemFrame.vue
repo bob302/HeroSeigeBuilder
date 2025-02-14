@@ -1,9 +1,15 @@
 <template>
-    <img :src="frameSrc" alt="Item frame" class="background" />
+    <img :src="this.src" alt="Item frame" class="background" />
 </template>
 
-<script setup lang="ts">
-const frameSrc = '/img/editor/item-frame.png'
+<script lang="ts">
+import { Component, Prop, Vue } from 'vue-facing-decorator';
+
+@Component
+export default class ItemDisplay extends Vue {
+  @Prop({ type: String, required: true }) src!: string;
+
+}
 </script>
 
 <style scoped>

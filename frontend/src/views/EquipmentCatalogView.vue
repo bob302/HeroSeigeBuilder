@@ -32,7 +32,7 @@
     <div v-if="isLoading" class="loading">Loading...</div>
     <div v-else class="list">
       <!-- ... существующий список элементов ... -->
-      <ItemDisplay v-for="(equipment, index) in filteredItems" :show-sockets="showSockets" :key="index" :equipment="equipment" 
+      <ItemDisplay v-for="(equipment, index) in filteredItems" :show-sockets="showSockets" :key="index" :equipment="equipment" :src="src"
       @item-display-on-mouse-enter="updateStatDisplay"  
       @item-display-on-mouse-leave="resetStatDisplay"/>
     </div>
@@ -57,6 +57,8 @@ const showSockets = ref(false)
 const isMenuOpen = ref(false);
 const mousePosition = ref({ x: 0, y: 0 });
 const lookingAt = ref<Equipment | null>(null)
+
+const src = "/img/editor/item-background.png"
 
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value;

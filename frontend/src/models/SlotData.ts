@@ -1,18 +1,15 @@
+import type { Inventory } from "./Inventory";
 import { Item } from "./Item";
 
 export class SlotData {
   item: Item | null;
-  slotSize!: number;
   onCursor = false;
+  parent!: Inventory
 
-  constructor(item: Item | null = null, slotSize: number) {
+  constructor(item: Item | null = null) {
     this.item = item;
-    this.slotSize = slotSize
   }
 
-  setSlotSize(slotSize: number) {
-    this.slotSize = slotSize
-  }
 
   equals(other: SlotData): boolean {
     if (!other) return false;
@@ -25,6 +22,6 @@ export class SlotData {
   }
 
   clone(): SlotData {
-    return new SlotData(this.item?.copy(), this.slotSize);
+    return new SlotData(this.item?.copy());
   }
 }

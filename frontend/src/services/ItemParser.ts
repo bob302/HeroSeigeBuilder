@@ -1,10 +1,11 @@
-import { ArmorEquipment, Equipment, EquipmentSubtypes, EquipmentType, WeaponEquipment, type Stat} from '../models/Equipment'
+import { ArmorEquipment, CharmEquipment, Equipment, EquipmentSubtypes, EquipmentType, WeaponEquipment, type Socket, type Stat} from '../models/Equipment'
 import { StatFormatter } from '../util/StatFormatter'
 import { StatParser } from './StatParser'
 
 export class ItemParser {
-  static parseItem (rawItem: any): Equipment {
-    return {
+  static parseItem(rawItem: any): Equipment {
+    // Общие поля для всех типов снаряжения
+    const commonProps = {
       name: rawItem.name,
       type: rawItem.type,
       subtype: rawItem.subtype,
@@ -14,9 +15,42 @@ export class ItemParser {
       sockets: rawItem.sockets,
       image: rawItem.image,
       stats: rawItem.stats.map(ItemParser.parseStat),
-      isLoading: true
+      isLoading: true,
+      size: rawItem.size,
+    };
+  
+    // Создание конкретного типа экипировки
+    if (rawItem.type === EquipmentType.Armor) {
+      const armorProps = {
+        ...commonProps,
+        armorStats: { defense: rawItem.defense || "0" }
+      }
+      return new ArmorEquipment(
+        armorProps
+      );
+    } else if (rawItem.type === EquipmentType.Weapon) {
+      const weaponProps = {
+        ...commonProps,
+        weaponStats: {
+          APSStat: rawItem.APS || "0",
+          attackDamageStat: rawItem.Damage || "0",
+          oneHanded: true, // Пока что всегда true, можно сделать динамическим
+        }
+      }
+      return new WeaponEquipment(
+        weaponProps
+      );
+    } else if (rawItem.subtype === "Charm") {
+      return new CharmEquipment(
+        commonProps
+      );
+    } else {
+      return new Equipment(
+        commonProps
+      );
     }
   }
+  
 
   static parseWikiItem (rawItem: any): Equipment {
     const subtype = rawItem.Type
@@ -25,20 +59,38 @@ export class ItemParser {
       subtypes.includes(subtype)
     )?.[0] as EquipmentType || EquipmentType.Special
 
-    let baseItem: Equipment = {
+    let size = { width: 1, height: 1 };
+      
+    const sizeStat = rawItem.Size;
+
+    if (sizeStat) {
+      const match = sizeStat.match(/(\d+)x?(\d*)/)
+      if (match) {
+        size.width = match[1] ? parseInt(match[1]) : 1;
+        size.height = match[2] ? parseInt(match[2]) : 1;
+      }
+    }
+
+    const commonProps = {
       name: rawItem.Item,
-      type,
-      subtype,
+      type: type,
+      subtype: subtype,
       tier: rawItem.Tier,
       rarity: rawItem.Rarity,
       level: rawItem.Level,
-      sockets: {amount: 0, min: 0, max: 0,  list: [] },
+      sockets: {
+        amount: 0,
+        min: 0,
+        max: 0,
+        list: [] as Socket[],
+      },
       image: rawItem.Image,
       stats: rawItem.Stats.map((statObj: { stat: string, class: string }) => 
-        ItemParser.parseWikiStat(statObj.stat, statObj.class === 'stat-spell' ? true : false)
-      ),
-      isLoading: true
-    }
+        ItemParser.parseWikiStat(statObj.stat, statObj.class === 'stat-spell' ? true : false)),
+      isLoading: true,
+      size: size,
+    };
+  
 
     // Socket Amount
     const socketStat = rawItem.Stats.find((stat: { stat: string }) => stat.stat.includes("Socketed"));
@@ -63,30 +115,40 @@ export class ItemParser {
         prismaticSockets = maxSocketsPrismatic;
       }
     
-      baseItem.sockets.min = normalSockets + prismaticSockets;
-      baseItem.sockets.max = normalSockets + prismaticSockets;
-      baseItem.sockets.amount = baseItem.sockets.max;
+      commonProps.sockets.min = normalSockets + prismaticSockets;
+      commonProps.sockets.max = normalSockets + prismaticSockets;
+      commonProps.sockets.amount = commonProps.sockets.max;
     
-      baseItem.sockets.list = [
+      commonProps.sockets.list = [
         ...Array(normalSockets).fill({ prismatic: false }),
         ...Array(prismaticSockets).fill({ prismatic: true })
       ];
     }
     
-    
     if (type === EquipmentType.Armor) {
-      baseItem = {
-        ...baseItem,
-        armorStats: { defense: rawItem.Defense }
-      } as ArmorEquipment
+      
+      const armorProps = {
+        ...commonProps,
+        armorStats: { defense: rawItem.defense || "0" }
+      }
+      return new ArmorEquipment(
+        armorProps
+      );
     } else if (type === EquipmentType.Weapon) {
-      baseItem = {
-        ...baseItem,
-        weaponStats: { APSStat: rawItem.APS, attackDamageStat: rawItem.Damage, oneHanded: true }
-      } as WeaponEquipment
+      const weaponProps = {
+        ...commonProps,
+        weaponStats: {
+          APSStat: rawItem.APS || "0",
+          attackDamageStat: rawItem.Damage || "0",
+          oneHanded: true,
+        }
+      }
+      return new WeaponEquipment(weaponProps);
+    } else if (subtype === "Charm") {
+      return new CharmEquipment(commonProps);
+    } else {
+      return new Equipment(commonProps);
     }
-
-    return baseItem
   }
 
   static parseWikiStat (stat: any, special = false): Stat {

@@ -204,6 +204,7 @@ const tierClass = computed(() => {
   backdrop-filter: blur(8px);
   max-width: 90vw;
   pointer-events: none;
+  z-index: 20;
 }
 
 

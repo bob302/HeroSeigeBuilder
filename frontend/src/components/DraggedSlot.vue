@@ -12,7 +12,7 @@
 <script lang="ts">
 import { Vue, Component, Prop } from "vue-facing-decorator";
 import { SlotData } from "../models/SlotData";
-import Item from "./Item.vue";
+import Item from "./ItemComponent.vue";
 import type { CSSProperties } from "vue";
 
 @Component({

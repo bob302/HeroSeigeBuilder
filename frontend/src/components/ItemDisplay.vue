@@ -1,12 +1,13 @@
 <template>
-  <div class="display" @click="saveItem()" :class="{ saved: this.isSaved }">
-    <div class="item">
-      <Item :equipment="this.equipment" :showSockets="this.showSockets" :pointerEvents="true" 
-      @item-on-mouse-enter="onMouseEnter" 
-      @item-on-mouse-leave="onMouseLeave"/>
-    </div>
-    <div class="frame">
-      <ItemFrame/>
+  <div class="display-container" @click="saveItem()" :class="{ saved: this.isSaved }">
+    <div class="item-content">
+      <div class="item">
+        <ItemComponent :equipment="this.equipment" :showSockets="this.showSockets" :pointerEvents="true"
+          @item-on-mouse-enter="onMouseEnter" @item-on-mouse-leave="onMouseLeave" />
+      </div>
+      <div class="frame">
+        <ItemFrame :src="src" />
+      </div>
     </div>
   </div>
 </template>
@@ -14,28 +15,32 @@
 <script lang="ts">
 import type { Equipment } from '../models/Equipment'
 import { Component, Prop, Vue } from 'vue-facing-decorator';
-import Item from './Item.vue'
+import ItemComponent from './ItemComponent.vue'
 import ItemFrame from './ItemFrame.vue'
 
 @Component({
-  components: {Item, ItemFrame},
+  components: {ItemComponent, ItemFrame},
   emits: ['item-display-on-mouse-enter', 'item-display-on-mouse-leave']
 })
 export default class ItemDisplay extends Vue {
   @Prop({ type: Object, required: true }) equipment!: Equipment;
+  @Prop({ type: String, required: true }) src!: string;
+
 
   showSockets: boolean = false
   pointerEvents: boolean = false
   isSaved = false
 
-  saveItem = () => {
+  mounted() {
+
+  }
+
+  saveItem() {
   const json = JSON.stringify(this.equipment, null, 2)
   navigator.clipboard.writeText(json).then(() => {
-    this.isSaved = true
-    setTimeout(() => {
-      this.isSaved = false
-    }, 500)})
+  })
   }
+
 
   onMouseEnter(data: {equipment: Equipment, pos: {x: number, y: number}}) {
     this.$emit("item-display-on-mouse-enter", data)
@@ -49,8 +54,7 @@ export default class ItemDisplay extends Vue {
 </script>
 
 <style scoped>
-.display {
-  position: relative;
+.display-container {
   width: 7.6rem;
   height: 11.32rem;
   max-width: 7.6rem;
@@ -59,24 +63,28 @@ export default class ItemDisplay extends Vue {
   overflow: hidden;
 }
 
+.item-content {
+  height: 100%;
+  display:  flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
 .frame {
   min-width: 100%;
   min-height: 100%;
   position: absolute;
-  z-index: 1;
+  top: 0;
+  left: 0;
+  z-index: 9;
 }
-
 
 .item {
-  width: 7.6rem;
-  height: 11.32rem;
-  max-width: 7.6rem;
-  max-height: 11.32rem;
-  position: absolute;
-  z-index: 2;
+  z-index: 10;
 }
 
-.display:hover {
+.display-container:hover {
   overflow: visible;
 }
 

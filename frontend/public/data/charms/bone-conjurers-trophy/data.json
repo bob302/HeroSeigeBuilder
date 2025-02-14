@@ -3,11 +3,17 @@
     "Tier": "S",
     "Level": "74",
     "Type": "Charm",
+    "Size": "2x2",
     "Rarity": "Satanic",
     "Stats": [
         {
             "stat": "+[1-3] to Random Skill",
             "class": "stat-spell"
         }
+        ,
+        {
+            "stat": "Charm Size [1x2]",
+            "class": "stat-default"
+        } 
     ]
 }

@@ -1,8 +1,9 @@
 <template>
-  <div class="item-container" :style="pointerEvents ? 'pointer-events: all' : 'pointer-events: none'">
+  <div class="item-container" :style="pointerEvents ? 'pointer-events: all' : 'pointer-events: none'"
+      @mouseenter="this.onMouseEnter"
+      @mouseleave="this.onMouseLeave">
     <!-- Отображаем изображение предмета, если оно есть -->
-    <img v-if="this.equipment.image" :src="this.equipment.image" class="item-image" @mouseenter="this.onMouseEnter"
-      @mouseleave="this.onMouseLeave" />
+    <img v-if="this.equipment.image" :src="this.equipment.image" class="item-image"  />
 
     <!-- Отображение сокетов -->
     <div v-if="(this.equipment.sockets.amount) || this.showSockets" :class="[this.socketLayoutClass, 'socket-container']">
@@ -23,7 +24,7 @@ import { Component, Prop, Vue } from 'vue-facing-decorator';
   components: {SocketComponent},
   emits: ['item-on-mouse-enter', 'item-on-mouse-leave']
 })
-export default class Item extends Vue {
+export default class ItemComponent extends Vue {
   @Prop({ type: Object, required: true }) equipment!: Equipment;
   @Prop({ type: Boolean, required: false}) pointerEvents: boolean = false
   @Prop({ type: Boolean, required: false}) showSockets: boolean = false
@@ -40,6 +41,7 @@ export default class Item extends Vue {
   }
 
   onMouseEnter(event: MouseEvent) {
+    if (!this.equipment) return
     this.$emit("item-on-mouse-enter", {equipment: this.equipment, pos: {x: event.x, y: event.y}})
   }
 
@@ -55,31 +57,31 @@ export default class Item extends Vue {
   width: 100%;
   height: 100%;
   top: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /* Стили для предмета */
 .item-image {
-  scale: 175%;
+  scale: 125%;
   image-rendering: pixelated;
   transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
   z-index: 1;
-  object-fit: initial;
 }
 
-.item-image:hover {
-  transform: scale(175% 200%);
-}
 
 /* Стили для контейнера сокетов */
 .socket-container {
   display: grid;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   max-height: 100%;
   max-width: 100%;
-  top: -20%;
-  left: 20%;
+  top: 0%;
   gap: 0;
   pointer-events: none;
-  z-index: 2;
+  z-index: 11;
 }
 
 /* Примеры классов для разных раскладок сокетов */
@@ -94,13 +96,11 @@ export default class Item extends Vue {
 
 .even-layout {
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(1, 1fr);
   grid-template-areas:
-    ".  ."
     "s1  s2"
     "s3  s4"
-    "s5  s6"
-    ".  .";
+    "s5  s6";
   grid-column-gap: 0.2em;
 }
 
@@ -108,11 +108,9 @@ export default class Item extends Vue {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: repeat(5, 1fr);
   grid-template-areas:
-    ".  ."
     "s1  s2"
     "s3  s3"
-    "s4  s5"
-    ".  .";
+    "s4  s5";
   grid-column-gap: 0.3em;
 }
 

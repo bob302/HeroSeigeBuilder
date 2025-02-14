@@ -3,7 +3,8 @@
     "Tier": "C",
     "Level": "29",
     "Defense": "16.0010-23",
-    "Type": "Boot",
+    "Type": "Boots",
+    "Size": "2x2",
     "Rarity": "Satanic",
     "Stats": [
         {
