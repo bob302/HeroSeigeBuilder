@@ -4,7 +4,7 @@
     <div class="cell-grid" :style="getGridStyle()">
       <CellComponent
         v-for="(cell, index) in inventory.cellsData"
-        :key="`cell-${cell.coordinates.x}-${cell.coordinates.y}`"
+        :key="'cell-' + index"
         :cellData="cell"
         :style="getCellPositionStyle(cell)"
         @cell-click="onClickOnCell"
@@ -34,12 +34,11 @@
 import { Component, Prop, Vue } from 'vue-facing-decorator';
 import { Inventory } from '../models/Inventory';
 import { SlotData } from '../models/SlotData';
-import { CellData, CellState, HightLightCellState } from '../models/CellData';
+import { CellData, HightLightCellState } from '../models/CellData';
 import { Point2D } from '../models/Point2D';
 import CellComponent from './CellComponent.vue';
 import SlotComponent from './SlotComponent.vue';
 import DraggedSlot from './DraggedSlot.vue';
-import type { Equipment } from '../models/Equipment';
 
 @Component({
   components: {
@@ -47,7 +46,7 @@ import type { Equipment } from '../models/Equipment';
     CellComponent,
     DraggedSlot
 }, emits: ['slot-mouse-enter', 'slot-mouse-leave']})
-export default class CharmGrid extends Vue {
+export default class InventoryGrid extends Vue {
   @Prop({type: Inventory, required: true}) inventory!: Inventory
   @Prop({type: Number, required: false}) cellSize: number = 2.9
 
@@ -181,8 +180,6 @@ onSlotRemoved(slot: SlotData): void {
 .charm-inventory-container {
   display: grid;
   position: relative;
-  width: 100%;
-  height: 100%;
 }
 
 /* Слой ячеек */

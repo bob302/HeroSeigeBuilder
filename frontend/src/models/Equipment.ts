@@ -1,6 +1,6 @@
 export enum EquipmentRarity {
   Satanic = 'Satanic',
-  Set = 'Set',
+  'Satanic Set' = 'Satanic Set',
   Heroic = 'Heroic',
   Mythic = 'Mythic',
   Angelic = 'Angelic',

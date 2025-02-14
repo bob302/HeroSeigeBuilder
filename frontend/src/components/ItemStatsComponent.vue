@@ -115,7 +115,7 @@ const borderColor = computed(() => {
     case 'Angelic': return '#fdfea5'
     case 'Unholy': return '#c73664'
     case 'Heroic': return '#00e19a'
-    case 'Set': return '#0bb01a'
+    case 'Satanic Set': return '#0bb01a'
     default: return '#ffffff'
   }
 })
@@ -126,7 +126,7 @@ const nameClass = computed(() => {
     case 'Angelic': return 'name-angelic'
     case 'Unholy': return 'name-unholy'
     case 'Heroic': return 'name-heroic'
-    case 'Set': return 'name-satanic-set'
+    case 'Satanic Set': return 'name-satanic-set'
     default: return ''
   }
 })

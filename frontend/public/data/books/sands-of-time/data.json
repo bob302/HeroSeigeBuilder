@@ -1,0 +1,37 @@
+{
+    "Item": "Sands of Time",
+    "Tier": "A",
+    "Level": "61",
+    "Damage": "32.5030-35",
+    "APS": "1.751.75",
+    "DPS": "57.5053-62",
+    "Type": "Book",
+    "Size": "2x2",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "5% Chance when Casting [Sands of Time] Level 14",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "+2 to All Skills",
+            "class": "stat-allskills"
+        },
+        {
+            "stat": "+20% Faster Cast Rate",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+8 to Energy",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Arcane Skill Damage increased by [5-10]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Socketed (0-2)",
+            "class": "stat-default"
+        }
+    ]
+}

@@ -1,6 +1,5 @@
 <template>
-    <div v-if="catalogItems.length === 0" class="loading">LOADING</div>
-    <div v-else class="catalog">
+    <div class="catalog">
       <ItemDisplay v-for="(item, index) in catalogItems"
       :show-sockets="true" 
       :key="index" 
@@ -49,12 +48,15 @@ export default class EquipmentCatalog extends Vue {
 <style>
 .catalog {
   display: grid;
-  grid-template-columns: 1fr repeat(5, 1fr) 1fr;
+  align-content: flex-start;
+  grid-template-columns: 1fr repeat(10, 1fr) 1fr;
   width: 100%;
   max-width: 100%;
   max-height: 100%;
+  min-width: 38rem;
   overflow-y: auto;
   overflow-x: hidden;
+  gap: 0.2rem;
 }
 
 .catalog > * {

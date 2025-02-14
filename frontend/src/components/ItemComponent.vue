@@ -32,11 +32,17 @@ export default class ItemComponent extends Vue {
   get socketLayoutClass() {
     const socketCount = this.equipment.sockets.amount
     if (socketCount === 1) {
-      return 'single-layout'
-    } else if (socketCount % 2 === 0) {
-      return 'even-layout'
-    } else {
-      return 'odd-layout'
+      return 'one-layout'
+    } else if (socketCount === 2) {
+      return 'two-layout'
+    } else if (socketCount === 3) {
+      return 'three-layout'
+    } else if (socketCount === 4) {
+      return 'four-layout'
+    } else if (socketCount === 5) {
+      return 'five-layout'
+    } else if (socketCount === 6) {
+      return 'six-layout'
     }
   }
 
@@ -73,29 +79,69 @@ export default class ItemComponent extends Vue {
 /* Стили для контейнера сокетов */
 .socket-container {
   display: grid;
-  justify-content: center;
-  align-items: center;
   position: absolute;
-  max-height: 100%;
-  max-width: 100%;
-  top: 0%;
   gap: 0;
   pointer-events: none;
   z-index: 11;
+  place-items: center;  /* Добавлено для выравнивания содержимого */
 }
 
 /* Примеры классов для разных раскладок сокетов */
-.single-layout {
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+.one-layout {
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
   grid-template-areas:
-    ". . ."
-    ". s1 ."
-    ". . .";
+    "."
+    "s1"
+    ".";
 }
 
-.even-layout {
-  grid-template-columns: 1fr 1fr 1fr;
+.two-layout {
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "."
+    "s1"
+    "s2"
+    ".";
+}
+
+.three-layout {
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "."
+    "s1"
+    "s2"
+    "s3"
+    ".";
+}
+
+.four-layout {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    ". ."
+    "s1  s2"
+    "s3  s4"
+    ". .";
+  grid-column-gap: 0.2em;
+}
+
+.five-layout {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    ". . ."
+    "s1 . s2"
+    ". s3 ."
+    "s4 . s5"
+    ". . .";
+  grid-column-gap: 0.2em;
+}
+
+.six-layout {
+  grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(1, 1fr);
   grid-template-areas:
     "s1  s2"
@@ -104,15 +150,7 @@ export default class ItemComponent extends Vue {
   grid-column-gap: 0.2em;
 }
 
-.odd-layout {
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(5, 1fr);
-  grid-template-areas:
-    "s1  s2"
-    "s3  s3"
-    "s4  s5";
-  grid-column-gap: 0.3em;
-}
+
 
 .socket-1 { grid-area: s1; }
 .socket-2 { grid-area: s2; }

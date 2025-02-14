@@ -16,6 +16,7 @@ export interface CellStyle {
   width: string,
   height: string,
   border: string,
+  borderImage: string
   isEdge: boolean,
   background: string
 }
@@ -24,7 +25,7 @@ export class CellData {
   private color!: string
   private state: CellState
   private highhlightState: HightLightCellState
-  private cellStyle: CellStyle = {width: '2.9rem', height: '2.9rem', border: '8px solid', isEdge: false, background: ''}
+  private cellStyle: CellStyle = {width: '2.9rem', height: '2.9rem', border: '8px solid', isEdge: false, background: '', borderImage: ''}
   private unlocked: boolean = true
 
   defaultColor: string = "black";

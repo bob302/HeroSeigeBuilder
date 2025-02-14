@@ -16,7 +16,7 @@ const socketImage = computed(() =>
 
 <style scoped>
 .socket {
-  width: 36px;
-  height: 36px;
+  width: 2.3rem;
+  height: 2.3rem;
 }
 </style>

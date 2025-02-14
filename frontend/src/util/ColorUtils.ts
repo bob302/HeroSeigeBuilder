@@ -7,7 +7,7 @@ export default class ColorUtils {
       case 'Angelic': return '#fdfea5';
       case 'Unholy': return '#c73664';
       case 'Heroic': return '#00e19a';
-      case 'Set': return '#0bb01a';
+      case 'Satanic Set': return '#0bb01a';
       default: return '';
     }
   }
@@ -18,7 +18,7 @@ export default class ColorUtils {
       case 'Angelic': return '/img/editor/item-background-angelic.png';
       case 'Unholy': return '/img/editor/item-background-unholy.png';
       case 'Heroic': return '/img/editor/item-background-heroic.png';
-      case 'Set': return '/img/editor/item-background-set.png';
+      case 'Satanic Set': return '/img/editor/item-background-set.png';
       default: return '/img/editor/item-background-regular.png';
     }
   }

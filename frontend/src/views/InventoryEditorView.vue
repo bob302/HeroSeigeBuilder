@@ -1,5 +1,11 @@
 <template>
+  <div class="container">
+    <div class="logo">
+    <img src="/img/editor/logo.webp" />
+  </div>
   <TheInventory :context="gameContext"/>
+  </div>
+
 </template>
 
 <script lang="ts">
@@ -18,14 +24,13 @@ export default class InventoryEditorView extends Vue {
 </script>
 
 <style scoped>
-
-
-
-
-
-
-
-
+.container {
+  background-image: url('/img/editor/background.png');
+  background-size: cover;
+}
+.logo {
+  padding-bottom: 2rem;
+}
 .item-background {
   min-width: 100%;
   min-height: 100%;

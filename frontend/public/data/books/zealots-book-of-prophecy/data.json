@@ -1,0 +1,33 @@
+{
+    "Item": "Zealot's Book of Prophecy",
+    "Tier": "A",
+    "Level": "62",
+    "Damage": "33.5031-36",
+    "APS": "1.751.75",
+    "DPS": "59.0055-63",
+    "Type": "Book",
+    "Size": "2x2",
+    "Rarity": "Satanic Set",
+    "Stats": [
+        {
+            "stat": "+[2-4] to [Satans Mark]",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "Cooldown Recovery Increased by [5-10]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Arcane Skill Damage increased by [10-15]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Replenish Mana 15%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+35 to Mana",
+            "class": "stat-default"
+        }
+    ]
+}

@@ -52,12 +52,20 @@ export default class CellComponent extends Vue {
       height: this.cellData.getCellStyle().height,
       width: this.cellData.getCellStyle().width,
       border: this.cellData.getCellStyle().border,
-      borderImage: this.cellData.getCellStyle().isEdge
-        ? "url('/img/editor/cell-background-edge.png') 6 round"
-        : "url('/img/editor/cell-background.png') 6 round"
+      borderImage: this.borderBackground()
     };
     }
     
+  }
+
+  borderBackground(): string {
+    if (this.cellData.getCellStyle().borderImage === '') {
+      return this.cellData.getCellStyle().isEdge
+        ? "url('/img/editor/cell-background-edge.png') 6 round"
+        : "url('/img/editor/cell-background.png') 6 round"
+    } else {
+      return `url('${this.cellData.getCellStyle().borderImage}') 6 round`
+    }
   }
 }
 </script>
