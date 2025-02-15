@@ -6,7 +6,8 @@
     "APS": "3.143.05-3.23",
     "DPS": "2463.502013-2914",
     "Type": "Polearm",
-    "Size": "2x4",
+    "TwoHanded": false,
+    "Size": "2x3",
     "Rarity": "Angelic",
     "Stats": [
         {

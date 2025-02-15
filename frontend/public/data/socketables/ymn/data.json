@@ -1,0 +1,13 @@
+{
+    "Item": "Ymn",
+    "Tier": "C",
+    "Level": "25",
+    "Type": "Socketable",
+    "Rarity": "Common",
+    "Stats": [
+        {
+            "stat": "+7% Life stolen per Hit",
+            "class": "stat-default"
+        }
+    ]
+}

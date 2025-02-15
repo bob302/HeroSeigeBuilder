@@ -6,6 +6,7 @@
     "APS": "2.312.14-2.47",
     "DPS": "161.50100-223",
     "Type": "Throwing Weapon",
+    "TwoHanded": false,
     "Size": "2x2",
     "Rarity": "Satanic",
     "Stats": [

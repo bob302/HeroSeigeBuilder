@@ -39,6 +39,7 @@ import { Point2D } from '../models/Point2D';
 import CellComponent from './CellComponent.vue';
 import SlotComponent from './SlotComponent.vue';
 import DraggedSlot from './DraggedSlot.vue';
+import { Socketable } from '../models/Equipment';
 
 @Component({
   components: {
@@ -80,13 +81,12 @@ export default class InventoryGrid extends Vue {
       this.placeItem(cellData.coordinates);
     }
   }
-
+  
    // ПЕРЕПИСАТЬ
    onSlotClick(slotData: SlotData) {
     if (this.inventory.parent.itemOnCursor || !slotData.item) {
       this.placeItem(slotData.item?.startCoordinates!)
     } else {
-    //this.inventory.removeItemBySlot(slotData)
     this.inventory.pickupItem(slotData.item)
     this.onSlotMouseLeave()
     }

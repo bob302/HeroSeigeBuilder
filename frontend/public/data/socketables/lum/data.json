@@ -1,0 +1,13 @@
+{
+    "Item": "Lum",
+    "Tier": "C",
+    "Level": "37",
+    "Type": "Socketable",
+    "Rarity": "Common",
+    "Stats": [
+        {
+            "stat": "+10 to Energy",
+            "class": "stat-default"
+        }
+    ]
+}

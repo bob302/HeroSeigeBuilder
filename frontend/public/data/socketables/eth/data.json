@@ -1,0 +1,13 @@
+{
+    "Item": "Eth",
+    "Tier": "D",
+    "Level": "15",
+    "Type": "Socketable",
+    "Rarity": "Common",
+    "Stats": [
+        {
+            "stat": "+10% of target Defense ignored",
+            "class": "stat-default"
+        }
+    ]
+}

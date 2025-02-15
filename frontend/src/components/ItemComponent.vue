@@ -9,7 +9,10 @@
     <div v-if="(this.equipment.sockets.amount) || this.showSockets" :class="[this.socketLayoutClass, 'socket-container']">
       <div v-for="(socket, index) in this.equipment.sockets.list.slice(0, 6)" :key="index"
         :class="['socket', `socket-${index + 1}`]">
-        <SocketComponent :prismatic="socket.prismatic" />
+        <SocketComponent 
+          :prismatic="socket.prismatic" 
+          :socketable="socket.socketable"
+        />
       </div>
     </div>
   </div>
@@ -17,7 +20,7 @@
 
 <script lang="ts">
 import SocketComponent from './SocketComponent.vue'
-import { Equipment } from '../models/Equipment'
+import { Equipment, Socketable } from '../models/Equipment'
 import { Component, Prop, Vue } from 'vue-facing-decorator';
 
 @Component({
@@ -28,7 +31,26 @@ export default class ItemComponent extends Vue {
   @Prop({ type: Object, required: true }) equipment!: Equipment;
   @Prop({ type: Boolean, required: false}) pointerEvents: boolean = false
   @Prop({ type: Boolean, required: false}) showSockets: boolean = false
+
+
+insertSocketable(socketable: Socketable) {
+  const sockets = [...this.equipment.sockets.list]; // Create a new array
+  const index = sockets.findIndex(s => !s.socketable);
   
+  if (index !== -1) {
+    sockets[index] = { ...sockets[index], socketable }; // Create new object
+    this.equipment.sockets.list = sockets; // Replace array reference
+    this.$emit('socket-inserted', socketable);
+    return true;
+  }
+  return false;
+}
+
+  emptySockets(): void {
+    this.equipment.clearSocketables()
+    this.$emit('socket-cleared');
+  }
+
   get socketLayoutClass() {
     const socketCount = this.equipment.sockets.amount
     if (socketCount === 1) {
@@ -54,6 +76,12 @@ export default class ItemComponent extends Vue {
   onMouseLeave(event: MouseEvent) {
     this.$emit("item-on-mouse-leave")
   }
+  public get _VLS_template() {
+    return this.__VLS_template;
+  }
+  public set _VLS_template(value) {
+    this.__VLS_template = value;
+  }
 }
 </script>
 
@@ -76,14 +104,14 @@ export default class ItemComponent extends Vue {
 }
 
 
-/* Стили для контейнера сокетов */
+
 .socket-container {
   display: grid;
   position: absolute;
   gap: 0;
   pointer-events: none;
   z-index: 11;
-  place-items: center;  /* Добавлено для выравнивания содержимого */
+  place-items: center;
 }
 
 /* Примеры классов для разных раскладок сокетов */

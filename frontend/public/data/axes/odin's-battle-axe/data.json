@@ -6,7 +6,8 @@
     "APS": "1.201.2",
     "DPS": "532.00497-567",
     "Type": "Axe",
-    "Size": "2x3",
+    "TwoHanded": true,
+    "Size": "2x4",
     "Rarity": "Satanic",
     "Stats": [
         {

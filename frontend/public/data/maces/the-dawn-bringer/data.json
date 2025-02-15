@@ -6,7 +6,8 @@
     "APS": "1.751.75",
     "DPS": "594.00538-650",
     "Type": "Mace",
-    "Size": "2x2",
+    "TwoHanded": false,
+    "Size": "2x3",
     "Rarity": "Angelic",
     "Stats": [
         {

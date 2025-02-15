@@ -1,0 +1,41 @@
+{
+    "Item": "Dragon's Breath",
+    "Tier": "S",
+    "Level": "74",
+    "Damage": "51.0048-54",
+    "APS": "2.252.25",
+    "DPS": "115.00108-122",
+    "Type": "Spellblade",
+    "TwoHanded": false,
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "15% Chance when Striking [Breath of Fire] Level 59",
+            "class": "stat-spell"
+        },
+        {
+            "stat": "+50% Increased Attack Speed",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+640 to Attack Rating",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[4-8]% Mana stolen per Hit",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[640-760] to Fire Skill Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Fire Skill Damage increased by [15-35]%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[30-40]% to Fire Resistance",
+            "class": "stat-default"
+        }
+    ]
+}

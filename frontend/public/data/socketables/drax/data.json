@@ -1,0 +1,13 @@
+{
+    "Item": "Drax",
+    "Tier": "S",
+    "Level": "67",
+    "Type": "Socketable",
+    "Rarity": "Heroic",
+    "Stats": [
+        {
+            "stat": "Cannot be Frozen",
+            "class": "stat-default"
+        }
+    ]
+}

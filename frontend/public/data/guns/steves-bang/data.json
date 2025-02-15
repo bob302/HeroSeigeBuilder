@@ -6,6 +6,7 @@
     "APS": "2.362.1-2.62",
     "DPS": "720.00499-941",
     "Type": "Gun",
+    "TwoHanded": false,
     "Size": "2x2",
     "Rarity": "Satanic Set",
     "Stats": [

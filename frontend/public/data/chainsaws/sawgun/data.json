@@ -6,7 +6,8 @@
     "APS": "2.021.89-2.16",
     "DPS": "273.00228-318",
     "Type": "Chainsaw",
-    "Size": "2x4",
+    "TwoHanded": false,
+    "Size": "2x2",
     "Rarity": "Satanic",
     "Stats": [
         {

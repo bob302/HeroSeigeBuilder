@@ -6,7 +6,8 @@
     "APS": "N/A",
     "DPS": "N/A",
     "Type": "Chainsaw",
-    "Size": "2x4",
+    "TwoHanded": true,
+    "Size": "2x3",
     "Rarity": "Angelic",
     "Stats": [
         {

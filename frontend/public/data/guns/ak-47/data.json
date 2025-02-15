@@ -6,6 +6,7 @@
     "APS": "2.842.27-3.42",
     "DPS": "1336.00975-1697",
     "Type": "Gun",
+    "TwoHanded": true,
     "Size": "3x2",
     "Rarity": "Heroic",
     "Stats": [

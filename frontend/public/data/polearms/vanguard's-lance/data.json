@@ -6,7 +6,8 @@
     "APS": "2.202.2",
     "DPS": "158.50138-179",
     "Type": "Polearm",
-    "Size": "2x4",
+    "TwoHanded": false,
+    "Size": "2x3",
     "Rarity": "Satanic",
     "Stats": [
         {

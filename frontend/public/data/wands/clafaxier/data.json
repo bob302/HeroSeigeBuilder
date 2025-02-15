@@ -6,6 +6,7 @@
     "APS": "1.501.5",
     "DPS": "18.5014-23",
     "Type": "Wand",
+    "TwoHanded": false,
     "Size": "1x3",
     "Rarity": "Satanic",
     "Stats": [

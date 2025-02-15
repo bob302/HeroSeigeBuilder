@@ -1,4 +1,7 @@
+import { v4 as uuidv4 } from 'uuid';
+
 export enum EquipmentRarity {
+  Common = 'Common',
   Satanic = 'Satanic',
   'Satanic Set' = 'Satanic Set',
   Heroic = 'Heroic',
@@ -11,7 +14,8 @@ export enum EquipmentType {
   Weapon = 'Weapon',
   Armor = 'Armor',
   Accessory = 'Accessory',
-  Special = 'Special'
+  Special = 'Special',
+  Misc = 'Misc'
 }
 
 export enum EquipmentTier {
@@ -25,6 +29,7 @@ export enum EquipmentTier {
 
 export interface Socket {
   prismatic: boolean;
+  socketable: Socketable | null
 }
 
 export interface Stat {
@@ -43,71 +48,173 @@ export const EquipmentSubtypes: Record<EquipmentType, string[]> = {
   ],
   [EquipmentType.Armor]: ['Helmet', 'Body Armor', 'Gloves', 'Boots', 'Shield'],
   [EquipmentType.Accessory]: ['Amulet', 'Ring', 'Belt'],
-  [EquipmentType.Special]: ['Charm', 'Glyph', 'Relic', 'Potion']
+  [EquipmentType.Special]: ['Charm', 'Glyph', 'Relic', 'Potion'],
+  [EquipmentType.Misc]: ['Socketable']
 };
 
 export function isValidSubtype(type: EquipmentType, subtype: string): boolean {
   return EquipmentSubtypes[type]?.includes(subtype) ?? false;
 }
 
-/**
- * Интерфейс с общими параметрами для Equipment
- */
-export interface EquipmentProps {
+export interface BaseItemProps {
+  uuid: string;
   name: string;
+  image?: string;
+  isLoading?: boolean;
+  size: { width: number; height: number };
   type: EquipmentType;
   subtype: string;
   rarity: EquipmentRarity;
   tier: EquipmentTier;
-  stats: Stat[];
   level: string;
-  sockets: { amount: number; min: number; max: number; list: Socket[] };
-  image?: string;
-  isLoading?: boolean;
-  size: {width: number, height: number};
+  stats: Stat[]
 }
 
-export class Equipment {
+export class BaseItem {
+  public uuid: string
   public name: string;
-  public type: EquipmentType;
-  public subtype: string;
-  public rarity: EquipmentRarity;
-  public tier: EquipmentTier;
-  public stats: Stat[];
-  public level: string;
-  public sockets: { amount: number; min: number; max: number; list: Socket[] };
   public image?: string;
   public isLoading: boolean;
-  public size: {width: number, height: number}
+  public size: { width: number; height: number };
+  public rarity: EquipmentRarity;
+  public stats: Stat[];
+  public tier: EquipmentTier;
+  public level: string;
+  public type: EquipmentType;
+  public subtype: string
 
-  constructor(props: EquipmentProps) {
-    if (!isValidSubtype(props.type, props.subtype)) {
-      throw new Error(`Invalid subtype ${props.subtype} for type ${props.type}`);
-    }
+  constructor(props: BaseItemProps) {
+    this.uuid = uuidv4()
     this.name = props.name;
-    this.type = props.type;
-    this.subtype = props.subtype;
-    this.rarity = props.rarity;
-    this.tier = props.tier;
-    this.stats = props.stats;
-    this.level = props.level;
-    this.sockets = props.sockets;
     this.image = props.image;
     this.isLoading = props.isLoading ?? false;
     this.size = props.size;
+    this.rarity = props.rarity;
+    this.stats = props.stats;
+    this.tier = props.tier;
+    this.level = props.level;
+    this.type = props.type;
+    this.subtype = props.subtype;
+
+    if (!isValidSubtype(props.type, props.subtype)) {
+      throw new Error(`Invalid subtype ${props.subtype} for type ${props.type}`);
+    }
+  }
+
+  clone(): BaseItem {
+    return new BaseItem({
+      uuid: uuidv4(),
+      name: this.name,
+      image: this.image,
+      isLoading: this.isLoading,
+      size: { ...this.size },
+      type: this.type,
+      subtype: this.subtype,
+      rarity: this.rarity,
+      tier: this.tier,
+      level: this.level,
+      stats: this.stats.map(stat => ({ ...stat }))
+    });
+  }
+}
+
+export interface EquipmentProps extends BaseItemProps {
+  sockets: { amount: number; min: number; max: number; list: Socket[] };
+}
+
+export class Equipment extends BaseItem {
+  public sockets: { amount: number; min: number; max: number; list: Socket[] };
+
+  constructor(props: EquipmentProps) {
+    super(props);
+
+    const sockets = {
+      amount: props.sockets.amount,
+      min: props.sockets.min,
+      max: props.sockets.max,
+      list: Array(props.sockets.max).fill(null).map(() => createSocket(false))
+    };
+
+    
+    this.sockets =sockets;
+  }
+
+  insertSocketable(socketable: Socketable): boolean {
+    const emptySocket = this.sockets.list.find(socket => socket.socketable === null);
+    
+    if (!emptySocket) {
+      return false;
+    }
+  
+    emptySocket.socketable = socketable;
+
+    return true;
+  }
+
+  clearSocketables(): void {
+    this.sockets.list.forEach(socket => socket.socketable = null);
+  }
+  
+  clone(): Equipment {
+    return new Equipment({
+      ...super.clone(),
+      sockets: {
+        amount: this.sockets.amount,
+        min: this.sockets.min,
+        max: this.sockets.max,
+        list: this.sockets.list.map(socket => ({
+          prismatic: socket.prismatic,
+          socketable: socket.socketable?.clone() || null
+        }))
+      }
+    } as EquipmentProps);
+  }
+}
+
+export interface SocketableProps extends EquipmentProps {
+  amount: number;
+}
+
+export class Socketable extends Equipment {
+  public readonly type: EquipmentType = EquipmentType.Misc;
+  public readonly subtype: string = 'Socketable';
+  public amount: number;
+
+  constructor(props: SocketableProps) {
+    super({
+      ...props,
+      size: { width: 1, height: 1 },
+      sockets: {amount: 0, min: 0, max: 0, list: []}
+    });
+
+    this.amount = props.amount
+  }
+
+  clone(): Socketable {
+    return new Socketable({
+      ...super.clone(),
+      amount: this.amount
+    } as SocketableProps);
   }
 }
 
 export interface WeaponEquipmentProps extends EquipmentProps {
-  weaponStats: { APSStat: string; attackDamageStat: string; oneHanded: boolean };
+  weaponStats: { APSStat: string; attackDamageStat: string; twoHanded: boolean };
 }
 
 export class WeaponEquipment extends Equipment {
-  public weaponStats: { APSStat: string; attackDamageStat: string; oneHanded: boolean };
+  public weaponStats: { APSStat: string; attackDamageStat: string; twoHanded: boolean };
 
   constructor(props: WeaponEquipmentProps) {
-    super({ ...props, type: EquipmentType.Weapon });
+    super(props);
     this.weaponStats = props.weaponStats;
+  }
+
+  clone(): WeaponEquipment {
+    return new WeaponEquipment({
+      ...super.clone(),
+      weaponStats: { ...this.weaponStats }
+    } as WeaponEquipmentProps);
   }
 }
 
@@ -119,8 +226,15 @@ export class ArmorEquipment extends Equipment {
   public armorStats: { defense: string };
 
   constructor(props: ArmorEquipmentProps) {
-    super({ ...props, type: EquipmentType.Armor });
+    super(props);
     this.armorStats = props.armorStats;
+  }
+
+  clone(): ArmorEquipment {
+    return new ArmorEquipment({
+      ...super.clone(),
+      armorStats: { ...this.armorStats }
+    } as ArmorEquipmentProps);
   }
 }
 
@@ -128,21 +242,24 @@ export class CharmEquipment extends Equipment {
   constructor(props: EquipmentProps) {
     super({ ...props, type: EquipmentType.Special, subtype: 'Charm' });
   }
+
+  clone(): CharmEquipment {
+    return new CharmEquipment({
+      ...super.clone()
+    } as EquipmentProps);
+  }
 }
 
-/**
- * Функция-предикат для проверки, является ли предмет оружием
- */
-export function isWeapon(item: Equipment): item is WeaponEquipment {
-  return 'weaponStats' in item;
+export function createSocket(prismatic: boolean): Socket {
+  return {
+    prismatic,
+    socketable: null
+  };
 }
 
-/**
- * Фабрика для создания экземпляра Equipment с заданными параметрами.
- * Здесь можно задать значения по умолчанию и вернуть корректный экземпляр.
- */
 export function createEquipment(partial: Partial<EquipmentProps>): Equipment {
   const defaults: EquipmentProps = {
+    uuid: uuidv4(),
     name: 'Generic Item',
     type: EquipmentType.Special,
     subtype: 'Charm',
@@ -153,10 +270,9 @@ export function createEquipment(partial: Partial<EquipmentProps>): Equipment {
     sockets: { amount: 0, min: 0, max: 0, list: [] },
     image: '/img/editor/f.png',
     isLoading: false,
-    size: {width: 1, height: 2}
+    size: { width: 1, height: 2 },
   };
 
-  const props = { ...defaults, ...partial };
-
+  const props = { ...defaults, ...partial } as EquipmentProps;
   return new Equipment(props);
 }

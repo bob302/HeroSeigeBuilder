@@ -6,7 +6,8 @@
     "APS": "1.811.62-2",
     "DPS": "1024.00824-1224",
     "Type": "Sword",
-    "Size": "2x4",
+    "Size": "2x3",
+    "TwoHanded": true,
     "Rarity": "Satanic Set",
     "Stats": [
         {

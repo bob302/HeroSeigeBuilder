@@ -1,0 +1,13 @@
+{
+    "Item": "Sur",
+    "Tier": "S",
+    "Level": "61",
+    "Type": "Socketable",
+    "Rarity": "Heroic",
+    "Stats": [
+        {
+            "stat": "Mana Increased by 10%",
+            "class": "stat-default"
+        }
+    ]
+}

@@ -1,5 +1,5 @@
 import { CellData, CellState, HightLightCellState } from "./CellData";
-import type { Equipment } from "./Equipment";
+import { Socketable, type Equipment } from "./Equipment";
 import type GameContext from "./GameContext";
 import { Item } from "./Item";
 import { Point2D } from "./Point2D"
@@ -328,15 +328,34 @@ export class Inventory {
     this.pickupItem(item);
   }
 
+  tryInsertSocketable(item: Item): boolean {
+    console.log('trying', item);
+    
+    const socketable = this.parent.itemOnCursor?.item?.data
+    console.log('trying2', socketable);
+    if (socketable === null) return false
+    if (socketable instanceof Socketable) {
+      console.log('trying3', socketable);
+      if (item.data.insertSocketable(socketable)) {
+        console.log('trying4', socketable);
+        return true
+      }
+    }
+    console.log('trying5', socketable);
+    return false
+  }
+
   placeItemOnCursor(destination: Point2D) {
     if (this.parent.itemOnCursor === null) return;
     if (this.parent.itemOnCursor.item === null) return;
-    
     const conflicts = this.getConflictingItems(destination, this.parent.itemOnCursor.item);
     
     if (conflicts.size > 1) return
     if (conflicts.size === 1) {
       const [toSwap] = conflicts;
+
+    if (this.tryInsertSocketable(toSwap)) return
+
       this.swapItem(toSwap, destination);
     } else {
       this.moveItem(this.parent.itemOnCursor, destination);

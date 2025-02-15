@@ -6,6 +6,7 @@
     "APS": "2.302.3",
     "DPS": "2122.501872-2373",
     "Type": "Bow",
+    "TwoHanded": true,
     "Size": "3x2",
     "Rarity": "Angelic",
     "Stats": [

@@ -1,0 +1,13 @@
+{
+    "Item": "Um",
+    "Tier": "A",
+    "Level": "47",
+    "Type": "Socketable",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+20% to All Resistances",
+            "class": "stat-default"
+        }
+    ]
+}

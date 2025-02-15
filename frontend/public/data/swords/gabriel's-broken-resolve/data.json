@@ -6,7 +6,8 @@
     "APS": "1.751.75",
     "DPS": "894.50756-1033",
     "Type": "Sword",
-    "Size": "2x4",
+    "Size": "2x3",
+    "TwoHanded": false,
     "Rarity": "Unholy",
     "Stats": [
         {

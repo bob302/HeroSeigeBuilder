@@ -1,8 +1,8 @@
 <template>
     <div class="catalog">
-      <ItemDisplay v-for="(item, index) in catalogItems"
+      <ItemDisplay v-for="(item) in catalogItems"
       :show-sockets="true" 
-      :key="index" 
+      :key="item.uuid" 
       :equipment="item" 
       :src="itemBackgroundSrc"
       @item-display-on-mouse-enter="itemOnMouseEnter"  

@@ -6,7 +6,8 @@
     "APS": "1.351.35",
     "DPS": "29.5022-37",
     "Type": "Staff",
-    "Size": "2x4",
+    "TwoHanded": true,
+    "Size": "2x3",
     "Rarity": "Satanic",
     "Stats": [
         {

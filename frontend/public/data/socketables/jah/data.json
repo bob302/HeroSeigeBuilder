@@ -1,0 +1,13 @@
+{
+    "Item": "Jah",
+    "Tier": "S",
+    "Level": "65",
+    "Type": "Socketable",
+    "Rarity": "Heroic",
+    "Stats": [
+        {
+            "stat": "Life Increased by 10%",
+            "class": "stat-default"
+        }
+    ]
+}

@@ -1,11 +1,13 @@
-import { ArmorEquipment, CharmEquipment, Equipment, EquipmentSubtypes, EquipmentType, WeaponEquipment, type Socket, type Stat} from '../models/Equipment'
+import { ArmorEquipment, BaseItem, CharmEquipment, Equipment, EquipmentSubtypes, EquipmentType, Socketable, WeaponEquipment, type Socket, type Stat} from '../models/Equipment'
 import { StatFormatter } from '../util/StatFormatter'
 import { StatParser } from './StatParser'
+import { v4 as uuidv4 } from 'uuid';
 
 export class ItemParser {
-  static parseItem(rawItem: any): Equipment {
+  static parseItem(rawItem: any): BaseItem {
     // Общие поля для всех типов снаряжения
     const commonProps = {
+      uuid: uuidv4(),
       name: rawItem.name,
       type: rawItem.type,
       subtype: rawItem.subtype,
@@ -18,6 +20,16 @@ export class ItemParser {
       isLoading: true,
       size: rawItem.size,
     };
+
+    if (rawItem.subtype === 'Socketable') {
+      const socketableProps = {
+        ...commonProps,
+        amount: 1
+      }
+      return new Socketable(
+        socketableProps
+      );
+    }
   
     // Создание конкретного типа экипировки
     if (rawItem.type === EquipmentType.Armor) {
@@ -29,12 +41,17 @@ export class ItemParser {
         armorProps
       );
     } else if (rawItem.type === EquipmentType.Weapon) {
+      let twoHanded = false
+
+      if (rawItem.twoHanded) {
+        twoHanded = rawItem.twoHanded
+      }
       const weaponProps = {
         ...commonProps,
         weaponStats: {
           APSStat: rawItem.APS || "0",
           attackDamageStat: rawItem.Damage || "0",
-          oneHanded: true, // Пока что всегда true, можно сделать динамическим
+          twoHanded: twoHanded, // Пока что всегда true, можно сделать динамическим
         }
       }
       return new WeaponEquipment(
@@ -52,7 +69,7 @@ export class ItemParser {
   }
   
 
-  static parseWikiItem (rawItem: any): Equipment {
+  static parseWikiItem (rawItem: any): BaseItem {
     const subtype = rawItem.Type
 
     const type = Object.entries(EquipmentSubtypes).find(([key, subtypes]) =>
@@ -72,6 +89,7 @@ export class ItemParser {
     }
 
     const commonProps = {
+      uuid: uuidv4(),
       name: rawItem.Item,
       type: type,
       subtype: subtype,
@@ -92,38 +110,54 @@ export class ItemParser {
     };
   
 
+    if (subtype === 'Socketable') {
+      const socketableProps = {
+        ...commonProps,
+        amount: 1
+      }
+      return new Socketable(
+        socketableProps
+      );
+    }
+
     // Socket Amount
     const socketStat = rawItem.Stats.find((stat: { stat: string }) => stat.stat.includes("Socketed"));
-    if (socketStat) {
-      const match = socketStat.stat.match(/Socketed \((\d+)-?(\d*)\)/);
-      const prismaticMatch = socketStat.stat.match(/Socketed \{(\d+)-?(\d*)\}/);
-    
-      let normalSockets: number = 0;
-      let prismaticSockets: number = 0;
-    
-      if (match) {
-        const minSockets = parseInt(match[1], 10);
-        const maxSockets = match[2] ? parseInt(match[2], 10) : minSockets;
-    
-        normalSockets = maxSockets;
+      if (socketStat) {
+        // Для фигурных скобок {min-max}
+        const prismaticRegex = /{(\d+)-(\d+)}/; 
+        // Для круглых скобок (min-max)
+        const normalRegex = /\((\d+)-(\d+)\)/; 
+      
+        const prismaticMatch = socketStat.stat.match(prismaticRegex);
+        const normalMatch = socketStat.stat.match(normalRegex);
+      
+        let normalSockets = 0;
+        let prismaticSockets = 0;
+      
+        // Обработка обычных сокетов из ()
+        if (normalMatch) {
+          const min = parseInt(normalMatch[1], 10);
+          const max = parseInt(normalMatch[2], 10);
+          normalSockets = max;
+        }
+      
+        // Обработка призматических сокетов из {}
+        if (prismaticMatch) {
+          const min = parseInt(prismaticMatch[1], 10);
+          const max = parseInt(prismaticMatch[2], 10);
+          prismaticSockets = max;
+        }
+      
+        commonProps.sockets.min = normalSockets + prismaticSockets;
+        commonProps.sockets.max = normalSockets + prismaticSockets;
+        commonProps.sockets.amount = commonProps.sockets.max;
+      
+        commonProps.sockets.list = [
+          ...Array(normalSockets).fill({ prismatic: false }),
+          ...Array(prismaticSockets).fill({ prismatic: true })
+        ];
       }
-    
-      if (prismaticMatch) {
-        const minSocketsPrismatic = parseInt(prismaticMatch[1], 10);
-        const maxSocketsPrismatic = prismaticMatch[2] ? parseInt(prismaticMatch[2], 10) : minSocketsPrismatic;
-    
-        prismaticSockets = maxSocketsPrismatic;
-      }
-    
-      commonProps.sockets.min = normalSockets + prismaticSockets;
-      commonProps.sockets.max = normalSockets + prismaticSockets;
-      commonProps.sockets.amount = commonProps.sockets.max;
-    
-      commonProps.sockets.list = [
-        ...Array(normalSockets).fill({ prismatic: false }),
-        ...Array(prismaticSockets).fill({ prismatic: true })
-      ];
-    }
+  
     
     if (type === EquipmentType.Armor) {
       
@@ -135,12 +169,18 @@ export class ItemParser {
         armorProps
       );
     } else if (type === EquipmentType.Weapon) {
+      let twoHanded = false
+
+      if (rawItem.TwoHanded) {
+        twoHanded = rawItem.TwoHanded
+      }
+      
       const weaponProps = {
         ...commonProps,
         weaponStats: {
           APSStat: rawItem.APS || "0",
           attackDamageStat: rawItem.Damage || "0",
-          oneHanded: true,
+          twoHanded: twoHanded,
         }
       }
       return new WeaponEquipment(weaponProps);

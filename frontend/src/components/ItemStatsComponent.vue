@@ -4,23 +4,53 @@
     class="tooltip"
     :style="tooltipStyle"
   >
-    <p :class="nameClass">{{ item.name }}</p>
-    <p class="text-regular">{{ combinedType(item) }}</p>
-    <ul class="stats-list">
-      <li v-for="stat in item.stats" :key="stat.name" v-html="formatStat(stat)"></li>
-    </ul>
-    <div v-if="isWeapon(item)" class="weapon-container">
-      <p class="text-regular">[{{ item.subtype }}]</p>
-      <p class="text-regular">{{ item.weaponStats.oneHanded ? '[1-Handed]' : '[2-Handed]' }}</p>
-    </div>
-    <div class="bottom-container">
-      <div class="level-container">
-        <p class="text-regular" style="padding-right: 0.3em;">Level Req. </p>
-        <p class="text-regular"> {{ item.level }}</p>
+    <div class="tooltip-content">
+      <!-- Основная секция -->
+      <div class="main-section">
+        <div class="header">
+          <p :class="nameClass">{{ item.name }}</p>
+          <p class="text-regular">{{ combinedType(item) }}</p>
+        </div>
+        <div class="section-1">
+          <ul class="stats-list">
+            <li v-for="stat in item.stats" :key="stat.name" v-html="formatStat(stat)"></li>
+            
+            <div v-if="item instanceof WeaponEquipment" class="weapon-container">
+              <p class="text-regular">[{{ item.subtype }}]</p>
+              <p class="text-regular">{{ item.weaponStats.twoHanded ? '[2-Handed]' : '[1-Handed]' }}</p>
+            </div>
+            <div class="bottom-container">
+              <div class="level-container">
+                <p class="text-regular" style="padding-right: 0.3em;">Level Req. </p>
+                <p class="text-regular"> {{ item.level }}</p>
+              </div>
+              <div class="tier-container">
+                <p class="text-regular" style="padding-right: 0.3em;">Tier: </p>
+                <p :class="tierClass"> {{ item.tier }}</p>
+              </div>
+            </div>
+          </ul>
+        </div>
       </div>
-      <div class="tier-container">
-        <p class="text-regular" style="padding-right: 0.3em;">Tier: </p>
-        <p :class="tierClass"> {{ item.tier }}</p>
+
+      <!-- Секция с рунами -->
+      <div v-if="hasSocketables" class="runes-section">
+        <div class="runes-divider"></div>
+        <div class="runes-content">
+          <p class="text-regular socketables-title">Socketed Runes:</p>
+          <ul class="socketables-list">
+            <li 
+              v-for="(socket, index) in item.sockets.list" 
+              :key="index"
+              class="socketable-item"
+            >
+              <img v-if="socket.socketable" :src="socket.socketable.image" class="socketable-icon" />
+              <div class="socketable-info">
+                <p class="socketable-name">{{ socket.socketable?.name }}</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
@@ -29,7 +59,7 @@
 <script setup lang="ts">
 import { defineProps, ref, computed, onMounted, watch, nextTick } from 'vue'
 import { StatParser } from '../services/StatParser'
-import { Equipment, isWeapon, type Stat } from '../models/Equipment'
+import { Equipment, WeaponEquipment, type Stat } from '../models/Equipment'
 
 const formatStat = (stat: Stat) => StatParser.parseStat(stat.raw, stat.special).html
 
@@ -55,6 +85,10 @@ onMounted(() => {
       updateTooltipPosition()
     }
   })
+})
+
+const hasSocketables = computed(() => {
+  return props.item.sockets.list.some(socket => socket.socketable)
 })
 
 watch(() => props.pos, () => {
@@ -111,6 +145,7 @@ const combinedType = (item: Equipment) => {
 
 const borderColor = computed(() => {
   switch (props.item.rarity) {
+    case 'Common': return '#d6ac2f'
     case 'Satanic': return '#c81717'
     case 'Angelic': return '#fdfea5'
     case 'Unholy': return '#c73664'
@@ -122,6 +157,7 @@ const borderColor = computed(() => {
 
 const nameClass = computed(() => {
   switch (props.item.rarity) {
+    case 'Common': return 'name-common'
     case 'Satanic': return 'name-satanic'
     case 'Angelic': return 'name-angelic'
     case 'Unholy': return 'name-unholy'
@@ -154,6 +190,7 @@ const tierClass = computed(() => {
   src: url('~@/assets/fonts/fenris.woff') format("woff"), url('~@/assets/fonts/fenris.woff2') format("woff2");
   }
 
+.name-common { color: #d6ac2f; font-weight: 600; font-family: 'Fenris'; font-size: 1.2rem; }
 .name-satanic { color: #c81717; font-weight: 600; font-family: 'Fenris'; font-size: 1.2rem; }
 .name-angelic { color: #fdfea5; font-weight: 600; font-family: 'Fenris'; font-size: 1.2rem; }
 .name-unholy { color: #c73664; font-weight: 600; font-family: 'Fenris'; font-size: 1.2rem; }
@@ -187,7 +224,7 @@ const tierClass = computed(() => {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: -1.3rem;
+  margin-top: -1.6rem;
 }
 
 .text-regular {color: white; font-weight: 600; font-family: 'Fenris';}
@@ -204,9 +241,8 @@ const tierClass = computed(() => {
   backdrop-filter: blur(8px);
   max-width: 90vw;
   pointer-events: none;
-  z-index: 20;
+  z-index: 200;
 }
-
 
 .item-name {
   font-weight: bold;
@@ -247,6 +283,94 @@ const tierClass = computed(() => {
   list-style: none;
   padding: 0;
   margin: 2rem 0 0;
+}
+
+.socketables-section {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.socketables-title {
+  color: #c7b377;
+  margin-bottom: 0.5rem;
+}
+
+.runes-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.tooltip-content {
+  display: flex;
+  gap: 1rem;
+}
+
+.main-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+.runes-section {
+  position: relative;
+  padding-left: 1rem;
+  min-width: 150px;
+}
+
+.runes-divider {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: linear-gradient(180deg, 
+    transparent 0%, 
+    rgba(199, 179, 119, 0.5) 50%, 
+    transparent 100%
+  );
+}
+
+.socketables-list {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+.socketable-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.socketable-icon {
+  width: 2rem;
+  height: 2rem;
+  image-rendering: pixelated;
+}
+
+.socketable-info {
+  flex: 1;
+}
+
+.socketable-name {
+  color: #f3c632;
+  font-family: 'Fenris';
+  font-size: 1.1rem;
+}
+
+.socketable-stats {
+  list-style: none;
+  padding: 0 0 0 0;
+  margin: 0;
+}
+
+.socketable-stats li {
+  font-size: 0.8rem;
+  line-height: 1.3;
+  color: #ffffff;
 }
 
 @media (max-width: 768px) {

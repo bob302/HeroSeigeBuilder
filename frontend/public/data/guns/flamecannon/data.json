@@ -6,7 +6,8 @@
     "APS": "3.002.77-3.23",
     "DPS": "1339.501128-1551",
     "Type": "Gun",
-    "Size": "2x2",
+    "TwoHanded": true,
+    "Size": "3x2",
     "Rarity": "Satanic",
     "Stats": [
         {

@@ -7,7 +7,7 @@
     "Rarity": "Heroic",
     "Stats": [
         {
-            "stat": "Socketed (1-4)",
+            "stat": "Socketed (1-2) {1-2}",
             "class": "stat-default"
         }
     ]

@@ -6,7 +6,8 @@
     "APS": "2.562.39-2.72",
     "DPS": "1837.501566-2109",
     "Type": "Sword",
-    "Size": "2x4",
+    "Size": "2x3",
+    "TwoHanded": false,
     "Rarity": "Angelic",
     "Stats": [
         {

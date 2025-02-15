@@ -1,0 +1,13 @@
+{
+    "Item": "Lem",
+    "Tier": "A",
+    "Level": "43",
+    "Type": "Socketable",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+20% Extra Gold Dropped From Kills",
+            "class": "stat-default"
+        }
+    ]
+}

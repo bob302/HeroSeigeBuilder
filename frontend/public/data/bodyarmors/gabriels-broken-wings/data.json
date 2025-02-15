@@ -48,7 +48,7 @@
             "class": "stat-unbreakable"
         },
         {
-            "stat": "Socketed (2-4)",
+            "stat": "Socketed {2-4}",
             "class": "stat-default"
         }
     ]

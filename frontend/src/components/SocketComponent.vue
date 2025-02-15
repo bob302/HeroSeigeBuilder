@@ -1,22 +1,57 @@
 <template>
-  <img :src="socketImage" class="socket" />
+  <div class="socket-wrapper">
+    <img :src="socketImage" class="socket" />
+    <div class="socketable">
+      <img v-if="socketable" :src="socketable.image" class="socketable-image">
+    </div>
+  </div>
 </template>
 
-<script setup lang="ts">
-import { computed, defineProps } from 'vue'
+<script lang="ts">
+import { Component, Vue, Prop } from 'vue-facing-decorator';
+import type { Socketable } from '../models/Equipment';
 
-const props = defineProps<{
-  prismatic: boolean
-}>()
+@Component({
+  emits: []
+})
+export default class Socket extends Vue {
+  @Prop({type: Object, required: false}) socketable!: Socketable
+  @Prop({type: Boolean, required: true}) prismatic!: boolean
 
-const socketImage = computed(() =>
-  props.prismatic ? '/img/editor/socket-prismatic.png' : '/img/editor/socket-normal.png'
-)
+
+  get socketImage() {
+    return this.prismatic ? '/img/editor/socket-prismatic.png' : '/img/editor/socket-normal.png'
+  }
+}
 </script>
 
 <style scoped>
+.socket-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
 .socket {
   width: 2.3rem;
   height: 2.3rem;
+  position: relative;
+  z-index: 1;
+}
+
+.socketable {
+  position: absolute;
+  top: 60%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  scale: 1.6;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.socketable-image {
+  width: 1.5rem;
+  height: 1.5rem;
+  image-rendering: pixelated;
 }
 </style>

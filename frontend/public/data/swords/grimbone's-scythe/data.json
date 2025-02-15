@@ -6,7 +6,8 @@
     "APS": "1.651.65",
     "DPS": "1256.001027-1485",
     "Type": "Sword",
-    "Size": "2x4",
+    "Size": "2x3",
+    "TwoHanded": true,
     "Rarity": "Heroic",
     "Stats": [
         {

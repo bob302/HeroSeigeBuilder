@@ -6,7 +6,8 @@
     "APS": "1.001",
     "DPS": "1086.00972-1200",
     "Type": "Mace",
-    "Size": "2x2",
+    "TwoHanded": true,
+    "Size": "2x3",
     "Rarity": "Heroic",
     "Stats": [
         {

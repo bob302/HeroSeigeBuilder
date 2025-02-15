@@ -6,6 +6,7 @@
     "APS": "1.751.75",
     "DPS": "959.00847-1071",
     "Type": "Throwing Weapon",
+    "TwoHanded": false,
     "Size": "2x2",
     "Rarity": "Angelic",
     "Stats": [

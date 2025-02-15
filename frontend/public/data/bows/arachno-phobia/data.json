@@ -6,6 +6,7 @@
     "APS": "0.650.65",
     "DPS": "443.50385-502",
     "Type": "Bow",
+    "TwoHanded": true,
     "Size": "3x2",
     "Rarity": "Heroic",
     "Stats": [

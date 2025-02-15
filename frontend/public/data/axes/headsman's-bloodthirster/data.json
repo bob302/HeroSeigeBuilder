@@ -6,7 +6,8 @@
     "APS": "1.001",
     "DPS": "996.00819-1173",
     "Type": "Axe",
-    "Size": "2x3",
+    "TwoHanded": true,
+    "Size": "2x4",
     "Rarity": "Heroic",
     "Stats": [
         {

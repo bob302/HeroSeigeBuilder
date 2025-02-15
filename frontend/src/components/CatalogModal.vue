@@ -39,6 +39,14 @@
             <option value="desc">Descending</option>
           </select>
         </div>
+        <div class="filter-column" v-if="typeFilter === EquipmentType.Weapon">
+          <p>1-Handed?:</p>
+          <select v-model="oneHandedFilter">
+            <option value="">any</option>
+            <option value="1-Handed">1-Handed</option>
+            <option value="2-Handed">2-Handed</option>
+          </select>
+        </div>
         <div class="filter-column">
           <p>Search by Name:</p>
           <input v-model="nameFilter" placeholder="by Name" />
@@ -60,11 +68,10 @@
 <script lang="ts">
 import { Component, Prop, Vue, Watch } from 'vue-facing-decorator';
 import { Inventory } from '../models/Inventory';
-import { Equipment, EquipmentType, EquipmentRarity, EquipmentTier, EquipmentSubtypes, CharmEquipment } from '../models/Equipment';
+import { Equipment, EquipmentType, EquipmentRarity, EquipmentTier, EquipmentSubtypes, CharmEquipment, WeaponEquipment, BaseItem } from '../models/Equipment';
 import type GameContext from '../models/GameContext';
 import { Item } from '../models/Item';
 import { Point2D } from '../models/Point2D';
-import { ItemParser } from '../services/ItemParser';
 import EquipmentCatalog from './EquipmentCatalog.vue';
 import ArrowButton from './ArrowButton.vue';
 
@@ -72,7 +79,8 @@ import ArrowButton from './ArrowButton.vue';
   components: {
     EquipmentCatalog,
     ArrowButton
-  }
+  },
+  emits: ['item-on-mouse-enter', 'item-on-mouse-leave', 'item-added', 'close']
 })
 export default class CatalogModal extends Vue {
   @Prop({ type: Boolean, default: false }) show!: boolean;
@@ -91,7 +99,8 @@ export default class CatalogModal extends Vue {
   public statsFilter: string = '';
   public levelSort: 'asc' | 'desc' | '' = '';
   public socketsSort: 'asc' | 'desc' | '' = '';
-  public filteredCatalogItems: Equipment[] = [];
+  public filteredCatalogItems: BaseItem[] = [];
+  public oneHandedFilter: '1-Handed' | '2-Handed' | '' = '';
 
   mounted() {
      this.updateCatalogItems()
@@ -120,8 +129,10 @@ export default class CatalogModal extends Vue {
       ? this.charmInventory 
       : this.mainInventory;
     
-    targetInventory.addItem(new Item(equipment, new Point2D(equipment.size.width, equipment.size.height)));
-    this.$emit('item-added');
+      if (!targetInventory.addItem(new Item(equipment.clone(), new Point2D(equipment.size.width, equipment.size.height)))) {
+        this.mainInventory.addItem(new Item(equipment.clone(), new Point2D(equipment.size.width, equipment.size.height)))
+        this.$emit('item-added');
+      }
   }
 
   @Watch('nameFilter')
@@ -132,20 +143,27 @@ export default class CatalogModal extends Vue {
   @Watch('statsFilter')
   @Watch('levelSort')
   @Watch('socketsSort')
+  @Watch('oneHandedFilter')
   updateCatalogItems() {
-    const nameRegex = new RegExp(this.nameFilter, 'i');
-    const statsRegex = new RegExp(this.statsFilter, 'i');
+  const nameRegex = new RegExp(this.nameFilter, 'i');
+  const statsRegex = new RegExp(this.statsFilter, 'i');
 
-    let filtered = this.allCatalogItems.filter(item => {
-      const matchesName = !this.nameFilter || nameRegex.test(item.name);
-      const matchesType = item.type === this.typeFilter;
-      const matchesSubtype = !this.subtypeFilter || item.subtype === this.subtypeFilter;
-      const matchesRarity = !this.rarityFilter || item.rarity === this.rarityFilter;
-      const matchesTier = !this.tierFilter || item.tier === this.tierFilter;
-      const matchesStats = !this.statsFilter || item.stats.some(stat => statsRegex.test(stat.raw));
+  let filtered = this.allCatalogItems.filter(item => {
+    const matchesName = !this.nameFilter || nameRegex.test(item.name);
+    const matchesType = item.type === this.typeFilter;
+    const matchesSubtype = !this.subtypeFilter || item.subtype === this.subtypeFilter;
+    const matchesRarity = !this.rarityFilter || item.rarity === this.rarityFilter;
+    const matchesTier = !this.tierFilter || item.tier === this.tierFilter;
+    const matchesStats = !this.statsFilter || item.stats.some(stat => statsRegex.test(stat.raw));
+    let matchesHanded = true;
+    if (item instanceof WeaponEquipment) {
+      const handedType = item.weaponStats.twoHanded ? '2-Handed' : '1-Handed';
+      matchesHanded = !this.oneHandedFilter || this.oneHandedFilter === handedType;
+    }
 
-      return matchesName && matchesType && matchesSubtype && matchesRarity && matchesTier && matchesStats;
-    });
+
+    return matchesName && matchesType && matchesSubtype && matchesRarity && matchesTier && matchesStats && matchesHanded;
+  });
     // Сортировка по уровню
     if (this.levelSort) {
       filtered.sort((a, b) => {
@@ -195,7 +213,11 @@ export default class CatalogModal extends Vue {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+  z-index: 100;
+}
+
+.catalog-wrapper {
+  min-height: 28rem;
 }
 
 .modal-content {

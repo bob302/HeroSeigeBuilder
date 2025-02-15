@@ -6,6 +6,7 @@
     "APS": "2.171.86-2.48",
     "DPS": "889.50600-1179",
     "Type": "Throwing Weapon",
+    "TwoHanded": false,
     "Size": "2x2",
     "Rarity": "Heroic",
     "Stats": [

@@ -6,7 +6,8 @@
     "APS": "2.251.79-2.7",
     "DPS": "770.00559-981",
     "Type": "Polearm",
-    "Size": "2x4",
+    "TwoHanded": false,
+    "Size": "2x3",
     "Rarity": "Heroic",
     "Stats": [
         {

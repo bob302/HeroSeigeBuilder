@@ -1,0 +1,13 @@
+{
+    "Item": "Mal",
+    "Tier": "A",
+    "Level": "49",
+    "Type": "Socketable",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "Magic Damage Taken Reduced by 7%",
+            "class": "stat-default"
+        }
+    ]
+}

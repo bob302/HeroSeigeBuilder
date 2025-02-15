@@ -6,7 +6,8 @@
     "APS": "0.750.75",
     "DPS": "250.00227-273",
     "Type": "Chainsaw",
-    "Size": "2x4",
+    "TwoHanded": false,
+    "Size": "2x2",
     "Rarity": "Heroic",
     "Stats": [
         {

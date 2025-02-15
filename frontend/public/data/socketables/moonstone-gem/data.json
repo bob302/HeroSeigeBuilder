@@ -1,0 +1,13 @@
+{
+    "Item": "Moonstone Gem",
+    "Tier": "S",
+    "Level": "100",
+    "Type": "Socketable",
+    "Rarity": "Heroic",
+    "Stats": [
+        {
+            "stat": "+25% Increased Attack Speed",
+            "class": "stat-default"
+        }
+    ]
+}

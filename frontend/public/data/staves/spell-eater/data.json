@@ -6,7 +6,8 @@
     "APS": "1.751.75",
     "DPS": "87.5084-91",
     "Type": "Staff",
-    "Size": "2x4",
+    "TwoHanded": true,
+    "Size": "2x3",
     "Rarity": "Heroic",
     "Stats": [
         {

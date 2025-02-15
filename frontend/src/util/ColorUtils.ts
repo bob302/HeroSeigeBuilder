@@ -1,8 +1,9 @@
 import type { EquipmentRarity } from "../models/Equipment";
 
 export default class ColorUtils {
-  static rarityToColor(rarity: EquipmentRarity): string {
+  static rarityToColor(rarity: EquipmentRarity | null): string {
     switch (rarity) {
+      case 'Common': return '#d6ac2f';
       case 'Satanic': return '#c81717';
       case 'Angelic': return '#fdfea5';
       case 'Unholy': return '#c73664';
@@ -12,7 +13,7 @@ export default class ColorUtils {
     }
   }
 
-  static rarityToBackground(rarity: EquipmentRarity): string {
+  static rarityToBackground(rarity: EquipmentRarity | null): string {
     switch (rarity) {
       case 'Satanic': return '/img/editor/item-background-satanic.png';
       case 'Angelic': return '/img/editor/item-background-angelic.png';

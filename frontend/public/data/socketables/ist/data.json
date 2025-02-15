@@ -1,0 +1,13 @@
+{
+    "Item": "Ist",
+    "Tier": "A",
+    "Level": "51",
+    "Type": "Socketable",
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+15% Increased Magic Find",
+            "class": "stat-default"
+        }
+    ]
+}

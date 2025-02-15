@@ -6,6 +6,7 @@
     "APS": "1.141.14",
     "DPS": "42.5037-48",
     "Type": "Cane",
+    "TwoHanded": true,
     "Size": "2x4",
     "Rarity": "Heroic",
     "Stats": [

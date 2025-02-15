@@ -1,0 +1,13 @@
+{
+    "Item": "Hel",
+    "Tier": "C",
+    "Level": "33",
+    "Type": "Socketable",
+    "Rarity": "Common",
+    "Stats": [
+        {
+            "stat": "Cooldown Recovery Increased by 4%",
+            "class": "stat-default"
+        }
+    ]
+}

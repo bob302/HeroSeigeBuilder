@@ -6,7 +6,8 @@
     "APS": "1.401.4",
     "DPS": "365.00322-408",
     "Type": "Mace",
-    "Size": "2x2",
+    "TwoHanded": true,
+    "Size": "2x3",
     "Rarity": "Satanic",
     "Stats": [
         {

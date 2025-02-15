@@ -1,0 +1,33 @@
+{
+    "Item": "Wormclaw",
+    "Tier": "A",
+    "Level": "63",
+    "Damage": "34.0032-36",
+    "APS": "1.751.75",
+    "DPS": "59.5056-63",
+    "Type": "Spellblade",
+    "TwoHanded": false,
+    "Rarity": "Satanic",
+    "Stats": [
+        {
+            "stat": "+[80-90] to Attack Rating",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[3-8]% Life stolen per Hit",
+            "class": "stat-default"
+        },
+        {
+            "stat": "+[550-670] to Additive Poison Damage",
+            "class": "stat-default"
+        },
+        {
+            "stat": "Poison Skill Damage increased by 20%",
+            "class": "stat-default"
+        },
+        {
+            "stat": "-[50-60]% to Enemy Poison Resistance",
+            "class": "stat-default"
+        }
+    ]
+}

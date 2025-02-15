@@ -1,0 +1,13 @@
+{
+    "Item": "Rex",
+    "Tier": "C",
+    "Level": "19",
+    "Type": "Socketable",
+    "Rarity": "Common",
+    "Stats": [
+        {
+            "stat": "Fire Skill Damage increased by 5%",
+            "class": "stat-default"
+        }
+    ]
+}

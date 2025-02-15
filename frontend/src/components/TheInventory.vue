@@ -38,7 +38,7 @@
 
     <DraggedSlot v-if="this.context.itemOnCursor" :slotData="this.context.itemOnCursor" ref="draggedSlot" />
 
-    <ItemStatsComponent v-if="lookingAt && !showCatalog" :item="lookingAt" :pos="mousePosition" />
+    <ItemStatsComponent v-if="lookingAt" :item="lookingAt" :pos="mousePosition" />
 
     <ArrowButton v-if="!showCatalog" class="arrow-button" @click="showCatalog = true" />
     <keep-alive>
@@ -116,7 +116,7 @@ async created() {
     this.charmInventory.cellsData.forEach(cell => {
       cell.setCellStyle({height: '2.9rem', width: '2.9rem', border: '8px solid', isEdge: false, borderImage: '/img/editor/cell-charm-background.jpg', background: ''})
     })
-    this.inventory = new Inventory(this.context, new Point2D(20, 5));
+    this.inventory = new Inventory(this.context, new Point2D(20, 6));
     this.inventory.cellsData.forEach(cell => {
       cell.setCellStyle({height: '2.9rem', width: '2.9rem', border: '8px solid', isEdge: false, borderImage: '/img/editor/cell-background.jpg', background: ''})
     })
@@ -202,10 +202,6 @@ topSlotUnlocked = false
 bottomSlotUnlocked = false
 
 
-addCharm(charm: CharmEquipment): void {
-  this.charmInventory.addItem(new Item(charm, new Point2D(charm.size.width, charm.size.height)))
-}
-
 mounted() {
   this.charmInventory.setIsUnlockedCell(new Point2D(2, 3), false)
   this.charmInventory.setIsUnlockedCell(new Point2D(0, 7), false)
@@ -241,18 +237,6 @@ handleCharmInventoryUpdate(newInventory: Inventory): void {
   this.charmInventory = newInventory;
 }
 
-async parseSlotItem (slot: keyof Slots) {
-  const input = prompt(`Введите JSON для ${slot}`, '');
-  if (!input) return;
-  try {
-    const parsedItem = await ItemParser.parseItem(JSON.parse(input));
-    this.slots[slot] = parsedItem;
-  } catch (error) {
-    console.error(`Ошибка парсинга для ${slot}:`, error);
-  } finally {
-    this.slots[slot].isLoading = false;
-  }
-}
 
 async fetchEquipmentData() {
   const loadImage = (url: string) => new Promise((resolve, reject) => {
@@ -292,8 +276,8 @@ async fetchEquipmentData() {
         const jsonData = await dataResponse.json();
         const parsedItem = ItemParser.parseWikiItem(jsonData);
         
+        const imageUrl = path + '/icon.png';
         try {
-          const imageUrl = path + '/icon.png';
           await loadImage(imageUrl);
           parsedItem.image = imageUrl;
         } catch (imgError) {
@@ -312,6 +296,9 @@ async fetchEquipmentData() {
       .filter(item => item !== null) as Equipment[];
   } catch (error) {
     console.error('Catalog load failed:', error);
+  } finally {
+    console.log('Catalog is Here!', this.allCatalogItems);
+    
   }
 }
 
