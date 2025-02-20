@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_4_icon.webp",
+    "Image": "output/classes\\stormweaver\\storm-conjurer\\ability_4_icon.webp",
+    "Name": "Lightning Surge",
+    "Required Skill(s)": "None",
+    "Required Level": "8",
+    "Position": { "x": 2, "y": 1 }
+}

@@ -1,8 +1,8 @@
 <template>
   <div class="dragged-slot" :style="dragStyle()">
     <Item 
-      v-if="slotData.item?.data" 
-      :equipment="slotData.item.data" 
+      v-if="editorContext.itemOnCursor?.item?.data" 
+      :equipment="editorContext.itemOnCursor.item.data" 
       :showSockets="true" 
       :pointerEvents="false"
     />
@@ -10,16 +10,17 @@
 </template>
 
 <script lang="ts">
-import { Vue, Component, Prop } from "vue-facing-decorator";
-import { SlotData } from "../models/SlotData";
+import { Vue, Component, Inject } from "vue-facing-decorator";
 import Item from "./ItemComponent.vue";
 import type { CSSProperties } from "vue";
+import type EditorContext from "../models/EditorContext";
 
 @Component({
   components: { Item }
 })
 export default class DraggedSlot extends Vue {
-  @Prop({ type: Object, required: true }) slotData!: SlotData;
+  @Inject({from: 'editorContext'}) 
+  readonly editorContext!: EditorContext;
 
   mouseX: number = -1000;
   mouseY: number = -1000;

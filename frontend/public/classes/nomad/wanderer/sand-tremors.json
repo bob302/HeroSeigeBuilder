@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_3_icon.webp",
+    "Image": "output/classes\\nomad\\wanderer\\ability_3_icon.webp",
+    "Name": "Sand Tremors",
+    "Required Skill(s)": "Sand Carver",
+    "Required Level": "8",
+    "Position": { "x": 0, "y": 1 }
+}

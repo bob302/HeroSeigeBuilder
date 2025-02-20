@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_5_icon.webp",
+    "Image": "output/classes\\viking\\berserker\\ability_5_icon.webp",
+    "Name": "Ymir's Champion",
+    "Required Skill(s)": "Zeal",
+    "Required Level": "16",
+    "Position": { "x": 1, "y": 2 }
+}

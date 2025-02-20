@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_3_icon.webp",
+    "Image": "output/classes\\paladin\\justiciar\\ability_3_icon.webp",
+    "Name": "Divine Storm",
+    "Required Skill(s)": "Vengeance",
+    "Required Level": "8",
+    "Position": { "x": 0, "y": 1 }
+}

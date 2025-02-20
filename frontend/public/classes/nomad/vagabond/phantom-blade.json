@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_9_icon.webp",
+    "Image": "output/classes\\nomad\\vagabond\\ability_9_icon.webp",
+    "Name": "Phantom Blade",
+    "Required Skill(s)": "Chainslice",
+    "Required Level": "30",
+    "Position": { "x": 1, "y": 4 }
+}

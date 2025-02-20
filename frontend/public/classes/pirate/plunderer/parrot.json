@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_4_icon.webp",
+    "Image": "output/classes\\pirate\\plunderer\\ability_4_icon.webp",
+    "Name": "Parrot",
+    "Required Skill(s)": "None",
+    "Required Level": "8",
+    "Position": { "x": 2, "y": 1 }
+}

@@ -11,19 +11,14 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-facing-decorator';
-import { CellData, type CellStyle } from '../models/CellData';
+import { Cell, type CellStyle } from '../models/Cell';
 import type { CSSProperties } from 'vue';
 
 @Component({
   emits: ["cell-click", "cell-mouse-enter", "cell-mouse-leave"]
 })
 export default class CellComponent extends Vue {
-  @Prop({type: CellData, required: true}) cellData!: CellData
-  @Prop({required: false}) cellStyle!: CellStyle
-
-  mounted() {
-    this.cellData.setCellStyle(this.cellStyle) 
-  }
+  @Prop({type: Cell, required: true}) cellData!: Cell
 
   onMouseEnter(): void {
     this.$emit('cell-mouse-enter', this.cellData)

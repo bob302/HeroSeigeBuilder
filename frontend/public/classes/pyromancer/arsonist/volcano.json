@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_5_icon.webp",
+    "Image": "output/classes\\pyromancer\\arsonist\\ability_5_icon.webp",
+    "Name": "Volcano",
+    "Required Skill(s)": "Scorching Aura",
+    "Required Level": "16",
+    "Position": { "x": 0, "y": 2 }
+}

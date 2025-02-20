@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_8_icon.webp",
+    "Image": "output/classes\\marksman\\sharpshooter\\ability_8_icon.webp",
+    "Name": "Critical Accuracy",
+    "Required Skill(s)": "None",
+    "Required Level": "24",
+    "Position": { "x": 1, "y": 4 }
+}

@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_9_icon.webp",
+    "Image": "output/classes\\demonspawn\\bone-conjurer\\ability_9_icon.webp",
+    "Name": "Bone Barrage",
+    "Required Skill(s)": "Bone Storm",
+    "Required Level": "30",
+    "Position": { "x": 0, "y": 4 }
+}

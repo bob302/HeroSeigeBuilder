@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_2_icon.webp",
+    "Image": "output/classes\\samurai\\emperors-blade\\ability_2_icon.webp",
+    "Name": "Exploding Bolas",
+    "Required Skill(s)": "None",
+    "Required Level": "1",
+    "Position": { "x": 2, "y": 0 }
+}

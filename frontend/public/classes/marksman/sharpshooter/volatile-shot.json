@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_6_icon.webp",
+    "Image": "output/classes\\marksman\\sharpshooter\\ability_6_icon.webp",
+    "Name": "Volatile Shot",
+    "Required Skill(s)": "Homing Missile",
+    "Required Level": "16",
+    "Position": { "x": 0, "y": 3 }
+}

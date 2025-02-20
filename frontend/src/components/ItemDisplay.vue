@@ -1,8 +1,8 @@
 <template>
-  <div class="display-container" @click="saveItem()" :class="{ saved: this.isSaved }">
+  <div class="display-container" @click="saveItem()" :class="{ saved: isSaved }">
     <div class="item-content">
       <div class="item">
-        <ItemComponent :equipment="this.equipment" :showSockets="this.showSockets" :pointerEvents="true"
+        <ItemComponent :equipment="equipment" :showSockets="showSockets" :pointerEvents="true"
           @item-on-mouse-enter="onMouseEnter" @item-on-mouse-leave="onMouseLeave" />
       </div>
       <div class="frame">
@@ -24,10 +24,9 @@ import ItemFrame from './ItemFrame.vue'
 })
 export default class ItemDisplay extends Vue {
   @Prop({ type: Object, required: true }) equipment!: Equipment;
+  @Prop({ type: Boolean, required: true }) showSockets!: boolean;
   @Prop({ type: String, required: true }) src!: string;
 
-
-  showSockets: boolean = false
   pointerEvents: boolean = false
   isSaved = false
 

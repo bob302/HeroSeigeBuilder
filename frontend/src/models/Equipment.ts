@@ -52,6 +52,8 @@ export const EquipmentSubtypes: Record<EquipmentType, string[]> = {
   [EquipmentType.Misc]: ['Socketable']
 };
 
+export type EquipmentSubtype = typeof EquipmentSubtypes[EquipmentType][number];
+
 export function isValidSubtype(type: EquipmentType, subtype: string): boolean {
   return EquipmentSubtypes[type]?.includes(subtype) ?? false;
 }
@@ -116,6 +118,24 @@ export class BaseItem {
       stats: this.stats.map(stat => ({ ...stat }))
     });
   }
+
+  serialize(): BaseItemProps & { __type: string } {
+    return {
+      __type: 'BaseItem',
+      uuid: this.uuid,
+      name: this.name,
+      image: this.image,
+      isLoading: this.isLoading,
+      size: { ...this.size },
+      type: this.type,
+      subtype: this.subtype,
+      rarity: this.rarity,
+      tier: this.tier,
+      level: this.level,
+      stats: this.stats.map(stat => ({ ...stat }))
+    };
+  }
+  
 }
 
 export interface EquipmentProps extends BaseItemProps {
@@ -132,11 +152,16 @@ export class Equipment extends BaseItem {
       amount: props.sockets.amount,
       min: props.sockets.min,
       max: props.sockets.max,
-      list: Array(props.sockets.max).fill(null).map(() => createSocket(false))
+      list: props.sockets.list.map(socket => ({
+        prismatic: socket.prismatic,
+        socketable: socket.socketable ? socket.socketable.clone() : null
+      }))
     };
+    
+    
 
     
-    this.sockets =sockets;
+    this.sockets = sockets;
   }
 
   insertSocketable(socketable: Socketable): boolean {
@@ -169,6 +194,23 @@ export class Equipment extends BaseItem {
       }
     } as EquipmentProps);
   }
+
+  serialize(): EquipmentProps & { __type: string } {
+    const base = super.serialize();
+    return {
+      ...base,
+      __type: 'Equipment',
+      sockets: {
+        amount: this.sockets.amount,
+        min: this.sockets.min,
+        max: this.sockets.max,
+        list: this.sockets.list.map(socket => ({
+          prismatic: socket.prismatic,
+          socketable: socket.socketable?.serialize() ?? null
+        }))
+      }
+    };
+  }
 }
 
 export interface SocketableProps extends EquipmentProps {
@@ -196,6 +238,15 @@ export class Socketable extends Equipment {
       amount: this.amount
     } as SocketableProps);
   }
+
+  serialize(): SocketableProps & { __type: string } {
+    const base = super.serialize();
+    return {
+      ...base,
+      __type: 'Socketable',
+      amount: this.amount
+    };
+  }
 }
 
 export interface WeaponEquipmentProps extends EquipmentProps {
@@ -215,6 +266,15 @@ export class WeaponEquipment extends Equipment {
       ...super.clone(),
       weaponStats: { ...this.weaponStats }
     } as WeaponEquipmentProps);
+  }
+
+  serialize(): WeaponEquipmentProps & { __type: string } {
+    const base = super.serialize();
+    return {
+      ...base,
+      __type: 'WeaponEquipment',
+      weaponStats: { ...this.weaponStats }
+    };
   }
 }
 
@@ -236,6 +296,15 @@ export class ArmorEquipment extends Equipment {
       armorStats: { ...this.armorStats }
     } as ArmorEquipmentProps);
   }
+
+  serialize(): ArmorEquipmentProps & { __type: string } {
+    const base = super.serialize();
+    return {
+      ...base,
+      __type: 'ArmorEquipment',
+      armorStats: { ...this.armorStats }
+    };
+  }
 }
 
 export class CharmEquipment extends Equipment {
@@ -247,6 +316,14 @@ export class CharmEquipment extends Equipment {
     return new CharmEquipment({
       ...super.clone()
     } as EquipmentProps);
+  }
+
+  serialize(): EquipmentProps & { __type: string } {
+    const base = super.serialize();
+    return {
+      ...base,
+      __type: 'CharmEquipment'
+    };
   }
 }
 
@@ -275,4 +352,37 @@ export function createEquipment(partial: Partial<EquipmentProps>): Equipment {
 
   const props = { ...defaults, ...partial } as EquipmentProps;
   return new Equipment(props);
+}
+
+// Deserialization function
+export function deserialize(data: any): BaseItem {
+  if (data === null || typeof data !== 'object') {
+    return data;
+  }
+
+  // Recursively deserialize all properties
+  for (const key of Object.keys(data)) {
+    if (Array.isArray(data[key])) {
+      data[key] = data[key].map((item: any) => deserialize(item));
+    } else if (typeof data[key] === 'object' && data[key] !== null) {
+      data[key] = deserialize(data[key]);
+    }
+  }
+
+  switch (data.__type) {
+    case 'BaseItem':
+      return new BaseItem(data);
+    case 'Equipment':
+      return new Equipment(data as EquipmentProps);
+    case 'WeaponEquipment':
+      return new WeaponEquipment(data as WeaponEquipmentProps);
+    case 'ArmorEquipment':
+      return new ArmorEquipment(data as ArmorEquipmentProps);
+    case 'CharmEquipment':
+      return new CharmEquipment(data as EquipmentProps);
+    case 'Socketable':
+      return new Socketable(data as SocketableProps);
+    default:
+      throw new Error(`Unknown __type: ${data.__type}`);
+  }
 }

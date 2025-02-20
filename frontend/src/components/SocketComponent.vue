@@ -2,7 +2,7 @@
   <div class="socket-wrapper">
     <img :src="socketImage" class="socket" />
     <div class="socketable">
-      <img v-if="socketable" :src="socketable.image" class="socketable-image">
+      <img v-if="socketable" :src="socketable.image" class="socketable-image" draggable="false">
     </div>
   </div>
 </template>
@@ -17,7 +17,6 @@ import type { Socketable } from '../models/Equipment';
 export default class Socket extends Vue {
   @Prop({type: Object, required: false}) socketable!: Socketable
   @Prop({type: Boolean, required: true}) prismatic!: boolean
-
 
   get socketImage() {
     return this.prismatic ? '/img/editor/socket-prismatic.png' : '/img/editor/socket-normal.png'

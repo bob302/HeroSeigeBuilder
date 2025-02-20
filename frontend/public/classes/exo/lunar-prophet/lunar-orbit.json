@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_6_icon.webp",
+    "Image": "output/classes\\exo\\lunar-prophet\\ability_6_icon.webp",
+    "Name": "Lunar Orbit",
+    "Required Skill(s)": "Asteroid",
+    "Required Level": "16",
+    "Position": { "x": 1, "y": 2 }
+}

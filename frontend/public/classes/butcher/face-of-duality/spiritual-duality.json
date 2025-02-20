@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_7_icon.webp",
+    "Image": "output/classes\\butcher\\face-of-duality\\ability_7_icon.webp",
+    "Name": "Spiritual Duality",
+    "Required Skill(s)": "Sacrilegious Scorn",
+    "Required Level": "24",
+    "Position": { "x": 0, "y": 3 }
+}

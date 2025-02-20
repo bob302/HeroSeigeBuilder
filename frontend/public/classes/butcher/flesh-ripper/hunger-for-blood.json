@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_4_icon.webp",
+    "Image": "output/classes\\butcher\\flesh-ripper\\ability_4_icon.webp",
+    "Name": "Hunger For Blood",
+    "Required Skill(s)": "Brutalizing Slash",
+    "Required Level": "8",
+    "Position": { "x": 2, "y": 1 }
+}

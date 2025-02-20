@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_5_icon.webp",
+    "Image": "output/classes\\demonslayer\\gunslinger\\ability_5_icon.webp",
+    "Name": "Concentration Aura",
+    "Required Skill(s)": "None",
+    "Required Level": "16",
+    "Position": { "x": 0, "y": 2 }
+}

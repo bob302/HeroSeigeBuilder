@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_2_icon.webp",
+    "Image": "output/classes\\amazon\\valkyrie\\ability_2_icon.webp",
+    "Name": "Feint",
+    "Required Skill(s)": "None",
+    "Required Level": "1",
+    "Position": { "x": 2, "y": 0 }
+}

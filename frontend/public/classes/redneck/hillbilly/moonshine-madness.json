@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_8_icon.webp",
+    "Image": "output/classes\\redneck\\hillbilly\\ability_8_icon.webp",
+    "Name": "Moonshine Madness",
+    "Required Skill(s)": "Hillbilly Rage",
+    "Required Level": "24",
+    "Position": { "x": 2, "y": 3 }
+}

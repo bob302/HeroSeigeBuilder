@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_6_icon.webp",
+    "Image": "output/classes\\illusionist\\sand-manipulator\\ability_6_icon.webp",
+    "Name": "Dissipation",
+    "Required Skill(s)": "Piercing Sand",
+    "Required Level": "16",
+    "Position": { "x": 1, "y": 2 }
+}

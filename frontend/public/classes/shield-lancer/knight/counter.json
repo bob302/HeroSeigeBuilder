@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_8_icon.webp",
+    "Image": "output/classes\\shieldlancer\\knight\\ability_8_icon.webp",
+    "Name": "Counter",
+    "Required Skill(s)": "Damage Reflect, Taunt",
+    "Required Level": "24",
+    "Position": { "x": 2, "y": 3 }
+}

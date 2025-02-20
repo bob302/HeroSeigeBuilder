@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_9_icon.webp",
+    "Image": "output/classes\\plaguedoctor\\plague-caller\\ability_9_icon.webp",
+    "Name": "Randy the Rancid Rat",
+    "Required Skill(s)": "Jar of Leeches",
+    "Required Level": "30",
+    "Position": { "x": 1, "y": 4 }
+}

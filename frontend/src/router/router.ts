@@ -7,17 +7,6 @@ const routes = [
     component: () => import('../views/AboutView.vue') // Lazy-load
   },
   {
-    path: '/add',
-    name: 'add',
-    component: () => import('../views/AddItemView.vue') // Lazy-load
-  },
-  {
-    path: '/catalog',
-    name: 'catalog',
-    // @ts-ignore
-    component: () => import('../views/EquipmentCatalogView.vue') // Lazy-load
-  },
-  {
     path: '/equipment',
     name: 'equipment',
     component: () => import('../views/InventoryEditorView.vue') // Lazy-load

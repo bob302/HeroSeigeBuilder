@@ -1,9 +1,9 @@
 <template>
-  <div class="charm-inventory-container">
+  <div class="inventory-grid-wrapper">
     <!-- Cell Grid -->
     <div class="cell-grid" :style="getGridStyle()">
       <CellComponent
-        v-for="(cell, index) in inventory.cellsData"
+        v-for="(cell, index) in getInventory().cellsData"
         :key="'cell-' + index"
         :cellData="cell"
         :style="getCellPositionStyle(cell)"
@@ -16,7 +16,7 @@
     <!-- Slot Grid -->
     <div class="slot-grid" :style="getGridStyle()">
       <SlotComponent
-        v-for="(slotData, index) in inventory.slots"
+        v-for="(slotData, index) in getInventory().slots"
         :key="'slot-' + index"
         :slot-data="slotData"
         :style="getSlotStyle(slotData)"
@@ -31,30 +31,36 @@
 
 
 <script lang="ts">
-import { Component, Prop, Vue } from 'vue-facing-decorator';
+import { Component, Inject, Prop, Vue, Watch } from 'vue-facing-decorator';
 import { Inventory } from '../models/Inventory';
-import { SlotData } from '../models/SlotData';
-import { CellData, HightLightCellState } from '../models/CellData';
+import { Slot } from '../models/Slot';
+import { Cell, HightLightCellState } from '../models/Cell';
 import { Point2D } from '../models/Point2D';
 import CellComponent from './CellComponent.vue';
 import SlotComponent from './SlotComponent.vue';
-import DraggedSlot from './DraggedSlot.vue';
-import { Socketable } from '../models/Equipment';
+import type EditorContext from '../models/EditorContext';
 
 @Component({
   components: {
     SlotComponent,
-    CellComponent,
-    DraggedSlot
+    CellComponent
 }, emits: ['slot-mouse-enter', 'slot-mouse-leave']})
 export default class InventoryGrid extends Vue {
-  @Prop({type: Inventory, required: true}) inventory!: Inventory
-  @Prop({type: Number, required: false}) cellSize: number = 2.9
+  @Inject({from: 'editorContext'}) 
+  readonly editorContext!: EditorContext;
+  
+  @Prop({type: String, required: true}) inventoryName!: 'main' | 'charm'
+  @Prop({type: Number, required: false}) cellSize: number = 2.5 
+
+  getInventory(): Inventory {
+    return this.editorContext.inventories.get(this.inventoryName)!;
+  }
+  
 
   private updateHighlight(base: Point2D, state: HightLightCellState) {
-    this.inventory.parent.itemOnCursor!.item!.getSizeInCells().forEach(offset => {
+    this.editorContext.itemOnCursor!.item!.getSizeInCells().forEach(offset => {
       const coord = base.add(offset);
-      const cell = this.inventory.getCell(coord)
+      const cell = this.getInventory().getCell(coord)
       if (cell) {
         cell.setHighlightState(state);
         }
@@ -63,38 +69,38 @@ export default class InventoryGrid extends Vue {
 
 
   private resetCellHighlights() {
-    this.inventory.cellsData.forEach(cell => {
+    this.getInventory().cellsData.forEach(cell => {
         cell.setHighlightState(HightLightCellState.None)
     }
   );
   }
 
   private placeItem(coords: Point2D) {
-    this.inventory.placeItemOnCursor(coords)
+    this.getInventory().placeItemOnCursor(coords)
   }
 
-  onClickOnCell(cellData: CellData) {
-    if (!this.inventory.parent.itemOnCursor?.item) return;
+  onClickOnCell(cellData: Cell) {
+    if (!this.editorContext.itemOnCursor?.item) return;
 
-    const isValid = this.inventory.doesItemFit(this.inventory.parent.itemOnCursor.item.getSizeInCells() as Point2D[], cellData.coordinates);
+    const isValid = this.getInventory().doesItemFit(this.editorContext.itemOnCursor.item.getSizeInCells() as Point2D[], cellData.coordinates);
     if (isValid === HightLightCellState.ValidPlacement || isValid === HightLightCellState.Replacement) {
       this.placeItem(cellData.coordinates);
     }
   }
   
    // ПЕРЕПИСАТЬ
-   onSlotClick(slotData: SlotData) {
-    if (this.inventory.parent.itemOnCursor || !slotData.item) {
+   onSlotClick(slotData: Slot) {
+    if (this.editorContext.itemOnCursor || !slotData.item) {
       this.placeItem(slotData.item?.startCoordinates!)
     } else {
-    this.inventory.pickupItem(slotData.item)
+    this.getInventory().pickupItem(slotData.item)
     this.onSlotMouseLeave()
     }
   }
 
-  onSlotHover(data: {slot: SlotData, pos: {x: number, y: number}}) {
+  onSlotHover(data: {slot: Slot, pos: {x: number, y: number}}) {
     if (!data.slot.item) return
-    const cell = this.inventory.getCell(data.slot.item?.getStartCoordinates())
+    const cell = this.getInventory().getCell(data.slot.item?.getStartCoordinates())
     if (!cell) return
     this.$emit('slot-mouse-enter', {equipment: data.slot.item.data, pos: {x: data.pos.x, y: data.pos.y}})
 
@@ -107,21 +113,21 @@ export default class InventoryGrid extends Vue {
   }
 
 
-  onCellHover(cell: CellData) {
-    if (!this.inventory.parent.itemOnCursor?.item) return;
+  onCellHover(cell: Cell) {
+    if (!this.editorContext.itemOnCursor?.item) return;
     
-    const state = this.inventory.doesItemFit(this.inventory.parent.itemOnCursor.item.getSizeInCells() as Point2D[], cell.coordinates);
+    const state = this.getInventory().doesItemFit(this.editorContext.itemOnCursor.item.getSizeInCells() as Point2D[], cell.coordinates);
     this.updateHighlight(cell.coordinates, state);
   }
 
   onCellMouseLeave() {
-    if (!this.inventory.parent.itemOnCursor?.item) return;
+    if (!this.editorContext.itemOnCursor?.item) return;
     this.resetCellHighlights();
   }
 
   getCellIndex(inCoordinates: Point2D): number {
-    for (let i = 0; i < this.inventory.cellsData.length; i++) {
-      if (this.inventory.cellsData[i].coordinates.equals(inCoordinates)) {
+    for (let i = 0; i < this.getInventory().cellsData.length; i++) {
+      if (this.getInventory().cellsData[i].coordinates.equals(inCoordinates)) {
         return i
       }
     }
@@ -130,7 +136,7 @@ export default class InventoryGrid extends Vue {
   }
 
   getGridStyle() {
-    const { x, y } = this.inventory.gridSize;
+    const { x, y } = this.getInventory().gridSize;
     return {
       display: 'grid',
       gridTemplateColumns: `repeat(${x}, 1fr)`,
@@ -140,7 +146,7 @@ export default class InventoryGrid extends Vue {
     };
   }
 
-  private getCellPositionStyle(cell: CellData) {
+  private getCellPositionStyle(cell: Cell) {
     return {
       gridColumn: cell.coordinates.x + 1,
       gridRow: cell.coordinates.y + 1,
@@ -150,7 +156,7 @@ export default class InventoryGrid extends Vue {
 
 
 
-  private getSlotStyle(slot: SlotData) {
+  private getSlotStyle(slot: Slot) {
     const start = slot.item?.getStartCoordinates();
     if (!start) return {};
     
@@ -161,39 +167,37 @@ export default class InventoryGrid extends Vue {
     };
   }
 
-onCellCreated(cell: CellData): void {
+onCellCreated(cell: Cell): void {
 
 }
 
-onSlotCreated(slot: SlotData): void {
+onSlotCreated(slot: Slot): void {
   
 }
 
-onSlotRemoved(slot: SlotData): void {
+onSlotRemoved(slot: Slot): void {
 
 }
 }
 </script>
 
 <style scoped>
-/* Общий контейнер для слоев */
-.charm-inventory-container {
+.inventory-grid-wrapper {
+  max-height: 38rem;
   display: grid;
   position: relative;
 }
 
-/* Слой ячеек */
 .cell-grid {
   grid-row: 1;
   grid-column: 1;
-  z-index: 1; /* Низкий z-index, чтобы быть ниже слотов */
+  z-index: 1;
 }
 
-/* Слой слотов */
 .slot-grid {
   pointer-events: none;
   grid-row: 1;
   grid-column: 1;
-  z-index: 2; /* Высокий z-index, чтобы отображаться поверх ячеек */
+  z-index: 2;
 }
 </style>

@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_7_icon.webp",
+    "Image": "output/classes\\pirate\\plunderer\\ability_7_icon.webp",
+    "Name": "Anchor Swing",
+    "Required Skill(s)": "Set Sail",
+    "Required Level": "24",
+    "Position": { "x": 1, "y": 3 }
+}

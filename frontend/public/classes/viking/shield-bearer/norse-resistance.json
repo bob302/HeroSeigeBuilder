@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_5_icon.webp",
+    "Image": "output/classes\\viking\\shield-bearer\\ability_5_icon.webp",
+    "Name": "Norse Resistance",
+    "Required Skill(s)": "Stoneskin",
+    "Required Level": "16",
+    "Position": { "x": 0, "y": 2 }
+}

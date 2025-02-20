@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_3_icon.webp",
+    "Image": "output/classes\\nomad\\vagabond\\ability_3_icon.webp",
+    "Name": "Flying Scimitar",
+    "Required Skill(s)": "Blade Strike",
+    "Required Level": "8",
+    "Position": { "x": 0, "y": 1 }
+}

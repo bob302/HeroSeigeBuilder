@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_4_icon.webp",
+    "Image": "output/classes\\demonspawn\\blood-lord\\ability_4_icon.webp",
+    "Name": "Mana Shield",
+    "Required Skill(s)": "Manapool Aura",
+    "Required Level": "8",
+    "Position": { "x": 2, "y": 1 }
+}

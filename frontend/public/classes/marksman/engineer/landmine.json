@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_3_icon.webp",
+    "Image": "output/classes\\marksman\\engineer\\ability_3_icon.webp",
+    "Name": "Landmine",
+    "Required Skill(s)": "Frag Grenade",
+    "Required Level": "8",
+    "Position": { "x": 0, "y": 1 }
+}

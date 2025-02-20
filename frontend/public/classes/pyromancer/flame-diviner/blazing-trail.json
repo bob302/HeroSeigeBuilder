@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_1_icon.webp",
+    "Image": "output/classes\\pyromancer\\flame-diviner\\ability_1_icon.webp",
+    "Name": "Blazing Trail",
+    "Required Skill(s)": "None",
+    "Required Level": "1",
+    "Position": { "x": 0, "y": 0 }
+}

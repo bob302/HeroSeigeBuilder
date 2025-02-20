@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_6_icon.webp",
+    "Image": "output/classes\\redneck\\hillbilly\\ability_6_icon.webp",
+    "Name": "Hillbilly Rage",
+    "Required Skill(s)": "None",
+    "Required Level": "16",
+    "Position": { "x": 1, "y": 2 }
+}

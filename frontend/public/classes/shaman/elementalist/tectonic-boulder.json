@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_1_icon.webp",
+    "Image": "output/classes\\shaman\\elementalist\\ability_1_icon.webp",
+    "Name": "Tectonic Boulder",
+    "Required Skill(s)": "None",
+    "Required Level": "1",
+    "Position": { "x": 0, "y": 0 }
+}

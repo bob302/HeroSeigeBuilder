@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_1_icon.webp",
+    "Image": "output/classes\\paladin\\lionheart\\ability_1_icon.webp",
+    "Name": "Divine Wisdom",
+    "Required Skill(s)": "None",
+    "Required Level": "1",
+    "Position": { "x": 0, "y": 0 }
+}

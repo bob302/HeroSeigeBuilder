@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_3_icon.webp",
+    "Image": "output/classes\\redneck\\hillbilly\\ability_3_icon.webp",
+    "Name": "Oil Spill",
+    "Required Skill(s)": "Moonshine Molotov",
+    "Required Level": "8",
+    "Position": { "x": 0, "y": 1 }
+}

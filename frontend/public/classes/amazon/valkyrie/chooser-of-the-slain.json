@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_3_icon.webp",
+    "Image": "output/classes\\amazon\\valkyrie\\ability_3_icon.webp",
+    "Name": "Chooser of the Slain",
+    "Required Skill(s)": "None",
+    "Required Level": "8",
+    "Position": { "x": 0, "y": 1 }
+}

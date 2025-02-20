@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_9_icon.webp",
+    "Image": "output/classes\\marauder\\juggernaut\\ability_9_icon.webp",
+    "Name": "Bombardment",
+    "Required Skill(s)": "The Big Bo-oM",
+    "Required Level": "30",
+    "Position": { "x": 0, "y": 4 }
+}

@@ -11,15 +11,37 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+   /* Colors */
+   --color-primary: #d6ac2f;
+   --color-satanic: #c81717;
+   --color-angelic: #fdfea5;
+   --color-unholy: #c73664;
+   --color-heroic: #00e19a;
+   --color-satanic-set: #0bb01a;
+   --color-text-primary: #ffffff;
+   --color-text-secondary: #c7b377;
+   --color-background: rgba(0, 0, 0, 0.8);
+   --color-border: #ffffff;
+   /* Colors Tiers*/
+   --color-s: #f3c632;
+   --color-a: #e69650;
+   --color-b: #bb6234;
+   --color-c: #82251c;
+   --color-d: #5a1c14;
+   
+   /* Typography */
+   --font-family-primary: 'Fenris', sans-serif;
+   --font-size-base: 1rem;
+   --font-size-title: 1.2rem;
+   
+   /* Spacing */
+   --spacing-sm: 0.5rem;
+   --spacing-md: 1rem;
+   --spacing-lg: 1.5rem;
+   
+   /* Effects */
+   --blur-amount: blur(8px);
 }
 
 body {
@@ -27,32 +49,10 @@ body {
   padding: 0;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-.card {
-  padding: 2em;
+p, h1, h2, h3, h4, h5 {
+  font-family: 'Fenris';
+  font-weight: 600;
 }
 
 #app {
@@ -70,4 +70,28 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+
+/* Dark Theme (default) */
+[data-theme="dark"] {
+  --color-background: rgba(0, 0, 0, 0.8);
+  --color-text-primary: #ffffff;
+}
+
+/* Light Theme */
+[data-theme="light"] {
+  --color-background: rgba(255, 255, 255, 0.9);
+  --color-text-primary: #000000;
+}
+
+/* Font-face */
+@font-face {
+  font-family: "Fenris";
+  font-weight: 400;
+  font-style: normal;
+  font-display: auto;
+  unicode-range: U+000-5FF;
+  src: url('~@/assets/fonts/fenris.woff') format("woff"), 
+       url('~@/assets/fonts/fenris.woff2') format("woff2");
 }

@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_9_icon.webp",
+    "Image": "output/classes\\shaman\\chieftain\\ability_9_icon.webp",
+    "Name": "Chaos Totem",
+    "Required Skill(s)": "Fire Totem",
+    "Required Level": "30",
+    "Position": { "x": 1, "y": 4 }
+}

@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_3_icon.webp",
+    "Image": "output/classes\\pyromancer\\arsonist\\ability_3_icon.webp",
+    "Name": "Scorching Aura",
+    "Required Skill(s)": "Breath of Fire",
+    "Required Level": "8",
+    "Position": { "x": 0, "y": 1 }
+}

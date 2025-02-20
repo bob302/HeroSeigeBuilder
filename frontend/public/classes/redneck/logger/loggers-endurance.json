@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_3_icon.webp",
+    "Image": "output/classes\\redneck\\logger\\ability_3_icon.webp",
+    "Name": "Loggers Endurance",
+    "Required Skill(s)": "Durable Wear",
+    "Required Level": "8",
+    "Position": { "x": 0, "y": 1 }
+}

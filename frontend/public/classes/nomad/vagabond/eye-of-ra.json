@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_2_icon.webp",
+    "Image": "output/classes\\nomad\\vagabond\\ability_2_icon.webp",
+    "Name": "Eye of Ra",
+    "Required Skill(s)": "None",
+    "Required Level": "1",
+    "Position": { "x": 2, "y": 0 }
+}

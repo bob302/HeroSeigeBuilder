@@ -5,49 +5,43 @@
       <div class="column-right">
         <div class="inventory-container inventory-background">
           <div v-for="slot in slotsConfig" :key="slot.slotName" :class="slot.classes">
-            <EquipmentSlot
-              :background="slot.image"
-              :context="context" 
+            <EquipmentSlotComponent
+              :slotName="slot.slotName"
               :equipment="dummyEquipment"
               :cellStyle="slot.style"
               @slot-mouse-enter="updateStatDisplay" @slot-mouse-leave="resetStatDisplay" />
           </div>
         </div>
-        <InventoryGrid :inventory="charmInventory" @inventory-updated="handleCharmInventoryUpdate" 
+        <InventoryGrid class="charm-inventory-wrapper" :inventoryName="'charm'"
           @slot-mouse-enter="updateStatDisplay" @slot-mouse-leave="resetStatDisplay"/>
-        <div class="buttons">
-          <img @click="clearInventory" class="test-button charm-button" src="/img/editor/clear-inventory-button.png" />
-          <img @click="unlockCharmTopSlot" class="test-button charm-button" src="/img/editor/unlock-charm-slot.png" />
-          <img @click="unlockCharmBottomSLot" class="test-button charm-button" src="/img/editor/unlock-charm-slot.png" />
-        </div>
-        
       </div>
     </div>
 
     <div class="content-section-2">
       <div class="column-left">
-        
+        <div class="buttons">
+          <img @click="clearInventory" class="test-button charm-button" src="/img/editor/clear-inventory-button.png" />
+          <img @click="unlockCharmTopSlot" class="test-button charm-button" src="/img/editor/unlock-charm-slot.png" />
+          <img @click="unlockCharmBottomSLot" class="test-button charm-button" src="/img/editor/unlock-charm-slot.png" />
+        </div>
         </div>
         <div class="column-right">
-          <InventoryGrid class="inventory-wrapper" :inventory="inventory" @inventory-updated="handleCharmInventoryUpdate"
+          <InventoryGrid class="inventory-wrapper" :inventoryName="'main'"
        @slot-mouse-enter="updateStatDisplay" @slot-mouse-leave="resetStatDisplay" />
 
    
         </div>
     </div>
 
-    <DraggedSlot v-if="this.context.itemOnCursor" :slotData="this.context.itemOnCursor" ref="draggedSlot" />
+    <DraggedSlot ref="draggedSlot" />
 
-    <ItemStatsComponent v-if="lookingAt" :item="lookingAt" :pos="mousePosition" />
+    <ItemTooltip v-if="lookingAt" :item="lookingAt" :pos="mousePosition" />
 
     <ArrowButton v-if="!showCatalog" class="arrow-button" @click="showCatalog = true" />
     <keep-alive>
     <CatalogModal 
       v-if="showCatalog"
       :show="showCatalog"
-      :context="context"
-      :charm-inventory="charmInventory"
-      :main-inventory="inventory"
       :allCatalogItems="allCatalogItems"
       @close="showCatalog = false"
       @item-on-mouse-enter="updateStatDisplay"
@@ -60,164 +54,110 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue, Watch } from 'vue-facing-decorator';
-import GameContext from '../models/GameContext';
+import { Component, Inject, Prop, Vue, Watch } from 'vue-facing-decorator';
+import EditorContext from '../models/EditorContext';
 import InventoryGrid from './InventoryGrid.vue';
 import { Point2D } from '../models/Point2D';
 import { Inventory } from '../models/Inventory';
-import { CharmEquipment, createEquipment, Equipment, EquipmentRarity, EquipmentSubtypes, EquipmentTier, EquipmentType, isValidSubtype } from '../models/Equipment';
-import { ItemParser } from '../services/ItemParser';
+import { CharmEquipment, createEquipment, Equipment, EquipmentType } from '../models/Equipment';
 import DraggedSlot from './DraggedSlot.vue';
 // @ts-ignore
 import EquipmentCatalog from './EquipmentCatalog.vue';
 import { Item } from '../models/Item';
-import ItemStatsComponent from './ItemStatsComponent.vue';
+import ItemTooltip from './ItemTooltip.vue';
 import ItemDisplay from './ItemFrame.vue';
-import EquipmentSlot from './EquipmentSlot.vue';
 import CatalogModal from './CatalogModal.vue';
 import ArrowButton from './ArrowButton.vue';
-
-
-interface SlotConfig {
-  classes: string[],
-  slotName: keyof Slots;
-  hasItem: boolean;
-  hasClick: boolean;
-  image: string
-  style: {width: string, height: string, border: string, isEdge: boolean}
-}
-
-interface Slots {
-  [key: string]: Equipment
-}
+import EquipmentSlotComponent from './EquipmentSlot.vue';
+import { EquipmentSlot, type SlotConfig } from '../models/EquipmentSlot';
+import { equipmentService } from '../service/EquipmentService';
 
 @Component({
   components: {
     InventoryGrid,
     CatalogModal,
     DraggedSlot,
-    ItemStatsComponent,
+    ItemTooltip,
     ItemDisplay,
-    EquipmentSlot,
+    EquipmentSlotComponent,
     ArrowButton
 }})
 export default class TheInventory extends Vue {
-  @Prop({type: Object, required: true}) context!: GameContext;
-
-  charmInventory!: Inventory;
-  inventory!: Inventory;
+  @Inject({from: 'editorContext'}) 
+  readonly editorContext!: EditorContext;
   public showCatalog = false;
   public allCatalogItems: Equipment[] = [];
   imageCache = new Map<string, HTMLImageElement>();
 
+  async created() {
+    const charmInventoryStyle = {
+      height: '2.5rem',
+      width: '2.5rem',
+      border: '8px solid',
+      borderImage: '/img/editor/cell-charm-background.jpg',
+      isEdge: false,
+      background: ''
+    }
 
-async created() {
-    this.charmInventory = new Inventory(this.context, new Point2D(3, 11));
-    this.charmInventory.cellsData.forEach(cell => {
-      cell.setCellStyle({height: '2.9rem', width: '2.9rem', border: '8px solid', isEdge: false, borderImage: '/img/editor/cell-charm-background.jpg', background: ''})
-    })
-    this.inventory = new Inventory(this.context, new Point2D(20, 6));
-    this.inventory.cellsData.forEach(cell => {
-      cell.setCellStyle({height: '2.9rem', width: '2.9rem', border: '8px solid', isEdge: false, borderImage: '/img/editor/cell-background.jpg', background: ''})
-    })
-    this.context.inventories.push(this.charmInventory);
-    this.context.inventories.push(this.inventory);
+    const mainInventoryStyle = {
+      height: '2.5rem',
+      width: '2.5rem',
+      border: '8px solid',
+      borderImage: '/img/editor/cell-background.jpg',
+      isEdge: false,
+      background: ''
+    }
 
-    await this.fetchEquipmentData();
+    const charmInventory = new Inventory(this.editorContext, new Point2D(3, 11), charmInventoryStyle);
+    const mainInventory = new Inventory(this.editorContext, new Point2D(20, 6), mainInventoryStyle);
+
+
+    this.editorContext.inventories.set('charm', charmInventory);
+    this.editorContext.inventories.set('main', mainInventory);
+
+
+    this.slotsConfig.forEach(config => {
+    const slot = new EquipmentSlot(
+      createEquipment({ name: '???', level: '???' }),
+      config.style,
+      config.slotName
+    );
+    this.editorContext.equipmentSlots.set(config.slotName, slot);
+  });
+
+    this.allCatalogItems = await equipmentService.fetchEquipmentData();
   }
-
+  
   dummyEquipment = createEquipment({ name: '???', level: '???' })
 
+  lookingAt: Equipment | null = null
+  mousePosition = { x: 0, y: 0 }
+  catalogItems: Equipment[] = [];
+  typeQuery: EquipmentType = EquipmentType.Special
+  subtypeQuery: string = 'Glyph'
+  topSlotUnlocked = false
+  bottomSlotUnlocked = false
 
-
-  slotsConfig: SlotConfig[] = [
-  { classes: ['slot-item', 'helm'], slotName: 'helm', hasItem: true, hasClick: true, image: '/img/editor/slot-helm.JPEG', 
-    style: {width: '6.7rem', height: '6.7rem', border: '8px solid', isEdge: false} }, 
-  { classes: ['slot-item', 'amulet'], slotName: 'amulet', hasItem: true, hasClick: true, image: '/img/editor/slot-amulet.JPEG', 
-    style: {width: '3.52rem', height: '3.84rem', border: '8px solid', isEdge: false} },
-  { classes: ['slot-item', 'weapon'], slotName: 'weapon', hasItem: true, hasClick: true, image: '/img/editor/slot-weapon.JPEG', 
-    style: {width: '10rem', height: '15rem', border: '8px solid', isEdge: false} },
-  { classes: ['slot-item', 'body-armour'],  slotName: 'bodyArmour', hasItem: true, hasClick: true, image: '/img/editor/slot-body.JPEG', 
-    style: {width: '6.7rem', height: '11.3rem', border: '8px solid', isEdge: false} },
-  { classes: ['slot-item', 'offhand'],  slotName: 'offhand', hasItem: true, hasClick: true, image: '/img/editor/slot-offhand.JPEG', 
-    style: {width: '10rem', height: '15rem', border: '8px solid', isEdge: false} },
-  { classes: ['slot-item', 'ring'],  slotName: 'ringLeft', hasItem: true, hasClick: true, image: '/img/editor/slot-ring.JPEG', 
-    style: {width: '3.52rem', height: '3.84rem', border: '8px solid', isEdge: false} },
-  { classes: ['slot-item', 'belt'],  slotName: 'belt', hasItem: true, hasClick: true, image: '/img/editor/slot-belt.JPEG', 
-    style: {width: '6.7rem', height: '3.84rem', border: '8px solid', isEdge: false} },
-  { classes: ['slot-item', 'ring2'], slotName: 'ringRight', hasItem: true, hasClick: true, image: '/img/editor/slot-ring.JPEG', 
-    style: {width: '3.52rem', height: '3.84rem', border: '8px solid', isEdge: false} },
-  { classes: ['slot-item', 'gloves'],  slotName: 'gloves', hasItem: true, hasClick: true, image: '/img/editor/slot-gloves.JPEG', 
-    style: {width: '6.7rem', height: '6.7rem', border: '8px solid', isEdge: false} },
-  { classes: ['slot-item', 'boots'], slotName: 'boots', hasItem: true, hasClick: true, image: '/img/editor/slot-boots.JPEG', 
-    style: {width: '6.7rem', height: '6.7rem', border: '8px solid', isEdge: false} },
-  { classes: ['slot-item', 'flask', 'flask1'], slotName: 'flask1', hasItem: true, hasClick: true, image: '/img/editor/slot-flask.JPEG', 
-    style: {width: '3.2rem', height: '7.2rem', border: '8px solid', isEdge: false} },
-  { classes: ['slot-item', 'flask', 'flask2'], slotName: 'flask2', hasItem: true, hasClick: true, image: '/img/editor/slot-flask.JPEG', 
-    style: {width: '3.2rem', height: '7.2rem', border: '8px solid', isEdge: false} },
-  { classes: ['slot-item', 'flask', 'flask3'], slotName: 'flask3', hasItem: true, hasClick: true, image: '/img/editor/slot-flask.JPEG', 
-    style: {width: '3.2rem', height: '7.2rem', border: '8px solid', isEdge: false} },
-  { classes: ['slot-item', 'flask', 'flask4'], slotName: 'flask4', hasItem: true, hasClick: true, image: '/img/editor/slot-flask.JPEG', 
-    style: {width: '3.2rem', height: '7.2rem', border: '8px solid', isEdge: false} },
-  { classes: ['slot-item', 'relic', 'relic1'],  slotName: 'relic1', hasItem: true, hasClick: true, image: '/img/editor/slot-relic.JPEG', 
-    style: {width: '3.52rem', height: '3.84rem', border: '8px solid', isEdge: false} },
-  { classes: ['slot-item', 'relic', 'relic2'],  slotName: 'relic2', hasItem: true, hasClick: true, image: '/img/editor/slot-relic.JPEG', 
-    style: {width: '3.52rem', height: '3.84rem', border: '8px solid', isEdge: false} },
-  { classes: ['slot-item', 'relic', 'relic3'],  slotName: 'relic3', hasItem: true, hasClick: true, image: '/img/editor/slot-relic.JPEG', 
-    style: {width: '3.52rem', height: '3.84rem', border: '8px solid', isEdge: false} },
-  { classes: ['slot-item', 'relic', 'relic4'],  slotName: 'relic4', hasItem: true, hasClick: true, image: '/img/editor/slot-relic.JPEG', 
-    style: {width: '3.52rem', height: '3.84rem', border: '8px solid', isEdge: false} },
-  { classes: ['slot-item', 'relic', 'relic5'],  slotName: 'relic5', hasItem: true, hasClick: true, image: '/img/editor/slot-relic.JPEG', 
-    style: {width: '3.52rem', height: '3.84rem', border: '8px solid', isEdge: false} },
-]
-
-slots: { [key: string]: Equipment } = {
-  helm: createEquipment({ name: '???', level: '???' }),
-  amulet: createEquipment({ name: '???', level: '???' }),
-  weapon: createEquipment({ name: '???', level: '???' }),
-  bodyArmour: createEquipment({ name: '???', level: '???' }),
-  offhand: createEquipment({ name: '???', level: '???' }),
-  ringLeft: createEquipment({ name: '???', level: '???' }),
-  ringRight: createEquipment({ name: '???', level: '???' }),
-  belt: createEquipment({ name: '???', level: '???' }),
-  gloves: createEquipment({ name: '???', level: '???' }),
-  boots: createEquipment({ name: '???', level: '???' }),
-  flask1: createEquipment({ name: '???', level: '???' }),
-  flask2: createEquipment({ name: '???', level: '???' }),
-  flask3: createEquipment({ name: '???', level: '???' }),
-  flask4: createEquipment({ name: '???', level: '???' }),
-  relic1: createEquipment({ name: '???', level: '???' }),
-  relic2: createEquipment({ name: '???', level: '???' }),
-  relic3: createEquipment({ name: '???', level: '???' }),
-  relic4: createEquipment({ name: '???', level: '???' }),
-  relic5: createEquipment({ name: '???', level: '???' }),
-}
-
-lookingAt: Equipment | null = null
-mousePosition = { x: 0, y: 0 }
-catalogItems: Equipment[] = [];
-typeQuery: EquipmentType = EquipmentType.Special
-subtypeQuery: string = 'Glyph'
-topSlotUnlocked = false
-bottomSlotUnlocked = false
-
+  get slotsConfig(): SlotConfig[] {
+    return EquipmentSlot.getslotsConfig();
+  }
 
 mounted() {
-  this.charmInventory.setIsUnlockedCell(new Point2D(2, 3), false)
-  this.charmInventory.setIsUnlockedCell(new Point2D(0, 7), false)
+  this.editorContext.charmInventory.setIsUnlockedCell(new Point2D(2, 3), false)
+  this.editorContext.charmInventory.setIsUnlockedCell(new Point2D(0, 7), false)
 
-  this.charmInventory.setIsUnlockedCell(new Point2D(0, 3), false)
-  this.charmInventory.setIsUnlockedCell(new Point2D(2, 7), false)
+  this.editorContext.charmInventory.setIsUnlockedCell(new Point2D(0, 3), false)
+  this.editorContext.charmInventory.setIsUnlockedCell(new Point2D(2, 7), false)
 }
 
 unlockCharmTopSlot() {
-  this.charmInventory.setIsUnlockedCell(new Point2D(0, 3), this.topSlotUnlocked)
+  this.editorContext.charmInventory.setIsUnlockedCell(new Point2D(0, 3), this.topSlotUnlocked);
   this.topSlotUnlocked = !this.topSlotUnlocked
 }    
 
 
 unlockCharmBottomSLot() {
-  this.charmInventory.setIsUnlockedCell(new Point2D(2, 7), this.bottomSlotUnlocked)
+  this.editorContext.charmInventory.setIsUnlockedCell(new Point2D(2, 7), this.bottomSlotUnlocked)
   this.bottomSlotUnlocked = !this.bottomSlotUnlocked
 }
 
@@ -233,92 +173,17 @@ resetStatDisplay(): void  {
   this.lookingAt = null
 }
 
-handleCharmInventoryUpdate(newInventory: Inventory): void {
-  this.charmInventory = newInventory;
-}
-
-
-async fetchEquipmentData() {
-  const loadImage = (url: string) => new Promise((resolve, reject) => {
-    if (this.imageCache.has(url)) {
-      resolve(this.imageCache.get(url));
-      return;
-    }
-
-    const img = new Image();
-    img.src = url;
-    
-    const timeout = setTimeout(() => {
-      reject(new Error(`Image load timeout: ${url}`));
-    }, 5000);
-
-    img.onload = () => {
-      clearTimeout(timeout);
-      this.imageCache.set(url, img);
-      resolve(img);
-    };
-    
-    img.onerror = (err) => {
-      clearTimeout(timeout);
-      reject(err);
-    };
-  });
-
-  try {
-    const response = await fetch('/data/index.json');
-    const paths = await response.json();
-    
-    const itemPromises = paths.map(async (path: string) => {
-      try {
-        const dataResponse = await fetch(path + '/data.json');
-        if (!dataResponse.ok) throw new Error('Data load failed');
-        
-        const jsonData = await dataResponse.json();
-        const parsedItem = ItemParser.parseWikiItem(jsonData);
-        
-        const imageUrl = path + '/icon.png';
-        try {
-          await loadImage(imageUrl);
-          parsedItem.image = imageUrl;
-        } catch (imgError) {
-          console.warn('Image load failed:', imageUrl);
-          parsedItem.image = '/img/fallback-icon.png';
-        }
-        
-        return parsedItem;
-      } catch (error) {
-        console.error(`Error loading item from ${path}:`, error);
-        return null;
-      }
-    });
-
-    this.allCatalogItems = (await Promise.all(itemPromises))
-      .filter(item => item !== null) as Equipment[];
-  } catch (error) {
-    console.error('Catalog load failed:', error);
-  } finally {
-    console.log('Catalog is Here!', this.allCatalogItems);
-    
-  }
-}
 
 onCatalogItemClick(equipment: Equipment) {
   if (equipment instanceof CharmEquipment) {
-    this.charmInventory.addItem(new Item(equipment, new Point2D(equipment.size.width, equipment.size.height)))
+    this.editorContext.charmInventory.addItem(new Item(equipment, new Point2D(equipment.size.width, equipment.size.height)))
   } else {
-    this.inventory.addItem(new Item(equipment, new Point2D(equipment.size.width, equipment.size.height)))
+    this.editorContext.mainInventory.addItem(new Item(equipment, new Point2D(equipment.size.width, equipment.size.height)))
   }
 }
 
 clearInventory() {
-  this.inventory.clear()
-}
-
-
-setupCatalogQuery(_typeQuery: EquipmentType, _subtypeQuery: string) {
-  this.typeQuery = _typeQuery
-  this.subtypeQuery = _subtypeQuery
-
+  this.editorContext.mainInventory.clear()
 }
 }
 </script>
@@ -327,7 +192,9 @@ setupCatalogQuery(_typeQuery: EquipmentType, _subtypeQuery: string) {
 .catalog-wrapper {
   max-height: 42.9rem;
 }
-
+.charm-inventory-wrapper {
+  padding-right: 1rem
+}
 .inventory-wrapper {
   max-height: 19rem;
 }
@@ -359,6 +226,8 @@ setupCatalogQuery(_typeQuery: EquipmentType, _subtypeQuery: string) {
 .column-right {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .inventory-container {
   display: grid;
@@ -374,8 +243,6 @@ setupCatalogQuery(_typeQuery: EquipmentType, _subtypeQuery: string) {
         "relic5 . . ring belt belt ring2 . ."
         ". gloves gloves flask1 flask2 flask3 flask4 boots boots"
         ". gloves gloves flask1 flask2 flask3 flask4 boots boots"
-        ". . . . . . . . ."
-        ". . . . . . . . ."
         ". . . . . . . . .";
     gap: 3.5rem;
     justify-items: anchor-center;

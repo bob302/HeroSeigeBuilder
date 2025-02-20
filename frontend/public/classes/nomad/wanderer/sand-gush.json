@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_6_icon.webp",
+    "Image": "output/classes\\nomad\\wanderer\\ability_6_icon.webp",
+    "Name": "Sand Gush",
+    "Required Skill(s)": "Cloud of Sand",
+    "Required Level": "16",
+    "Position": { "x": 2, "y": 2 }
+}

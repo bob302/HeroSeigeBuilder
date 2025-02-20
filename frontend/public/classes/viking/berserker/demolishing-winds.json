@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_9_icon.webp",
+    "Image": "output/classes\\viking\\berserker\\ability_9_icon.webp",
+    "Name": "Demolishing Winds",
+    "Required Skill(s)": "Whirlwind",
+    "Required Level": "30",
+    "Position": { "x": 2, "y": 4 }
+}

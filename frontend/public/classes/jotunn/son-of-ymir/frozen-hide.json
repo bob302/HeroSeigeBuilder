@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_4_icon.webp",
+    "Image": "output/classes\\jotunn\\son-of-ymir\\ability_4_icon.webp",
+    "Name": "Frozen Hide",
+    "Required Skill(s)": "Breath of Ice",
+    "Required Level": "8",
+    "Position": { "x": 1, "y": 1 }
+}

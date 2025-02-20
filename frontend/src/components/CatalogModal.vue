@@ -39,13 +39,18 @@
             <option value="desc">Descending</option>
           </select>
         </div>
-        <div class="filter-column" v-if="typeFilter === EquipmentType.Weapon">
-          <p>1-Handed?:</p>
-          <select v-model="oneHandedFilter">
-            <option value="">any</option>
-            <option value="1-Handed">1-Handed</option>
-            <option value="2-Handed">2-Handed</option>
-          </select>
+        <div class="filter-column">
+          <div class="one-handed" v-if="typeFilter === EquipmentType.Weapon">
+            <p>1-Handed?:</p>
+            <select v-model="oneHandedFilter">
+              <option value="">any</option>
+              <option value="1-Handed">1-Handed</option>
+              <option value="2-Handed">2-Handed</option>
+            </select>
+          </div>
+          
+          <p>Show Sockets:</p>
+          <input type="checkbox" v-model="showSockets">
         </div>
         <div class="filter-column">
           <p>Search by Name:</p>
@@ -58,7 +63,7 @@
       <div class="catalog-wrapper">
         <EquipmentCatalog :catalogItems="filteredCatalogItems" :itemBackgroundSrc="`/img/editor/item-background.png`"
         @item-click="handleItemClick" @item-on-mouse-enter="(e: any) => $emit('item-on-mouse-enter', e)"
-        @item-on-mouse-leave="(e: any) => $emit('item-on-mouse-leave', e)" />
+        @item-on-mouse-leave="(e: any) => $emit('item-on-mouse-leave', e)" :showSockets="showSockets" />
       </div>
     </div>
     <ArrowButton @click="close"/>
@@ -66,10 +71,10 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue, Watch } from 'vue-facing-decorator';
+import { Component, Inject, Prop, Vue, Watch } from 'vue-facing-decorator';
 import { Inventory } from '../models/Inventory';
 import { Equipment, EquipmentType, EquipmentRarity, EquipmentTier, EquipmentSubtypes, CharmEquipment, WeaponEquipment, BaseItem } from '../models/Equipment';
-import type GameContext from '../models/GameContext';
+import type EditorContext from '../models/EditorContext';
 import { Item } from '../models/Item';
 import { Point2D } from '../models/Point2D';
 import EquipmentCatalog from './EquipmentCatalog.vue';
@@ -84,9 +89,8 @@ import ArrowButton from './ArrowButton.vue';
 })
 export default class CatalogModal extends Vue {
   @Prop({ type: Boolean, default: false }) show!: boolean;
-  @Prop({ type: Object, required: true }) context!: GameContext;
-  @Prop({ type: Object, required: true }) charmInventory!: Inventory;
-  @Prop({ type: Object, required: true }) mainInventory!: Inventory;
+  @Inject({from: 'editorContext'}) 
+  readonly editorContext!: EditorContext;
   @Prop({ type: Array, required: true }) allCatalogItems!: Equipment[];
 
 
@@ -101,6 +105,7 @@ export default class CatalogModal extends Vue {
   public socketsSort: 'asc' | 'desc' | '' = '';
   public filteredCatalogItems: BaseItem[] = [];
   public oneHandedFilter: '1-Handed' | '2-Handed' | '' = '';
+  public showSockets = false;
 
   mounted() {
      this.updateCatalogItems()
@@ -126,11 +131,11 @@ export default class CatalogModal extends Vue {
   
   handleItemClick(equipment: Equipment) {
     const targetInventory = equipment instanceof CharmEquipment 
-      ? this.charmInventory 
-      : this.mainInventory;
+      ? this.editorContext.charmInventory 
+      : this.editorContext.mainInventory;
     
       if (!targetInventory.addItem(new Item(equipment.clone(), new Point2D(equipment.size.width, equipment.size.height)))) {
-        this.mainInventory.addItem(new Item(equipment.clone(), new Point2D(equipment.size.width, equipment.size.height)))
+        this.editorContext.mainInventory.addItem(new Item(equipment.clone(), new Point2D(equipment.size.width, equipment.size.height)))
         this.$emit('item-added');
       }
   }

@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_2_icon.webp",
+    "Image": "output/classes\\pyromancer\\flame-diviner\\ability_2_icon.webp",
+    "Name": "Fire Enchant",
+    "Required Skill(s)": "None",
+    "Required Level": "1",
+    "Position": { "x": 2, "y": 0 }
+}

@@ -24,4 +24,12 @@ export default class ColorUtils {
     }
   }
 
+  static formatString(input: string): string {
+    if (!input) return input;
+    // Replace all '-' with spaces
+    const replaced = input.replace(/-/g, ' ');
+    // Capitalize the first letter and append the rest of the string unchanged
+    return replaced.charAt(0).toUpperCase() + replaced.slice(1);
+  }
+
 } 

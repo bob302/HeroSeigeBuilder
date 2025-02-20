@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_3_icon.webp",
+    "Image": "output/classes\\marksman\\sharpshooter\\ability_3_icon.webp",
+    "Name": "Multishot",
+    "Required Skill(s)": "Trickshot",
+    "Required Level": "8",
+    "Position": { "x": 1, "y": 1 }
+}

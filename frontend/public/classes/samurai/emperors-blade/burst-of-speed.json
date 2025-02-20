@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_6_icon.webp",
+    "Image": "output/classes\\samurai\\emperors-blade\\ability_6_icon.webp",
+    "Name": "Burst of Speed",
+    "Required Skill(s)": "For Honor",
+    "Required Level": "16",
+    "Position": { "x": 2, "y": 2 }
+}

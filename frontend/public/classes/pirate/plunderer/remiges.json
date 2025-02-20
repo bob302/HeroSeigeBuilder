@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_6_icon.webp",
+    "Image": "output/classes\\pirate\\plunderer\\ability_6_icon.webp",
+    "Name": "Remiges",
+    "Required Skill(s)": "Parrot",
+    "Required Level": "16",
+    "Position": { "x": 2, "y": 2 }
+}

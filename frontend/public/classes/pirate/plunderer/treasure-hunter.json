@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_8_icon.webp",
+    "Image": "output/classes\\pirate\\plunderer\\ability_8_icon.webp",
+    "Name": "Treasure Hunter",
+    "Required Skill(s)": "None",
+    "Required Level": "24",
+    "Position": { "x": 2, "y": 3 }
+}

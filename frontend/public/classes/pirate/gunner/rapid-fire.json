@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_9_icon.webp",
+    "Image": "output/classes\\pirate\\gunner\\ability_9_icon.webp",
+    "Name": "Rapid Fire",
+    "Required Skill(s)": "Explosive Bullets",
+    "Required Level": "30",
+    "Position": { "x": 0, "y": 4 }
+}

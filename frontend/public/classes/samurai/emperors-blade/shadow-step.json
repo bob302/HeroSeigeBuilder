@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_7_icon.webp",
+    "Image": "output/classes\\samurai\\emperors-blade\\ability_7_icon.webp",
+    "Name": "Shadow Step",
+    "Required Skill(s)": "Omnislash",
+    "Required Level": "24",
+    "Position": { "x": 0, "y": 3 }
+}

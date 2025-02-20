@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_7_icon.webp",
+    "Image": "output/classes\\shieldlancer\\champion\\ability_7_icon.webp",
+    "Name": "Lance Throw",
+    "Required Skill(s)": "Crushing Lance",
+    "Required Level": "24",
+    "Position": { "x": 0, "y": 3 }
+}

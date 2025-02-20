@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_7_icon.webp",
+    "Image": "output/classes\\viking\\berserker\\ability_7_icon.webp",
+    "Name": "Shockwave",
+    "Required Skill(s)": "Throw!",
+    "Required Level": "24",
+    "Position": { "x": 0, "y": 3 }
+}

@@ -1,7 +1,7 @@
 <template>
     <div class="catalog">
       <ItemDisplay v-for="(item) in catalogItems"
-      :show-sockets="true" 
+      :showSockets="showSockets" 
       :key="item.uuid" 
       :equipment="item" 
       :src="itemBackgroundSrc"
@@ -26,6 +26,7 @@ import { Equipment } from '../models/Equipment';
 export default class EquipmentCatalog extends Vue {
   @Prop({ type: Array, required: true }) catalogItems!: Equipment[];
   @Prop({ type: String, required: false }) itemBackgroundSrc: string = "/img/editor/item-background.png";
+  @Prop({ type: Boolean, required: false }) showSockets: boolean = false;
 
   itemOnMouseEnter(item: Equipment) {
     this.$emit('item-on-mouse-enter', item)
@@ -37,10 +38,6 @@ export default class EquipmentCatalog extends Vue {
 
   private handleItemClick(item: Equipment) {
     this.$emit('item-click', item);
-  }
-
-  mounted() {
-    
   }
 }
 </script>

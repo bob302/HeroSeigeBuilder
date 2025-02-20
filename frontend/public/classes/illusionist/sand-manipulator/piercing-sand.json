@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_3_icon.webp",
+    "Image": "output/classes\\illusionist\\sand-manipulator\\ability_3_icon.webp",
+    "Name": "Piercing Sand",
+    "Required Skill(s)": "Call For War",
+    "Required Level": "8",
+    "Position": { "x": 1, "y": 1 }
+}

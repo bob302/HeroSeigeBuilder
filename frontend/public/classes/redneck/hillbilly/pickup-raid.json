@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_9_icon.webp",
+    "Image": "output/classes\\redneck\\hillbilly\\ability_9_icon.webp",
+    "Name": "Pickup Raid",
+    "Required Skill(s)": "Hillbilly Rage",
+    "Required Level": "30",
+    "Position": { "x": 1, "y": 4 }
+}

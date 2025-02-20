@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_1_icon.webp",
+    "Image": "output/classes\\exo\\solar-prophet\\ability_1_icon.webp",
+    "Name": "Scorching Whip",
+    "Required Skill(s)": "None",
+    "Required Level": "1",
+    "Position": { "x": 1, "y": 0 }
+}

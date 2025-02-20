@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_3_icon.webp",
+    "Image": "output/classes\\whitemage\\divine-being\\ability_3_icon.webp",
+    "Name": "Burst of Light",
+    "Required Skill(s)": "Heavenly Fire",
+    "Required Level": "8",
+    "Position": { "x": 0, "y": 1 }
+}

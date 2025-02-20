@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_1_icon.webp",
+    "Image": "output/classes\\whitemage\\divine-being\\ability_1_icon.webp",
+    "Name": "Heavenly Fire",
+    "Required Skill(s)": "None",
+    "Required Level": "1",
+    "Position": { "x": 0, "y": 0 }
+}

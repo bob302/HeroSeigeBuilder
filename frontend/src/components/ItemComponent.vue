@@ -3,10 +3,10 @@
       @mouseenter="this.onMouseEnter"
       @mouseleave="this.onMouseLeave">
     <!-- Отображаем изображение предмета, если оно есть -->
-    <img v-if="this.equipment.image" :src="this.equipment.image" class="item-image"  />
+    <img v-if="this.equipment.image" :src="this.equipment.image" class="item-image"  draggable="false"/>
 
     <!-- Отображение сокетов -->
-    <div v-if="(this.equipment.sockets.amount) || this.showSockets" :class="[this.socketLayoutClass, 'socket-container']">
+    <div v-if="(this.equipment.sockets.amount) && this.showSockets" :class="[this.socketLayoutClass, 'socket-container']">
       <div v-for="(socket, index) in this.equipment.sockets.list.slice(0, 6)" :key="index"
         :class="['socket', `socket-${index + 1}`]">
         <SocketComponent 
@@ -75,12 +75,6 @@ insertSocketable(socketable: Socketable) {
 
   onMouseLeave(event: MouseEvent) {
     this.$emit("item-on-mouse-leave")
-  }
-  public get _VLS_template() {
-    return this.__VLS_template;
-  }
-  public set _VLS_template(value) {
-    this.__VLS_template = value;
   }
 }
 </script>

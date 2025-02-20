@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_5_icon.webp",
+    "Image": "output/classes\\jotunn\\son-of-ymir\\ability_5_icon.webp",
+    "Name": "Orb of Frost",
+    "Required Skill(s)": "Icicles",
+    "Required Level": "16",
+    "Position": { "x": 1, "y": 2 }
+}

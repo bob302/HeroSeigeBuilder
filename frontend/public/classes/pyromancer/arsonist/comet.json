@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_8_icon.webp",
+    "Image": "output/classes\\pyromancer\\arsonist\\ability_8_icon.webp",
+    "Name": "Comet",
+    "Required Skill(s)": "Meteor",
+    "Required Level": "24",
+    "Position": { "x": 2, "y": 3 }
+}

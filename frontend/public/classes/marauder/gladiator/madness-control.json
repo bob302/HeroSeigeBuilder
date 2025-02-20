@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_9_icon.webp",
+    "Image": "output/classes\\marauder\\gladiator\\ability_9_icon.webp",
+    "Name": "Madness Control",
+    "Required Skill(s)": "Chain Trap",
+    "Required Level": "30",
+    "Position": { "x": 2, "y": 4 }
+}

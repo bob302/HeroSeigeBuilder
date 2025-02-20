@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_3_icon.webp",
+    "Image": "output/classes\\illusionist\\ability_3_icon.webp",
+    "Name": "Split Reality",
+    "Required Skill(s)": "None",
+    "Required Level": "8",
+    "Position": { "x": 1, "y": 1 }
+}

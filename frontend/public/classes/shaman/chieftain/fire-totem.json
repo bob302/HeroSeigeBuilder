@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_7_icon.webp",
+    "Image": "output/classes\\shaman\\chieftain\\ability_7_icon.webp",
+    "Name": "Fire Totem",
+    "Required Skill(s)": "Storm Totem",
+    "Required Level": "24",
+    "Position": { "x": 0, "y": 3 }
+}

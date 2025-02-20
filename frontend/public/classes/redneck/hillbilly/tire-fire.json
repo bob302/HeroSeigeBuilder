@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_4_icon.webp",
+    "Image": "output/classes\\redneck\\hillbilly\\ability_4_icon.webp",
+    "Name": "Tire Fire",
+    "Required Skill(s)": "Pipe Bombs",
+    "Required Level": "8",
+    "Position": { "x": 2, "y": 1 }
+}

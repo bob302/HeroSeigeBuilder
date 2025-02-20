@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_4_icon.webp",
+    "Image": "output/classes\\pyromancer\\arsonist\\ability_4_icon.webp",
+    "Name": "Hydra",
+    "Required Skill(s)": "Breath of Fire, Fireball",
+    "Required Level": "8",
+    "Position": { "x": 1, "y": 1 }
+}

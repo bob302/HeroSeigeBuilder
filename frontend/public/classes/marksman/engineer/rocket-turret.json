@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_9_icon.webp",
+    "Image": "output/classes\\marksman\\engineer\\ability_9_icon.webp",
+    "Name": "Rocket Turret",
+    "Required Skill(s)": "Cannon Turret",
+    "Required Level": "30",
+    "Position": { "x": 2, "y": 4 }
+}

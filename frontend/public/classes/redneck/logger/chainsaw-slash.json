@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_2_icon.webp",
+    "Image": "output/classes\\redneck\\logger\\ability_2_icon.webp",
+    "Name": "Chainsaw Slash",
+    "Required Skill(s)": "None",
+    "Required Level": "1",
+    "Position": { "x": 2, "y": 0 }
+}

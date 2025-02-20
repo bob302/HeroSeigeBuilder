@@ -1,0 +1,8 @@
+{
+    "Icon": "ability_4_icon.webp",
+    "Image": "output/classes\\illusionist\\ability_4_icon.webp",
+    "Name": "Time Deceleration",
+    "Required Skill(s)": "Gravitation Slam",
+    "Required Level": "8",
+    "Position": { "x": 2, "y": 1 }
+}
