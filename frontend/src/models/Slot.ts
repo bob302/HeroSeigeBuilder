@@ -35,8 +35,6 @@ export class Slot {
     const item = data.item ? Item.deserialize(data.item) : null;
     const slot = new Slot(item);
     
-    console.log("Deserializing slot:", slot);
-    
     return slot;
   }
 }

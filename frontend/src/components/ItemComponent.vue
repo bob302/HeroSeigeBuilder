@@ -6,8 +6,8 @@
     <img v-if="this.equipment.image" :src="this.equipment.image" class="item-image"  draggable="false"/>
 
     <!-- Отображение сокетов -->
-    <div v-if="(this.equipment.sockets.amount) && this.showSockets" :class="[this.socketLayoutClass, 'socket-container']">
-      <div v-for="(socket, index) in this.equipment.sockets.list.slice(0, 6)" :key="index"
+    <div v-if="(isEquipment) && this.showSockets" :class="[this.socketLayoutClass, 'socket-container']">
+      <div v-for="(socket, index) in (this.equipment as Equipment).sockets.list.slice(0, 6)" :key="index"
         :class="['socket', `socket-${index + 1}`]">
         <SocketComponent 
           :prismatic="socket.prismatic" 
@@ -20,26 +20,31 @@
 
 <script lang="ts">
 import SocketComponent from './SocketComponent.vue'
-import { Equipment, Socketable } from '../models/Equipment'
+import { BaseItem, Equipment, Socketable } from '../models/Equipment'
 import { Component, Prop, Vue } from 'vue-facing-decorator';
 
 @Component({
-  components: {SocketComponent},
+  components: {SocketComponent, Equipment},
   emits: ['item-on-mouse-enter', 'item-on-mouse-leave']
 })
 export default class ItemComponent extends Vue {
-  @Prop({ type: Object, required: true }) equipment!: Equipment;
+  @Prop({ type: Object, required: true }) equipment!: BaseItem;
   @Prop({ type: Boolean, required: false}) pointerEvents: boolean = false
   @Prop({ type: Boolean, required: false}) showSockets: boolean = false
 
+  get isEquipment(): boolean {
+    return this.equipment instanceof Equipment;
+  }
+
 
 insertSocketable(socketable: Socketable) {
-  const sockets = [...this.equipment.sockets.list]; // Create a new array
+  if (!(this.equipment instanceof Equipment)) return
+  const sockets = [...(this.equipment as Equipment).sockets.list]; // Create a new array
   const index = sockets.findIndex(s => !s.socketable);
   
   if (index !== -1) {
     sockets[index] = { ...sockets[index], socketable }; // Create new object
-    this.equipment.sockets.list = sockets; // Replace array reference
+    (this.equipment as Equipment).sockets.list = sockets; // Replace array reference
     this.$emit('socket-inserted', socketable);
     return true;
   }
@@ -47,12 +52,12 @@ insertSocketable(socketable: Socketable) {
 }
 
   emptySockets(): void {
-    this.equipment.clearSocketables()
+    (this.equipment as Equipment).clearSocketables()
     this.$emit('socket-cleared');
   }
 
   get socketLayoutClass() {
-    const socketCount = this.equipment.sockets.amount
+    const socketCount = (this.equipment as Equipment).sockets.amount
     if (socketCount === 1) {
       return 'one-layout'
     } else if (socketCount === 2) {

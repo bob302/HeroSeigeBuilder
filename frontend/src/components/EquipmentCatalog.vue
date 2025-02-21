@@ -15,7 +15,7 @@
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-facing-decorator';
 import ItemDisplay from './ItemDisplay.vue';
-import { Equipment } from '../models/Equipment';
+import { BaseItem, Equipment } from '../models/Equipment';
 
 
 
@@ -24,11 +24,11 @@ import { Equipment } from '../models/Equipment';
   emits: ['item-click', 'item-on-mouse-enter', 'item-on-mouse-leave']
 })
 export default class EquipmentCatalog extends Vue {
-  @Prop({ type: Array, required: true }) catalogItems!: Equipment[];
+  @Prop({ type: Array, required: true }) catalogItems!: BaseItem[];
   @Prop({ type: String, required: false }) itemBackgroundSrc: string = "/img/editor/item-background.png";
   @Prop({ type: Boolean, required: false }) showSockets: boolean = false;
 
-  itemOnMouseEnter(item: Equipment) {
+  itemOnMouseEnter(item: BaseItem) {
     this.$emit('item-on-mouse-enter', item)
   }
 
@@ -36,7 +36,7 @@ export default class EquipmentCatalog extends Vue {
     this.$emit('item-on-mouse-leave')
   }
 
-  private handleItemClick(item: Equipment) {
+  private handleItemClick(item: BaseItem) {
     this.$emit('item-click', item);
   }
 }

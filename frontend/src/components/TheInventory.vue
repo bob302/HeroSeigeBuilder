@@ -42,7 +42,6 @@
     <CatalogModal 
       v-if="showCatalog"
       :show="showCatalog"
-      :allCatalogItems="allCatalogItems"
       @close="showCatalog = false"
       @item-on-mouse-enter="updateStatDisplay"
       @item-on-mouse-leave="resetStatDisplay"
@@ -59,7 +58,7 @@ import EditorContext from '../models/EditorContext';
 import InventoryGrid from './InventoryGrid.vue';
 import { Point2D } from '../models/Point2D';
 import { Inventory } from '../models/Inventory';
-import { CharmEquipment, createEquipment, Equipment, EquipmentType } from '../models/Equipment';
+import { BaseItem, CharmEquipment, createEquipment, Equipment, EquipmentType } from '../models/Equipment';
 import DraggedSlot from './DraggedSlot.vue';
 // @ts-ignore
 import EquipmentCatalog from './EquipmentCatalog.vue';
@@ -86,7 +85,6 @@ export default class TheInventory extends Vue {
   @Inject({from: 'editorContext'}) 
   readonly editorContext!: EditorContext;
   public showCatalog = false;
-  public allCatalogItems: Equipment[] = [];
   imageCache = new Map<string, HTMLImageElement>();
 
   async created() {
@@ -125,7 +123,6 @@ export default class TheInventory extends Vue {
     this.editorContext.equipmentSlots.set(config.slotName, slot);
   });
 
-    this.allCatalogItems = await equipmentService.fetchEquipmentData();
   }
   
   dummyEquipment = createEquipment({ name: '???', level: '???' })

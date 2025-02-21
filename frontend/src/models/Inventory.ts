@@ -206,8 +206,6 @@ export class Inventory {
 
     item.setStartCoordinates(currentCoords);
 
-    console.log(this.editorContext.itemOnCursor, "ГЕВОЫ")
-    
     this.editorContext.itemOnCursor.onCursor = true;
   }
   

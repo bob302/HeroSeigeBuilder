@@ -42,7 +42,7 @@
 
       <EquipmentSocketsTooltip
         v-if="hasSocketables"
-        :sockets="item.sockets.list"
+        :sockets="(item as Equipment).sockets.list"
       />
     </div>
   </div>
@@ -50,7 +50,7 @@
 
 <script lang="ts">
 import { Component, Prop, Ref, Vue, Watch } from 'vue-facing-decorator'
-import { Equipment, WeaponEquipment, type Stat } from '../models/Equipment'
+import { BaseItem, Equipment, WeaponEquipment, type Stat } from '../models/Equipment'
 import { StatParser } from '../parser/StatParser'
 import EquipmentSocketsTooltip from './EquipmentSocketsTooltip.vue'
 
@@ -58,7 +58,7 @@ import EquipmentSocketsTooltip from './EquipmentSocketsTooltip.vue'
   components: { EquipmentSocketsTooltip }
 })
 export default class EquipmentTooltip extends Vue {
-  @Prop({ required: true }) item!: Equipment
+  @Prop({ required: true }) item!: BaseItem
   @Prop({ required: true }) pos!: { x: number, y: number }
 
   @Ref('tooltipRoot') tooltipRoot!: HTMLElement
@@ -81,7 +81,9 @@ export default class EquipmentTooltip extends Vue {
   }
 
   get hasSocketables() {
-    return this.item.sockets.list.some(socket => socket.socketable)
+    if (!(this.item instanceof Equipment)) return false;
+
+    return (this.item as Equipment).sockets.list.some(socket => socket.socketable)
   }
 
   get combinedType() {

@@ -35,7 +35,6 @@ export default class SlotComponent extends Vue {
   }
 
   onMouseEnter(data: {slot: Slot, pos: {x: number, y: number}}): void {
-    console.log('item on cursor', this.slotData);
     this.$emit('slot-mouse-enter', {slot: this.slotData, pos: {x: data.pos.x, y: data.pos.y}})
   }
 
@@ -52,7 +51,7 @@ export default class SlotComponent extends Vue {
       return {
         boxSizing: "border-box",
         borderWidth: "0.3rem",
-        borderStyle: "solid",
+        borderStyle: "inherit",
         borderImage: this.slotData.item?.rarityToBackgroundImage()
           ? `url(${this.slotData.item.rarityToBackgroundImage()}) 50 50 50 50 repeat`
           : "none",

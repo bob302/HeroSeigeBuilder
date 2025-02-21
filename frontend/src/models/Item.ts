@@ -1,5 +1,5 @@
 import ColorUtils from "../util/ColorUtils";
-import type { BaseItem, Equipment } from "./Equipment";
+import { deserialize, type BaseItem, type Equipment } from "./Equipment";
 import { Point2D } from "./Point2D";
 import { v4 as uuidv4 } from 'uuid';
 
@@ -94,10 +94,8 @@ export class Item {
    */
   static deserialize(serialized: any): Item {
     // Deserialize the equipment data.
-    const equipment = serialized.data && typeof serialized.data === "object" &&
-      typeof (serialized.data as any).deserialize === "function"
-      ? (serialized.data as any).deserialize(serialized.data)
-      : serialized.data;
+    const equipment = deserialize(serialized.data);
+
 
     const size = new Point2D(serialized.size.x, serialized.size.y);
     const item = new Item(equipment, size);

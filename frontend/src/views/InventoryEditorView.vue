@@ -5,7 +5,18 @@
       <button @click="scrollToSection('characters')">Characters</button>
       <button @click="scrollToSection('skills')">Skills</button>
       <button @click="scrollToSection('inventory')">Inventory</button>
+
+      <button @click="showInfo = !showInfo">
+        <i class="fas fa-exclamation-circle"></i>
+      </button>
     </nav>
+
+    <div v-if="showInfo" class="info-modal">
+      <div class="info-content">
+        <p>{{ infoText}}</p>
+        <button class="close-button" @click="showInfo = false">×</button>
+      </div>
+    </div>
 
     <!-- Секция персонажей -->
     <div ref="charactersSection">
@@ -42,7 +53,9 @@
       <h2>Serialization Test</h2>
       <div class="serialization-buttons">
         <button @click="serializeContext">Serialize</button>
-        <button @click="deserializeContext">Deserialize</button>
+        <button @click="deserializeContext" :disabled="!isSocketablesLoaded">
+          Deserialize
+        </button>
       </div>
       <textarea
         v-model="serializationData"
@@ -61,8 +74,9 @@ import SkillTreeComponent from '../components/SkillTree.vue';
 import CharapterList from '../components/ClassSelection.vue';
 import AttributeList from '../components/AttributeList.vue';
 import EditorContext from '../models/EditorContext';
-import type { Reactive } from 'vue';
+import { ref, type Reactive } from 'vue';
 import EditorContextProvider from '../models/EditorContextProvider';
+import { equipmentService } from '../service/EquipmentService';
 
 @Component({
   components: {
@@ -74,6 +88,18 @@ export default class InventoryEditorView extends Vue {
   editorContext: Reactive<EditorContext> = EditorContextProvider.getContext();
   serializationData: string = '';
 
+  showInfo = false;
+
+  infoText = `All item attributes, as well as character names and their skill trees, are obtained by parsing the Herosiege wiki (https://herosiege.wiki.gg/) and may be incomplete or inaccurate.`;
+  
+  isSocketablesLoaded = false
+
+  mounted() {
+    equipmentService.initialize( () => {
+      this.isSocketablesLoaded = true
+    })
+  }
+  
   scrollToSection(section: 'characters' | 'skills' | 'inventory') {
     this.$nextTick(() => {
       const element = this.$refs[`${section}Section`] as HTMLElement;
@@ -132,7 +158,7 @@ export default class InventoryEditorView extends Vue {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  z-index: 1000;
+  z-index: 10;
   background: rgba(40, 35, 30, 0.616);
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
@@ -181,5 +207,60 @@ export default class InventoryEditorView extends Vue {
   width: 100%;
   font-family: monospace;
   padding: 0.5rem;
+}
+
+
+.info-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.info-content {
+  position: relative;
+  background: #2d2a28;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 500px;
+  border: 2px solid #7a6857;
+  color: #f0e6d2;
+}
+
+.language-switcher {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.language-switcher button {
+  padding: 0.3rem 0.8rem;
+  background: #58483a;
+  border: 1px solid #7a6857;
+  color: #f0e6d2;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.close-button {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: none;
+  border: none;
+  color: #f0e6d2;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0 0.5rem;
+}
+
+.close-button:hover {
+  color: #ff4444;
 }
 </style>

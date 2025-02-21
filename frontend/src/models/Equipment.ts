@@ -1,4 +1,5 @@
 import { v4 as uuidv4 } from 'uuid';
+import { equipmentService } from '../service/EquipmentService';
 
 export enum EquipmentRarity {
   Common = 'Common',
@@ -15,7 +16,24 @@ export enum EquipmentType {
   Armor = 'Armor',
   Accessory = 'Accessory',
   Special = 'Special',
-  Misc = 'Misc'
+  Misc = 'Misc',
+}
+
+export const EquipmentSubtypes: Record<EquipmentType, string[]> = {
+  [EquipmentType.Weapon]: [
+    'Sword', 'Dagger', 'Mace', 'Axe', 'Claw', 'Polearm', 'Chainsaw', 'Staff',
+    'Cane', 'Wand', 'Book', 'Spellblade', 'Bow', 'Gun', 'Flask', 'Throwing Weapon'
+  ],
+  [EquipmentType.Armor]: ['Helmet', 'Body Armor', 'Gloves', 'Boots', 'Shield'],
+  [EquipmentType.Accessory]: ['Amulet', 'Ring', 'Belt'],
+  [EquipmentType.Special]: ['Charm', 'Glyph', 'Relic', 'Potion'],
+  [EquipmentType.Misc]: ['Socketable']
+};
+
+export type EquipmentSubtype = typeof EquipmentSubtypes[EquipmentType][number];
+
+export function isValidSubtype(type: EquipmentType, subtype: string): boolean {
+  return EquipmentSubtypes[type]?.includes(subtype) ?? false;
 }
 
 export enum EquipmentTier {
@@ -41,22 +59,7 @@ export interface Stat {
   special: boolean;
 }
 
-export const EquipmentSubtypes: Record<EquipmentType, string[]> = {
-  [EquipmentType.Weapon]: [
-    'Sword', 'Dagger', 'Mace', 'Axe', 'Claw', 'Polearm', 'Chainsaw', 'Staff',
-    'Cane', 'Wand', 'Book', 'Spellblade', 'Bow', 'Gun', 'Flask', 'Throwing Weapon'
-  ],
-  [EquipmentType.Armor]: ['Helmet', 'Body Armor', 'Gloves', 'Boots', 'Shield'],
-  [EquipmentType.Accessory]: ['Amulet', 'Ring', 'Belt'],
-  [EquipmentType.Special]: ['Charm', 'Glyph', 'Relic', 'Potion'],
-  [EquipmentType.Misc]: ['Socketable']
-};
 
-export type EquipmentSubtype = typeof EquipmentSubtypes[EquipmentType][number];
-
-export function isValidSubtype(type: EquipmentType, subtype: string): boolean {
-  return EquipmentSubtypes[type]?.includes(subtype) ?? false;
-}
 
 export interface BaseItemProps {
   uuid: string;
@@ -154,12 +157,9 @@ export class Equipment extends BaseItem {
       max: props.sockets.max,
       list: props.sockets.list.map(socket => ({
         prismatic: socket.prismatic,
-        socketable: socket.socketable ? socket.socketable.clone() : null
+        socketable: socket.socketable
       }))
     };
-    
-    
-
     
     this.sockets = sockets;
   }
@@ -213,38 +213,27 @@ export class Equipment extends BaseItem {
   }
 }
 
-export interface SocketableProps extends EquipmentProps {
-  amount: number;
-}
-
-export class Socketable extends Equipment {
+export class Socketable extends BaseItem {
   public readonly type: EquipmentType = EquipmentType.Misc;
   public readonly subtype: string = 'Socketable';
-  public amount: number;
 
-  constructor(props: SocketableProps) {
+  constructor(props: BaseItemProps) {
     super({
       ...props,
-      size: { width: 1, height: 1 },
-      sockets: {amount: 0, min: 0, max: 0, list: []}
+      size: { width: 1, height: 1 }
     });
-
-    this.amount = props.amount
   }
 
   clone(): Socketable {
     return new Socketable({
       ...super.clone(),
-      amount: this.amount
-    } as SocketableProps);
+    });
   }
 
-  serialize(): SocketableProps & { __type: string } {
-    const base = super.serialize();
+  serialize(): any & { __type: string } {
     return {
-      ...base,
       __type: 'Socketable',
-      amount: this.amount
+      name: this.name,
     };
   }
 }
@@ -356,33 +345,40 @@ export function createEquipment(partial: Partial<EquipmentProps>): Equipment {
 
 // Deserialization function
 export function deserialize(data: any): BaseItem {
-  if (data === null || typeof data !== 'object') {
-    return data;
-  }
+  if (data === null || typeof data !== 'object') return data;
+  if (Array.isArray(data)) return data.map(deserialize) as unknown as BaseItem;
 
-  // Recursively deserialize all properties
-  for (const key of Object.keys(data)) {
-    if (Array.isArray(data[key])) {
-      data[key] = data[key].map((item: any) => deserialize(item));
-    } else if (typeof data[key] === 'object' && data[key] !== null) {
-      data[key] = deserialize(data[key]);
+  const copiedData = structuredClone(data);
+
+  const processValue = (value: any): any => {
+    if (value?.__type) return deserialize(value);
+    if (Array.isArray(value)) return value.map(processValue);
+    if (typeof value === 'object' && value !== null) {
+      Object.keys(value).forEach(k => value[k] = processValue(value[k]));
+    }
+    return value;
+  };
+
+  if (copiedData.__type) {
+    Object.keys(copiedData).forEach(k => {
+      copiedData[k] = processValue(copiedData[k]);
+    });
+
+    if (copiedData.__type === 'Socketable') {
+      const socketable = equipmentService.getSocketable(copiedData.name);
+      if (!socketable) throw new Error(`Socketable not found: ${copiedData.name}`);
+      return socketable;
+    }
+
+    switch (copiedData.__type) {
+      case 'BaseItem': return new BaseItem(copiedData);
+      case 'Equipment': return new Equipment(copiedData);
+      case 'WeaponEquipment': return new WeaponEquipment(copiedData);
+      case 'ArmorEquipment': return new ArmorEquipment(copiedData);
+      case 'CharmEquipment': return new CharmEquipment(copiedData);
+      default: throw new Error(`Unknown __type: ${copiedData.__type}`);
     }
   }
 
-  switch (data.__type) {
-    case 'BaseItem':
-      return new BaseItem(data);
-    case 'Equipment':
-      return new Equipment(data as EquipmentProps);
-    case 'WeaponEquipment':
-      return new WeaponEquipment(data as WeaponEquipmentProps);
-    case 'ArmorEquipment':
-      return new ArmorEquipment(data as ArmorEquipmentProps);
-    case 'CharmEquipment':
-      return new CharmEquipment(data as EquipmentProps);
-    case 'Socketable':
-      return new Socketable(data as SocketableProps);
-    default:
-      throw new Error(`Unknown __type: ${data.__type}`);
-  }
+  return copiedData;
 }

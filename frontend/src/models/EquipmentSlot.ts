@@ -64,9 +64,6 @@ export class EquipmentSlot {
     slot.cell = new Cell(new Point2D(1, 1));
     slot.cell.setCellStyle(slotConfig.style)
     slot.slot = Slot.deserialize(data.slot);
-
-    console.log("СУС", slot);
-    
     
     return slot;
   }
