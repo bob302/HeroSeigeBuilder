@@ -54,7 +54,6 @@ class EquipmentService {
         parsedItem.image = imageUrl;
       } catch {
         console.warn("Image load failed:", imageUrl);
-        parsedItem.image = "/img/fallback-icon.png";
       }
 
       if (parsedItem instanceof Socketable) {
