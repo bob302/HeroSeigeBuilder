@@ -230,14 +230,14 @@ export class Equipment extends BaseItem {
 }
 
 export class Socketable extends BaseItem {
-  public readonly type: EquipmentType = EquipmentType.Misc;
-  public readonly subtype: string = "Socketable";
-
   constructor(props: BaseItemProps) {
     super({
       ...props,
       size: { width: 1, height: 1 },
     });
+
+    this.type = EquipmentType.Misc;
+    this.subtype = "Socketable";
   }
 
   clone(): Socketable {

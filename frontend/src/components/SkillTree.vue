@@ -9,7 +9,7 @@
         :style="getLineStyle(line)"
       />
 
-      <CharapterSkill
+      <CharapterSkillComponent
         v-for="(skill, index) in skillTree.skills"
         :key="index"
         :skill="skill"

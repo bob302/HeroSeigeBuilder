@@ -1,0 +1,8 @@
+# Top-level configuration
+name = "hero-siege-builder"
+assets = {directory = "dist/"}
+format = "modules"
+compatibility_date = "2025-02-25"
+
+[env.staging]
+name = "hero-siege-builder"

@@ -34,7 +34,7 @@ export class ItemParser {
     if (rawItem.subtype === "Socketable") {
       const socketableProps = {
         ...commonProps,
-        amount: 1,
+        type: EquipmentType.Misc 
       };
       return new Socketable(socketableProps);
     }
@@ -115,7 +115,7 @@ export class ItemParser {
     if (subtype === "Socketable") {
       const socketableProps = {
         ...commonProps,
-        amount: 1,
+        type: EquipmentType.Misc 
       };
       return new Socketable(socketableProps);
     }
