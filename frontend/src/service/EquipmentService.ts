@@ -40,6 +40,7 @@ class EquipmentService {
   }
 
   private async fetchItem(path: string): Promise<BaseItem | null> {
+    
     try {
       const dataResponse = await fetch(`${path}/data.json`);
       if (!dataResponse.ok) throw new Error("Data load failed");

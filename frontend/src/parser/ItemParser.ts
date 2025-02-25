@@ -34,7 +34,6 @@ export class ItemParser {
     if (rawItem.subtype === "Socketable") {
       const socketableProps = {
         ...commonProps,
-        type: EquipmentType.Misc 
       };
       return new Socketable(socketableProps);
     }
@@ -70,10 +69,9 @@ export class ItemParser {
   static parseWikiItem(rawItem: any): BaseItem {
     const subtype = rawItem.Type;
 
-    const type =
-      (Object.entries(EquipmentSubtypes).find(([subtypes]) =>
-        subtypes.includes(subtype),
-      )?.[0] as EquipmentType) || EquipmentType.Special;
+    const type = Object.entries(EquipmentSubtypes).find(([key, subtypes]) =>
+      subtypes.includes(subtype)
+    )?.[0] as EquipmentType || EquipmentType.Special;
 
     let size = { width: 1, height: 1 };
 
@@ -115,7 +113,6 @@ export class ItemParser {
     if (subtype === "Socketable") {
       const socketableProps = {
         ...commonProps,
-        type: EquipmentType.Misc 
       };
       return new Socketable(socketableProps);
     }
@@ -186,6 +183,7 @@ export class ItemParser {
   }
 
   static parseWikiStat(stat: any, special = false): Stat {
+    
     return StatParser.parseStat(
       StatFormatter.formatFromRangeToRangeWithValue(stat),
       special,

@@ -44,8 +44,7 @@ export const EquipmentSubtypes: Record<EquipmentType, string[]> = {
   [EquipmentType.Misc]: ["Socketable"],
 };
 
-export type EquipmentSubtype =
-  (typeof EquipmentSubtypes)[EquipmentType][number];
+export type EquipmentSubtype = (typeof EquipmentSubtypes)[EquipmentType][number];
 
 export function isValidSubtype(type: EquipmentType, subtype: string): boolean {
   return EquipmentSubtypes[type]?.includes(subtype) ?? false;
