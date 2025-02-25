@@ -68,7 +68,7 @@ export class ItemParser {
 
   static parseWikiItem(rawItem: any): BaseItem {
     const subtype = rawItem.Type;
-
+    //@ts-ignore
     const type = Object.entries(EquipmentSubtypes).find(([key, subtypes]) =>
       subtypes.includes(subtype)
     )?.[0] as EquipmentType || EquipmentType.Special;
