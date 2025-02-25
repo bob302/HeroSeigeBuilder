@@ -1,5 +1,5 @@
 # Top-level configuration
-name = "hero-siege-builder"
+name = "hero-seige-builder"
 assets = {directory = "dist/"}
 format = "modules"
 compatibility_date = "2025-02-25"
