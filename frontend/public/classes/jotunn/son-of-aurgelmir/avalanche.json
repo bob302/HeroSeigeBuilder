@@ -1,8 +1,80 @@
 {
-    "Icon": "ability_5_icon.webp",
-    "Image": "output/classes\\jotunn\\son-of-aurgelmir\\ability_5_icon.webp",
-    "Name": "Avalanche",
-    "Required Skill(s)": "Freezing Leap",
-    "Required Level": "16",
-    "Position": { "x": 1, "y": 2 }
+  "Icon": "ability_5_icon.webp",
+  "Image": "output/classes\\jotunn\\son-of-aurgelmir\\ability_5_icon.webp",
+  "Name": "Avalanche",
+  "Required Skill(s)": "Freezing Leap",
+  "Required Level": "16",
+  "Position": { "x": 1, "y": 2 },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Devastating Snowslide",
+      "description": "Increases the damage dealt by avalanche."
+    },
+    {
+      "id": 3,
+      "name": "Devouring Snowpour",
+      "description": "Increases the area of effect radius of avalanche."
+    },
+    {
+      "id": 4,
+      "name": "Neverending Winter",
+      "description": "Conjure a snow storm dealing damage over time on a large radius around you for a short duration."
+    },
+    {
+      "id": 5,
+      "name": "Timeless Cold",
+      "description": "Chance to inflict frostbite on hit."
+    },
+    {
+      "id": 6,
+      "name": "Colossus of Yggdrasil",
+      "description": "Increases the damage dealt by avalanche based on your vitality."
+    },
+    {
+      "id": 7,
+      "name": "Acute Hoarfrost",
+      "description": "Chance to inflict cold break on hit."
+    },
+    {
+      "id": 8,
+      "name": "Frigid Safeguard",
+      "description": "Increases your damage reduction and armor on cast for a short duration."
+    },
+    {
+      "id": 9,
+      "name": "Snow Cataclysm ",
+      "description": "Inflicts monsters with a stack of cataclysm on hit increasing the damage dealt by avalanche."
+    },
+    {
+      "id": 10,
+      "name": "Nordic Stigma",
+      "description": "Mark monsters with nordic stigma on hit causing them to be hit with lightning after a short delay."
+    },
+    {
+      "id": 11,
+      "name": "Ephemeral Flurry",
+      "description": "Reduces the cooldown of avalanche."
+    },
+    {
+      "id": 12,
+      "name": "Further Collapse",
+      "description": "Chance on cast for the avalanche to echo an additional time."
+    },
+    {
+      "id": 13,
+      "name": "Mending Winter",
+      "description": "Restore a portion of your maximum life on hit."
+    },
+    {
+      "id": 14,
+      "name": "Glacial Radiance",
+      "description": "Unleash a pattern of tectonic energy on the ground dealing damage over time for an extended duration."
+    },
+    {
+      "id": 15,
+      "name": "Snowshade Bait",
+      "description": "Casting Avalanche leaves an ice clone on the target area that taunts enemies and casts shouts for a set duration."
+    }
+  ]
 }

@@ -12,36 +12,38 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-   /* Colors */
-   --color-primary: #d6ac2f;
-   --color-satanic: #c81717;
-   --color-angelic: #fdfea5;
-   --color-unholy: #c73664;
-   --color-heroic: #00e19a;
-   --color-satanic-set: #0bb01a;
-   --color-text-primary: #ffffff;
-   --color-text-secondary: #c7b377;
-   --color-background: rgba(0, 0, 0, 0.8);
-   --color-border: #ffffff;
-   /* Colors Tiers*/
-   --color-s: #f3c632;
-   --color-a: #e69650;
-   --color-b: #bb6234;
-   --color-c: #82251c;
-   --color-d: #5a1c14;
-   
-   /* Typography */
-   --font-family-primary: 'Fenris', sans-serif;
-   --font-size-base: 1rem;
-   --font-size-title: 1.2rem;
-   
-   /* Spacing */
-   --spacing-sm: 0.5rem;
-   --spacing-md: 1rem;
-   --spacing-lg: 1.5rem;
-   
-   /* Effects */
-   --blur-amount: blur(8px);
+  /* Colors */
+  --color-background: #00000099;
+  --color-primary: #d6ac2f;
+  --color-satanic: #c81717;
+  --color-angelic: #fdfea5;
+  --color-unholy: #c73664;
+  --color-heroic: #00e19a;
+  --color-satanic-set: #0bb01a;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #c7b377;
+  --color-background: rgba(0, 0, 0, 0.8);
+  --color-border: #ffffff;
+  --color-subskill-name: #ff5100;
+  /* Colors Tiers*/
+  --color-s: #f3c632;
+  --color-a: #e69650;
+  --color-b: #bb6234;
+  --color-c: #82251c;
+  --color-d: #5a1c14;
+
+  /* Typography */
+  --font-family-primary: "Fenris", sans-serif;
+  --font-size-base: 1rem;
+  --font-size-title: 1.2rem;
+
+  /* Spacing */
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+
+  /* Effects */
+  --blur-amount: blur(8px);
 }
 
 body {
@@ -49,9 +51,13 @@ body {
   padding: 0;
 }
 
-
-p, h1, h2, h3, h4, h5 {
-  font-family: 'Fenris';
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Fenris";
   font-weight: 600;
 }
 
@@ -72,7 +78,6 @@ p, h1, h2, h3, h4, h5 {
   }
 }
 
-
 /* Dark Theme (default) */
 [data-theme="dark"] {
   --color-background: rgba(0, 0, 0, 0.8);
@@ -92,6 +97,7 @@ p, h1, h2, h3, h4, h5 {
   font-style: normal;
   font-display: auto;
   unicode-range: U+000-5FF;
-  src: url('~@/assets/fonts/fenris.woff') format("woff"), 
-       url('~@/assets/fonts/fenris.woff2') format("woff2");
+  src:
+    url("~@/assets/fonts/fenris.woff") format("woff"),
+    url("~@/assets/fonts/fenris.woff2") format("woff2");
 }

@@ -1,35 +1,35 @@
 {
-    "Item": "Sand Traveler's Guise",
-    "Tier": "A",
-    "Level": "58",
-    "Defense": "171.20143-200",
-    "Type": "Helmet",
-    "Size": "2x2",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[130-170]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[10-15]% Increased Movement Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+20% Increased Attack Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+20% Chance to Open Wounds",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[15-20] to Strength",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+8 to Vitality",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Sand Traveler's Guise",
+  "Tier": "A",
+  "Level": "58",
+  "Defense": "171.20143-200",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[130-170]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[10-15]% Increased Movement Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+20% Increased Attack Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+20% Chance to Open Wounds",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[15-20] to Strength",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+8 to Vitality",
+      "class": "stat-default"
+    }
+  ]
 }

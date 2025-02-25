@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_6_icon.webp",
-    "Image": "output/classes\\marksman\\sharpshooter\\ability_6_icon.webp",
-    "Name": "Volatile Shot",
-    "Required Skill(s)": "Homing Missile",
-    "Required Level": "16",
-    "Position": { "x": 0, "y": 3 }
+  "Icon": "ability_6_icon.webp",
+  "Image": "output/classes\\marksman\\sharpshooter\\ability_6_icon.webp",
+  "Name": "Volatile Shot",
+  "Required Skill(s)": "Homing Missile",
+  "Required Level": "16",
+  "Position": {
+    "x": 0,
+    "y": 3
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Hawk Eye",
+      "description": "Increases attack rating when using volatile shot."
+    },
+    {
+      "id": 3,
+      "name": "Cannon Fodder",
+      "description": "Increases the damage dealt by volatile shot."
+    },
+    {
+      "id": 4,
+      "name": "Colossal Arrow",
+      "description": "Fire a massive arrow with increased damage and increased armor break duration. Volatile shot now has a cooldown."
+    },
+    {
+      "id": 5,
+      "name": "Far Sight",
+      "description": "Increases the attack range of volatile shot."
+    },
+    {
+      "id": 6,
+      "name": "Armor Shatter",
+      "description": "Inflicts armor break on hit."
+    },
+    {
+      "id": 7,
+      "name": "Techies",
+      "description": "Now knocks monsters back with increased damage."
+    },
+    {
+      "id": 8,
+      "name": "Explosive Tactics",
+      "description": "Increases the explosion area of effect radius of volatile shot."
+    },
+    {
+      "id": 9,
+      "name": "Armor Swap",
+      "description": "Gain a portion of inflicted armor break as armor for a short duration."
+    },
+    {
+      "id": 10,
+      "name": "Artillery",
+      "description": "Fire multiple additional arrows raining from the sky covering a wide area. Volatile shot now has a short cooldown."
+    },
+    {
+      "id": 11,
+      "name": "Strafing",
+      "description": "Decreases the movement diminish when using volatile shot."
+    },
+    {
+      "id": 12,
+      "name": "Devastation",
+      "description": "Chance to stun monsters on hit."
+    },
+    {
+      "id": 13,
+      "name": "Military Tactics",
+      "description": "Increases damage dealt to stunned targets."
+    },
+    {
+      "id": 14,
+      "name": "Volatile Multishot",
+      "description": "Fire multiple smaller projectiles in a cone."
+    },
+    {
+      "id": 15,
+      "name": "Fire in the Hole",
+      "description": "On monster or terrain impact launch multiple piercing arrows in all directions."
+    }
+  ]
 }

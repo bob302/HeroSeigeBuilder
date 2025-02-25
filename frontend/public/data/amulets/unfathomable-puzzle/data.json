@@ -1,30 +1,30 @@
 {
-    "Item": "Unfathomable Puzzle",
-    "Tier": "S",
-    "Level": "86",
-    "Type": "Amulet",
-    "Size": "1x2",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "Magic Skill Damage increased by [17-30]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Replenish Life [10-20]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Replenish Mana [10-20]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[40-50] to Life",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[35-45] to Mana",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Unfathomable Puzzle",
+  "Tier": "S",
+  "Level": "86",
+  "Type": "Amulet",
+  "Size": "1x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "Magic Skill Damage increased by [17-30]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Replenish Life [10-20]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Replenish Mana [10-20]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[40-50] to Life",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[35-45] to Mana",
+      "class": "stat-default"
+    }
+  ]
 }

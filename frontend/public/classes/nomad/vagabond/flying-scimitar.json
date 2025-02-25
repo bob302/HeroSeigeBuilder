@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_3_icon.webp",
-    "Image": "output/classes\\nomad\\vagabond\\ability_3_icon.webp",
-    "Name": "Flying Scimitar",
-    "Required Skill(s)": "Blade Strike",
-    "Required Level": "8",
-    "Position": { "x": 0, "y": 1 }
+  "Icon": "ability_3_icon.webp",
+  "Image": "output/classes\\nomad\\vagabond\\ability_3_icon.webp",
+  "Name": "Flying Scimitar",
+  "Required Skill(s)": "Blade Strike",
+  "Required Level": "8",
+  "Position": {
+    "x": 0,
+    "y": 1
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Afterslice",
+      "description": "Chance on attack to cast another scimitar."
+    },
+    {
+      "id": 3,
+      "name": "Sharpened Blade",
+      "description": "Increases the damage dealt by flying scimitar."
+    },
+    {
+      "id": 4,
+      "name": "Flying Swarm",
+      "description": "Throw multiple smaller scimitars with decreased damage."
+    },
+    {
+      "id": 5,
+      "name": "Slice and Flight",
+      "description": "Increases the projectile speed of flying scimitar."
+    },
+    {
+      "id": 6,
+      "name": "Widened Blade",
+      "description": "Increases the size of the scimitars."
+    },
+    {
+      "id": 7,
+      "name": "Blade's Vengeance",
+      "description": "Returning scimitars pull enemies towards you with a chance to slow them."
+    },
+    {
+      "id": 8,
+      "name": "Rupturing Flyby",
+      "description": "Chance on attack for flying scimitar to inflict bleeding on hit."
+    },
+    {
+      "id": 9,
+      "name": "Scimitar's Edge",
+      "description": "Increases critical strike chance when using flying scimitar."
+    },
+    {
+      "id": 10,
+      "name": "Orbital Blade Strike",
+      "description": "Scimitars are now spawned in a circle around the nomad with increased projectile speed and pulled back dealing increased damage."
+    },
+    {
+      "id": 11,
+      "name": "Maiming Scimitar",
+      "description": "Increases critical strike damage dealt by flying scimitar."
+    },
+    {
+      "id": 12,
+      "name": "Last Wish",
+      "description": "Flying scimitar now executes targets below a certain percentage of life."
+    },
+    {
+      "id": 13,
+      "name": "Salted Blade",
+      "description": "Increases damage to bleeding targets."
+    },
+    {
+      "id": 14,
+      "name": "Sticking Blade",
+      "description": "Scimitars now attach to the first target for a short period dealing damage over time and returning back to the nomad."
+    },
+    {
+      "id": 15,
+      "name": "League of Nomad",
+      "description": "Scimitars now return to their spawning location. Successfully catching the returning scimitars increases your damage for a short period."
+    }
+  ]
 }

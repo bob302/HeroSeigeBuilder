@@ -1,32 +1,32 @@
 {
-    "Item": "Thunderburn Aegis",
-    "Tier": "D",
-    "Level": "12",
-    "Defense": "13.009-17",
-    "Block": "40",
-    "Type": "Shield",
-    "Size": "2x3",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[50-70]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+10% Increased Attack Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[8-12] to Additive Lightning Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[8-12] to Additive Fire Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+5% to All Resistances",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Thunderburn Aegis",
+  "Tier": "D",
+  "Level": "12",
+  "Defense": "13.009-17",
+  "Block": "40",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[50-70]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+10% Increased Attack Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[8-12] to Additive Lightning Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[8-12] to Additive Fire Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+5% to All Resistances",
+      "class": "stat-default"
+    }
+  ]
 }

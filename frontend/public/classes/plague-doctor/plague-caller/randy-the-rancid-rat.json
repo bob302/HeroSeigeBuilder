@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_9_icon.webp",
-    "Image": "output/classes\\plaguedoctor\\plague-caller\\ability_9_icon.webp",
-    "Name": "Randy the Rancid Rat",
-    "Required Skill(s)": "Jar of Leeches",
-    "Required Level": "30",
-    "Position": { "x": 1, "y": 4 }
+  "Icon": "ability_9_icon.webp",
+  "Image": "output/classes\\plaguedoctor\\plague-caller\\ability_9_icon.webp",
+  "Name": "Randy the Rancid Rat",
+  "Required Skill(s)": "Jar of Leeches",
+  "Required Level": "30",
+  "Position": {
+    "x": 1,
+    "y": 4
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Vigorous Leader",
+      "description": "Increases the life of randy the rancid rat."
+    },
+    {
+      "id": 3,
+      "name": "Enhanced Jaws",
+      "description": "Increases the damage of randy the rancid rat."
+    },
+    {
+      "id": 4,
+      "name": "Randy Rider",
+      "description": "Mount randy the rancid rat gaining increased movement speed, jumping power and the ability to jump through high terrain. Taking damage will unmount you. Randy the rancid rat now has a cooldown. "
+    },
+    {
+      "id": 5,
+      "name": "Rat Invoker",
+      "description": "Chance on hit to unleash piercing plague rats towards the target."
+    },
+    {
+      "id": 6,
+      "name": "Speed Chomps",
+      "description": "Increases the movement speed and attack speed of randy the rancid rat."
+    },
+    {
+      "id": 7,
+      "name": "Expansive Plague Mind",
+      "description": "Randy the rancid rat gains an aura inflicting monsters with poisoned. "
+    },
+    {
+      "id": 8,
+      "name": "Disease Hoarder",
+      "description": "Increases the poisoned inflicted by randy the rancid rat."
+    },
+    {
+      "id": 9,
+      "name": "Blood Transfusion",
+      "description": "Randy the rancid rat recovers a portion of its maximum life on hit."
+    },
+    {
+      "id": 10,
+      "name": "Gluttony",
+      "description": "Increases the attack area of effect radius of randy the rancid rat whenever striking a monster stacking infinitely. Decreases the duration of randy the rancid rat."
+    },
+    {
+      "id": 11,
+      "name": "Armored Fur",
+      "description": "Increases all resistances and damage reduction for randy the rancid rat."
+    },
+    {
+      "id": 12,
+      "name": "Rage Sequence",
+      "description": "Chance to become enraged on hit increasing damage dealt and attack speed."
+    },
+    {
+      "id": 13,
+      "name": "Vital Division",
+      "description": "Redirect a portion of incoming damage to randy the rancid rat."
+    },
+    {
+      "id": 14,
+      "name": "Dragorat",
+      "description": "Randy the rancid rat unleashes a breath of fire when attacking."
+    },
+    {
+      "id": 15,
+      "name": "QA3-Modified Specimen",
+      "description": "Randy the rancid rat summons additional tiny rats armed with blunderbusses dealing a portion of the damage on hit. "
+    }
+  ]
 }

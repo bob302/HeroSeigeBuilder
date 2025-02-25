@@ -1,18 +1,18 @@
 {
-    "Item": "Apex Striker's Ring",
-    "Tier": "D",
-    "Level": "8",
-    "Type": "Ring",
-    "Size": "1x1",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[20-40] to Attack Rating",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+100 to Damage (Based on Level)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Apex Striker's Ring",
+  "Tier": "D",
+  "Level": "8",
+  "Type": "Ring",
+  "Size": "1x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[20-40] to Attack Rating",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+100 to Damage (Based on Level)",
+      "class": "stat-default"
+    }
+  ]
 }

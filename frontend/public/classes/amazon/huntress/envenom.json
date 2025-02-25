@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_9_icon.webp",
-    "Image": "output/classes\\amazon\\huntress\\ability_9_icon.webp",
-    "Name": "Envenom",
-    "Required Skill(s)": "Jungle Camouflage",
-    "Required Level": "30",
-    "Position": { "x": 0, "y": 4 }
+  "Icon": "ability_9_icon.webp",
+  "Image": "output/classes\\amazon\\huntress\\ability_9_icon.webp",
+  "Name": "Envenom",
+  "Required Skill(s)": "Jungle Camouflage",
+  "Required Level": "30",
+  "Position": {
+    "x": 0,
+    "y": 4
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Toxic Fortune",
+      "description": "Increases envenom proc chance."
+    },
+    {
+      "id": 3,
+      "name": "Empowered Toxin",
+      "description": "Increases poisoned damage inflicted by envenom."
+    },
+    {
+      "id": 4,
+      "name": "Stacked Weakness",
+      "description": "Inflict stacking poison break on hit."
+    },
+    {
+      "id": 5,
+      "name": "Toxic Afterburst",
+      "description": "Chance for a fissure to burst twice on hit."
+    },
+    {
+      "id": 6,
+      "name": "Corrosive Liquid",
+      "description": "Increases damage dealt by envenom."
+    },
+    {
+      "id": 7,
+      "name": "Lifesap",
+      "description": "Chance to unleash a venomous nova dealing a portion of the target's life as damage."
+    },
+    {
+      "id": 8,
+      "name": "Toxic Reach",
+      "description": "Increases the area of effect radius of envenom."
+    },
+    {
+      "id": 9,
+      "name": "Spreading Disease",
+      "description": "Chance to unleash an additional envenom on a nearby monster on hit."
+    },
+    {
+      "id": 10,
+      "name": "Venomwave",
+      "description": "Unleash waves of fissures from targets dealing additional damage."
+    },
+    {
+      "id": 11,
+      "name": "Crippling Poison",
+      "description": "Inflicts slow on hit."
+    },
+    {
+      "id": 12,
+      "name": "Added Venom",
+      "description": "Increases damage to poisoned targets."
+    },
+    {
+      "id": 13,
+      "name": "Venom Overflow",
+      "description": "Chance to increase poisoned damage on hit."
+    },
+    {
+      "id": 14,
+      "name": "Rapid End",
+      "description": "Increases poisoned damage and the tick frequency of poisoned."
+    },
+    {
+      "id": 15,
+      "name": "Envenova",
+      "description": "Unleash a poisonous nova instead with increased damage."
+    }
+  ]
 }

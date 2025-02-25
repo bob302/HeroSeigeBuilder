@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_9_icon.webp",
-    "Image": "output/classes\\samurai\\emperors-blade\\ability_9_icon.webp",
-    "Name": "Empires Slash",
-    "Required Skill(s)": "Omnislash",
-    "Required Level": "30",
-    "Position": { "x": 1, "y": 4 }
+  "Icon": "ability_9_icon.webp",
+  "Image": "output/classes\\samurai\\emperors-blade\\ability_9_icon.webp",
+  "Name": "Empires Slash",
+  "Required Skill(s)": "Omnislash",
+  "Required Level": "30",
+  "Position": {
+    "x": 1,
+    "y": 4
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Steel Cutter",
+      "description": "Increases the damage dealt by empire's slash."
+    },
+    {
+      "id": 3,
+      "name": "Destructive Force",
+      "description": "Increases the area of effect of empire's slash."
+    },
+    {
+      "id": 4,
+      "name": "Unbridled Rage",
+      "description": "Perform a series of slashes in multiple directions after teleporting."
+    },
+    {
+      "id": 5,
+      "name": "Mastering The Sword",
+      "description": "Increases the attack speed of empire’s slash when wielding a 2-handed weapon."
+    },
+    {
+      "id": 6,
+      "name": "On The Mark",
+      "description": "Increases the attack rating when using empire's slash."
+    },
+    {
+      "id": 7,
+      "name": "Emperor's Command",
+      "description": "Executes monsters after a threshold."
+    },
+    {
+      "id": 8,
+      "name": "Piercing Backslash",
+      "description": "Gain additional critical strike damage when using empire’s slash."
+    },
+    {
+      "id": 9,
+      "name": "Slithering Blade",
+      "description": "Gain additional critical strike chance when using empire’s slash."
+    },
+    {
+      "id": 10,
+      "name": "Muda Muda Muda Muda Muda",
+      "description": "Perform a huge attack covering the whole screen dealing high damage. Empire's slash no longer teleports you and now has a cooldown."
+    },
+    {
+      "id": 11,
+      "name": "Absorb Life",
+      "description": "Increases life steal when using empire's slash."
+    },
+    {
+      "id": 12,
+      "name": "Wounding Slash",
+      "description": "Chance to inflict bleed on hit."
+    },
+    {
+      "id": 13,
+      "name": "Time To Spare",
+      "description": "You no longer teleport a fixed distance. Teleport range increased."
+    },
+    {
+      "id": 14,
+      "name": "Bloodcovered Edge",
+      "description": "Monsters hit by empire's slash rebound an additional empire's slash towards a nearby monster. Empire's slash now has a cooldown."
+    },
+    {
+      "id": 15,
+      "name": "Cone Of Death",
+      "description": "Empire slash no longer teleports and attacks with multiple smaller slashes in a cone infront of you."
+    }
+  ]
 }

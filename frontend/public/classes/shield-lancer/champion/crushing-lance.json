@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_5_icon.webp",
-    "Image": "output/classes\\shieldlancer\\champion\\ability_5_icon.webp",
-    "Name": "Crushing Lance",
-    "Required Skill(s)": "None",
-    "Required Level": "16",
-    "Position": { "x": 0, "y": 2 }
+  "Icon": "ability_5_icon.webp",
+  "Image": "output/classes\\shieldlancer\\champion\\ability_5_icon.webp",
+  "Name": "Crushing Lance",
+  "Required Skill(s)": "None",
+  "Required Level": "16",
+  "Position": {
+    "x": 0,
+    "y": 2
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Sharp Point",
+      "description": "Increases the damage dealt by crushing lance."
+    },
+    {
+      "id": 3,
+      "name": "Devastating Impact",
+      "description": "Increases the area of effect radius of crushing lance."
+    },
+    {
+      "id": 4,
+      "name": "Annihilating Salvo",
+      "description": "Unleash a shockwave of crushing lances towards target location."
+    },
+    {
+      "id": 5,
+      "name": "Precision Blow",
+      "description": "Increases attack rating when using crushing lance."
+    },
+    {
+      "id": 6,
+      "name": "Dormant Javelin",
+      "description": "Every third attack with crushing lance is empowered increasing area of effect radius and damage."
+    },
+    {
+      "id": 7,
+      "name": "Finishing Stagger",
+      "description": "Increases damage dealt to stunned targets."
+    },
+    {
+      "id": 8,
+      "name": "Two for One",
+      "description": "Chance to unleash an additional crushing lance from the target to a nearby monster on hit."
+    },
+    {
+      "id": 9,
+      "name": "Rapidcast Artillery",
+      "description": "Increases attack speed when using crushing lance."
+    },
+    {
+      "id": 10,
+      "name": "Marked for Javelinstrike",
+      "description": "Throw piercing javelins at monsters hit by crushing lance for a portion of the damage."
+    },
+    {
+      "id": 11,
+      "name": "Landspike",
+      "description": "Increases the critical strike damage dealt by crushing lance."
+    },
+    {
+      "id": 12,
+      "name": "Pulverizing Shock",
+      "description": "Chance to inflict armor break on hit."
+    },
+    {
+      "id": 13,
+      "name": "Scorching Quake",
+      "description": "Chance on cast to empower crushing lance causing it to echo an additional time inflicting burning on hit."
+    },
+    {
+      "id": 14,
+      "name": "Magnetized Glaive",
+      "description": "The lance remains on the ground for a short duration frequently pulsating and pulling monsters towards it on hit."
+    },
+    {
+      "id": 15,
+      "name": "Seismic Perforation",
+      "description": "Crushing lance hits the ground with force unleashing shockwaves into all directions."
+    }
+  ]
 }

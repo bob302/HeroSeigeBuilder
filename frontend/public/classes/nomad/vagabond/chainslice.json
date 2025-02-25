@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_5_icon.webp",
-    "Image": "output/classes\\nomad\\vagabond\\ability_5_icon.webp",
-    "Name": "Chainslice",
-    "Required Skill(s)": "Flying Scimitar",
-    "Required Level": "16",
-    "Position": { "x": 1, "y": 2 }
+  "Icon": "ability_5_icon.webp",
+  "Image": "output/classes\\nomad\\vagabond\\ability_5_icon.webp",
+  "Name": "Chainslice",
+  "Required Skill(s)": "Flying Scimitar",
+  "Required Level": "16",
+  "Position": {
+    "x": 1,
+    "y": 2
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Slice and Dice",
+      "description": "Increases the amount of bounces for chainslice."
+    },
+    {
+      "id": 3,
+      "name": "Slicing Accuracy",
+      "description": "Increases attack rating when using chainslice."
+    },
+    {
+      "id": 4,
+      "name": "Bloodburn",
+      "description": "Unleash small blood novas on hit dealing increased damage."
+    },
+    {
+      "id": 5,
+      "name": "Penetrating Flesh",
+      "description": "Inflict armor break on hit."
+    },
+    {
+      "id": 6,
+      "name": "Field Cover",
+      "description": "Increases the range of chainslice."
+    },
+    {
+      "id": 7,
+      "name": "Vagabond Quickblades",
+      "description": "Increases the projectile speed of chainslice."
+    },
+    {
+      "id": 8,
+      "name": "Extended Blade",
+      "description": "Increases the size of chainslice."
+    },
+    {
+      "id": 9,
+      "name": "Poisoned Shiv",
+      "description": "Chance on hit to inflict poisoned."
+    },
+    {
+      "id": 10,
+      "name": "Chainception",
+      "description": "Chance on hit to release an additional chainslice."
+    },
+    {
+      "id": 11,
+      "name": "Master Slicer",
+      "description": "Increases damage dealt by chainslice."
+    },
+    {
+      "id": 12,
+      "name": "Agile Footwork",
+      "description": "Decreases movement diminish when using chainslice."
+    },
+    {
+      "id": 13,
+      "name": "Infected Wounds",
+      "description": "Increases damage dealt to poisoned targets."
+    },
+    {
+      "id": 14,
+      "name": "Ghost Blade",
+      "description": "Each chainslice hit scatters a flying blade spawning a phantom blade when landing."
+    },
+    {
+      "id": 15,
+      "name": "Critical Shred",
+      "description": "When chainslice critically strikes it sends out additional scimitars in all directions."
+    }
+  ]
 }

@@ -1,31 +1,31 @@
 {
-    "Item": "Blood-letter's Crown",
-    "Tier": "A",
-    "Level": "56",
-    "Defense": "99.9076-125",
-    "Type": "Helmet",
-    "Size": "2x2",
-    "Rarity": "Satanic Set",
-    "Stats": [
-        {
-            "stat": "+[80-130]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+1 to Physical Skills",
-            "class": "stat-physical"
-        },
-        {
-            "stat": "+25 to Strength",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Replenish Life 15%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Life Increased by 3%",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Blood-letter's Crown",
+  "Tier": "A",
+  "Level": "56",
+  "Defense": "99.9076-125",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "+[80-130]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+1 to Physical Skills",
+      "class": "stat-physical"
+    },
+    {
+      "stat": "+25 to Strength",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Replenish Life 15%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Life Increased by 3%",
+      "class": "stat-default"
+    }
+  ]
 }

@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_4_icon.webp",
-    "Image": "output/classes\\shaman\\elementalist\\ability_4_icon.webp",
-    "Name": "Earth Bind",
-    "Required Skill(s)": "Tectonic Boulder",
-    "Required Level": "16",
-    "Position": { "x": 0, "y": 2 }
+  "Icon": "ability_4_icon.webp",
+  "Image": "output/classes\\shaman\\elementalist\\ability_4_icon.webp",
+  "Name": "Earth Bind",
+  "Required Skill(s)": "Tectonic Boulder",
+  "Required Level": "16",
+  "Position": {
+    "x": 0,
+    "y": 2
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Lasting Roots",
+      "description": "Increases the duration of earth bind."
+    },
+    {
+      "id": 3,
+      "name": "Sharp Oaks",
+      "description": "Increases damage dealt by earth bind."
+    },
+    {
+      "id": 4,
+      "name": "Field of Roots",
+      "description": "Area of effect and damage is greatly increased, but earth bind is now cast at your feet."
+    },
+    {
+      "id": 5,
+      "name": "Nature's Intellect",
+      "description": "Decreases the cooldown of earth bind."
+    },
+    {
+      "id": 6,
+      "name": "Increased Pressure",
+      "description": "Monsters killed by earth bind explode, dealing area of effect damage."
+    },
+    {
+      "id": 7,
+      "name": "Rooting Wave",
+      "description": "Chance to unleash additional earth binds on cast."
+    },
+    {
+      "id": 8,
+      "name": "Expanding Roots",
+      "description": "Chance for earth bind to grow on hit."
+    },
+    {
+      "id": 9,
+      "name": "Lingering Oak",
+      "description": "Increases the area of effect of earth bind."
+    },
+    {
+      "id": 10,
+      "name": "Quick Strangulation",
+      "description": "Increases the tick frequency of earth bind."
+    },
+    {
+      "id": 11,
+      "name": "Poisonous Ivy",
+      "description": "Increases poisoned damage of earth bind."
+    },
+    {
+      "id": 12,
+      "name": "Strangling Thorns",
+      "description": "Executes low-life monsters."
+    },
+    {
+      "id": 13,
+      "name": "Paralyzing Leaves",
+      "description": "Increases damage dealt to poisoned targets."
+    },
+    {
+      "id": 14,
+      "name": "Wildfire Growth",
+      "description": "Chance to send a trail of hellfire towards targets on hit."
+    },
+    {
+      "id": 15,
+      "name": "Shattering Thorns",
+      "description": "Increases damage dealt, inflicting elemental break on hit."
+    }
+  ]
 }

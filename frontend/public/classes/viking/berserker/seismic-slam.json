@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_1_icon.webp",
-    "Image": "output/classes\\viking\\berserker\\ability_1_icon.webp",
-    "Name": "Seismic Slam",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 0, "y": 0 }
+  "Icon": "ability_1_icon.webp",
+  "Image": "output/classes\\viking\\berserker\\ability_1_icon.webp",
+  "Name": "Seismic Slam",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": {
+    "x": 0,
+    "y": 0
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Colossal Smash",
+      "description": "Increases the area of effect radius of seismic slam."
+    },
+    {
+      "id": 3,
+      "name": "Seismic Energy",
+      "description": "Increases the damage dealt by seismic slam."
+    },
+    {
+      "id": 4,
+      "name": "Polar Shift",
+      "description": "Leap a short distance to smash the ground with massive force dealing increased damage with huge aoe. "
+    },
+    {
+      "id": 5,
+      "name": "Lethal Crush",
+      "description": "Increases critical strike damage dealt by seismic slam."
+    },
+    {
+      "id": 6,
+      "name": "Cheap Slam",
+      "description": "Increases damage dealt to stunned targets."
+    },
+    {
+      "id": 7,
+      "name": "Seismic Aftershock",
+      "description": "Targets have a chance to slam the ground on death dealing area of effect damage."
+    },
+    {
+      "id": 8,
+      "name": "Power Slam",
+      "description": "Knocks targets back dealing increased damage."
+    },
+    {
+      "id": 9,
+      "name": "Earth Root",
+      "description": "Chance to root targets in place on hit dealing additional damage over time."
+    },
+    {
+      "id": 10,
+      "name": "Younger Dryas",
+      "description": "Smashing the ground now drops a massive asteroid from the sky sending a huge tsunami dealing increased damage. Seismic Slam now has a cooldown."
+    },
+    {
+      "id": 11,
+      "name": "Slamming Flurry",
+      "description": "Chance on hit to increase your attack speed for a short duration."
+    },
+    {
+      "id": 12,
+      "name": "Defiling Carcass",
+      "description": "Hitting a corpse with seismic slam causes it to explode dealing increased area of effect damage to nearby targets."
+    },
+    {
+      "id": 13,
+      "name": "Shattered Earth",
+      "description": "Chance to strike target with an earth pillar on hit knocking them airborne dealing additional damage."
+    },
+    {
+      "id": 14,
+      "name": "Echoing Slam",
+      "description": "Slam multiple waves on a short distance increasing damage with each wave."
+    },
+    {
+      "id": 15,
+      "name": "Seismic Crack",
+      "description": "Now smash in front of you in a long narrow line knocking monsters in air causing them to unleash an aoe pulse upon landing."
+    }
+  ]
 }

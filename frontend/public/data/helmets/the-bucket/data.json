@@ -1,31 +1,31 @@
 {
-    "Item": "The Bucket",
-    "Tier": "S",
-    "Level": "85",
-    "Defense": "184.50153-216",
-    "Type": "Helmet",
-    "Size": "2x2",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[155-170]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[230-250] to Life",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+45% Magic Find (Based on Level)",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[15-30]% Increased Magic Find",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Socketed (2-4)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "The Bucket",
+  "Tier": "S",
+  "Level": "85",
+  "Defense": "184.50153-216",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[155-170]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[230-250] to Life",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+45% Magic Find (Based on Level)",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[15-30]% Increased Magic Find",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Socketed (2-4)",
+      "class": "stat-default"
+    }
+  ]
 }

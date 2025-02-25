@@ -8,14 +8,13 @@ export class Slot {
     this.item = item;
   }
 
-
   equals(other: Slot): boolean {
     if (!other) return false;
 
     if (this.item && other.item) {
       return this.item.uniqueId === other.item.uniqueId;
     }
-    
+
     return false;
   }
 
@@ -23,9 +22,9 @@ export class Slot {
     return new Slot(this.item?.copy());
   }
 
-   // ───── Serialization Methods ─────
+  // ───── Serialization Methods ─────
 
-   serialize(): any {
+  serialize(): any {
     return {
       item: this.item ? this.item.serialize() : null,
     };
@@ -34,7 +33,7 @@ export class Slot {
   static deserialize(data: any): Slot {
     const item = data.item ? Item.deserialize(data.item) : null;
     const slot = new Slot(item);
-    
+
     return slot;
   }
 }

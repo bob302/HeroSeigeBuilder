@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_6_icon.webp",
-    "Image": "output/classes\\necromancer\\venomancer\\ability_6_icon.webp",
-    "Name": "Corpse Explosion",
-    "Required Skill(s)": "Meat Bomb",
-    "Required Level": "16",
-    "Position": { "x": 1, "y": 2 }
+  "Icon": "ability_6_icon.webp",
+  "Image": "output/classes\\necromancer\\venomancer\\ability_6_icon.webp",
+  "Name": "Corpse Explosion",
+  "Required Skill(s)": "Meat Bomb",
+  "Required Level": "16",
+  "Position": {
+    "x": 1,
+    "y": 2
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Volatile Magic",
+      "description": "Increases the explosion area of effect radius of corpse explosion."
+    },
+    {
+      "id": 3,
+      "name": "Violent Burst",
+      "description": "Chance to critically hit with increased critical strike damage."
+    },
+    {
+      "id": 4,
+      "name": "Convergence",
+      "description": "Corpse explosion now inflicts poisoned and poison break on hit."
+    },
+    {
+      "id": 5,
+      "name": "Channeling Necromancy",
+      "description": "Increases maximum cast range of corpse explosion."
+    },
+    {
+      "id": 6,
+      "name": "Reaching Conduit",
+      "description": "Increases the area of effect radius of corpse explosion."
+    },
+    {
+      "id": 7,
+      "name": "Homunculus",
+      "description": "Corpses spawned from meat bomb causes corpse explosions to deal additional damage."
+    },
+    {
+      "id": 8,
+      "name": "Reaper Within",
+      "description": "Increases the damage dealt by corpse explosion."
+    },
+    {
+      "id": 9,
+      "name": "Rush from the Harvest",
+      "description": "Exploding a corpse gives you a burst of movement speed."
+    },
+    {
+      "id": 10,
+      "name": "Lich's Command",
+      "description": "Corpses are now lit on fire with increased size, dealing increased damage and inflicting burning on hit."
+    },
+    {
+      "id": 11,
+      "name": "Unfair Advantage",
+      "description": "Increases damage dealt to stunned enemies."
+    },
+    {
+      "id": 12,
+      "name": "Presence of the Lich",
+      "description": "Chance to stun on hit."
+    },
+    {
+      "id": 13,
+      "name": "Assured Passing",
+      "description": "Corpses have a chance to explode twice."
+    },
+    {
+      "id": 14,
+      "name": "Dissolvant Solution",
+      "description": "Corpse explosion deals poison damage inflicting poison break and dissolves low life monsters into gas clouds. "
+    },
+    {
+      "id": 15,
+      "name": "Devouring Aura",
+      "description": "Activate an aura around you consuming nearby corpses per second casting corpse explosion for a short period. Corpse explosion now has a cooldown."
+    }
+  ]
 }

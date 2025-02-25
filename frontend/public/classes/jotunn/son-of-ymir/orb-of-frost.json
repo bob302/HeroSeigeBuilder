@@ -1,8 +1,80 @@
 {
-    "Icon": "ability_5_icon.webp",
-    "Image": "output/classes\\jotunn\\son-of-ymir\\ability_5_icon.webp",
-    "Name": "Orb of Frost",
-    "Required Skill(s)": "Icicles",
-    "Required Level": "16",
-    "Position": { "x": 1, "y": 2 }
+  "Icon": "ability_5_icon.webp",
+  "Image": "output/classes\\jotunn\\son-of-ymir\\ability_5_icon.webp",
+  "Name": "Orb of Frost",
+  "Required Skill(s)": "Icicles",
+  "Required Level": "16",
+  "Position": { "x": 1, "y": 2 },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Festering Cold",
+      "description": "Increases the damage dealt by orb of frost."
+    },
+    {
+      "id": 3,
+      "name": "Frost Icicles",
+      "description": "Increases the amount of orb of frost icicles."
+    },
+    {
+      "id": 4,
+      "name": "Glacial Shredder",
+      "description": "Unleash a glacial shredder with increased size and damage. Icicles are now attached around the orb."
+    },
+    {
+      "id": 5,
+      "name": "Frozen Mass",
+      "description": "Increases the size of orb of frost."
+    },
+    {
+      "id": 6,
+      "name": "Icy Winds",
+      "description": "Increases the projectile speed of icicles."
+    },
+    {
+      "id": 7,
+      "name": "Cold Singularity",
+      "description": "Decreases the orbiting radius of icicles."
+    },
+    {
+      "id": 8,
+      "name": "Coldsnap",
+      "description": "Chance to inflict cold break on hit."
+    },
+    {
+      "id": 9,
+      "name": "Hypothermia",
+      "description": "Increases damage dealt to frozen targets."
+    },
+    {
+      "id": 10,
+      "name": "Orb of Duality",
+      "description": "Unleash multiple smaller orbs of frost in an arc."
+    },
+    {
+      "id": 11,
+      "name": "Timeless Tundra",
+      "description": "Decreases the cooldown of orb of frost."
+    },
+    {
+      "id": 12,
+      "name": "Multicicles",
+      "description": "Chance on pulse to unleash additional icicles."
+    },
+    {
+      "id": 13,
+      "name": "Howling Ricochet",
+      "description": "Orb of frost bounces off of terrain dealing increased damage."
+    },
+    {
+      "id": 14,
+      "name": "Enlargening Frost Orb",
+      "description": "Orb of frost increases its size and damage over time while traveling."
+    },
+    {
+      "id": 15,
+      "name": "Chaining Frost",
+      "description": "Icicles from orb of frost chain from targets unleashing frozen pulses on hit dealing a portion of the damage."
+    }
+  ]
 }

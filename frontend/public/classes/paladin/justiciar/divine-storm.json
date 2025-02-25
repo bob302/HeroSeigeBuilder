@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_3_icon.webp",
-    "Image": "output/classes\\paladin\\justiciar\\ability_3_icon.webp",
-    "Name": "Divine Storm",
-    "Required Skill(s)": "Vengeance",
-    "Required Level": "8",
-    "Position": { "x": 0, "y": 1 }
+  "Icon": "ability_3_icon.webp",
+  "Image": "output/classes\\paladin\\justiciar\\ability_3_icon.webp",
+  "Name": "Divine Storm",
+  "Required Skill(s)": "Vengeance",
+  "Required Level": "8",
+  "Position": {
+    "x": 0,
+    "y": 1
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Overloaded Coil",
+      "description": "Increases the area of effect radius of divine storm."
+    },
+    {
+      "id": 3,
+      "name": "Charged Cells",
+      "description": "Chance on hit to inflict stasis for a portion of the damage."
+    },
+    {
+      "id": 4,
+      "name": "Chaining Storm",
+      "description": "Divine Storm inflicts monsters with zapper causing attacks on the monster to unleash chain lightning."
+    },
+    {
+      "id": 5,
+      "name": "Divine Ionization",
+      "description": "Chance to inflict elemental break on hit."
+    },
+    {
+      "id": 6,
+      "name": "Voltage Charge",
+      "description": "Chance to gain increased damage return on hit."
+    },
+    {
+      "id": 7,
+      "name": "Electron Jump",
+      "description": "Chance on hit to gain increased defense for a short period."
+    },
+    {
+      "id": 8,
+      "name": "Heaven's Interference",
+      "description": "Chance on cast to perform an additional storm."
+    },
+    {
+      "id": 9,
+      "name": "Blow the Fuse",
+      "description": "Chance on cast to zap enemies hit with lightning bolts."
+    },
+    {
+      "id": 10,
+      "name": "Charged Hurricane",
+      "description": "Divine Storm now forms an electrically charged hurricane that whirls to a random direction."
+    },
+    {
+      "id": 11,
+      "name": "Overwhelming Power",
+      "description": "Increases damage dealt by divine storm."
+    },
+    {
+      "id": 12,
+      "name": "Precision of the Storm",
+      "description": "Increases attack speed when using divine storm."
+    },
+    {
+      "id": 13,
+      "name": "Dashing Flow",
+      "description": "Divine storm now travels forward for a short distance."
+    },
+    {
+      "id": 14,
+      "name": "Eye of the Storm",
+      "description": "Unleash a storm around you dealing area of effect damage and inflicting lightning break. Divine storm now has a cooldown."
+    },
+    {
+      "id": 15,
+      "name": "Bad Omens",
+      "description": "Divine Storm slowly expands from it's casting area unleashing chain lightning on hit. Divine storm now has a cooldown."
+    }
+  ]
 }

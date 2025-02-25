@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_7_icon.webp",
-    "Image": "output/classes\\pyromancer\\arsonist\\ability_7_icon.webp",
-    "Name": "Fire Nova",
-    "Required Skill(s)": "Hydra",
-    "Required Level": "24",
-    "Position": { "x": 1, "y": 3 }
+  "Icon": "ability_7_icon.webp",
+  "Image": "output/classes\\pyromancer\\arsonist\\ability_7_icon.webp",
+  "Name": "Fire Nova",
+  "Required Skill(s)": "Hydra",
+  "Required Level": "24",
+  "Position": {
+    "x": 1,
+    "y": 3
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Extended Flames",
+      "description": "Increases the area of effect radius of fire nova."
+    },
+    {
+      "id": 3,
+      "name": "Boiling Point",
+      "description": "Inflicts burning on hit."
+    },
+    {
+      "id": 4,
+      "name": "Scorching Bolts",
+      "description": "Now unleash piercing fireballs in all directions instead of a nova."
+    },
+    {
+      "id": 5,
+      "name": "Heat Haze",
+      "description": "Increases the damage dealt by fire nova."
+    },
+    {
+      "id": 6,
+      "name": "Burning Agony",
+      "description": "Inflicts fire break on hit."
+    },
+    {
+      "id": 7,
+      "name": "Crushing Flames",
+      "description": "Fire nova knocks monsters back dealing increased damage."
+    },
+    {
+      "id": 8,
+      "name": "Rapid Flames",
+      "description": "Increases your cast rate when casting fire nova."
+    },
+    {
+      "id": 9,
+      "name": "Mirror Flames",
+      "description": "Chance on cast to unleash an additional fire nova."
+    },
+    {
+      "id": 10,
+      "name": "Vacuum Flames",
+      "description": "Fire nova now vacuums monsters inside stunning and dealing additional damage."
+    },
+    {
+      "id": 11,
+      "name": "Armageddon Bolts",
+      "description": "Chance on hit to drop armageddon bolts down from the sky."
+    },
+    {
+      "id": 12,
+      "name": "Agonizing Flames",
+      "description": "Increases damage dealt to burning targets."
+    },
+    {
+      "id": 13,
+      "name": "Molten Trail",
+      "description": "Chance on cast to send a trail of molten lava forward."
+    },
+    {
+      "id": 14,
+      "name": "Searing Tornado",
+      "description": "Summon piercing fireballs orbiting you."
+    },
+    {
+      "id": 15,
+      "name": "Traveling Flames",
+      "description": "Send a traveling nova forward unleashing additional novas with increased damage and area of effect radius."
+    }
+  ]
 }

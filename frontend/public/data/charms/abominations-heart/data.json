@@ -1,18 +1,18 @@
 {
-    "Item": "Abomination's Heart",
-    "Tier": "SS",
-    "Level": "95",
-    "Type": "Charm",
-    "Size": "1x2",
-    "Rarity": "Satanic Set",
-    "Stats": [
-        {
-            "stat": "+[1-3] to Summon Skills",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Summon Life Increased by [4-12]%",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Abomination's Heart",
+  "Tier": "SS",
+  "Level": "95",
+  "Type": "Charm",
+  "Size": "1x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "+[1-3] to Summon Skills",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Summon Life Increased by [4-12]%",
+      "class": "stat-default"
+    }
+  ]
 }

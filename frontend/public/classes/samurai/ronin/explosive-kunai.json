@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_6_icon.webp",
-    "Image": "output/classes\\samurai\\ronin\\ability_6_icon.webp",
-    "Name": "Explosive Kunai",
-    "Required Skill(s)": "Shuriken Throw",
-    "Required Level": "16",
-    "Position": { "x": 2, "y": 2 }
+  "Icon": "ability_6_icon.webp",
+  "Image": "output/classes\\samurai\\ronin\\ability_6_icon.webp",
+  "Name": "Explosive Kunai",
+  "Required Skill(s)": "Shuriken Throw",
+  "Required Level": "16",
+  "Position": {
+    "x": 2,
+    "y": 2
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Stronger Explosives",
+      "description": "Increases damage dealt by explosive kunai."
+    },
+    {
+      "id": 3,
+      "name": "Packed Up Kunai",
+      "description": "Increases kunai explosion area of effect radius."
+    },
+    {
+      "id": 4,
+      "name": "Doubleforking Kunai",
+      "description": "Explosive kunai split an additional time dealing increased damage each time they split."
+    },
+    {
+      "id": 5,
+      "name": "Satisfaction",
+      "description": "Decreases the mana cost of explosive kunai."
+    },
+    {
+      "id": 6,
+      "name": "Split Up",
+      "description": "Chance on hit to split into additional kunais."
+    },
+    {
+      "id": 7,
+      "name": "Willful Sacrifice",
+      "description": "Now consumes a percentage of your maximum life each cast giving your kunai increased speed and explosion aoe. Maximum life damage is non-lethal."
+    },
+    {
+      "id": 8,
+      "name": "First Is Best",
+      "description": "Increases the damage dealt and explosion area of effect radius kunai."
+    },
+    {
+      "id": 9,
+      "name": "Ronin's Curse",
+      "description": "Chance to inflict arcane break on hit."
+    },
+    {
+      "id": 10,
+      "name": "Little Slicers",
+      "description": "Explosive kunai no longer explode but instead pierces with increased projectile speed slicing monsters inflicting bleeding."
+    },
+    {
+      "id": 11,
+      "name": "Doubleblast",
+      "description": "Chance on hit for the kunai to explode an additional time."
+    },
+    {
+      "id": 12,
+      "name": "Bouncy Kunai",
+      "description": "Kunais have a chance to bounce off of terrain and stun monsters on hit."
+    },
+    {
+      "id": 13,
+      "name": "Concussive Explosions",
+      "description": "Increases damage dealt to stunned targets."
+    },
+    {
+      "id": 14,
+      "name": "Penetration Volley",
+      "description": "Throw a spread of piercing kunai that explode on each enemy hit."
+    },
+    {
+      "id": 15,
+      "name": "Chainsplosions",
+      "description": "Split kunais chain on the first enemy hit exploding on each enemy chained to."
+    }
+  ]
 }

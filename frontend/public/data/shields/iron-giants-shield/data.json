@@ -1,36 +1,36 @@
 {
-    "Item": "Iron Giants Shield",
-    "Tier": "S",
-    "Level": "90",
-    "Defense": "308.00256-360",
-    "Block": "75",
-    "Type": "Shield",
-    "Size": "2x3",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "8% Chance after Blocking [Last Stand] Level 11",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "+[220-260]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[1-3] to All Skills",
-            "class": "stat-allskills"
-        },
-        {
-            "stat": "+50 to Vitality",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+30 to Armor",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Damage Taken Reduced by 30",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Iron Giants Shield",
+  "Tier": "S",
+  "Level": "90",
+  "Defense": "308.00256-360",
+  "Block": "75",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "8% Chance after Blocking [Last Stand] Level 11",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+[220-260]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[1-3] to All Skills",
+      "class": "stat-allskills"
+    },
+    {
+      "stat": "+50 to Vitality",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+30 to Armor",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Damage Taken Reduced by 30",
+      "class": "stat-default"
+    }
+  ]
 }

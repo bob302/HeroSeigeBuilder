@@ -1,18 +1,18 @@
 {
-    "Item": "Gold Inlaid Mysterious Potion",
-    "Tier": "SS",
-    "Level": "100",
-    "Type": "Potion",
-    "Size": "1x2",
-    "Rarity": "Heroic",
-    "Stats": [
-        {
-            "stat": "+[1-5] to [Endless Wealth]",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "Gain Increased Magic Find and Gold from monster kills.",
-            "class": "item-lore"
-        }
-    ]
+  "Item": "Gold Inlaid Mysterious Potion",
+  "Tier": "SS",
+  "Level": "100",
+  "Type": "Potion",
+  "Size": "1x2",
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "+[1-5] to [Endless Wealth]",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "Gain Increased Magic Find and Gold from monster kills.",
+      "class": "item-lore"
+    }
+  ]
 }

@@ -5,15 +5,15 @@
     <div class="runes-content">
       <p class="text-regular socketables-title">Socketed Runes:</p>
       <ul class="socketables-list">
-        <li 
-          v-for="(socket, index) in sockets" 
+        <li
+          v-for="(socket, index) in sockets"
           :key="index"
           class="socketable-item"
         >
-          <img 
-            v-if="socket.socketable" 
-            :src="socket.socketable.image" 
-            class="socketable-icon" 
+          <img
+            v-if="socket.socketable"
+            :src="socket.socketable.image"
+            class="socketable-icon"
           />
           <div class="socketable-info">
             <p class="socketable-name">{{ socket.socketable?.name }}</p>
@@ -25,18 +25,18 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import type { PropType } from 'vue'
-import type { Socket } from '../models/Equipment'
+import { defineComponent } from "vue";
+import type { PropType } from "vue";
+import type { Socket } from "../models/Equipment";
 
 export default defineComponent({
   props: {
     sockets: {
       type: Array as PropType<Socket[]>,
-      required: true
-    }
-  }
-})
+      required: true,
+    },
+  },
+});
 </script>
 
 <style scoped>
@@ -52,9 +52,10 @@ export default defineComponent({
   top: 0;
   bottom: 0;
   width: 1px;
-  background: linear-gradient(180deg, 
-    transparent 0%, 
-    rgba(199, 179, 119, 0.5) 50%, 
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(199, 179, 119, 0.5) 50%,
     transparent 100%
   );
 }
@@ -85,7 +86,7 @@ export default defineComponent({
 
 .socketable-name {
   color: #f3c632;
-  font-family: 'Fenris';
+  font-family: "Fenris";
   font-size: 1.1rem;
 }
 

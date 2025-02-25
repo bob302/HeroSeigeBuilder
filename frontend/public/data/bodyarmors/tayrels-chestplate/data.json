@@ -1,47 +1,47 @@
 {
-    "Item": "Tayrel's Chestplate",
-    "Tier": "SS",
-    "Level": "100",
-    "Defense": "4510.003485-5535",
-    "Type": "Body Armor",
-    "Size": "2x3",
-    "Rarity": "Angelic",
-    "Stats": [
-        {
-            "stat": "+[750-925]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[8-12] to All Skills",
-            "class": "stat-allskills"
-        },
-        {
-            "stat": "+[40-50]% Increased Movement Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+40 to All Attributes",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+2500 to Life (Based on Level)",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+250 to Vitality (Based on Level)",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[50-75]% to All Resistances",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Cannot be Frozen",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Socketed (6)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Tayrel's Chestplate",
+  "Tier": "SS",
+  "Level": "100",
+  "Defense": "4510.003485-5535",
+  "Type": "Body Armor",
+  "Size": "2x3",
+  "Rarity": "Angelic",
+  "Stats": [
+    {
+      "stat": "+[750-925]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[8-12] to All Skills",
+      "class": "stat-allskills"
+    },
+    {
+      "stat": "+[40-50]% Increased Movement Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+40 to All Attributes",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+2500 to Life (Based on Level)",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+250 to Vitality (Based on Level)",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[50-75]% to All Resistances",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Cannot be Frozen",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Socketed (6)",
+      "class": "stat-default"
+    }
+  ]
 }

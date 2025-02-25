@@ -1,22 +1,22 @@
 {
-    "Item": "Ring of Tallus",
-    "Tier": "B",
-    "Level": "44",
-    "Type": "Ring",
-    "Size": "1x1",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+1 to All Skills",
-            "class": "stat-allskills"
-        },
-        {
-            "stat": "Replenish Mana [5-15]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Life Increased by [3-5]%",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Ring of Tallus",
+  "Tier": "B",
+  "Level": "44",
+  "Type": "Ring",
+  "Size": "1x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+1 to All Skills",
+      "class": "stat-allskills"
+    },
+    {
+      "stat": "Replenish Mana [5-15]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Life Increased by [3-5]%",
+      "class": "stat-default"
+    }
+  ]
 }

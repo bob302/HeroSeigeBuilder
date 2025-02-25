@@ -1,58 +1,58 @@
 {
-    "Item": "The Dawn Bringer",
-    "Tier": "SS",
-    "Level": "100",
-    "Damage": "339.30308-372",
-    "APS": "1.751.75",
-    "DPS": "594.00538-650",
-    "Type": "Mace",
-    "TwoHanded": false,
-    "Size": "2x3",
-    "Rarity": "Angelic",
-    "Stats": [
-        {
-            "stat": "35% Chance when Casting [Fist of the Heavens] Level 54",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "+[430-480]% Enhanced Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+3 to All Skills",
-            "class": "stat-allskills"
-        },
-        {
-            "stat": "+[35-50]% Faster Cast Rate",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[8-12] Mana per second",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[15-35] to All Attributes",
-            "class": "stat-default"
-        },
-        {
-            "stat": "-[15-25]% to All Enemy Resistances",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Magic Skill Damage increased by [18-40]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "All Damage Taken Reduced by [3-6]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+40% to All Resistances",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Socketed (3-5)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "The Dawn Bringer",
+  "Tier": "SS",
+  "Level": "100",
+  "Damage": "339.30308-372",
+  "APS": "1.751.75",
+  "DPS": "594.00538-650",
+  "Type": "Mace",
+  "TwoHanded": false,
+  "Size": "2x3",
+  "Rarity": "Angelic",
+  "Stats": [
+    {
+      "stat": "35% Chance when Casting [Fist of the Heavens] Level 54",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+[430-480]% Enhanced Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+3 to All Skills",
+      "class": "stat-allskills"
+    },
+    {
+      "stat": "+[35-50]% Faster Cast Rate",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[8-12] Mana per second",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[15-35] to All Attributes",
+      "class": "stat-default"
+    },
+    {
+      "stat": "-[15-25]% to All Enemy Resistances",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Magic Skill Damage increased by [18-40]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "All Damage Taken Reduced by [3-6]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+40% to All Resistances",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Socketed (3-5)",
+      "class": "stat-default"
+    }
+  ]
 }

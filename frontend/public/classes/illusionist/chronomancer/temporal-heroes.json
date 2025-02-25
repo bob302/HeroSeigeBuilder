@@ -1,8 +1,80 @@
 {
-    "Icon": "ability_9_icon.webp",
-    "Image": "output/classes\\illusionist\\ability_9_icon.webp",
-    "Name": "Temporal Heroes",
-    "Required Skill(s)": "None",
-    "Required Level": "30",
-    "Position": { "x": 1, "y": 4 }
+  "Icon": "ability_9_icon.webp",
+  "Image": "output/classes\\illusionist\\ability_9_icon.webp",
+  "Name": "Temporal Heroes",
+  "Required Skill(s)": "None",
+  "Required Level": "30",
+  "Position": { "x": 1, "y": 4 },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Mirror Image",
+      "description": "Increases the damage dealt by temporal heroes."
+    },
+    {
+      "id": 3,
+      "name": "Summon Carnage",
+      "description": "Increases the attack speed of temporal heroes."
+    },
+    {
+      "id": 4,
+      "name": "Augmented Heroics",
+      "description": "Temporal heroes gain augmented skills and increased damage."
+    },
+    {
+      "id": 5,
+      "name": "Larger Than Life",
+      "description": "Increases the life of temporal heroes."
+    },
+    {
+      "id": 6,
+      "name": "Quantum Immortality",
+      "description": "Increases the duration of temporal heroes."
+    },
+    {
+      "id": 7,
+      "name": "More Aid",
+      "description": "Decreases the cooldown of temporal heroes."
+    },
+    {
+      "id": 8,
+      "name": "Accurate Clone",
+      "description": "Increases the skill levels of temporal heroes."
+    },
+    {
+      "id": 9,
+      "name": "Tough Bones",
+      "description": "Increases all resistances for temporal heroes."
+    },
+    {
+      "id": 10,
+      "name": "Summon Support",
+      "description": "Temporal heroes cast buffs when summoned. Viking casts combat orders, pyromancer casts fire shield and marksman casts agility."
+    },
+    {
+      "id": 11,
+      "name": "Heroes of the Ether",
+      "description": "Chance to critically hit dealing increased critical strike damage."
+    },
+    {
+      "id": 12,
+      "name": "Fractured Reality",
+      "description": "Chance to inflict arcane break on hit."
+    },
+    {
+      "id": 13,
+      "name": "Evasive Strategy",
+      "description": "Increases the dodge chance of temporal heroes."
+    },
+    {
+      "id": 14,
+      "name": "The Four Horsemen",
+      "description": "Gain an additional temporal hero increasing the damage, life and movement speed of all temporal heroes."
+    },
+    {
+      "id": 15,
+      "name": "The Singularity",
+      "description": "Summon a temporal demonspawn with increased stats."
+    }
+  ]
 }

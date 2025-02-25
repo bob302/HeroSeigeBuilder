@@ -1,39 +1,39 @@
 {
-    "Item": "Dante's Jacket",
-    "Tier": "A",
-    "Level": "57",
-    "Defense": "357.50299-416",
-    "Type": "Body Armor",
-    "Size": "2x3",
-    "Rarity": "Satanic Set",
-    "Stats": [
-        {
-            "stat": "+[130-160]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+5% Increased Critical Strike Chance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+40 to Additive Physical Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[15-25]% Increased Critical Strike Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+20 to Strength",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+10 to Vitality",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Socketed (0-3)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Dante's Jacket",
+  "Tier": "A",
+  "Level": "57",
+  "Defense": "357.50299-416",
+  "Type": "Body Armor",
+  "Size": "2x3",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "+[130-160]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+5% Increased Critical Strike Chance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+40 to Additive Physical Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[15-25]% Increased Critical Strike Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+20 to Strength",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+10 to Vitality",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Socketed (0-3)",
+      "class": "stat-default"
+    }
+  ]
 }

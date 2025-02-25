@@ -1,26 +1,26 @@
 {
-    "Item": "Visage's Eye",
-    "Tier": "A",
-    "Level": "62",
-    "Type": "Amulet",
-    "Size": "1x2",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+20% Faster Cast Rate",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[3-6]% Mana stolen per Hit",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Replenish Mana 25%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[10-15]% of Damage Taken goes to Mana",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Visage's Eye",
+  "Tier": "A",
+  "Level": "62",
+  "Type": "Amulet",
+  "Size": "1x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+20% Faster Cast Rate",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[3-6]% Mana stolen per Hit",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Replenish Mana 25%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[10-15]% of Damage Taken goes to Mana",
+      "class": "stat-default"
+    }
+  ]
 }

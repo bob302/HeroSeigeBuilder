@@ -1,8 +1,80 @@
 {
-    "Icon": "ability_2_icon.webp",
-    "Image": "output/classes\\jotunn\\son-of-ymir\\ability_2_icon.webp",
-    "Name": "Breath of Ice",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 2, "y": 0 }
+  "Icon": "ability_2_icon.webp",
+  "Image": "output/classes\\jotunn\\son-of-ymir\\ability_2_icon.webp",
+  "Name": "Breath of Ice",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": { "x": 2, "y": 0 },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Fresh Mint",
+      "description": "Increases the damage dealt by breath of ice."
+    },
+    {
+      "id": 3,
+      "name": "Crumbling Winds",
+      "description": "Chance to inflict cold break on hit."
+    },
+    {
+      "id": 4,
+      "name": "Frostbitten Lungs",
+      "description": "Increases breath of ice duration dealing damage over time."
+    },
+    {
+      "id": 5,
+      "name": "Expansive Gasp",
+      "description": "Increases the area of effect of breath of ice."
+    },
+    {
+      "id": 6,
+      "name": "Ironfrost Lungs",
+      "description": "Increases the duration of breath of ice."
+    },
+    {
+      "id": 7,
+      "name": "Frozen Exhale",
+      "description": "Knock monsters back slowly dealing increased damage."
+    },
+    {
+      "id": 8,
+      "name": "Freezing Point",
+      "description": "Increases damage dealt to frozen targets."
+    },
+    {
+      "id": 9,
+      "name": "Ice Skating",
+      "description": "Chance on cast to conjure a trail of ice dealing damage over time and slowing monsters on hit."
+    },
+    {
+      "id": 10,
+      "name": "Frosted Throat",
+      "description": "Unleash multiple breaths of ice with chance to critically hit dealing increased critical strike damage."
+    },
+    {
+      "id": 11,
+      "name": "Frostbourne Winds",
+      "description": "Chance to inflict frostbite on hit."
+    },
+    {
+      "id": 12,
+      "name": "Cascading Exhale",
+      "description": "Chance to unleash additional breath of ice from target location on hit."
+    },
+    {
+      "id": 13,
+      "name": "Vacuuming Inhale",
+      "description": "Chance to pull monsters towards you on hit."
+    },
+    {
+      "id": 14,
+      "name": "Frost Charged Breath",
+      "description": "Inflict targets with a stack of frost charged on hit unleashing an avalance at maximum stacks dealing area of effect damage."
+    },
+    {
+      "id": 15,
+      "name": "Absolute Control",
+      "description": "Increases the length of breath of ice significantly inflicting strong slow and freeze on hit. "
+    }
+  ]
 }

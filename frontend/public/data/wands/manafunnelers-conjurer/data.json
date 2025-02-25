@@ -1,58 +1,58 @@
 {
-    "Item": "Manafunneler's Conjurer",
-    "Tier": "SS",
-    "Level": "82",
-    "Damage": "30.0020-40",
-    "APS": "1.501.5",
-    "DPS": "45.0030-60",
-    "Type": "Wand",
-    "TwoHanded": false,
-    "Size": "1x3",
-    "Rarity": "Heroic",
-    "Stats": [
-        {
-            "stat": "1% Chance when Casting [Manalicious] Level 1",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "+[2-3] to All Skills",
-            "class": "stat-allskills"
-        },
-        {
-            "stat": "+[0-6] to Cold Skills",
-            "class": "stat-cold"
-        },
-        {
-            "stat": "+[0-6] to Fire Skills",
-            "class": "stat-fire"
-        },
-        {
-            "stat": "+[0-6] to Lightning Skills",
-            "class": "stat-lightning"
-        },
-        {
-            "stat": "+[0-6] to Poison Skills",
-            "class": "stat-poison"
-        },
-        {
-            "stat": "+[0-6] to Arcane Skills",
-            "class": "stat-arcane"
-        },
-        {
-            "stat": "+70% Faster Cast Rate",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[20-40] to Energy",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Arcane Skill Damage increased by [20-30]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Socketed (0-1)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Manafunneler's Conjurer",
+  "Tier": "SS",
+  "Level": "82",
+  "Damage": "30.0020-40",
+  "APS": "1.501.5",
+  "DPS": "45.0030-60",
+  "Type": "Wand",
+  "TwoHanded": false,
+  "Size": "1x3",
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "1% Chance when Casting [Manalicious] Level 1",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+[2-3] to All Skills",
+      "class": "stat-allskills"
+    },
+    {
+      "stat": "+[0-6] to Cold Skills",
+      "class": "stat-cold"
+    },
+    {
+      "stat": "+[0-6] to Fire Skills",
+      "class": "stat-fire"
+    },
+    {
+      "stat": "+[0-6] to Lightning Skills",
+      "class": "stat-lightning"
+    },
+    {
+      "stat": "+[0-6] to Poison Skills",
+      "class": "stat-poison"
+    },
+    {
+      "stat": "+[0-6] to Arcane Skills",
+      "class": "stat-arcane"
+    },
+    {
+      "stat": "+70% Faster Cast Rate",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[20-40] to Energy",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Arcane Skill Damage increased by [20-30]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Socketed (0-1)",
+      "class": "stat-default"
+    }
+  ]
 }

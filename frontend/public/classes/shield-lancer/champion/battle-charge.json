@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_2_icon.webp",
-    "Image": "output/classes\\shieldlancer\\champion\\ability_2_icon.webp",
-    "Name": "Battle Charge",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 2, "y": 0 }
+  "Icon": "ability_2_icon.webp",
+  "Image": "output/classes\\shieldlancer\\champion\\ability_2_icon.webp",
+  "Name": "Battle Charge",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": {
+    "x": 2,
+    "y": 0
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Battle Charged",
+      "description": "Increases the damage dealt by battle charge."
+    },
+    {
+      "id": 3,
+      "name": "Arena Glider",
+      "description": "Increases the range of battle charge."
+    },
+    {
+      "id": 4,
+      "name": "Bulldozer",
+      "description": "Pull monsters infront of you on hit while charging impaling them when hitting terrain."
+    },
+    {
+      "id": 5,
+      "name": "Concrete Wall",
+      "description": "Increases the damage dealt by battle charge according to your armor."
+    },
+    {
+      "id": 6,
+      "name": "Rampaging Assault ",
+      "description": "Chance to knock monsters up dealing increased damage on hit."
+    },
+    {
+      "id": 7,
+      "name": "Turtle Armor",
+      "description": "Increases damage reduction for a short duration when using battle charge."
+    },
+    {
+      "id": 8,
+      "name": "Rocket Boots",
+      "description": "Increases the speed of battle charge."
+    },
+    {
+      "id": 9,
+      "name": "Shoulder Slam",
+      "description": "Chance to stun targets on hit."
+    },
+    {
+      "id": 10,
+      "name": "Call of the Fallen Heroes",
+      "description": "Call upon fallen heroes to charge by your side, dealing increased damage on a larger radius."
+    },
+    {
+      "id": 11,
+      "name": "Spear Dasher",
+      "description": "Throw lances around you as you charge."
+    },
+    {
+      "id": 12,
+      "name": "Bluntforce Trauma",
+      "description": "Increases damage dealt to stunned targets."
+    },
+    {
+      "id": 13,
+      "name": "Provoking Arrival",
+      "description": "Taunt nearby monsters at the end of your charge."
+    },
+    {
+      "id": 14,
+      "name": "Hyper Assault",
+      "description": "Charge multiple times in high speed at the target area, dealing area of effect damage damage before falling from the sky smashing the ground, knocking monsters up with increased damage."
+    },
+    {
+      "id": 15,
+      "name": "Ground Slammer",
+      "description": "As you charge through monsters, leave the ground quaking for a small duration inflicting elemental break."
+    }
+  ]
 }

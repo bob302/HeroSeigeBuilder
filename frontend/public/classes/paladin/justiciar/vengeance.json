@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_1_icon.webp",
-    "Image": "output/classes\\paladin\\justiciar\\ability_1_icon.webp",
-    "Name": "Vengeance",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 0, "y": 0 }
+  "Icon": "ability_1_icon.webp",
+  "Image": "output/classes\\paladin\\justiciar\\ability_1_icon.webp",
+  "Name": "Vengeance",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": {
+    "x": 0,
+    "y": 0
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Higher Frequency",
+      "description": "Increases attack speed when using vengeance."
+    },
+    {
+      "id": 3,
+      "name": "Uncontrolled Spike",
+      "description": "Increases the amount of lightning bolts from vengeance."
+    },
+    {
+      "id": 4,
+      "name": "Charge Release",
+      "description": "Lightning now releases pulses of lightning on hit dealing area of effect damage."
+    },
+    {
+      "id": 5,
+      "name": "Amped Amps",
+      "description": "Increases the lightning damage dealt by vengeance."
+    },
+    {
+      "id": 6,
+      "name": "Power Surge",
+      "description": "Increases the attack damage dealt by vengeance according to your strength."
+    },
+    {
+      "id": 7,
+      "name": "Recharging Strike",
+      "description": "Vengeance restores a portion of damage dealt as mana on hit."
+    },
+    {
+      "id": 8,
+      "name": "Overclock",
+      "description": "Vengeance has increased attack range. No longer requires hitting a target."
+    },
+    {
+      "id": 9,
+      "name": "Copper-plated Blade Edge",
+      "description": "Increases your attack rating when using vengeance."
+    },
+    {
+      "id": 10,
+      "name": "Self Shock",
+      "description": "Lightning bolts now inflict a portion of your total damage return as lightning damage."
+    },
+    {
+      "id": 11,
+      "name": "Direct Current",
+      "description": "Increases the length of lightning bolts."
+    },
+    {
+      "id": 12,
+      "name": "Destructive Voltage",
+      "description": "Vengeance's lightning bolts have a chance to inflict lightning break on hit."
+    },
+    {
+      "id": 13,
+      "name": "Alternative Current",
+      "description": "Vengeance's lightning bolts have a chance to zap monsters on hit dealing additional damage."
+    },
+    {
+      "id": 14,
+      "name": "Thunderbolt",
+      "description": "Strike monsters with additional bolts of thunder on hit."
+    },
+    {
+      "id": 15,
+      "name": "Electric Pillars",
+      "description": "Summon pillars of electricity to nearby monsters on hit."
+    }
+  ]
 }

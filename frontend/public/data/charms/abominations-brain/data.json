@@ -1,18 +1,18 @@
 {
-    "Item": "Abomination's Brain",
-    "Tier": "SS",
-    "Level": "84",
-    "Type": "Charm",
-    "Size": "1x1",
-    "Rarity": "Satanic Set",
-    "Stats": [
-        {
-            "stat": "+[10-20]% Increased Summon Attack Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[10-25]% Increased Summon Movement Speed",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Abomination's Brain",
+  "Tier": "SS",
+  "Level": "84",
+  "Type": "Charm",
+  "Size": "1x1",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "+[10-20]% Increased Summon Attack Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[10-25]% Increased Summon Movement Speed",
+      "class": "stat-default"
+    }
+  ]
 }

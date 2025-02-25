@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_8_icon.webp",
-    "Image": "output/classes\\pyromancer\\arsonist\\ability_8_icon.webp",
-    "Name": "Comet",
-    "Required Skill(s)": "Meteor",
-    "Required Level": "24",
-    "Position": { "x": 2, "y": 3 }
+  "Icon": "ability_8_icon.webp",
+  "Image": "output/classes\\pyromancer\\arsonist\\ability_8_icon.webp",
+  "Name": "Comet",
+  "Required Skill(s)": "Meteor",
+  "Required Level": "24",
+  "Position": {
+    "x": 2,
+    "y": 3
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Blast Radius",
+      "description": "Increases the area of effect radius of comet."
+    },
+    {
+      "id": 3,
+      "name": "Molten Rock",
+      "description": "Increases the damage dealt by comet."
+    },
+    {
+      "id": 4,
+      "name": "Fiery Shower",
+      "description": "Drop additional comets dealing increased damage."
+    },
+    {
+      "id": 5,
+      "name": "Skycaller",
+      "description": "Increases your cast rate when using comet."
+    },
+    {
+      "id": 6,
+      "name": "Comet Fragments",
+      "description": "Chance when comet hits the ground to rain down smaller comets."
+    },
+    {
+      "id": 7,
+      "name": "Molten Aftershock",
+      "description": "Chance when hitting the ground to unleash a fiery pulse dealing additional damage knocking monsters back."
+    },
+    {
+      "id": 8,
+      "name": "Shattering Impact",
+      "description": "Inflicts fire break on hit."
+    },
+    {
+      "id": 9,
+      "name": "Stunning Hit",
+      "description": "Chance on hit to stun monsters."
+    },
+    {
+      "id": 10,
+      "name": "Crushing Comet",
+      "description": "Comet now smashes the ground with force sending monsters airborne with increased damage."
+    },
+    {
+      "id": 11,
+      "name": "Cracked Terrain",
+      "description": "Increased damage dealt to stunned targets."
+    },
+    {
+      "id": 12,
+      "name": "Searing Shrapnel",
+      "description": "Comet shrapnel flies farther dealing a portion of comets damage."
+    },
+    {
+      "id": 13,
+      "name": "Flaming Terrain",
+      "description": "Chance when hitting the ground to create flames dealing a portion of comets damage over time."
+    },
+    {
+      "id": 14,
+      "name": "Molten Starfall",
+      "description": "Drop multiple comets simultaneously. Comet now has a cooldown."
+    },
+    {
+      "id": 15,
+      "name": "Bouncing Comets",
+      "description": "Drop multiple small comets bouncing forwards when landing."
+    }
+  ]
 }

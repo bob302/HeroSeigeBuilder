@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_9_icon.webp",
-    "Image": "output/classes\\shaman\\chieftain\\ability_9_icon.webp",
-    "Name": "Chaos Totem",
-    "Required Skill(s)": "Fire Totem",
-    "Required Level": "30",
-    "Position": { "x": 1, "y": 4 }
+  "Icon": "ability_9_icon.webp",
+  "Image": "output/classes\\shaman\\chieftain\\ability_9_icon.webp",
+  "Name": "Chaos Totem",
+  "Required Skill(s)": "Fire Totem",
+  "Required Level": "30",
+  "Position": {
+    "x": 1,
+    "y": 4
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Soulburning Bolts",
+      "description": "Increases damage of chaos totem."
+    },
+    {
+      "id": 3,
+      "name": "Hour of Chaos",
+      "description": "Decreases the cooldown of chaos totem."
+    },
+    {
+      "id": 4,
+      "name": "Manafunneled Chaos",
+      "description": "Chaos totem deals increased damage based on your maximum mana for each second active but drains increasing amounts of mana per second. If you run out of mana the totem despawns."
+    },
+    {
+      "id": 5,
+      "name": "Chaos Shattering",
+      "description": "Chance to inflict elemental break on hit."
+    },
+    {
+      "id": 6,
+      "name": "Doomsday Clock",
+      "description": "Increases the duration of chaos totem."
+    },
+    {
+      "id": 7,
+      "name": "Chaos Aura",
+      "description": "Monsters around the chaos totem have a chance for a chaos meteor to drop down from the sky dealing area of effect damage."
+    },
+    {
+      "id": 8,
+      "name": "Chaos Arc",
+      "description": "Chance on attack to fire multiple chaos bolts in an arc."
+    },
+    {
+      "id": 9,
+      "name": "Split Chaos",
+      "description": "Chance for chaos bolts to split into two bolts on hit."
+    },
+    {
+      "id": 10,
+      "name": "Colossal Chaos",
+      "description": "Increases the size and damage of chaos bolts."
+    },
+    {
+      "id": 11,
+      "name": "Uncontrollable Reaction",
+      "description": "Chaos totem has a chance on hit to critically strike dealing increased damage."
+    },
+    {
+      "id": 12,
+      "name": "Reach of Chaos",
+      "description": "Increases the range of chaos totem."
+    },
+    {
+      "id": 13,
+      "name": "Chaos Pulse",
+      "description": "Chance to unleash a pulse of shadow on hit inflicting burning and dealing additional damage."
+    },
+    {
+      "id": 14,
+      "name": "Chaos Embodied",
+      "description": "You can summon multiple chaos totems but you can no longer summon any other totems. Chaos totem no longer has a cooldown."
+    },
+    {
+      "id": 15,
+      "name": "Arcing Destruction",
+      "description": "Chaos totem fires multiple chaos bolts in an arc."
+    }
+  ]
 }

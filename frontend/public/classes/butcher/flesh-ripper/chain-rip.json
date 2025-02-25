@@ -1,8 +1,80 @@
 {
-    "Icon": "ability_1_icon.webp",
-    "Image": "output/classes\\butcher\\flesh-ripper\\ability_1_icon.webp",
-    "Name": "Chain Rip",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 0, "y": 0 }
+  "Icon": "ability_1_icon.webp",
+  "Image": "output/classes\\butcher\\flesh-ripper\\ability_1_icon.webp",
+  "Name": "Chain Rip",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": { "x": 0, "y": 0 },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Ranged Suffering",
+      "description": "Increases the range of chain rip."
+    },
+    {
+      "id": 3,
+      "name": "Chains of Hatred",
+      "description": "Increases the damage dealt by chain rip."
+    },
+    {
+      "id": 4,
+      "name": "Chains Attached",
+      "description": "Increases the range and damage of chain rip greatly. Cooldown is increased."
+    },
+    {
+      "id": 5,
+      "name": "Torture the Skin",
+      "description": "Chance to inflict bleeding on hit."
+    },
+    {
+      "id": 6,
+      "name": "Break the Flesh",
+      "description": "Inflicts armor break on hit."
+    },
+    {
+      "id": 7,
+      "name": "The Real Monster",
+      "description": "Replenish a portion of your maximum life and maximum mana on hit."
+    },
+    {
+      "id": 8,
+      "name": "Shift of Power",
+      "description": "Decreases monster attack rating inflicting slow on hit."
+    },
+    {
+      "id": 9,
+      "name": "Rocket Propelled Chains",
+      "description": "Increases the projectile speed of chain rip."
+    },
+    {
+      "id": 10,
+      "name": "Carcass Rip",
+      "description": "Chain rip chains into additional nearby monsters on hit pulling them towards the target."
+    },
+    {
+      "id": 11,
+      "name": "Chains Unchained",
+      "description": "Decreases the cooldown of chain rip."
+    },
+    {
+      "id": 12,
+      "name": "Rage Trance",
+      "description": "Gain increased damage reduction for a short duration when using chain rip."
+    },
+    {
+      "id": 13,
+      "name": "They Never Know What Hit Them",
+      "description": "Chance to stun targets on hit dealing increased damage to stunned targets."
+    },
+    {
+      "id": 14,
+      "name": "Chainfueled Hunting",
+      "description": "Rapidly throw multiple piercing chains in a cone towards target location dealing increased damage. Chain rip no longer pulls enemies."
+    },
+    {
+      "id": 15,
+      "name": "Prey on the Weak",
+      "description": "Chain rip stuns targets on hit buffing your and nearby allies damage to stunned targets for a short duration."
+    }
+  ]
 }

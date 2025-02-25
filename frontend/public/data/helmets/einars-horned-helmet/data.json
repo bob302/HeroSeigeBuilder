@@ -1,31 +1,31 @@
 {
-    "Item": "Einar's Horned Helmet",
-    "Tier": "A",
-    "Level": "57",
-    "Defense": "99.9076-125",
-    "Type": "Helmet",
-    "Size": "2x2",
-    "Rarity": "Satanic Set",
-    "Stats": [
-        {
-            "stat": "+[80-130]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[50-75] to Attack Rating",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[2-4]% Life stolen per Hit",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[20-25]% to Cold Resistance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Socketed (2)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Einar's Horned Helmet",
+  "Tier": "A",
+  "Level": "57",
+  "Defense": "99.9076-125",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "+[80-130]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[50-75] to Attack Rating",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[2-4]% Life stolen per Hit",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[20-25]% to Cold Resistance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Socketed (2)",
+      "class": "stat-default"
+    }
+  ]
 }

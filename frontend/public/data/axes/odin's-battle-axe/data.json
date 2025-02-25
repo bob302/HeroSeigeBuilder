@@ -1,46 +1,46 @@
 {
-    "Item": "Odin's Battle Axe",
-    "Tier": "S",
-    "Level": "82",
-    "Damage": "442.95414-472",
-    "APS": "1.201.2",
-    "DPS": "532.00497-567",
-    "Type": "Axe",
-    "TwoHanded": true,
-    "Size": "2x4",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "8% Chance when Striking [Shockwave] Level 17",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "+[275-305]% Enhanced Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[1250-1475] to Additive Physical Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+30% Magic Find (Based on Level)",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+200% Enhanced Damage (Based on Level)",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+100 to Vitality (Based on Level)",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Attacks can hit multiple enemies",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Socketed (1-3)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Odin's Battle Axe",
+  "Tier": "S",
+  "Level": "82",
+  "Damage": "442.95414-472",
+  "APS": "1.201.2",
+  "DPS": "532.00497-567",
+  "Type": "Axe",
+  "TwoHanded": true,
+  "Size": "2x4",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "8% Chance when Striking [Shockwave] Level 17",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+[275-305]% Enhanced Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[1250-1475] to Additive Physical Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+30% Magic Find (Based on Level)",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+200% Enhanced Damage (Based on Level)",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+100 to Vitality (Based on Level)",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Attacks can hit multiple enemies",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Socketed (1-3)",
+      "class": "stat-default"
+    }
+  ]
 }

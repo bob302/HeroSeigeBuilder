@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_3_icon.webp",
-    "Image": "output/classes\\whitemage\\divine-being\\ability_3_icon.webp",
-    "Name": "Burst of Light",
-    "Required Skill(s)": "Heavenly Fire",
-    "Required Level": "8",
-    "Position": { "x": 0, "y": 1 }
+  "Icon": "ability_3_icon.webp",
+  "Image": "output/classes\\whitemage\\divine-being\\ability_3_icon.webp",
+  "Name": "Burst of Light",
+  "Required Skill(s)": "Heavenly Fire",
+  "Required Level": "8",
+  "Position": {
+    "x": 0,
+    "y": 1
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Manabinded Cast",
+      "description": "Chance to smite monsters with a pillar of searing light on hit dealing additional damage according to your energy."
+    },
+    {
+      "id": 3,
+      "name": "Solar Infusion",
+      "description": "Increases damage dealt by burst of light."
+    },
+    {
+      "id": 4,
+      "name": "Holy Beam",
+      "description": "Unleash multiple bursts of light in an arc on hit."
+    },
+    {
+      "id": 5,
+      "name": "Piercing Ray",
+      "description": "Chance to inflict arcane break on hit."
+    },
+    {
+      "id": 6,
+      "name": "Heaven's Brightness",
+      "description": "Chance to replenish a portion of your maximum mana on hit."
+    },
+    {
+      "id": 7,
+      "name": "Total Illumination",
+      "description": "Chance on cast to unleash additional bursts in an arc."
+    },
+    {
+      "id": 8,
+      "name": "Forking Glare",
+      "description": "Chance to unleash an additional burst of light from a nearby monster on hit."
+    },
+    {
+      "id": 9,
+      "name": "Lens Flare",
+      "description": "Increases the range of burst of light."
+    },
+    {
+      "id": 10,
+      "name": "Light Within",
+      "description": "Burst of light unleashes as a nova of light around you with increased area of effect radius and dealing increased damage."
+    },
+    {
+      "id": 11,
+      "name": "Light Orb",
+      "description": "Chance on cast to unleash an orb of light briefly bursting into a burst of light."
+    },
+    {
+      "id": 12,
+      "name": "Blazing Light",
+      "description": "Increases damage dealt to burning targets."
+    },
+    {
+      "id": 13,
+      "name": "Blinding Light",
+      "description": "Chance to inflict stun and deal damage for a portion of target's missing life on hit."
+    },
+    {
+      "id": 14,
+      "name": "Burning Smite",
+      "description": "Unleash burst of light with increased size leaving the ground burning and inflicting slow on hit."
+    },
+    {
+      "id": 15,
+      "name": "Purification",
+      "description": "Inflict monsters with a stack of purification on hit increasing the damage dealt by burst of light."
+    }
+  ]
 }

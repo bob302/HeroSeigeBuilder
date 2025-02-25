@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_4_icon.webp",
-    "Image": "output/classes\\amazon\\huntress\\ability_4_icon.webp",
-    "Name": "Caustic Spearhead",
-    "Required Skill(s)": "Noxious Strike",
-    "Required Level": "8",
-    "Position": { "x": 2, "y": 1 }
+  "Icon": "ability_4_icon.webp",
+  "Image": "output/classes\\amazon\\huntress\\ability_4_icon.webp",
+  "Name": "Caustic Spearhead",
+  "Required Skill(s)": "Noxious Strike",
+  "Required Level": "8",
+  "Position": {
+    "x": 2,
+    "y": 1
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Stocked Quiver",
+      "description": "Increases projectile amount."
+    },
+    {
+      "id": 3,
+      "name": "Caustic Liquid",
+      "description": "Increases poisoned damage inflicted by caustic spearhead."
+    },
+    {
+      "id": 4,
+      "name": "Caustic Arc",
+      "description": "Split spearheads into multiple arrows in a circle around the target on hit."
+    },
+    {
+      "id": 5,
+      "name": "Fierce Spearheads",
+      "description": "Increases damage dealt by caustic spearhead."
+    },
+    {
+      "id": 6,
+      "name": "Venomous Touch",
+      "description": "Inflicts the target with stacks of venom on hit increasing damage dealt by poisoned."
+    },
+    {
+      "id": 7,
+      "name": "Splintering Arrows",
+      "description": "Spearheads have a chance to fork on hit with increased damage."
+    },
+    {
+      "id": 8,
+      "name": "Tribal Hunter's Aim",
+      "description": "Increases attack rating when using caustic spearhead."
+    },
+    {
+      "id": 9,
+      "name": "Rapid Arrows",
+      "description": "Increases projectile speed."
+    },
+    {
+      "id": 10,
+      "name": "Venomous Burst",
+      "description": "Whenever a monster reaches maximum stacks of venom it unleashes a burst of poison dealing the full damage of venom consuming it."
+    },
+    {
+      "id": 11,
+      "name": "Additional Venom",
+      "description": "Chance to inflict poison break on hit."
+    },
+    {
+      "id": 12,
+      "name": "Arrow Wound",
+      "description": "Chance for spearheads to get stuck on enemies dealing damage over time for a short period."
+    },
+    {
+      "id": 13,
+      "name": "Erupting Spearheads",
+      "description": "Chance for spearheads to explode on hit dealing increased damage with increased area of effect radius."
+    },
+    {
+      "id": 14,
+      "name": "Caustic Rampage",
+      "description": "Fire additional smaller spearheads in a tighter spread increasing chance of dealing critical strikes and dealing increased critical strike damage."
+    },
+    {
+      "id": 15,
+      "name": "Toxic Spores",
+      "description": "Caustic spearhead leaves spores behind seeking nearby monsters and exploding on hit dealing additional damage and inflicting poisoned."
+    }
+  ]
 }

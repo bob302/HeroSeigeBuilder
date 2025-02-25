@@ -1,27 +1,27 @@
 {
-    "Item": "Viking's Sacred Helmet",
-    "Tier": "A",
-    "Level": "54",
-    "Defense": "99.9076-125",
-    "Type": "Helmet",
-    "Size": "2x2",
-    "Rarity": "Satanic Set",
-    "Stats": [
-        {
-            "stat": "+[80-130]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+1 to All Skills",
-            "class": "stat-allskills"
-        },
-        {
-            "stat": "+[2-5] to All Attributes",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Replenish Life 15%",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Viking's Sacred Helmet",
+  "Tier": "A",
+  "Level": "54",
+  "Defense": "99.9076-125",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "+[80-130]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+1 to All Skills",
+      "class": "stat-allskills"
+    },
+    {
+      "stat": "+[2-5] to All Attributes",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Replenish Life 15%",
+      "class": "stat-default"
+    }
+  ]
 }

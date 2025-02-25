@@ -1,46 +1,46 @@
 {
-    "Item": "Warbringer",
-    "Tier": "C",
-    "Level": "28",
-    "Damage": "93.0072-114",
-    "APS": "2.262.12-2.4",
-    "DPS": "213.50153-274",
-    "Type": "Gun",
-    "TwoHanded": false,
-    "Size": "2x2",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "25% Chance when Attacking [Trigger Finger] Level 8",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "+[350-470]% Enhanced Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[15-30]% Increased Attack Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[10-20]% Increased Critical Strike Chance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+35% Chance for a Crushing Blow",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+90 to Attack Rating",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[4-8]% Life stolen per Hit",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Socketed (0-2)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Warbringer",
+  "Tier": "C",
+  "Level": "28",
+  "Damage": "93.0072-114",
+  "APS": "2.262.12-2.4",
+  "DPS": "213.50153-274",
+  "Type": "Gun",
+  "TwoHanded": false,
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "25% Chance when Attacking [Trigger Finger] Level 8",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+[350-470]% Enhanced Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[15-30]% Increased Attack Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[10-20]% Increased Critical Strike Chance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+35% Chance for a Crushing Blow",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+90 to Attack Rating",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[4-8]% Life stolen per Hit",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Socketed (0-2)",
+      "class": "stat-default"
+    }
+  ]
 }

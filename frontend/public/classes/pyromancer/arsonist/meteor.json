@@ -1,8 +1,8 @@
 {
-    "Icon": "ability_6_icon.webp",
-    "Image": "output/classes\\pyromancer\\arsonist\\ability_6_icon.webp",
-    "Name": "Meteor",
-    "Required Skill(s)": "Fireball",
-    "Required Level": "16",
-    "Position": { "x": 2, "y": 2 }
+  "Icon": "ability_6_icon.webp",
+  "Image": "output/classes\\pyromancer\\arsonist\\ability_6_icon.webp",
+  "Name": "Meteor",
+  "Required Skill(s)": "Fireball",
+  "Required Level": "16",
+  "Position": { "x": 2, "y": 2 }
 }

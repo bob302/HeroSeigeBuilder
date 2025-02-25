@@ -1,43 +1,43 @@
 {
-    "Item": "Nikita's KJ-33 Helmet",
-    "Tier": "SS",
-    "Level": "94",
-    "Defense": "206.75175-239",
-    "Type": "Helmet",
-    "Size": "2x2",
-    "Rarity": "Heroic",
-    "Stats": [
-        {
-            "stat": "+[150-165]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[1-2] to All Skills",
-            "class": "stat-allskills"
-        },
-        {
-            "stat": "+3 to Physical Skills",
-            "class": "stat-physical"
-        },
-        {
-            "stat": "+40% Chance for a Deadly Blow",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[25-35]% Increased Attack Rating",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[8-13]% Life stolen per Hit",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[20-30]% of target Defense ignored",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Attack Damage increased by [25-50]%",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Nikita's KJ-33 Helmet",
+  "Tier": "SS",
+  "Level": "94",
+  "Defense": "206.75175-239",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "+[150-165]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[1-2] to All Skills",
+      "class": "stat-allskills"
+    },
+    {
+      "stat": "+3 to Physical Skills",
+      "class": "stat-physical"
+    },
+    {
+      "stat": "+40% Chance for a Deadly Blow",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[25-35]% Increased Attack Rating",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[8-13]% Life stolen per Hit",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[20-30]% of target Defense ignored",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Attack Damage increased by [25-50]%",
+      "class": "stat-default"
+    }
+  ]
 }

@@ -1,35 +1,35 @@
 {
-    "Item": "Traveler's Double Belt",
-    "Tier": "S",
-    "Level": "77",
-    "Defense": "84.8068-102",
-        "Type": "Belt",
-    "Size": "2x1",
-    "Rarity": "Satanic Set",
-    "Stats": [
-        {
-            "stat": "+[30-50]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+25 to Strength",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[25-35] to Dexterity",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[10-20] to All Attributes",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[40-50]% to Arcane Resistance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Belt Slots: 5",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Traveler's Double Belt",
+  "Tier": "S",
+  "Level": "77",
+  "Defense": "84.8068-102",
+  "Type": "Belt",
+  "Size": "2x1",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "+[30-50]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+25 to Strength",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[25-35] to Dexterity",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[10-20] to All Attributes",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[40-50]% to Arcane Resistance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Belt Slots: 5",
+      "class": "stat-default"
+    }
+  ]
 }

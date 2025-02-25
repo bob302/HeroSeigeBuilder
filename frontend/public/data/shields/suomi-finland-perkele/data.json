@@ -1,40 +1,40 @@
 {
-    "Item": "SUOMI FINLAND PERKELE",
-    "Tier": "S",
-    "Level": "92",
-    "Defense": "240.00200-280",
-    "Block": "50",
-    "Type": "Shield",
-    "Size": "2x3",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[150-180]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[2-3] to All Skills",
-            "class": "stat-allskills"
-        },
-        {
-            "stat": "+50% Faster Cast Rate",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+20 to Energy",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+12 to Vitality",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+35% to All Resistances",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Socketed (4)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "SUOMI FINLAND PERKELE",
+  "Tier": "S",
+  "Level": "92",
+  "Defense": "240.00200-280",
+  "Block": "50",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[150-180]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[2-3] to All Skills",
+      "class": "stat-allskills"
+    },
+    {
+      "stat": "+50% Faster Cast Rate",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+20 to Energy",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+12 to Vitality",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+35% to All Resistances",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Socketed (4)",
+      "class": "stat-default"
+    }
+  ]
 }

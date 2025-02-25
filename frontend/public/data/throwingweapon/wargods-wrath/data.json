@@ -1,42 +1,42 @@
 {
-    "Item": "Wargod's Wrath",
-    "Tier": "A",
-    "Level": "57",
-    "Damage": "174.00154-195",
-    "APS": "1.501.5",
-    "DPS": "261.50231-292",
-    "Type": "Throwing Weapon",
-    "TwoHanded": false,
-    "Size": "2x2",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[280-340]% Enhanced Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[7-15]% Increased Attack Rating",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+430 to Attack Rating",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[30-40] to Strength",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+125 to Life (Based on Level)",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+100% Enhanced Damage (Based on Level)",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+300 to Damage (Based on Level)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Wargod's Wrath",
+  "Tier": "A",
+  "Level": "57",
+  "Damage": "174.00154-195",
+  "APS": "1.501.5",
+  "DPS": "261.50231-292",
+  "Type": "Throwing Weapon",
+  "TwoHanded": false,
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[280-340]% Enhanced Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[7-15]% Increased Attack Rating",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+430 to Attack Rating",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[30-40] to Strength",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+125 to Life (Based on Level)",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+100% Enhanced Damage (Based on Level)",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+300 to Damage (Based on Level)",
+      "class": "stat-default"
+    }
+  ]
 }

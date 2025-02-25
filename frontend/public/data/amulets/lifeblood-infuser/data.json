@@ -1,26 +1,26 @@
 {
-    "Item": "Lifeblood Infuser",
-    "Tier": "D",
-    "Level": "11",
-    "Type": "Amulet",
-    "Size": "1x2",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[2-4]% Mana stolen per Hit",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+15 to Strength",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[15-35] to Life",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+4 Mana After each Kill",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Lifeblood Infuser",
+  "Tier": "D",
+  "Level": "11",
+  "Type": "Amulet",
+  "Size": "1x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[2-4]% Mana stolen per Hit",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+15 to Strength",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[15-35] to Life",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+4 Mana After each Kill",
+      "class": "stat-default"
+    }
+  ]
 }

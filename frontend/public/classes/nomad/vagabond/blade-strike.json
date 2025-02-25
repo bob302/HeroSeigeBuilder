@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_1_icon.webp",
-    "Image": "output/classes\\nomad\\vagabond\\ability_1_icon.webp",
-    "Name": "Blade Strike",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 0, "y": 0 }
+  "Icon": "ability_1_icon.webp",
+  "Image": "output/classes\\nomad\\vagabond\\ability_1_icon.webp",
+  "Name": "Blade Strike",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": {
+    "x": 0,
+    "y": 0
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Ferocious Swipe",
+      "description": "Increases critical strike chance when using blade strike."
+    },
+    {
+      "id": 3,
+      "name": "Blade's Edge",
+      "description": "Increases critical strike damage when using blade strike."
+    },
+    {
+      "id": 4,
+      "name": "Skewering Blades",
+      "description": "Unleash flying blades on monster hit dealing area of effect damage and inflict bleeding."
+    },
+    {
+      "id": 5,
+      "name": "Lethal Swing",
+      "description": "Increases damage dealt by blade strike."
+    },
+    {
+      "id": 6,
+      "name": "Blade Master",
+      "description": "Increases attack rating when using blade strike."
+    },
+    {
+      "id": 7,
+      "name": "Gut Slicer",
+      "description": "Inflicts armor break on hit."
+    },
+    {
+      "id": 8,
+      "name": "Catch Up Blade",
+      "description": "Chance on attack to throw your weapon with force dealing additional damage and bouncing from terrain. "
+    },
+    {
+      "id": 9,
+      "name": "Cleaving Slash",
+      "description": "Increases the area of effect of blade strike."
+    },
+    {
+      "id": 10,
+      "name": "Giant Slayer",
+      "description": "Critical strike damage by blade strike is increased based on your vitality."
+    },
+    {
+      "id": 11,
+      "name": "Agile Striker",
+      "description": "Chance on attack to strike additional times."
+    },
+    {
+      "id": 12,
+      "name": "Bounty Hunting",
+      "description": "Chance on hit to increase your strength for a short period of time."
+    },
+    {
+      "id": 13,
+      "name": "Tribal Commander",
+      "description": "Gain a portion of your strength as all attributes."
+    },
+    {
+      "id": 14,
+      "name": "Brutalizing Cleave",
+      "description": "Gain increased attack range and damage slightly knocking enemies back stunning them."
+    },
+    {
+      "id": 15,
+      "name": "Stacked Blade",
+      "description": "Striking a monster applies a debuff which when reaching max stacks will unleash multiple blades dealing additional damage and bouncing from terrain."
+    }
+  ]
 }

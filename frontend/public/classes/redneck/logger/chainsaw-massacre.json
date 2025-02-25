@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_4_icon.webp",
-    "Image": "output/classes\\redneck\\logger\\ability_4_icon.webp",
-    "Name": "Chainsaw Massacre",
-    "Required Skill(s)": "Chainsaw Slash",
-    "Required Level": "8",
-    "Position": { "x": 2, "y": 1 }
+  "Icon": "ability_4_icon.webp",
+  "Image": "output/classes\\redneck\\logger\\ability_4_icon.webp",
+  "Name": "Chainsaw Massacre",
+  "Required Skill(s)": "Chainsaw Slash",
+  "Required Level": "8",
+  "Position": {
+    "x": 2,
+    "y": 1
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Wielding The Saw",
+      "description": "Increases the damage dealt by chainsaw massacre while you are wielding a chainsaw."
+    },
+    {
+      "id": 3,
+      "name": "Saw Through The Woods",
+      "description": "Increases the area of effect radius of chainsaw massacre."
+    },
+    {
+      "id": 4,
+      "name": "Logger's Lil Helpers",
+      "description": "Additionally summons multiple chainsaws that spin around you at different speeds while chainsaw massacre is active."
+    },
+    {
+      "id": 5,
+      "name": "Sawing Execution",
+      "description": "Chainsaw massacre now executes targets below a certain percentage of life."
+    },
+    {
+      "id": 6,
+      "name": "Final Stand",
+      "description": "Increases damage dealt by chainsaw massacre's ending whirl."
+    },
+    {
+      "id": 7,
+      "name": "Optimal Working Hours",
+      "description": "Decreases duration but increases damage dealt each second spent spinning."
+    },
+    {
+      "id": 8,
+      "name": "Overtime",
+      "description": "Increases the duration of chainsaw massacre."
+    },
+    {
+      "id": 9,
+      "name": "Critical Wounding",
+      "description": "Inflicts bleeding on hit."
+    },
+    {
+      "id": 10,
+      "name": "Woodcutter's Expertise",
+      "description": "Gain absolute control of the spinning dealing increased damage and inflict bleeding on hit."
+    },
+    {
+      "id": 11,
+      "name": "Resilient Sustain",
+      "description": "Increases your life steal and mana steal while spinning."
+    },
+    {
+      "id": 12,
+      "name": "Logging Machine",
+      "description": "Increases spinning speed of chainsaw massacre."
+    },
+    {
+      "id": 13,
+      "name": "Calling in Sick",
+      "description": "Decreases the duration of chainsaw massacre."
+    },
+    {
+      "id": 14,
+      "name": "Raging Sawblades",
+      "description": "Perform the ending whirl frequently while spinning."
+    },
+    {
+      "id": 15,
+      "name": "Standstill Focus",
+      "description": "Spin in place dealing increased damage. Each kill increases the area of effect radius of chainsaw massacre."
+    }
+  ]
 }

@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_2_icon.webp",
-    "Image": "output/classes\\marksman\\engineer\\ability_2_icon.webp",
-    "Name": "Arrow Turret",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 1, "y": 0 }
+  "Icon": "ability_2_icon.webp",
+  "Image": "output/classes\\marksman\\engineer\\ability_2_icon.webp",
+  "Name": "Arrow Turret",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": {
+    "x": 1,
+    "y": 0
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Burstshot",
+      "description": "Chance on attack for arrow turret to fire twice."
+    },
+    {
+      "id": 3,
+      "name": "Deadshot",
+      "description": "Chance to critically hit with increased critical damage."
+    },
+    {
+      "id": 4,
+      "name": "Colossalshot",
+      "description": "Arrow turret projectile is changed into a giant piercing arrow that deals increased damage based on the projectile amount scaling."
+    },
+    {
+      "id": 5,
+      "name": "Arrow Turrets",
+      "description": "Increases the maximum amount of arrow turrets."
+    },
+    {
+      "id": 6,
+      "name": "Stuttershot",
+      "description": "Chance on hit to knock monsters back dealing increased damage."
+    },
+    {
+      "id": 7,
+      "name": "Freezing Shot",
+      "description": "Chance to inflict freeze on hit dealing additional damage."
+    },
+    {
+      "id": 8,
+      "name": "Multishot",
+      "description": "Turrets fire additional projectiles in an arc."
+    },
+    {
+      "id": 9,
+      "name": "High Velocity",
+      "description": "Increases the projectile speed of arrow turret."
+    },
+    {
+      "id": 10,
+      "name": "This is My Design",
+      "description": "Now spawn a single arrow turret that fires towards all nearby monsters. Arrow turret now has a cooldown."
+    },
+    {
+      "id": 11,
+      "name": "Explosive Technician",
+      "description": "Increases the explosion area of effect radius."
+    },
+    {
+      "id": 12,
+      "name": "Exploding Arrowhead",
+      "description": "Projectiles now stick an explosive to the target on hit that explodes dealing additional damage after a short delay."
+    },
+    {
+      "id": 13,
+      "name": "Hypothermic Impact",
+      "description": "Increases damage dealt to freezing targets."
+    },
+    {
+      "id": 14,
+      "name": "Cyclone Turret",
+      "description": "Arrow turret now moves forward spinning rapidly firing projectiles in all directions for a much shorter duration and eventually explodes dealing damage on a large radius."
+    },
+    {
+      "id": 15,
+      "name": "Piercing Arrowheads",
+      "description": "Arrow turret now fires piercing projectiles knocking back monsters dealing increased damage."
+    }
+  ]
 }

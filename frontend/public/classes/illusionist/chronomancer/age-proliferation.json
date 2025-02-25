@@ -1,8 +1,80 @@
 {
-    "Icon": "ability_1_icon.webp",
-    "Image": "output/classes\\illusionist\\ability_1_icon.webp",
-    "Name": "Age Proliferation",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 0, "y": 0 }
+  "Icon": "ability_1_icon.webp",
+  "Image": "output/classes\\illusionist\\ability_1_icon.webp",
+  "Name": "Age Proliferation",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": { "x": 0, "y": 0 },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Ancient Magic",
+      "description": "Increases the damage dealt by age proliferation."
+    },
+    {
+      "id": 3,
+      "name": "Eons Ago",
+      "description": "Increases the duration of age proliferation."
+    },
+    {
+      "id": 4,
+      "name": "Growing Old",
+      "description": "Age proliferation grows in size and deals increased damage with every pulse."
+    },
+    {
+      "id": 5,
+      "name": "Bridge Between Reality",
+      "description": "Increases the range of age proliferation."
+    },
+    {
+      "id": 6,
+      "name": "Restoring Proliferation",
+      "description": "Chance to restore a portion of your maximum mana on hit."
+    },
+    {
+      "id": 7,
+      "name": "Breaking The Cycle",
+      "description": "Chance to inflict arcane break on hit."
+    },
+    {
+      "id": 8,
+      "name": "Effortless Path",
+      "description": "Decreases movement diminish with age proliferation."
+    },
+    {
+      "id": 9,
+      "name": "Additional Faith",
+      "description": "Chance on cast to unleash an additional beam on a nearby monster."
+    },
+    {
+      "id": 10,
+      "name": "Scorching Magic",
+      "description": "Age proliferation now unleashes scorching fire balls towards monsters on hit inflicting burning and slowing them."
+    },
+    {
+      "id": 11,
+      "name": "Rapid Aging",
+      "description": "Chance to critically hit dealing increased critical strike damage."
+    },
+    {
+      "id": 12,
+      "name": "Burning Aging",
+      "description": "Chance to inflict shadow burning on hit."
+    },
+    {
+      "id": 13,
+      "name": "Centuries Within Seconds",
+      "description": "Increases the tick frequency of age proliferation."
+    },
+    {
+      "id": 14,
+      "name": "Age Multiliferation",
+      "description": "Unleash age proliferation at multiple nearby monsters splitting the damage between beams."
+    },
+    {
+      "id": 15,
+      "name": "Arcane Echo",
+      "description": "Summon an arcane echo of your self casting age proliferation at nearby targets. Age proliferation now has a cooldown."
+    }
+  ]
 }

@@ -1,14 +1,14 @@
 {
-    "Item": "Champion's Signet",
-    "Tier": "S",
-    "Level": "73",
-    "Type": "Charm",
-    "Size": "2x2",
-    "Rarity": "Satanic Set",
-    "Stats": [
-        {
-            "stat": "+[1-3] to Random Skill",
-            "class": "stat-spell"
-        }
-    ]
+  "Item": "Champion's Signet",
+  "Tier": "S",
+  "Level": "73",
+  "Type": "Charm",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "+[1-3] to Random Skill",
+      "class": "stat-spell"
+    }
+  ]
 }

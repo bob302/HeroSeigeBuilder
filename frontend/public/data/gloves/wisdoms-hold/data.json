@@ -1,35 +1,35 @@
 {
-    "Item": "Wisdom's Hold",
-    "Tier": "S",
-    "Level": "78",
-    "Defense": "37.1029-46",
-    "Type": "Gloves",
-    "Size": "2x2",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[10-20]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[1-2] to All Skills",
-            "class": "stat-allskills"
-        },
-        {
-            "stat": "+[15-25]% Faster Cast Rate",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+10 to Intelligence",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Replenish Mana 10%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[35-50] to Mana",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Wisdom's Hold",
+  "Tier": "S",
+  "Level": "78",
+  "Defense": "37.1029-46",
+  "Type": "Gloves",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[10-20]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[1-2] to All Skills",
+      "class": "stat-allskills"
+    },
+    {
+      "stat": "+[15-25]% Faster Cast Rate",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+10 to Intelligence",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Replenish Mana 10%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[35-50] to Mana",
+      "class": "stat-default"
+    }
+  ]
 }

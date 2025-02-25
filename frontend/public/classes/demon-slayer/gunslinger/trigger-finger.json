@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_2_icon.webp",
-    "Image": "output/classes\\demonslayer\\gunslinger\\ability_2_icon.webp",
-    "Name": "Trigger Finger",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 1, "y": 0 }
+  "Icon": "ability_2_icon.webp",
+  "Image": "output/classes\\demonslayer\\gunslinger\\ability_2_icon.webp",
+  "Name": "Trigger Finger",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": {
+    "x": 1,
+    "y": 0
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Slick Fingers",
+      "description": "Increases attack rating when using trigger finger."
+    },
+    {
+      "id": 3,
+      "name": "Triggerheavy",
+      "description": "Increases damage dealt by trigger finger."
+    },
+    {
+      "id": 4,
+      "name": "Piercing Mayhem",
+      "description": "Projectiles now pierce and bounce off of terrain dealing increased damage."
+    },
+    {
+      "id": 5,
+      "name": "Gunslinging Slayer",
+      "description": "Increases the amount of projectiles fired by trigger finger."
+    },
+    {
+      "id": 6,
+      "name": "Rapid Gunslinger",
+      "description": "Increases projectile speed."
+    },
+    {
+      "id": 7,
+      "name": "Burning Bullethole",
+      "description": "Chance to inflict burning on hit."
+    },
+    {
+      "id": 8,
+      "name": "Executing Gunshot",
+      "description": "Execute low life monsters."
+    },
+    {
+      "id": 9,
+      "name": "Bullet Fragmentation",
+      "description": "Chance to fragment bullets on hit causing pieces to ricochet around the target."
+    },
+    {
+      "id": 10,
+      "name": "Shredder Slugs",
+      "description": "Fire small shredders dealing damage over time and inflicting bleeding. The shredders projectile speed slows down on impact."
+    },
+    {
+      "id": 11,
+      "name": "Brand New Cavity",
+      "description": "Chance to inflict armor break on hit."
+    },
+    {
+      "id": 12,
+      "name": "Supersonic Bullets",
+      "description": "Increases critical strike damage when using trigger finger."
+    },
+    {
+      "id": 13,
+      "name": "Gasoline Covered Ammunition",
+      "description": "Increases damage dealt to burning targets."
+    },
+    {
+      "id": 14,
+      "name": "Fingertapped Killshot",
+      "description": "Fire a single projectile with significantly increased range and power dealing multiplied damage. Trigger Finger now has a small cooldown."
+    },
+    {
+      "id": 15,
+      "name": "It's Raining Bullets",
+      "description": "Fire a burst of projectiles traveling through air and landing on the target location dealing area of effect damage."
+    }
+  ]
 }

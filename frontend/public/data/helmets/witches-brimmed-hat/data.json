@@ -1,31 +1,31 @@
 {
-    "Item": "Witches Brimmed Hat",
-    "Tier": "S",
-    "Level": "86",
-    "Defense": "142.00108-176",
-    "Type": "Helmet",
-    "Size": "2x2",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[80-120]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[2-3] to All Skills",
-            "class": "stat-allskills"
-        },
-        {
-            "stat": "Arcane Skill Damage increased by [10-20]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "-[7-15]% to Enemy Arcane Resistance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+30% to Arcane Resistance",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Witches Brimmed Hat",
+  "Tier": "S",
+  "Level": "86",
+  "Defense": "142.00108-176",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[80-120]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[2-3] to All Skills",
+      "class": "stat-allskills"
+    },
+    {
+      "stat": "Arcane Skill Damage increased by [10-20]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "-[7-15]% to Enemy Arcane Resistance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+30% to Arcane Resistance",
+      "class": "stat-default"
+    }
+  ]
 }

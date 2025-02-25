@@ -1,22 +1,22 @@
 {
-    "Item": "Stone of Archaeology",
-    "Tier": "B",
-    "Level": "34",
-    "Type": "Amulet",
-    "Size": "1x2",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[10-20]% Increased Movement Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[8-15]% Extra Gold Dropped From Kills",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[10-15]% Increased Magic Find",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Stone of Archaeology",
+  "Tier": "B",
+  "Level": "34",
+  "Type": "Amulet",
+  "Size": "1x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[10-20]% Increased Movement Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[8-15]% Extra Gold Dropped From Kills",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[10-15]% Increased Magic Find",
+      "class": "stat-default"
+    }
+  ]
 }

@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_7_icon.webp",
-    "Image": "output/classes\\paladin\\justiciar\\ability_7_icon.webp",
-    "Name": "Lightning Fury",
-    "Required Skill(s)": "Divine Storm",
-    "Required Level": "24",
-    "Position": { "x": 0, "y": 3 }
+  "Icon": "ability_7_icon.webp",
+  "Image": "output/classes\\paladin\\justiciar\\ability_7_icon.webp",
+  "Name": "Lightning Fury",
+  "Required Skill(s)": "Divine Storm",
+  "Required Level": "24",
+  "Position": {
+    "x": 0,
+    "y": 3
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Lightning Stasis",
+      "description": "Increases the amount of bounces."
+    },
+    {
+      "id": 3,
+      "name": "Retribution",
+      "description": "Increases damage dealt by lightning fury based on your strength."
+    },
+    {
+      "id": 4,
+      "name": "Storm Surge",
+      "description": "Unleash a wide surge of lightning on hit with increased area of effect and dealing additional damage."
+    },
+    {
+      "id": 5,
+      "name": "Million Volt Charge",
+      "description": "Increases lightning damage dealt by lightning fury."
+    },
+    {
+      "id": 6,
+      "name": "Crackling Thunder",
+      "description": "Chance to inflict lightning break on hit."
+    },
+    {
+      "id": 7,
+      "name": "Breaking Soundbarrier",
+      "description": "Chance on attack to increase the amount of bounces."
+    },
+    {
+      "id": 8,
+      "name": "Electro Pulse",
+      "description": "Chance on chain lightning hit to unleash electric pulses dealing area of effect damage."
+    },
+    {
+      "id": 9,
+      "name": "Forking Bolt",
+      "description": "Chance on hit to fork into an additional chain lightning."
+    },
+    {
+      "id": 10,
+      "name": "Fury Within",
+      "description": "Lightning fury now triggers without hitting enemies increasing its range and damage."
+    },
+    {
+      "id": 11,
+      "name": "Low Resistance",
+      "description": "Increases attack speed when using lightning fury."
+    },
+    {
+      "id": 12,
+      "name": "Double Conduit",
+      "description": "Chance to call down bolts of thunder on hit dealing additional damage."
+    },
+    {
+      "id": 13,
+      "name": "Maximize Fury",
+      "description": "Increases spell critical chance and damage when using lightning."
+    },
+    {
+      "id": 14,
+      "name": "Concentrated Fury",
+      "description": "Summon an orb of lightning orbiting you and zapping nearby monsters."
+    },
+    {
+      "id": 15,
+      "name": "Ionizing Fury",
+      "description": "Chance on hit to halve the damage but double the amount of bounces and inflicting stasis."
+    }
+  ]
 }

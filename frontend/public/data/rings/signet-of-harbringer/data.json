@@ -1,26 +1,26 @@
 {
-    "Item": "Signet of Harbringer",
-    "Tier": "SS",
-    "Level": "100",
-    "Type": "Ring",
-    "Size": "1x1",
-    "Rarity": "Heroic",
-    "Stats": [
-        {
-            "stat": "+[3-5] to Cold Skills",
-            "class": "stat-cold"
-        },
-        {
-            "stat": "Cold Skill Damage increased by [25-40]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "-[15-25]% to Enemy Cold Resistance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[5-10]% Cold Damage Absorbed",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Signet of Harbringer",
+  "Tier": "SS",
+  "Level": "100",
+  "Type": "Ring",
+  "Size": "1x1",
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "+[3-5] to Cold Skills",
+      "class": "stat-cold"
+    },
+    {
+      "stat": "Cold Skill Damage increased by [25-40]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "-[15-25]% to Enemy Cold Resistance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[5-10]% Cold Damage Absorbed",
+      "class": "stat-default"
+    }
+  ]
 }

@@ -1,8 +1,80 @@
 {
-    "Icon": "ability_2_icon.webp",
-    "Image": "output/classes\\butcher\\face-of-duality\\ability_2_icon.webp",
-    "Name": "Furious Strike",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 2, "y": 0 }
+  "Icon": "ability_2_icon.webp",
+  "Image": "output/classes\\butcher\\face-of-duality\\ability_2_icon.webp",
+  "Name": "Furious Strike",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": { "x": 2, "y": 0 },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Wide Spread Epidemic",
+      "description": "Increases the power of rabies from furious strike."
+    },
+    {
+      "id": 3,
+      "name": "Down with Sickness",
+      "description": "Chance to inflict poison on hit."
+    },
+    {
+      "id": 4,
+      "name": "Consumed by Hatred",
+      "description": "Striking monsters with maximum stacks of rabies consumes them ripping and crushing the monster unleashing its bones in an arc behind it dealing damage according to the rabies stacks."
+    },
+    {
+      "id": 5,
+      "name": "Furious Reach",
+      "description": "Increases the attack range of furious strike."
+    },
+    {
+      "id": 6,
+      "name": "Strike of Hate",
+      "description": "Increases the damage dealt by furious strike."
+    },
+    {
+      "id": 7,
+      "name": "Blade Uppercut",
+      "description": "Chance to slice monsters stunning and knocking them up dealing increased damage."
+    },
+    {
+      "id": 8,
+      "name": "Serious Fever",
+      "description": "Increases the maximum amount of rabies stacks."
+    },
+    {
+      "id": 9,
+      "name": "Fueled Anger",
+      "description": "Increases attack speed when using furious strike."
+    },
+    {
+      "id": 10,
+      "name": "The Absolute Unit",
+      "description": "Striking a monster causes it to emmit fire damage based on your life replenish over time for a short duration on a radius around it when using holy form. Striking a monster unleashes impaling spikes dealing additional damage and a chance to replenish a portion of your maximum life on hit when using unholy form."
+    },
+    {
+      "id": 11,
+      "name": "Mediocre Unit",
+      "description": "Chance to spawn healing orbs from targets on hit when in holy form. Chance to unleash piercing enraged rats spreading rabies on hit when in unholy form."
+    },
+    {
+      "id": 12,
+      "name": "Stay Still",
+      "description": "Increases damage dealt to stunned target."
+    },
+    {
+      "id": 13,
+      "name": "Spread the Word",
+      "description": "Chance to summon enraged flies on hit orbiting you and inflicting rabies."
+    },
+    {
+      "id": 14,
+      "name": "Flames of Fury",
+      "description": "Striking a monster inflicted with rabies causes flaming cinders to fly around the target lightning the ground on fire. Striking a monster with maximum stacks of rabies additionally consumes the stacks unleashing a scorching nova inflicting burning on hit."
+    },
+    {
+      "id": 15,
+      "name": "Sick to the Core",
+      "description": "Increases the maximum stacks of rabies and damage dealt by furious strike."
+    }
+  ]
 }

@@ -1,26 +1,26 @@
 {
-    "Item": "Tectonic Frequency",
-    "Tier": "S",
-    "Level": "88",
-    "Type": "Ring",
-    "Size": "1x1",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "Lightning Skill Damage increased by [18-30]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "-[10-20]% to Enemy Lightning Resistance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[10-20]% Lightning Damage Absorbed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[45-70]% to Lightning Resistance",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Tectonic Frequency",
+  "Tier": "S",
+  "Level": "88",
+  "Type": "Ring",
+  "Size": "1x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "Lightning Skill Damage increased by [18-30]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "-[10-20]% to Enemy Lightning Resistance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[10-20]% Lightning Damage Absorbed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[45-70]% to Lightning Resistance",
+      "class": "stat-default"
+    }
+  ]
 }

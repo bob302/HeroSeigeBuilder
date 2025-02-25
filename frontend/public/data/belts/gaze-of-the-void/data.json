@@ -1,35 +1,35 @@
 {
-    "Item": "Gaze of the Void",
-    "Tier": "A",
-    "Level": "46",
-    "Defense": "69.0054-84",
-    "Type": "Belt",
-    "Size": "2x1",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[50-75]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Arcane Skill Damage increased by [3-8]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "-[3-8]% to Enemy Arcane Resistance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Physical Damage Taken Reduced by 5%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[30-40]% to Arcane Resistance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Belt Slots: 4",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Gaze of the Void",
+  "Tier": "A",
+  "Level": "46",
+  "Defense": "69.0054-84",
+  "Type": "Belt",
+  "Size": "2x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[50-75]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Arcane Skill Damage increased by [3-8]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "-[3-8]% to Enemy Arcane Resistance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Physical Damage Taken Reduced by 5%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[30-40]% to Arcane Resistance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Belt Slots: 4",
+      "class": "stat-default"
+    }
+  ]
 }

@@ -1,8 +1,8 @@
 {
-    "Icon": "ability_1_icon.webp",
-    "Image": "output/classes\\whitemage\\zealot\\ability_1_icon.webp",
-    "Name": "Martyr",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 0, "y": 0 }
+  "Icon": "ability_1_icon.webp",
+  "Image": "output/classes\\whitemage\\zealot\\ability_1_icon.webp",
+  "Name": "Martyr",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": { "x": 0, "y": 0 }
 }

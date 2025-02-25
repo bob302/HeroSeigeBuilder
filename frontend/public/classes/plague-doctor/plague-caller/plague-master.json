@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_6_icon.webp",
-    "Image": "output/classes\\plaguedoctor\\plague-caller\\ability_6_icon.webp",
-    "Name": "Plague Master",
-    "Required Skill(s)": "Oops",
-    "Required Level": "16",
-    "Position": { "x": 2, "y": 2 }
+  "Icon": "ability_6_icon.webp",
+  "Image": "output/classes\\plaguedoctor\\plague-caller\\ability_6_icon.webp",
+  "Name": "Plague Master",
+  "Required Skill(s)": "Oops",
+  "Required Level": "16",
+  "Position": {
+    "x": 2,
+    "y": 2
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Plague Domain",
+      "description": "Increases the area of effect radius of plague master."
+    },
+    {
+      "id": 3,
+      "name": "Toxology",
+      "description": "Increases the damage dealt by plague master."
+    },
+    {
+      "id": 4,
+      "name": "Stacked Bacteria",
+      "description": "Poisoned from plague master inflicts additional stacks of poisoned."
+    },
+    {
+      "id": 5,
+      "name": "Flesh Melting",
+      "description": "Chance to inflict poison break on hit."
+    },
+    {
+      "id": 6,
+      "name": "Neverending Infection",
+      "description": "Increases the poisoned duration from plague master."
+    },
+    {
+      "id": 7,
+      "name": "Crippling Poison Vial",
+      "description": "Chance on hit to stun enemies."
+    },
+    {
+      "id": 8,
+      "name": "Escalating Illness",
+      "description": "Increases the tick frequency of poisoned from plague master."
+    },
+    {
+      "id": 9,
+      "name": "Anemic Impact",
+      "description": "Inflicts slow on hit. "
+    },
+    {
+      "id": 10,
+      "name": "Raise from the Pestilence",
+      "description": "Monsters killed by plague master spawn a toxic anomaly. Toxic anomalies seek nearby monsters exploding on hit dealing increased area of effect damage."
+    },
+    {
+      "id": 11,
+      "name": "Boundless Agent",
+      "description": "Decreases the mana cost of plague master."
+    },
+    {
+      "id": 12,
+      "name": "Pathogens",
+      "description": "Chance to summon a pool of bacteria and viruses on hit dealing damage over time."
+    },
+    {
+      "id": 13,
+      "name": "Concussive Effect",
+      "description": "Increases damage dealt to stunned targets."
+    },
+    {
+      "id": 14,
+      "name": "Bulbonic Plague",
+      "description": "Chance to inflict plague on hit causing targets to become infected inflicting damage to monsters around them."
+    },
+    {
+      "id": 15,
+      "name": "Containment Breakout",
+      "description": "Increases the damage dealt and area of effect radius of plague master significantly. Increases the cooldown of plague master."
+    }
+  ]
 }

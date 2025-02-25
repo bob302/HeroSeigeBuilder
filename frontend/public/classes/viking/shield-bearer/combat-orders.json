@@ -1,8 +1,8 @@
 {
-    "Icon": "ability_9_icon.webp",
-    "Image": "output/classes\\viking\\shield-bearer\\ability_9_icon.webp",
-    "Name": "Combat Orders",
-    "Required Skill(s)": "Odin's Fury",
-    "Required Level": "30",
-    "Position": { "x": 1, "y": 4 }
+  "Icon": "ability_9_icon.webp",
+  "Image": "output/classes\\viking\\shield-bearer\\ability_9_icon.webp",
+  "Name": "Combat Orders",
+  "Required Skill(s)": "Odin's Fury",
+  "Required Level": "30",
+  "Position": { "x": 1, "y": 4 }
 }

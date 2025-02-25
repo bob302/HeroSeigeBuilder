@@ -1,44 +1,44 @@
 {
-    "Item": "Pitfiend's Thorn",
-    "Tier": "S",
-    "Level": "87",
-    "Defense": "191.00152-230",
-    "Block": "52",
-    "Type": "Shield",
-    "Size": "2x3",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[90-130]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[20-30]% Increased Movement Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+30% Increased Attack Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[250-400]% Increased Attack Rating",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[8-12]% Life stolen per Hit",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+25% Chance to Open Wounds",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Extra Damage to Bleeding Monsters [10-18]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Socketed (2-3)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Pitfiend's Thorn",
+  "Tier": "S",
+  "Level": "87",
+  "Defense": "191.00152-230",
+  "Block": "52",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[90-130]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[20-30]% Increased Movement Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+30% Increased Attack Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[250-400]% Increased Attack Rating",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[8-12]% Life stolen per Hit",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+25% Chance to Open Wounds",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Extra Damage to Bleeding Monsters [10-18]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Socketed (2-3)",
+      "class": "stat-default"
+    }
+  ]
 }

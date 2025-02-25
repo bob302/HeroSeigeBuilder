@@ -1,67 +1,67 @@
 {
-    "Item": "Commander's Sash",
-    "Tier": "S",
-    "Level": "92",
-    "Defense": "101.9078-126",
-    "Type": "Belt",
-    "Size": "2x1",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[50-85]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+1 to All Skills",
-            "class": "stat-allskills"
-        },
-        {
-            "stat": "+10% Increased Attack Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[3-5]% Life stolen per Hit",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[3-5]% Mana stolen per Hit",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Slows target by 10%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[10-15] to Strength",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[20-25] to Dexterity",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+3 Mana After each Kill",
-            "class": "stat-default"
-        },
-        {
-            "stat": "-3 to Light Radius",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Physical Damage Taken Reduced by [5-10]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[15-20]% to All Resistances",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Piercing Attack",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Belt Slots: 5",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Commander's Sash",
+  "Tier": "S",
+  "Level": "92",
+  "Defense": "101.9078-126",
+  "Type": "Belt",
+  "Size": "2x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[50-85]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+1 to All Skills",
+      "class": "stat-allskills"
+    },
+    {
+      "stat": "+10% Increased Attack Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[3-5]% Life stolen per Hit",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[3-5]% Mana stolen per Hit",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Slows target by 10%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[10-15] to Strength",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[20-25] to Dexterity",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+3 Mana After each Kill",
+      "class": "stat-default"
+    },
+    {
+      "stat": "-3 to Light Radius",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Physical Damage Taken Reduced by [5-10]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[15-20]% to All Resistances",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Piercing Attack",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Belt Slots: 5",
+      "class": "stat-default"
+    }
+  ]
 }

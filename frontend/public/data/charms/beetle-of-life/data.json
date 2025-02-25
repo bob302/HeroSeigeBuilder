@@ -1,30 +1,30 @@
 {
-    "Item": "Beetle of Life",
-    "Tier": "S",
-    "Level": "60",
-    "Type": "Charm",
-    "Size": "2x2",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[10-15] to Vitality",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Replenish Life 8%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[45-70] to Life",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[5-10] Life After each Kill",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Life Increased by [5-10]%",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Beetle of Life",
+  "Tier": "S",
+  "Level": "60",
+  "Type": "Charm",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[10-15] to Vitality",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Replenish Life 8%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[45-70] to Life",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[5-10] Life After each Kill",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Life Increased by [5-10]%",
+      "class": "stat-default"
+    }
+  ]
 }

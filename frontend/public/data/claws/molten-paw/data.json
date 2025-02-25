@@ -1,50 +1,50 @@
 {
-    "Item": "Molten Paw",
-    "Tier": "S",
-    "Level": "86",
-    "Damage": "230.40202-260",
-    "APS": "1.501.5",
-    "DPS": "346.00303-389",
-    "Type": "Claw",
-    "TwoHanded": false,
-    "Size": "2x2",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[320-380]% Enhanced Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[5-10] to [Fire Enchant]",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "+20% Increased Movement Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+470 to Attack Rating",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+5% Mana stolen per Hit",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+20 to Energy",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[125-150] to Additive Fire Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Fire Skill Damage increased by [7-15]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+8 Mana After each Kill",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Molten Paw",
+  "Tier": "S",
+  "Level": "86",
+  "Damage": "230.40202-260",
+  "APS": "1.501.5",
+  "DPS": "346.00303-389",
+  "Type": "Claw",
+  "TwoHanded": false,
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[320-380]% Enhanced Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[5-10] to [Fire Enchant]",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+20% Increased Movement Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+470 to Attack Rating",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+5% Mana stolen per Hit",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+20 to Energy",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[125-150] to Additive Fire Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Fire Skill Damage increased by [7-15]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+8 Mana After each Kill",
+      "class": "stat-default"
+    }
+  ]
 }

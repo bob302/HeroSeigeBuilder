@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_3_icon.webp",
-    "Image": "output/classes\\marksman\\engineer\\ability_3_icon.webp",
-    "Name": "Landmine",
-    "Required Skill(s)": "Frag Grenade",
-    "Required Level": "8",
-    "Position": { "x": 0, "y": 1 }
+  "Icon": "ability_3_icon.webp",
+  "Image": "output/classes\\marksman\\engineer\\ability_3_icon.webp",
+  "Name": "Landmine",
+  "Required Skill(s)": "Frag Grenade",
+  "Required Level": "8",
+  "Position": {
+    "x": 0,
+    "y": 1
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Blasting Radius",
+      "description": "Increases explosion area of effect radius of landmine."
+    },
+    {
+      "id": 3,
+      "name": "Stacked Compound",
+      "description": "Increases the damage dealt by landmine."
+    },
+    {
+      "id": 4,
+      "name": "Mine Field",
+      "description": "Throw multiple smaller mines into a target location dealing damage and slowing monsters on hit."
+    },
+    {
+      "id": 5,
+      "name": "Dead Zone",
+      "description": "Chance to critically hit with increased critical strike damage."
+    },
+    {
+      "id": 6,
+      "name": "Shrapnel Wounds",
+      "description": "Inflicts arcane break on hit."
+    },
+    {
+      "id": 7,
+      "name": "Rolling Mine",
+      "description": "Land mines now roll forward exploding shortly after hit."
+    },
+    {
+      "id": 8,
+      "name": "Panzer Mine",
+      "description": "Chance to increase the size and explosion area of effect radius of land mine."
+    },
+    {
+      "id": 9,
+      "name": "Debilitating Mine",
+      "description": "Chance to stun monsters on hit."
+    },
+    {
+      "id": 10,
+      "name": "Incendiary Mine",
+      "description": "Land mine ignites monsters on fire on a large radius dealing damage and inflicting burning."
+    },
+    {
+      "id": 11,
+      "name": "Crippling Impact",
+      "description": "Increases damage dealt to stunned targets."
+    },
+    {
+      "id": 12,
+      "name": "Stealth Mine",
+      "description": "Chance on hit to send target into the air dealing additional damage."
+    },
+    {
+      "id": 13,
+      "name": "Napalm",
+      "description": "Increases damage dealt to burning targets."
+    },
+    {
+      "id": 14,
+      "name": "Homing Landmine",
+      "description": "Land mines now home towards the first detected monster dealing increased damage in a large radius."
+    },
+    {
+      "id": 15,
+      "name": "Air Raid",
+      "description": "Land mine now marks monster location on hit for an air raid dropping multiple bombs. Land mine now has a cooldown."
+    }
+  ]
 }

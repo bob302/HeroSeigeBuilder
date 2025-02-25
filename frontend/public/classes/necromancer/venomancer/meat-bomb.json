@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_3_icon.webp",
-    "Image": "output/classes\\necromancer\\venomancer\\ability_3_icon.webp",
-    "Name": "Meat Bomb",
-    "Required Skill(s)": "Bone Shield",
-    "Required Level": "8",
-    "Position": { "x": 1, "y": 1 }
+  "Icon": "ability_3_icon.webp",
+  "Image": "output/classes\\necromancer\\venomancer\\ability_3_icon.webp",
+  "Name": "Meat Bomb",
+  "Required Skill(s)": "Meat Shield",
+  "Required Level": "8",
+  "Position": {
+    "x": 1,
+    "y": 1
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "High Protein",
+      "description": "Increases the damage dealt by meat bomb."
+    },
+    {
+      "id": 3,
+      "name": "Far Reaching Meat",
+      "description": "Increases the cast range of meat bomb."
+    },
+    {
+      "id": 4,
+      "name": "Strong Bones",
+      "description": "Pull nearby monsters into the explosion location."
+    },
+    {
+      "id": 5,
+      "name": "Metabolic Lump",
+      "description": "Recover a portion of your maximum life on hit."
+    },
+    {
+      "id": 6,
+      "name": "Cadavery",
+      "description": "Increases the amount of corpses created by meat bomb."
+    },
+    {
+      "id": 7,
+      "name": "Elastic Meat",
+      "description": "Meatbomb bounces off the ground dealing area of effect damage with each bounce."
+    },
+    {
+      "id": 8,
+      "name": "High Blood Pressure",
+      "description": "Increases meat bombs explosion area of effect radius."
+    },
+    {
+      "id": 9,
+      "name": "Tossing The Meat",
+      "description": "Increases meat bombs traveling speed."
+    },
+    {
+      "id": 10,
+      "name": "Colossal Carcass",
+      "description": "Throw a massive chunk of meat with increased size and damage sending monsters airborne dealing area of effect damage when landing."
+    },
+    {
+      "id": 11,
+      "name": "Double The Meat",
+      "description": "Chance on cast to unleash an additional meat bomb."
+    },
+    {
+      "id": 12,
+      "name": "Heavy Lump of Meat",
+      "description": "Chance on hit to stun."
+    },
+    {
+      "id": 13,
+      "name": "Fleshy Leftovers",
+      "description": "Chance for smaller chunks of meat to explode and spawn an additional corpse."
+    },
+    {
+      "id": 14,
+      "name": "Rotten Corpses",
+      "description": "Converts meat bombs damage to poison inflicting poisoned. Consumed corpses unleash a poison nova."
+    },
+    {
+      "id": 15,
+      "name": "Multi Lumps",
+      "description": "Throw multiple meat bombs in an arc inflicting arcane break on hit."
+    }
+  ]
 }

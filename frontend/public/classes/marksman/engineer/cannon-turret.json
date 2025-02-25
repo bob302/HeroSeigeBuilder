@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_6_icon.webp",
-    "Image": "output/classes\\marksman\\engineer\\ability_6_icon.webp",
-    "Name": "Cannon Turret",
-    "Required Skill(s)": "B.E.A.C.O.N",
-    "Required Level": "16",
-    "Position": { "x": 2, "y": 2 }
+  "Icon": "ability_6_icon.webp",
+  "Image": "output/classes\\marksman\\engineer\\ability_6_icon.webp",
+  "Name": "Cannon Turret",
+  "Required Skill(s)": "B.E.A.C.O.N",
+  "Required Level": "16",
+  "Position": {
+    "x": 2,
+    "y": 2
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Cannoningfodder",
+      "description": "Increases the damage dealt by cannon turret."
+    },
+    {
+      "id": 3,
+      "name": "Cannon Turrets",
+      "description": "Increases the maximum amount of cannon turrets."
+    },
+    {
+      "id": 4,
+      "name": "Megacannon",
+      "description": "Now launches a giant bomb that covers a larger area but cannon turret attack speed is reduced."
+    },
+    {
+      "id": 5,
+      "name": "Cannonballs",
+      "description": "Chance when hitting the ground to unleash additional cannonballs on nearby targets."
+    },
+    {
+      "id": 6,
+      "name": "Stunning Blast",
+      "description": "Chance on hit to stun the target."
+    },
+    {
+      "id": 7,
+      "name": "Doom Ball",
+      "description": "Chance for cannon turrets to fire a huge cannonball with increased damage and size."
+    },
+    {
+      "id": 8,
+      "name": "Weakened Blast",
+      "description": "Increases damage dealt to stunned targets."
+    },
+    {
+      "id": 9,
+      "name": "Landing Spot",
+      "description": "Increases explosion area of effect radius of cannon turret."
+    },
+    {
+      "id": 10,
+      "name": "Weakening Blast",
+      "description": "Cannonballs cause monsters to take extra damage from all sources."
+    },
+    {
+      "id": 11,
+      "name": "Line of Sight",
+      "description": "Increased attack range."
+    },
+    {
+      "id": 12,
+      "name": "Multishred",
+      "description": "Increases the amount of explosion shrapnel from cannon turret projectiles."
+    },
+    {
+      "id": 13,
+      "name": "Frostbitten Fodder",
+      "description": "Chance on hit to inflict deep freeze."
+    },
+    {
+      "id": 14,
+      "name": "Mid Air Crisis",
+      "description": "The bomb explodes into shrapnel mid-air that hits monsters below causing them to bleed based on your attack damage."
+    },
+    {
+      "id": 15,
+      "name": "Burst Artillery",
+      "description": "Fires multiple cannonballs in a quick succession."
+    }
+  ]
 }

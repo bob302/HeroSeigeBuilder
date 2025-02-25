@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_5_icon.webp",
-    "Image": "output/classes\\pyromancer\\arsonist\\ability_5_icon.webp",
-    "Name": "Volcano",
-    "Required Skill(s)": "Scorching Aura",
-    "Required Level": "16",
-    "Position": { "x": 0, "y": 2 }
+  "Icon": "ability_5_icon.webp",
+  "Image": "output/classes\\pyromancer\\arsonist\\ability_5_icon.webp",
+  "Name": "Volcano",
+  "Required Skill(s)": "Scorching Aura",
+  "Required Level": "16",
+  "Position": {
+    "x": 0,
+    "y": 2
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Eruption",
+      "description": "Increases the amount of volcano fragments."
+    },
+    {
+      "id": 3,
+      "name": "Extended Lava",
+      "description": "Increases the duration of volcano."
+    },
+    {
+      "id": 4,
+      "name": "Yellowstone",
+      "description": "Now spawns a massive volcano shooting out fragments that spawn smaller volcanoes around it."
+    },
+    {
+      "id": 5,
+      "name": "Danger Zone",
+      "description": "Increases the range of volcano."
+    },
+    {
+      "id": 6,
+      "name": "Searing Mountain",
+      "description": "Increases the size of volcano."
+    },
+    {
+      "id": 7,
+      "name": "Colossal Fragment",
+      "description": "Chance to shoot out a colossal fragment instead knocking monsters into the air and inflicting burning on hit."
+    },
+    {
+      "id": 8,
+      "name": "Crackling Earth",
+      "description": "Release flaming fissures around the volcano."
+    },
+    {
+      "id": 9,
+      "name": "Scorching Lava",
+      "description": "Increases the damage dealt by volcano."
+    },
+    {
+      "id": 10,
+      "name": "Trail of Volcanoes",
+      "description": "Spawn multiple volcanoes trailing into a random direction. "
+    },
+    {
+      "id": 11,
+      "name": "Crushing Fragment",
+      "description": "Fragments have a chance to bounce and deal area of effect damage when hitting the ground."
+    },
+    {
+      "id": 12,
+      "name": "Too Hot to Touch",
+      "description": "Monsters touching the volcano get knocked back and stunned taking additional damage."
+    },
+    {
+      "id": 13,
+      "name": "Lava Dipping",
+      "description": "Increases damage dealt to burning targets."
+    },
+    {
+      "id": 14,
+      "name": "Lava Trail",
+      "description": "Volcano now sends out trails of molten lava inflicting a portion of its damage as burning."
+    },
+    {
+      "id": 15,
+      "name": "I Am The Volcano Now",
+      "description": "The volcano is now stuck on you with increased damage."
+    }
+  ]
 }

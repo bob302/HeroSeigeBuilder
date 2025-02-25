@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_1_icon.webp",
-    "Image": "output/classes\\pyromancer\\flame-diviner\\ability_1_icon.webp",
-    "Name": "Blazing Trail",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 0, "y": 0 }
+  "Icon": "ability_1_icon.webp",
+  "Image": "output/classes\\pyromancer\\flame-diviner\\ability_1_icon.webp",
+  "Name": "Blazing Trail",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": {
+    "x": 0,
+    "y": 0
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Timed Fire",
+      "description": "Increases the duration of blazing trail."
+    },
+    {
+      "id": 3,
+      "name": "Scorch",
+      "description": "Increased the damage dealt by blazing trail."
+    },
+    {
+      "id": 4,
+      "name": "Forking Flames",
+      "description": "Trails have a chance to fork."
+    },
+    {
+      "id": 5,
+      "name": "Expanded Flames",
+      "description": "Increases the area of effect radius of blazing trail."
+    },
+    {
+      "id": 6,
+      "name": "Flaming Steps",
+      "description": "Increases your movement speed while blazing trail is active."
+    },
+    {
+      "id": 7,
+      "name": "Agonizing Heat",
+      "description": "Increases damage dealt to burning targets."
+    },
+    {
+      "id": 8,
+      "name": "Combusting Flames",
+      "description": "Trails inflict burning on hit."
+    },
+    {
+      "id": 9,
+      "name": "Burning Veins",
+      "description": "Trails inflict fire break on hit."
+    },
+    {
+      "id": 10,
+      "name": "Detonation Field",
+      "description": "Instead of flames now leaves behind fiery mines exploding into flaming fissures."
+    },
+    {
+      "id": 11,
+      "name": "Paralyzing Fire",
+      "description": "Trails inflict slow on hit."
+    },
+    {
+      "id": 12,
+      "name": "Crackling Heat",
+      "description": "Chance of trails to pulsate every second."
+    },
+    {
+      "id": 13,
+      "name": "Fueled Flames",
+      "description": "Increases the tick rate of blazing trail."
+    },
+    {
+      "id": 14,
+      "name": "Circle of Fire",
+      "description": "You now send trails of fire outwards to all directions."
+    },
+    {
+      "id": 15,
+      "name": "Trail of Comets",
+      "description": "Now drops comets that explode into flames."
+    }
+  ]
 }

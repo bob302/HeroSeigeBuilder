@@ -1,8 +1,80 @@
 {
-    "Icon": "ability_7_icon.webp",
-    "Image": "output/classes\\jotunn\\son-of-aurgelmir\\ability_7_icon.webp",
-    "Name": "Sweep Freeze",
-    "Required Skill(s)": "Freezing Leap",
-    "Required Level": "24",
-    "Position": { "x": 0, "y": 3 }
+  "Icon": "ability_7_icon.webp",
+  "Image": "output/classes\\jotunn\\son-of-aurgelmir\\ability_7_icon.webp",
+  "Name": "Sweep Freeze",
+  "Required Skill(s)": "Freezing Leap",
+  "Required Level": "24",
+  "Position": { "x": 0, "y": 3 },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Arctic Breeze",
+      "description": "Increases the damage dealt by sweep freeze."
+    },
+    {
+      "id": 3,
+      "name": "Weakening Precision",
+      "description": "Chance to inflict armor break on hit."
+    },
+    {
+      "id": 4,
+      "name": "Frost Sunder Onslaught",
+      "description": "Chance to unleash a barrage of piercing icicles towards target on hit."
+    },
+    {
+      "id": 5,
+      "name": "Ice Giants Strength",
+      "description": "Increases attack rating when using sweep freeze and damage based on your vitality."
+    },
+    {
+      "id": 6,
+      "name": "Ice Giants Agility",
+      "description": "Increases attack speed when using sweep freeze."
+    },
+    {
+      "id": 7,
+      "name": "Frozen to the Core",
+      "description": "Chance to inflict frostbite on hit."
+    },
+    {
+      "id": 8,
+      "name": "Shattering Coldstrike",
+      "description": "Chance to inflict cold break on hit."
+    },
+    {
+      "id": 9,
+      "name": "Lingering Fissure",
+      "description": "Chance to unleash a fissure knocking monsters up on hit dealing increased damage."
+    },
+    {
+      "id": 10,
+      "name": "Unstoppable Assault",
+      "description": "Unleash a barrage of sweep freezes for a short duration dealing increased damage and slowing monsters on hit with a chance of dropping chunks of ice at target location on hit."
+    },
+    {
+      "id": 11,
+      "name": "Double Sweep ",
+      "description": "Chance to perform an additional attack."
+    },
+    {
+      "id": 12,
+      "name": "Frozen Death",
+      "description": "Increases the critical strike damage dealt by sweep freeze."
+    },
+    {
+      "id": 13,
+      "name": "Cold Vacuum",
+      "description": "Every third attack with sweep freeze deals increased damage pulling monsters towards you."
+    },
+    {
+      "id": 14,
+      "name": "Dissecting Vortex",
+      "description": "Performs a whirling vortex attack dealing increased damage."
+    },
+    {
+      "id": 15,
+      "name": "Gelid Riptide",
+      "description": "Unleash a gelid riptide dealing damage over time slowing monsters on hit."
+    }
+  ]
 }

@@ -1,8 +1,8 @@
 {
-    "Icon": "ability_8_icon.webp",
-    "Image": "output/classes\\demonslayer\\gunslinger\\ability_8_icon.webp",
-    "Name": "Demon's Presence",
-    "Required Skill(s)": "Possessed Bullet",
-    "Required Level": "24",
-    "Position": { "x": 2, "y": 3 }
+  "Icon": "ability_8_icon.webp",
+  "Image": "output/classes\\demonslayer\\gunslinger\\ability_8_icon.webp",
+  "Name": "Demon's Presence",
+  "Required Skill(s)": "Possessed Bullet",
+  "Required Level": "24",
+  "Position": { "x": 2, "y": 3 }
 }

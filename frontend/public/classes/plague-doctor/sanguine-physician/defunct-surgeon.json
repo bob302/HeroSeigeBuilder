@@ -1,8 +1,8 @@
 {
-    "Icon": "ability_9_icon.webp",
-    "Image": "output/classes\\plaguedoctor\\sanguine-physician\\ability_9_icon.webp",
-    "Name": "Defunct Surgeon",
-    "Required Skill(s)": "Devout Doctor",
-    "Required Level": "30",
-    "Position": { "x": 1, "y": 4 }
+  "Icon": "ability_9_icon.webp",
+  "Image": "output/classes\\plaguedoctor\\sanguine-physician\\ability_9_icon.webp",
+  "Name": "Defunct Surgeon",
+  "Required Skill(s)": "Devout Doctor",
+  "Required Level": "30",
+  "Position": { "x": 1, "y": 4 }
 }

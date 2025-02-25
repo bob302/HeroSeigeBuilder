@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_1_icon.webp",
-    "Image": "output/classes\\jotunn\\son-of-ymir\\ability_1_icon.webp",
-    "Name": "Frozen Boulder",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 0, "y": 0 }
+  "Icon": "ability_1_icon.webp",
+  "Image": "output/classes\\jotunn\\son-of-ymir\\ability_1_icon.webp",
+  "Name": "Frozen Boulder",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": {
+    "x": 0,
+    "y": 0
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Boulder Lob",
+      "description": "Increases the projectile speed of frozen boulder. "
+    },
+    {
+      "id": 3,
+      "name": "Petrifying Frost",
+      "description": "Increases the damage dealt by frozen boulder."
+    },
+    {
+      "id": 4,
+      "name": "Rolling Winterstone",
+      "description": "Frozen boulder rolls on the ground gathering monsters on its path exploding when hitting terrain and dealing increased damage per monster gathered."
+    },
+    {
+      "id": 5,
+      "name": "Bouncing Slab",
+      "description": "Increases the amount of frozen boulder bounces."
+    },
+    {
+      "id": 6,
+      "name": "Shattering Frost",
+      "description": "Chance to inflict cold break on hit."
+    },
+    {
+      "id": 7,
+      "name": "Expanding Stonefrost",
+      "description": "Increases the size of frozen boulder."
+    },
+    {
+      "id": 8,
+      "name": "Subzero Temp",
+      "description": "Chance to inflict freeze on hit."
+    },
+    {
+      "id": 9,
+      "name": "Frozen Throbbing",
+      "description": "Increases damage dealt to frozen targets."
+    },
+    {
+      "id": 10,
+      "name": "Boulder Barrage",
+      "description": "Unleash a barrage of smaller frozen boulders in an arc. Frozen boulder has a cooldown."
+    },
+    {
+      "id": 11,
+      "name": "Pulsing Monolith",
+      "description": "Frozen boulder unleashes a frozen nova with each bounce dealing a portion of its damage."
+    },
+    {
+      "id": 12,
+      "name": "Stonecold Master",
+      "description": "Decreases the mana cost of frozen boulder."
+    },
+    {
+      "id": 13,
+      "name": "Demolishing Frostone",
+      "description": "Chance to knock monsters back on hit dealing increased damage."
+    },
+    {
+      "id": 14,
+      "name": "Overgrowing Boulder",
+      "description": "Frozen boulder grows in size gaining increased damage with each bounce also bouncing off of terrain."
+    },
+    {
+      "id": 15,
+      "name": "Splinter Stones",
+      "description": "Frozen boulder explodes into chunks of ice on hit dealing increased damage."
+    }
+  ]
 }

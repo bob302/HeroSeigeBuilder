@@ -1,8 +1,8 @@
 {
-    "Icon": "ability_3_icon.webp",
-    "Image": "output/classes\\marauder\\juggernaut\\ability_3_icon.webp",
-    "Name": "The Big Bo-oM",
-    "Required Skill(s)": "Bouncing Grenade",
-    "Required Level": "8",
-    "Position": { "x": 0, "y": 1 }
+  "Icon": "ability_3_icon.webp",
+  "Image": "output/classes\\marauder\\juggernaut\\ability_3_icon.webp",
+  "Name": "The Big Bo-oM",
+  "Required Skill(s)": "Bouncing Grenade",
+  "Required Level": "8",
+  "Position": { "x": 0, "y": 1 }
 }

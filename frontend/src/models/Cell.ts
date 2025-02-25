@@ -9,54 +9,60 @@ export enum HightLightCellState {
   ValidPlacement = "ValidPlacement",
   InvalidPlacement = "InvalidPlacement",
   Replacement = "Replacement",
-  None = "None"
+  None = "None",
 }
 
 export interface CellStyle {
-  width: string,
-  height: string,
-  border?: string,
-  borderImage?: string
-  isEdge: boolean,
-  background?: string
+  width: string;
+  height: string;
+  border?: string;
+  borderImage?: string;
+  isEdge: boolean;
+  background?: string;
 }
 export class Cell {
-  coordinates!: Point2D
-  private color!: string
-  private state: CellState
-  private highhlightState: HightLightCellState
-  private cellStyle: CellStyle = {width: '2.5rem', height: '2.5rem', border: '8px solid', isEdge: false, background: '', borderImage: ''}
-  private unlocked: boolean = true
+  coordinates!: Point2D;
+  private color!: string;
+  private state: CellState;
+  private highhlightState: HightLightCellState;
+  private cellStyle: CellStyle = {
+    width: "2.5rem",
+    height: "2.5rem",
+    border: "8px solid",
+    isEdge: false,
+    background: "",
+    borderImage: "",
+  };
+  private unlocked: boolean = true;
 
   defaultColor: string = "black";
   validColor: string = "green";
   invalidColor: string = "red";
   replacementColor: string = "none";
-  occupiedColor: string = "#344feb"
+  occupiedColor: string = "#344feb";
 
   constructor(coordinates: Point2D) {
-    this.highhlightState = HightLightCellState.None
-    this.state = CellState.Free
+    this.highhlightState = HightLightCellState.None;
+    this.state = CellState.Free;
     this.coordinates = coordinates;
-    this.updateColor()
+    this.updateColor();
   }
 
   getCellStyle() {
-    return this.cellStyle
+    return this.cellStyle;
   }
 
   setCellStyle(style: CellStyle) {
-    if (!style) return
-     this.cellStyle = style
+    if (!style) return;
+    this.cellStyle = style;
   }
 
-
   isUnlocked() {
-    return this.unlocked
+    return this.unlocked;
   }
 
   setIsUnlocked(isUnlocked: boolean) {
-    this.unlocked = isUnlocked
+    this.unlocked = isUnlocked;
   }
 
   setHighlightState(state: HightLightCellState) {
@@ -65,7 +71,7 @@ export class Cell {
   }
 
   getHighlightState(): HightLightCellState {
-    return this.highhlightState
+    return this.highhlightState;
   }
 
   setState(state: CellState) {
@@ -74,14 +80,13 @@ export class Cell {
   }
 
   getState(): CellState {
-    return this.state
+    return this.state;
   }
 
   getColor(): string {
-    return this.color
+    return this.color;
   }
 
-  
   private highlightStateToColor(): string {
     switch (this.highhlightState) {
       case HightLightCellState.ValidPlacement:
@@ -108,12 +113,12 @@ export class Cell {
     if (this.highhlightState === HightLightCellState.None) {
       this.color = this.stateToColor();
     } else {
-      this.color = this.highlightStateToColor()
+      this.color = this.highlightStateToColor();
     }
   }
 
   setData(newCoordinates: Point2D): void {
-    this.coordinates = newCoordinates
+    this.coordinates = newCoordinates;
   }
 
   // ───── Serialization Methods ─────
@@ -121,16 +126,15 @@ export class Cell {
   serialize(): any {
     const serializedData: any = {
       c: [this.coordinates.x, this.coordinates.y], // Координаты в массиве
-      s: this.state !== "Free" ? this.state : undefined // Только если отличается от "Free"
+      s: this.state !== "Free" ? this.state : undefined, // Только если отличается от "Free"
     };
-  
+
     if (this.unlocked === false) {
       serializedData.u = false; // Сжимаем `unlocked`
     }
-  
+
     return serializedData;
   }
-
 
   static deserialize(data: any, cellStyle: CellStyle): Cell {
     const point = new Point2D(data.c[0], data.c[1]);
@@ -138,12 +142,11 @@ export class Cell {
     cell.setState(data.s ?? "Free");
     cell.setHighlightState(HightLightCellState.None);
     cell.setCellStyle(cellStyle);
-  
+
     if (data.u === false) {
       cell.setIsUnlocked(false);
     }
-  
+
     return cell;
   }
-
 }

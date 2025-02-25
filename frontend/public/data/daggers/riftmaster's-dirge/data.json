@@ -1,50 +1,50 @@
 {
-    "Item": "Riftmaster's Dirge",
-    "Tier": "SS",
-    "Level": "92",
-    "Damage": "231.30215-248",
-    "APS": "2.702.52-2.88",
-    "DPS": "628.00541-715",
-    "Type": "Dagger",
-    "TwoHanded": false,
-    "Size": "1x3",
-    "Rarity": "Heroic",
-    "Stats": [
-        {
-            "stat": "10% Chance when Striking [Age Proliferation] Level 75",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "+[270-300]% Enhanced Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[30-40]% Increased Movement Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[40-60]% Increased Attack Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+25% Chance for a Deadly Blow",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+75% of target Defense ignored",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[850-875] to Additive Arcane Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "-[15-30]% to Enemy Arcane Resistance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Socketed (0-2)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Riftmaster's Dirge",
+  "Tier": "SS",
+  "Level": "92",
+  "Damage": "231.30215-248",
+  "APS": "2.702.52-2.88",
+  "DPS": "628.00541-715",
+  "Type": "Dagger",
+  "TwoHanded": false,
+  "Size": "1x3",
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "10% Chance when Striking [Age Proliferation] Level 75",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+[270-300]% Enhanced Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[30-40]% Increased Movement Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[40-60]% Increased Attack Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+25% Chance for a Deadly Blow",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+75% of target Defense ignored",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[850-875] to Additive Arcane Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "-[15-30]% to Enemy Arcane Resistance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Socketed (0-2)",
+      "class": "stat-default"
+    }
+  ]
 }

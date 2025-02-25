@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_3_icon.webp",
-    "Image": "output/classes\\shieldlancer\\knight\\ability_3_icon.webp",
-    "Name": "Honed Defenses",
-    "Required Skill(s)": "Shield Slam",
-    "Required Level": "8",
-    "Position": { "x": 0, "y": 1 }
+  "Icon": "ability_3_icon.webp",
+  "Image": "output/classes\\shieldlancer\\knight\\ability_3_icon.webp",
+  "Name": "Honed Defenses",
+  "Required Skill(s)": "Shield Slam",
+  "Required Level": "8",
+  "Position": {
+    "x": 0,
+    "y": 1
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Fortified Bastion",
+      "description": "Increases the damage dealt by honed defenses."
+    },
+    {
+      "id": 3,
+      "name": "Lucky Defense",
+      "description": "Chance to increase the amount of stacks gained when struck."
+    },
+    {
+      "id": 4,
+      "name": "Sky Bulwark",
+      "description": "Giant bulwarks fall down from the sky on hit dealing increased area of effect damage inflicting elemental break."
+    },
+    {
+      "id": 5,
+      "name": "Engulfing Wave",
+      "description": "Increases the area of effect radius of honed defenses."
+    },
+    {
+      "id": 6,
+      "name": "Thorn Surge",
+      "description": "Increases damage return per stack of honed defenses."
+    },
+    {
+      "id": 7,
+      "name": "Deadly Resistance",
+      "description": "Increases the damage dealt by honed defenses based on your armor."
+    },
+    {
+      "id": 8,
+      "name": "Hold",
+      "description": "Increases the duration of honed defenses."
+    },
+    {
+      "id": 9,
+      "name": "Optimized Safeguard",
+      "description": "Increases the maximum amount of stacks for honed defenses."
+    },
+    {
+      "id": 10,
+      "name": "Unstoppable Goliath",
+      "description": "Honed defenses no longer causes ground slam at maximum stacks increasing your maximum life, damage return and life replenish for each stack."
+    },
+    {
+      "id": 11,
+      "name": "Weakening Counter",
+      "description": "Chance to inflict armor break when struck."
+    },
+    {
+      "id": 12,
+      "name": "Oppresive Countermeasure",
+      "description": "Chance to unleash a ground slam on the attacker when struck dealing damage based on honed defenses stacks."
+    },
+    {
+      "id": 13,
+      "name": "Deflective Fortification",
+      "description": "Gain increased damage return per stack of honed defenses decreasing its damage dealt."
+    },
+    {
+      "id": 14,
+      "name": "Hauling Surge",
+      "description": "Pull monsters towards you dealing increased damage and stunning them when reaching maximum stacks of honed defenses."
+    },
+    {
+      "id": 15,
+      "name": "Risen Guards",
+      "description": "Increases the amount of maximum stacks. At maximum stacks honed defenses calls forth a legion of skeleton warriors fighting on your side for a short duration."
+    }
+  ]
 }

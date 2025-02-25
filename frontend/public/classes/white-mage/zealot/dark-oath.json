@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_6_icon.webp",
-    "Image": "output/classes\\whitemage\\zealot\\ability_6_icon.webp",
-    "Name": "Dark Oath",
-    "Required Skill(s)": "Soul Spurn",
-    "Required Level": "16",
-    "Position": { "x": 1, "y": 2 }
+  "Icon": "ability_6_icon.webp",
+  "Image": "output/classes\\whitemage\\zealot\\ability_6_icon.webp",
+  "Name": "Dark Oath",
+  "Required Skill(s)": "Soul Spurn",
+  "Required Level": "16",
+  "Position": {
+    "x": 1,
+    "y": 2
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Soulburn",
+      "description": "Increases the tick frequency of dark oath."
+    },
+    {
+      "id": 3,
+      "name": "Oath Amplifier",
+      "description": "Increases the damage dealt by dark oath."
+    },
+    {
+      "id": 4,
+      "name": "Sacrificial Oath",
+      "description": "Each pulse unleashes multiple restless spirits."
+    },
+    {
+      "id": 5,
+      "name": "Healing Corruption",
+      "description": "Chance to recover a portion of your maximum life on hit."
+    },
+    {
+      "id": 6,
+      "name": "Shadows Reach",
+      "description": "Increases the area of effect radius of dark oath."
+    },
+    {
+      "id": 7,
+      "name": "Covens Oath",
+      "description": "Increases damage dealt to stunned targets."
+    },
+    {
+      "id": 8,
+      "name": "Pulse of Vitality",
+      "description": "Chance to increase your life and mana replenish on hit for a short duration."
+    },
+    {
+      "id": 9,
+      "name": "Lust for Power",
+      "description": "Chance to critically hit with increased critical strike damage."
+    },
+    {
+      "id": 10,
+      "name": "Burning Darkness",
+      "description": "Inflicts shadow burn and slow on hit."
+    },
+    {
+      "id": 11,
+      "name": "Shadowsteps",
+      "description": "Chance to increase your movement speed on hit for a short duration."
+    },
+    {
+      "id": 12,
+      "name": "Intrusive Corruption",
+      "description": "Chance to inflict arcane break on hit."
+    },
+    {
+      "id": 13,
+      "name": "Devastating Pulse",
+      "description": "Chance to stun monsters on hit."
+    },
+    {
+      "id": 14,
+      "name": "Soul Collector",
+      "description": "Dark oath pulses collect souls from monsters. After reaching the maximum stack of souls the next pulse will deal increased damage with increased area of effect radius."
+    },
+    {
+      "id": 15,
+      "name": "Corrupting Pulse",
+      "description": "Chance to unleash additional pulses of dark oath from monsters on hit."
+    }
+  ]
 }

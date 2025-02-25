@@ -1,8 +1,80 @@
 {
-    "Icon": "ability_9_icon.webp",
-    "Image": "output/classes\\exo\\solar-prophet\\ability_9_icon.webp",
-    "Name": "Supernova",
-    "Required Skill(s)": "Solar Burst",
-    "Required Level": "30",
-    "Position": { "x": 1, "y": 4 }
+  "Icon": "ability_9_icon.webp",
+  "Image": "output/classes\\exo\\solar-prophet\\ability_9_icon.webp",
+  "Name": "Supernova",
+  "Required Skill(s)": "Solar Burst",
+  "Required Level": "30",
+  "Position": { "x": 1, "y": 4 },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "White Dwarf Star",
+      "description": "Increases the damage dealt by supernova."
+    },
+    {
+      "id": 3,
+      "name": "Renewing Flare",
+      "description": "Decreases the cooldown of supernova."
+    },
+    {
+      "id": 4,
+      "name": "Particle Outflux",
+      "description": "Unleash multiple fire balls bouncing between targets on hit inflicting burning."
+    },
+    {
+      "id": 5,
+      "name": "Penetrating Blast",
+      "description": "Chance to inflict elemental break on hit."
+    },
+    {
+      "id": 6,
+      "name": "Chained Explosions",
+      "description": "Chance on cast to unleash an additional supernova."
+    },
+    {
+      "id": 7,
+      "name": "Fight the Gravity",
+      "description": "Increases the area of effect radius of supernova."
+    },
+    {
+      "id": 8,
+      "name": "Weakening Nova",
+      "description": "Inflicts fire break on hit."
+    },
+    {
+      "id": 9,
+      "name": "Chain Reactions",
+      "description": "Chance to unleash a fiery blast on hit dealing a portion of the damage."
+    },
+    {
+      "id": 10,
+      "name": "Planetary Collision",
+      "description": "Chance to rain scorching comets from the sky at monsters on hit dealing increased damage."
+    },
+    {
+      "id": 11,
+      "name": "Fiery Frenzy",
+      "description": "Gain increased fire skill damage for a short duration when using supernova."
+    },
+    {
+      "id": 12,
+      "name": "Blast Right Trough",
+      "description": "Chance to critically hit dealing increased critical strike damage."
+    },
+    {
+      "id": 13,
+      "name": "Targeted Cosmic Event",
+      "description": "Supernova can be casted on target location with increased cast range."
+    },
+    {
+      "id": 14,
+      "name": "Solar Shockwave",
+      "description": "Supernova knocks monsters back with force dealing increased damage and slowing them."
+    },
+    {
+      "id": 15,
+      "name": "Connected by Sun",
+      "description": "Unleash trails of flaming fire towards monsters on hit dealing a portion of the damage."
+    }
+  ]
 }

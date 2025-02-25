@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_4_icon.webp",
-    "Image": "output/classes\\amazon\\valkyrie\\ability_4_icon.webp",
-    "Name": "Rebound",
-    "Required Skill(s)": "Astrope's Gift",
-    "Required Level": "8",
-    "Position": { "x": 1, "y": 1 }
+  "Icon": "ability_4_icon.webp",
+  "Image": "output/classes\\amazon\\valkyrie\\ability_4_icon.webp",
+  "Name": "Rebound",
+  "Required Skill(s)": "Astrope's Gift",
+  "Required Level": "8",
+  "Position": {
+    "x": 1,
+    "y": 1
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Jumping Spear",
+      "description": "Increases the amount of rebounds."
+    },
+    {
+      "id": 3,
+      "name": "Damascus Speartip",
+      "description": "Increases the damage dealt by rebound."
+    },
+    {
+      "id": 4,
+      "name": "Electrocharged Rebound",
+      "description": "Chance to strike targets with bolts of lightning on hit."
+    },
+    {
+      "id": 5,
+      "name": "Reaching Ricochet",
+      "description": "Increases the maximum range of rebound."
+    },
+    {
+      "id": 6,
+      "name": "Splitting Speartip",
+      "description": "Chance on hit for the rebound projectile to split into an additional rebound."
+    },
+    {
+      "id": 7,
+      "name": "Multi Rebound",
+      "description": "Increases the amount of rebounds from the initial hit. Damage is reduced."
+    },
+    {
+      "id": 8,
+      "name": "Accurate Spearshot",
+      "description": "Increases attack rating when using rebound."
+    },
+    {
+      "id": 9,
+      "name": "Increasing Odds",
+      "description": "Rebound gains additional crit damage on each bounce."
+    },
+    {
+      "id": 10,
+      "name": "Kickback Projectile",
+      "description": "Rebound projectiles now return to you instead of expiring dealing increased damage to monsters on its path."
+    },
+    {
+      "id": 11,
+      "name": "Penetrating Rebound",
+      "description": "Chance to lightning break on hit."
+    },
+    {
+      "id": 12,
+      "name": "Marksmanship",
+      "description": "Increases attack speed when using a bow with rebound."
+    },
+    {
+      "id": 13,
+      "name": "Rapidfly",
+      "description": "Increases the projectile speed of rebound."
+    },
+    {
+      "id": 14,
+      "name": "Rebomb",
+      "description": "Rebound now increases its damage and size with every bounce and explodes at the end dealing damage on a large radius."
+    },
+    {
+      "id": 15,
+      "name": "Orbital Rebound",
+      "description": "When hitting an enemy spawn the rebound projectile orbiting you until it hits a monster."
+    }
+  ]
 }

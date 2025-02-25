@@ -1,50 +1,50 @@
 {
-    "Item": "Eternal Glaive",
-    "Tier": "S",
-    "Level": "85",
-    "Damage": "277.20252-303",
-    "APS": "2.252.16-2.34",
-    "DPS": "626.50545-708",
-    "Type": "Sword",
-    "Size": "2x3",
-    "TwoHanded": false,
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "52% Chance when Attacking [Chainslice] Level 47",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "+[425-460]% Enhanced Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[20-30]% Increased Attack Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+15% Increased Critical Strike Chance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+10% Chance for a Crushing Blow",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[450-475] to Attack Rating",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[2-5]% Mana stolen per Hit",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[10-20]% Increased Critical Strike Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[20-30] to Dexterity",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Eternal Glaive",
+  "Tier": "S",
+  "Level": "85",
+  "Damage": "277.20252-303",
+  "APS": "2.252.16-2.34",
+  "DPS": "626.50545-708",
+  "Type": "Sword",
+  "Size": "2x3",
+  "TwoHanded": false,
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "52% Chance when Attacking [Chainslice] Level 47",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+[425-460]% Enhanced Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[20-30]% Increased Attack Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+15% Increased Critical Strike Chance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+10% Chance for a Crushing Blow",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[450-475] to Attack Rating",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[2-5]% Mana stolen per Hit",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[10-20]% Increased Critical Strike Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[20-30] to Dexterity",
+      "class": "stat-default"
+    }
+  ]
 }

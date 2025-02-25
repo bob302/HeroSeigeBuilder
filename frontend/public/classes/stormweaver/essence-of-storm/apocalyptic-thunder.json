@@ -1,8 +1,80 @@
 {
-    "Icon": "ability_8_icon.webp",
-    "Image": "output/classes\\stormweaver\\essence-of-storm\\ability_8_icon.webp",
-    "Name": "Apocalyptic Thunder",
-    "Required Skill(s)": "Loaded Pulse",
-    "Required Level": "24",
-    "Position": { "x": 2, "y": 3 }
+  "Icon": "ability_8_icon.webp",
+  "Image": "output/classes\\stormweaver\\essence-of-storm\\ability_8_icon.webp",
+  "Name": "Apocalyptic Thunder",
+  "Required Skill(s)": "Loaded Pulse",
+  "Required Level": "24",
+  "Position": { "x": 2, "y": 3 },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Voltage Amplification",
+      "description": "Increases the damage dealt by apocalyptic thunder."
+    },
+    {
+      "id": 3,
+      "name": "Center of the Storm",
+      "description": "Decreases the mana cost of apocalyptic thunder."
+    },
+    {
+      "id": 4,
+      "name": "Lightning Rod",
+      "description": "Chance on cast to unleash a chain of shrinking apocalyptic thunders on hit."
+    },
+    {
+      "id": 5,
+      "name": "Immobilizing Thunderstrike",
+      "description": "Chance to stun monsters on hit."
+    },
+    {
+      "id": 6,
+      "name": "Speed of Sound",
+      "description": "Increases the area of effect radius of apocalyptic thunder."
+    },
+    {
+      "id": 7,
+      "name": "Spontanious Rupture",
+      "description": "Chance to unleash an additional apocalyptic thunder on hit."
+    },
+    {
+      "id": 8,
+      "name": "Conjurers Skill",
+      "description": "Decreases movement diminish when using apocalyptic thunder."
+    },
+    {
+      "id": 9,
+      "name": "Horizontal Travel",
+      "description": "Increases the maximum cast range of apocalyptic thunder."
+    },
+    {
+      "id": 10,
+      "name": "Superstorm",
+      "description": "Unleash a nova of lightning knocking enemies back with increased damage."
+    },
+    {
+      "id": 11,
+      "name": "Shocking Lightningstrike",
+      "description": "Chance to inflict lightning break on hit."
+    },
+    {
+      "id": 12,
+      "name": "30000 Degrees",
+      "description": "Chance to inflict burning on hit."
+    },
+    {
+      "id": 13,
+      "name": "Fracturing Thunder",
+      "description": "Increases damage dealt to stunned and burning targets."
+    },
+    {
+      "id": 14,
+      "name": "Symphony of the Storm",
+      "description": "Apocalyptic thunder strikes multiple times dealing less damage with every strike."
+    },
+    {
+      "id": 15,
+      "name": "Lethal Voltage",
+      "description": "Inflicts stasis and lightning break on hit."
+    }
+  ]
 }

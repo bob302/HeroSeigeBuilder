@@ -1,8 +1,8 @@
 {
-    "Icon": "ability_9_icon.webp",
-    "Image": "output/classes\\paladin\\justiciar\\ability_9_icon.webp",
-    "Name": "Thor's Fury",
-    "Required Skill(s)": "Holy Shock Aura",
-    "Required Level": "30",
-    "Position": { "x": 1, "y": 4 }
+  "Icon": "ability_9_icon.webp",
+  "Image": "output/classes\\paladin\\justiciar\\ability_9_icon.webp",
+  "Name": "Thor's Fury",
+  "Required Skill(s)": "Holy Shock Aura",
+  "Required Level": "30",
+  "Position": { "x": 1, "y": 4 }
 }

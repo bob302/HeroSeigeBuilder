@@ -1,35 +1,35 @@
 {
-    "Item": "Arcanum Asphyxiators",
-    "Tier": "SS",
-    "Level": "100",
-    "Defense": "32.0026-38",
-    "Type": "Gloves",
-    "Size": "2x2",
-    "Rarity": "Heroic",
-    "Stats": [
-        {
-            "stat": "+[2-4] to Arcane Skills",
-            "class": "stat-arcane"
-        },
-        {
-            "stat": "+[20-30]% Faster Cast Rate",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Explosion Damage increased by [15-25]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Arcane Skill Damage increased by [20-35]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Explosion area of effect increased by [20-40]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "[Ominous Aura] Level [12-20]",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Arcanum Asphyxiators",
+  "Tier": "SS",
+  "Level": "100",
+  "Defense": "32.0026-38",
+  "Type": "Gloves",
+  "Size": "2x2",
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "+[2-4] to Arcane Skills",
+      "class": "stat-arcane"
+    },
+    {
+      "stat": "+[20-30]% Faster Cast Rate",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Explosion Damage increased by [15-25]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Arcane Skill Damage increased by [20-35]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Explosion area of effect increased by [20-40]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "[Ominous Aura] Level [12-20]",
+      "class": "stat-default"
+    }
+  ]
 }

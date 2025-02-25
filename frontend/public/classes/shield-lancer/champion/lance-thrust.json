@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_6_icon.webp",
-    "Image": "output/classes\\shieldlancer\\champion\\ability_6_icon.webp",
-    "Name": "Lance Thrust",
-    "Required Skill(s)": "Commending Banner",
-    "Required Level": "16",
-    "Position": { "x": 1, "y": 2 }
+  "Icon": "ability_6_icon.webp",
+  "Image": "output/classes\\shieldlancer\\champion\\ability_6_icon.webp",
+  "Name": "Lance Thrust",
+  "Required Skill(s)": "Commending Banner",
+  "Required Level": "16",
+  "Position": {
+    "x": 1,
+    "y": 2
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Battle Experienced",
+      "description": "Increases the damage dealt by lance thrust."
+    },
+    {
+      "id": 3,
+      "name": "Pole Reach",
+      "description": "Increases the range of lance thrust."
+    },
+    {
+      "id": 4,
+      "name": "Head Collector ",
+      "description": "Lance thrust pulls monsters towards you and stuns them on hit."
+    },
+    {
+      "id": 5,
+      "name": "Heroic Arrival",
+      "description": "Increases stun duration and damage when colliding with commending banner."
+    },
+    {
+      "id": 6,
+      "name": "Punctured Organs",
+      "description": "Chance to inflict bleeding on hit."
+    },
+    {
+      "id": 7,
+      "name": "Tactical Distancing",
+      "description": "Knock monsters back on hit dealing increased damage."
+    },
+    {
+      "id": 8,
+      "name": "Swift Striking",
+      "description": "Chance to gain a stack of swift strikes on hit increasing your attack speed and attack rating."
+    },
+    {
+      "id": 9,
+      "name": "Polearm Expertise",
+      "description": "Increases the critical strike damage dealt by lance thrust when using polearms."
+    },
+    {
+      "id": 10,
+      "name": "Commend to Onslaught",
+      "description": "Unleash additional lance thrusts towards nearby monsters from commending banner on banner impact."
+    },
+    {
+      "id": 11,
+      "name": "Blood Harvester",
+      "description": "Increases damage dealt to bleeding targets."
+    },
+    {
+      "id": 12,
+      "name": "Stab Sequence",
+      "description": "Every third attack with lance thrust is empowered increasing range and damage slowing monsters on hit."
+    },
+    {
+      "id": 13,
+      "name": "Volatile Irontip",
+      "description": "Collision with commending banner causes it to explode dealing area of effect damage."
+    },
+    {
+      "id": 14,
+      "name": "Legion Exterminator",
+      "description": "Unleash a whirl attack with increased area of effect radius. Lance thrust no longer collides with commending banner."
+    },
+    {
+      "id": 15,
+      "name": "Trust in the Thrust",
+      "description": "Unleash a circle of lances thrusting the first target on hit from all directions."
+    }
+  ]
 }

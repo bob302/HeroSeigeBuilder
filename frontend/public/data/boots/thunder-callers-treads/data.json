@@ -1,35 +1,35 @@
 {
-    "Item": "Thunder Caller's Treads",
-    "Tier": "S",
-    "Level": "57",
-    "Defense": "66.6550-84",
-    "Type": "Boots",
-    "Size": "2x2",
-    "Rarity": "Satanic Set",
-    "Stats": [
-        {
-            "stat": "8% Chance when Struck [Storm Cloud] Level 16",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "+[45-75]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+30% Increased Movement Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[15-25] to Intelligence",
-            "class": "stat-default"
-        },
-        {
-            "stat": "-[6-10]% to Enemy Lightning Resistance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Mana Increased by 8%",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Thunder Caller's Treads",
+  "Tier": "S",
+  "Level": "57",
+  "Defense": "66.6550-84",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "8% Chance when Struck [Storm Cloud] Level 16",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+[45-75]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+30% Increased Movement Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[15-25] to Intelligence",
+      "class": "stat-default"
+    },
+    {
+      "stat": "-[6-10]% to Enemy Lightning Resistance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Mana Increased by 8%",
+      "class": "stat-default"
+    }
+  ]
 }

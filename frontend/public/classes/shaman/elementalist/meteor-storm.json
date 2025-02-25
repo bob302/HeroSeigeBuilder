@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_5_icon.webp",
-    "Image": "output/classes\\shaman\\elementalist\\ability_5_icon.webp",
-    "Name": "Meteor Storm",
-    "Required Skill(s)": "Rock Fragments",
-    "Required Level": "16",
-    "Position": { "x": 1, "y": 2 }
+  "Icon": "ability_5_icon.webp",
+  "Image": "output/classes\\shaman\\elementalist\\ability_5_icon.webp",
+  "Name": "Meteor Storm",
+  "Required Skill(s)": "Rock Fragments",
+  "Required Level": "16",
+  "Position": {
+    "x": 1,
+    "y": 2
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Meteor Strike",
+      "description": "Increases the damage dealt by meteor storm."
+    },
+    {
+      "id": 3,
+      "name": "Massive Stone",
+      "description": "Increases the area of effect radius of meteor storm."
+    },
+    {
+      "id": 4,
+      "name": "Astroheated Shower",
+      "description": "Meteors constantly fall around you with a decreased frequency."
+    },
+    {
+      "id": 5,
+      "name": "Extended Meteorshower",
+      "description": "Increases duration of meteor storm."
+    },
+    {
+      "id": 6,
+      "name": "Meteoric Fragmentation",
+      "description": "Meteors have a chance of exploding into smaller fragments that deal additional damage."
+    },
+    {
+      "id": 7,
+      "name": "Heat Seeking Storm",
+      "description": "Meteor storm slowly travels towards the closest enemy."
+    },
+    {
+      "id": 8,
+      "name": "Concentrated Shattering",
+      "description": "Inflicts elemental break on hit with the cost of reduced area of effect radius."
+    },
+    {
+      "id": 9,
+      "name": "Rolling Meteorite",
+      "description": "Chance for meteors to roll for a short duration when landing dealing additional damage."
+    },
+    {
+      "id": 10,
+      "name": "Rain From Hell",
+      "description": "Increases the duration of meteor storm inflicting monsters with burning on hit."
+    },
+    {
+      "id": 11,
+      "name": "Manaburning Meteorology",
+      "description": "Increases damage according to your energy. Mana cost is increased."
+    },
+    {
+      "id": 12,
+      "name": "Colossus Destroyer",
+      "description": "Increases damage dealt to bosses by meteor storm."
+    },
+    {
+      "id": 13,
+      "name": "Hellflame Meteors",
+      "description": "Increases damage dealt to burning targets."
+    },
+    {
+      "id": 14,
+      "name": "Storm of Comets",
+      "description": "Call down a rain of colossal meteors from the sky over a greater area dealing increased damage. Meteor storm now has a cooldown."
+    },
+    {
+      "id": 15,
+      "name": "Back Into Orbit",
+      "description": "Summon multiple storms orbiting you. Meteor storm now has a cooldown."
+    }
+  ]
 }

@@ -1,8 +1,80 @@
 {
-    "Icon": "ability_1_icon.webp",
-    "Image": "output/classes\\demonspawn\\blood-lord\\ability_1_icon.webp",
-    "Name": "Blood Bolts",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 0, "y": 0 }
+  "Icon": "ability_1_icon.webp",
+  "Image": "output/classes\\demonspawn\\blood-lord\\ability_1_icon.webp",
+  "Name": "Blood Bolts",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": { "x": 0, "y": 0 },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Adrenaline Secretion",
+      "description": "Increases the projectile speed of blood bolts."
+    },
+    {
+      "id": 3,
+      "name": "Volume Increase",
+      "description": "Increases the size of blood bolts."
+    },
+    {
+      "id": 4,
+      "name": "Demon Sentry",
+      "description": "Summon a following blood demon unleashing blood bolts to nearby monsters with increased blood bolt amount and attack speed."
+    },
+    {
+      "id": 5,
+      "name": "Hemophilia",
+      "description": "Chance to inflict bleeding on hit."
+    },
+    {
+      "id": 6,
+      "name": "Demonic Formula",
+      "description": "Chance for blood bolts to become piercing and to continue traveling forward after hitting a monster."
+    },
+    {
+      "id": 7,
+      "name": "Leukocytes",
+      "description": "Increases damage dealt by blood bolts."
+    },
+    {
+      "id": 8,
+      "name": "Advanced Metabolism",
+      "description": "Blood bolts start homing towards the nearest target briefly after being casted."
+    },
+    {
+      "id": 9,
+      "name": "Demon Master",
+      "description": "Increases the damage of blood demons spawned by blood bolts."
+    },
+    {
+      "id": 10,
+      "name": "Wave of Blood",
+      "description": "Unleash a wave of blood leaving a trail of blood behind it. Any player touching the trail gains increased movement speed, faster cast rate and increased arcane skill damage."
+    },
+    {
+      "id": 11,
+      "name": "High Hemoglobin",
+      "description": "Increases the amount of blood bolts."
+    },
+    {
+      "id": 12,
+      "name": "Arterial Blood",
+      "description": "Decreases the mana cost of blood bolts."
+    },
+    {
+      "id": 13,
+      "name": "Thrombus",
+      "description": "Chance on hit to knock enemies back with force dealing increased damage."
+    },
+    {
+      "id": 14,
+      "name": "Bloodshed",
+      "description": "Unleash a blood bolt towards each nearby monster draining your life for each target dealing increased damage."
+    },
+    {
+      "id": 15,
+      "name": "Mark of the Demon",
+      "description": "Conjure a pool of blood on target location. Unleash blood bolts towards monsters in the blood pool."
+    }
+  ]
 }

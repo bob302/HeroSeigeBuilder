@@ -1,26 +1,26 @@
 {
-    "Item": "Eagerblade's Tooth",
-    "Tier": "C",
-    "Level": "24",
-    "Type": "Amulet",
-    "Size": "1x1",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+7% Increased Critical Strike Chance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+50 to Attack Rating",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[40-60] to Additive Physical Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+8 to Armor",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Eagerblade's Tooth",
+  "Tier": "C",
+  "Level": "24",
+  "Type": "Amulet",
+  "Size": "1x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+7% Increased Critical Strike Chance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+50 to Attack Rating",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[40-60] to Additive Physical Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+8 to Armor",
+      "class": "stat-default"
+    }
+  ]
 }

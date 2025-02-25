@@ -1,69 +1,81 @@
 <template>
-  <div class="cell-content"
+  <div
+    class="cell-content"
     :style="style"
     @mouseenter="this.onMouseEnter"
     @mouseleave="this.onMouseLeave"
     @click="this.onClick"
     @dragover.prevent
-  >
-  </div>
+  ></div>
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from 'vue-facing-decorator';
-import { Cell, type CellStyle } from '../models/Cell';
-import type { CSSProperties } from 'vue';
+import { Component, Prop, Vue } from "vue-facing-decorator";
+import { Cell } from "../models/Cell";
+import type { CSSProperties } from "vue";
 
 @Component({
-  emits: ["cell-click", "cell-mouse-enter", "cell-mouse-leave"]
+  emits: ["cell-click", "cell-mouse-enter", "cell-mouse-leave"],
 })
 export default class CellComponent extends Vue {
-  @Prop({type: Cell, required: true}) cellData!: Cell
+  @Prop({ type: Cell, required: true }) cellData!: Cell;
 
   onMouseEnter(): void {
-    this.$emit('cell-mouse-enter', this.cellData)
+    this.$emit("cell-mouse-enter", this.cellData);
   }
 
   onMouseLeave(): void {
-    this.$emit('cell-mouse-leave', this.cellData)
+    this.$emit("cell-mouse-leave", this.cellData);
   }
 
   onClick(): void {
-    this.$emit('cell-click', this.cellData)
+    this.$emit("cell-click", this.cellData);
+  }
+
+  isMobile = window.innerWidth <= 768;
+
+  mounted() {
+    window.addEventListener("resize", this.handleResize);
+  }
+
+  beforeDestroy() {
+    window.removeEventListener("resize", this.handleResize);
+  }
+
+  handleResize() {
+    this.isMobile = window.innerWidth <= 768;
   }
 
   get style(): CSSProperties {
-    if (this.cellData.getCellStyle().background !== '') {
-      return {
-        display: this.cellData.isUnlocked() ? 'inline-block' : 'none',
-        height: this.cellData.getCellStyle().height,
-        width: this.cellData.getCellStyle().width,
-        backgroundImage: `url(${this.cellData.getCellStyle().background})`,
-        backgroundSize: 'cover'
-      }
-    } else {
-      return {
-      display: this.cellData.isUnlocked() ? 'inline-block' : 'none',
-      height: this.cellData.getCellStyle().height,
-      width: this.cellData.getCellStyle().width,
-      border: this.cellData.getCellStyle().border,
-      borderImage: this.borderBackground()
+    const cellStyle = this.cellData.getCellStyle();
+    const scaleFactor = this.isMobile ? 0.75 : 1;
+
+    return {
+      display: this.cellData.isUnlocked() ? "inline-block" : "none",
+      height: `calc(${cellStyle.height} * ${scaleFactor})`,
+      width: `calc(${cellStyle.width} * ${scaleFactor})`,
+      ...(cellStyle.background
+        ? {
+            backgroundImage: `url(${cellStyle.background})`,
+            backgroundSize: "cover",
+          }
+        : {
+            border: cellStyle.border,
+            borderImage: this.borderBackground(),
+          }),
     };
-    }
-    
   }
 
   borderBackground(): string {
-    if (this.cellData.getCellStyle().borderImage === '') {
+    if (this.cellData.getCellStyle().borderImage === "") {
       return this.cellData.getCellStyle().isEdge
         ? "url('/img/editor/cell-background-edge.png') 6 round"
-        : "url('/img/editor/cell-background.png') 6 round"
+        : "url('/img/editor/cell-background.png') 6 round";
     } else {
-      return `url('${this.cellData.getCellStyle().borderImage}') 6 round`
+      return `url('${this.cellData.getCellStyle().borderImage}') 6 round`;
     }
   }
 }
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

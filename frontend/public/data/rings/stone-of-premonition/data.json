@@ -1,26 +1,26 @@
 {
-    "Item": "Stone of Premonition",
-    "Tier": "SS",
-    "Level": "98",
-    "Type": "Ring",
-    "Size": "1x1",
-    "Rarity": "Heroic",
-    "Stats": [
-        {
-            "stat": "+[1-2] to All Skills",
-            "class": "stat-allskills"
-        },
-        {
-            "stat": "Replenish Mana 15%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[550-575] to Mana",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Mana Increased by 25%",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Stone of Premonition",
+  "Tier": "SS",
+  "Level": "98",
+  "Type": "Ring",
+  "Size": "1x1",
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "+[1-2] to All Skills",
+      "class": "stat-allskills"
+    },
+    {
+      "stat": "Replenish Mana 15%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[550-575] to Mana",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Mana Increased by 25%",
+      "class": "stat-default"
+    }
+  ]
 }

@@ -1,18 +1,18 @@
 {
-    "Item": "Canopic Jar of Blood",
-    "Tier": "S",
-    "Level": "85",
-    "Type": "Charm",
-    "Size": "1x2",
-    "Rarity": "Satanic Set",
-    "Stats": [
-        {
-            "stat": "Replenish Life [8-15]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Life Increased by [3-6]%",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Canopic Jar of Blood",
+  "Tier": "S",
+  "Level": "85",
+  "Type": "Charm",
+  "Size": "1x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "Replenish Life [8-15]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Life Increased by [3-6]%",
+      "class": "stat-default"
+    }
+  ]
 }

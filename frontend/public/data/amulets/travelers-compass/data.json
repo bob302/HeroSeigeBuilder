@@ -1,22 +1,22 @@
 {
-    "Item": "Traveler's Compass",
-    "Tier": "S",
-    "Level": "94",
-    "Type": "Amulet",
-    "Size": "1x2",
-    "Rarity": "Satanic Set",
-    "Stats": [
-        {
-            "stat": "+[20-30]% Increased Movement Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[13-25] to All Attributes",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[15-25]% Increased Magic Find",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Traveler's Compass",
+  "Tier": "S",
+  "Level": "94",
+  "Type": "Amulet",
+  "Size": "1x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "+[20-30]% Increased Movement Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[13-25] to All Attributes",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[15-25]% Increased Magic Find",
+      "class": "stat-default"
+    }
+  ]
 }

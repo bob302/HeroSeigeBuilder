@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_9_icon.webp",
-    "Image": "output/classes\\redneck\\logger\\ability_9_icon.webp",
-    "Name": "Tree Trunk Triumph",
-    "Required Skill(s)": "Revved Up",
-    "Required Level": "30",
-    "Position": { "x": 1, "y": 4 }
+  "Icon": "ability_9_icon.webp",
+  "Image": "output/classes\\redneck\\logger\\ability_9_icon.webp",
+  "Name": "Tree Trunk Triumph",
+  "Required Skill(s)": "Revved Up",
+  "Required Level": "30",
+  "Position": {
+    "x": 1,
+    "y": 4
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Splinters",
+      "description": "Trunks have a chance to explode into multiple splinters inflicting monsters hit with bleeding for a portion of the damage."
+    },
+    {
+      "id": 3,
+      "name": "Treefall",
+      "description": "Chance to stun on hit."
+    },
+    {
+      "id": 4,
+      "name": "Stack of Trunks",
+      "description": "Cut down multiple trees in an arc."
+    },
+    {
+      "id": 5,
+      "name": "Heavy Trunk",
+      "description": "Increases damage dealt to stunned targets."
+    },
+    {
+      "id": 6,
+      "name": "Sequoia",
+      "description": "Increases the size of tree trunks."
+    },
+    {
+      "id": 7,
+      "name": "Sticking Splinters",
+      "description": "Splinters stick to monsters on hit dealing damage over time."
+    },
+    {
+      "id": 8,
+      "name": "Skillfull Fall",
+      "description": "Increases the damage dealt by tree trunk triumph."
+    },
+    {
+      "id": 9,
+      "name": "Sudden Treefall",
+      "description": "Trunks have a chance to cut down another tree at a nearby enemy."
+    },
+    {
+      "id": 10,
+      "name": "Falling Forest",
+      "description": "Multiple trunks fall from the sky on target location, falling towards the nearest monster. Tree trunk triumph now has a cooldown."
+    },
+    {
+      "id": 11,
+      "name": "Maiming Collision",
+      "description": "Inflicts arcane break on hit."
+    },
+    {
+      "id": 12,
+      "name": "Heavy Fall",
+      "description": "Chance on hit to unleash a shockwave in the falling direction, dealing additional damage."
+    },
+    {
+      "id": 13,
+      "name": "Clear The Way",
+      "description": "Decreases movement diminish when using tree trunk triumph."
+    },
+    {
+      "id": 14,
+      "name": "Giant Red Tree",
+      "description": "Every third attack summons a gigantic trunk dealing increased damage and inflicting armor break on hit."
+    },
+    {
+      "id": 15,
+      "name": "Splitting Fall",
+      "description": "Trunks split into multiple wooden discs upon falling that chain from monsters on hit."
+    }
+  ]
 }

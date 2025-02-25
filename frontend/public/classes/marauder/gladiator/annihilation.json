@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_7_icon.webp",
-    "Image": "output/classes\\marauder\\gladiator\\ability_7_icon.webp",
-    "Name": "Annihilation",
-    "Required Skill(s)": "Serrated Chains",
-    "Required Level": "24",
-    "Position": { "x": 0, "y": 3 }
+  "Icon": "ability_7_icon.webp",
+  "Image": "output/classes\\marauder\\gladiator\\ability_7_icon.webp",
+  "Name": "Annihilation",
+  "Required Skill(s)": "Serrated Chains",
+  "Required Level": "24",
+  "Position": {
+    "x": 0,
+    "y": 3
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Forceful Rip",
+      "description": "Increases the area of effect radius of annihilation."
+    },
+    {
+      "id": 3,
+      "name": "Attack Force by Force",
+      "description": "Increases the damage dealt by annihilation."
+    },
+    {
+      "id": 4,
+      "name": "Rusted Chains",
+      "description": "Increases damage based on targets current life and executes monsters below a life threshold."
+    },
+    {
+      "id": 5,
+      "name": "More Violence",
+      "description": "Decreases the cooldown of annihilation."
+    },
+    {
+      "id": 6,
+      "name": "Serrated Annihilation",
+      "description": "Increases damage dealt to targets inflicted with serrated chains."
+    },
+    {
+      "id": 7,
+      "name": "Arena Controller",
+      "description": "Annihilation pulls monsters towards you with increased force."
+    },
+    {
+      "id": 8,
+      "name": "Brutal Reach",
+      "description": "Increases the range of annihilation."
+    },
+    {
+      "id": 9,
+      "name": "Everyone Gets it",
+      "description": "Increases the amount of annihilated targets."
+    },
+    {
+      "id": 10,
+      "name": "Total Annihilation",
+      "description": "Spin a large chain around you for a short duration dealing increased damage and stunning monsters on hit. The outer edge of the chain always critically hits."
+    },
+    {
+      "id": 11,
+      "name": "Rip the Wounds",
+      "description": "Increases damage dealt to bleeding targets."
+    },
+    {
+      "id": 12,
+      "name": "Deep Cuts",
+      "description": "Chance to inflict bleeding on hit."
+    },
+    {
+      "id": 13,
+      "name": "Explosive Delivery",
+      "description": "Chance to unleash a bloody explosion on hit."
+    },
+    {
+      "id": 14,
+      "name": "Symphony of Chains",
+      "description": "Unleash multiple spinning chains around you inflicting bleeding on hit."
+    },
+    {
+      "id": 15,
+      "name": "Megadeath",
+      "description": "Rain down large bombs at monsters on hit."
+    }
+  ]
 }

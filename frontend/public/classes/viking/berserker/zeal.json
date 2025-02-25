@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_4_icon.webp",
-    "Image": "output/classes\\viking\\berserker\\ability_4_icon.webp",
-    "Name": "Zeal",
-    "Required Skill(s)": "Brute Force",
-    "Required Level": "8",
-    "Position": { "x": 1, "y": 1 }
+  "Icon": "ability_4_icon.webp",
+  "Image": "output/classes\\viking\\berserker\\ability_4_icon.webp",
+  "Name": "Zeal",
+  "Required Skill(s)": "Brute Force",
+  "Required Level": "8",
+  "Position": {
+    "x": 1,
+    "y": 1
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Rapid Striking",
+      "description": "Increases the amount of attacks done by zeal."
+    },
+    {
+      "id": 3,
+      "name": "Fatal Blows",
+      "description": "Increases the damage dealt by zeal."
+    },
+    {
+      "id": 4,
+      "name": "Throwing Fury",
+      "description": "Zeal now throws multiple projectiles with increased damage when using throwing weapons."
+    },
+    {
+      "id": 5,
+      "name": "Weapon Marksman",
+      "description": "Zeal now works with throwing weapons gaining increased attack range and damage."
+    },
+    {
+      "id": 6,
+      "name": "Brutal Slashes",
+      "description": "Increases critical strike damage dealt by zeal."
+    },
+    {
+      "id": 7,
+      "name": "Axes, More Axes",
+      "description": "Chance to summon an orbiting axe around the target on hit."
+    },
+    {
+      "id": 8,
+      "name": "Slicing Perfection",
+      "description": "Increases attack rating when using zeal."
+    },
+    {
+      "id": 9,
+      "name": "Hemorrhaging Blows",
+      "description": "Chance to inflict bleeding on hit."
+    },
+    {
+      "id": 10,
+      "name": "Zealing Blow",
+      "description": "Your last zeal strike deals increased damage stunning the target taunting nearby monsters."
+    },
+    {
+      "id": 11,
+      "name": "Bleeding Out",
+      "description": "Increases damage dealt to bleeding targets."
+    },
+    {
+      "id": 12,
+      "name": "Finish Them",
+      "description": "Zeal now executes targets below a certain percentage of life."
+    },
+    {
+      "id": 13,
+      "name": "Cleaving Zeal",
+      "description": "Zeal now always hits multiple targets with increased attack area of effect."
+    },
+    {
+      "id": 14,
+      "name": "Blood Ripple",
+      "description": "Each strike has a chance to unleash a ripple of blood dealing area of effect damage."
+    },
+    {
+      "id": 15,
+      "name": "Sundering Strikes",
+      "description": "Zeal inflicts stacking armor break on the target increasing with each strike."
+    }
+  ]
 }

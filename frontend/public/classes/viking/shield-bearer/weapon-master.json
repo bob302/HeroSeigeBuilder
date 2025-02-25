@@ -1,8 +1,8 @@
 {
-    "Icon": "ability_1_icon.webp",
-    "Image": "output/classes\\viking\\shield-bearer\\ability_1_icon.webp",
-    "Name": "Weapon Master",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 1, "y": 0 }
+  "Icon": "ability_1_icon.webp",
+  "Image": "output/classes\\viking\\shield-bearer\\ability_1_icon.webp",
+  "Name": "Weapon Master",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": { "x": 1, "y": 0 }
 }

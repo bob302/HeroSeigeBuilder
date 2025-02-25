@@ -1,18 +1,18 @@
 {
-    "Item": "Sheep King's Wool",
-    "Tier": "S",
-    "Level": "77",
-    "Type": "Charm",
-    "Size": "2x2",
-    "Rarity": "Satanic Set",
-    "Stats": [
-        {
-            "stat": "+[8-15] to All Attributes",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Magic Skill Damage increased by [5-10]%",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Sheep King's Wool",
+  "Tier": "S",
+  "Level": "77",
+  "Type": "Charm",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "+[8-15] to All Attributes",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Magic Skill Damage increased by [5-10]%",
+      "class": "stat-default"
+    }
+  ]
 }

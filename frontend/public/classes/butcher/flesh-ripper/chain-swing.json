@@ -1,8 +1,80 @@
 {
-    "Icon": "ability_6_icon.webp",
-    "Image": "output/classes\\butcher\\flesh-ripper\\ability_6_icon.webp",
-    "Name": "Chain Swing",
-    "Required Skill(s)": "Butchers Hook",
-    "Required Level": "16",
-    "Position": { "x": 1, "y": 2 }
+  "Icon": "ability_6_icon.webp",
+  "Image": "output/classes\\butcher\\flesh-ripper\\ability_6_icon.webp",
+  "Name": "Chain Swing",
+  "Required Skill(s)": "Butchers Hook",
+  "Required Level": "16",
+  "Position": { "x": 1, "y": 2 },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "The Huntsman",
+      "description": "Increases the projectile speed of chain swing."
+    },
+    {
+      "id": 3,
+      "name": "Immobilizing Hit",
+      "description": "Chance to stun targets on hit."
+    },
+    {
+      "id": 4,
+      "name": "Warm Welcome",
+      "description": "Unleash burning fissures at nearby monsters when landing inflicting burning."
+    },
+    {
+      "id": 5,
+      "name": "No Quarter",
+      "description": "Reduces the mana cost of chain swing."
+    },
+    {
+      "id": 6,
+      "name": "Demonic Chains",
+      "description": "Increases the damage dealt by chain swing."
+    },
+    {
+      "id": 7,
+      "name": "Introduce Fear",
+      "description": "Pull monsters towards you from an increased radius after landing."
+    },
+    {
+      "id": 8,
+      "name": "Physical Torture",
+      "description": "Chance to inflict armor break on hit."
+    },
+    {
+      "id": 9,
+      "name": "Killing Spree",
+      "description": "Grants you a burst of attack speed after landing for a short duration."
+    },
+    {
+      "id": 10,
+      "name": "Centrifugal Force",
+      "description": "Chain swing maximum length is significantly shorter but can be targeted. Spin around the target ignoring collision. Monsters hit by the chain take increased damage on hit."
+    },
+    {
+      "id": 11,
+      "name": "Scent of Prey",
+      "description": "Increases damage dealt to bleeding targets."
+    },
+    {
+      "id": 12,
+      "name": "Entry Frenzy",
+      "description": "Increases the critical strike damage dealt by chain swing."
+    },
+    {
+      "id": 13,
+      "name": "Unblessed Path",
+      "description": "Increases the maximum cast range. Chain swing now ignores terrain."
+    },
+    {
+      "id": 14,
+      "name": "Hookstorm",
+      "description": "Swing hooks around while travelling grabbing monsters on your path dealing increased damage."
+    },
+    {
+      "id": 15,
+      "name": "Prey of the Day",
+      "description": "Connecting with a monster causes chain swing to pull all monsters nearby the target towards you."
+    }
+  ]
 }

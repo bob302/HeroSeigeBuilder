@@ -1,14 +1,14 @@
 {
-    "Item": "Hello its me, Steve!",
-    "Tier": "S",
-    "Level": "56",
-    "Type": "Charm",
-    "Size": "2x2",
-    "Rarity": "Satanic Set",
-    "Stats": [
-        {
-            "stat": "+[12-25] to All Attributes",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Hello its me, Steve!",
+  "Tier": "S",
+  "Level": "56",
+  "Type": "Charm",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "+[12-25] to All Attributes",
+      "class": "stat-default"
+    }
+  ]
 }

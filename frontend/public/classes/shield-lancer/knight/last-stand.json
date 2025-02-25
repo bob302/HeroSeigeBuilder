@@ -1,8 +1,8 @@
 {
-    "Icon": "ability_9_icon.webp",
-    "Image": "output/classes\\shieldlancer\\knight\\ability_9_icon.webp",
-    "Name": "Last Stand",
-    "Required Skill(s)": "Knight's Vigor",
-    "Required Level": "30",
-    "Position": { "x": 1, "y": 4 }
+  "Icon": "ability_9_icon.webp",
+  "Image": "output/classes\\shieldlancer\\knight\\ability_9_icon.webp",
+  "Name": "Last Stand",
+  "Required Skill(s)": "Knight's Vigor",
+  "Required Level": "30",
+  "Position": { "x": 1, "y": 4 }
 }

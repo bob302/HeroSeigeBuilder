@@ -1,31 +1,31 @@
 {
-    "Item": "Aetherflow Treads",
-    "Tier": "D",
-    "Level": "8",
-    "Defense": "5.053-8",
-    "Type": "Boots",
-    "Size": "2x2",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[15-30]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[10-15]% Increased Movement Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[20-40] to Additive Lightning Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[20-30] to Life",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[5-15]% to Lightning Resistance",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Aetherflow Treads",
+  "Tier": "D",
+  "Level": "8",
+  "Defense": "5.053-8",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[15-30]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[10-15]% Increased Movement Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[20-40] to Additive Lightning Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[20-30] to Life",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[5-15]% to Lightning Resistance",
+      "class": "stat-default"
+    }
+  ]
 }

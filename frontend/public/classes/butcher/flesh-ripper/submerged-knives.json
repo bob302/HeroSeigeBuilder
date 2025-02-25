@@ -1,8 +1,80 @@
 {
-    "Icon": "ability_7_icon.webp",
-    "Image": "output/classes\\butcher\\flesh-ripper\\ability_7_icon.webp",
-    "Name": "Submerged Knives",
-    "Required Skill(s)": "None",
-    "Required Level": "24",
-    "Position": { "x": 0, "y": 3 }
+  "Icon": "ability_7_icon.webp",
+  "Image": "output/classes\\butcher\\flesh-ripper\\ability_7_icon.webp",
+  "Name": "Submerged Knives",
+  "Required Skill(s)": "None",
+  "Required Level": "24",
+  "Position": { "x": 0, "y": 3 },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Impaling Horde",
+      "description": "Increases the amount of waves of submerged knives."
+    },
+    {
+      "id": 3,
+      "name": "Agravating Wounds",
+      "description": "Increases the damage dealt by submerged knives."
+    },
+    {
+      "id": 4,
+      "name": "Tidal Knives",
+      "description": "Unleash a shockwave of submerged knives towards target location."
+    },
+    {
+      "id": 5,
+      "name": "Sharp Edges",
+      "description": "Increases attack rating when using submerged knives."
+    },
+    {
+      "id": 6,
+      "name": "Encased Cutters",
+      "description": "Increases the area of effect radius of submerged knives."
+    },
+    {
+      "id": 7,
+      "name": "Jugular Cut",
+      "description": "Increases damage dealt to stunned targets."
+    },
+    {
+      "id": 8,
+      "name": "The Bigger They Are",
+      "description": "Increases damage dealt to bosses when using submerged knives."
+    },
+    {
+      "id": 9,
+      "name": "Blunt Cleaver",
+      "description": "Chance to stun targets hit."
+    },
+    {
+      "id": 10,
+      "name": "Bone Daggers",
+      "description": "Consume corpses hit by submerged knives unleashing chaining gutting knives towards nearby monsters."
+    },
+    {
+      "id": 11,
+      "name": "Extended Gutting",
+      "description": "Increases the maximum cast range of submerged knives."
+    },
+    {
+      "id": 12,
+      "name": "Nimble Handcraft",
+      "description": "Reduces the cooldown of submerged knives."
+    },
+    {
+      "id": 13,
+      "name": "Meat Skewer",
+      "description": "Chance to impale targets on hit dealing damage over time."
+    },
+    {
+      "id": 14,
+      "name": "Sudden Chaining",
+      "description": "Chance to unleash chains towards target on hit dealing additional damage."
+    },
+    {
+      "id": 15,
+      "name": "Knifehoarder",
+      "description": "Submerged knives can be activated/deactivated. While active periodically unleash submerged knives at nearby monsters inflicting bleeding. Drains a portion of your maximum mana while active."
+    }
+  ]
 }

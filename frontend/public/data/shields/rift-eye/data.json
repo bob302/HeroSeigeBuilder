@@ -1,44 +1,44 @@
 {
-    "Item": "Rift Eye",
-    "Tier": "A",
-    "Level": "64",
-    "Defense": "129.9099-161",
-    "Block": "35",
-    "Type": "Shield",
-    "Size": "2x3",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[90-130]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+2 to Arcane Skills",
-            "class": "stat-arcane"
-        },
-        {
-            "stat": "+[20-30]% Faster Cast Rate",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+15 to Energy",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+10 to Vitality",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Arcane Skill Damage increased by [8-20]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Replenish Mana [15-25]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[30-50] to Mana",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Rift Eye",
+  "Tier": "A",
+  "Level": "64",
+  "Defense": "129.9099-161",
+  "Block": "35",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[90-130]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+2 to Arcane Skills",
+      "class": "stat-arcane"
+    },
+    {
+      "stat": "+[20-30]% Faster Cast Rate",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+15 to Energy",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+10 to Vitality",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Arcane Skill Damage increased by [8-20]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Replenish Mana [15-25]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[30-50] to Mana",
+      "class": "stat-default"
+    }
+  ]
 }

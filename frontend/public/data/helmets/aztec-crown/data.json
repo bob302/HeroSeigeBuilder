@@ -1,35 +1,35 @@
 {
-    "Item": "Aztec Crown",
-    "Tier": "A",
-    "Level": "60",
-    "Defense": "99.9076-125",
-    "Type": "Helmet",
-    "Size": "2x2",
-    "Rarity": "Satanic Set",
-    "Stats": [
-        {
-            "stat": "+[80-130]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+35 to Dexterity",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[370-390] to Additive Poison Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Poison Skill Damage increased by [8-15]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+220 to Life",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+50% to Poison Resistance",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Aztec Crown",
+  "Tier": "A",
+  "Level": "60",
+  "Defense": "99.9076-125",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "+[80-130]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+35 to Dexterity",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[370-390] to Additive Poison Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Poison Skill Damage increased by [8-15]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+220 to Life",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+50% to Poison Resistance",
+      "class": "stat-default"
+    }
+  ]
 }

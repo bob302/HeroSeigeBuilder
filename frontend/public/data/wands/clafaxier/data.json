@@ -1,38 +1,38 @@
 {
-    "Item": "Clafaxier",
-    "Tier": "C",
-    "Level": "23",
-    "Damage": "12.009-15",
-    "APS": "1.501.5",
-    "DPS": "18.5014-23",
-    "Type": "Wand",
-    "TwoHanded": false,
-    "Size": "1x3",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[2-6] Mana per second",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[45-70] to Poison Skill Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Poison Skill Damage increased by 20%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "-[4-10]% to Enemy Poison Resistance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[40-60]% to Poison Resistance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Socketed (0-2)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Clafaxier",
+  "Tier": "C",
+  "Level": "23",
+  "Damage": "12.009-15",
+  "APS": "1.501.5",
+  "DPS": "18.5014-23",
+  "Type": "Wand",
+  "TwoHanded": false,
+  "Size": "1x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[2-6] Mana per second",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[45-70] to Poison Skill Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Poison Skill Damage increased by 20%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "-[4-10]% to Enemy Poison Resistance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[40-60]% to Poison Resistance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Socketed (0-2)",
+      "class": "stat-default"
+    }
+  ]
 }

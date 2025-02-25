@@ -1,8 +1,8 @@
 {
-    "Icon": "ability_7_icon.webp",
-    "Image": "output/classes\\exo\\solar-prophet\\ability_7_icon.webp",
-    "Name": "Blinding Light",
-    "Required Skill(s)": "Shine Bright",
-    "Required Level": "24",
-    "Position": { "x": 0, "y": 3 }
+  "Icon": "ability_7_icon.webp",
+  "Image": "output/classes\\exo\\solar-prophet\\ability_7_icon.webp",
+  "Name": "Blinding Light",
+  "Required Skill(s)": "Shine Bright",
+  "Required Level": "24",
+  "Position": { "x": 0, "y": 3 }
 }

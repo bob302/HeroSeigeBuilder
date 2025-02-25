@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_4_icon.webp",
-    "Image": "output/classes\\pyromancer\\arsonist\\ability_4_icon.webp",
-    "Name": "Hydra",
-    "Required Skill(s)": "Breath of Fire, Fireball",
-    "Required Level": "8",
-    "Position": { "x": 1, "y": 1 }
+  "Icon": "ability_4_icon.webp",
+  "Image": "output/classes\\pyromancer\\arsonist\\ability_4_icon.webp",
+  "Name": "Hydra",
+  "Required Skill(s)": "Breath of Fire, Fireball",
+  "Required Level": "8",
+  "Position": {
+    "x": 1,
+    "y": 1
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Lasting Fire",
+      "description": "Increases the duration of hydra."
+    },
+    {
+      "id": 3,
+      "name": "Fiery Snakebite",
+      "description": "Increases the damage dealt by hydra."
+    },
+    {
+      "id": 4,
+      "name": "Chaotic Calamity",
+      "description": "Hydras now unleash small comets with every attack."
+    },
+    {
+      "id": 5,
+      "name": "Flaming Reach",
+      "description": "Increases the range of hydra attacks."
+    },
+    {
+      "id": 6,
+      "name": "Scorching Blast",
+      "description": "Hydras have a chance to cast a small fire nova at the target on hit."
+    },
+    {
+      "id": 7,
+      "name": "More Heads More Fire",
+      "description": "Increases the amount of hydras you can spawn."
+    },
+    {
+      "id": 8,
+      "name": "Flaming Reflexes",
+      "description": "Increases the attack speed of summoned hydra."
+    },
+    {
+      "id": 9,
+      "name": "Cloning Combustion",
+      "description": "Chance on attack for hydra to create a temporary clone of itself for a short period of time."
+    },
+    {
+      "id": 10,
+      "name": "Searing Snakes",
+      "description": "Now summon all hydras with one cast dealing increased damage and inflicting burning on hit."
+    },
+    {
+      "id": 11,
+      "name": "Burstfire",
+      "description": "Hydras have a chance on attack to fire an additional projectile."
+    },
+    {
+      "id": 12,
+      "name": "Burning Essence",
+      "description": "Hydras deal damage in a small radius around them."
+    },
+    {
+      "id": 13,
+      "name": "Slitherin Army",
+      "description": "Increases damage dealt to burning targets."
+    },
+    {
+      "id": 14,
+      "name": "Hydra Herder",
+      "description": "Hydras now follow the player but the amount of hydras are capped."
+    },
+    {
+      "id": 15,
+      "name": "Scorching Kraken",
+      "description": "Now summon one massive hydra that breathes fire to nearby monsters with increased damage and range."
+    }
+  ]
 }

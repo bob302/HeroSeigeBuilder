@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_1_icon.webp",
-    "Image": "output/classes\\marksman\\sharpshooter\\ability_1_icon.webp",
-    "Name": "Trickshot",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 0, "y": 0 }
+  "Icon": "ability_1_icon.webp",
+  "Image": "output/classes\\marksman\\sharpshooter\\ability_1_icon.webp",
+  "Name": "Trickshot",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": {
+    "x": 0,
+    "y": 0
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Lung Capacity",
+      "description": "Increases attack rating when using trickshot."
+    },
+    {
+      "id": 3,
+      "name": "Tenacity",
+      "description": "Reduces the mana cost of trickshot."
+    },
+    {
+      "id": 4,
+      "name": "Sniper's Touch",
+      "description": "Trickshot no longer bounces but multiplies its damage with the amount of bounces with increased damage and critical strike damage."
+    },
+    {
+      "id": 5,
+      "name": "Lethal Aim",
+      "description": "Increases the damage dealt by trickshot."
+    },
+    {
+      "id": 6,
+      "name": "Archery Skills",
+      "description": "Increases the amount of bounces for trickshot."
+    },
+    {
+      "id": 7,
+      "name": "Looping Shot",
+      "description": "Trickshot can hit the same monster multiple times if there are no others nearby with reduced damage."
+    },
+    {
+      "id": 8,
+      "name": "Deadly Accuracy",
+      "description": "Increases critical strike damage dealt by trickshot."
+    },
+    {
+      "id": 9,
+      "name": "Steady Hands",
+      "description": "Increases the critical strike chance when using trickshot."
+    },
+    {
+      "id": 10,
+      "name": "Powershot",
+      "description": "The initial projectile now pierces with increased range and damage unleashing bouncing arrows to monsters on hit dealing decreased damage."
+    },
+    {
+      "id": 11,
+      "name": "Agile Hunter",
+      "description": "Decreases the movement diminish when using trickshot."
+    },
+    {
+      "id": 12,
+      "name": "Killshot",
+      "description": "Increases the range of trickshot."
+    },
+    {
+      "id": 13,
+      "name": "Maiming Shot",
+      "description": "Trickshot inflicts a portion of its damage as bleeding."
+    },
+    {
+      "id": 14,
+      "name": "Splitting Trickshot",
+      "description": "Each bounce fires additional piercing projectiles."
+    },
+    {
+      "id": 15,
+      "name": "Scorching Arrow",
+      "description": "Trickshot now inflicts burning to monsters for a portion of its damage."
+    }
+  ]
 }

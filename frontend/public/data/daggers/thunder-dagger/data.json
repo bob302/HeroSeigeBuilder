@@ -1,46 +1,46 @@
 {
-    "Item": "Thunder Dagger",
-    "Tier": "A",
-    "Level": "64",
-    "Damage": "94.3584-105",
-    "APS": "1.801.8",
-    "DPS": "170.00151-189",
-    "Type": "Dagger",
-    "TwoHanded": false,
-    "Size": "1x3",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "8% Chance when Striking [Thunder Fury] Level 30",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "+[170-200]% Enhanced Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+8% Increased Attack Rating",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+275 to Attack Rating",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[450-475] to Additive Lightning Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Lightning Skill Damage increased by [12-20]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "-[8-18]% to Enemy Lightning Resistance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+50% to Lightning Resistance",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Thunder Dagger",
+  "Tier": "A",
+  "Level": "64",
+  "Damage": "94.3584-105",
+  "APS": "1.801.8",
+  "DPS": "170.00151-189",
+  "Type": "Dagger",
+  "TwoHanded": false,
+  "Size": "1x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "8% Chance when Striking [Thunder Fury] Level 30",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+[170-200]% Enhanced Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+8% Increased Attack Rating",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+275 to Attack Rating",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[450-475] to Additive Lightning Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Lightning Skill Damage increased by [12-20]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "-[8-18]% to Enemy Lightning Resistance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+50% to Lightning Resistance",
+      "class": "stat-default"
+    }
+  ]
 }

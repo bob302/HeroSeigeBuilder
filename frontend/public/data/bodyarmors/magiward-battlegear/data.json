@@ -1,35 +1,35 @@
 {
-    "Item": "Magiward Battlegear",
-    "Tier": "D",
-    "Level": "14",
-    "Defense": "21.3014-29",
-    "Type": "Body Armor",
-    "Size": "2x3",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+8% Enhanced Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[30-60]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[30-40]% Increased Attack Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[3-5]% Life stolen per Hit",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Arcane Skill Damage increased by 8%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Socketed (0-3)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Magiward Battlegear",
+  "Tier": "D",
+  "Level": "14",
+  "Defense": "21.3014-29",
+  "Type": "Body Armor",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+8% Enhanced Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[30-60]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[30-40]% Increased Attack Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[3-5]% Life stolen per Hit",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Arcane Skill Damage increased by 8%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Socketed (0-3)",
+      "class": "stat-default"
+    }
+  ]
 }

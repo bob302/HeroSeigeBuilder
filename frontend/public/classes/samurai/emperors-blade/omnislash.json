@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_5_icon.webp",
-    "Image": "output/classes\\samurai\\emperors-blade\\ability_5_icon.webp",
-    "Name": "Omnislash",
-    "Required Skill(s)": "Fan of Knives",
-    "Required Level": "16",
-    "Position": { "x": 1, "y": 2 }
+  "Icon": "ability_5_icon.webp",
+  "Image": "output/classes\\samurai\\emperors-blade\\ability_5_icon.webp",
+  "Name": "Omnislash",
+  "Required Skill(s)": "Fan of Knives",
+  "Required Level": "16",
+  "Position": {
+    "x": 1,
+    "y": 2
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Clean Hits",
+      "description": "Increases attack rating when using omnislash."
+    },
+    {
+      "id": 3,
+      "name": "Extra Cut",
+      "description": "Increases the amount of slashes."
+    },
+    {
+      "id": 4,
+      "name": "Lucky Strikes",
+      "description": "Omnislash now always procs all your striking effects on hit with halved amount of slashes and decreased damage. Omnislash cooldown is increased."
+    },
+    {
+      "id": 5,
+      "name": "No Hesitation",
+      "description": "Reduces the cooldown of omnislash."
+    },
+    {
+      "id": 6,
+      "name": "Powerful Slashes",
+      "description": "Increases the damage dealt by omnislash."
+    },
+    {
+      "id": 7,
+      "name": "Looming Cover",
+      "description": "When cast inside a smoke bomb invulnerability lasts for a small duration after omnislash ends."
+    },
+    {
+      "id": 8,
+      "name": "Nail In The Coffin",
+      "description": "Throw a piercing kunai at a nearby enemy with reduced damage each strike."
+    },
+    {
+      "id": 9,
+      "name": "Emperor's Orders",
+      "description": "Striking monsters with Omnislash has a chance to cast empires slash."
+    },
+    {
+      "id": 10,
+      "name": "Thunder Slashes",
+      "description": "Unleash chain lightning with each slash inflicting lightning break on hit."
+    },
+    {
+      "id": 11,
+      "name": "Killstrike",
+      "description": "Increases critical chance with omnislash."
+    },
+    {
+      "id": 12,
+      "name": "Thirst For Death",
+      "description": "Chance to increase the amount of slashes depending on your critical strike chance."
+    },
+    {
+      "id": 13,
+      "name": "Cutting Machine",
+      "description": "Increases critical strike damage dealt by omnislash."
+    },
+    {
+      "id": 14,
+      "name": "Rain Of Chaos",
+      "description": "Each slash now drops a shadow meteor down from the sky dealing area of effect damage when landing."
+    },
+    {
+      "id": 15,
+      "name": "Poison Coated Daggers",
+      "description": "Throw poison coated daggers around with each slash inflicting poisoned and dealing increased damage to poisoned targets."
+    }
+  ]
 }

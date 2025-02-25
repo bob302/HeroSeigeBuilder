@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_2_icon.webp",
-    "Image": "output/classes\\viking\\shield-bearer\\ability_2_icon.webp",
-    "Name": "Charge",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 2, "y": 0 }
+  "Icon": "ability_2_icon.webp",
+  "Image": "output/classes\\viking\\shield-bearer\\ability_2_icon.webp",
+  "Name": "Charge",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": {
+    "x": 2,
+    "y": 0
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Power Charge",
+      "description": "Increases the damage dealt by charge."
+    },
+    {
+      "id": 3,
+      "name": "Hyperfocus",
+      "description": "Increases the duration of charge."
+    },
+    {
+      "id": 4,
+      "name": "Forceful Grab",
+      "description": "Grab monsters on your path dealing damage and stunning them when you crash into terrain."
+    },
+    {
+      "id": 5,
+      "name": "Bodyslam",
+      "description": "Increases damage dealt to stunned targets."
+    },
+    {
+      "id": 6,
+      "name": "Resilience",
+      "description": "Take reduced damage while charging and shortly after."
+    },
+    {
+      "id": 7,
+      "name": "Overconfidence",
+      "description": "Increases the area of effect radius of charge."
+    },
+    {
+      "id": 8,
+      "name": "Spirit Breaker",
+      "description": "Inflicts arcane break on hit."
+    },
+    {
+      "id": 9,
+      "name": "Violent Momentum",
+      "description": "Increases the impact damage dealt by charge for each second spent charging."
+    },
+    {
+      "id": 10,
+      "name": "Mountain Fall",
+      "description": "The mountain breaks and huge boulders fall down on monsters around you when crashing into monsters or terrain."
+    },
+    {
+      "id": 11,
+      "name": "Berserking Ram",
+      "description": "Increases the speed of your charge."
+    },
+    {
+      "id": 12,
+      "name": "Crushing Impact",
+      "description": "Chance to critically hit with increased critical strike damage."
+    },
+    {
+      "id": 13,
+      "name": "Frenzied Mind ",
+      "description": "Stack a buff increasing your arcane skill damage when hitting monsters with charge."
+    },
+    {
+      "id": 14,
+      "name": "Crashquake",
+      "description": "Unleash powerful shockwaves when crashing into monsters or terrain."
+    },
+    {
+      "id": 15,
+      "name": "Whirling Charge",
+      "description": "Charge forward in a straight line unleashing a massive whirlwind around you."
+    }
+  ]
 }

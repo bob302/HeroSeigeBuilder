@@ -1,50 +1,50 @@
 {
-    "Item": "Archangel Staff",
-    "Tier": "A",
-    "Level": "52",
-    "Damage": "43.5040-47",
-    "APS": "1.251.25",
-    "DPS": "54.5050-59",
-    "Type": "Staff",
-    "TwoHanded": true,
-    "Size": "2x3",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "8% Chance when Casting [Master Poisoner] Level 19",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "+[1-2] to All Skills",
-            "class": "stat-allskills"
-        },
-        {
-            "stat": "+[3-6] to [Flash Heal]",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "+[3-6] to [Divine Healing]",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "+[3-8] to [Benediction]",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "Cooldown Recovery Increased by [20-30]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[8-12] Mana per second",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+15 to Energy",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Arcane Skill Damage increased by [20-40]%",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Archangel Staff",
+  "Tier": "A",
+  "Level": "52",
+  "Damage": "43.5040-47",
+  "APS": "1.251.25",
+  "DPS": "54.5050-59",
+  "Type": "Staff",
+  "TwoHanded": true,
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "8% Chance when Casting [Master Poisoner] Level 19",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+[1-2] to All Skills",
+      "class": "stat-allskills"
+    },
+    {
+      "stat": "+[3-6] to [Flash Heal]",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+[3-6] to [Divine Healing]",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+[3-8] to [Benediction]",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "Cooldown Recovery Increased by [20-30]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[8-12] Mana per second",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+15 to Energy",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Arcane Skill Damage increased by [20-40]%",
+      "class": "stat-default"
+    }
+  ]
 }

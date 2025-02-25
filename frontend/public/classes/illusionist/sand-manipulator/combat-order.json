@@ -1,8 +1,8 @@
 {
-    "Icon": "ability_9_icon.webp",
-    "Image": "output/classes\\illusionist\\sand-manipulator\\ability_9_icon.webp",
-    "Name": "Combat Order",
-    "Required Skill(s)": "Circle of Guardians",
-    "Required Level": "30",
-    "Position": { "x": 0, "y": 4 }
+  "Icon": "ability_9_icon.webp",
+  "Image": "output/classes\\illusionist\\sand-manipulator\\ability_9_icon.webp",
+  "Name": "Combat Order",
+  "Required Skill(s)": "Circle of Guardians",
+  "Required Level": "30",
+  "Position": { "x": 0, "y": 4 }
 }

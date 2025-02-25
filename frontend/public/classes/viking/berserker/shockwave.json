@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_7_icon.webp",
-    "Image": "output/classes\\viking\\berserker\\ability_7_icon.webp",
-    "Name": "Shockwave",
-    "Required Skill(s)": "Throw!",
-    "Required Level": "24",
-    "Position": { "x": 0, "y": 3 }
+  "Icon": "ability_7_icon.webp",
+  "Image": "output/classes\\viking\\berserker\\ability_7_icon.webp",
+  "Name": "Shockwave",
+  "Required Skill(s)": "Throw!",
+  "Required Level": "24",
+  "Position": {
+    "x": 0,
+    "y": 3
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Richter Scale",
+      "description": "Increases shockwave travel distance."
+    },
+    {
+      "id": 3,
+      "name": "Earth Shaker",
+      "description": "Increases the damage dealt by shockwave."
+    },
+    {
+      "id": 4,
+      "name": "Trembling Trail",
+      "description": "Smash the ground in front of you creating a shockwave that travels a short distance and then splits into all directions."
+    },
+    {
+      "id": 5,
+      "name": "Ground Fissure",
+      "description": "Chance on hit to knockup monsters dealing additional damage."
+    },
+    {
+      "id": 6,
+      "name": "Shocking Crust",
+      "description": "Increases critical strike damage dealt by shockwave."
+    },
+    {
+      "id": 7,
+      "name": "Multi Trail",
+      "description": "Adds an additional trail but decreases damage dealt by each shockwave."
+    },
+    {
+      "id": 8,
+      "name": "Cracked Earth",
+      "description": "Chance to inflict armor break on hit."
+    },
+    {
+      "id": 9,
+      "name": "Meteorology",
+      "description": "Chance on hit to drop a meteor on the target dealing additional damage."
+    },
+    {
+      "id": 10,
+      "name": "Earthen Maelstrom",
+      "description": "Shockwaves twirl outwards around you dealing increased damage."
+    },
+    {
+      "id": 11,
+      "name": "Duck and Cover",
+      "description": "Increases damage dealt to stunned targets."
+    },
+    {
+      "id": 12,
+      "name": "Afterquake",
+      "description": "Chance on cast to unleash an additional shockwave."
+    },
+    {
+      "id": 13,
+      "name": "Land Mass",
+      "description": "Increases the area of effect radius of shockwave."
+    },
+    {
+      "id": 14,
+      "name": "Cataclysmic Smash",
+      "description": "Smashing the ground now creates shockwaves in every direction. Shockwave now has a cooldown."
+    },
+    {
+      "id": 15,
+      "name": "Forking Crust",
+      "description": "Each wave has a chance to fork into a new trail."
+    }
+  ]
 }

@@ -1,51 +1,51 @@
 {
-    "Item": "Hazmat Suit",
-    "Tier": "B",
-    "Level": "40",
-    "Defense": "153.75114-194",
-    "Type": "Body Armor",
-    "Size": "2x3",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[90-115]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[1-2] to Poison Skills",
-            "class": "stat-poison"
-        },
-        {
-            "stat": "+10 to Vitality",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[400-750] to Poison Skill Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "-[8-20]% to Enemy Poison Resistance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+10% to All Resistances",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+50% to Poison Resistance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+5% to Maximum Poison Resist",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Poison Length Reduced by 50%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Socketed (1-4)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Hazmat Suit",
+  "Tier": "B",
+  "Level": "40",
+  "Defense": "153.75114-194",
+  "Type": "Body Armor",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[90-115]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[1-2] to Poison Skills",
+      "class": "stat-poison"
+    },
+    {
+      "stat": "+10 to Vitality",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[400-750] to Poison Skill Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "-[8-20]% to Enemy Poison Resistance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+10% to All Resistances",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+50% to Poison Resistance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+5% to Maximum Poison Resist",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Poison Length Reduced by 50%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Socketed (1-4)",
+      "class": "stat-default"
+    }
+  ]
 }

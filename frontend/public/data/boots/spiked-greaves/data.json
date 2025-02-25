@@ -1,35 +1,35 @@
 {
-    "Item": "Spiked Greaves",
-    "Tier": "S",
-    "Level": "80",
-    "Defense": "140.40115-167",
-    "Type": "Boots",
-    "Size": "2x2",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "8% Chance when Struck [Dissipating Tornado] Level 23",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "+[120-160]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+20% Increased Movement Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[20-30] to Vitality",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Replenish Life [15-20]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[35-60]% of Damage Returned to the Attacker",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Spiked Greaves",
+  "Tier": "S",
+  "Level": "80",
+  "Defense": "140.40115-167",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "8% Chance when Struck [Dissipating Tornado] Level 23",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+[120-160]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+20% Increased Movement Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[20-30] to Vitality",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Replenish Life [15-20]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[35-60]% of Damage Returned to the Attacker",
+      "class": "stat-default"
+    }
+  ]
 }

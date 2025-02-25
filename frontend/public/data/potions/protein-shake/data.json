@@ -1,18 +1,18 @@
 {
-    "Item": "Protein Shake",
-    "Tier": "S",
-    "Level": "68",
-    "Type": "Potion",
-    "Size": "1x2",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[1-5] to [Flexing]",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "Buffs your Strength and Vitality.",
-            "class": "item-lore"
-        }
-    ]
+  "Item": "Protein Shake",
+  "Tier": "S",
+  "Level": "68",
+  "Type": "Potion",
+  "Size": "1x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[1-5] to [Flexing]",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "Buffs your Strength and Vitality.",
+      "class": "item-lore"
+    }
+  ]
 }

@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_7_icon.webp",
-    "Image": "output/classes\\plaguedoctor\\plague-caller\\ability_7_icon.webp",
-    "Name": "Jar of Leeches",
-    "Required Skill(s)": "Plague of Rats",
-    "Required Level": "24",
-    "Position": { "x": 0, "y": 3 }
+  "Icon": "ability_7_icon.webp",
+  "Image": "output/classes\\plaguedoctor\\plague-caller\\ability_7_icon.webp",
+  "Name": "Jar of Leeches",
+  "Required Skill(s)": "Plague of Rats",
+  "Required Level": "24",
+  "Position": {
+    "x": 0,
+    "y": 3
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Leech Swarm",
+      "description": "Increases the amount of leeches spawned."
+    },
+    {
+      "id": 3,
+      "name": "Power Sucktion",
+      "description": "Increases the damage dealt by jar of leeches."
+    },
+    {
+      "id": 4,
+      "name": "Jug Juggler",
+      "description": "Throw multiple jars in an arc dealing a portion of the damage."
+    },
+    {
+      "id": 5,
+      "name": "Nimble Creepers",
+      "description": "Increases the projectile speed of jar of leeches."
+    },
+    {
+      "id": 6,
+      "name": "Draining the Demons",
+      "description": "Increases the damage dealt to bosses."
+    },
+    {
+      "id": 7,
+      "name": "Bloody Surprise",
+      "description": "Chance on cast to unleash an additional jar of leeches."
+    },
+    {
+      "id": 8,
+      "name": "Overfed",
+      "description": "Increases area of effect radius of jar of leeches."
+    },
+    {
+      "id": 9,
+      "name": "Jar Handler",
+      "description": "Increases the maximum cast range of jar of leeches."
+    },
+    {
+      "id": 10,
+      "name": "Lasting Hunger",
+      "description": "Leeches now stick on targets for a short duration dealing increased damage over time."
+    },
+    {
+      "id": 11,
+      "name": "Leaking Dents",
+      "description": "Chance to inflict bleeding on hit."
+    },
+    {
+      "id": 12,
+      "name": "Call to Ascend",
+      "description": "Consume nearby corpses adding additional leeches into the jar."
+    },
+    {
+      "id": 13,
+      "name": "Blood Sharing",
+      "description": "Restore a portion of your maximum life on hit."
+    },
+    {
+      "id": 14,
+      "name": "Blood-infused Leeches",
+      "description": "Increases leech damage, size and area of effect radius based on your vitality. Jar of leeches consumes a portion of your maximum life per cast."
+    },
+    {
+      "id": 15,
+      "name": "Toxicophile Bloodsucker",
+      "description": "Spawn a static leech at target location. The leech pulsates dealing damage and slowly pulling monsters towards it on hit. Jar of leeches now has a cooldown."
+    }
+  ]
 }

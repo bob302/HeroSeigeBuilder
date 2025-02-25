@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_4_icon.webp",
-    "Image": "output/classes\\necromancer\\lord-of-the-dead\\ability_4_icon.webp",
-    "Name": "Raise Skeleton Mage",
-    "Required Skill(s)": "Raise Skeleton",
-    "Required Level": "8",
-    "Position": { "x": 2, "y": 1 }
+  "Icon": "ability_4_icon.webp",
+  "Image": "output/classes\\necromancer\\lord-of-the-dead\\ability_4_icon.webp",
+  "Name": "Raise Skeleton Mage",
+  "Required Skill(s)": "Raise Skeleton",
+  "Required Level": "8",
+  "Position": {
+    "x": 2,
+    "y": 1
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Undead Coven",
+      "description": "Increases the maximum amount of skeleton mages."
+    },
+    {
+      "id": 3,
+      "name": "Unholy Force",
+      "description": "Increases damage dealt by skeleton mages."
+    },
+    {
+      "id": 4,
+      "name": "Cursed Blast",
+      "description": "Unleash an arcane nova on hit dealing a portion of the damage."
+    },
+    {
+      "id": 5,
+      "name": "Reflection",
+      "description": "Chance for skeleton mages to fire an additional projectile on attack."
+    },
+    {
+      "id": 6,
+      "name": "Unholy Spellsling",
+      "description": "Chance for skeleton mages to critically hit."
+    },
+    {
+      "id": 7,
+      "name": "Unholy Necrosis",
+      "description": "Increases critical strike damage dealt by skeleton mages."
+    },
+    {
+      "id": 8,
+      "name": "Dark Bolts",
+      "description": "Skeleton mage now fires multiple projectiles in an arc."
+    },
+    {
+      "id": 9,
+      "name": "Necrotic Mirage",
+      "description": "Chance on attack to create an illusion for a short period of time."
+    },
+    {
+      "id": 10,
+      "name": "Unholy Lightning",
+      "description": "Skeleton mages now shoot a surge of dark lightning with increased range and damage."
+    },
+    {
+      "id": 11,
+      "name": "Festering Scorch",
+      "description": "Chance to inflict burning on hit."
+    },
+    {
+      "id": 12,
+      "name": "Gluttony",
+      "description": "Increases the life of skeleton mages."
+    },
+    {
+      "id": 13,
+      "name": "Unholy Grasp",
+      "description": "Increases attack speed for skeleton mages."
+    },
+    {
+      "id": 14,
+      "name": "Chaining Scorn",
+      "description": "Attacks now chain on hit dealing increased damage."
+    },
+    {
+      "id": 15,
+      "name": "Summon Archmage",
+      "description": "You can now only summon one skeleton mage but it scales according to the maximum amount of skeleton mages."
+    }
+  ]
 }

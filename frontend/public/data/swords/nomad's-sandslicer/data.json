@@ -1,49 +1,49 @@
 {
-    "Item": "Nomad's Sandslicer",
-    "Tier": "S",
-    "Level": "51",
-    "Damage": "583.40521-646",
-    "APS": "1.501.5",
-    "DPS": "875.50782-969",
-    "Type": "Sword",
-    "Size": "2x4",
-    "Rarity": "Satanic Set",
-    "Stats": [
-        {
-            "stat": "+[520-580]% Enhanced Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[20-40]% Increased Movement Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+15% Chance for a Crushing Blow",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+25% Increased Attack Rating",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+40% of target Defense ignored",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+30 to Strength",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+30 to Dexterity",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Attack Damage increased by [15-30]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Attacks can hit multiple enemies",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Nomad's Sandslicer",
+  "Tier": "S",
+  "Level": "51",
+  "Damage": "583.40521-646",
+  "APS": "1.501.5",
+  "DPS": "875.50782-969",
+  "Type": "Sword",
+  "Size": "2x4",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "+[520-580]% Enhanced Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[20-40]% Increased Movement Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+15% Chance for a Crushing Blow",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+25% Increased Attack Rating",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+40% of target Defense ignored",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+30 to Strength",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+30 to Dexterity",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Attack Damage increased by [15-30]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Attacks can hit multiple enemies",
+      "class": "stat-default"
+    }
+  ]
 }

@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_6_icon.webp",
-    "Image": "output/classes\\paladin\\lionheart\\ability_6_icon.webp",
-    "Name": "Holy Hammer",
-    "Required Skill(s)": "Holy Bolt",
-    "Required Level": "16",
-    "Position": { "x": 2, "y": 2 }
+  "Icon": "ability_6_icon.webp",
+  "Image": "output/classes\\paladin\\lionheart\\ability_6_icon.webp",
+  "Name": "Holy Hammer",
+  "Required Skill(s)": "Holy Bolt",
+  "Required Level": "16",
+  "Position": {
+    "x": 2,
+    "y": 2
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Anvil Smash",
+      "description": "Increases holy hammer projectile speed."
+    },
+    {
+      "id": 3,
+      "name": "Blessed Light",
+      "description": "Increases damage dealt by holy hammer."
+    },
+    {
+      "id": 4,
+      "name": "Divine Lightning",
+      "description": "Hammers unleash a chain of divine lightning on hit."
+    },
+    {
+      "id": 5,
+      "name": "Divine Prayer",
+      "description": "Decreases holy hammer mana cost."
+    },
+    {
+      "id": 6,
+      "name": "Free of Sin",
+      "description": "Decreases movement diminish when using holy hammer."
+    },
+    {
+      "id": 7,
+      "name": "Smite",
+      "description": "Chance on hit to ricochet an additional hammer into the closest monster."
+    },
+    {
+      "id": 8,
+      "name": "Double Forge",
+      "description": "Chance on cast to unleash an additional hammer."
+    },
+    {
+      "id": 9,
+      "name": "Thor’s Revenge",
+      "description": "Chance on hit to drop a hammer down from the sky dealing area of effect damage."
+    },
+    {
+      "id": 10,
+      "name": "Chaining Mallet",
+      "description": "Throw hammers that chain on hit dealing area of effect damage."
+    },
+    {
+      "id": 11,
+      "name": "Sacred Hammer",
+      "description": "Inflicts arcane break on hit."
+    },
+    {
+      "id": 12,
+      "name": "Colossus Hammer",
+      "description": "Increases the size of holy hammers."
+    },
+    {
+      "id": 13,
+      "name": "Slamming Mallet",
+      "description": "Hammers now knock monsters back unleashing a holy pulse on hit dealing area of effect damage."
+    },
+    {
+      "id": 14,
+      "name": "Returning Lightforge",
+      "description": "Throw multiple hammers traveling in a straight line and returning to you. Hammers no longer orbit."
+    },
+    {
+      "id": 15,
+      "name": "Orbital Light",
+      "description": "Hammers now follow you with increased radius and damage."
+    }
+  ]
 }

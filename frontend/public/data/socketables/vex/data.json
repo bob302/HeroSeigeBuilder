@@ -1,13 +1,13 @@
 {
-    "Item": "Vex",
-    "Tier": "A",
-    "Level": "55",
-    "Type": "Socketable",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+7% Mana stolen per Hit",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Vex",
+  "Tier": "A",
+  "Level": "55",
+  "Type": "Socketable",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+7% Mana stolen per Hit",
+      "class": "stat-default"
+    }
+  ]
 }

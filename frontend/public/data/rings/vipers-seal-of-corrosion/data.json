@@ -1,22 +1,22 @@
 {
-    "Item": "Viper's Seal of Corrosion",
-    "Tier": "C",
-    "Level": "22",
-    "Type": "Ring",
-    "Size": "1x1",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "Poison Skill Damage increased by [10-15]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+25% to Arcane Resistance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[25-40]% to Poison Resistance",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Viper's Seal of Corrosion",
+  "Tier": "C",
+  "Level": "22",
+  "Type": "Ring",
+  "Size": "1x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "Poison Skill Damage increased by [10-15]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+25% to Arcane Resistance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[25-40]% to Poison Resistance",
+      "class": "stat-default"
+    }
+  ]
 }

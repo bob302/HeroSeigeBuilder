@@ -1,13 +1,13 @@
 {
-    "Item": "Pul",
-    "Tier": "A",
-    "Level": "45",
-    "Type": "Socketable",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "Mana Costs decreased by 3%",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Pul",
+  "Tier": "A",
+  "Level": "45",
+  "Type": "Socketable",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "Mana Costs decreased by 3%",
+      "class": "stat-default"
+    }
+  ]
 }

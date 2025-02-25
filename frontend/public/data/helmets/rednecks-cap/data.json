@@ -1,27 +1,27 @@
 {
-    "Item": "Redneck's Cap",
-    "Tier": "A",
-    "Level": "61",
-    "Defense": "99.9076-125",
-    "Type": "Helmet",
-    "Size": "2x2",
-    "Rarity": "Satanic Set",
-    "Stats": [
-        {
-            "stat": "+[80-130]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+10 to Strength",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+10 to Vitality",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[50-60] to Life",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Redneck's Cap",
+  "Tier": "A",
+  "Level": "61",
+  "Defense": "99.9076-125",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "+[80-130]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+10 to Strength",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+10 to Vitality",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[50-60] to Life",
+      "class": "stat-default"
+    }
+  ]
 }

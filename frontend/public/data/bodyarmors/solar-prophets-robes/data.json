@@ -1,43 +1,43 @@
 {
-    "Item": "Solar Prophet's Robes",
-    "Tier": "A",
-    "Level": "58",
-    "Defense": "343.00286-400",
-    "Type": "Body Armor",
-    "Size": "2x3",
-    "Rarity": "Satanic Set",
-    "Stats": [
-        {
-            "stat": "+[120-150]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+10% Faster Cast Rate",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Fire Skill Damage increased by [10-25]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[10-15]% of Damage Taken goes to Mana",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+50 to Intelligence (Based on Level)",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[3-8]% Fire Damage Absorbed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[35-60]% to Fire Resistance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Socketed (0-3)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Solar Prophet's Robes",
+  "Tier": "A",
+  "Level": "58",
+  "Defense": "343.00286-400",
+  "Type": "Body Armor",
+  "Size": "2x3",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "+[120-150]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+10% Faster Cast Rate",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Fire Skill Damage increased by [10-25]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[10-15]% of Damage Taken goes to Mana",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+50 to Intelligence (Based on Level)",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[3-8]% Fire Damage Absorbed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[35-60]% to Fire Resistance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Socketed (0-3)",
+      "class": "stat-default"
+    }
+  ]
 }

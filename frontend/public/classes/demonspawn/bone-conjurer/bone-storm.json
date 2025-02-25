@@ -1,8 +1,80 @@
 {
-    "Icon": "ability_3_icon.webp",
-    "Image": "output/classes\\demonspawn\\bone-conjurer\\ability_3_icon.webp",
-    "Name": "Bone Storm",
-    "Required Skill(s)": "Bone Fragments",
-    "Required Level": "8",
-    "Position": { "x": 0, "y": 1 }
+  "Icon": "ability_3_icon.webp",
+  "Image": "output/classes\\demonspawn\\bone-conjurer\\ability_3_icon.webp",
+  "Name": "Bone Storm",
+  "Required Skill(s)": "Bone Fragments",
+  "Required Level": "8",
+  "Position": { "x": 0, "y": 1 },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Forming Storm",
+      "description": "Increases the amount of bone projectiles."
+    },
+    {
+      "id": 3,
+      "name": "Razor Sharp",
+      "description": "Chance to inflict bleeding on hit."
+    },
+    {
+      "id": 4,
+      "name": "Cycloning Bones",
+      "description": "Chance to summon a small cyclone of bones on hit."
+    },
+    {
+      "id": 5,
+      "name": "Demonic Winds",
+      "description": "Increases the speed of bone projectiles."
+    },
+    {
+      "id": 6,
+      "name": "Sacrificial Lambs",
+      "description": "Increases damage to bleeding targets."
+    },
+    {
+      "id": 7,
+      "name": "Demon´s Eye of Storm",
+      "description": "Increases damage dealt by bone storm."
+    },
+    {
+      "id": 8,
+      "name": "Infiltrate their Core",
+      "description": "Chance to inflict arcane break on hit."
+    },
+    {
+      "id": 9,
+      "name": "Devils Favourite",
+      "description": "Chance to knock monsters back on hit dealing increased damage."
+    },
+    {
+      "id": 10,
+      "name": "Bone Devils",
+      "description": "Summons small bone devils at target location."
+    },
+    {
+      "id": 11,
+      "name": "Spontanious Dislocation",
+      "description": "Bone Storm has a chance on hit to summon additional Bone Fragments in random directions."
+    },
+    {
+      "id": 12,
+      "name": "Storm Influx",
+      "description": "Decreases the cooldown of bone storm."
+    },
+    {
+      "id": 13,
+      "name": "Devils Diversion",
+      "description": "Gain increased chance to dodge attacks for a short period when casting bone storm."
+    },
+    {
+      "id": 14,
+      "name": "Bone Tornado",
+      "description": "Unleash a bone tornado towards target location with increased damage."
+    },
+    {
+      "id": 15,
+      "name": "Everlasting Storm",
+      "description": "Bone storm no longer expires but it only deals a portion of its damage."
+    }
+  ]
 }

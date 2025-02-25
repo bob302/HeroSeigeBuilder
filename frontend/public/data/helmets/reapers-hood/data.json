@@ -1,35 +1,35 @@
 {
-    "Item": "Reaper's Hood",
-    "Tier": "A",
-    "Level": "54",
-    "Defense": "99.9076-125",
-    "Type": "Helmet",
-    "Size": "2x2",
-    "Rarity": "Satanic Set",
-    "Stats": [
-        {
-            "stat": "+[80-130]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[80-150] to Attack Rating",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[25-30] to Additive Physical Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[2-4]% Mana stolen per Hit",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[5-10]% Chance to Open Wounds",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Cannot be Frozen",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Reaper's Hood",
+  "Tier": "A",
+  "Level": "54",
+  "Defense": "99.9076-125",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "+[80-130]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[80-150] to Attack Rating",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[25-30] to Additive Physical Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[2-4]% Mana stolen per Hit",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[5-10]% Chance to Open Wounds",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Cannot be Frozen",
+      "class": "stat-default"
+    }
+  ]
 }

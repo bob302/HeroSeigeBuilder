@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_1_icon.webp",
-    "Image": "output/classes\\demonslayer\\executioner\\ability_1_icon.webp",
-    "Name": "Fast Slices",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 0, "y": 0 }
+  "Icon": "ability_1_icon.webp",
+  "Image": "output/classes\\demonslayer\\executioner\\ability_1_icon.webp",
+  "Name": "Fast Slices",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": {
+    "x": 0,
+    "y": 0
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Wide Slice",
+      "description": "Increases the area of effect radius of fast slices."
+    },
+    {
+      "id": 3,
+      "name": "Slashing Strike",
+      "description": "Increases damage dealt by fast slices."
+    },
+    {
+      "id": 4,
+      "name": "Flaming Blades",
+      "description": "Every slice additionally unleashes a wave of fire inflicting burning for a portion of the damage."
+    },
+    {
+      "id": 5,
+      "name": "Expert Slayer",
+      "description": "Increases attack rating when using fast slices."
+    },
+    {
+      "id": 6,
+      "name": "Demon's Heart",
+      "description": "Chance to heat target souls causing them to explode after a brief moment dealing area of effect damage."
+    },
+    {
+      "id": 7,
+      "name": "Ferocious Slice",
+      "description": "Chance to knock monsters airborne causing them to deal area of effect damage upon landing on the third hit."
+    },
+    {
+      "id": 8,
+      "name": "Burning Blade",
+      "description": "Chance to inflict burning on hit."
+    },
+    {
+      "id": 9,
+      "name": "Molten Steel",
+      "description": "Increases damage to burning targets."
+    },
+    {
+      "id": 10,
+      "name": "High Strike",
+      "description": "Your third attack sends enemies high in the air causing them to deal area of effect damage upon landing."
+    },
+    {
+      "id": 11,
+      "name": "Slayer's Intellect",
+      "description": "Decreases mana cost when using fast slices."
+    },
+    {
+      "id": 12,
+      "name": "Swift Deadstrike",
+      "description": "Increases critical strike damage when using fast slices."
+    },
+    {
+      "id": 13,
+      "name": "Demon Slaying",
+      "description": "Execute low life monsters."
+    },
+    {
+      "id": 14,
+      "name": "Detonation Slice",
+      "description": "Your third attack now causes monsters to unleash an explosion dealing area of effect damage."
+    },
+    {
+      "id": 15,
+      "name": "Shadow Daggers",
+      "description": "Throw multiple piercing daggers with each slash."
+    }
+  ]
 }

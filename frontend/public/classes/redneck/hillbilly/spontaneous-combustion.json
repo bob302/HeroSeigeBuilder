@@ -1,8 +1,8 @@
 {
-    "Icon": "ability_7_icon.webp",
-    "Image": "output/classes\\redneck\\hillbilly\\ability_7_icon.webp",
-    "Name": "Spontaneous Combustion",
-    "Required Skill(s)": "Combustible Oil",
-    "Required Level": "24",
-    "Position": { "x": 0, "y": 3 }
+  "Icon": "ability_7_icon.webp",
+  "Image": "output/classes\\redneck\\hillbilly\\ability_7_icon.webp",
+  "Name": "Spontaneous Combustion",
+  "Required Skill(s)": "Combustible Oil",
+  "Required Level": "24",
+  "Position": { "x": 0, "y": 3 }
 }

@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_7_icon.webp",
-    "Image": "output/classes\\marksman\\sharpshooter\\ability_7_icon.webp",
-    "Name": "Arrow Rain",
-    "Required Skill(s)": "Multishot",
-    "Required Level": "24",
-    "Position": { "x": 1, "y": 3 }
+  "Icon": "ability_7_icon.webp",
+  "Image": "output/classes\\marksman\\sharpshooter\\ability_7_icon.webp",
+  "Name": "Arrow Rain",
+  "Required Skill(s)": "Multishot",
+  "Required Level": "24",
+  "Position": {
+    "x": 1,
+    "y": 3
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Spot On",
+      "description": "Increases attack rating when using arrow rain."
+    },
+    {
+      "id": 3,
+      "name": "Long Reach",
+      "description": "Increased the range of arrow rain."
+    },
+    {
+      "id": 4,
+      "name": "Scorching Volley",
+      "description": "Raining arrows are now on fire dealing fire damage instead and lowering monster fire resistances on hit."
+    },
+    {
+      "id": 5,
+      "name": "Rain Of Pain",
+      "description": "Increases the amount of arrow rain projectiles."
+    },
+    {
+      "id": 6,
+      "name": "Coverage",
+      "description": "Increases the area of effect radius of arrow rain."
+    },
+    {
+      "id": 7,
+      "name": "Sharper Tips",
+      "description": "Increases the damage dealt by arrow rain."
+    },
+    {
+      "id": 8,
+      "name": "Split Fall",
+      "description": "Chance on hit for arrows to split into multiple projectiles flying in all directions."
+    },
+    {
+      "id": 9,
+      "name": "My Territory",
+      "description": "Decreases the movement diminish when using arrow rain."
+    },
+    {
+      "id": 10,
+      "name": "Arrow Splinter",
+      "description": "When hitting the ground arrows split into multiple piercing arrows flying in all directions."
+    },
+    {
+      "id": 11,
+      "name": "Cutting Arrows",
+      "description": "Chance to inflict bleed on hit."
+    },
+    {
+      "id": 12,
+      "name": "Wound Salt",
+      "description": "Increases damage dealt to bleeding targets."
+    },
+    {
+      "id": 13,
+      "name": "Maiming Arrow",
+      "description": "Chance to stun target on hit."
+    },
+    {
+      "id": 14,
+      "name": "Kill Command",
+      "description": "Unleash a long rain of arrows on a massive radius. Arrow rain now has a cooldown."
+    },
+    {
+      "id": 15,
+      "name": "Contract Killer",
+      "description": "Decreases the radius of arrow rain significantly dealing increased damage."
+    }
+  ]
 }

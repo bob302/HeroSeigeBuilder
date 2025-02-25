@@ -4,9 +4,24 @@
       <p class="attribute-text">{{ attr.label }}:</p>
       <p class="attribute-amount">{{ editorContext[attr.key] }}</p>
       <div class="buttons">
-        <button @click="increaseAttribute(attr.key, 1)" :disabled="editorContext.getAttributePoints() < 1">+1</button>
-        <button @click="increaseAttribute(attr.key, 5)" :disabled="editorContext.getAttributePoints() < 5">+5</button>
-        <button @click="maximizeAttribute(attr.key)" :disabled="editorContext.getAttributePoints() === 0">Max</button>
+        <button
+          @click="increaseAttribute(attr.key, 1)"
+          :disabled="editorContext.getAttributePoints() < 1"
+        >
+          +1
+        </button>
+        <button
+          @click="increaseAttribute(attr.key, 5)"
+          :disabled="editorContext.getAttributePoints() < 5"
+        >
+          +5
+        </button>
+        <button
+          @click="maximizeAttribute(attr.key)"
+          :disabled="editorContext.getAttributePoints() === 0"
+        >
+          Max
+        </button>
       </div>
     </div>
 
@@ -16,29 +31,39 @@
     </div>
 
     <div class="action-buttons">
-      <button class="spread-button" @click="spreadEvenly" :disabled="editorContext.getAttributePoints() === 0">Spread Evenly</button>
-      <button class="reset-button" @click="editorContext.resetAttributes()">Reset</button>
+      <button
+        class="spread-button"
+        @click="spreadEvenly"
+        :disabled="editorContext.getAttributePoints() === 0"
+      >
+        Distribute Evenly
+      </button>
+      <button class="reset-button" @click="editorContext.resetAttributes()">
+        Reset
+      </button>
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Inject, Vue } from 'vue-facing-decorator';
-import type EditorContext from '../models/EditorContext';
+import { Component, Inject, Vue } from "vue-facing-decorator";
+import type EditorContext from "../models/EditorContext";
 
 @Component
 export default class AttributeList extends Vue {
-  @Inject({from: 'editorContext'}) 
+  @Inject({ from: "editorContext" })
   readonly editorContext!: EditorContext;
 
-  attributes: { key: "strength" | "dexterity" | "intelligence" | "energy" | "vitality"; label: string }[] = [
+  attributes: {
+    key: "strength" | "dexterity" | "intelligence" | "energy" | "vitality";
+    label: string;
+  }[] = [
     { key: "strength", label: "Strength" },
     { key: "dexterity", label: "Dexterity" },
     { key: "intelligence", label: "Intelligence" },
     { key: "energy", label: "Energy" },
-    { key: "vitality", label: "Vitality" }
+    { key: "vitality", label: "Vitality" },
   ];
-
 
   spreadEvenly() {
     const remainingPoints = this.editorContext.getAttributePoints();
@@ -56,14 +81,28 @@ export default class AttributeList extends Vue {
     });
   }
 
-  increaseAttribute(attribute: "strength" | "dexterity" | "intelligence" | "energy" | "vitality", amount: number) {
+  increaseAttribute(
+    attribute:
+      | "strength"
+      | "dexterity"
+      | "intelligence"
+      | "energy"
+      | "vitality",
+    amount: number,
+  ) {
     this.editorContext.increaseAttribute(attribute, amount);
   }
 
-  maximizeAttribute(attribute: "strength" | "dexterity" | "intelligence" | "energy" | "vitality") {
+  maximizeAttribute(
+    attribute:
+      | "strength"
+      | "dexterity"
+      | "intelligence"
+      | "energy"
+      | "vitality",
+  ) {
     this.increaseAttribute(attribute, this.editorContext.getAttributePoints());
   }
-
 }
 </script>
 
@@ -79,7 +118,7 @@ export default class AttributeList extends Vue {
   display: grid;
   grid-template-columns: 1fr auto auto;
   gap: 10px;
-  width: 15rem;
+  width: 100%;
   align-items: center;
 }
 

@@ -1,37 +1,37 @@
 {
-    "Item": "Masamune",
-    "Tier": "S",
-    "Level": "85",
-    "Damage": "283.80255-314",
-    "APS": "1.791.79",
-    "DPS": "508.50456-561",
-    "Type": "Sword",
-    "Size": "3x2",
-    "Rarity": "Satanic Set",
-    "Stats": [
-        {
-            "stat": "10% Chance when Attacking [Zeal] Level 28",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "+[430-480]% Enhanced Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+20% Increased Attack Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+35% Chance for a Deadly Blow",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+825 to Attack Rating",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+30 to Dexterity",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Masamune",
+  "Tier": "S",
+  "Level": "85",
+  "Damage": "283.80255-314",
+  "APS": "1.791.79",
+  "DPS": "508.50456-561",
+  "Type": "Sword",
+  "Size": "3x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "10% Chance when Attacking [Zeal] Level 28",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+[430-480]% Enhanced Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+20% Increased Attack Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+35% Chance for a Deadly Blow",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+825 to Attack Rating",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+30 to Dexterity",
+      "class": "stat-default"
+    }
+  ]
 }

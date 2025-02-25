@@ -1,10 +1,10 @@
 import ColorUtils from "../util/ColorUtils";
 import { deserialize, type BaseItem, type Equipment } from "./Equipment";
 import { Point2D } from "./Point2D";
-import { v4 as uuidv4 } from 'uuid';
+import { v4 as uuidv4 } from "uuid";
 
 export class Item {
-  data!: BaseItem
+  data!: BaseItem;
   size!: Point2D;
   startCoordinates: Point2D = new Point2D(0, 0);
   sizeInCells: Point2D[];
@@ -12,34 +12,34 @@ export class Item {
   cachedSizeInCells: Point2D[];
   isRotated: boolean = false;
   uniqueId!: string;
-  
+
   constructor(data: BaseItem, size: Point2D) {
-    this.size = size
-    this.data = data
+    this.size = size;
+    this.data = data;
     this.sizeInCells = this.calcItemSize();
     this.cachedSize = this.size;
     this.cachedSizeInCells = [...this.sizeInCells];
     this.isRotated = false;
-    this.uniqueId = uuidv4()
+    this.uniqueId = uuidv4();
   }
 
   rarityToBackgroundImage() {
-    return ColorUtils.rarityToBackground(this.data.rarity)
+    return ColorUtils.rarityToBackground(this.data.rarity);
   }
 
   setSize(size: Point2D): void {
-    this.size = size
+    this.size = size;
     this.sizeInCells = this.calcItemSize();
     this.cachedSize = this.size;
     this.cachedSizeInCells = [...this.sizeInCells];
   }
 
   setData(data: Equipment): void {
-    this.data = data
+    this.data = data;
   }
 
   setSizeInCells(sizeInCells: Point2D[]): void {
-    this.sizeInCells = sizeInCells
+    this.sizeInCells = sizeInCells;
   }
 
   getSizeInCells(): readonly Point2D[] {
@@ -65,12 +65,12 @@ export class Item {
   }
 
   copy(): Item {
-    const item = new Item(this.data, this.size)
-    item.setStartCoordinates(this.getStartCoordinates())
-    return item
+    const item = new Item(this.data, this.size);
+    item.setStartCoordinates(this.getStartCoordinates());
+    return item;
   }
 
-   // ───── Serialization Methods ─────
+  // ───── Serialization Methods ─────
 
   /**
    * Returns a plain object representing this Item,
@@ -78,14 +78,18 @@ export class Item {
    */
   serialize(): any {
     return {
-      data: this.data && typeof (this.data as any).serialize === "function"
-        ? (this.data as any).serialize()
-        : this.data,
-        
+      data:
+        this.data && typeof (this.data as any).serialize === "function"
+          ? (this.data as any).serialize()
+          : this.data,
+
       size: { x: this.size.x, y: this.size.y },
-      startCoordinates: { x: this.startCoordinates.x, y: this.startCoordinates.y },
+      startCoordinates: {
+        x: this.startCoordinates.x,
+        y: this.startCoordinates.y,
+      },
       isRotated: this.isRotated,
-      uniqueId: this.uniqueId
+      uniqueId: this.uniqueId,
     };
   }
 
@@ -96,13 +100,13 @@ export class Item {
     // Deserialize the equipment data.
     const equipment = deserialize(serialized.data);
 
-
     const size = new Point2D(serialized.size.x, serialized.size.y);
     const item = new Item(equipment, size);
-    item.setStartCoordinates(new Point2D(serialized.startCoordinates.x, serialized.startCoordinates.y));
+    item.setStartCoordinates(
+      new Point2D(serialized.startCoordinates.x, serialized.startCoordinates.y),
+    );
     item.isRotated = serialized.isRotated;
     item.uniqueId = serialized.uniqueId;
     return item;
   }
-
 }

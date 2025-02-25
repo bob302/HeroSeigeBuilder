@@ -1,26 +1,26 @@
 {
-    "Item": "High Demon's Necklace",
-    "Tier": "S",
-    "Level": "83",
-    "Type": "Amulet",
-    "Size": "1x2",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[1-2] to All Skills",
-            "class": "stat-allskills"
-        },
-        {
-            "stat": "+[3-7]% Life stolen per Hit",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[450-480] to Additive Cold Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[30-50]% Defense vs Missiles",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "High Demon's Necklace",
+  "Tier": "S",
+  "Level": "83",
+  "Type": "Amulet",
+  "Size": "1x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[1-2] to All Skills",
+      "class": "stat-allskills"
+    },
+    {
+      "stat": "+[3-7]% Life stolen per Hit",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[450-480] to Additive Cold Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[30-50]% Defense vs Missiles",
+      "class": "stat-default"
+    }
+  ]
 }

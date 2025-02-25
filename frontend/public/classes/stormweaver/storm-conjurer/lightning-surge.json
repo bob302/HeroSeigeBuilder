@@ -1,8 +1,80 @@
 {
-    "Icon": "ability_4_icon.webp",
-    "Image": "output/classes\\stormweaver\\storm-conjurer\\ability_4_icon.webp",
-    "Name": "Lightning Surge",
-    "Required Skill(s)": "None",
-    "Required Level": "8",
-    "Position": { "x": 2, "y": 1 }
+  "Icon": "ability_4_icon.webp",
+  "Image": "output/classes\\stormweaver\\storm-conjurer\\ability_4_icon.webp",
+  "Name": "Lightning Surge",
+  "Required Skill(s)": "None",
+  "Required Level": "8",
+  "Position": { "x": 2, "y": 1 },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Amplified Storm",
+      "description": "Increases the damage dealt by lightning surge."
+    },
+    {
+      "id": 3,
+      "name": "Storm's Prophet",
+      "description": "Decreases the mana cost of lightning surge."
+    },
+    {
+      "id": 4,
+      "name": "Surging Comeback",
+      "description": "Lightning surge returns after a short duration dealing increased damage."
+    },
+    {
+      "id": 5,
+      "name": "Shocked to the Core",
+      "description": "Chance to lower target attack rating on hit."
+    },
+    {
+      "id": 6,
+      "name": "Heated Lightning",
+      "description": "Chance to inflict burning on hit."
+    },
+    {
+      "id": 7,
+      "name": "Piercing Bolt",
+      "description": "Chance to inflict lightning break on hit."
+    },
+    {
+      "id": 8,
+      "name": "Restoring Surge",
+      "description": "Chance to restore portion of your maximum mana on hit."
+    },
+    {
+      "id": 9,
+      "name": "Voltaic Pressure",
+      "description": "Increases cast rate when using lightning surge."
+    },
+    {
+      "id": 10,
+      "name": "Surging Tornado",
+      "description": "Unleash a tornado of surging lightning dealing increased damage."
+    },
+    {
+      "id": 11,
+      "name": "Storm Summoner",
+      "description": "Chance to summon a small storm cloud on hit."
+    },
+    {
+      "id": 12,
+      "name": "Lightning Strikes Twice",
+      "description": "Chance on cast to unleash an additional lightning surge."
+    },
+    {
+      "id": 13,
+      "name": "Grounding Surge",
+      "description": "Chance for lightning surge to explode into multiple smaller surges on hit."
+    },
+    {
+      "id": 14,
+      "name": "Supercharged",
+      "description": "Unleash multiple narrower surges in an arc dealing a portion of the damage."
+    },
+    {
+      "id": 15,
+      "name": "Concurrent Current",
+      "description": "Lightning surge attaches a tether to multiple targets dealing damage over time."
+    }
+  ]
 }

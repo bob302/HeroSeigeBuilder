@@ -1,47 +1,47 @@
 {
-    "Item": "Harlequinn's Veil",
-    "Tier": "SS",
-    "Level": "92",
-    "Defense": "202.50180-225",
-    "Type": "Helmet",
-    "Size": "2x2",
-    "Rarity": "Heroic",
-    "Stats": [
-        {
-            "stat": "+[2-5] to All Skills",
-            "class": "stat-allskills"
-        },
-        {
-            "stat": "+[15-25] to All Attributes",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[40-75]% Faster Hit Recovery",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Physical Damage Taken Reduced by [8-12]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Magic Damage Taken Reduced by [8-12]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+525 to Mana (Based on Level)",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[15-30]% to All Resistances",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[25-50]% Increased Magic Find",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Socketed (1-3)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Harlequinn's Veil",
+  "Tier": "SS",
+  "Level": "92",
+  "Defense": "202.50180-225",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "+[2-5] to All Skills",
+      "class": "stat-allskills"
+    },
+    {
+      "stat": "+[15-25] to All Attributes",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[40-75]% Faster Hit Recovery",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Physical Damage Taken Reduced by [8-12]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Magic Damage Taken Reduced by [8-12]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+525 to Mana (Based on Level)",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[15-30]% to All Resistances",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[25-50]% Increased Magic Find",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Socketed (1-3)",
+      "class": "stat-default"
+    }
+  ]
 }

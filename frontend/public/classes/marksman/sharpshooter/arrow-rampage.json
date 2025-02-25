@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_9_icon.webp",
-    "Image": "output/classes\\marksman\\sharpshooter\\ability_9_icon.webp",
-    "Name": "Arrow Rampage",
-    "Required Skill(s)": "Arrow Rain",
-    "Required Level": "30",
-    "Position": { "x": 2, "y": 4 }
+  "Icon": "ability_9_icon.webp",
+  "Image": "output/classes\\marksman\\sharpshooter\\ability_9_icon.webp",
+  "Name": "Arrow Rampage",
+  "Required Skill(s)": "Arrow Rain",
+  "Required Level": "30",
+  "Position": {
+    "x": 2,
+    "y": 4
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Arrow to the Knee",
+      "description": "Increases the damage dealt by arrow rampage."
+    },
+    {
+      "id": 3,
+      "name": "Spinning Shrapnel",
+      "description": "Chance on hit to sling the arrow in the air spinning and dropping back dealing additional damage."
+    },
+    {
+      "id": 4,
+      "name": "Marked For Destruction",
+      "description": "Arrow rampage now spawns from all directions flying towards target area for an extended period of time. Cooldown is increased."
+    },
+    {
+      "id": 5,
+      "name": "Shredding Hit",
+      "description": "Inflict armor break on hit."
+    },
+    {
+      "id": 6,
+      "name": "Bigger is Better",
+      "description": "Chance to increase arrow size and area of effect of arrow rampage."
+    },
+    {
+      "id": 7,
+      "name": "Exploding Arrowhead",
+      "description": "Projectiles explode on hit."
+    },
+    {
+      "id": 8,
+      "name": "Critical Hit",
+      "description": "Increases the critical strike chance when using arrow rampage."
+    },
+    {
+      "id": 9,
+      "name": "Crucial Strike",
+      "description": "Increased critical strike damage dealt by arrow rampage."
+    },
+    {
+      "id": 10,
+      "name": "Fiery Rain of Arrows",
+      "description": "Arrow rampage area becomes much wider and deals a portion of its damage as fire causing burning on monsters hit based on fire damage dealt."
+    },
+    {
+      "id": 11,
+      "name": "Arcanum Arrow",
+      "description": "Increases the arcane damage dealt by arrow rampage."
+    },
+    {
+      "id": 12,
+      "name": "Arcanum Penetration",
+      "description": "Inflicts arcane break on hit."
+    },
+    {
+      "id": 13,
+      "name": "Blast Wave",
+      "description": "Increases the explosion area of effect radius."
+    },
+    {
+      "id": 14,
+      "name": "Tricky Tactics",
+      "description": "Arrow rampage projectiles have a chance to cast trickshot when hitting a monster."
+    },
+    {
+      "id": 15,
+      "name": "Arrow Mayhem",
+      "description": "Arrow rampage projectiles have a chance to shatter into a spread of arrows when hitting a target."
+    }
+  ]
 }

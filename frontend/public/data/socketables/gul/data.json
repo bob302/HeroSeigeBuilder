@@ -1,13 +1,13 @@
 {
-    "Item": "Gul",
-    "Tier": "A",
-    "Level": "53",
-    "Type": "Socketable",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+15% Increased Attack Rating",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Gul",
+  "Tier": "A",
+  "Level": "53",
+  "Type": "Socketable",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+15% Increased Attack Rating",
+      "class": "stat-default"
+    }
+  ]
 }

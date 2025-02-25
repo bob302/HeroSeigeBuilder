@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_4_icon.webp",
-    "Image": "output/classes\\necromancer\\venomancer\\ability_4_icon.webp",
-    "Name": "Poison Breath",
-    "Required Skill(s)": "None",
-    "Required Level": "8",
-    "Position": { "x": 2, "y": 1 }
+  "Icon": "ability_4_icon.webp",
+  "Image": "output/classes\\necromancer\\venomancer\\ability_4_icon.webp",
+  "Name": "Poison Breath",
+  "Required Skill(s)": "None",
+  "Required Level": "8",
+  "Position": {
+    "x": 2,
+    "y": 1
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Neurotoxin",
+      "description": "Increases cast rate when using poison breath."
+    },
+    {
+      "id": 3,
+      "name": "Aerial Fumes",
+      "description": "Increases the size of poison breath."
+    },
+    {
+      "id": 4,
+      "name": "Acid Spit",
+      "description": "Spew out multiple poison projectiles exploding into acid novas inflicting increased poisoned damage."
+    },
+    {
+      "id": 5,
+      "name": "Venomous Essence",
+      "description": "Inflicts poisoned on hit."
+    },
+    {
+      "id": 6,
+      "name": "Contamination",
+      "description": "Chance on hit to chain an additional breath from the target to its closest monster."
+    },
+    {
+      "id": 7,
+      "name": "Acid Components",
+      "description": "Dissolve low life monsters into pools of acid dealing additional damage and slowing on hit."
+    },
+    {
+      "id": 8,
+      "name": "Poisonous Gas",
+      "description": "Increases damage dealt to poisoned targets."
+    },
+    {
+      "id": 9,
+      "name": "Vile Bacteria",
+      "description": "Chance on hit to inflict poison break."
+    },
+    {
+      "id": 10,
+      "name": "Plague Breath",
+      "description": "Unleash multiple breaths in an arc dealing increased damage."
+    },
+    {
+      "id": 11,
+      "name": "Toxic Lungs",
+      "description": "Increases the damage dealt by poison breath."
+    },
+    {
+      "id": 12,
+      "name": "Necrotic Intellect",
+      "description": "Decreases the mana cost of poison breath."
+    },
+    {
+      "id": 13,
+      "name": "Necrotic Ward",
+      "description": "Chance to spawn a necrotic ward on hit unleashing poison breath towards the nearest monster for a short period."
+    },
+    {
+      "id": 14,
+      "name": "Bio Hazard",
+      "description": "Increases the size of poison breath on hit."
+    },
+    {
+      "id": 15,
+      "name": "Necrotic Tongue",
+      "description": "Increases the length of poison breath inflicting poison break and dealing increased damage."
+    }
+  ]
 }

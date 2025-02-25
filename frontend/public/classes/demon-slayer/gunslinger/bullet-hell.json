@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_4_icon.webp",
-    "Image": "output/classes\\demonslayer\\gunslinger\\ability_4_icon.webp",
-    "Name": "Bullet Hell",
-    "Required Skill(s)": "Trigger Finger",
-    "Required Level": "8",
-    "Position": { "x": 1, "y": 1 }
+  "Icon": "ability_4_icon.webp",
+  "Image": "output/classes\\demonslayer\\gunslinger\\ability_4_icon.webp",
+  "Name": "Bullet Hell",
+  "Required Skill(s)": "Trigger Finger",
+  "Required Level": "8",
+  "Position": {
+    "x": 1,
+    "y": 1
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Hellflame Bullets",
+      "description": "Increases damage dealt by bullet hell."
+    },
+    {
+      "id": 3,
+      "name": "More Bullets",
+      "description": "Increases the amount of projectiles fired by bullet hell."
+    },
+    {
+      "id": 4,
+      "name": "Bullet Storm",
+      "description": "Fire bullets into all directions with reduced travel distance."
+    },
+    {
+      "id": 5,
+      "name": "Slipping Triggerfinger",
+      "description": "Chance on attack to fire an additional wave of bullets."
+    },
+    {
+      "id": 6,
+      "name": "Steady Gunhold",
+      "description": "Increases attack rating when using bullet hell."
+    },
+    {
+      "id": 7,
+      "name": "Heavy Bullet Impact",
+      "description": "Chance to knock monsters back on hit stunning them."
+    },
+    {
+      "id": 8,
+      "name": "Barrel Maintenance",
+      "description": "Increases projectile speed."
+    },
+    {
+      "id": 9,
+      "name": "Higher Caliber",
+      "description": "Increases the size of bullet hell projectiles."
+    },
+    {
+      "id": 10,
+      "name": "Gunpowder",
+      "description": "Bullets knock monsters back with increased power dealing increased damage and stunning monsters when they collide with terrain."
+    },
+    {
+      "id": 11,
+      "name": "Blasting Gunshot",
+      "description": "Increases critical strike damage when using bullet hell."
+    },
+    {
+      "id": 12,
+      "name": "Fragging Rounds",
+      "description": "Chance on hit to unleash an explosion dealing area of effect damage."
+    },
+    {
+      "id": 13,
+      "name": "Abusive Tactics",
+      "description": "Increases damage dealt to stunned targets."
+    },
+    {
+      "id": 14,
+      "name": "Nowhere to Hide",
+      "description": "Fire additional projectiles in a wider radius."
+    },
+    {
+      "id": 15,
+      "name": "Demon's Ricochet",
+      "description": "Projectiles now chain on impact."
+    }
+  ]
 }

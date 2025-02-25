@@ -1,35 +1,35 @@
 {
-    "Item": "Wardbreaker Armor",
-    "Tier": "C",
-    "Level": "27",
-    "Defense": "69.1038-101",
-    "Type": "Body Armor",
-    "Size": "2x3",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "10% Chance when Struck [Volatile Shot] Level 10",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "+[70-110]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[10-20] to Strength",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+30 to Dexterity",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[10-15]% to All Resistances",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Socketed (1-4)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Wardbreaker Armor",
+  "Tier": "C",
+  "Level": "27",
+  "Defense": "69.1038-101",
+  "Type": "Body Armor",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "10% Chance when Struck [Volatile Shot] Level 10",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+[70-110]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[10-20] to Strength",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+30 to Dexterity",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[10-15]% to All Resistances",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Socketed (1-4)",
+      "class": "stat-default"
+    }
+  ]
 }

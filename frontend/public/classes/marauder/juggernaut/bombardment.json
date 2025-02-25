@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_9_icon.webp",
-    "Image": "output/classes\\marauder\\juggernaut\\ability_9_icon.webp",
-    "Name": "Bombardment",
-    "Required Skill(s)": "The Big Bo-oM",
-    "Required Level": "30",
-    "Position": { "x": 0, "y": 4 }
+  "Icon": "ability_9_icon.webp",
+  "Image": "output/classes\\marauder\\juggernaut\\ability_9_icon.webp",
+  "Name": "Bombardment",
+  "Required Skill(s)": "The Big Bo-oM",
+  "Required Level": "30",
+  "Position": {
+    "x": 0,
+    "y": 4
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Double the Fuel",
+      "description": "Increases the damage dealt by bombardment."
+    },
+    {
+      "id": 3,
+      "name": "Spikeballrdment",
+      "description": "Chance for bombs to turn into spike balls dealing increased physical damage."
+    },
+    {
+      "id": 4,
+      "name": "All Around Annihilation",
+      "description": "Unleash bombardment in a circle around you increasing bomb damage over time."
+    },
+    {
+      "id": 5,
+      "name": "Efficient Reload",
+      "description": "Decreases the cooldown of bombardment."
+    },
+    {
+      "id": 6,
+      "name": "Full Body Workout",
+      "description": "Increases the projectile speed of bombardment."
+    },
+    {
+      "id": 7,
+      "name": "Massive Strike",
+      "description": "Increases the damage dealt by bombardment also increasing the cooldown."
+    },
+    {
+      "id": 8,
+      "name": "Fire Charges",
+      "description": "Chance to inflict burning on hit."
+    },
+    {
+      "id": 9,
+      "name": "Factory Upgrade",
+      "description": "Increases the projectile size of bombardment."
+    },
+    {
+      "id": 10,
+      "name": "ICBM",
+      "description": "Launch an intercontinental ballistic missile towards target location dealing damage on a large radius leaving the ground blazing with flames dealing a portion of the damage over time."
+    },
+    {
+      "id": 11,
+      "name": "Efficient Production",
+      "description": "Increases the projectile amount of bombardment."
+    },
+    {
+      "id": 12,
+      "name": "Solid Explosive Fuel",
+      "description": "Increases the area of effect radius of bombardment explosions."
+    },
+    {
+      "id": 13,
+      "name": "Casual Bombing",
+      "description": "Throw a single wave of bombs removing the cooldown from bombardment."
+    },
+    {
+      "id": 14,
+      "name": "Clusterbombing",
+      "description": "Call down raining bombs on multiple nearby monsters. The raining bombs have a chance to unleash smaller bombs after exploding."
+    },
+    {
+      "id": 15,
+      "name": "Big Bo-Ombing",
+      "description": "Unleash a single trail of big bo-oms with increased damage and area of effect radius."
+    }
+  ]
 }

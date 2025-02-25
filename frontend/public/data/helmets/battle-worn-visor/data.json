@@ -1,31 +1,31 @@
 {
-    "Item": "Battle Worn Visor",
-    "Tier": "B",
-    "Level": "38",
-    "Defense": "79.3060-99",
-    "Type": "Helmet",
-    "Size": "2x2",
-    "Rarity": "Satanic Set",
-    "Stats": [
-        {
-            "stat": "+[55-85]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+5% Life stolen per Hit",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+10 to Strength",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+15 Life After each Kill",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+75% Enhanced Damage (Based on Level)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Battle Worn Visor",
+  "Tier": "B",
+  "Level": "38",
+  "Defense": "79.3060-99",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "+[55-85]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+5% Life stolen per Hit",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+10 to Strength",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+15 Life After each Kill",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+75% Enhanced Damage (Based on Level)",
+      "class": "stat-default"
+    }
+  ]
 }

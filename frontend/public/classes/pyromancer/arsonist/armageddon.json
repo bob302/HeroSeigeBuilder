@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_9_icon.webp",
-    "Image": "output/classes\\pyromancer\\arsonist\\ability_9_icon.webp",
-    "Name": "Armageddon",
-    "Required Skill(s)": "Fire Nova",
-    "Required Level": "30",
-    "Position": { "x": 1, "y": 4 }
+  "Icon": "ability_9_icon.webp",
+  "Image": "output/classes\\pyromancer\\arsonist\\ability_9_icon.webp",
+  "Name": "Armageddon",
+  "Required Skill(s)": "Fire Nova",
+  "Required Level": "30",
+  "Position": {
+    "x": 1,
+    "y": 4
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Falling Wrath",
+      "description": "Increases the amount of armageddon projectiles."
+    },
+    {
+      "id": 3,
+      "name": "Storm of Fire",
+      "description": "Increases the area of effect radius of armageddon."
+    },
+    {
+      "id": 4,
+      "name": "Searing Concentration",
+      "description": "Armageddon area of effect is now drastically smaller for more concentrated damage output."
+    },
+    {
+      "id": 5,
+      "name": "Colossal Chunks",
+      "description": "Increases projectile size and explosion radius."
+    },
+    {
+      "id": 6,
+      "name": "Searing Meteor",
+      "description": "Chance to inflict burning on hit."
+    },
+    {
+      "id": 7,
+      "name": "Pyrokinetic Madness",
+      "description": "Chance on cast to unleash an additional armageddon."
+    },
+    {
+      "id": 8,
+      "name": "Doomsday Clock",
+      "description": "Decreases the cooldown of armageddon."
+    },
+    {
+      "id": 9,
+      "name": "Blisters",
+      "description": "Increases damage dealt to burning targets."
+    },
+    {
+      "id": 10,
+      "name": "Warped Doom",
+      "description": "Armageddon projectiles now fly horizontally through terrain exploding on hit."
+    },
+    {
+      "id": 11,
+      "name": "Ball of Fire",
+      "description": "Chance for a meteor to turn into a ball of fire with increased size and damage."
+    },
+    {
+      "id": 12,
+      "name": "Doom Fire",
+      "description": "Increased the damage dealt by armageddon."
+    },
+    {
+      "id": 13,
+      "name": "Blazing Pulse",
+      "description": "Chance on hit to unleash a fiery pulse dealing additional damage."
+    },
+    {
+      "id": 14,
+      "name": "Warm Shower",
+      "description": "Armageddon now follows the player dealing increased damage."
+    },
+    {
+      "id": 15,
+      "name": "Blistering Bolt",
+      "description": "Armageddon now drops a meteor on every monster around you on a large radius. Armageddon no longer has a cooldown."
+    }
+  ]
 }

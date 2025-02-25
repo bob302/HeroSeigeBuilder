@@ -1,39 +1,39 @@
 {
-    "Item": "Death Lord's Bone Armor",
-    "Tier": "A",
-    "Level": "57",
-    "Defense": "357.50299-416",
-    "Type": "Body Armor",
-    "Size": "2x3",
-    "Rarity": "Satanic Set",
-    "Stats": [
-        {
-            "stat": "+[130-160]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[10-20] to Energy",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[10-20] to Vitality",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[340-460] to Additive Arcane Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+50 to Mana (Based on Level)",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+50% to Arcane Resistance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Socketed (0-3)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Death Lord's Bone Armor",
+  "Tier": "A",
+  "Level": "57",
+  "Defense": "357.50299-416",
+  "Type": "Body Armor",
+  "Size": "2x3",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "+[130-160]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[10-20] to Energy",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[10-20] to Vitality",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[340-460] to Additive Arcane Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+50 to Mana (Based on Level)",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+50% to Arcane Resistance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Socketed (0-3)",
+      "class": "stat-default"
+    }
+  ]
 }

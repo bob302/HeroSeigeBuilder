@@ -1,8 +1,80 @@
 {
-    "Icon": "ability_1_icon.webp",
-    "Image": "output/classes\\exo\\solar-prophet\\ability_1_icon.webp",
-    "Name": "Scorching Whip",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 1, "y": 0 }
+  "Icon": "ability_1_icon.webp",
+  "Image": "output/classes\\exo\\solar-prophet\\ability_1_icon.webp",
+  "Name": "Scorching Whip",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": { "x": 1, "y": 0 },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Double Whip",
+      "description": "Chance on attack to unleash an additional scorching whip."
+    },
+    {
+      "id": 3,
+      "name": "Celestial Burn",
+      "description": "Increases the damage dealt by scorching whip."
+    },
+    {
+      "id": 4,
+      "name": "Solar Harvester",
+      "description": "Slash with multiple whips in an arc dealing a portion of the damage."
+    },
+    {
+      "id": 5,
+      "name": "Overheating",
+      "description": "Decreases the mana cost of scorching whip."
+    },
+    {
+      "id": 6,
+      "name": "Punishing Flames",
+      "description": "Chance to unleash burning fissures on hit dealing additional damage."
+    },
+    {
+      "id": 7,
+      "name": "Sun Gods Chosen",
+      "description": "Increases attack speed when using scorching whip with a sword, cane or staff."
+    },
+    {
+      "id": 8,
+      "name": "Solar Arch",
+      "description": "Increases the area of effect radius of scorching whip."
+    },
+    {
+      "id": 9,
+      "name": "Critical Temperature",
+      "description": "Chance to critically hit dealing increased critical strike damage."
+    },
+    {
+      "id": 10,
+      "name": "Whirlwhipper",
+      "description": "Perform a spinning attack with multiple whips."
+    },
+    {
+      "id": 11,
+      "name": "Fire Starter",
+      "description": "Chance on attack to unleash multiple fire balls in an arc towards target location."
+    },
+    {
+      "id": 12,
+      "name": "Scorching Snap",
+      "description": "Chance to knock monsters back on hit dealing increased damage."
+    },
+    {
+      "id": 13,
+      "name": "Celestial Aid",
+      "description": "Chance to summon an additional whip at targets location on hit targeting a nearby monster."
+    },
+    {
+      "id": 14,
+      "name": "Blasting Whiplash",
+      "description": "Unleash a fiery explosion on hit dealing area of effect damage."
+    },
+    {
+      "id": 15,
+      "name": "Flaming Whip",
+      "description": "Chance to unleash flames at target location on hit dealing damage over time and slowing monsters."
+    }
+  ]
 }

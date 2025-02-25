@@ -1,46 +1,46 @@
 {
-    "Item": "Genji's Sword of Fate",
-    "Tier": "S",
-    "Level": "66",
-    "Damage": "323.50287-360",
-    "APS": "2.091.89-2.29",
-    "DPS": "684.00543-825",
-    "Type": "Sword",
-    "Size": "2x3",
-    "TwoHanded": true,
-    "Rarity": "Satanic Set",
-    "Stats": [
-        {
-            "stat": "15% Chance when Striking [Empires Slash] Level 44",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "+[250-300]% Enhanced Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[10-30]% Increased Movement Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[40-70]% Increased Attack Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+25% Increased Attack Rating",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[540-665] to Attack Rating",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+20 to Vitality",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Attacks can hit multiple enemies",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Genji's Sword of Fate",
+  "Tier": "S",
+  "Level": "66",
+  "Damage": "323.50287-360",
+  "APS": "2.091.89-2.29",
+  "DPS": "684.00543-825",
+  "Type": "Sword",
+  "Size": "2x3",
+  "TwoHanded": true,
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "15% Chance when Striking [Empires Slash] Level 44",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+[250-300]% Enhanced Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[10-30]% Increased Movement Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[40-70]% Increased Attack Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+25% Increased Attack Rating",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[540-665] to Attack Rating",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+20 to Vitality",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Attacks can hit multiple enemies",
+      "class": "stat-default"
+    }
+  ]
 }

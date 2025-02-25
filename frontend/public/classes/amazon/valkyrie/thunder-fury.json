@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_7_icon.webp",
-    "Image": "output/classes\\amazon\\valkyrie\\ability_7_icon.webp",
-    "Name": "Thunder Fury",
-    "Required Skill(s)": "Rebound, Storm Dash",
-    "Required Level": "24",
-    "Position": { "x": 1, "y": 3 }
+  "Icon": "ability_7_icon.webp",
+  "Image": "output/classes\\amazon\\valkyrie\\ability_7_icon.webp",
+  "Name": "Thunder Fury",
+  "Required Skill(s)": "Rebound, Storm Dash",
+  "Required Level": "24",
+  "Position": {
+    "x": 1,
+    "y": 3
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Roaring Thunder",
+      "description": "Increases lightning damage dealt by thunder fury."
+    },
+    {
+      "id": 3,
+      "name": "Breaking Thunder",
+      "description": "Chance to inflict lightning break on hit."
+    },
+    {
+      "id": 4,
+      "name": "Arc Lightning",
+      "description": "Thunder bolts unleash an arc of additional bolts behind the target on hit."
+    },
+    {
+      "id": 5,
+      "name": "Photonic Transfer",
+      "description": "Recover a portion of your life on hit."
+    },
+    {
+      "id": 6,
+      "name": "Thunderstep",
+      "description": "Decreases movement speed diminish when using thunder fury."
+    },
+    {
+      "id": 7,
+      "name": "Executioneer's Fury",
+      "description": "Execute low life monsters."
+    },
+    {
+      "id": 8,
+      "name": "Tectonic Hit",
+      "description": "Chance to stun monsters on hit."
+    },
+    {
+      "id": 9,
+      "name": "Tectonic Tremors",
+      "description": "Increases damage to stunned targets."
+    },
+    {
+      "id": 10,
+      "name": "Electric Essence",
+      "description": "Inflict lightning break and stasis to targets on hit."
+    },
+    {
+      "id": 11,
+      "name": "Storm's Wisdom",
+      "description": "Chance to critically hit dealing increased damage based on your intelligence."
+    },
+    {
+      "id": 12,
+      "name": "Tectonic Impact",
+      "description": "Stunned targets unleash an exploding lightning pulse on hit."
+    },
+    {
+      "id": 13,
+      "name": "Thunder's Reach",
+      "description": "Increases the range of thunder fury."
+    },
+    {
+      "id": 14,
+      "name": "Leaping Thunder",
+      "description": "Release chain lightning on hit with an increased number of bounces."
+    },
+    {
+      "id": 15,
+      "name": "Vacuuming Thunder",
+      "description": "Thunder bolts pull targets to the initial point of impact followed by a surge of lightning dealing area of effect damage."
+    }
+  ]
 }

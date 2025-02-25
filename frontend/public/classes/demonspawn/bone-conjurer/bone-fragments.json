@@ -1,8 +1,80 @@
 {
-    "Icon": "ability_1_icon.webp",
-    "Image": "output/classes\\demonspawn\\bone-conjurer\\ability_1_icon.webp",
-    "Name": "Bone Fragments",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 0, "y": 0 }
+  "Icon": "ability_1_icon.webp",
+  "Image": "output/classes\\demonspawn\\bone-conjurer\\ability_1_icon.webp",
+  "Name": "Bone Fragments",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": { "x": 0, "y": 0 },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Heterotopic",
+      "description": "Increases the amount of fragments."
+    },
+    {
+      "id": 3,
+      "name": "High Demon",
+      "description": "Lowers the mana cost of bone fragments."
+    },
+    {
+      "id": 4,
+      "name": "Sharp Bonerangs",
+      "description": "Bone fragments now bounce additional times on hit."
+    },
+    {
+      "id": 5,
+      "name": "Bone Frenzy",
+      "description": "Chance on cast to increase the amount of fragments."
+    },
+    {
+      "id": 6,
+      "name": "Bone Cannonade",
+      "description": "Chance of cast to unleash additional bone fragments."
+    },
+    {
+      "id": 7,
+      "name": "Demon's Fury",
+      "description": "Increases the projectile speed of fragments."
+    },
+    {
+      "id": 8,
+      "name": "Blood Dipped Fragments",
+      "description": "Chance to inflict bleeding on hit."
+    },
+    {
+      "id": 9,
+      "name": "Exoskeletal",
+      "description": "Chance to impale targets on hit sending them airborne dealing increased damage."
+    },
+    {
+      "id": 10,
+      "name": "Smart Bone",
+      "description": "Fragments seek the nearest monster dealing increased damage."
+    },
+    {
+      "id": 11,
+      "name": "Bloodshed",
+      "description": "Unleash nova of blood on hit if the target is bleeding."
+    },
+    {
+      "id": 12,
+      "name": "Witchcraft Essentials",
+      "description": "Increases the damage dealt by bone fragments."
+    },
+    {
+      "id": 13,
+      "name": "Carved Fragments",
+      "description": "Increases damage dealt to bleeding targets."
+    },
+    {
+      "id": 14,
+      "name": "Demon's Grip",
+      "description": "Bone fragments orbit targets on hit for a short period of time dealing additional damage to nearby monsters."
+    },
+    {
+      "id": 15,
+      "name": "Bone Altar",
+      "description": "Summon a bone altar at target location casting bone fragments for a short period. Bone fragments now has a cooldown."
+    }
+  ]
 }

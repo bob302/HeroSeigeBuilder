@@ -1,31 +1,31 @@
 {
-    "Item": "Blood-letter's Plated Boots",
-    "Tier": "A",
-    "Level": "57",
-    "Defense": "68.7051-87",
-    "Type": "Boots",
-    "Size": "2x2",
-    "Rarity": "Satanic Set",
-    "Stats": [
-        {
-            "stat": "+[50-80]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[20-30]% Increased Movement Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Extra Damage to Bleeding Monsters [8-20]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[15-20] to Vitality",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[4-8] Life After each Kill",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Blood-letter's Plated Boots",
+  "Tier": "A",
+  "Level": "57",
+  "Defense": "68.7051-87",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "+[50-80]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[20-30]% Increased Movement Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Extra Damage to Bleeding Monsters [8-20]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[15-20] to Vitality",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[4-8] Life After each Kill",
+      "class": "stat-default"
+    }
+  ]
 }

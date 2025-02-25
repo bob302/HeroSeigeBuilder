@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_9_icon.webp",
-    "Image": "output/classes\\marauder\\gladiator\\ability_9_icon.webp",
-    "Name": "Madness Control",
-    "Required Skill(s)": "Chain Trap",
-    "Required Level": "30",
-    "Position": { "x": 2, "y": 4 }
+  "Icon": "ability_9_icon.webp",
+  "Image": "output/classes\\marauder\\gladiator\\ability_9_icon.webp",
+  "Name": "Madness Control",
+  "Required Skill(s)": "Chain Trap",
+  "Required Level": "30",
+  "Position": {
+    "x": 2,
+    "y": 4
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Mad Rampage",
+      "description": "Increases the damage dealt by madness control."
+    },
+    {
+      "id": 3,
+      "name": "Ground Zero",
+      "description": "Increases the area of effect radius of madness control."
+    },
+    {
+      "id": 4,
+      "name": "Surging Madness",
+      "description": "After hooking monsters in knock them back with intense force dealing increased damage stunning them."
+    },
+    {
+      "id": 5,
+      "name": "Powerful Chainstrike",
+      "description": "Inflicts stun with increased duration on hit."
+    },
+    {
+      "id": 6,
+      "name": "Arena Police",
+      "description": "Decreases the cooldown of madness control."
+    },
+    {
+      "id": 7,
+      "name": "We Are All Mad Here",
+      "description": "Increases the amount of hooked targets with madness control."
+    },
+    {
+      "id": 8,
+      "name": "Napalm Charge",
+      "description": "Chance to inflict burning on hit."
+    },
+    {
+      "id": 9,
+      "name": "Boom Boom BOOM",
+      "description": "Chance to rain down additional bombs at targets on hit."
+    },
+    {
+      "id": 10,
+      "name": "Blink and you are dead",
+      "description": "Teleport a short distance unleashing madness control at the initial location."
+    },
+    {
+      "id": 11,
+      "name": "Capture and Punish",
+      "description": "Chance to deal increased damage inflicting slow on hit."
+    },
+    {
+      "id": 12,
+      "name": "Effective Control",
+      "description": "Increases the hooking speed of madness control."
+    },
+    {
+      "id": 13,
+      "name": "Keep Sane among Mad",
+      "description": "Decreases movement diminish when using madness control."
+    },
+    {
+      "id": 14,
+      "name": "Area Control",
+      "description": "Madness control can be casted at target location with increased area of effect radius."
+    },
+    {
+      "id": 15,
+      "name": "Evasive Move",
+      "description": "Become immortal for a short duration."
+    }
+  ]
 }

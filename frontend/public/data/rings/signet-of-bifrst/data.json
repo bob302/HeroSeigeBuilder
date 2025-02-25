@@ -1,26 +1,26 @@
 {
-    "Item": "Signet of Bifröst",
-    "Tier": "S",
-    "Level": "1",
-    "Type": "Ring",
-    "Size": "1x1",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "Cold Skill Damage increased by [25-35]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Cannot be Frozen",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Herobound",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "Socketed (1)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Signet of Bifröst",
+  "Tier": "S",
+  "Level": "1",
+  "Type": "Ring",
+  "Size": "1x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "Cold Skill Damage increased by [25-35]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Cannot be Frozen",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Herobound",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "Socketed (1)",
+      "class": "stat-default"
+    }
+  ]
 }

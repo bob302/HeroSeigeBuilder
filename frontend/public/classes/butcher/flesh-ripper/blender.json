@@ -1,8 +1,80 @@
 {
-    "Icon": "ability_9_icon.webp",
-    "Image": "output/classes\\butcher\\flesh-ripper\\ability_9_icon.webp",
-    "Name": "Blender",
-    "Required Skill(s)": "Chain Swing",
-    "Required Level": "30",
-    "Position": { "x": 1, "y": 4 }
+  "Icon": "ability_9_icon.webp",
+  "Image": "output/classes\\butcher\\flesh-ripper\\ability_9_icon.webp",
+  "Name": "Blender",
+  "Required Skill(s)": "Chain Swing",
+  "Required Level": "30",
+  "Position": { "x": 1, "y": 4 },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Sharpened Cleavers",
+      "description": "Increases the damage dealt by blender."
+    },
+    {
+      "id": 3,
+      "name": "Industrial Sized",
+      "description": "Increases the area of effect radius of blender."
+    },
+    {
+      "id": 4,
+      "name": "A.I. Empowered Nanoblenders",
+      "description": "Summon multiple small blenders orbiting around you."
+    },
+    {
+      "id": 5,
+      "name": "No Bits Nor Pieces",
+      "description": "Increases attack rating when using blender."
+    },
+    {
+      "id": 6,
+      "name": "Ragefueled Energy",
+      "description": "Increases the duration of blender."
+    },
+    {
+      "id": 7,
+      "name": "Extra Cleaver Addon",
+      "description": "Increases the amount of blades on blender."
+    },
+    {
+      "id": 8,
+      "name": "Obsidian Blades",
+      "description": "Increases the critical strike damage dealt by blender."
+    },
+    {
+      "id": 9,
+      "name": "Attachment Malfunction",
+      "description": "Chance to send blades towards target on hit briefly returning back to you."
+    },
+    {
+      "id": 10,
+      "name": "Blending Blood Pact",
+      "description": "Blender gains increased damage but killing monsters drains a portion of your maximum life. This effect is non-lethal and will de-activate blender if you cannot sacrifice your life anymore."
+    },
+    {
+      "id": 11,
+      "name": "It Will Blend",
+      "description": "Increases damage dealt to bleeding targets."
+    },
+    {
+      "id": 12,
+      "name": "Blood Thirsting Killing Machine",
+      "description": "Chance to gain a stack of blood thirst on hit increasing your movement speed for a short duration."
+    },
+    {
+      "id": 13,
+      "name": "Will it Blend?",
+      "description": "Knock monsters back dealing increased damage and slowing them."
+    },
+    {
+      "id": 14,
+      "name": "Blenderang",
+      "description": "Throw a traveling blender towards target location returning back to you shortly. Blender cooldown is reduced."
+    },
+    {
+      "id": 15,
+      "name": "Attachable Microblades",
+      "description": "Chance to conjure a small blender at target location on hit dealing additional damage for a short duration."
+    }
+  ]
 }

@@ -1,8 +1,80 @@
 {
-    "Icon": "ability_2_icon.webp",
-    "Image": "output/classes\\demonspawn\\bone-conjurer\\ability_2_icon.webp",
-    "Name": "Impale",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 1, "y": 0 }
+  "Icon": "ability_2_icon.webp",
+  "Image": "output/classes\\demonspawn\\bone-conjurer\\ability_2_icon.webp",
+  "Name": "Impale",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": { "x": 1, "y": 0 },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Demonic Effect",
+      "description": "Increases impale area of effect radius."
+    },
+    {
+      "id": 3,
+      "name": "Warlock's Power",
+      "description": "Increases damage dealt by impale."
+    },
+    {
+      "id": 4,
+      "name": "Hunger Of The Demon",
+      "description": "Unleash multiple smaller impales in an arc."
+    },
+    {
+      "id": 5,
+      "name": "Sharpened Bones",
+      "description": "Inflicts bleeding on hit."
+    },
+    {
+      "id": 6,
+      "name": "Unseen Strike",
+      "description": "Chance to critically hit with increased critical damage."
+    },
+    {
+      "id": 7,
+      "name": "Hell's Ascension",
+      "description": "Chance to unleash an additional impale on hit."
+    },
+    {
+      "id": 8,
+      "name": "Blood Shedding Impale",
+      "description": "Increases damage dealt to bleeding targets."
+    },
+    {
+      "id": 9,
+      "name": "Bonemagi",
+      "description": "Decreases the mana cost of impale."
+    },
+    {
+      "id": 10,
+      "name": "Spear Of Amaymon",
+      "description": "Impale becomes a piercing bone projectile you throw. Each enemy it catches is impaled and travels along with the projectile until it hits terrain stunning attached enemies."
+    },
+    {
+      "id": 11,
+      "name": "Impaling Flames",
+      "description": "Chance to light the ground on fire on hit."
+    },
+    {
+      "id": 12,
+      "name": "Shattering Impale",
+      "description": "Chance to inflict arcane break on hit."
+    },
+    {
+      "id": 13,
+      "name": "Spiked Fields",
+      "description": "Chance on cast to increase the area of effect radius of impale."
+    },
+    {
+      "id": 14,
+      "name": "Elemental Bone Magister",
+      "description": "Impale inflicts stasis, bleeding and burning on hit."
+    },
+    {
+      "id": 15,
+      "name": "Via Dolorosa",
+      "description": "Impale now travels forward in a pathway increasing in size and damage until reaching its end stunning monsters it hits."
+    }
+  ]
 }

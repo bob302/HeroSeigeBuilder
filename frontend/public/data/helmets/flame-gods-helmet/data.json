@@ -1,39 +1,39 @@
 {
-    "Item": "Flame God's Helmet",
-    "Tier": "B",
-    "Level": "42",
-    "Defense": "59.4543-76",
-    "Type": "Helmet",
-    "Size": "2x2",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[65-100]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[10-15]% Faster Cast Rate",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[135-185] to Fire Skill Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Fire Skill Damage increased by [7-15]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+75 to Mana",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+75% to Fire Resistance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+5% to Maximum Fire Resist",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Flame God's Helmet",
+  "Tier": "B",
+  "Level": "42",
+  "Defense": "59.4543-76",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[65-100]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[10-15]% Faster Cast Rate",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[135-185] to Fire Skill Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Fire Skill Damage increased by [7-15]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+75 to Mana",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+75% to Fire Resistance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+5% to Maximum Fire Resist",
+      "class": "stat-default"
+    }
+  ]
 }

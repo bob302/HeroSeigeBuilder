@@ -1,47 +1,47 @@
 {
-    "Item": "Trophy Hunter",
-    "Tier": "SS",
-    "Level": "64",
-    "Defense": "100.2078-123",
-    "Type": "Belt",
-    "Size": "2x1",
-    "Rarity": "Heroic",
-    "Stats": [
-        {
-            "stat": "001% Chance after each Kill [Collector] Level 1",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "+[50-80]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[1-2] to All Skills",
-            "class": "stat-allskills"
-        },
-        {
-            "stat": "+[15-35]% Increased Movement Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+20% Increased Attack Rating",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[5-20] to All Attributes",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[10-25] Life After each Kill",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[10-25] Mana After each Kill",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Belt Slots: 5",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Trophy Hunter",
+  "Tier": "SS",
+  "Level": "64",
+  "Defense": "100.2078-123",
+  "Type": "Belt",
+  "Size": "2x1",
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "001% Chance after each Kill [Collector] Level 1",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+[50-80]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[1-2] to All Skills",
+      "class": "stat-allskills"
+    },
+    {
+      "stat": "+[15-35]% Increased Movement Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+20% Increased Attack Rating",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[5-20] to All Attributes",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[10-25] Life After each Kill",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[10-25] Mana After each Kill",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Belt Slots: 5",
+      "class": "stat-default"
+    }
+  ]
 }

@@ -1,8 +1,80 @@
 {
-    "Icon": "ability_7_icon.webp",
-    "Image": "output/classes\\demonspawn\\blood-lord\\ability_7_icon.webp",
-    "Name": "Blood Surge",
-    "Required Skill(s)": "Gut Spread, Blood Bolts",
-    "Required Level": "24",
-    "Position": { "x": 0, "y": 3 }
+  "Icon": "ability_7_icon.webp",
+  "Image": "output/classes\\demonspawn\\blood-lord\\ability_7_icon.webp",
+  "Name": "Blood Surge",
+  "Required Skill(s)": "Gut Spread, Blood Bolts",
+  "Required Level": "24",
+  "Position": { "x": 0, "y": 3 },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Corrosive Blood",
+      "description": "Increases the damage dealt by blood surge."
+    },
+    {
+      "id": 3,
+      "name": "Wide Veins",
+      "description": "Increases the area of effect radius of blood surge."
+    },
+    {
+      "id": 4,
+      "name": "Hematopoiesis",
+      "description": "Increases the tick frequency of blood surge."
+    },
+    {
+      "id": 5,
+      "name": "White Blood Cells",
+      "description": "Increases the duration of blood surge."
+    },
+    {
+      "id": 6,
+      "name": "Increased Plasma",
+      "description": "Decreases the mana cost of blood surge."
+    },
+    {
+      "id": 7,
+      "name": "Blood Fervor",
+      "description": "Chance to inflict burning on hit."
+    },
+    {
+      "id": 8,
+      "name": "Immune Deficiency",
+      "description": "Increases damage dealt to burning targets."
+    },
+    {
+      "id": 9,
+      "name": "Asphyxiating Vessels",
+      "description": "Chance to inflict arcane break on hit"
+    },
+    {
+      "id": 10,
+      "name": "Unlimited Power",
+      "description": "Conjure an orb of blood unleashing surges of blood towards targets on hit. Blood surge now has a cooldown."
+    },
+    {
+      "id": 11,
+      "name": "Demon Wings",
+      "description": "Decreases movement diminish when using blood surge."
+    },
+    {
+      "id": 12,
+      "name": "Vein Pressure",
+      "description": "Chance to unleash a critical strike with increased critical strike damage."
+    },
+    {
+      "id": 13,
+      "name": "Rays of Blood",
+      "description": "Chance on hit to unleash additional surges of blood to directions around the target on hit."
+    },
+    {
+      "id": 14,
+      "name": "Channeling Surge",
+      "description": "Blood surge deals increased damage and no longer expires till you run out of mana or cast blood surge again."
+    },
+    {
+      "id": 15,
+      "name": "Blood Line",
+      "description": "Unleash two surges of blood curving to your sides before expiring."
+    }
+  ]
 }

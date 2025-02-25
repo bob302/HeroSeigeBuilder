@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_6_icon.webp",
-    "Image": "output/classes\\shaman\\elementalist\\ability_6_icon.webp",
-    "Name": "Tornado",
-    "Required Skill(s)": "Twisters",
-    "Required Level": "16",
-    "Position": { "x": 2, "y": 2 }
+  "Icon": "ability_6_icon.webp",
+  "Image": "output/classes\\shaman\\elementalist\\ability_6_icon.webp",
+  "Name": "Tornado",
+  "Required Skill(s)": "Twisters",
+  "Required Level": "16",
+  "Position": {
+    "x": 2,
+    "y": 2
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Wind's Force",
+      "description": "Increases damage dealt by tornado."
+    },
+    {
+      "id": 3,
+      "name": "Sudden Winds",
+      "description": "Chance to increase the amount of tornados."
+    },
+    {
+      "id": 4,
+      "name": "Orbital Winds",
+      "description": "Spawn multiple tornadoes spiraling outwards from you."
+    },
+    {
+      "id": 5,
+      "name": "Cyclone Radius",
+      "description": "Increases the size of tornado."
+    },
+    {
+      "id": 6,
+      "name": "Tempest Mind",
+      "description": "Decreases the mana cost of tornado."
+    },
+    {
+      "id": 7,
+      "name": "Windstorm's Wrath",
+      "description": "Chance to deal a critical strike with increased critical strike damage."
+    },
+    {
+      "id": 8,
+      "name": "Piercing Typhoon",
+      "description": "Chance to inflict arcane break on hit."
+    },
+    {
+      "id": 9,
+      "name": "Flowing Spiral",
+      "description": "Chance to stun and knock targets up on hit."
+    },
+    {
+      "id": 10,
+      "name": "Absolute Tempest",
+      "description": "Conjure a tornado with increased size catching monsters in it till hitting terrain throwing any monsters caught in the air and causing them to deal area of effect damage upon landing."
+    },
+    {
+      "id": 11,
+      "name": "Punishing Tempest",
+      "description": "Increases damage dealt to stunned targets."
+    },
+    {
+      "id": 12,
+      "name": "Tempeststep",
+      "description": "Decreases movement diminish when using tornado."
+    },
+    {
+      "id": 13,
+      "name": "Afterflow",
+      "description": "Chance to unleash an additional tornado."
+    },
+    {
+      "id": 14,
+      "name": "Storm Growth",
+      "description": "Summon a static tornado growing in size and gaining increased damage over time eventually bursting into small tornados in all directions."
+    },
+    {
+      "id": 15,
+      "name": "Splitting Cyclone",
+      "description": "Tornado splits in size and halves on size and damage on hit."
+    }
+  ]
 }

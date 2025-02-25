@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_1_icon.webp",
-    "Image": "output/classes\\whitemage\\divine-being\\ability_1_icon.webp",
-    "Name": "Heavenly Fire",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 0, "y": 0 }
+  "Icon": "ability_1_icon.webp",
+  "Image": "output/classes\\whitemage\\divine-being\\ability_1_icon.webp",
+  "Name": "Heavenly Fire",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": {
+    "x": 0,
+    "y": 0
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Lamb of God",
+      "description": "Chance on hit to set monsters on fire causing them to spread flames while moving. "
+    },
+    {
+      "id": 3,
+      "name": "Flame of the Heavens",
+      "description": "Increases the tick frequency of heavenly fire."
+    },
+    {
+      "id": 4,
+      "name": "Essence of Heavens",
+      "description": "Unleash a heavenly orb scorching the ground below leaving behind a trail of burning flames."
+    },
+    {
+      "id": 5,
+      "name": "Heaven's Burn",
+      "description": "Increases the damage dealt by heavenly fire."
+    },
+    {
+      "id": 6,
+      "name": "Scorched Retribution",
+      "description": "Inflicts burning on hit."
+    },
+    {
+      "id": 7,
+      "name": "Heaven's Blessing",
+      "description": "Decreases the mana cost of heavenly fire."
+    },
+    {
+      "id": 8,
+      "name": "Heavenly Smite",
+      "description": "Increases damage dealt to burning targets."
+    },
+    {
+      "id": 9,
+      "name": "Inner Ignition",
+      "description": "Chance to increase your arcane damage on hit for a short duration."
+    },
+    {
+      "id": 10,
+      "name": "Ascendant Flame",
+      "description": "Increases the size and tick frequency of heavenly fire over time."
+    },
+    {
+      "id": 11,
+      "name": "Shattering Flames",
+      "description": "Chance to inflict arcane break on hit."
+    },
+    {
+      "id": 12,
+      "name": "Ethereal Burn",
+      "description": "Chance to critically hit dealing increased critical strike damage."
+    },
+    {
+      "id": 13,
+      "name": "Word of God",
+      "description": "Increases the area of effect radius of heavenly fire."
+    },
+    {
+      "id": 14,
+      "name": "Chain of Fire",
+      "description": "Chance to unleash a chain of fire on hit dealing increased damage."
+    },
+    {
+      "id": 15,
+      "name": "Righteous Path",
+      "description": "Leave behind a trail of heavenly fire for a short duration inflicting elemental break on hit. Heavenly Fire now has a cooldown."
+    }
+  ]
 }

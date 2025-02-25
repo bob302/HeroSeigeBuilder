@@ -1,50 +1,50 @@
 {
-    "Item": "Doomsaw",
-    "Tier": "C",
-    "Level": "25",
-    "Damage": "85.7073-99",
-    "APS": "1.501.5",
-    "DPS": "129.00110-148",
-    "Type": "Chainsaw",
-    "TwoHanded": true,
-    "Size": "2x3",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "10% Chance when Striking [Chainsaw Slash] Level 14",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "+[180-190]% Enhanced Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[110-140] to Attack Rating",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[4-8]% Mana stolen per Hit",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[140-160] to Additive Fire Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Fire Skill Damage increased by [5-15]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "-30% to Enemy Fire Resistance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Attacks can hit multiple enemies",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Socketed (0-3)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Doomsaw",
+  "Tier": "C",
+  "Level": "25",
+  "Damage": "85.7073-99",
+  "APS": "1.501.5",
+  "DPS": "129.00110-148",
+  "Type": "Chainsaw",
+  "TwoHanded": true,
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "10% Chance when Striking [Chainsaw Slash] Level 14",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+[180-190]% Enhanced Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[110-140] to Attack Rating",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[4-8]% Mana stolen per Hit",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[140-160] to Additive Fire Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Fire Skill Damage increased by [5-15]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "-30% to Enemy Fire Resistance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Attacks can hit multiple enemies",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Socketed (0-3)",
+      "class": "stat-default"
+    }
+  ]
 }

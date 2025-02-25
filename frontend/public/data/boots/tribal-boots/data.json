@@ -1,35 +1,35 @@
 {
-    "Item": "Tribal Boots",
-    "Tier": "B",
-    "Level": "38",
-    "Defense": "33.4026-42",
-    "Type": "Boots",
-    "Size": "2x2",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+30% Increased Movement Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[40-60]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[65-85] to Attack Rating",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+10 to Strength",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[10-15] to Dexterity",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+15% to All Resistances",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Tribal Boots",
+  "Tier": "B",
+  "Level": "38",
+  "Defense": "33.4026-42",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+30% Increased Movement Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[40-60]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[65-85] to Attack Rating",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+10 to Strength",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[10-15] to Dexterity",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+15% to All Resistances",
+      "class": "stat-default"
+    }
+  ]
 }

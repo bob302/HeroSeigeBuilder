@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_9_icon.webp",
-    "Image": "output/classes\\shaman\\elementalist\\ability_9_icon.webp",
-    "Name": "Fissures",
-    "Required Skill(s)": "Meteor Storm",
-    "Required Level": "30",
-    "Position": { "x": 1, "y": 4 }
+  "Icon": "ability_9_icon.webp",
+  "Image": "output/classes\\shaman\\elementalist\\ability_9_icon.webp",
+  "Name": "Fissures",
+  "Required Skill(s)": "Meteor Storm",
+  "Required Level": "30",
+  "Position": {
+    "x": 1,
+    "y": 4
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Trembling Earth",
+      "description": "Increases duration of fissures."
+    },
+    {
+      "id": 3,
+      "name": "Scorching Steam",
+      "description": "Increases damage dealt by fissures."
+    },
+    {
+      "id": 4,
+      "name": "Enlargening Earthquake",
+      "description": "Increases the duration of fissures. Increase the size but decrease the damage dealt."
+    },
+    {
+      "id": 5,
+      "name": "Debilitating Burst",
+      "description": "Chance on hit to stun enemies."
+    },
+    {
+      "id": 6,
+      "name": "Magnetic Field",
+      "description": "Decreases cooldown of fissures."
+    },
+    {
+      "id": 7,
+      "name": "Trembling Pull",
+      "description": "Fissures have a chance to knock monsters towards the center on each hit."
+    },
+    {
+      "id": 8,
+      "name": "Earth Crack",
+      "description": "Chance to crack the earth impaling monsters with a stone pillar on hit dealing additional damage."
+    },
+    {
+      "id": 9,
+      "name": "Comet Fall",
+      "description": "Chance to drop a comet on hit dealing additional damage."
+    },
+    {
+      "id": 10,
+      "name": "Natural Disaster",
+      "description": "Increases the proc chance of earth crack and comet fall inflicting arcane break on hit."
+    },
+    {
+      "id": 11,
+      "name": "Field of Landmass",
+      "description": "Increases the area of effect of fissures."
+    },
+    {
+      "id": 12,
+      "name": "Rumbling Impact",
+      "description": "Increases damage dealt to stunned targets."
+    },
+    {
+      "id": 13,
+      "name": "Frequent Shaking",
+      "description": "Increases the tick frequency of fissures."
+    },
+    {
+      "id": 14,
+      "name": "Electrocharged Fissures",
+      "description": "Inflicts stasis and has a chance to strike monsters with bolts of lightning on hit."
+    },
+    {
+      "id": 15,
+      "name": "Manual Quake",
+      "description": "Fissures now unleashes only a single tremble dealing increased damage. Fissures no longer has a cooldown."
+    }
+  ]
 }

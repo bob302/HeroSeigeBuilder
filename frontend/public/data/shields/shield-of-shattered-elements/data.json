@@ -1,36 +1,36 @@
 {
-    "Item": "Shield of Shattered Elements",
-    "Tier": "D",
-    "Level": "14",
-    "Defense": "13.009-17",
-    "Block": "25",
-    "Type": "Shield",
-    "Size": "2x3",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[50-70]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "-6% to Enemy Cold Resistance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "-[4-7]% to Enemy Fire Resistance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "-[3-8]% to Enemy Poison Resistance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "-[1-10]% to Enemy Lightning Resistance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Magic Skill Damage increased by 5%",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Shield of Shattered Elements",
+  "Tier": "D",
+  "Level": "14",
+  "Defense": "13.009-17",
+  "Block": "25",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[50-70]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "-6% to Enemy Cold Resistance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "-[4-7]% to Enemy Fire Resistance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "-[3-8]% to Enemy Poison Resistance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "-[1-10]% to Enemy Lightning Resistance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Magic Skill Damage increased by 5%",
+      "class": "stat-default"
+    }
+  ]
 }

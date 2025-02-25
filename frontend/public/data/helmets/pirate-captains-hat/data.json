@@ -1,27 +1,27 @@
 {
-    "Item": "Pirate Captain's Hat",
-    "Tier": "A",
-    "Level": "57",
-    "Defense": "99.9076-125",
-    "Type": "Helmet",
-    "Size": "2x2",
-    "Rarity": "Satanic Set",
-    "Stats": [
-        {
-            "stat": "+[80-130]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+8 to Strength",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+15 to Dexterity",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[25-35]% to Fire Resistance",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Pirate Captain's Hat",
+  "Tier": "A",
+  "Level": "57",
+  "Defense": "99.9076-125",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "+[80-130]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+8 to Strength",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+15 to Dexterity",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[25-35]% to Fire Resistance",
+      "class": "stat-default"
+    }
+  ]
 }

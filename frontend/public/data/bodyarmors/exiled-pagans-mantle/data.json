@@ -1,35 +1,35 @@
 {
-    "Item": "Exiled Pagan's Mantle",
-    "Tier": "SS",
-    "Level": "85",
-    "Defense": "1164.50961-1368",
-    "Type": "Body Armor",
-    "Size": "2x3",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[210-260]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[2-4] to All Skills",
-            "class": "stat-allskills"
-        },
-        {
-            "stat": "+[40-60]% Faster Cast Rate",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[25-35] to Energy",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Replenish Mana 75%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Mana Increased by [15-25]%",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Exiled Pagan's Mantle",
+  "Tier": "SS",
+  "Level": "85",
+  "Defense": "1164.50961-1368",
+  "Type": "Body Armor",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[210-260]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[2-4] to All Skills",
+      "class": "stat-allskills"
+    },
+    {
+      "stat": "+[40-60]% Faster Cast Rate",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[25-35] to Energy",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Replenish Mana 75%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Mana Increased by [15-25]%",
+      "class": "stat-default"
+    }
+  ]
 }

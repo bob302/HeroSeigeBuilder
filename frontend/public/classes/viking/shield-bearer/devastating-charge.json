@@ -1,8 +1,8 @@
 {
-    "Icon": "ability_4_icon.webp",
-    "Image": "output/classes\\viking\\shield-bearer\\ability_4_icon.webp",
-    "Name": "Devastating Charge",
-    "Required Skill(s)": "Charge",
-    "Required Level": "8",
-    "Position": { "x": 2, "y": 1 }
+  "Icon": "ability_4_icon.webp",
+  "Image": "output/classes\\viking\\shield-bearer\\ability_4_icon.webp",
+  "Name": "Devastating Charge",
+  "Required Skill(s)": "Charge",
+  "Required Level": "8",
+  "Position": { "x": 2, "y": 1 }
 }

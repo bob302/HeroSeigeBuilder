@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_5_icon.webp",
-    "Image": "output/classes\\marauder\\juggernaut\\ability_5_icon.webp",
-    "Name": "Unstable Bomb",
-    "Required Skill(s)": "The Big Bo-oM",
-    "Required Level": "16",
-    "Position": { "x": 1, "y": 2 }
+  "Icon": "ability_5_icon.webp",
+  "Image": "output/classes\\marauder\\juggernaut\\ability_5_icon.webp",
+  "Name": "Unstable Bomb",
+  "Required Skill(s)": "The Big Bo-oM",
+  "Required Level": "16",
+  "Position": {
+    "x": 1,
+    "y": 2
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Boomage",
+      "description": "Increases the damage dealt by big bo-om."
+    },
+    {
+      "id": 3,
+      "name": "Even Bigger Bo-oM",
+      "description": "Increases the area of effect radius of big bo-om."
+    },
+    {
+      "id": 4,
+      "name": "Bouncing Boom",
+      "description": "Unleash additional bombs traveling forward in an arc after exploding."
+    },
+    {
+      "id": 5,
+      "name": "Leg Day",
+      "description": "Decreases movement diminish when using big bo-om."
+    },
+    {
+      "id": 6,
+      "name": "Wider Armory",
+      "description": "Decreases the mana cost of big bo-om."
+    },
+    {
+      "id": 7,
+      "name": "Double Charges",
+      "description": "Big bo-om bounces once when hitting the ground dealing increased damage."
+    },
+    {
+      "id": 8,
+      "name": "Pyro Enthusiast",
+      "description": "Chance to inflict fire break on hit."
+    },
+    {
+      "id": 9,
+      "name": "Swift Bo-ombing",
+      "description": "Increased projectile speed for the big bo-om."
+    },
+    {
+      "id": 10,
+      "name": "Molten Boom",
+      "description": "Unleashes multiple burning trails of fire in random directions after exploding."
+    },
+    {
+      "id": 11,
+      "name": "Burn the Arena",
+      "description": "Chance to inflict burning on hit."
+    },
+    {
+      "id": 12,
+      "name": "More Heat",
+      "description": "Increases damage dealt to burning targets."
+    },
+    {
+      "id": 13,
+      "name": "Rollin' Rollin' Rollin'",
+      "description": "Big bo-om rolls on the ground leaving behind a trail of burning flames."
+    },
+    {
+      "id": 14,
+      "name": "Crashboom",
+      "description": "Throw big bo-om high into the air scattering additional bombs into all directions."
+    },
+    {
+      "id": 15,
+      "name": "Scattering Boom",
+      "description": "Hitting a monster with big bo-om unleashes an explosion and causes it to ricochet towards another nearby monster with increased damage and area of effect radius."
+    }
+  ]
 }

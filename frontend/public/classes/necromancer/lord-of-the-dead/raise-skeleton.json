@@ -4,5 +4,80 @@
     "Name": "Raise Skeleton",
     "Required Skill(s)": "None",
     "Required Level": "1",
-    "Position": { "x": 2, "y": 0 }
+    "Position": {
+        "x": 2,
+        "y": 0
+    },
+    "Subskills": [
+        {
+            "id": 2,
+            "name": "Undead Army",
+            "description": "Increases the maximum amount of skeleton warriors."
+        },
+        {
+            "id": 3,
+            "name": "Unholy Strike",
+            "description": "Increases damage dealt by skeleton warriors."
+        },
+        {
+            "id": 4,
+            "name": "Zombies",
+            "description": "Skeleton warriors are spawned as zombies rapidly draining their life and exploding into pieces inflicting poisoned."
+        },
+        {
+            "id": 5,
+            "name": "Command for Haste",
+            "description": "Increases the attack speed of skeleton warriors."
+        },
+        {
+            "id": 6,
+            "name": "Absorb Vitality",
+            "description": "Skeleton warriors heal them selves for a portion of their missing life on hit."
+        },
+        {
+            "id": 7,
+            "name": "Undead Berserker",
+            "description": "Skeleton warriors now deal a portion of their damage as area of effect damage."
+        },
+        {
+            "id": 8,
+            "name": "Between the Ribs",
+            "description": "Skeleton warriors now have a chance to dodge incoming damage."
+        },
+        {
+            "id": 9,
+            "name": "Unholy Lifeforce",
+            "description": "Increases the life of skeleton warriors."
+        },
+        {
+            "id": 10,
+            "name": "Weapons Beyond Grave",
+            "description": "Skeleton warriors have a chance on attack to deal critical damage equal to your critical strike damage. "
+        },
+        {
+            "id": 11,
+            "name": "Toes Attached",
+            "description": "Increases skeleton warrior movement speed."
+        },
+        {
+            "id": 12,
+            "name": "Undying Rage",
+            "description": "Increases skeleton warrior damage based on their missing life percentage."
+        },
+        {
+            "id": 13,
+            "name": "Last Stand",
+            "description": "Skeleton warrior life is reduced and they explode upon death unleashing bone shrapnel around them."
+        },
+        {
+            "id": 14,
+            "name": "Winds of the Dead",
+            "description": "Skeleton warriors have a chance to perform an area of effect attack with increased radius and damage."
+        },
+        {
+            "id": 15,
+            "name": "Horde of Undead",
+            "description": "Increases the maximum summon amount of skeleton warriors. Skeleton warriors damage and life is reduced."
+        }
+    ]
 }

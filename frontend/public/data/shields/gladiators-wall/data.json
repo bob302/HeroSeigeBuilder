@@ -1,40 +1,40 @@
 {
-    "Item": "Gladiator's Wall",
-    "Tier": "A",
-    "Level": "48",
-    "Defense": "129.9099-161",
-    "Block": "55",
-    "Type": "Shield",
-    "Size": "2x3",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[90-130]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+5% Increased Critical Strike Chance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+4% Mana stolen per Hit",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[15-30]% Increased Critical Strike Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+20 to Strength",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+20 to Dexterity",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+75 to Damage (Based on Level)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Gladiator's Wall",
+  "Tier": "A",
+  "Level": "48",
+  "Defense": "129.9099-161",
+  "Block": "55",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[90-130]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+5% Increased Critical Strike Chance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+4% Mana stolen per Hit",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[15-30]% Increased Critical Strike Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+20 to Strength",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+20 to Dexterity",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+75 to Damage (Based on Level)",
+      "class": "stat-default"
+    }
+  ]
 }

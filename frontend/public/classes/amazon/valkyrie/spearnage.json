@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_5_icon.webp",
-    "Image": "output/classes\\amazon\\valkyrie\\ability_5_icon.webp",
-    "Name": "Spearnage",
-    "Required Skill(s)": "Rebound",
-    "Required Level": "16",
-    "Position": { "x": 0, "y": 2 }
+  "Icon": "ability_5_icon.webp",
+  "Image": "output/classes\\amazon\\valkyrie\\ability_5_icon.webp",
+  "Name": "Spearnage",
+  "Required Skill(s)": "Rebound",
+  "Required Level": "16",
+  "Position": {
+    "x": 0,
+    "y": 2
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Lethal Spearstorm",
+      "description": "Increases the damage dealt by spearnage."
+    },
+    {
+      "id": 3,
+      "name": "Spear Storm",
+      "description": "Increases the amount of spears thrown."
+    },
+    {
+      "id": 4,
+      "name": "Spinning to Win",
+      "description": "Rapidly throw spears around you for a short duration dealing increased damage."
+    },
+    {
+      "id": 5,
+      "name": "Accurate Spearing",
+      "description": "Increases attack rating when using spearnage."
+    },
+    {
+      "id": 6,
+      "name": "Thundertips",
+      "description": "Increases lightning damage dealt by spearnage."
+    },
+    {
+      "id": 7,
+      "name": "Timefunneling Spears",
+      "description": "Spears grow in size and gain increased damage while traveling."
+    },
+    {
+      "id": 8,
+      "name": "Pointy Ends",
+      "description": "Chance to inflict armor break on hit."
+    },
+    {
+      "id": 9,
+      "name": "Swift Glaives",
+      "description": "Increases spearnage projectile speed."
+    },
+    {
+      "id": 10,
+      "name": "Explosive Speartips",
+      "description": "Spears now explode on hit dealing area of effect damage on an increased radius."
+    },
+    {
+      "id": 11,
+      "name": "Swiftstepping",
+      "description": "Decreases movement diminish when using spearnage."
+    },
+    {
+      "id": 12,
+      "name": "Conqueror of Light",
+      "description": "Increases damage dealt to bosses."
+    },
+    {
+      "id": 13,
+      "name": "Sudden Flank",
+      "description": "Spears have a chance to ricochet towards another target on hit."
+    },
+    {
+      "id": 14,
+      "name": "Lightning Ball",
+      "description": "Chance on hit to spawn a ball of lightning traveling towards the target dealing lightning damage and inflicting lightning break."
+    },
+    {
+      "id": 15,
+      "name": "Boomerang Spears",
+      "description": "Spears now return to you dealing increased damage."
+    }
+  ]
 }

@@ -1,8 +1,8 @@
 {
-    "Icon": "ability_7_icon.webp",
-    "Image": "output/classes\\stormweaver\\essence-of-storm\\ability_7_icon.webp",
-    "Name": "Hyper Charged",
-    "Required Skill(s)": "None",
-    "Required Level": "24",
-    "Position": { "x": 0, "y": 3 }
+  "Icon": "ability_7_icon.webp",
+  "Image": "output/classes\\stormweaver\\essence-of-storm\\ability_7_icon.webp",
+  "Name": "Hyper Charged",
+  "Required Skill(s)": "None",
+  "Required Level": "24",
+  "Position": { "x": 0, "y": 3 }
 }

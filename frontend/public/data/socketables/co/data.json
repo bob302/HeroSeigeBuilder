@@ -1,13 +1,13 @@
 {
-    "Item": "Co",
-    "Tier": "C",
-    "Level": "39",
-    "Type": "Socketable",
-    "Rarity": "Common",
-    "Stats": [
-        {
-            "stat": "+10 to Dexterity",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Co",
+  "Tier": "C",
+  "Level": "39",
+  "Type": "Socketable",
+  "Rarity": "Common",
+  "Stats": [
+    {
+      "stat": "+10 to Dexterity",
+      "class": "stat-default"
+    }
+  ]
 }

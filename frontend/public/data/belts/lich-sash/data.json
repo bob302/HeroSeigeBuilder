@@ -1,35 +1,35 @@
 {
-    "Item": "Lich Sash",
-    "Tier": "B",
-    "Level": "36",
-    "Defense": "36.2026-47",
-    "Type": "Belt",
-    "Size": "2x1",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[30-45]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+1 to All Skills",
-            "class": "stat-allskills"
-        },
-        {
-            "stat": "Arcane Skill Damage increased by [3-8]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Mana Increased by 5%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[45-60]% to Arcane Resistance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Belt Slots: 4",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Lich Sash",
+  "Tier": "B",
+  "Level": "36",
+  "Defense": "36.2026-47",
+  "Type": "Belt",
+  "Size": "2x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[30-45]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+1 to All Skills",
+      "class": "stat-allskills"
+    },
+    {
+      "stat": "Arcane Skill Damage increased by [3-8]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Mana Increased by 5%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[45-60]% to Arcane Resistance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Belt Slots: 4",
+      "class": "stat-default"
+    }
+  ]
 }

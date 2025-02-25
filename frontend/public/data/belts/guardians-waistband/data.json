@@ -1,31 +1,31 @@
 {
-    "Item": "Guardian's Waistband",
-    "Tier": "D",
-    "Level": "16",
-    "Defense": "5.334-7",
-    "Type": "Belt",
-    "Size": "2x1",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[30-35]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+10 to Vitality",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[5-15]% to All Resistances",
-            "class": "stat-default"
-        },
-        {
-            "stat": "-[15-20]% to Enemy Poison Resistance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Belt Slots: 3",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Guardian's Waistband",
+  "Tier": "D",
+  "Level": "16",
+  "Defense": "5.334-7",
+  "Type": "Belt",
+  "Size": "2x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[30-35]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+10 to Vitality",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[5-15]% to All Resistances",
+      "class": "stat-default"
+    },
+    {
+      "stat": "-[15-20]% to Enemy Poison Resistance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Belt Slots: 3",
+      "class": "stat-default"
+    }
+  ]
 }

@@ -1,22 +1,22 @@
 {
-    "Item": "Witches Claw",
-    "Tier": "S",
-    "Level": "65",
-    "Type": "Charm",
-    "Size": "1x2",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+1 to All Skills",
-            "class": "stat-allskills"
-        },
-        {
-            "stat": "+[3-6]% Mana stolen per Hit",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[13-20] Mana After each Kill",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Witches Claw",
+  "Tier": "S",
+  "Level": "65",
+  "Type": "Charm",
+  "Size": "1x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+1 to All Skills",
+      "class": "stat-allskills"
+    },
+    {
+      "stat": "+[3-6]% Mana stolen per Hit",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[13-20] Mana After each Kill",
+      "class": "stat-default"
+    }
+  ]
 }

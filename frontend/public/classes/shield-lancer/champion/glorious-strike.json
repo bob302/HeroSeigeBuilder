@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_1_icon.webp",
-    "Image": "output/classes\\shieldlancer\\champion\\ability_1_icon.webp",
-    "Name": "Glorious Strike",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 0, "y": 0 }
+  "Icon": "ability_1_icon.webp",
+  "Image": "output/classes\\shieldlancer\\champion\\ability_1_icon.webp",
+  "Name": "Glorious Strike",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": {
+    "x": 0,
+    "y": 0
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Radiant Glory",
+      "description": "Increases the damage dealt by glorious strike."
+    },
+    {
+      "id": 3,
+      "name": "Lance Training",
+      "description": "Increases attack rating when using glorious strike."
+    },
+    {
+      "id": 4,
+      "name": "Punisher",
+      "description": "Chance on attack to gain increased area of effect radius. Impale targets on hit dealing damage over time."
+    },
+    {
+      "id": 5,
+      "name": "Jousting Master",
+      "description": "Increases attack area of effect radius of glorious strike."
+    },
+    {
+      "id": 6,
+      "name": "Piercing Thrust",
+      "description": "Chance to inflict bleeding on hit."
+    },
+    {
+      "id": 7,
+      "name": "Brutal Knight",
+      "description": "Increases the critical strike damage of glorious strike."
+    },
+    {
+      "id": 8,
+      "name": "Blood Satiable",
+      "description": "Recover a portion of your maximum life when killing monsters."
+    },
+    {
+      "id": 9,
+      "name": "Heroic Onslaught",
+      "description": "Gain a stack of heroic onslaught after killing monsters increasing your damage and armor."
+    },
+    {
+      "id": 10,
+      "name": "Valiant Combo",
+      "description": "Glorious strike performs a burst of three attacks. The last strike sends a slashing wave knocking monsters back dealing increased damage."
+    },
+    {
+      "id": 11,
+      "name": "Leave no Survivors",
+      "description": "Increases damage dealt to bleeding targets."
+    },
+    {
+      "id": 12,
+      "name": "Sparring Haste",
+      "description": "Increases attack speed when using glorious strike."
+    },
+    {
+      "id": 13,
+      "name": "High Reach",
+      "description": "Increases glorious strike attack range when using polearms."
+    },
+    {
+      "id": 14,
+      "name": "Unstoppable Piker",
+      "description": "Strike with a long narrow hitbox pushing monsters towards the tip on hit. Monsters hit by the tip take increased damage."
+    },
+    {
+      "id": 15,
+      "name": "Javelin Harbinger",
+      "description": "Increases the range of glorious strike significantly. Chance on attack to throw a piercing javelin inflicting bleeding on hit."
+    }
+  ]
 }

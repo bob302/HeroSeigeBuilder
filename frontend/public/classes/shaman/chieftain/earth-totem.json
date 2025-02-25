@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_1_icon.webp",
-    "Image": "output/classes\\shaman\\chieftain\\ability_1_icon.webp",
-    "Name": "Earth Totem",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 0, "y": 0 }
+  "Icon": "ability_1_icon.webp",
+  "Image": "output/classes\\shaman\\chieftain\\ability_1_icon.webp",
+  "Name": "Earth Totem",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": {
+    "x": 0,
+    "y": 0
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Earth Master",
+      "description": "Increases the maximum amount of earth totems."
+    },
+    {
+      "id": 3,
+      "name": "Rapid Earth",
+      "description": "Increases attack speed of earth totem."
+    },
+    {
+      "id": 4,
+      "name": "Entangling Roots",
+      "description": "Unleash a trail of earth roots traveling towards the target rooting monsters on hit and dealing increased damage."
+    },
+    {
+      "id": 5,
+      "name": "Fragmenting Totemstones",
+      "description": "Chance for rocks to unleash fragments upon landing dealing additional damage."
+    },
+    {
+      "id": 6,
+      "name": "Earth God",
+      "description": "Increases damage dealt by earth totem."
+    },
+    {
+      "id": 7,
+      "name": "Runic Earth",
+      "description": "Increases the size of earth totem."
+    },
+    {
+      "id": 8,
+      "name": "Dense Earth",
+      "description": "Chance for rocks to bounce off the ground unleashing additional explosions."
+    },
+    {
+      "id": 9,
+      "name": "Stunning Earth",
+      "description": "Chance to stun monsters on hit."
+    },
+    {
+      "id": 10,
+      "name": "Wind Totem",
+      "description": "Earth totem unleashes multiple piercing tornados."
+    },
+    {
+      "id": 11,
+      "name": "Ravaging Earth",
+      "description": "Increases damage dealt to stunned enemies."
+    },
+    {
+      "id": 12,
+      "name": "Double Boulder",
+      "description": "Chance for earth totem to unleash an additional rock."
+    },
+    {
+      "id": 13,
+      "name": "Earth Caller",
+      "description": "Spawn an additional earth totem per cast."
+    },
+    {
+      "id": 14,
+      "name": "Fragmented Volley",
+      "description": "Earth totem unleashes a volley of smaller rocks. Earth totem attack speed is decreased."
+    },
+    {
+      "id": 15,
+      "name": "The Rolling Stones",
+      "description": "Earth totem unleashes rolling boulders inflicting arcane break and knocking monsters back on hit."
+    }
+  ]
 }

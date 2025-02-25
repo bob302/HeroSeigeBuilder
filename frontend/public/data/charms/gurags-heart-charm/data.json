@@ -1,22 +1,22 @@
 {
-    "Item": "Gurag's Heart Charm",
-    "Tier": "S",
-    "Level": "91",
-    "Type": "Charm",
-    "Size": "2x2",
-    "Rarity": "Satanic Set",
-    "Stats": [
-        {
-            "stat": "+[5-8]% Increased Attack Rating",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[60-80] to Additive Physical Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[15-20] to Strength",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Gurag's Heart Charm",
+  "Tier": "S",
+  "Level": "91",
+  "Type": "Charm",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "+[5-8]% Increased Attack Rating",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[60-80] to Additive Physical Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[15-20] to Strength",
+      "class": "stat-default"
+    }
+  ]
 }

@@ -1,39 +1,39 @@
 {
-    "Item": "Ironclad Protector",
-    "Tier": "D",
-    "Level": "11",
-    "Defense": "37.2024-51",
-    "Type": "Body Armor",
-    "Size": "2x3",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[140-180]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "[-5-10]% Increased Movement Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+10 to Vitality",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+5 to Armor",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Physical Damage Taken Reduced by [4-6]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Magic Damage Taken Reduced by [2-4]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Socketed (0-3)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Ironclad Protector",
+  "Tier": "D",
+  "Level": "11",
+  "Defense": "37.2024-51",
+  "Type": "Body Armor",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[140-180]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "[-5-10]% Increased Movement Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+10 to Vitality",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+5 to Armor",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Physical Damage Taken Reduced by [4-6]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Magic Damage Taken Reduced by [2-4]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Socketed (0-3)",
+      "class": "stat-default"
+    }
+  ]
 }

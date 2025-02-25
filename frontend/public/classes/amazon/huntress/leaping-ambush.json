@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_3_icon.webp",
-    "Image": "output/classes\\amazon\\huntress\\ability_3_icon.webp",
-    "Name": "Leaping Ambush",
-    "Required Skill(s)": "Noxious Strike",
-    "Required Level": "8",
-    "Position": { "x": 1, "y": 1 }
+  "Icon": "ability_3_icon.webp",
+  "Image": "output/classes\\amazon\\huntress\\ability_3_icon.webp",
+  "Name": "Leaping Ambush",
+  "Required Skill(s)": "Noxious Strike",
+  "Required Level": "8",
+  "Position": {
+    "x": 1,
+    "y": 1
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Power Quads",
+      "description": "Increases maximum leap distance."
+    },
+    {
+      "id": 3,
+      "name": "Heavyweight Slam",
+      "description": "Increases damage dealt by leaping ambush."
+    },
+    {
+      "id": 4,
+      "name": "Envenomous Groundslam",
+      "description": "Unleash a burst of poison from the ground on hit dealing increased damage and inflicting poisoned."
+    },
+    {
+      "id": 5,
+      "name": "Tribal Spearnage",
+      "description": "Chance to rain down falling spears on hit dealing additional damage."
+    },
+    {
+      "id": 6,
+      "name": "Landing Blast",
+      "description": "Increases the area of effect radius of leaping ambush."
+    },
+    {
+      "id": 7,
+      "name": "Stunning Smash",
+      "description": "Chance on hit to stun the target."
+    },
+    {
+      "id": 8,
+      "name": "Crippling the Weak",
+      "description": "Increases damage dealt to stunned targets."
+    },
+    {
+      "id": 9,
+      "name": "Venomous Blastwave",
+      "description": "Chance on hit to inflict poisoned."
+    },
+    {
+      "id": 10,
+      "name": "Ground Stomper",
+      "description": "When landing, stomp the ground multiple times with increased area of effect radius and dealing increased damage."
+    },
+    {
+      "id": 11,
+      "name": "Adrenaline Rush",
+      "description": "Landing grants you a burst of attack speed and cast rate."
+    },
+    {
+      "id": 12,
+      "name": "Anti-Antidote",
+      "description": "Inflicts poison break on hit."
+    },
+    {
+      "id": 13,
+      "name": "Stoneskinned Warrior",
+      "description": "Gain increased damage reduction when leaping."
+    },
+    {
+      "id": 14,
+      "name": "Master of Agility",
+      "description": "Leaping ambush can now be casted through terrain with decreased damage."
+    },
+    {
+      "id": 15,
+      "name": "Arc of Spears",
+      "description": "Throw multiple piercing spears around you upon landing dealing increased damage."
+    }
+  ]
 }

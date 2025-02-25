@@ -1,46 +1,46 @@
 {
-    "Item": "Nobunaga's Battle Slicer",
-    "Tier": "S",
-    "Level": "54",
-    "Damage": "349.50317-383",
-    "APS": "2.472.3-2.64",
-    "DPS": "869.50729-1010",
-    "Type": "Mace",
-    "TwoHanded": true,
-    "Size": "2x3",
-    "Rarity": "Satanic Set",
-    "Stats": [
-        {
-            "stat": "+[340-390]% Enhanced Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[40-60]% Increased Attack Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+3 Mana per second",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[1-2] to Projectile Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[1500-2225] to Arcane Skill Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "-20% to Enemy Arcane Resistance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[8-15] Mana After each Kill",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Attacks can hit multiple enemies",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Nobunaga's Battle Slicer",
+  "Tier": "S",
+  "Level": "54",
+  "Damage": "349.50317-383",
+  "APS": "2.472.3-2.64",
+  "DPS": "869.50729-1010",
+  "Type": "Mace",
+  "TwoHanded": true,
+  "Size": "2x3",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "+[340-390]% Enhanced Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[40-60]% Increased Attack Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+3 Mana per second",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[1-2] to Projectile Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[1500-2225] to Arcane Skill Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "-20% to Enemy Arcane Resistance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[8-15] Mana After each Kill",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Attacks can hit multiple enemies",
+      "class": "stat-default"
+    }
+  ]
 }

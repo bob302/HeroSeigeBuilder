@@ -1,43 +1,43 @@
 {
-    "Item": "Guise of the Dead",
-    "Tier": "A",
-    "Level": "57",
-    "Defense": "116.4093-141",
-    "Type": "Helmet",
-    "Size": "2x2",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[120-160]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[0-2] to Poison Skills",
-            "class": "stat-poison"
-        },
-        {
-            "stat": "+[3-7]% Life stolen per Hit",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[3-7]% Mana stolen per Hit",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+30% of target Defense ignored",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Slows target by [10-20]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[20-30] to Strength",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[280-320] to Additive Poison Damage",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Guise of the Dead",
+  "Tier": "A",
+  "Level": "57",
+  "Defense": "116.4093-141",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[120-160]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[0-2] to Poison Skills",
+      "class": "stat-poison"
+    },
+    {
+      "stat": "+[3-7]% Life stolen per Hit",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[3-7]% Mana stolen per Hit",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+30% of target Defense ignored",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Slows target by [10-20]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[20-30] to Strength",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[280-320] to Additive Poison Damage",
+      "class": "stat-default"
+    }
+  ]
 }

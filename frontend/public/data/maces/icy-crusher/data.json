@@ -1,46 +1,46 @@
 {
-    "Item": "Icy Crusher",
-    "Tier": "A",
-    "Level": "47",
-    "Damage": "136.40122-152",
-    "APS": "1.401.4",
-    "DPS": "191.50171-212",
-    "Type": "Mace",
-    "TwoHanded": false,
-    "Size": "2x2",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "8% Chance when Striking [Frozen Boulder] Level 22",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "+[280-320]% Enhanced Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[160-180] to Attack Rating",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[4-10]% Life stolen per Hit",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[8-15] to Vitality",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[775-1000] to Additive Cold Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Cold Skill Damage increased by [8-18]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Life Increased by 3%",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Icy Crusher",
+  "Tier": "A",
+  "Level": "47",
+  "Damage": "136.40122-152",
+  "APS": "1.401.4",
+  "DPS": "191.50171-212",
+  "Type": "Mace",
+  "TwoHanded": false,
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "8% Chance when Striking [Frozen Boulder] Level 22",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+[280-320]% Enhanced Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[160-180] to Attack Rating",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[4-10]% Life stolen per Hit",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[8-15] to Vitality",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[775-1000] to Additive Cold Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Cold Skill Damage increased by [8-18]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Life Increased by 3%",
+      "class": "stat-default"
+    }
+  ]
 }

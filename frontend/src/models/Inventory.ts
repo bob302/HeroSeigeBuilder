@@ -2,7 +2,7 @@ import { Cell, CellState, HightLightCellState, type CellStyle } from "./Cell";
 import { Equipment, Socketable } from "./Equipment";
 import type EditorContext from "./EditorContext";
 import { Item } from "./Item";
-import { Point2D } from "./Point2D"
+import { Point2D } from "./Point2D";
 import { Slot } from "./Slot";
 // TODO it's working but need to review
 export type ItemConstructor = new (data: Equipment, size: Point2D) => Item;
@@ -11,7 +11,7 @@ export interface SerializedInventory {
   gridSize: [x: number, y: number];
   cellsData: {
     uFalse: string; // Сжатые координаты, например: "0,3;0,7;2,3;2,7"
-    mask: string;   // Битовая строка, например: "1110100111..."
+    mask: string; // Битовая строка, например: "1110100111..."
   };
   slots: any[];
   style: CellStyle;
@@ -21,15 +21,15 @@ export class Inventory {
   gridSize!: Point2D;
   cellsData: Cell[] = [];
   slots: Slot[] = [];
-  editorContext: EditorContext
-  public readonly cellStyle: CellStyle
+  editorContext: EditorContext;
+  public readonly cellStyle: CellStyle;
   onInventoryUpdated: (() => void)[] = [];
-  needToBeSerialized: boolean = false
-  
+  needToBeSerialized: boolean = false;
+
   constructor(parent: EditorContext, gridSize: Point2D, cellStyle: CellStyle) {
-    this.editorContext = parent
+    this.editorContext = parent;
     this.gridSize = gridSize;
-    this.cellStyle = cellStyle
+    this.cellStyle = cellStyle;
     this.cellsData = [];
     this.slots = [];
     this.initGrid();
@@ -37,39 +37,38 @@ export class Inventory {
   }
 
   applyCellStyle() {
-    this.cellsData.forEach(cell => {
-      cell.setCellStyle(this.cellStyle)
+    this.cellsData.forEach((cell) => {
+      cell.setCellStyle(this.cellStyle);
     });
-
   }
 
   clear() {
-    this.slots = []
-    this.updateAllCellsAfterRemoval()
+    this.slots = [];
+    this.updateAllCellsAfterRemoval();
     this.handleInventoryUpdate();
   }
 
   setIsUnlockedCell(coordinates: Point2D, isUnlocked: boolean) {
-    const cell = this.getCell(coordinates)
-    if (!cell) return
-    const item = this.getItemInCell(coordinates)
+    const cell = this.getCell(coordinates);
+    if (!cell) return;
+    const item = this.getItemInCell(coordinates);
     if (item) {
-      this.removeItem(item)
+      this.removeItem(item);
     }
-    cell.setIsUnlocked(isUnlocked)
-    this.handleInventoryUpdate()
+    cell.setIsUnlocked(isUnlocked);
+    this.handleInventoryUpdate();
   }
-  
+
   initGrid() {
     this.cellsData = [];
 
     for (let x = 0; x < this.gridSize.x; x++) {
       for (let y = 0; y < this.gridSize.y; y++) {
         const coords = new Point2D(x, y);
-        const data = new Cell(coords)
+        const data = new Cell(coords);
 
         if (x === this.gridSize.x - 1) {
-          data.getCellStyle().isEdge = true
+          data.getCellStyle().isEdge = true;
         }
 
         this.cellsData.push(data);
@@ -78,7 +77,7 @@ export class Inventory {
   }
 
   getCell(coordinates: Point2D): Cell | undefined {
-    return this.cellsData.find(cell => cell.coordinates.equals(coordinates));
+    return this.cellsData.find((cell) => cell.coordinates.equals(coordinates));
   }
 
   setCellState(coordinates: Point2D, state: CellState): void {
@@ -86,29 +85,35 @@ export class Inventory {
     if (cell) cell.setState(state);
   }
 
-  setCellHighlightState(coordinates: Point2D, state: HightLightCellState): void {
+  setCellHighlightState(
+    coordinates: Point2D,
+    state: HightLightCellState,
+  ): void {
     const cell = this.getCell(coordinates);
     if (cell) cell.setHighlightState(state);
   }
 
   isWithinBoundaries(coordinates: Point2D): boolean {
-    return coordinates.x >= 0 && 
-           coordinates.y >= 0 && 
-           coordinates.x < this.gridSize.x && 
-           coordinates.y < this.gridSize.y;
+    return (
+      coordinates.x >= 0 &&
+      coordinates.y >= 0 &&
+      coordinates.x < this.gridSize.x &&
+      coordinates.y < this.gridSize.y
+    );
   }
 
   getItemInCell(coordinates: Point2D): Item | null {
     for (const slot of this.slots) {
-
       if (!slot.item || slot.onCursor) continue;
-      
+
       const start = slot.item.getStartCoordinates();
 
       const sizeOffsets = slot.item.getSizeInCells() as Point2D[];
-      
-      const occupiesCell = sizeOffsets.some(offset => start.add(offset).equals(coordinates));
-      
+
+      const occupiesCell = sizeOffsets.some((offset) =>
+        start.add(offset).equals(coordinates),
+      );
+
       if (occupiesCell) {
         return slot.item;
       }
@@ -116,28 +121,32 @@ export class Inventory {
 
     return null;
   }
-  
+
   isFree(coordinates: Point2D): boolean {
     if (!this.isWithinBoundaries(coordinates)) return false;
     const cell = this.getCell(coordinates);
     return !!cell && cell.getState() === CellState.Free && cell.isUnlocked();
   }
 
-  doesItemFit(sizeInCells: Point2D[], coordinates: Point2D, swap = false): HightLightCellState {
+  doesItemFit(
+    sizeInCells: Point2D[],
+    coordinates: Point2D,
+    swap = false,
+  ): HightLightCellState {
     const conflicts = new Set<Item>();
-  
+
     for (const offset of sizeInCells) {
       const targetCoords = coordinates.add(offset);
-      
+
       if (!this.isWithinBoundaries(targetCoords)) {
         return HightLightCellState.InvalidPlacement;
       }
-      
+
       const cell = this.getCell(targetCoords);
       if (!cell || cell.isUnlocked() === false) {
         return HightLightCellState.InvalidPlacement;
       }
-      
+
       if (cell.getState() === CellState.Occupied) {
         const occupyingItem = this.getItemInCell(targetCoords);
         if (occupyingItem) {
@@ -145,36 +154,45 @@ export class Inventory {
         }
       }
     }
-    
+
     if (conflicts.size === 0) {
       return HightLightCellState.ValidPlacement;
     }
-    
-    if (conflicts.size === 1 && !swap) {
 
+    if (conflicts.size === 1 && !swap) {
       return HightLightCellState.Replacement;
     }
-    
+
     return HightLightCellState.InvalidPlacement;
   }
 
-  updateCellsForItem(coordinates: Point2D, size: Point2D[], state: CellState): void {
-    size.forEach(offset => {
+  updateCellsForItem(
+    coordinates: Point2D,
+    size: Point2D[],
+    state: CellState,
+  ): void {
+    size.forEach((offset) => {
       const targetCoords = coordinates.add(offset);
       if (this.getCell(targetCoords)?.getState() !== CellState.Occupied) {
         this.setCellState(targetCoords, state);
       }
-      
+
       this.setCellHighlightState(targetCoords, HightLightCellState.None);
     });
   }
 
   addItem(item: Item): boolean {
-    const coordinates = this.findFreeSpaceForItem(item.getSizeInCells() as Point2D[]);
+    const coordinates = this.findFreeSpaceForItem(
+      item.getSizeInCells() as Point2D[],
+    );
     if (coordinates.isValid()) {
       item.setStartCoordinates(coordinates);
       this.slots.push(new Slot(item));
-      this.updateCellsForItem(coordinates, item.getSizeInCells() as Point2D[], CellState.Occupied);
+      this.updateCellsForItem(
+        coordinates,
+        item.getSizeInCells() as Point2D[],
+        CellState.Occupied,
+      );
       this.handleInventoryUpdate();
       return true;
     }
@@ -187,7 +205,11 @@ export class Inventory {
       const data = new Slot(item);
       data.onCursor = false;
       this.slots.push(data);
-      this.updateCellsForItem(destination, item.getSizeInCells() as Point2D[], CellState.Occupied);
+      this.updateCellsForItem(
+        destination,
+        item.getSizeInCells() as Point2D[],
+        CellState.Occupied,
+      );
       this.handleInventoryUpdate();
       return true;
     }
@@ -195,69 +217,86 @@ export class Inventory {
   }
 
   pickupItem(item: Item) {
-    const slot = this.slots.find(s => s.item?.uniqueId === item.uniqueId);
+    const slot = this.slots.find((s) => s.item?.uniqueId === item.uniqueId);
     if (!slot) return;
 
     const currentCoords = item.getStartCoordinates();
 
     this.removeItem(item);
-    
+
     this.editorContext.itemOnCursor = new Slot(item);
 
     item.setStartCoordinates(currentCoords);
 
     this.editorContext.itemOnCursor.onCursor = true;
   }
-  
 
   moveItem(slot: Slot, destination: Point2D): void {
     const item = slot.item;
     if (!item) return;
 
-    this.updateCellsForItem(item.getStartCoordinates(), item.getSizeInCells() as Point2D[], CellState.Free);
+    this.updateCellsForItem(
+      item.getStartCoordinates(),
+      item.getSizeInCells() as Point2D[],
+      CellState.Free,
+    );
 
     if (item.uniqueId === this.editorContext.itemOnCursor?.item?.uniqueId) {
       this.slots.push(new Slot(item));
       this.editorContext.itemOnCursor = null;
     }
-    
+
     item.setStartCoordinates(destination);
-    
-    this.updateCellsForItem(destination, item.getSizeInCells() as Point2D[], CellState.Occupied);
+
+    this.updateCellsForItem(
+      destination,
+      item.getSizeInCells() as Point2D[],
+      CellState.Occupied,
+    );
 
     this.handleInventoryUpdate();
   }
 
   private findFreeSpaceForItem(sizeInCells: Point2D[]): Point2D {
-    return this.cellsData.find(cell => 
-      cell.getState() === CellState.Free && 
-      (this.doesItemFit(sizeInCells, cell.coordinates, true) === HightLightCellState.ValidPlacement
-    || this.doesItemFit(sizeInCells, cell.coordinates, true) === HightLightCellState.Replacement)
-    )?.coordinates || new Point2D(-1, -1);
+    return (
+      this.cellsData.find(
+        (cell) =>
+          cell.getState() === CellState.Free &&
+          (this.doesItemFit(sizeInCells, cell.coordinates, true) ===
+            HightLightCellState.ValidPlacement ||
+            this.doesItemFit(sizeInCells, cell.coordinates, true) ===
+              HightLightCellState.Replacement),
+      )?.coordinates || new Point2D(-1, -1)
+    );
   }
 
   private getConflictingItems(position: Point2D, item: Item): Set<Item> {
     const conflicts = new Set<Item>();
-    const itemCells = item.getSizeInCells().map(offset => position.add(offset));
-    
-    itemCells.forEach(coords => {
+    const itemCells = item
+      .getSizeInCells()
+      .map((offset) => position.add(offset));
+
+    itemCells.forEach((coords) => {
       const itemInCell = this.getItemInCell(coords);
       if (itemInCell) {
         conflicts.add(itemInCell);
       }
     });
-    
+
     return conflicts;
   }
 
   private updateAllCellsAfterRemoval(): void {
-    this.cellsData.forEach(cell => {
+    this.cellsData.forEach((cell) => {
       this.setCellState(cell.coordinates, CellState.Free);
     });
   }
 
-  private updateCellsAfterRemoval(itemPosition: Point2D, size: Point2D[]): void {
-    size.forEach(offset => {
+  private updateCellsAfterRemoval(
+    itemPosition: Point2D,
+    size: Point2D[],
+  ): void {
+    size.forEach((offset) => {
       const targetCoords = itemPosition.add(offset);
 
       if (this.getItemInCell(targetCoords)) {
@@ -272,39 +311,47 @@ export class Inventory {
   removeItemBySlot(slot: Slot): boolean {
     const itemPosition = slot.item!.getStartCoordinates();
     const itemSize = slot.item!.getSizeInCells() as Point2D[];
-    const slotIndex = this.slots.findIndex(s => s.item?.uniqueId === slot.item?.uniqueId);
+    const slotIndex = this.slots.findIndex(
+      (s) => s.item?.uniqueId === slot.item?.uniqueId,
+    );
 
-    if (this.editorContext.itemOnCursor?.item?.uniqueId === slot.item?.uniqueId) {
+    if (
+      this.editorContext.itemOnCursor?.item?.uniqueId === slot.item?.uniqueId
+    ) {
       this.editorContext.itemOnCursor = null;
     }
 
     this.slots.splice(slotIndex, 1);
 
     this.updateCellsAfterRemoval(itemPosition, itemSize);
-    
+
     this.handleInventoryUpdate();
-    
+
     return true;
   }
 
   removeItem(itemToRemove: Item): boolean {
-    const slotIndex = this.slots.findIndex(slot => slot.item?.uniqueId === itemToRemove.uniqueId);
+    const slotIndex = this.slots.findIndex(
+      (slot) => slot.item?.uniqueId === itemToRemove.uniqueId,
+    );
     if (slotIndex === -1) return false;
 
     const slot = this.slots[slotIndex];
     const itemPosition = slot.item!.getStartCoordinates();
     const itemSize = slot.item!.getSizeInCells() as Point2D[];
 
-    if (this.editorContext.itemOnCursor?.item?.uniqueId === itemToRemove.uniqueId) {
+    if (
+      this.editorContext.itemOnCursor?.item?.uniqueId === itemToRemove.uniqueId
+    ) {
       this.editorContext.itemOnCursor = null;
     }
 
     this.slots.splice(slotIndex, 1);
-    
+
     this.updateCellsAfterRemoval(itemPosition, itemSize);
-    
+
     this.handleInventoryUpdate();
-    
+
     return true;
   }
 
@@ -317,26 +364,29 @@ export class Inventory {
   }
 
   tryInsertSocketable(item: Item): boolean {
-    const socketable = this.editorContext.itemOnCursor?.item?.data
-    if (socketable === null) return false
+    const socketable = this.editorContext.itemOnCursor?.item?.data;
+    if (socketable === null) return false;
     if (socketable instanceof Socketable && item.data instanceof Equipment) {
       if (item.data.insertSocketable(socketable)) {
-        return true
+        return true;
       }
     }
-    return false
+    return false;
   }
 
   placeItemOnCursor(destination: Point2D) {
     if (this.editorContext.itemOnCursor === null) return;
     if (this.editorContext.itemOnCursor.item === null) return;
-    const conflicts = this.getConflictingItems(destination, this.editorContext.itemOnCursor.item);
-    
-    if (conflicts.size > 1) return
+    const conflicts = this.getConflictingItems(
+      destination,
+      this.editorContext.itemOnCursor.item,
+    );
+
+    if (conflicts.size > 1) return;
     if (conflicts.size === 1) {
       const [toSwap] = conflicts;
 
-    if (this.tryInsertSocketable(toSwap)) return
+      if (this.tryInsertSocketable(toSwap)) return;
 
       this.swapItem(toSwap, destination);
     } else {
@@ -345,10 +395,9 @@ export class Inventory {
   }
 
   handleInventoryUpdate(): void {
-      this.onInventoryUpdated.forEach(callback => callback());
+    this.onInventoryUpdated.forEach((callback) => callback());
   }
 
-  
   // ──────────────── Serialization Methods ────────────────
 
   /**
@@ -359,42 +408,47 @@ export class Inventory {
     const unlockedCells: number[][] = [];
     const gridSize = this.gridSize.x * this.gridSize.y;
     let unlockedMask = new Array(gridSize).fill("1"); // По умолчанию все unlocked
-  
-    this.cellsData.forEach(cell => {
+
+    this.cellsData.forEach((cell) => {
       const { x, y } = cell.coordinates;
       const index = y * this.gridSize.x + x;
-  
+
       if (cell.isUnlocked() === false) {
         unlockedCells.push([x, y]); // Сохраняем координаты
-        unlockedMask[index] = "0";  // Обновляем битовую маску
+        unlockedMask[index] = "0"; // Обновляем битовую маску
       }
     });
-  
+
     return {
       gridSize: [this.gridSize.x, this.gridSize.y],
       cellsData: {
-        uFalse: unlockedCells.map(c => c.join(",")).join(";"), // Сжатые координаты
-        mask: unlockedMask.join("") // Битовая строка
+        uFalse: unlockedCells.map((c) => c.join(",")).join(";"), // Сжатые координаты
+        mask: unlockedMask.join(""), // Битовая строка
       },
-      slots: this.slots.map(slot => slot.serialize()),
-      style: this.cellStyle
+      slots: this.slots.map((slot) => slot.serialize()),
+      style: this.cellStyle,
     };
   }
 
   /**
    * Reconstructs an Inventory instance from its serialized form.
    */
-  static deserialize(data: SerializedInventory, parent: EditorContext): Inventory {
+  static deserialize(
+    data: SerializedInventory,
+    parent: EditorContext,
+  ): Inventory {
     const gridSize = new Point2D(data.gridSize[0], data.gridSize[1]);
     const inventory = new Inventory(parent, gridSize, data.style);
-  
+
     const cellsMap = new Map<string, boolean>(); // Кеш для быстрого поиска
     if (data.cellsData?.uFalse) {
-      data.cellsData.uFalse.split(";").forEach(coord => cellsMap.set(coord, false));
+      data.cellsData.uFalse
+        .split(";")
+        .forEach((coord) => cellsMap.set(coord, false));
     }
-  
+
     const unlockedMask = data.cellsData?.mask ?? ""; // Берем битовую строку
-  
+
     // Заполняем `cellsData`
     inventory.cellsData = [];
     for (let x = 0; x < gridSize.x; x++) {
@@ -402,20 +456,18 @@ export class Inventory {
         const key = `${x},${y}`;
         const index = y * gridSize.x + x;
         const isUnlocked = unlockedMask[index] !== "0"; // Читаем из битовой маски
-  
+
         const cell = new Cell(new Point2D(x, y));
         cell.setIsUnlocked(cellsMap.has(key) ? false : isUnlocked);
         cell.setCellStyle(data.style);
         inventory.cellsData.push(cell);
       }
     }
-  
+
     // Десериализация слотов
-    inventory.slots = data.slots.map(slotData => Slot.deserialize(slotData));
+    inventory.slots = data.slots.map((slotData) => Slot.deserialize(slotData));
     inventory.handleInventoryUpdate();
-  
+
     return inventory;
   }
-  
-
 }

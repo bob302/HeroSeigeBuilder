@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_2_icon.webp",
-    "Image": "output/classes\\plaguedoctor\\sanguine-physician\\ability_2_icon.webp",
-    "Name": "Surgical Blood Letting",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 2, "y": 0 }
+  "Icon": "ability_2_icon.webp",
+  "Image": "output/classes\\plaguedoctor\\sanguine-physician\\ability_2_icon.webp",
+  "Name": "Surgical Blood Letting",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": {
+    "x": 2,
+    "y": 0
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Incisive Cuts",
+      "description": "Increases the damage dealt by surgical blood letting."
+    },
+    {
+      "id": 3,
+      "name": "Cutting Edge",
+      "description": "Inflict bleeding to targets on hit."
+    },
+    {
+      "id": 4,
+      "name": "Surgeon's Vortex",
+      "description": "Knives now orbit around you slowly going outwards."
+    },
+    {
+      "id": 5,
+      "name": "Bolting Scalpels",
+      "description": "Increases the projectile speed of surgical blood letting."
+    },
+    {
+      "id": 6,
+      "name": "Expert Surgeon",
+      "description": "Increases attack rating when using surgical blood letting."
+    },
+    {
+      "id": 7,
+      "name": "Vitality Devourer",
+      "description": "Chance to restore life on hit for a portion of your additive physical damage."
+    },
+    {
+      "id": 8,
+      "name": "Exsanguination",
+      "description": "Chance on attack to inflict increased bleed damage."
+    },
+    {
+      "id": 9,
+      "name": "Plhebotomist",
+      "description": "Increases damage dealt to bleeding enemies."
+    },
+    {
+      "id": 10,
+      "name": "Cutting Storm",
+      "description": "Knives have a chance to conjure a spinning knife tornado on hit dealing increased damage over time."
+    },
+    {
+      "id": 11,
+      "name": "Sanguine Eruption",
+      "description": "Chance to unleash a ripple of blood on hit dealing area of effect damage."
+    },
+    {
+      "id": 12,
+      "name": "Swift Precision",
+      "description": "Decreases movement diminish when using surgical blood letting."
+    },
+    {
+      "id": 13,
+      "name": "Lifeblood Harvest",
+      "description": "Chance on attack to increase damage dealt according to your vitality."
+    },
+    {
+      "id": 14,
+      "name": "Blood Thaumaturgist",
+      "description": "Throw multiple knives in an arc. The knives stick to the targets for a short duration before pulling back to you dealing increased damage according to your vitality."
+    },
+    {
+      "id": 15,
+      "name": "Fracturing Knifestack",
+      "description": "Throw a knife with increased projectile speed exploding into multiple piercing knives to all directions on hit."
+    }
+  ]
 }

@@ -1,8 +1,8 @@
 {
-    "Icon": "ability_5_icon.webp",
-    "Image": "output/classes\\redneck\\hillbilly\\ability_5_icon.webp",
-    "Name": "Combustible Oil",
-    "Required Skill(s)": "Oil Spill",
-    "Required Level": "16",
-    "Position": { "x": 0, "y": 2 }
+  "Icon": "ability_5_icon.webp",
+  "Image": "output/classes\\redneck\\hillbilly\\ability_5_icon.webp",
+  "Name": "Combustible Oil",
+  "Required Skill(s)": "Oil Spill",
+  "Required Level": "16",
+  "Position": { "x": 0, "y": 2 }
 }

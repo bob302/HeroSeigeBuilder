@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_5_icon.webp",
-    "Image": "output/classes\\shaman\\chieftain\\ability_5_icon.webp",
-    "Name": "Storm Totem",
-    "Required Skill(s)": "Earth Totem",
-    "Required Level": "16",
-    "Position": { "x": 0, "y": 2 }
+  "Icon": "ability_5_icon.webp",
+  "Image": "output/classes\\shaman\\chieftain\\ability_5_icon.webp",
+  "Name": "Storm Totem",
+  "Required Skill(s)": "Earth Totem",
+  "Required Level": "16",
+  "Position": {
+    "x": 0,
+    "y": 2
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Storm Master",
+      "description": "Increases the maximum amount of storm totems."
+    },
+    {
+      "id": 3,
+      "name": "Circuitbreaking",
+      "description": "Increases amount of chain lightning bounces."
+    },
+    {
+      "id": 4,
+      "name": "Lightning Rods",
+      "description": "Storm totems call lightning bolts from the sky unleashing lightning pulses dealing increased damage. Storm totems no longer unleash chain lightning."
+    },
+    {
+      "id": 5,
+      "name": "Storm Current",
+      "description": "Chance to inflict stasis on hit."
+    },
+    {
+      "id": 6,
+      "name": "Storm God",
+      "description": "Increases damage dealt by storm totem."
+    },
+    {
+      "id": 7,
+      "name": "Static Duality",
+      "description": "Chance to summon an additional storm totem on attack for a short period."
+    },
+    {
+      "id": 8,
+      "name": "Connected by Storm",
+      "description": "Storm totems are now linked together with electric current dealing damage to monsters on hit."
+    },
+    {
+      "id": 9,
+      "name": "Static Electroshock",
+      "description": "Increases damage dealt to targets with stasis."
+    },
+    {
+      "id": 10,
+      "name": "Charged Totem",
+      "description": "Storm totem unleashes multiple charged bolts."
+    },
+    {
+      "id": 11,
+      "name": "Storming Bolt",
+      "description": "Chance to strike monsters with a bolt of lightning on hit dealing additional damage."
+    },
+    {
+      "id": 12,
+      "name": "Struck by Thunder",
+      "description": "Storm totem has a chance to stun enemies on hit."
+    },
+    {
+      "id": 13,
+      "name": "Collapsing Thunder",
+      "description": "Increases damage dealt to stunned targets."
+    },
+    {
+      "id": 14,
+      "name": "Surging Sentry",
+      "description": "Storm totem fires a surge of lightning unleashing lightning pulses on hit."
+    },
+    {
+      "id": 15,
+      "name": "Swiftstorm Totem",
+      "description": "Increases the attack speed and damage dealt by storm totem."
+    }
+  ]
 }

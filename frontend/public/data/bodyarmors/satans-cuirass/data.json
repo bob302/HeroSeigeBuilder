@@ -1,39 +1,39 @@
 {
-    "Item": "Satan's Cuirass",
-    "Tier": "A",
-    "Level": "57",
-    "Defense": "393.00338-448",
-    "Type": "Body Armor",
-    "Size": "2x3",
-    "Rarity": "Satanic Set",
-    "Stats": [
-        {
-            "stat": "+[160-180]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[2-4] to Fire Skills",
-            "class": "stat-fire"
-        },
-        {
-            "stat": "+20 to Vitality",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+20 to All Attributes",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+75% to Fire Resistance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+10% to Maximum Fire Resist",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Socketed (3)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Satan's Cuirass",
+  "Tier": "A",
+  "Level": "57",
+  "Defense": "393.00338-448",
+  "Type": "Body Armor",
+  "Size": "2x3",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "+[160-180]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[2-4] to Fire Skills",
+      "class": "stat-fire"
+    },
+    {
+      "stat": "+20 to Vitality",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+20 to All Attributes",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+75% to Fire Resistance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+10% to Maximum Fire Resist",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Socketed (3)",
+      "class": "stat-default"
+    }
+  ]
 }

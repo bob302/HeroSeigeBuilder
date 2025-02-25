@@ -1,11 +1,11 @@
 [
-    "collision.json",
-    "tsunami.json",
-    "dark-side-of-the-moon.json",
-    "asteroid.json",
-    "lunar-form.json",
-    "lunar-orbit.json",
-    "moonlight.json",
-    "blood-moon.json",
-    "black-hole.json"
+  "collision.json",
+  "tsunami.json",
+  "dark-side-of-the-moon.json",
+  "asteroid.json",
+  "lunar-form.json",
+  "lunar-orbit.json",
+  "moonlight.json",
+  "blood-moon.json",
+  "black-hole.json"
 ]

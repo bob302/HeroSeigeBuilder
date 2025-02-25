@@ -1,167 +1,241 @@
 <template>
+  <nav class="side-nav" :class="{ 'mobile-active': isMenuOpen }">
+    <button @click="navClick('characters')">
+      <span class="desktop-text">Characters</span>
+      <i class="fas fa-user mobile-icon"></i>
+    </button>
+    <button @click="navClick('skills')">
+      <span class="desktop-text">Skills</span>
+      <i class="fas fa-brain mobile-icon"></i>
+    </button>
+    <button @click="navClick('inventory')">
+      <span class="desktop-text">Inventory</span>
+      <i class="fas fa-box mobile-icon"></i>
+    </button>
+    <button @click="showCatalog">
+      <span class="desktop-text">Catalog</span>
+      <i class="fas fa-book mobile-icon"></i>
+    </button>
+    <button @click="showInfo">
+      <span class="desktop-text">Info</span>
+      <i class="fas fa-info-circle mobile-icon"></i>
+    </button>
+  </nav>
   <div class="container">
-    <!-- Левая навигация -->
-    <nav class="side-nav">
-      <button @click="scrollToSection('characters')">Characters</button>
-      <button @click="scrollToSection('skills')">Skills</button>
-      <button @click="scrollToSection('inventory')">Inventory</button>
+    <div class="column main-content">
+      <div ref="charactersSection">
+        <CharapterList @charapter-selected="scrollToSection('skills')" />
+      </div>
 
-      <button @click="showInfo = !showInfo">
-        <i class="fas fa-exclamation-circle"></i>
-      </button>
-    </nav>
+      <div class="loading" v-if="!editorContext.selectedCharapter"></div>
+      <div class="skill-trees-wrapper" ref="skillsSection" v-else>
+        <AttributeList />
+        <p>{{ `Points Left: ${editorContext.getSkillPoints()}` }}</p>
+        <SkillTreeComponent
+          v-for="(skillTree, index) in editorContext.selectedCharapter
+            .skillTrees"
+          :key="index"
+          :skillTree="skillTree"
+          @toggle-subskills="onToggleSubskills"
+        />
+      </div>
 
-    <div v-if="showInfo" class="info-modal">
-      <div class="info-content">
-        <p>{{ infoText}}</p>
-        <button class="close-button" @click="showInfo = false">×</button>
+      <div ref="inventorySection">
+        <TheInventory />
+      </div>
+
+      <div class="serialization">
+        <h2>Serialization test</h2>
+        <div class="serialization-buttons">
+          <button @click="exportContext">Export</button>
+          <button @click="importContext">Import</button>
+        </div>
       </div>
     </div>
+  </div>
 
-    <!-- Секция персонажей -->
-    <div ref="charactersSection">
-      <CharapterList 
-        @charapter-selected="scrollToSection('skills')"
-      />
-    </div>
+  <keep-alive>
+    <CatalogModal
+      v-if="editorContext.currentView === editorViewStates.Catalog"
+      :show="true"
+      @close="editorContext.resetView()"
+    />
+  </keep-alive>
 
-    <!-- Секция навыков -->
-    <div class="loading" v-if="!editorContext.selectedCharapter"></div>
-    <div 
-      class="skill-trees-wrapper" 
-      ref="skillsSection" 
-      v-else
-    >
-      <AttributeList />
+  <SubSkillTreeComponent
+    v-if="editorContext.currentView === editorViewStates.SubSkillTree"
+    @close="editorContext.resetView()"
+    :skillTree="editorContext.activeSubSkillTree"
+  />
 
-      <p>{{ `Points Left: ${editorContext.getSkillPoints()}` }}</p>
-      
-      <SkillTreeComponent
-        v-for="(skillTree, index) in editorContext.selectedCharapter.skillTrees"
-        :key="index"
-        :skillTree="skillTree"
-      />
-    </div>
+  <ItemTooltip
+    v-if="editorContext.lookingAt && editorContext.itemOnCursor === null"
+    :item="editorContext.lookingAt"
+    :pos="editorContext.tooltipPosition"
+  />
 
-    <!-- Секция инвентаря -->
-    <div ref="inventorySection">
-      <TheInventory />
-    </div>
-
-    <!-- Serialization Test Section -->
-    <div class="serialization-test">
-      <h2>Serialization Test</h2>
-      <div class="serialization-buttons">
-        <button @click="serializeContext">Serialize</button>
-        <button @click="deserializeContext" :disabled="!isSocketablesLoaded">
-          Deserialize
-        </button>
-      </div>
-      <textarea
-        v-model="serializationData"
-        placeholder="Serialized JSON will appear here or paste JSON to load"
-        rows="10"
-        cols="50"
-      ></textarea>
+  <div
+    v-if="editorContext.currentView === editorViewStates.Info"
+    class="info-modal"
+  >
+    <div class="info-content" @click.self="closeViews">
+      <p>{{ infoText }}</p>
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Provide, Vue } from 'vue-facing-decorator';
-import TheInventory from '../components/TheInventory.vue';
-import SkillTreeComponent from '../components/SkillTree.vue';
-import CharapterList from '../components/ClassSelection.vue';
-import AttributeList from '../components/AttributeList.vue';
-import EditorContext from '../models/EditorContext';
-import { ref, type Reactive } from 'vue';
-import EditorContextProvider from '../models/EditorContextProvider';
-import { equipmentService } from '../service/EquipmentService';
+import { Component, Provide, Vue } from "vue-facing-decorator";
+import TheInventory from "../components/TheInventory.vue";
+import SkillTreeComponent from "../components/SkillTree.vue";
+import CharapterList from "../components/ClassSelection.vue";
+import AttributeList from "../components/AttributeList.vue";
+import EditorContext, { EditorViewState } from "../models/EditorContext";
+import { ref, type Reactive } from "vue";
+import EditorContextProvider from "../models/EditorContextProvider";
+import { equipmentService } from "../service/EquipmentService";
+import CatalogModal from "../components/CatalogModal.vue";
+import ItemTooltip from "../components/ItemTooltip.vue";
+import SubSkillTreeComponent from "../components/SubsSkillTree.vue";
+import type CharapterSkill from "../models/CharapterSkill";
 
 @Component({
   components: {
-    TheInventory, SkillTreeComponent, CharapterList, AttributeList
-  }
+    TheInventory,
+    SkillTreeComponent,
+    CharapterList,
+    AttributeList,
+    CatalogModal,
+    ItemTooltip,
+    SubSkillTreeComponent,
+  },
 })
 export default class InventoryEditorView extends Vue {
   @Provide()
   editorContext: Reactive<EditorContext> = EditorContextProvider.getContext();
-  serializationData: string = '';
 
-  showInfo = false;
+  serializationData: string = "";
+
+  editorViewStates = EditorViewState;
 
   infoText = `All item attributes, as well as character names and their skill trees, are obtained by parsing the Herosiege wiki (https://herosiege.wiki.gg/) and may be incomplete or inaccurate.`;
-  
-  isSocketablesLoaded = false
+
+  isSocketablesLoaded = false;
+
+  isMenuOpen = false;
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
 
   mounted() {
-    equipmentService.initialize( () => {
-      this.isSocketablesLoaded = true
-    })
+    equipmentService.initialize(() => {
+      this.isSocketablesLoaded = true;
+    });
+
+    document.addEventListener("mousemove", this.updateMousePosition);
   }
-  
-  scrollToSection(section: 'characters' | 'skills' | 'inventory') {
+
+  unmounted() {
+    document.removeEventListener("mousemove", this.updateMousePosition);
+  }
+
+  closeViews() {
+    this.editorContext.resetView();
+  }
+
+  showCatalog() {
+    this.editorContext.setView(EditorViewState.Catalog);
+  }
+
+  showInfo() {
+    this.editorContext.setView(EditorViewState.Info);
+  }
+
+  onToggleSubskills(skill: CharapterSkill) {
+    if (skill.subSkillTree) {
+      this.editorContext.setView(
+        EditorViewState.SubSkillTree,
+        skill.subSkillTree,
+      );
+    }
+  }
+
+  updateMousePosition(event: MouseEvent) {
+    this.editorContext.mousePosition = { x: event.clientX, y: event.clientY };
+  }
+
+  navClick(section: "characters" | "skills" | "inventory") {
+    this.scrollToSection(section);
+    this.isMenuOpen = false;
+  }
+
+  scrollToSection(section: "characters" | "skills" | "inventory") {
     this.$nextTick(() => {
       const element = this.$refs[`${section}Section`] as HTMLElement;
       if (element) {
-        element.scrollIntoView({ 
-          behavior: 'smooth', 
-          block: 'start' 
+        element.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
         });
       }
     });
   }
 
-  serializeContext() {
-    try {
-      const serialized = this.editorContext.serialize();
-      this.serializationData = JSON.stringify(serialized, null, 2);
-    } catch (error) {
-      console.error('Serialization error:', error);
-      this.serializationData = 'Error during serialization';
-    }
+  async exportContext() {
+    const serialized = this.editorContext.serialize();
+    const json = JSON.stringify(serialized);
+
+    navigator.clipboard.writeText(json);
+    // alert("Placeholder")
   }
 
-  deserializeContext() {
+  async importContext() {
     try {
-      const parsed = JSON.parse(this.serializationData);
+      let userPrompt = prompt("Please enter data", "");
+      let data;
+      if (userPrompt == null || userPrompt == "") {
+        data = "User cancelled the prompt.";
+      } else {
+        data = userPrompt;
+      }
+      const parsed = JSON.parse(data);
       const newContext = EditorContext.deserialize(parsed);
-      
-      // Обновляем реактивный контекст вместо замены ссылки
-      EditorContextProvider.setContext(newContext);
-      this.editorContext = EditorContextProvider.getContext();
-      
-      alert('Deserialization successful!');
+      newContext.then((context) => {
+        EditorContextProvider.setContext(context);
+        this.editorContext = EditorContextProvider.getContext();
+        // alert('Deserialization successful!');
+        console.log("Deserialization successful!", this.editorContext);
+      });
     } catch (error) {
-      console.error('Deserialization error:', error);
-      alert('Error during deserialization. Check console for details.');
+      console.error("Deserialization error:", error);
+      alert("Error during deserialization. Check console for details.");
     }
   }
 }
 </script>
 
 <style scoped>
+.main-content {
+  margin-left: 10%;
+}
+
 .skill-trees-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  height: 60rem;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--color-background);
+  padding-bottom: 2rem;
 }
 
 .side-nav {
   position: fixed;
-  left: 20px;
   top: 50%;
   transform: translateY(-50%);
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  gap: 5px;
-  z-index: 10;
-  background: rgba(40, 35, 30, 0.616);
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .side-nav button {
@@ -181,15 +255,37 @@ export default class InventoryEditorView extends Vue {
 }
 
 .container {
-  margin-left: 10rem; /* Отступ для навигации */
+  display: grid;
+  grid-template-columns: 1fr;
   min-height: 100vh;
-  padding: 1rem;
-  box-sizing: border-box;
-  background-image: url('/img/editor/background.png');
+  background-image: url("/img/editor/background.png");
   background-size: cover;
+  width: 100%;
+}
+
+.side-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  z-index: 10;
+  background: rgba(17, 17, 16, 0.616);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  top: 50%;
+  width: 10%;
+  transform: translateY(-50%);
 }
 
 .serialization-test {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.serialization {
   margin-top: 2rem;
   padding: 1rem;
   background: rgba(255, 255, 255, 0.1);
@@ -202,13 +298,6 @@ export default class InventoryEditorView extends Vue {
   gap: 1rem;
   margin-bottom: 1rem;
 }
-
-.serialization-test textarea {
-  width: 100%;
-  font-family: monospace;
-  padding: 0.5rem;
-}
-
 
 .info-modal {
   position: fixed;
@@ -262,5 +351,61 @@ export default class InventoryEditorView extends Vue {
 
 .close-button:hover {
   color: #ff4444;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  .main-content {
+    padding: 0;
+  }
+
+  .side-nav {
+    position: fixed;
+    flex-direction: row;
+    top: 90%;
+    left: 0;
+    height: 100vh;
+    background: rgba(40, 35, 30, 0.95);
+    transform: none;
+    align-items: start;
+    z-index: 1000;
+    width: 100%;
+  }
+
+  .side-nav button {
+    width: 4rem;
+    font-size: 1.2rem;
+    margin: 5px 0;
+  }
+
+  .side-nav button:hover {
+    background: #7a6857;
+    transform: none;
+  }
+
+  .skill-trees-wrapper {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .desktop-text {
+    display: none;
+  }
+  .mobile-icon {
+    display: inline;
+  }
+}
+
+@media (min-width: 769px) {
+  .desktop-text {
+    display: inline;
+  }
+  .mobile-icon {
+    display: none;
+  }
 }
 </style>

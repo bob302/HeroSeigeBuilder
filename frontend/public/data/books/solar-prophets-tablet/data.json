@@ -1,38 +1,38 @@
 {
-    "Item": "Solar Prophet's Tablet",
-    "Tier": "A",
-    "Level": "62",
-    "Damage": "32.5030-35",
-    "APS": "1.751.75",
-    "DPS": "57.5053-62",
-    "Type": "Book",
-    "TwoHanded": false,
-    "Size": "2x2",
-    "Rarity": "Satanic Set",
-    "Stats": [
-        {
-            "stat": "10% Chance when Casting [Solar Flare] Level 17",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "+[1-2] to Fire Skills",
-            "class": "stat-fire"
-        },
-        {
-            "stat": "+12% Faster Cast Rate",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Potion Cooldown Recovery Increased by [5-10]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[4-8] Mana per second",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Fire Skill Damage increased by 12%",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Solar Prophet's Tablet",
+  "Tier": "A",
+  "Level": "62",
+  "Damage": "32.5030-35",
+  "APS": "1.751.75",
+  "DPS": "57.5053-62",
+  "Type": "Book",
+  "TwoHanded": false,
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "10% Chance when Casting [Solar Flare] Level 17",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+[1-2] to Fire Skills",
+      "class": "stat-fire"
+    },
+    {
+      "stat": "+12% Faster Cast Rate",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Potion Cooldown Recovery Increased by [5-10]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[4-8] Mana per second",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Fire Skill Damage increased by 12%",
+      "class": "stat-default"
+    }
+  ]
 }

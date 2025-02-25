@@ -1,9 +1,18 @@
 <template>
   <div>
     <div class="scrolling-wrapper">
-      <div class="card" v-for="charapter in charapters" :key="charapter.name">
-        <img :src="charapter.image" :alt="charapter.name" @click="selectCharapter(charapter)"/>
-        <h2>{{ charapter.name }}</h2>
+      <div
+        class="card"
+        v-for="charapter in charapters"
+        :key="charapter.name"
+        @click="selectCharapter(charapter)"
+      >
+        <img
+          class="charapter-image"
+          :src="charapter.image"
+          :alt="charapter.name"
+        />
+        <h3>{{ charapter.name }}</h3>
         <!-- <p>{{ charapter.description || 'No description available.' }}</p> -->
       </div>
     </div>
@@ -11,43 +20,46 @@
 </template>
 
 <script lang="ts">
-import { Component, Inject, Prop, Vue } from 'vue-facing-decorator';
-import Charapter from '../models/Charapter';
-import type EditorContext from '../models/EditorContext';
+import { Component, Inject, Prop, Vue } from "vue-facing-decorator";
+import Charapter from "../models/Charapter";
+import type EditorContext from "../models/EditorContext";
 
 @Component({
-  emits:['charapter-selected']
+  emits: ["charapter-selected"],
 })
 export default class CharapterList extends Vue {
-  @Inject({from: 'editorContext'}) 
+  @Inject({ from: "editorContext" })
   readonly editorContext!: EditorContext;
   public charapters: Charapter[] = [];
 
   async mounted() {
     try {
-        const response = await fetch('/classes/class-names.json');
-        
-        if (!response.ok) {
-            throw new Error(`Не удалось загрузить JSON: ${response.statusText}`);
-        }
+      const response = await fetch("/classes/class-names.json");
 
-        const classData: Record<string, string[]> = await response.json();
-        const classNames = Object.keys(classData);
-        const charapterPromises = classNames.map(className => Charapter.parseCharapter(className));
-        const results = await Promise.all(charapterPromises);
+      if (!response.ok) {
+        throw new Error(`Не удалось загрузить JSON: ${response.statusText}`);
+      }
 
-        this.charapters = results.filter((c): c is Charapter => c !== undefined);
+      const classData: Record<string, string[]> = await response.json();
+      const classNames = Object.keys(classData);
+      const charapterPromises = classNames.map((className) =>
+        Charapter.parseCharapter(className),
+      );
+      const results = await Promise.all(charapterPromises);
+
+      this.charapters = results.filter((c): c is Charapter => c !== undefined);
+
+      this.selectCharapter(this.charapters[0]);
     } catch (error) {
-        console.error('Error loading charapter names:', error);
+      console.error("Error loading charapter names:", error);
     }
-}
-
+  }
 
   selectCharapter(charapter: Charapter) {
-      charapter.reset()
-      this.editorContext.selectedCharapter = charapter;
-      this.editorContext.resetSkillPoints()
-      this.$emit('charapter-selected')
+    charapter.reset();
+    this.editorContext.selectedCharapter = charapter;
+    this.editorContext.resetSkillPoints();
+    this.$emit("charapter-selected");
   }
 }
 </script>
@@ -59,9 +71,18 @@ export default class CharapterList extends Vue {
 }
 
 .card {
-  flex: 0 0 auto;
-  min-width: 150px;
-  padding: 10px;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .scrolling-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card {
+    text-align: center;
+  }
+  .charapter-image {
+    display: none;
+  }
 }
 </style>

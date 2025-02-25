@@ -1,22 +1,22 @@
 {
-    "Item": "Swiftsoul Band",
-    "Tier": "D",
-    "Level": "11",
-    "Type": "Ring",
-    "Size": "1x1",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[10-15]% Faster Cast Rate",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Magic Skill Damage increased by [3-5]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Replenish Life 15%",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Swiftsoul Band",
+  "Tier": "D",
+  "Level": "11",
+  "Type": "Ring",
+  "Size": "1x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[10-15]% Faster Cast Rate",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Magic Skill Damage increased by [3-5]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Replenish Life 15%",
+      "class": "stat-default"
+    }
+  ]
 }

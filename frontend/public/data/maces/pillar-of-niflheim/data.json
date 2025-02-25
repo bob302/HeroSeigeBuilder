@@ -1,50 +1,50 @@
 {
-    "Item": "Pillar of Niflheim",
-    "Tier": "S",
-    "Level": "78",
-    "Damage": "480.90440-523",
-    "APS": "1.141.14",
-    "DPS": "548.50501-596",
-    "Type": "Mace",
-    "TwoHanded": true,
-    "Size": "2x3",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "15% Chance when Struck [Shockwave] Level 21",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "+[510-570]% Enhanced Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+15% Chance for a Deadly Blow",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[10-20]% Chance to Open Wounds",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Replenish Life 8%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+150 to Strength (Based on Level)",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+75 to Vitality (Based on Level)",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Attacks can hit multiple enemies",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Socketed (3-5)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Pillar of Niflheim",
+  "Tier": "S",
+  "Level": "78",
+  "Damage": "480.90440-523",
+  "APS": "1.141.14",
+  "DPS": "548.50501-596",
+  "Type": "Mace",
+  "TwoHanded": true,
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "15% Chance when Struck [Shockwave] Level 21",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+[510-570]% Enhanced Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+15% Chance for a Deadly Blow",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[10-20]% Chance to Open Wounds",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Replenish Life 8%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+150 to Strength (Based on Level)",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+75 to Vitality (Based on Level)",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Attacks can hit multiple enemies",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Socketed (3-5)",
+      "class": "stat-default"
+    }
+  ]
 }

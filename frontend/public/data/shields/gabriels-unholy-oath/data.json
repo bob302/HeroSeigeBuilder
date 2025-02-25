@@ -1,60 +1,60 @@
 {
-    "Item": "Gabriel's Unholy Oath",
-    "Tier": "SS",
-    "Level": "100",
-    "Defense": "3107.502640-3575",
-    "Block": "75",
-    "Type": "Shield",
-    "Size": "2x3",
-    "Rarity": "Unholy",
-    "Stats": [
-        {
-            "stat": "+[450-550]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[1-2] to Summon Skills",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[2-3] to All Skills",
-            "class": "stat-allskills"
-        },
-        {
-            "stat": "+1 to [Summon Heretic]",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "+1 to Summon Amount",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Summon Damage Increased by [20-40]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[20-40] to Energy",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+25 to Intelligence",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+500 to Life (Based on Level)",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[30-40]% to All Resistances",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Unbreakable",
-            "class": "stat-unbreakable"
-        },
-        {
-            "stat": "Socketed (4-6)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Gabriel's Unholy Oath",
+  "Tier": "SS",
+  "Level": "100",
+  "Defense": "3107.502640-3575",
+  "Block": "75",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Unholy",
+  "Stats": [
+    {
+      "stat": "+[450-550]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[1-2] to Summon Skills",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[2-3] to All Skills",
+      "class": "stat-allskills"
+    },
+    {
+      "stat": "+1 to [Summon Heretic]",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+1 to Summon Amount",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Summon Damage Increased by [20-40]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[20-40] to Energy",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+25 to Intelligence",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+500 to Life (Based on Level)",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[30-40]% to All Resistances",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Unbreakable",
+      "class": "stat-unbreakable"
+    },
+    {
+      "stat": "Socketed (4-6)",
+      "class": "stat-default"
+    }
+  ]
 }

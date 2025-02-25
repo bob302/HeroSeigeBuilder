@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_9_icon.webp",
-    "Image": "output/classes\\pirate\\plunderer\\ability_9_icon.webp",
-    "Name": "Land Ahoy!",
-    "Required Skill(s)": "Anchor Swing",
-    "Required Level": "30",
-    "Position": { "x": 1, "y": 4 }
+  "Icon": "ability_9_icon.webp",
+  "Image": "output/classes\\pirate\\plunderer\\ability_9_icon.webp",
+  "Name": "Land Ahoy!",
+  "Required Skill(s)": "Anchor Swing",
+  "Required Level": "30",
+  "Position": {
+    "x": 1,
+    "y": 4
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Armada",
+      "description": "Increases the amount of bombs fired."
+    },
+    {
+      "id": 3,
+      "name": "Fire All",
+      "description": "Decreases the cooldown of land ahoy."
+    },
+    {
+      "id": 4,
+      "name": "Concentrated Blast Radius",
+      "description": "Significantly decreases the area of effect radius of land ahoy and increasing the amount of cannon balls. "
+    },
+    {
+      "id": 5,
+      "name": "Rum Infused Ammo",
+      "description": "Bombs have a chance to explode an additional time."
+    },
+    {
+      "id": 6,
+      "name": "Blunder Bombs",
+      "description": "Increases explosion area of effect radius of land ahoy."
+    },
+    {
+      "id": 7,
+      "name": "Warheads",
+      "description": "Increases the damage dealt by land ahoy."
+    },
+    {
+      "id": 8,
+      "name": "Strategic Airstrikes",
+      "description": "Chance on cast to fire additional bombs towards nearby monsters."
+    },
+    {
+      "id": 9,
+      "name": "Food for Cannon",
+      "description": "Increases damage dealt to stunned targets."
+    },
+    {
+      "id": 10,
+      "name": "Reign of Fire",
+      "description": "Damage type is changed to Fire. Explosive Barrels rain from the sky inflicting burning on hit "
+    },
+    {
+      "id": 11,
+      "name": "Sonic Impact",
+      "description": "Chance on hit to stun."
+    },
+    {
+      "id": 12,
+      "name": "MOAB",
+      "description": "Chance on cast to fire larger bombs knocking monsters airborne on hit dealing increased damage."
+    },
+    {
+      "id": 13,
+      "name": "Fuel to the Fire",
+      "description": "Increases bomb damage based on explosion area of effect stat."
+    },
+    {
+      "id": 14,
+      "name": "Land Annihilation",
+      "description": "Drop a reduced amount of big bombs on a significantly larger radius. Land Ahoy now has a cooldown. "
+    },
+    {
+      "id": 15,
+      "name": "Traveling Bombardment",
+      "description": "Mark a location and fire bombs landing from your location to target location in a narrow line."
+    }
+  ]
 }

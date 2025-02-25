@@ -1,35 +1,35 @@
 {
-    "Item": "Pirate Captain's Boots",
-    "Tier": "A",
-    "Level": "54",
-    "Defense": "68.7051-87",
-    "Type": "Boots",
-    "Size": "2x2",
-    "Rarity": "Satanic Set",
-    "Stats": [
-        {
-            "stat": "+[50-80]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[20-30]% Increased Movement Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[10-20]% Increased Attack Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[10-15]% Increased Attack Rating",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+25 to Dexterity",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Socketed (1-2)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Pirate Captain's Boots",
+  "Tier": "A",
+  "Level": "54",
+  "Defense": "68.7051-87",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "+[50-80]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[20-30]% Increased Movement Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[10-20]% Increased Attack Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[10-15]% Increased Attack Rating",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+25 to Dexterity",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Socketed (1-2)",
+      "class": "stat-default"
+    }
+  ]
 }

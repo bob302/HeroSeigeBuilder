@@ -1,52 +1,52 @@
 {
-    "Item": "Defender's Justice",
-    "Tier": "SS",
-    "Level": "98",
-    "Defense": "556.00408-704",
-    "Block": "60",
-    "Type": "Shield",
-    "Size": "2x3",
-    "Rarity": "Heroic",
-    "Stats": [
-        {
-            "stat": "20% Chance after Blocking [Counter] Level 73",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "+[240-340]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[3-4] to All Skills",
-            "class": "stat-allskills"
-        },
-        {
-            "stat": "+[15-25] to Vitality",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+35 to All Attributes",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Damage Taken Reduced by 250",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+125 to Mana (Based on Level)",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+275 to Life (Based on Level)",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[45-75]% to All Resistances",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Socketed (0-2)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Defender's Justice",
+  "Tier": "SS",
+  "Level": "98",
+  "Defense": "556.00408-704",
+  "Block": "60",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "20% Chance after Blocking [Counter] Level 73",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+[240-340]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[3-4] to All Skills",
+      "class": "stat-allskills"
+    },
+    {
+      "stat": "+[15-25] to Vitality",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+35 to All Attributes",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Damage Taken Reduced by 250",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+125 to Mana (Based on Level)",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+275 to Life (Based on Level)",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[45-75]% to All Resistances",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Socketed (0-2)",
+      "class": "stat-default"
+    }
+  ]
 }

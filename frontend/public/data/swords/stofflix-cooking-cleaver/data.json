@@ -1,62 +1,62 @@
 {
-    "Item": "Stofflix Cooking Cleaver",
-    "Tier": "SS",
-    "Level": "100",
-    "Damage": "505.00459-551",
-    "APS": "2.672.47-2.88",
-    "DPS": "1360.501134-1587",
-    "Type": "Sword",
-    "Size": "2x3",
-    "TwoHanded": false,
-    "Rarity": "Unholy",
-    "Stats": [
-        {
-            "stat": "[10-15]% Chance when Casting [Supernova] Level [75-85]",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "+[575-625]% Enhanced Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+2 to All Skills",
-            "class": "stat-allskills"
-        },
-        {
-            "stat": "+8 to Fire Skills",
-            "class": "stat-fire"
-        },
-        {
-            "stat": "+[40-55]% Faster Cast Rate",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[50-75]% Increased Attack Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Extra Damage to Burning Monsters [35-50]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[20-30] to All Attributes",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[10000-15000] to Additive Fire Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Fire Skill Damage increased by 35%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Unbreakable",
-            "class": "stat-unbreakable"
-        },
-        {
-            "stat": "Socketed (4)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Stofflix Cooking Cleaver",
+  "Tier": "SS",
+  "Level": "100",
+  "Damage": "505.00459-551",
+  "APS": "2.672.47-2.88",
+  "DPS": "1360.501134-1587",
+  "Type": "Sword",
+  "Size": "2x3",
+  "TwoHanded": false,
+  "Rarity": "Unholy",
+  "Stats": [
+    {
+      "stat": "[10-15]% Chance when Casting [Supernova] Level [75-85]",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+[575-625]% Enhanced Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+2 to All Skills",
+      "class": "stat-allskills"
+    },
+    {
+      "stat": "+8 to Fire Skills",
+      "class": "stat-fire"
+    },
+    {
+      "stat": "+[40-55]% Faster Cast Rate",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[50-75]% Increased Attack Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Extra Damage to Burning Monsters [35-50]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[20-30] to All Attributes",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[10000-15000] to Additive Fire Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Fire Skill Damage increased by 35%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Unbreakable",
+      "class": "stat-unbreakable"
+    },
+    {
+      "stat": "Socketed (4)",
+      "class": "stat-default"
+    }
+  ]
 }

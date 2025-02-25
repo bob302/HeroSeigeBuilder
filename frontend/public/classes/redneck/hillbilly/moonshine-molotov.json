@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_1_icon.webp",
-    "Image": "output/classes\\redneck\\hillbilly\\ability_1_icon.webp",
-    "Name": "Moonshine Molotov",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 0, "y": 0 }
+  "Icon": "ability_1_icon.webp",
+  "Image": "output/classes\\redneck\\hillbilly\\ability_1_icon.webp",
+  "Name": "Moonshine Molotov",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": {
+    "x": 0,
+    "y": 0
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Extra Gasoline",
+      "description": "Increased damage."
+    },
+    {
+      "id": 3,
+      "name": "Double Bourbon",
+      "description": "Chance to throw an additional molotov."
+    },
+    {
+      "id": 4,
+      "name": "Heated Melting Point",
+      "description": "Moonshine molotovs now ignite into blue flames increasing its damage significantly."
+    },
+    {
+      "id": 5,
+      "name": "Wider Flames",
+      "description": "Increases flame radius."
+    },
+    {
+      "id": 6,
+      "name": "Scorching Collision",
+      "description": "Direct hits with the molotov breaks monsters fire resistances."
+    },
+    {
+      "id": 7,
+      "name": "Gas Leak",
+      "description": "Molotovs leave a small trail of fire as they travel."
+    },
+    {
+      "id": 8,
+      "name": "Oil Spilled Flask",
+      "description": "Chance for molotovs to spill oil around them."
+    },
+    {
+      "id": 9,
+      "name": "Burn The Demons",
+      "description": "Inflicts burning on hit."
+    },
+    {
+      "id": 10,
+      "name": "Blazing Trail of Flames",
+      "description": "Molotov now bounces additional times from the ground spilling small flames around."
+    },
+    {
+      "id": 11,
+      "name": "Redeeming Flames",
+      "description": "Increases the amount of spills from moonshine molotov."
+    },
+    {
+      "id": 12,
+      "name": "Bottle Flip",
+      "description": "Molotovs now bounce once when they hit the ground redirecting them towards the closest enemy."
+    },
+    {
+      "id": 13,
+      "name": "Resilient Liquid",
+      "description": "Increases the duration of flames."
+    },
+    {
+      "id": 14,
+      "name": "Set The World On Fire",
+      "description": "Throw multiple molotovs around you for a short period setting the world ablaze. Moonshine molotov now has a cooldown."
+    },
+    {
+      "id": 15,
+      "name": "Flaming Tar",
+      "description": "Direct hits cause enemies to leave a trail of fire wherever they go damaging other nearby enemies dealing increased damage and inflicting burning."
+    }
+  ]
 }

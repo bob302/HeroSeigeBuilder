@@ -1,39 +1,39 @@
 {
-    "Item": "Doctor's Visage",
-    "Tier": "S",
-    "Level": "74",
-    "Defense": "142.00108-176",
-    "Type": "Helmet",
-    "Size": "2x2",
-    "Rarity": "Satanic Set",
-    "Stats": [
-        {
-            "stat": "+[80-120]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[60-80] to Additive Physical Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+30 to Strength",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+30 to Dexterity",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[30-40] to Life",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+45% to Arcane Resistance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+45% to Poison Resistance",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Doctor's Visage",
+  "Tier": "S",
+  "Level": "74",
+  "Defense": "142.00108-176",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "+[80-120]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[60-80] to Additive Physical Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+30 to Strength",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+30 to Dexterity",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[30-40] to Life",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+45% to Arcane Resistance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+45% to Poison Resistance",
+      "class": "stat-default"
+    }
+  ]
 }

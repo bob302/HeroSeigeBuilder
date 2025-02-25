@@ -1,28 +1,39 @@
 <template>
-  <div v-if="show" class="catalog-modal">
+  <div class="catalog-modal" @click.self="close">
     <div class="modal-content">
       <div class="filters">
         <div class="filter-column">
           <p>Type:</p>
           <select v-model="typeFilter">
-            <option v-for="type in EquipmentType" :value="type">{{ type }}</option>
+            <option v-for="type in EquipmentType" :value="type">
+              {{ type }}
+            </option>
           </select>
           <p>Subtype:</p>
           <select v-model="subtypeFilter">
             <option :value="null">all</option>
-            <option v-for="subtype in EquipmentSubtypes[typeFilter]" :value="subtype">{{ subtype }}</option>
+            <option
+              v-for="subtype in EquipmentSubtypes[typeFilter]"
+              :value="subtype"
+            >
+              {{ subtype }}
+            </option>
           </select>
         </div>
         <div class="filter-column">
           <p>Rarity:</p>
           <select v-model="rarityFilter">
             <option :value="null">any</option>
-            <option v-for="rarity in EquipmentRarity" :value="rarity">{{ rarity }}</option>
+            <option v-for="rarity in EquipmentRarity" :value="rarity">
+              {{ rarity }}
+            </option>
           </select>
           <p>Tier:</p>
           <select v-model="tierFilter">
             <option :value="null">any</option>
-            <option v-for="tier in EquipmentTier" :value="tier">{{ tier }}</option>
+            <option v-for="tier in EquipmentTier" :value="tier">
+              {{ tier }}
+            </option>
           </select>
         </div>
         <div class="filter-column">
@@ -48,9 +59,9 @@
               <option value="2-Handed">2-Handed</option>
             </select>
           </div>
-          
+
           <p>Show Sockets:</p>
-          <input type="checkbox" v-model="showSockets">
+          <input type="checkbox" v-model="showSockets" />
         </div>
         <div class="filter-column">
           <p>Search by Name:</p>
@@ -61,62 +72,65 @@
       </div>
 
       <div class="catalog-wrapper">
-        <div v-if="isLoading" class="loading-overlay">
-          Loading items...
-        </div>
+        <div v-if="isLoading" class="loading-overlay">Loading items...</div>
 
-        <EquipmentCatalog v-else :catalogItems="filteredCatalogItems" :itemBackgroundSrc="`/img/editor/item-background.png`"
-        @item-click="handleItemClick" @item-on-mouse-enter="(e: any) => $emit('item-on-mouse-enter', e)"
-        @item-on-mouse-leave="(e: any) => $emit('item-on-mouse-leave', e)" :showSockets="showSockets" />
+        <EquipmentCatalog
+          v-else
+          :catalogItems="filteredCatalogItems"
+          :itemBackgroundSrc="`/img/editor/item-background.png`"
+          :showSockets="showSockets"
+        />
       </div>
     </div>
-    <ArrowButton @click="close"/>
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Inject, Prop, Vue, Watch } from 'vue-facing-decorator';
-import { Equipment, EquipmentType, EquipmentRarity, EquipmentTier, EquipmentSubtypes, CharmEquipment, WeaponEquipment, BaseItem } from '../models/Equipment';
-import type EditorContext from '../models/EditorContext';
-import { Item } from '../models/Item';
-import { Point2D } from '../models/Point2D';
-import EquipmentCatalog from './EquipmentCatalog.vue';
-import ArrowButton from './ArrowButton.vue';
-import { equipmentService } from '../service/EquipmentService';
+import { Component, Inject, Prop, Vue, Watch } from "vue-facing-decorator";
+import {
+  Equipment,
+  EquipmentType,
+  EquipmentRarity,
+  EquipmentTier,
+  EquipmentSubtypes,
+  WeaponEquipment,
+  BaseItem,
+} from "../models/Equipment";
+import type EditorContext from "../models/EditorContext";
+import EquipmentCatalog from "./EquipmentCatalog.vue";
+import { equipmentService } from "../service/EquipmentService";
 
 @Component({
   components: {
     EquipmentCatalog,
-    ArrowButton
   },
-  emits: ['item-on-mouse-enter', 'item-on-mouse-leave', 'item-added', 'close']
+  emits: ["close"],
 })
 export default class CatalogModal extends Vue {
-  @Prop({ type: Boolean, default: false }) show!: boolean;
-  @Inject({from: 'editorContext'}) 
+  @Inject({ from: "editorContext" })
   readonly editorContext!: EditorContext;
   public allCatalogItems: BaseItem[] = [];
   private loadedTypes = new Set<string>();
   private isLoading = false;
 
-  public nameFilter: string = '';
+  public nameFilter: string = "";
   public typeFilter: EquipmentType = EquipmentType.Misc;
   public subtypeFilter: string | null = null;
   public rarityFilter: EquipmentRarity | null = null;
   public tierFilter: EquipmentTier | null = null;
-  public statsFilter: string = '';
-  public levelSort: 'asc' | 'desc' | '' = '';
-  public socketsSort: 'asc' | 'desc' | '' = '';
+  public statsFilter: string = "";
+  public levelSort: "asc" | "desc" | "" = "";
+  public socketsSort: "asc" | "desc" | "" = "";
   public filteredCatalogItems: BaseItem[] = [];
-  public oneHandedFilter: '1-Handed' | '2-Handed' | '' = '';
+  public oneHandedFilter: "1-Handed" | "2-Handed" | "" = "";
   public showSockets = false;
 
   created() {
-    this.updateCatalogItems()
+    this.updateCatalogItems();
   }
 
   get EquipmentType() {
-  return EquipmentType;
+    return EquipmentType;
   }
 
   get EquipmentRarity() {
@@ -131,34 +145,20 @@ export default class CatalogModal extends Vue {
     return EquipmentSubtypes;
   }
 
-  
-  handleItemClick(equipment: Equipment) {
-    const targetInventory = equipment instanceof CharmEquipment 
-      ? this.editorContext.charmInventory 
-      : this.editorContext.mainInventory;
-    
-      if (!targetInventory.addItem(new Item(equipment.clone(), new Point2D(equipment.size.width, equipment.size.height)))) {
-        this.editorContext.mainInventory.addItem(new Item(equipment.clone(), new Point2D(equipment.size.width, equipment.size.height)))
-        this.$emit('item-added');
-      }
-  }
-
   get currentSubtypes(): string[] {
     const items = equipmentService.getItems(this.typeFilter);
-    return [...new Set(items.map(i => i.subtype).filter(Boolean))];
+    return [...new Set(items.map((i) => i.subtype).filter(Boolean))];
   }
 
-  
-
-  @Watch('nameFilter')
-  @Watch('typeFilter')
-  @Watch('subtypeFilter')
-  @Watch('rarityFilter')
-  @Watch('tierFilter')
-  @Watch('statsFilter')
-  @Watch('levelSort')
-  @Watch('socketsSort')
-  @Watch('oneHandedFilter')
+  @Watch("nameFilter")
+  @Watch("typeFilter")
+  @Watch("subtypeFilter")
+  @Watch("rarityFilter")
+  @Watch("tierFilter")
+  @Watch("statsFilter")
+  @Watch("levelSort")
+  @Watch("socketsSort")
+  @Watch("oneHandedFilter")
   async updateCatalogItems() {
     if (!equipmentService.isInitialized) {
       await equipmentService.initialize();
@@ -166,31 +166,44 @@ export default class CatalogModal extends Vue {
 
     const items = equipmentService.getItems(this.typeFilter);
 
-    const nameRegex = new RegExp(this.nameFilter, 'i');
-    const statsRegex = new RegExp(this.statsFilter, 'i');
+    const nameRegex = new RegExp(this.nameFilter, "i");
+    const statsRegex = new RegExp(this.statsFilter, "i");
 
-    const filtered = items.filter(item => {
+    const filtered = items.filter((item) => {
       const matchesName = !this.nameFilter || nameRegex.test(item.name);
       const matchesType = item.type === this.typeFilter;
-      const matchesSubtype = !this.subtypeFilter || item.subtype === this.subtypeFilter;
-      const matchesRarity = !this.rarityFilter || item.rarity === this.rarityFilter;
+      const matchesSubtype =
+        !this.subtypeFilter || item.subtype === this.subtypeFilter;
+      const matchesRarity =
+        !this.rarityFilter || item.rarity === this.rarityFilter;
       const matchesTier = !this.tierFilter || item.tier === this.tierFilter;
-      const matchesStats = !this.statsFilter || item.stats.some(stat => statsRegex.test(stat.raw));
+      const matchesStats =
+        !this.statsFilter ||
+        item.stats.some((stat) => statsRegex.test(stat.raw));
       let matchesHanded = true;
       if (item instanceof WeaponEquipment) {
-        const handedType = item.weaponStats.twoHanded ? '2-Handed' : '1-Handed';
-        matchesHanded = !this.oneHandedFilter || this.oneHandedFilter === handedType;
+        const handedType = item.weaponStats.twoHanded ? "2-Handed" : "1-Handed";
+        matchesHanded =
+          !this.oneHandedFilter || this.oneHandedFilter === handedType;
       }
 
-      return matchesName && matchesType && matchesSubtype && matchesRarity && matchesTier && matchesStats && matchesHanded;
-   });
+      return (
+        matchesName &&
+        matchesType &&
+        matchesSubtype &&
+        matchesRarity &&
+        matchesTier &&
+        matchesStats &&
+        matchesHanded
+      );
+    });
 
     // Level Sort
     if (this.levelSort) {
       filtered.sort((a, b) => {
         const aLevel = parseInt(a.level) || 0;
         const bLevel = parseInt(b.level) || 0;
-        return this.levelSort === 'asc' ? aLevel - bLevel : bLevel - aLevel;
+        return this.levelSort === "asc" ? aLevel - bLevel : bLevel - aLevel;
       });
     }
 
@@ -199,26 +212,23 @@ export default class CatalogModal extends Vue {
       filtered.sort((a, b) => {
         const aMax = (a as Equipment).sockets?.max || 0;
         const bMax = (b as Equipment).sockets?.max || 0;
-        return this.socketsSort === 'asc' ? aMax - bMax : bMax - aMax;
+        return this.socketsSort === "asc" ? aMax - bMax : bMax - aMax;
       });
     }
 
     this.filteredCatalogItems = filtered;
   }
 
-  @Watch('typeFilter')
+  @Watch("typeFilter")
   async handleTypeChange(newType: string) {
-    
     if (!this.loadedTypes.has(newType)) {
       this.isLoading = true;
 
       const loaded = await equipmentService.loadType(newType);
 
-      loaded.forEach(item => {
-        this.allCatalogItems.push(item)
-      })
-
-      
+      loaded.forEach((item) => {
+        this.allCatalogItems.push(item);
+      });
 
       this.loadedTypes.add(newType);
       this.isLoading = false;
@@ -227,9 +237,8 @@ export default class CatalogModal extends Vue {
   }
 
   close() {
-    this.$emit('close');
+    this.$emit("close");
   }
-
 }
 </script>
 
@@ -240,7 +249,7 @@ export default class CatalogModal extends Vue {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 1rem;
-  background: rgba(0,0,0,0.8);
+  background: rgba(0, 0, 0, 0.8);
   color: white;
   border-radius: 4px;
 }
@@ -251,7 +260,7 @@ export default class CatalogModal extends Vue {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -281,5 +290,4 @@ export default class CatalogModal extends Vue {
   height: 10rem;
   padding-bottom: 2rem;
 }
-
 </style>

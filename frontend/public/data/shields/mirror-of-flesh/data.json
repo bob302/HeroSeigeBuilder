@@ -1,36 +1,36 @@
 {
-    "Item": "Mirror of Flesh",
-    "Tier": "S",
-    "Level": "88",
-    "Defense": "246.00192-300",
-    "Block": "75",
-    "Type": "Shield",
-    "Size": "2x3",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "18% Chance after Blocking [Meat Bomb] Level 32",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "+[140-200]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+1 to All Skills",
-            "class": "stat-allskills"
-        },
-        {
-            "stat": "Magic Skill Damage increased by [10-15]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+30% Faster Hit Recovery",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Physical Damage Taken Reduced by 10%",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Mirror of Flesh",
+  "Tier": "S",
+  "Level": "88",
+  "Defense": "246.00192-300",
+  "Block": "75",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "18% Chance after Blocking [Meat Bomb] Level 32",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+[140-200]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+1 to All Skills",
+      "class": "stat-allskills"
+    },
+    {
+      "stat": "Magic Skill Damage increased by [10-15]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+30% Faster Hit Recovery",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Physical Damage Taken Reduced by 10%",
+      "class": "stat-default"
+    }
+  ]
 }

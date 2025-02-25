@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_9_icon.webp",
-    "Image": "output/classes\\nomad\\wanderer\\ability_9_icon.webp",
-    "Name": "Sand Vortex",
-    "Required Skill(s)": "Dissipating Tornado",
-    "Required Level": "30",
-    "Position": { "x": 0, "y": 4 }
+  "Icon": "ability_9_icon.webp",
+  "Image": "output/classes\\nomad\\wanderer\\ability_9_icon.webp",
+  "Name": "Sand Vortex",
+  "Required Skill(s)": "Dissipating Tornado",
+  "Required Level": "30",
+  "Position": {
+    "x": 0,
+    "y": 4
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Desert Mass",
+      "description": "Increases the area of effect radius of sand vortex."
+    },
+    {
+      "id": 3,
+      "name": "Quicksand",
+      "description": "Increases pulling strength."
+    },
+    {
+      "id": 4,
+      "name": "Sunken Field",
+      "description": "Summon multiple small sand vortexes around target location with increased damage."
+    },
+    {
+      "id": 5,
+      "name": "Shredding Sand",
+      "description": "Increases the damage dealt by sand vortex."
+    },
+    {
+      "id": 6,
+      "name": "Locust Whirlpool",
+      "description": "Restores mana on hit."
+    },
+    {
+      "id": 7,
+      "name": "Stuttering Pull",
+      "description": "Chance to stun monsters on hit."
+    },
+    {
+      "id": 8,
+      "name": "Desert Control",
+      "description": "Reduces the cooldown of sand vortex."
+    },
+    {
+      "id": 9,
+      "name": "Lasting Whirlpool",
+      "description": "Increases the duration of sand vortex."
+    },
+    {
+      "id": 10,
+      "name": "Slow Burn",
+      "description": "Sand vortex now doesn’t pull monsters but slows them and inflicts burning for a portion of the damage on hit."
+    },
+    {
+      "id": 11,
+      "name": "Veil of Sand",
+      "description": "Increases damage dealt to stunned targets."
+    },
+    {
+      "id": 12,
+      "name": "Breaking Sands",
+      "description": "Inflicts arcane break on hit."
+    },
+    {
+      "id": 13,
+      "name": "Brain Damaging Whirl",
+      "description": "Sand vortex now executes targets below a certain percentage of life."
+    },
+    {
+      "id": 14,
+      "name": "Accelerated Sand",
+      "description": "Sand vortex size and tick rate increases rapidly but lasts for a shorter duration."
+    },
+    {
+      "id": 15,
+      "name": "Cycloning Kraken",
+      "description": "Sand vortex now spawns cycling tornados from its center."
+    }
+  ]
 }

@@ -1,22 +1,22 @@
 {
-    "Item": "Gambler's Demise",
-    "Tier": "B",
-    "Level": "38",
-    "Type": "Amulet",
-    "Size": "1x1",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[1-50] to Strength",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[1-50] to Intelligence",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[1-350] to Life",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Gambler's Demise",
+  "Tier": "B",
+  "Level": "38",
+  "Type": "Amulet",
+  "Size": "1x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[1-50] to Strength",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[1-50] to Intelligence",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[1-350] to Life",
+      "class": "stat-default"
+    }
+  ]
 }

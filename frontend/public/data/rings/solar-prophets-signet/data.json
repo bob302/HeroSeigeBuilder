@@ -1,26 +1,26 @@
 {
-    "Item": "Solar Prophet's Signet",
-    "Tier": "S",
-    "Level": "84",
-    "Type": "Ring",
-    "Size": "1x1",
-    "Rarity": "Satanic Set",
-    "Stats": [
-        {
-            "stat": "+1 to Fire Skills",
-            "class": "stat-fire"
-        },
-        {
-            "stat": "Fire Skill Damage increased by [5-10]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Mana Increased by [2-4]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[15-25]% to Fire Resistance",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Solar Prophet's Signet",
+  "Tier": "S",
+  "Level": "84",
+  "Type": "Ring",
+  "Size": "1x1",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "+1 to Fire Skills",
+      "class": "stat-fire"
+    },
+    {
+      "stat": "Fire Skill Damage increased by [5-10]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Mana Increased by [2-4]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[15-25]% to Fire Resistance",
+      "class": "stat-default"
+    }
+  ]
 }

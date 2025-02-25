@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_1_icon.webp",
-    "Image": "output/classes\\samurai\\ronin\\ability_1_icon.webp",
-    "Name": "Battle Glance",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 0, "y": 0 }
+  "Icon": "ability_1_icon.webp",
+  "Image": "output/classes\\samurai\\ronin\\ability_1_icon.webp",
+  "Name": "Battle Glance",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": {
+    "x": 0,
+    "y": 0
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Quick Strike",
+      "description": "Increases the amount of attacks performed by battle glance."
+    },
+    {
+      "id": 3,
+      "name": "Honed Blade",
+      "description": "Increases the damage dealt by battle glance."
+    },
+    {
+      "id": 4,
+      "name": "Shadow From Within",
+      "description": "Chance on attack to unleash a shadowy ball of energy traveling towards your blade causing monsters to be cloned to harm them selves on hit. "
+    },
+    {
+      "id": 5,
+      "name": "Refined Technique",
+      "description": "Increases the area of effect radius of battle glance."
+    },
+    {
+      "id": 6,
+      "name": "Intanglible",
+      "description": "Chance on hit to gain increased dodge chance for a short period."
+    },
+    {
+      "id": 7,
+      "name": "Execution",
+      "description": "Execute monsters with low life."
+    },
+    {
+      "id": 8,
+      "name": "Restorative Strikes",
+      "description": "Leech life and mana on hit."
+    },
+    {
+      "id": 9,
+      "name": "Spinning Katanas",
+      "description": "Chance on attack to summon a rotating blade orbiting around you for a short period inflicting bleeding on hit."
+    },
+    {
+      "id": 10,
+      "name": "Evasive Prodigy",
+      "description": "Dodging or blocking an attack causes your next battle glance to unleash bouncing katanas in an arc infront of you dealing increased damage."
+    },
+    {
+      "id": 11,
+      "name": "From Behind",
+      "description": "Increases damage dealt to bleeding targets."
+    },
+    {
+      "id": 12,
+      "name": "Guided Swing",
+      "description": "Increases critical strike damage by battle glance."
+    },
+    {
+      "id": 13,
+      "name": "Burst of Speed",
+      "description": "Chance on kill to gain increased movement speed for a short period."
+    },
+    {
+      "id": 14,
+      "name": "Blood Harvest",
+      "description": "Gain stacks of blood harvest when killing monsters. At maximum stacks gain increased damage and attack speed based on your vitality."
+    },
+    {
+      "id": 15,
+      "name": "Perfection",
+      "description": "Battle Glance now deals increased cleave damage to all monsters within your blade’s reach."
+    }
+  ]
 }

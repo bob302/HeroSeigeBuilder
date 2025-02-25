@@ -1,26 +1,26 @@
 {
-    "Item": "Elven Grace",
-    "Tier": "S",
-    "Level": "88",
-    "Type": "Ring",
-    "Size": "1x1",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+1 to All Skills",
-            "class": "stat-allskills"
-        },
-        {
-            "stat": "+18% Increased Critical Strike Chance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[15-25]% Increased Attack Rating",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[25-35]% Increased Critical Strike Damage",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Elven Grace",
+  "Tier": "S",
+  "Level": "88",
+  "Type": "Ring",
+  "Size": "1x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+1 to All Skills",
+      "class": "stat-allskills"
+    },
+    {
+      "stat": "+18% Increased Critical Strike Chance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[15-25]% Increased Attack Rating",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[25-35]% Increased Critical Strike Damage",
+      "class": "stat-default"
+    }
+  ]
 }

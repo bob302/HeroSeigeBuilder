@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_1_icon.webp",
-    "Image": "output/classes\\pirate\\plunderer\\ability_1_icon.webp",
-    "Name": "Torrent",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 0, "y": 0 }
+  "Icon": "ability_1_icon.webp",
+  "Image": "output/classes\\pirate\\plunderer\\ability_1_icon.webp",
+  "Name": "Torrent",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": {
+    "x": 0,
+    "y": 0
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Splash Impact",
+      "description": "Chance when casting to summon an additional torrent at the closest monster."
+    },
+    {
+      "id": 3,
+      "name": "Watery Fissure",
+      "description": "Chance on hit to knock enemies into the air dealing area of effect damage upon landing."
+    },
+    {
+      "id": 4,
+      "name": "Ocean Storm",
+      "description": "Unleash multiple torrents around target location."
+    },
+    {
+      "id": 5,
+      "name": "Subzero Liquid",
+      "description": "Chance to inflict cold break on hit."
+    },
+    {
+      "id": 6,
+      "name": "Torrenting Current",
+      "description": "Torrents now burst additional times."
+    },
+    {
+      "id": 7,
+      "name": "Waterwalk",
+      "description": "Decreases the movement diminish when using torrent."
+    },
+    {
+      "id": 8,
+      "name": "Collateral Splash",
+      "description": "Torrents have a chance on hit to chain their damage dealt to multiple nearby monsters."
+    },
+    {
+      "id": 9,
+      "name": "Water Mass",
+      "description": "Increases the damage dealt by torrent."
+    },
+    {
+      "id": 10,
+      "name": "Storm Pillar",
+      "description": "Unleash a big torrent knocking monsters back and airborne with force causing them to take increased damage when hitting the ground."
+    },
+    {
+      "id": 11,
+      "name": "Pillar of Water",
+      "description": "Chance on cast to replace torrent with a watery tornado dealing damage, freezing and lasting for an increased duration."
+    },
+    {
+      "id": 12,
+      "name": "Ocean's Might",
+      "description": "Increases the size and area of effect of torrent."
+    },
+    {
+      "id": 13,
+      "name": "Hypothermic Liquid",
+      "description": "Increases damage dealt to frozen targets."
+    },
+    {
+      "id": 14,
+      "name": "Chaotic Wave",
+      "description": "Send forward a tsunami unleashing torrents on hit. Torrent now has a cooldown."
+    },
+    {
+      "id": 15,
+      "name": "Whirlpool",
+      "description": "Create a whirlpool sucking in monsters on a large radius eventually collapsing into torrents. Torrent now has a cooldown."
+    }
+  ]
 }

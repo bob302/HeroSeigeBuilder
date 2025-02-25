@@ -1,43 +1,43 @@
 {
-    "Item": "Noxious Hunter's Reward",
-    "Tier": "SS",
-    "Level": "84",
-    "Defense": "944.50814-1075",
-    "Type": "Body Armor",
-    "Size": "2x3",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[270-330]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+2 to All Skills",
-            "class": "stat-allskills"
-        },
-        {
-            "stat": "+[3-5] to Poison Skills",
-            "class": "stat-poison"
-        },
-        {
-            "stat": "Extra Damage to Poisoned Monsters [15-30]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "-25% to Enemy Poison Resistance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[10-20]% Poison Damage Absorbed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[50-75]% to Poison Resistance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Socketed (1-4)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Noxious Hunter's Reward",
+  "Tier": "SS",
+  "Level": "84",
+  "Defense": "944.50814-1075",
+  "Type": "Body Armor",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[270-330]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+2 to All Skills",
+      "class": "stat-allskills"
+    },
+    {
+      "stat": "+[3-5] to Poison Skills",
+      "class": "stat-poison"
+    },
+    {
+      "stat": "Extra Damage to Poisoned Monsters [15-30]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "-25% to Enemy Poison Resistance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[10-20]% Poison Damage Absorbed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[50-75]% to Poison Resistance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Socketed (1-4)",
+      "class": "stat-default"
+    }
+  ]
 }

@@ -1,26 +1,26 @@
 {
-    "Item": "Baby Log Necklace",
-    "Tier": "A",
-    "Level": "64",
-    "Type": "Amulet",
-    "Size": "1x1",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "Replenish Life [15-30]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[150-225] to Life",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[75-100]% of Damage Returned to the Attacker",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Physical Damage Taken Reduced by 5%",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Baby Log Necklace",
+  "Tier": "A",
+  "Level": "64",
+  "Type": "Amulet",
+  "Size": "1x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "Replenish Life [15-30]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[150-225] to Life",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[75-100]% of Damage Returned to the Attacker",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Physical Damage Taken Reduced by 5%",
+      "class": "stat-default"
+    }
+  ]
 }

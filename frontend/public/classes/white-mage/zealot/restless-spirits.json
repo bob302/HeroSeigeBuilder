@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_5_icon.webp",
-    "Image": "output/classes\\whitemage\\zealot\\ability_5_icon.webp",
-    "Name": "Restless Spirits",
-    "Required Skill(s)": "Digest Souls",
-    "Required Level": "16",
-    "Position": { "x": 0, "y": 2 }
+  "Icon": "ability_5_icon.webp",
+  "Image": "output/classes\\whitemage\\zealot\\ability_5_icon.webp",
+  "Name": "Restless Spirits",
+  "Required Skill(s)": "Digest Souls",
+  "Required Level": "16",
+  "Position": {
+    "x": 0,
+    "y": 2
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Arcane Echoes",
+      "description": "Increases damage dealt by restless spirits."
+    },
+    {
+      "id": 3,
+      "name": "Shadowflame Affliction",
+      "description": "Chance to inflict shadow burn on hit."
+    },
+    {
+      "id": 4,
+      "name": "Spirit Circle",
+      "description": "Restless spirits now orbit you for a short duration."
+    },
+    {
+      "id": 5,
+      "name": "Spiritual Expansion",
+      "description": "Increases the size of restless spirits."
+    },
+    {
+      "id": 6,
+      "name": "Wraiths Call",
+      "description": "Increases the amount of restless spirits."
+    },
+    {
+      "id": 7,
+      "name": "Spectral Efficiency",
+      "description": "Decreases the mana cost of restless spirits."
+    },
+    {
+      "id": 8,
+      "name": "Phantom Step",
+      "description": "Decreases movement diminish when using restless spirits."
+    },
+    {
+      "id": 9,
+      "name": "Hexbound Spirits",
+      "description": "Chance to summon orbiting souls at target location on hit dealing damage for a short duration."
+    },
+    {
+      "id": 10,
+      "name": "Feast on the Harvest",
+      "description": "Increases the amount of restless spirits according to the stack amount of harvest the damned consuming the buff."
+    },
+    {
+      "id": 11,
+      "name": "Wraiths Fury",
+      "description": "Increases the damage dealt by restless spirits over time."
+    },
+    {
+      "id": 12,
+      "name": "Shattering Spirits",
+      "description": "Chance to inflict arcane break on hit."
+    },
+    {
+      "id": 13,
+      "name": "Spectral Velocity",
+      "description": "Increases the projectile speed of restless spirits."
+    },
+    {
+      "id": 14,
+      "name": "Master of Spirits",
+      "description": "Summon multiple spirit servants following you and unleashing shadow bolts towards nearby monsters. Restless Spirits now has a cooldown."
+    },
+    {
+      "id": 15,
+      "name": "Soul Termination",
+      "description": "Restless spirits explode on hit dealing a portion of their damage as area of effect damage."
+    }
+  ]
 }

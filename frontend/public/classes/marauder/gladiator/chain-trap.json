@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_6_icon.webp",
-    "Image": "output/classes\\marauder\\gladiator\\ability_6_icon.webp",
-    "Name": "Chain Trap",
-    "Required Skill(s)": "Retiarius Net",
-    "Required Level": "16",
-    "Position": { "x": 2, "y": 2 }
+  "Icon": "ability_6_icon.webp",
+  "Image": "output/classes\\marauder\\gladiator\\ability_6_icon.webp",
+  "Name": "Chain Trap",
+  "Required Skill(s)": "Retiarius Net",
+  "Required Level": "16",
+  "Position": {
+    "x": 2,
+    "y": 2
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Absolute Unit",
+      "description": "Increases the cast range of chain trap."
+    },
+    {
+      "id": 3,
+      "name": "Rusty Chaintip",
+      "description": "Chance to inflict serrated chains on hit."
+    },
+    {
+      "id": 4,
+      "name": "Sharpened Tip",
+      "description": "Increases damage dealt inflicting bleeding and stunning targets on hit."
+    },
+    {
+      "id": 5,
+      "name": "Armor Piercing Force",
+      "description": "Chance to inflict armor break on hit."
+    },
+    {
+      "id": 6,
+      "name": "Target Hungry",
+      "description": "Increases the amount of targets for chain trap."
+    },
+    {
+      "id": 7,
+      "name": "Double Trouble",
+      "description": "Chance on cast to unleash an additional chain trap."
+    },
+    {
+      "id": 8,
+      "name": "Serrated Chaintrap",
+      "description": "Increases damage dealt to targets inflicted with serrated chains."
+    },
+    {
+      "id": 9,
+      "name": "Sharpened Chaintip",
+      "description": "Increases the damage dealt by chain trap."
+    },
+    {
+      "id": 10,
+      "name": "Wait for the Prey",
+      "description": "Throw multiple deactivated chain traps. Casting chain trap again will cause the traps to activate."
+    },
+    {
+      "id": 11,
+      "name": "Efficient Reel",
+      "description": "Increases the hooking speed of chain trap."
+    },
+    {
+      "id": 12,
+      "name": "Longer Chains",
+      "description": "Increases the hooking ranged of chain trap."
+    },
+    {
+      "id": 13,
+      "name": "C4 Charged Trap",
+      "description": "After hooking monsters cause chain trap to explode dealing area of effect damage."
+    },
+    {
+      "id": 14,
+      "name": "Spinning Trap",
+      "description": "Chain trap spins its chains dealing increased damage in a large radius. No longer hooks monsters."
+    },
+    {
+      "id": 15,
+      "name": "Betrayal",
+      "description": "Chain trap now attaches to a monster on hit causing the monster to explode dealing increased damage after hooking nearby monsters in."
+    }
+  ]
 }

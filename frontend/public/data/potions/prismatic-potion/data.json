@@ -1,18 +1,18 @@
 {
-    "Item": "Prismatic Potion",
-    "Tier": "S",
-    "Level": "68",
-    "Type": "Potion",
-    "Size": "1x2",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[1-5] to [Prismatic Skin]",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "Increases All Resistances.",
-            "class": "item-lore"
-        }
-    ]
+  "Item": "Prismatic Potion",
+  "Tier": "S",
+  "Level": "68",
+  "Type": "Potion",
+  "Size": "1x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[1-5] to [Prismatic Skin]",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "Increases All Resistances.",
+      "class": "item-lore"
+    }
+  ]
 }

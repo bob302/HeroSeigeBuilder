@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_3_icon.webp",
-    "Image": "output/classes\\pyromancer\\flame-diviner\\ability_3_icon.webp",
-    "Name": "Phoenix Flight",
-    "Required Skill(s)": "Blazing Trail",
-    "Required Level": "8",
-    "Position": { "x": 0, "y": 1 }
+  "Icon": "ability_3_icon.webp",
+  "Image": "output/classes\\pyromancer\\flame-diviner\\ability_3_icon.webp",
+  "Name": "Phoenix Flight",
+  "Required Skill(s)": "Blazing Trail",
+  "Required Level": "8",
+  "Position": {
+    "x": 0,
+    "y": 1
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Flaming Pecker",
+      "description": "Increases the damage dealt by phoenix flight."
+    },
+    {
+      "id": 3,
+      "name": "Swift Flight",
+      "description": "Increases flight speed of phoenix flight."
+    },
+    {
+      "id": 4,
+      "name": "Rise from the Ashes",
+      "description": "At the end of your flight you launch into the air unleashing multiple fire novas beneath you and then land and smash the ground stunning and dealing additional damage to nearby monsters."
+    },
+    {
+      "id": 5,
+      "name": "Scorching Fury",
+      "description": "Unleash fireballs in a circle around you when landing."
+    },
+    {
+      "id": 6,
+      "name": "Infused Flames",
+      "description": "Gain increased fire skill damage for a short period when crashing into monsters."
+    },
+    {
+      "id": 7,
+      "name": "Searing Touch",
+      "description": "Chance to unleash searing chains when flying through monsters."
+    },
+    {
+      "id": 8,
+      "name": "Burning Screech",
+      "description": "Increases landing nova area of effect."
+    },
+    {
+      "id": 9,
+      "name": "Collateral Burning",
+      "description": "Deal additional fire damage to nearby monsters while phoenix flight is active."
+    },
+    {
+      "id": 10,
+      "name": "Burning Wings",
+      "description": "Flight distance is now short. Upon landing you knock back all monsters around scorching the land below them dealing fire damage and stunning them."
+    },
+    {
+      "id": 11,
+      "name": "Afterburn",
+      "description": "Chance on landing to unleash an additional nova."
+    },
+    {
+      "id": 12,
+      "name": "Molten Feathers",
+      "description": "Increases damage reduction while phoenix flight is active."
+    },
+    {
+      "id": 13,
+      "name": "Mental Heat",
+      "description": "Taunt enemies you fly through."
+    },
+    {
+      "id": 14,
+      "name": "Seed of Fulmination",
+      "description": "Plant a seed of fulmination on monsters you fly through that explodes after a short delay."
+    },
+    {
+      "id": 15,
+      "name": "Wings of the Phoenix",
+      "description": "When flying you rapidly shoot searing bolts behind you in a cone."
+    }
+  ]
 }

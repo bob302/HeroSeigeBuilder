@@ -1,39 +1,39 @@
 {
-    "Item": "Engineer's Plated Vest",
-    "Tier": "A",
-    "Level": "57",
-    "Defense": "357.50299-416",
-    "Type": "Body Armor",
-    "Size": "2x3",
-    "Rarity": "Satanic Set",
-    "Stats": [
-        {
-            "stat": "+[130-160]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+1 to All Skills",
-            "class": "stat-allskills"
-        },
-        {
-            "stat": "+[3-6]% Mana stolen per Hit",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+15% of Damage Taken goes to Mana",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Physical Damage Taken Reduced by [5-15]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+30 to Vitality (Based on Level)",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Socketed (0-3)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Engineer's Plated Vest",
+  "Tier": "A",
+  "Level": "57",
+  "Defense": "357.50299-416",
+  "Type": "Body Armor",
+  "Size": "2x3",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "+[130-160]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+1 to All Skills",
+      "class": "stat-allskills"
+    },
+    {
+      "stat": "+[3-6]% Mana stolen per Hit",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+15% of Damage Taken goes to Mana",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Physical Damage Taken Reduced by [5-15]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+30 to Vitality (Based on Level)",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Socketed (0-3)",
+      "class": "stat-default"
+    }
+  ]
 }

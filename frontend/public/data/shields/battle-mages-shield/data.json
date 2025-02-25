@@ -1,36 +1,36 @@
 {
-    "Item": "Battle Mage's Shield",
-    "Tier": "A",
-    "Level": "58",
-    "Defense": "129.9099-161",
-    "Block": "60",
-    "Type": "Shield",
-    "Size": "2x3",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[90-130]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+1 to All Skills",
-            "class": "stat-allskills"
-        },
-        {
-            "stat": "+[10-20]% Faster Cast Rate",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Magic Skill Damage increased by [5-10]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Replenish Mana 15%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[20-30] to Mana",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Battle Mage's Shield",
+  "Tier": "A",
+  "Level": "58",
+  "Defense": "129.9099-161",
+  "Block": "60",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[90-130]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+1 to All Skills",
+      "class": "stat-allskills"
+    },
+    {
+      "stat": "+[10-20]% Faster Cast Rate",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Magic Skill Damage increased by [5-10]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Replenish Mana 15%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[20-30] to Mana",
+      "class": "stat-default"
+    }
+  ]
 }

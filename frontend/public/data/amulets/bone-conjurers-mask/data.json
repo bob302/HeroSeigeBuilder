@@ -1,26 +1,26 @@
 {
-    "Item": "Bone Conjurer's Mask",
-    "Tier": "S",
-    "Level": "90",
-    "Type": "Amulet",
-    "Size": "1x1",
-    "Rarity": "Satanic Set",
-    "Stats": [
-        {
-            "stat": "+10 to Energy",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[450-580] to Arcane Skill Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "-[5-10]% to Enemy Arcane Resistance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[40-50]% to Arcane Resistance",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Bone Conjurer's Mask",
+  "Tier": "S",
+  "Level": "90",
+  "Type": "Amulet",
+  "Size": "1x1",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "+10 to Energy",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[450-580] to Arcane Skill Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "-[5-10]% to Enemy Arcane Resistance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[40-50]% to Arcane Resistance",
+      "class": "stat-default"
+    }
+  ]
 }

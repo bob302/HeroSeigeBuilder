@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_5_icon.webp",
-    "Image": "output/classes\\necromancer\\venomancer\\ability_5_icon.webp",
-    "Name": "Bone Spear",
-    "Required Skill(s)": "Bone Shred, Meat Bomb",
-    "Required Level": "16",
-    "Position": { "x": 0, "y": 2 }
+  "Icon": "ability_5_icon.webp",
+  "Image": "output/classes\\necromancer\\venomancer\\ability_5_icon.webp",
+  "Name": "Bone Spear",
+  "Required Skill(s)": "Bone Shred, Meat Bomb",
+  "Required Level": "16",
+  "Position": {
+    "x": 0,
+    "y": 2
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Bone Density",
+      "description": "Increases the damage dealt by bone spear."
+    },
+    {
+      "id": 3,
+      "name": "Mana Dweller",
+      "description": "Decreases the mana cost of bone spear."
+    },
+    {
+      "id": 4,
+      "name": "Impaling Spine",
+      "description": "Throw a colossal bone spear dealing increased damage and knocking up monsters on hit."
+    },
+    {
+      "id": 5,
+      "name": "Raising Spirits",
+      "description": "Chance on hit to summon a bone spirit."
+    },
+    {
+      "id": 6,
+      "name": "Bone Sling",
+      "description": "Increases the projectile speed of bone spear."
+    },
+    {
+      "id": 7,
+      "name": "Disease Ridden Bone",
+      "description": "Chance to inflict poisoned on hit."
+    },
+    {
+      "id": 8,
+      "name": "Autoimmune Disease",
+      "description": "Inflicts poison break on hit."
+    },
+    {
+      "id": 9,
+      "name": "Sharp Edged Bone",
+      "description": "Chance to critically hit with increased critical strike damage."
+    },
+    {
+      "id": 10,
+      "name": "Bone Splinters",
+      "description": "Bone spears split into multiple smaller bone spears on hit."
+    },
+    {
+      "id": 11,
+      "name": "Bone Conjuring",
+      "description": "Decreases movement diminish when using bone spear."
+    },
+    {
+      "id": 12,
+      "name": "Fervoring Fever",
+      "description": "Increases damage dealt to poisoned targets."
+    },
+    {
+      "id": 13,
+      "name": "Spiritual Tradeoff",
+      "description": "Increases damage based on your energy but now depletes a portion of it as additional mana cost."
+    },
+    {
+      "id": 14,
+      "name": "Bone Nova",
+      "description": "Bone spear now explodes into a bone nova on hit dealing increased damage and stunning on hit."
+    },
+    {
+      "id": 15,
+      "name": "Plenty of Bone",
+      "description": "Throw multiple smaller bone spears in an arc."
+    }
+  ]
 }

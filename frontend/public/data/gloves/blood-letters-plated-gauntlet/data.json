@@ -1,27 +1,27 @@
 {
-    "Item": "Blood-letter's Plated Gauntlet",
-    "Tier": "S",
-    "Level": "78",
-    "Defense": "50.5037-65",
-    "Type": "Gloves",
-    "Size": "2x2",
-    "Rarity": "Satanic Set",
-    "Stats": [
-        {
-            "stat": "+[40-70]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[7-12]% Life stolen per Hit",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+8 to Vitality",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+10 Life After each Kill",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Blood-letter's Plated Gauntlet",
+  "Tier": "S",
+  "Level": "78",
+  "Defense": "50.5037-65",
+  "Type": "Gloves",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "+[40-70]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[7-12]% Life stolen per Hit",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+8 to Vitality",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+10 Life After each Kill",
+      "class": "stat-default"
+    }
+  ]
 }

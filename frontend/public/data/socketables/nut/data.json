@@ -1,13 +1,13 @@
 {
-    "Item": "Nut",
-    "Tier": "C",
-    "Level": "29",
-    "Type": "Socketable",
-    "Rarity": "Common",
-    "Stats": [
-        {
-            "stat": "+10% Increased Attack Speed",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Nut",
+  "Tier": "C",
+  "Level": "29",
+  "Type": "Socketable",
+  "Rarity": "Common",
+  "Stats": [
+    {
+      "stat": "+10% Increased Attack Speed",
+      "class": "stat-default"
+    }
+  ]
 }

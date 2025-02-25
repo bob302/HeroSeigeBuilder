@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_2_icon.webp",
-    "Image": "output/classes\\whitemage\\zealot\\ability_2_icon.webp",
-    "Name": "Shadow Bolt",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 2, "y": 0 }
+  "Icon": "ability_2_icon.webp",
+  "Image": "output/classes\\whitemage\\zealot\\ability_2_icon.webp",
+  "Name": "Shadow Bolt",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": {
+    "x": 2,
+    "y": 0
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Consuming Flames",
+      "description": "Chance to inflict shadow burn on hit."
+    },
+    {
+      "id": 3,
+      "name": "Arcane Surge",
+      "description": "Increases damage dealt by shadow bolt."
+    },
+    {
+      "id": 4,
+      "name": "Shadow Flame",
+      "description": "Shadow bolt bursts into a shadow nova on hit with increased damage and area of effect radius."
+    },
+    {
+      "id": 5,
+      "name": "Power of the Dark Side",
+      "description": "Decreases mana cost of shadow bolt."
+    },
+    {
+      "id": 6,
+      "name": "Dark Conjurer",
+      "description": "Chance on cast to unleash an additional shadow bolt."
+    },
+    {
+      "id": 7,
+      "name": "Taunting Shadows",
+      "description": "Chance to taunt monsters on hit."
+    },
+    {
+      "id": 8,
+      "name": "Inner Corruption",
+      "description": "Increases the size of shadow bolts."
+    },
+    {
+      "id": 9,
+      "name": "Shadows Dispair",
+      "description": "Chance to inflict arcane break on hit."
+    },
+    {
+      "id": 10,
+      "name": "Shadow Cascade",
+      "description": "Shadow bolt has a chance to burst into smaller shadow bolts on hit. This effect can occur infinitely."
+    },
+    {
+      "id": 11,
+      "name": "Flames of Corruption",
+      "description": "Increases damage dealt to shadow burning targets."
+    },
+    {
+      "id": 12,
+      "name": "Warlock from the Shadows",
+      "description": "Chance on hit to critically hit with increased critical damage."
+    },
+    {
+      "id": 13,
+      "name": "Warlocks Might",
+      "description": "Increases the projectile speed of shadow bolt."
+    },
+    {
+      "id": 14,
+      "name": "Shadow Beams",
+      "description": "Unleash beams of shadows towards monsters on hit."
+    },
+    {
+      "id": 15,
+      "name": "Shadows Grasp",
+      "description": "Unleash a grasping shadow hand pulling monsters towards you inflicting arcane break on hit."
+    }
+  ]
 }

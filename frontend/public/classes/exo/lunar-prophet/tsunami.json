@@ -1,8 +1,80 @@
 {
-    "Icon": "ability_2_icon.webp",
-    "Image": "output/classes\\exo\\lunar-prophet\\ability_2_icon.webp",
-    "Name": "Tsunami",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 2, "y": 0 }
+  "Icon": "ability_2_icon.webp",
+  "Image": "output/classes\\exo\\lunar-prophet\\ability_2_icon.webp",
+  "Name": "Tsunami",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": { "x": 2, "y": 0 },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Heavy Water",
+      "description": "Increases the damage dealt by tsunami."
+    },
+    {
+      "id": 3,
+      "name": "Arctic Aqua",
+      "description": "Chance to inflict frostbite on hit."
+    },
+    {
+      "id": 4,
+      "name": "Trembling Tidalwave",
+      "description": "Increases the width of tsunami knocking monsters up dealing increased damage."
+    },
+    {
+      "id": 5,
+      "name": "Water Walker",
+      "description": "Gain increased movement speed for a short duration when using tsunami."
+    },
+    {
+      "id": 6,
+      "name": "Ramping Waves",
+      "description": "Increases the damage dealt by tsunami over time."
+    },
+    {
+      "id": 7,
+      "name": "Waterspout",
+      "description": "Chance to unleash a burst of water on hit dealing a portion of the damage."
+    },
+    {
+      "id": 8,
+      "name": "Chaining Waves",
+      "description": "Increases cast rate when using tsunami."
+    },
+    {
+      "id": 9,
+      "name": "Salt Balance",
+      "description": "Increases damage dealt to frostbitten targets."
+    },
+    {
+      "id": 10,
+      "name": "The Last Water Bender",
+      "description": "Increases the projectile speed of tsunami inflicting cold break on hit."
+    },
+    {
+      "id": 11,
+      "name": "Giant Waves",
+      "description": "Increases the size of tsunami."
+    },
+    {
+      "id": 12,
+      "name": "Asphyxiating Depths",
+      "description": "Chance to critically hit dealing increased critical strike damage."
+    },
+    {
+      "id": 13,
+      "name": "Beyond the Horizon",
+      "description": "Increases the duration of tsunami decreasing its projectile speed."
+    },
+    {
+      "id": 14,
+      "name": "Watery Turbulence",
+      "description": "Unleash multiple smaller tsunamis."
+    },
+    {
+      "id": 15,
+      "name": "Ocean Pullback",
+      "description": "Tsunami waves return back to you with increased damage and size."
+    }
+  ]
 }

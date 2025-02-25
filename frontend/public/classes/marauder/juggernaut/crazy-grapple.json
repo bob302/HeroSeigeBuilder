@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_4_icon.webp",
-    "Image": "output/classes\\marauder\\juggernaut\\ability_4_icon.webp",
-    "Name": "Crazy Grapple",
-    "Required Skill(s)": "Heavy Ball",
-    "Required Level": "8",
-    "Position": { "x": 1, "y": 1 }
+  "Icon": "ability_4_icon.webp",
+  "Image": "output/classes\\marauder\\juggernaut\\ability_4_icon.webp",
+  "Name": "Crazy Grapple",
+  "Required Skill(s)": "Heavy Ball",
+  "Required Level": "8",
+  "Position": {
+    "x": 1,
+    "y": 1
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "High RPM Reel",
+      "description": "Increases the projectile speed of crazy grapple."
+    },
+    {
+      "id": 3,
+      "name": "Thornspikes",
+      "description": "Increases the damage dealt by crazy grapple."
+    },
+    {
+      "id": 4,
+      "name": "Thorns of Sorrow",
+      "description": "Leave a trail of metal thorns on your path inflicting slow and bleeding for a portion of the damage."
+    },
+    {
+      "id": 5,
+      "name": "Efficient Grappling",
+      "description": "Decreases the mana cost of crazy grapple."
+    },
+    {
+      "id": 6,
+      "name": "The Most the Best",
+      "description": "Increases the area of effect radius of crazy grapple."
+    },
+    {
+      "id": 7,
+      "name": "Heatdash",
+      "description": "Increases the damage dealt by crazy grapple decreasing the maximum range."
+    },
+    {
+      "id": 8,
+      "name": "In Flames",
+      "description": "Scorch the ground around the point of impact dealing damage over time."
+    },
+    {
+      "id": 9,
+      "name": "Burning Spikeball",
+      "description": "Chance to inflict burning on hit."
+    },
+    {
+      "id": 10,
+      "name": "Explosive Grapple",
+      "description": "Crazy grapple inflicts fire break on hit and a fiery explosion once you reach it dealing increased damage on an increased area of effect radius."
+    },
+    {
+      "id": 11,
+      "name": "Spikey Grappler",
+      "description": "Increases the maximum range of crazy grapple."
+    },
+    {
+      "id": 12,
+      "name": "Blue Flames",
+      "description": "Chance to inflict fire break on hit."
+    },
+    {
+      "id": 13,
+      "name": "Slingshot",
+      "description": "Fly over the point of impact with increased range."
+    },
+    {
+      "id": 14,
+      "name": "Cannonade Grapple",
+      "description": "Throw bombs around you while flying towards the ball."
+    },
+    {
+      "id": 15,
+      "name": "Arena Master",
+      "description": "Sweep your surroundings with the spike ball gathering monsters on hit and bringing them back in front of you stunning them."
+    }
+  ]
 }

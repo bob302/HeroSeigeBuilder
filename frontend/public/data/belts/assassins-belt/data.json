@@ -1,35 +1,35 @@
 {
-    "Item": "Assassin's Belt",
-    "Tier": "B",
-    "Level": "34",
-    "Defense": "36.2026-47",
-    "Type": "Belt",
-    "Size": "2x1",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[30-45]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[8-15]% Increased Attack Rating",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[6-10]% Life stolen per Hit",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+15 to Dexterity",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Physical Damage Taken Reduced by 5%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Belt Slots: 4",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Assassin's Belt",
+  "Tier": "B",
+  "Level": "34",
+  "Defense": "36.2026-47",
+  "Type": "Belt",
+  "Size": "2x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[30-45]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[8-15]% Increased Attack Rating",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[6-10]% Life stolen per Hit",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+15 to Dexterity",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Physical Damage Taken Reduced by 5%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Belt Slots: 4",
+      "class": "stat-default"
+    }
+  ]
 }

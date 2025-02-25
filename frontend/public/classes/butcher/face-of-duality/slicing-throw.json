@@ -1,8 +1,80 @@
 {
-    "Icon": "ability_1_icon.webp",
-    "Image": "output/classes\\butcher\\face-of-duality\\ability_1_icon.webp",
-    "Name": "Slicing Throw",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 1, "y": 0 }
+  "Icon": "ability_1_icon.webp",
+  "Image": "output/classes\\butcher\\face-of-duality\\ability_1_icon.webp",
+  "Name": "Slicing Throw",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": { "x": 1, "y": 0 },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Cut In Half",
+      "description": "Increases the damage of slicing throw."
+    },
+    {
+      "id": 3,
+      "name": "Precision Blade",
+      "description": "Increases attack rating when using slicing throw."
+    },
+    {
+      "id": 4,
+      "name": "Splitting blade",
+      "description": "Slicing throw splits into multiple orbiting blades spiraling outwards and returning to the initial location."
+    },
+    {
+      "id": 5,
+      "name": "One Swift Strike",
+      "description": "Increases the critical strike damage and projectile speed of slicing throw."
+    },
+    {
+      "id": 6,
+      "name": "Cuts and Wounds",
+      "description": "Chance to inflict armor break on hit."
+    },
+    {
+      "id": 7,
+      "name": "Splitting Chain",
+      "description": "Chance to unleash an additional chaining blade on hit."
+    },
+    {
+      "id": 8,
+      "name": "Burn the Corpses",
+      "description": "Chance to inflict burning on hit."
+    },
+    {
+      "id": 9,
+      "name": "Bladestorm",
+      "description": "Increases the size and spinning speed of slicing throw."
+    },
+    {
+      "id": 10,
+      "name": "Daisy's Regards",
+      "description": "Slicing throw explodes into a fiery pentagram inflicting burning on hit."
+    },
+    {
+      "id": 11,
+      "name": "Executioner's Apprentice",
+      "description": "Slicing throw executes monsters below a threshold."
+    },
+    {
+      "id": 12,
+      "name": "Daisy's Insight",
+      "description": "Reduced the cooldown of slicing throw."
+    },
+    {
+      "id": 13,
+      "name": "Bloody Combustion",
+      "description": "Chance to unleash a ripple of blood from burning monsters on hit dealing additional damage based on target life."
+    },
+    {
+      "id": 14,
+      "name": "Slicing Vortex",
+      "description": "Slicing throw now orbits you with increased projectile speed and increased damage."
+    },
+    {
+      "id": 15,
+      "name": "Bladesaw Massacre",
+      "description": "Throw multiple blades forming a huge chainsaw that can be controlled. Slicing throw cooldown is now increased."
+    }
+  ]
 }

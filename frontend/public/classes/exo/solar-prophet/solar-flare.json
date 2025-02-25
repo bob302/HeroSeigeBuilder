@@ -1,8 +1,80 @@
 {
-    "Icon": "ability_2_icon.webp",
-    "Image": "output/classes\\exo\\solar-prophet\\ability_2_icon.webp",
-    "Name": "Solar Flare",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 2, "y": 0 }
+  "Icon": "ability_2_icon.webp",
+  "Image": "output/classes\\exo\\solar-prophet\\ability_2_icon.webp",
+  "Name": "Solar Flare",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": { "x": 2, "y": 0 },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Solar Fireworks",
+      "description": "Increases the projectile amount of solar flare."
+    },
+    {
+      "id": 3,
+      "name": "Blue Flame Fire",
+      "description": "Increases the damage dealt by solar flare."
+    },
+    {
+      "id": 4,
+      "name": "Grand Flare",
+      "description": "Unleash a grand flare frequently spawning smaller flares. Solar flare has a cooldown."
+    },
+    {
+      "id": 5,
+      "name": "Rapidfire Cannoneer",
+      "description": "Increases cast rate when using solar flare."
+    },
+    {
+      "id": 6,
+      "name": "God Slayer",
+      "description": "Increases damage dealt to bosses for solar flare."
+    },
+    {
+      "id": 7,
+      "name": "Explosive Flares",
+      "description": "Chance to unleash fiery explosions on hit if target is burning."
+    },
+    {
+      "id": 8,
+      "name": "Solar's Edge",
+      "description": "Monster kills grant you a stack of solar's edge increasing the damage and projectile amount of solar flare."
+    },
+    {
+      "id": 9,
+      "name": "Everburning Fire",
+      "description": "Chance to inflict burning on hit."
+    },
+    {
+      "id": 10,
+      "name": "Solar Orbs",
+      "description": "Summon multiple small suns frequently unleashing solar flares. solar flare now has a cooldown."
+    },
+    {
+      "id": 11,
+      "name": "Flaming Hands",
+      "description": "Decreases the mana cost of solare flare."
+    },
+    {
+      "id": 12,
+      "name": "Celestial Step",
+      "description": "Decreases movement diminish when using solar flare."
+    },
+    {
+      "id": 13,
+      "name": "Burst of Power",
+      "description": "Chance on cast to increase damage dealt and unleash additional solar flares."
+    },
+    {
+      "id": 14,
+      "name": "Sun's Orbit",
+      "description": "Summon solar flares orbiting you for a short duration."
+    },
+    {
+      "id": 15,
+      "name": "Searing Flares",
+      "description": "Increases the amount of projectiles inflicting fire break on hit."
+    }
+  ]
 }

@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_2_icon.webp",
-    "Image": "output/classes\\marauder\\juggernaut\\ability_2_icon.webp",
-    "Name": "Heavy Ball",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 2, "y": 0 }
+  "Icon": "ability_2_icon.webp",
+  "Image": "output/classes\\marauder\\juggernaut\\ability_2_icon.webp",
+  "Name": "Heavy Ball",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": {
+    "x": 2,
+    "y": 0
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "The Bigger the Better",
+      "description": "Increases the size of heavy ball."
+    },
+    {
+      "id": 3,
+      "name": "Log Sized Arms",
+      "description": "Increased projectile speed for heavy ball."
+    },
+    {
+      "id": 4,
+      "name": "Heavy Swing",
+      "description": "Swing the heavy ball around you dealing increased damage and critical strike damage."
+    },
+    {
+      "id": 5,
+      "name": "Surprise Bombing",
+      "description": "Chance to unleash a big bo-om on hit."
+    },
+    {
+      "id": 6,
+      "name": "Fire Frenzy",
+      "description": "Chance to unleash burning flames below the target on hit."
+    },
+    {
+      "id": 7,
+      "name": "Multi Wield",
+      "description": "Increases the amount of heavy balls."
+    },
+    {
+      "id": 8,
+      "name": "Machine Drilled Spikes",
+      "description": "Chance to inflict bleeding on hit."
+    },
+    {
+      "id": 9,
+      "name": "Gladiator's Strength",
+      "description": "Increases the range of heavy ball."
+    },
+    {
+      "id": 10,
+      "name": "Terrain Collision",
+      "description": "Hitting terrain with heavy ball unleashes fiery shockwaves into all directions inflicting burning on hit."
+    },
+    {
+      "id": 11,
+      "name": "Precision and Power",
+      "description": "Increases the attack rating and damage dealt by heavy ball."
+    },
+    {
+      "id": 12,
+      "name": "Full Body Training",
+      "description": "Decreased movement diminish when using heavy ball."
+    },
+    {
+      "id": 13,
+      "name": "Critical Mass",
+      "description": "Increases the critical strike chance of heavy ball."
+    },
+    {
+      "id": 14,
+      "name": "Sharpened Spikes",
+      "description": "Unleash multiple smaller heavy balls dealing a portion of the damage dealing increased damage to bleeding targets."
+    },
+    {
+      "id": 15,
+      "name": "Warlord Lee's Apprentice",
+      "description": "Summon multiple heavy balls permanently dragging them behind you. When casting a skill unleash the heavy balls towards the casting direction. Using this skill again will destroy the heavy balls."
+    }
+  ]
 }

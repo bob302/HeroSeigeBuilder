@@ -1,27 +1,27 @@
 {
-    "Item": "Mage's Starshroud",
-    "Tier": "C",
-    "Level": "30",
-    "Defense": "21.2015-28",
-    "Type": "Helmet",
-    "Size": "2x2",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[20-40]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[0-1] to All Skills",
-            "class": "stat-allskills"
-        },
-        {
-            "stat": "+20 to Energy",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+10 to Intelligence",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Mage's Starshroud",
+  "Tier": "C",
+  "Level": "30",
+  "Defense": "21.2015-28",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[20-40]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[0-1] to All Skills",
+      "class": "stat-allskills"
+    },
+    {
+      "stat": "+20 to Energy",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+10 to Intelligence",
+      "class": "stat-default"
+    }
+  ]
 }

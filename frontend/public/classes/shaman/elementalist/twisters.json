@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_2_icon.webp",
-    "Image": "output/classes\\shaman\\elementalist\\ability_2_icon.webp",
-    "Name": "Twisters",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 2, "y": 0 }
+  "Icon": "ability_2_icon.webp",
+  "Image": "output/classes\\shaman\\elementalist\\ability_2_icon.webp",
+  "Name": "Twisters",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": {
+    "x": 2,
+    "y": 0
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Twisted Winds",
+      "description": "Increases the projectile speed of twisters."
+    },
+    {
+      "id": 3,
+      "name": "Twistering Multitude",
+      "description": "Increases the amount of twisters."
+    },
+    {
+      "id": 4,
+      "name": "Entangling Gust",
+      "description": "Twisters pierce through targets with increased damage inflicting entangling roots on hit."
+    },
+    {
+      "id": 5,
+      "name": "Whispering Winds",
+      "description": "Decreases the mana cost of twisters."
+    },
+    {
+      "id": 6,
+      "name": "Sharp Gust",
+      "description": "Increases damage dealt by twisters."
+    },
+    {
+      "id": 7,
+      "name": "Wind's Trajectory",
+      "description": "Chance to change trajectory towards nearest monster with increased damage on hit."
+    },
+    {
+      "id": 8,
+      "name": "Gust's Bite",
+      "description": "Chance to critically hit with increased critical strike damage."
+    },
+    {
+      "id": 9,
+      "name": "Windstruck",
+      "description": "Chance to strike monsters with lightning on hit dealing additional damage."
+    },
+    {
+      "id": 10,
+      "name": "Ripping Gust",
+      "description": "Increases damage dealt inflicting bleeding on hit."
+    },
+    {
+      "id": 11,
+      "name": "Windstep",
+      "description": "Decreases movement diminish when using twisters."
+    },
+    {
+      "id": 12,
+      "name": "Upward Spiral",
+      "description": "Chance to send monsters airborne dealing increased damage on hit."
+    },
+    {
+      "id": 13,
+      "name": "Piercing Winds",
+      "description": "Chance for twisters to become piercing."
+    },
+    {
+      "id": 14,
+      "name": "Explosive Gust",
+      "description": "Twisters explode with increased area of effect radius on hit inflicting arcane break."
+    },
+    {
+      "id": 15,
+      "name": "Splitting Twister",
+      "description": "Conjure a single twister with increased damage and size unleashing piercing twisters to all directions on hit."
+    }
+  ]
 }

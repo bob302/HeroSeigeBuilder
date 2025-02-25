@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_3_icon.webp",
-    "Image": "output/classes\\demonslayer\\executioner\\ability_3_icon.webp",
-    "Name": "Demon's Calling",
-    "Required Skill(s)": "None",
-    "Required Level": "8",
-    "Position": { "x": 1, "y": 1 }
+  "Icon": "ability_3_icon.webp",
+  "Image": "output/classes\\demonslayer\\executioner\\ability_3_icon.webp",
+  "Name": "Demon's Calling",
+  "Required Skill(s)": "None",
+  "Required Level": "8",
+  "Position": {
+    "x": 1,
+    "y": 1
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Pentagram Radius",
+      "description": "Increases the area of effect radius of demon's calling."
+    },
+    {
+      "id": 3,
+      "name": "Demon's Embrace",
+      "description": "Increases damage dealt by demon's calling."
+    },
+    {
+      "id": 4,
+      "name": "Unholy Aftershock",
+      "description": "Demon's Calling now echoes additional times increasing its size."
+    },
+    {
+      "id": 5,
+      "name": "Hellflame Burst",
+      "description": "Chance to send monsters airborne on hit causing them to deal area of effect damage when landing."
+    },
+    {
+      "id": 6,
+      "name": "Dark Essence",
+      "description": "Chance to inflict arcane break on hit."
+    },
+    {
+      "id": 7,
+      "name": "Dark Meteors",
+      "description": "Chance to drop chaos meteors on hit dealing increased damage."
+    },
+    {
+      "id": 8,
+      "name": "The Fiery Layer of Hell",
+      "description": "Chance to inflict burning on hit."
+    },
+    {
+      "id": 9,
+      "name": "Hellish Scorching",
+      "description": "Increases damage dealt to burning targets."
+    },
+    {
+      "id": 10,
+      "name": "Pentagram Shockwave",
+      "description": "Unleash a shockwave of pentagrams dealing additional damage."
+    },
+    {
+      "id": 11,
+      "name": "Demon's Mind",
+      "description": "Chance on cast to jump higher and smash the ground dealing increased damage with increased area of effect radius."
+    },
+    {
+      "id": 12,
+      "name": "Devil in the Detail",
+      "description": "Decreases mana cost when using demon's calling."
+    },
+    {
+      "id": 13,
+      "name": "Hell Infused Aftershock",
+      "description": "Chance to shock the ground an additional time."
+    },
+    {
+      "id": 14,
+      "name": "Shadow Flames",
+      "description": "Dark meteors now unleash a trail of shadow flames outwards dealing additional damage."
+    },
+    {
+      "id": 15,
+      "name": "Appearing from Shadows",
+      "description": "Blink towards target location before unleashing demons calling with increased damage."
+    }
+  ]
 }

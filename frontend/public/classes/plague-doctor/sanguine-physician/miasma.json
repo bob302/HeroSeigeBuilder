@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_1_icon.webp",
-    "Image": "output/classes\\plaguedoctor\\sanguine-physician\\ability_1_icon.webp",
-    "Name": "Miasma",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 0, "y": 0 }
+  "Icon": "ability_1_icon.webp",
+  "Image": "output/classes\\plaguedoctor\\sanguine-physician\\ability_1_icon.webp",
+  "Name": "Miasma",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": {
+    "x": 0,
+    "y": 0
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Dense Haze",
+      "description": "Increases the tick frequency of miasma."
+    },
+    {
+      "id": 3,
+      "name": "Contagious Mist",
+      "description": "Chance to inflict poisoned on hit."
+    },
+    {
+      "id": 4,
+      "name": "Tenacious Stench",
+      "description": "Miasma sticks to the target with increased size and damage."
+    },
+    {
+      "id": 5,
+      "name": "Harmful Poluents",
+      "description": "Increases the damage dealt by miasma."
+    },
+    {
+      "id": 6,
+      "name": "Eroding Haze",
+      "description": "Increases damage dealt to poisoned targets."
+    },
+    {
+      "id": 7,
+      "name": "Hasty Vapors",
+      "description": "Increases the size of miasma."
+    },
+    {
+      "id": 8,
+      "name": "Hemoglobin Nova",
+      "description": "Chance to unleash additional miasma clouds from poisoned targets on hit."
+    },
+    {
+      "id": 9,
+      "name": "Incendiary Fumes",
+      "description": "Chance to inflict burning on hit."
+    },
+    {
+      "id": 10,
+      "name": "Epinephrine Addict",
+      "description": "Striking monsters gives you a stack of epinephrine addict increasing your attack speed, movement speed and attack range. At maximum stacks gain phasing movement."
+    },
+    {
+      "id": 11,
+      "name": "Intense Malodor",
+      "description": "Chance to critically hit with increased critical strike damage."
+    },
+    {
+      "id": 12,
+      "name": "Sweep Scourge",
+      "description": "Increases attack rating when using miasma."
+    },
+    {
+      "id": 13,
+      "name": "Meteoric Haze",
+      "description": "Chance to drop a burning meteor at burning targets on hit unleashing multiple fire balls to all directions when exploding."
+    },
+    {
+      "id": 14,
+      "name": "Shoulder Fling",
+      "description": "Fling targets behind you on hit inflicting elemental break and stunning them. Miasma clouds now spawn behind you."
+    },
+    {
+      "id": 15,
+      "name": "Epidemic Dissemination",
+      "description": "Unleash multiple miasma clouds in an arc when attacking. Miasma no longer requires you to strike a target."
+    }
+  ]
 }

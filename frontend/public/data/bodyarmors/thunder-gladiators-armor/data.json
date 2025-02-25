@@ -1,35 +1,35 @@
 {
-    "Item": "Thunder Gladiator's Armor",
-    "Tier": "D",
-    "Level": "13",
-    "Defense": "24.8817-33",
-    "Type": "Body Armor",
-    "Size": "2x3",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "8% Chance when Struck [Charged Bolts] Level 6",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "+[70-82]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Lightning Skill Damage increased by [4-8]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "-[20-30]% to Enemy Lightning Resistance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+40% to Lightning Resistance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Socketed (0-3)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Thunder Gladiator's Armor",
+  "Tier": "D",
+  "Level": "13",
+  "Defense": "24.8817-33",
+  "Type": "Body Armor",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "8% Chance when Struck [Charged Bolts] Level 6",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+[70-82]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Lightning Skill Damage increased by [4-8]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "-[20-30]% to Enemy Lightning Resistance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+40% to Lightning Resistance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Socketed (0-3)",
+      "class": "stat-default"
+    }
+  ]
 }

@@ -1,27 +1,27 @@
 {
-    "Item": "Death's Grasp",
-    "Tier": "S",
-    "Level": "78",
-    "Defense": "55.6039-73",
-    "Type": "Gloves",
-    "Size": "2x2",
-    "Rarity": "Satanic Set",
-    "Stats": [
-        {
-            "stat": "5% Chance when Striking [Life Tap] Level 10",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "+[50-90]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[20-30]% Increased Attack Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Attack Damage increased by [10-20]%",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Death's Grasp",
+  "Tier": "S",
+  "Level": "78",
+  "Defense": "55.6039-73",
+  "Type": "Gloves",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "5% Chance when Striking [Life Tap] Level 10",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+[50-90]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[20-30]% Increased Attack Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Attack Damage increased by [10-20]%",
+      "class": "stat-default"
+    }
+  ]
 }

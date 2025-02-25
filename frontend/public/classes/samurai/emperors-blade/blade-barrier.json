@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_1_icon.webp",
-    "Image": "output/classes\\samurai\\emperors-blade\\ability_1_icon.webp",
-    "Name": "Blade Barrier",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 0, "y": 0 }
+  "Icon": "ability_1_icon.webp",
+  "Image": "output/classes\\samurai\\emperors-blade\\ability_1_icon.webp",
+  "Name": "Blade Barrier",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": {
+    "x": 0,
+    "y": 0
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Rotational Force",
+      "description": "Increases blade barriers rotation speed."
+    },
+    {
+      "id": 3,
+      "name": "Cursed Blades",
+      "description": "Blade barrier has a chance to shoot out a blade when hitting a target."
+    },
+    {
+      "id": 4,
+      "name": "Twin Barriers",
+      "description": "Blade barrier now summons an outer and an inner barrier. The inner barrier deals increased damage and the out barrier is guaranteed to proc cursed blades on hit."
+    },
+    {
+      "id": 5,
+      "name": "Barrier Extension",
+      "description": "Increases duration of blade barrier."
+    },
+    {
+      "id": 6,
+      "name": "Damascus Steel Blades",
+      "description": "Increases physical damage dealt by blade barrier but reduces arcane damage dealt."
+    },
+    {
+      "id": 7,
+      "name": "Infinite Potential",
+      "description": "Increases the amount of blades in the barrier."
+    },
+    {
+      "id": 8,
+      "name": "Battle Wounds",
+      "description": "Chance to cause monsters to bleed on hit."
+    },
+    {
+      "id": 9,
+      "name": "Crippling Hits",
+      "description": "Slows monsters on hit."
+    },
+    {
+      "id": 10,
+      "name": "Spinning Armory",
+      "description": "Adds an additional orbital layer of blades."
+    },
+    {
+      "id": 11,
+      "name": "Laceration",
+      "description": "Increases damage dealt to bleeding enemies."
+    },
+    {
+      "id": 12,
+      "name": "Sharp Greeting",
+      "description": "Blade barrier deals increased damage to monsters with full life."
+    },
+    {
+      "id": 13,
+      "name": "Spirit Fire",
+      "description": "Physical scaling is converted to burning. Blade barrier now only deals arcane damage."
+    },
+    {
+      "id": 14,
+      "name": "Forgotten Arts",
+      "description": "Hitting an enemy refreshes blade barrier duration. Gain increased damage for each active blade barrier you have."
+    },
+    {
+      "id": 15,
+      "name": "Body And Soul",
+      "description": "Blades seek out and stick on nearby monsters dealing increased damage. Blades return to the player if the target is too far away or the monster dies."
+    }
+  ]
 }

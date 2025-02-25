@@ -1,8 +1,80 @@
 {
-    "Icon": "ability_2_icon.webp",
-    "Image": "output/classes\\butcher\\flesh-ripper\\ability_2_icon.webp",
-    "Name": "Brutalizing Slash",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 2, "y": 0 }
+  "Icon": "ability_2_icon.webp",
+  "Image": "output/classes\\butcher\\flesh-ripper\\ability_2_icon.webp",
+  "Name": "Brutalizing Slash",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": { "x": 2, "y": 0 },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Bucthering Skill",
+      "description": "Increases attack rating when using brutalizing slash."
+    },
+    {
+      "id": 3,
+      "name": "Bonebreaker",
+      "description": "Increases the damage dealt by brutalizing slash."
+    },
+    {
+      "id": 4,
+      "name": "Pummeling Slashwave",
+      "description": "Unleash a slash wave on attack inflicting increased bleeding on hit."
+    },
+    {
+      "id": 5,
+      "name": "Unstoppable Rage",
+      "description": "Decreases movement diminish when using brutalizing slash."
+    },
+    {
+      "id": 6,
+      "name": "Descent to Madness",
+      "description": "Increases attack speed when using brutalizing slash."
+    },
+    {
+      "id": 7,
+      "name": "With 2 Hands",
+      "description": "Chance on attack to unleash an additional brutalizing slash."
+    },
+    {
+      "id": 8,
+      "name": "Skullsplitter",
+      "description": "Increases the critical strike damage dealt by brutalizing slash."
+    },
+    {
+      "id": 9,
+      "name": "Afterlife Burner",
+      "description": "Chance on kill for the target to explode into a pile of corpses."
+    },
+    {
+      "id": 10,
+      "name": "Meet Daisy",
+      "description": "Every third attack unleashes daisy with increased damage and critical strike damage. The size of daisy is increased based on your missing life. "
+    },
+    {
+      "id": 11,
+      "name": "Precision Equals Power",
+      "description": "Increases the damage dealt by brutalizing slash based on your dexterity."
+    },
+    {
+      "id": 12,
+      "name": "For the Weak",
+      "description": "Increases the attack range of brutalizing slash based on your strength."
+    },
+    {
+      "id": 13,
+      "name": "Bleeding the Prey",
+      "description": "Increases damage dealt to bleeding targets."
+    },
+    {
+      "id": 14,
+      "name": "Painmongering",
+      "description": "Gain a stack of painmongering on hit increasing the tick frequency of bleed."
+    },
+    {
+      "id": 15,
+      "name": "Gutting Frenzy",
+      "description": "Chance to unleashes a ripple of blood on hit dealing increased critical damage based on your strength."
+    }
+  ]
 }

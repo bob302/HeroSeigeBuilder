@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_2_icon.webp",
-    "Image": "output/classes\\pyromancer\\arsonist\\ability_2_icon.webp",
-    "Name": "Fireball",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 2, "y": 0 }
+  "Icon": "ability_2_icon.webp",
+  "Image": "output/classes\\pyromancer\\arsonist\\ability_2_icon.webp",
+  "Name": "Fireball",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": {
+    "x": 2,
+    "y": 0
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Multicast",
+      "description": "Chance on cast to unleash an additional fireball."
+    },
+    {
+      "id": 3,
+      "name": "Ignition Radius",
+      "description": "Increases the area of effect radius of fireball."
+    },
+    {
+      "id": 4,
+      "name": "Splitfire",
+      "description": "Fireball now splits to multiple smaller fireballs on hit."
+    },
+    {
+      "id": 5,
+      "name": "Inferno Ball",
+      "description": "Increases the damage dealt by fireball."
+    },
+    {
+      "id": 6,
+      "name": "Gas Fumes",
+      "description": "Chance to inflict burning on hit."
+    },
+    {
+      "id": 7,
+      "name": "Searing Speed",
+      "description": "Increases the projectile speed of fireball."
+    },
+    {
+      "id": 8,
+      "name": "Paralyzing Impact",
+      "description": "Chance on hit to knockback monsters dealing increased damage."
+    },
+    {
+      "id": 9,
+      "name": "Soulburn",
+      "description": "Inflicts fire break on hit."
+    },
+    {
+      "id": 10,
+      "name": "Fireflies",
+      "description": "Chance on spellhit to spawn a firefly around you that seek out nearby targets exploding into a fireball."
+    },
+    {
+      "id": 11,
+      "name": "Critical Burn",
+      "description": "Chance on hit to deal double damage."
+    },
+    {
+      "id": 12,
+      "name": "Mark of Doom",
+      "description": "Chance on hit to rain down flaming meteors from the sky."
+    },
+    {
+      "id": 13,
+      "name": "Burn baby burn",
+      "description": "Increases damage dealt to burning targets."
+    },
+    {
+      "id": 14,
+      "name": "Path of Destruction",
+      "description": "Fireball now has piercing and leaves a trail of fire on its’ path."
+    },
+    {
+      "id": 15,
+      "name": "Orbital Fire",
+      "description": "Fireball casts now orbit around you for a short period."
+    }
+  ]
 }

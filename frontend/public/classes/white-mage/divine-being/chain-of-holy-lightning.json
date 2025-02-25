@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_5_icon.webp",
-    "Image": "output/classes\\whitemage\\divine-being\\ability_5_icon.webp",
-    "Name": "Chain of Holy Lightning",
-    "Required Skill(s)": "Burst of Light",
-    "Required Level": "16",
-    "Position": { "x": 0, "y": 2 }
+  "Icon": "ability_5_icon.webp",
+  "Image": "output/classes\\whitemage\\divine-being\\ability_5_icon.webp",
+  "Name": "Chain of Holy Lightning",
+  "Required Skill(s)": "Burst of Light",
+  "Required Level": "16",
+  "Position": {
+    "x": 0,
+    "y": 2
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Holy Velocity",
+      "description": "Increases the projectile speed of chain of holy light."
+    },
+    {
+      "id": 3,
+      "name": "Plasma Burst",
+      "description": "Increases the damage dealt by chain of holy light."
+    },
+    {
+      "id": 4,
+      "name": "God's Altar",
+      "description": "Summon an altar of light unleashing chain of holy light on nearby monsters. Chain of holy light now has a cooldown."
+    },
+    {
+      "id": 5,
+      "name": "Holy Discharge",
+      "description": "Chance to smite monsters with holy lightning on hit dealing additional damage."
+    },
+    {
+      "id": 6,
+      "name": "Divine Divergence",
+      "description": "Chance to unleash an additional chain of holy light on hit."
+    },
+    {
+      "id": 7,
+      "name": "Amplifying Prayer",
+      "description": "Increases the damage dealt by chain of holy light with each bounce."
+    },
+    {
+      "id": 8,
+      "name": "Spellbreak Prayer",
+      "description": "Chance to inflict arcane break on hit."
+    },
+    {
+      "id": 9,
+      "name": "Celestial Light",
+      "description": "Increases the amount of bounces."
+    },
+    {
+      "id": 10,
+      "name": "God's Grasp",
+      "description": "Pull monsters towards the first target on hit unleashing a divine explosion dealing increased damage with increased area of effect radius."
+    },
+    {
+      "id": 11,
+      "name": "Sacred Steps",
+      "description": "Decreases movement diminish when using chain of holy light."
+    },
+    {
+      "id": 12,
+      "name": "Lightened Path",
+      "description": "Decreases the mana cost of chain of holy light."
+    },
+    {
+      "id": 13,
+      "name": "Light's Embrace",
+      "description": "Chain of holy light heals you for a portion of your maximum life when hitting its last target."
+    },
+    {
+      "id": 14,
+      "name": "Recursive Light",
+      "description": "Chain of holy light strikes the same target multiple times if there are no monsters nearby dealing a portion of its damage."
+    },
+    {
+      "id": 15,
+      "name": "Echo of Heavens",
+      "description": "Unleash holy bolts towards targets on hit."
+    }
+  ]
 }

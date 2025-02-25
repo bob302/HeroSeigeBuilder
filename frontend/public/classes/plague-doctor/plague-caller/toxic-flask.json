@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_1_icon.webp",
-    "Image": "output/classes\\plaguedoctor\\plague-caller\\ability_1_icon.webp",
-    "Name": "Toxic Flask",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 1, "y": 0 }
+  "Icon": "ability_1_icon.webp",
+  "Image": "output/classes\\plaguedoctor\\plague-caller\\ability_1_icon.webp",
+  "Name": "Toxic Flask",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": {
+    "x": 1,
+    "y": 0
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "One with the Poison",
+      "description": "Increases the maximum cast range and area of effect radius of toxic flask."
+    },
+    {
+      "id": 3,
+      "name": "Harmful Vial",
+      "description": "Increases the damage dealt by toxic flask."
+    },
+    {
+      "id": 4,
+      "name": "Plague Radiator",
+      "description": "Toxic flask emmits toxic clouds towards nearby monsters inflicting poisoned when hitting the ground. "
+    },
+    {
+      "id": 5,
+      "name": "Modest Poison",
+      "description": "Decreases the mana cost of toxic flask."
+    },
+    {
+      "id": 6,
+      "name": "Decomposing Materia",
+      "description": "Chance to inflict poison break on hit."
+    },
+    {
+      "id": 7,
+      "name": "Heatseeking Flask",
+      "description": "Toxic flasks home into the nearest monster with increased projectile speed after reaching the highest altitude."
+    },
+    {
+      "id": 8,
+      "name": "Resistant Crystal",
+      "description": "Increases the amount of ground bounces for toxic flask."
+    },
+    {
+      "id": 9,
+      "name": "Apothecary",
+      "description": "Chance on cast to unleash an additional toxic flask."
+    },
+    {
+      "id": 10,
+      "name": "Vial of Alchemy",
+      "description": "Throwing toxic flask at yourself or an ally empowers them with toxins granting increased damage, life and damage reduction."
+    },
+    {
+      "id": 11,
+      "name": "Fake Throw",
+      "description": "Chance on cast to throw an additional toxic flask high in the air falling straight down with increased area of effect radius."
+    },
+    {
+      "id": 12,
+      "name": "Agile Tosser",
+      "description": "Decreases movement diminish when using toxic flask."
+    },
+    {
+      "id": 13,
+      "name": "Flask Flip",
+      "description": "Teleport into target location when toxic flask hits the ground."
+    },
+    {
+      "id": 14,
+      "name": "Toxin Vials",
+      "description": "Throw multiple small toxic flasks in an arc."
+    },
+    {
+      "id": 15,
+      "name": "Glassblowing Technician",
+      "description": "Toxic flask breaks into glass shards dealing its damage as physical and ignoring all target defense."
+    }
+  ]
 }

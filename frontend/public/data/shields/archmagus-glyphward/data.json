@@ -1,32 +1,32 @@
 {
-    "Item": "Archmagus Glyphward",
-    "Tier": "C",
-    "Level": "20",
-    "Defense": "25.8021-31",
-    "Block": "25",
-    "Type": "Shield",
-    "Size": "2x3",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[50-70]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+10 to Energy",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[5-15] to Intelligence",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Replenish Life [10-15]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+125 to Life",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Archmagus Glyphward",
+  "Tier": "C",
+  "Level": "20",
+  "Defense": "25.8021-31",
+  "Block": "25",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[50-70]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+10 to Energy",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[5-15] to Intelligence",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Replenish Life [10-15]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+125 to Life",
+      "class": "stat-default"
+    }
+  ]
 }

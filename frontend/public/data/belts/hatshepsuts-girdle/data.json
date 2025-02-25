@@ -1,35 +1,35 @@
 {
-    "Item": "Hatshepsut's Girdle",
-    "Tier": "A",
-    "Level": "64",
-    "Defense": "65.7053-80",
-    "Type": "Belt",
-    "Size": "2x1",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[45-65]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+10% Increased Attack Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+3 to Light Radius",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[10-20]% Extra Gold Dropped From Kills",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[5-12]% Increased Magic Find",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Belt Slots: 4",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Hatshepsut's Girdle",
+  "Tier": "A",
+  "Level": "64",
+  "Defense": "65.7053-80",
+  "Type": "Belt",
+  "Size": "2x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[45-65]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+10% Increased Attack Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+3 to Light Radius",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[10-20]% Extra Gold Dropped From Kills",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[5-12]% Increased Magic Find",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Belt Slots: 4",
+      "class": "stat-default"
+    }
+  ]
 }

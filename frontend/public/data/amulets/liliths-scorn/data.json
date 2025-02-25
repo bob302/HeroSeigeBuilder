@@ -1,26 +1,26 @@
 {
-    "Item": "Lilith's Scorn",
-    "Tier": "SS",
-    "Level": "100",
-    "Type": "Amulet",
-    "Size": "1x2",
-    "Rarity": "Unholy",
-    "Stats": [
-        {
-            "stat": "2% Chance after each Kill [Liliths Rage] Level 1",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "Magic Skill Damage increased by [15-60]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Explosion area of effect increased by [30-50]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[15-25]% to All Resistances",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Lilith's Scorn",
+  "Tier": "SS",
+  "Level": "100",
+  "Type": "Amulet",
+  "Size": "1x2",
+  "Rarity": "Unholy",
+  "Stats": [
+    {
+      "stat": "2% Chance after each Kill [Liliths Rage] Level 1",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "Magic Skill Damage increased by [15-60]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Explosion area of effect increased by [30-50]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[15-25]% to All Resistances",
+      "class": "stat-default"
+    }
+  ]
 }

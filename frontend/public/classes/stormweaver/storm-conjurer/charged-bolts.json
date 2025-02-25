@@ -1,8 +1,80 @@
 {
-    "Icon": "ability_1_icon.webp",
-    "Image": "output/classes\\stormweaver\\storm-conjurer\\ability_1_icon.webp",
-    "Name": "Charged Bolts",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 1, "y": 0 }
+  "Icon": "ability_1_icon.webp",
+  "Image": "output/classes\\stormweaver\\storm-conjurer\\ability_1_icon.webp",
+  "Name": "Charged Bolts",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": { "x": 1, "y": 0 },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Bigger Outlet ",
+      "description": "Increases the amount of charged bolts."
+    },
+    {
+      "id": 3,
+      "name": "Electric Vains ",
+      "description": "Increases the damage dealt by charged bolts."
+    },
+    {
+      "id": 4,
+      "name": "Electric Field ",
+      "description": "Unleash charged bolts in a circle around you causing them to return after a short duration."
+    },
+    {
+      "id": 5,
+      "name": "Flash Bolt ",
+      "description": "Increases the projectile speed of charged bolts."
+    },
+    {
+      "id": 6,
+      "name": "Halting Storm ",
+      "description": "Chance to deal increased damage slowing targets on hit."
+    },
+    {
+      "id": 7,
+      "name": "Weakening Charge ",
+      "description": "Chance to inflict lightning break on hit."
+    },
+    {
+      "id": 8,
+      "name": "Efficient Wiring ",
+      "description": "Decreases the mana cost of charged bolts."
+    },
+    {
+      "id": 9,
+      "name": "Non-conductive Boots ",
+      "description": "Decreases movement diminish when using charged bolts."
+    },
+    {
+      "id": 10,
+      "name": "Railgun ",
+      "description": "Unleash charged bolts as a barrage dealing increased damage. Charged bolts now has a cooldown."
+    },
+    {
+      "id": 11,
+      "name": "Static Buildup ",
+      "description": "Increases the size of charged bolts."
+    },
+    {
+      "id": 12,
+      "name": "Additive Voltage ",
+      "description": "Chance on cast to increase the amount of charged bolts."
+    },
+    {
+      "id": 13,
+      "name": "Electrocharged Therapy ",
+      "description": "Chance to inflict stasis on hit."
+    },
+    {
+      "id": 14,
+      "name": "World Ender ",
+      "description": "Conjure a single large charged bolt scaling from projectile amount and unleashing charged bolts into all directions after exploding."
+    },
+    {
+      "id": 15,
+      "name": "Loaded Thunder ",
+      "description": "Chance to unleash a large pulsating thunder bolt on hit dealing increased damage."
+    }
+  ]
 }

@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_2_icon.webp",
-    "Image": "output/classes\\redneck\\hillbilly\\ability_2_icon.webp",
-    "Name": "Pipe Bombs",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 2, "y": 0 }
+  "Icon": "ability_2_icon.webp",
+  "Image": "output/classes\\redneck\\hillbilly\\ability_2_icon.webp",
+  "Name": "Pipe Bombs",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": {
+    "x": 2,
+    "y": 0
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Stacked Bag",
+      "description": "Throw additional bombs."
+    },
+    {
+      "id": 3,
+      "name": "Lowered Weight",
+      "description": "Increases the projectile speed of pipe bombs."
+    },
+    {
+      "id": 4,
+      "name": "Fiery Infusion",
+      "description": "Pipe bombs now leave burning flames on the ground with increased damage and area of effect radius."
+    },
+    {
+      "id": 5,
+      "name": "TNT Mass",
+      "description": "Increases the size and explosion area of effect radius of pipe bombs."
+    },
+    {
+      "id": 6,
+      "name": "Bomberman",
+      "description": "Increases faster cast rate when using pipe bombs."
+    },
+    {
+      "id": 7,
+      "name": "Splitting Explosive",
+      "description": "Chance on hit to split into multiple pipe bombs."
+    },
+    {
+      "id": 8,
+      "name": "Wounding Blast",
+      "description": "Inflicts bleeding on hit."
+    },
+    {
+      "id": 9,
+      "name": "Salt Covering",
+      "description": "Increases damage dealt to bleeding targets."
+    },
+    {
+      "id": 10,
+      "name": "Colossal Explosive",
+      "description": "Throw a giant pipe bomb that bounces multiple times dealing increased damage. Each bounce it shrinks in size and deals less damage until it vanishes."
+    },
+    {
+      "id": 11,
+      "name": "Blasting Powder",
+      "description": "Increases the damage dealt by pipe bombs."
+    },
+    {
+      "id": 12,
+      "name": "Anti Fatigue",
+      "description": "Decreases the mana cost of pipe bombs."
+    },
+    {
+      "id": 13,
+      "name": "Upwards Pressure",
+      "description": "Chance on hit to knock up monsters dealing additional damage."
+    },
+    {
+      "id": 14,
+      "name": "Disorienting Blast",
+      "description": "Knock monsters back with massive power causing them to take additional damage and be stunned when hitting terrain."
+    },
+    {
+      "id": 15,
+      "name": "Eat This",
+      "description": "Throw a single pipe bomb with force unleashing multiple pipe bombs in a circle around the impact point."
+    }
+  ]
 }

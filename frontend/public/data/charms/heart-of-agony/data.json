@@ -1,14 +1,14 @@
 {
-    "Item": "Heart of Agony",
-    "Tier": "S",
-    "Level": "64",
-    "Type": "Charm",
-    "Size": "1x2",
-    "Rarity": "Satanic Set",
-    "Stats": [
-        {
-            "stat": "+[1-3] to Random Skill",
-            "class": "stat-spell"
-        }
-    ]
+  "Item": "Heart of Agony",
+  "Tier": "S",
+  "Level": "64",
+  "Type": "Charm",
+  "Size": "1x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "+[1-3] to Random Skill",
+      "class": "stat-spell"
+    }
+  ]
 }

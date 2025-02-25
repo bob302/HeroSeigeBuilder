@@ -1,8 +1,8 @@
 {
-    "Icon": "ability_6_icon.webp",
-    "Image": "output/classes\\exo\\solar-prophet\\ability_6_icon.webp",
-    "Name": "Solar Form",
-    "Required Skill(s)": "Solar Dash",
-    "Required Level": "16",
-    "Position": { "x": 1, "y": 2 }
+  "Icon": "ability_6_icon.webp",
+  "Image": "output/classes\\exo\\solar-prophet\\ability_6_icon.webp",
+  "Name": "Solar Form",
+  "Required Skill(s)": "Solar Dash",
+  "Required Level": "16",
+  "Position": { "x": 1, "y": 2 }
 }

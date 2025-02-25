@@ -1,8 +1,8 @@
 {
-    "Icon": "ability_2_icon.webp",
-    "Image": "output/classes\\viking\\berserker\\ability_2_icon.webp",
-    "Name": "Brute Force",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 2, "y": 0 }
+  "Icon": "ability_2_icon.webp",
+  "Image": "output/classes\\viking\\berserker\\ability_2_icon.webp",
+  "Name": "Brute Force",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": { "x": 2, "y": 0 }
 }

@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_2_icon.webp",
-    "Image": "output/classes\\nomad\\wanderer\\ability_2_icon.webp",
-    "Name": "Cloud of Sand",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 2, "y": 0 }
+  "Icon": "ability_2_icon.webp",
+  "Image": "output/classes\\nomad\\wanderer\\ability_2_icon.webp",
+  "Name": "Cloud of Sand",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": {
+    "x": 2,
+    "y": 0
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Breeze",
+      "description": "Decreases movement diminish when using cloud of sand."
+    },
+    {
+      "id": 3,
+      "name": "Desert's Spirit",
+      "description": "Increases cast rate when using cloud of sand."
+    },
+    {
+      "id": 4,
+      "name": "Cloud Bender",
+      "description": "The cloud is now under your control gaining increased size and damage."
+    },
+    {
+      "id": 5,
+      "name": "Sand Twisters",
+      "description": "Teleporting into the cloud now unleashes multiple sand tornados around the cloud."
+    },
+    {
+      "id": 6,
+      "name": "Desert's Will",
+      "description": "Decreases mana cost when using cloud of sand."
+    },
+    {
+      "id": 7,
+      "name": "Desert's Endurance",
+      "description": "Increases the duration of cloud of sand."
+    },
+    {
+      "id": 8,
+      "name": "Sandbender",
+      "description": "Cloud of sand now leaves behind a trail of tornados."
+    },
+    {
+      "id": 9,
+      "name": "Zephyr",
+      "description": "Increases the projectile speed of cloud of sand."
+    },
+    {
+      "id": 10,
+      "name": "Ascension",
+      "description": "Teleporting to the cloud now renders you immortal for a short period. Cloud of sand now has a cooldown."
+    },
+    {
+      "id": 11,
+      "name": "Heavy Sand",
+      "description": "Increases the damage dealt by cloud of sand."
+    },
+    {
+      "id": 12,
+      "name": "Dust Storm",
+      "description": "Increases the size of cloud of sand."
+    },
+    {
+      "id": 13,
+      "name": "Hand of the Oasis",
+      "description": "Inflicts arcane break on hit."
+    },
+    {
+      "id": 14,
+      "name": "Field of Quicksand",
+      "description": "Teleporting to the cloud now summons multiple small sand vortexes around it."
+    },
+    {
+      "id": 15,
+      "name": "Desert's Echo",
+      "description": "Summon multiple clouds dealing increased damage. You are no longer able to teleport into the cloud."
+    }
+  ]
 }

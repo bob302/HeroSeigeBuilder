@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_6_icon.webp",
-    "Image": "output/classes\\demonslayer\\gunslinger\\ability_6_icon.webp",
-    "Name": "Possessed Bullet",
-    "Required Skill(s)": "Bullet Hell",
-    "Required Level": "16",
-    "Position": { "x": 2, "y": 2 }
+  "Icon": "ability_6_icon.webp",
+  "Image": "output/classes\\demonslayer\\gunslinger\\ability_6_icon.webp",
+  "Name": "Possessed Bullet",
+  "Required Skill(s)": "Bullet Hell",
+  "Required Level": "16",
+  "Position": {
+    "x": 2,
+    "y": 2
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Secondary Haunting",
+      "description": "Chance on attack to fire an additional bullet."
+    },
+    {
+      "id": 3,
+      "name": "Spirits Within Rounds",
+      "description": "Increases the amount of projectiles released by the initial hit."
+    },
+    {
+      "id": 4,
+      "name": "Ghostwhirl",
+      "description": "Projectiles now swirl around the target on a small radius."
+    },
+    {
+      "id": 5,
+      "name": "Exorcism",
+      "description": "Increases damage dealt by possessed bullet."
+    },
+    {
+      "id": 6,
+      "name": "Hemorrhaging Possession",
+      "description": "Chance to inflict bleeding on hit."
+    },
+    {
+      "id": 7,
+      "name": "Blood Ripples",
+      "description": "Chance to unleash blood ripples on hit dealing area of effect damage."
+    },
+    {
+      "id": 8,
+      "name": "Bloodlusted Bullet",
+      "description": "Increases damage dealt to bleeding targets."
+    },
+    {
+      "id": 9,
+      "name": "Longlasting Barrel",
+      "description": "Increases projectile speed."
+    },
+    {
+      "id": 10,
+      "name": "Malignance",
+      "description": "Send multiple homing ghosts towards the target dealing damage to monsters on their path."
+    },
+    {
+      "id": 11,
+      "name": "The Demon Within",
+      "description": "Chance to unleash additional bullets after initial hit."
+    },
+    {
+      "id": 12,
+      "name": "Stop Resisting",
+      "description": "Inflicts armor break on hit."
+    },
+    {
+      "id": 13,
+      "name": "Leeching Demon",
+      "description": "Blood ripples replenish a portion of your maximum life on hit."
+    },
+    {
+      "id": 14,
+      "name": "Seeking Host",
+      "description": "Possessed bullets now return to the target after a short duration."
+    },
+    {
+      "id": 15,
+      "name": "Haunting",
+      "description": "Bullets now haunt monsters, slowing them and exploding after a short duration, dealing area of effect damage."
+    }
+  ]
 }

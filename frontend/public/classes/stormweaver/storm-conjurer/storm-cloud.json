@@ -1,8 +1,80 @@
 {
-    "Icon": "ability_8_icon.webp",
-    "Image": "output/classes\\stormweaver\\storm-conjurer\\ability_8_icon.webp",
-    "Name": "Storm Cloud",
-    "Required Skill(s)": "None",
-    "Required Level": "24",
-    "Position": { "x": 1, "y": 3 }
+  "Icon": "ability_8_icon.webp",
+  "Image": "output/classes\\stormweaver\\storm-conjurer\\ability_8_icon.webp",
+  "Name": "Storm Cloud",
+  "Required Skill(s)": "None",
+  "Required Level": "24",
+  "Position": { "x": 1, "y": 3 },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Rapid and Intense Glaciation",
+      "description": "Increases the tick frequency of storm cloud."
+    },
+    {
+      "id": 3,
+      "name": "Demolishing Discharge",
+      "description": "Increases the damage dealt by storm cloud."
+    },
+    {
+      "id": 4,
+      "name": "Orbiting Tempest",
+      "description": "Conjure multiple storm clouds orbitting around you."
+    },
+    {
+      "id": 5,
+      "name": "Storm Conjurer",
+      "description": "Decreases the mana cost of storm cloud."
+    },
+    {
+      "id": 6,
+      "name": "Shocking Thunder",
+      "description": "Chance to inflict stasis on hit."
+    },
+    {
+      "id": 7,
+      "name": "Destructive Cloudburst",
+      "description": "Chance to unleash multiple charged bolts on hit."
+    },
+    {
+      "id": 8,
+      "name": "Maelstorm",
+      "description": "Increases the area of effect radius of storm cloud."
+    },
+    {
+      "id": 9,
+      "name": "Supercell Storm",
+      "description": "Increases the duration of storm cloud."
+    },
+    {
+      "id": 10,
+      "name": "Apocalyptic Event",
+      "description": "Chance to unleash apocalyptic thunder on hit dealing additional damage executing targets with life below a threshold."
+    },
+    {
+      "id": 11,
+      "name": "Heatcharged Lightning",
+      "description": "Chance to leave the ground on flames on hit dealing damage over time."
+    },
+    {
+      "id": 12,
+      "name": "Thunder's Roar",
+      "description": "Chance on cast to unleash an additional storm cloud."
+    },
+    {
+      "id": 13,
+      "name": "Homing Tempest",
+      "description": "Storm cloud now slowly moves towards the closest nearby monster."
+    },
+    {
+      "id": 14,
+      "name": "Storm Front",
+      "description": "Unleash a large storm cloud with a chance of striking monsters with lightning bolts dealing heavy damage."
+    },
+    {
+      "id": 15,
+      "name": "Aftershock",
+      "description": "Increases the area of effect radius of storm cloud leaving the ground below charged with electricity dealing damage over time and slowing monsters on hit."
+    }
+  ]
 }

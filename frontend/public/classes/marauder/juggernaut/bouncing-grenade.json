@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_1_icon.webp",
-    "Image": "output/classes\\marauder\\juggernaut\\ability_1_icon.webp",
-    "Name": "Bouncing Grenade",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 0, "y": 0 }
+  "Icon": "ability_1_icon.webp",
+  "Image": "output/classes\\marauder\\juggernaut\\ability_1_icon.webp",
+  "Name": "Bouncing Grenade",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": {
+    "x": 0,
+    "y": 0
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Pressurized Bombs",
+      "description": "Increases area of effect radius of bouncing grenade."
+    },
+    {
+      "id": 3,
+      "name": "Strong Lats",
+      "description": "Increased the projecile speed of bouncing grenade."
+    },
+    {
+      "id": 4,
+      "name": "Resetting Fuse",
+      "description": "Bouncing from terrain resets the duration of bouncing grenade."
+    },
+    {
+      "id": 5,
+      "name": "Nitroglycerine Solution",
+      "description": "Increases the damage dealt by bouncing grenade."
+    },
+    {
+      "id": 6,
+      "name": "Elastic Cover",
+      "description": "Increases the amount of bounces for bouncing grenade."
+    },
+    {
+      "id": 7,
+      "name": "Ace Up Your Sleeve",
+      "description": "Chance on cast to unleash an additional bouncing grenade."
+    },
+    {
+      "id": 8,
+      "name": "Big Boy Bombs",
+      "description": "Increases the size of bouncing grenade."
+    },
+    {
+      "id": 9,
+      "name": "Heavy Weight",
+      "description": "Decreases the distance between bounces."
+    },
+    {
+      "id": 10,
+      "name": "Coast to Coast",
+      "description": "Throw multiple bouncing grenades in an arc."
+    },
+    {
+      "id": 11,
+      "name": "Rubber Coated Shell",
+      "description": "Chance for bouncing grenades to bounce off of terrain."
+    },
+    {
+      "id": 12,
+      "name": "Sharp Shrapnels",
+      "description": "Chance to inflict fire break on hit."
+    },
+    {
+      "id": 13,
+      "name": "Flammable Charge",
+      "description": "Chance to inflict burning on hit."
+    },
+    {
+      "id": 14,
+      "name": "Blazing Rebound",
+      "description": "Hitting a monster causes bouncing grenade to bounce towards another nearby monster increasing its damage."
+    },
+    {
+      "id": 15,
+      "name": "Fiery Charge",
+      "description": "Each bounce increases the size of the molten trail. Unleash flames on a large radius inflicting burning after exploding."
+    }
+  ]
 }

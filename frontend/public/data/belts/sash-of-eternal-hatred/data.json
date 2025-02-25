@@ -1,39 +1,39 @@
 {
-    "Item": "Sash of Eternal Hatred",
-    "Tier": "SS",
-    "Level": "98",
-    "Defense": "97.2076-119",
-    "Type": "Belt",
-    "Size": "2x1",
-    "Rarity": "Heroic",
-    "Stats": [
-        {
-            "stat": "+[45-75]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[15-30] to Vitality",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+75% Faster Hit Recovery",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Unholy Stat",
-            "class": "stat-unholy"
-        },
-        {
-            "stat": "Unholy Stat",
-            "class": "stat-unholy"
-        },
-        {
-            "stat": "Unholy Stat",
-            "class": "stat-unholy"
-        },
-        {
-            "stat": "Belt Slots: 5",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Sash of Eternal Hatred",
+  "Tier": "SS",
+  "Level": "98",
+  "Defense": "97.2076-119",
+  "Type": "Belt",
+  "Size": "2x1",
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "+[45-75]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[15-30] to Vitality",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+75% Faster Hit Recovery",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Unholy Stat",
+      "class": "stat-unholy"
+    },
+    {
+      "stat": "Unholy Stat",
+      "class": "stat-unholy"
+    },
+    {
+      "stat": "Unholy Stat",
+      "class": "stat-unholy"
+    },
+    {
+      "stat": "Belt Slots: 5",
+      "class": "stat-default"
+    }
+  ]
 }

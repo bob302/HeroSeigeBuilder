@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_5_icon.webp",
-    "Image": "output/classes\\samurai\\ronin\\ability_5_icon.webp",
-    "Name": "Smoke Bomb",
-    "Required Skill(s)": "Evasion",
-    "Required Level": "16",
-    "Position": { "x": 1, "y": 2 }
+  "Icon": "ability_5_icon.webp",
+  "Image": "output/classes\\samurai\\ronin\\ability_5_icon.webp",
+  "Name": "Smoke Bomb",
+  "Required Skill(s)": "Evasion",
+  "Required Level": "16",
+  "Position": {
+    "x": 1,
+    "y": 2
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Weakening Powder",
+      "description": "Slows and reduces attack rating of targets hit."
+    },
+    {
+      "id": 3,
+      "name": "Key to Precision",
+      "description": "Increases projectile speed."
+    },
+    {
+      "id": 4,
+      "name": "Adjusted Formula",
+      "description": "Significantly reduce enemy attack rating and increase monster damage taken when inside smoke bomb."
+    },
+    {
+      "id": 5,
+      "name": "Acidic Component",
+      "description": "Chance on hit to inflict armor break."
+    },
+    {
+      "id": 6,
+      "name": "Thick Clouds",
+      "description": "Increases smoke bomb area of effect radius."
+    },
+    {
+      "id": 7,
+      "name": "Mindfulness",
+      "description": "Inflict arcane break on hit."
+    },
+    {
+      "id": 8,
+      "name": "Greater Impact",
+      "description": "Increases damage dealt by smoke bomb."
+    },
+    {
+      "id": 9,
+      "name": "Preparation",
+      "description": "Smoke bomb has a chance to bounce releasing an additional smoke cloud."
+    },
+    {
+      "id": 10,
+      "name": "Smoke Trail",
+      "description": "Smoke bomb now leaves a trail of smoke behind you dealing increased damage. Smoke bomb now has a cooldown."
+    },
+    {
+      "id": 11,
+      "name": "Swift Deploy",
+      "description": "Increases cast rate when using smoke bomb."
+    },
+    {
+      "id": 12,
+      "name": "Feel the Heat",
+      "description": "Inflicts burning on hit."
+    },
+    {
+      "id": 13,
+      "name": "Burning Weakness",
+      "description": "Increases damage dealt to burning targets."
+    },
+    {
+      "id": 14,
+      "name": "Stealth Zone",
+      "description": "Throw out smoke bombs in all directions forming a massive cloud increasing your movement speed inside of it. Smoke bomb now has a cooldown."
+    },
+    {
+      "id": 15,
+      "name": "Monster Cleansing",
+      "description": "Smoke bomb consumes damage over time debuffs from monsters inside of it dealing full damage instantly. "
+    }
+  ]
 }

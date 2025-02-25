@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_9_icon.webp",
-    "Image": "output/classes\\nomad\\vagabond\\ability_9_icon.webp",
-    "Name": "Phantom Blade",
-    "Required Skill(s)": "Chainslice",
-    "Required Level": "30",
-    "Position": { "x": 1, "y": 4 }
+  "Icon": "ability_9_icon.webp",
+  "Image": "output/classes\\nomad\\vagabond\\ability_9_icon.webp",
+  "Name": "Phantom Blade",
+  "Required Skill(s)": "Chainslice",
+  "Required Level": "30",
+  "Position": {
+    "x": 1,
+    "y": 4
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Paranormal Activity",
+      "description": "Increases the maximum amount of phantom blades."
+    },
+    {
+      "id": 3,
+      "name": "Phantom Agility",
+      "description": "Increases the attack speed of phantom blades."
+    },
+    {
+      "id": 4,
+      "name": "Spirit Blades",
+      "description": "Phantom blades now orbit you and attack the closest monsters."
+    },
+    {
+      "id": 5,
+      "name": "Dimensional Intellect",
+      "description": "Decreases the mana cost of phantom blade."
+    },
+    {
+      "id": 6,
+      "name": "Ghostly Reach",
+      "description": "Increases the attack range of phantom blades."
+    },
+    {
+      "id": 7,
+      "name": "Malicious Essence",
+      "description": "Increases the damage dealt by phantom blades."
+    },
+    {
+      "id": 8,
+      "name": "Essence of Time",
+      "description": "Increases the duration of phantom blade."
+    },
+    {
+      "id": 9,
+      "name": "Malevolent Pulse",
+      "description": "Increases the area of effect radius of phantom blades attacks."
+    },
+    {
+      "id": 10,
+      "name": "Dimensional Ghostblade",
+      "description": "Phantom blades no longer attack but throw flying scimitars with increased damage."
+    },
+    {
+      "id": 11,
+      "name": "Twice The Price",
+      "description": "Chance for phantomblades to swing an additional time on hit."
+    },
+    {
+      "id": 12,
+      "name": "Ghost Dimension",
+      "description": "Inflicts arcane break on hit."
+    },
+    {
+      "id": 13,
+      "name": "Psychosis",
+      "description": "Inflicts bleeding on hit."
+    },
+    {
+      "id": 14,
+      "name": "Terrorized Mind",
+      "description": "When a phantom blade strikes a bleeding target the bleeding is consumed unleashing a vorpal pulse dealing increased damage based on the bleeding value."
+    },
+    {
+      "id": 15,
+      "name": "Spectral Ghostblade",
+      "description": "Phantom blades deal increased damage based on your energy."
+    }
+  ]
 }

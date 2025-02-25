@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_3_icon.webp",
-    "Image": "output/classes\\pirate\\gunner\\ability_3_icon.webp",
-    "Name": "Explosive Barrel",
-    "Required Skill(s)": "Buckshot",
-    "Required Level": "8",
-    "Position": { "x": 1, "y": 1 }
+  "Icon": "ability_3_icon.webp",
+  "Image": "output/classes\\pirate\\gunner\\ability_3_icon.webp",
+  "Name": "Explosive Barrel",
+  "Required Skill(s)": "Buckshot",
+  "Required Level": "8",
+  "Position": {
+    "x": 1,
+    "y": 1
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Explosive Containers",
+      "description": "Increases the amount of spawned barrels."
+    },
+    {
+      "id": 3,
+      "name": "Barrel Blast Radius",
+      "description": "Increases explosion area of effect radius of explosive barrel."
+    },
+    {
+      "id": 4,
+      "name": "Bring the Grog",
+      "description": "Barrels are now big and leave the ground burning with increased blast radius."
+    },
+    {
+      "id": 5,
+      "name": "Inflammable Liquid",
+      "description": "Increases damage dealt to burning targets."
+    },
+    {
+      "id": 6,
+      "name": "Scatter Barrel",
+      "description": "Chance on cast to unleash an additional barrel."
+    },
+    {
+      "id": 7,
+      "name": "Sudden Dynamite",
+      "description": "Chance on exploding to launch shrapnel around dealing additional damage."
+    },
+    {
+      "id": 8,
+      "name": "Stack of Explosives",
+      "description": "Increases the damage dealt by barrels."
+    },
+    {
+      "id": 9,
+      "name": "MORE BARRELS",
+      "description": "Increases proc rate of explosive barrel."
+    },
+    {
+      "id": 10,
+      "name": "Circle of TNT",
+      "description": "Now creates a circle of barrels around the target."
+    },
+    {
+      "id": 11,
+      "name": "Incendiary Explosives",
+      "description": "Inflicts burning on hit."
+    },
+    {
+      "id": 12,
+      "name": "Deepfrozen Barrel",
+      "description": "Dealing cold damage with explosive barrel freezes enemies and inflicts permafrost."
+    },
+    {
+      "id": 13,
+      "name": "Barrels of the Freljord",
+      "description": "Barrels now explode in a frigid blast converting damage dealt to cold inflicting cold break."
+    },
+    {
+      "id": 14,
+      "name": "Field of Explosives",
+      "description": "Create multiple trails of smaller barrels."
+    },
+    {
+      "id": 15,
+      "name": "Explosive Collision",
+      "description": "Now throw a barrel bouncing and exploding multiple times."
+    }
+  ]
 }

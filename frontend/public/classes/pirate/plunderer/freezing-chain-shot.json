@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_2_icon.webp",
-    "Image": "output/classes\\pirate\\plunderer\\ability_2_icon.webp",
-    "Name": "Freezing Chain Shot",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 1, "y": 0 }
+  "Icon": "ability_2_icon.webp",
+  "Image": "output/classes\\pirate\\plunderer\\ability_2_icon.webp",
+  "Name": "Freezing Chain Shot",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": {
+    "x": 1,
+    "y": 0
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Poseidon's Fist",
+      "description": "Breaks cold resistances on striking."
+    },
+    {
+      "id": 3,
+      "name": "Precision Chain",
+      "description": "Increased hit rating."
+    },
+    {
+      "id": 4,
+      "name": "Frozen Chain Rip",
+      "description": "Freezing chain shot now chains and pulls chained monsters towards the first target."
+    },
+    {
+      "id": 5,
+      "name": "Good Ol' Ways",
+      "description": "Gain additional attacks per second while wielding a bow."
+    },
+    {
+      "id": 6,
+      "name": "Pack a Punch",
+      "description": "Increases the projectile speed of freezing chain shot."
+    },
+    {
+      "id": 7,
+      "name": "Shatter",
+      "description": "Increases damage dealt to frozen targets."
+    },
+    {
+      "id": 8,
+      "name": "Ice Age",
+      "description": "Freezes enemies with a chance on striking to deepfreeze them."
+    },
+    {
+      "id": 9,
+      "name": "Ice Healing",
+      "description": "Restores a flat amount of health and mana on hit."
+    },
+    {
+      "id": 10,
+      "name": "Freezing Whiplash",
+      "description": "When hitting terrain the chainshot spins and grows in size rapidly sending monsters into the air dealing increased damage and stunning them."
+    },
+    {
+      "id": 11,
+      "name": "Gulf Stream",
+      "description": "Chance on hit to increase your attackspeed for a short duration."
+    },
+    {
+      "id": 12,
+      "name": "Grip Boots",
+      "description": "Decreases the movement diminish when using freezing chain shot."
+    },
+    {
+      "id": 13,
+      "name": "Coldspot",
+      "description": "Freezing chain shot deals damage in a small area around the targets hit."
+    },
+    {
+      "id": 14,
+      "name": "Coldsnap Vacuum",
+      "description": "Fire a huge chainshot catching monsters on its way and dealing increased damage and stunning caught monsters when hitting terrain."
+    },
+    {
+      "id": 15,
+      "name": "Catch of the Day",
+      "description": "On hit release additional chain shots in all directions."
+    }
+  ]
 }

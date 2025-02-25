@@ -1,43 +1,43 @@
 {
-    "Item": "Lichbane",
-    "Tier": "B",
-    "Level": "40",
-    "Defense": "204.00156-252",
-    "Type": "Body Armor",
-    "Size": "2x3",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[160-180]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[1-2] to All Skills",
-            "class": "stat-allskills"
-        },
-        {
-            "stat": "+15 to Energy",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+10 to All Attributes",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Magic Skill Damage increased by [12-30]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Replenish Mana 50%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+35 to Energy (Based on Level)",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Socketed (0-3)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Lichbane",
+  "Tier": "B",
+  "Level": "40",
+  "Defense": "204.00156-252",
+  "Type": "Body Armor",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[160-180]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[1-2] to All Skills",
+      "class": "stat-allskills"
+    },
+    {
+      "stat": "+15 to Energy",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+10 to All Attributes",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Magic Skill Damage increased by [12-30]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Replenish Mana 50%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+35 to Energy (Based on Level)",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Socketed (0-3)",
+      "class": "stat-default"
+    }
+  ]
 }

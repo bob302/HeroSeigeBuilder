@@ -1,26 +1,26 @@
 {
-    "Item": "Rapidshell Medallion",
-    "Tier": "D",
-    "Level": "9",
-    "Type": "Amulet",
-    "Size": "1x2",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+10% Faster Cast Rate",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+10% Increased Attack Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[7-15] to Vitality",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[1-3]% Increased Experience Gain",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Rapidshell Medallion",
+  "Tier": "D",
+  "Level": "9",
+  "Type": "Amulet",
+  "Size": "1x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+10% Faster Cast Rate",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+10% Increased Attack Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[7-15] to Vitality",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[1-3]% Increased Experience Gain",
+      "class": "stat-default"
+    }
+  ]
 }

@@ -1,62 +1,62 @@
 {
-    "Item": "Blood Moon Crescent",
-    "Tier": "SS",
-    "Level": "100",
-    "Damage": "815.75750-882",
-    "APS": "2.442.09-2.8",
-    "DPS": "2018.501568-2469",
-    "Type": "Sword",
-    "Size": "2x3",
-    "TwoHanded": false,
-    "Rarity": "Unholy",
-    "Stats": [
-        {
-            "stat": "10% Chance when Striking [Despair] Level 80",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "+[900-975]% Enhanced Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[2-3] to All Skills",
-            "class": "stat-allskills"
-        },
-        {
-            "stat": "+8 to Poison Skills",
-            "class": "stat-poison"
-        },
-        {
-            "stat": "+69% Increased Movement Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[50-100]% Increased Attack Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Skill Movement Diminish decreased by 75%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+15% Life stolen per Hit",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[125-150] to Dexterity",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Movement Phasing",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Unbreakable",
-            "class": "stat-unbreakable"
-        },
-        {
-            "stat": "Socketed (2)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Blood Moon Crescent",
+  "Tier": "SS",
+  "Level": "100",
+  "Damage": "815.75750-882",
+  "APS": "2.442.09-2.8",
+  "DPS": "2018.501568-2469",
+  "Type": "Sword",
+  "Size": "2x3",
+  "TwoHanded": false,
+  "Rarity": "Unholy",
+  "Stats": [
+    {
+      "stat": "10% Chance when Striking [Despair] Level 80",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+[900-975]% Enhanced Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[2-3] to All Skills",
+      "class": "stat-allskills"
+    },
+    {
+      "stat": "+8 to Poison Skills",
+      "class": "stat-poison"
+    },
+    {
+      "stat": "+69% Increased Movement Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[50-100]% Increased Attack Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Skill Movement Diminish decreased by 75%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+15% Life stolen per Hit",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[125-150] to Dexterity",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Movement Phasing",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Unbreakable",
+      "class": "stat-unbreakable"
+    },
+    {
+      "stat": "Socketed (2)",
+      "class": "stat-default"
+    }
+  ]
 }

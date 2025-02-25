@@ -1,35 +1,35 @@
 {
-    "Item": "Mevius' Mighty Helmet",
-    "Tier": "S",
-    "Level": "65",
-    "Defense": "99.9076-125",
-    "Type": "Helmet",
-    "Size": "2x2",
-    "Rarity": "Satanic Set",
-    "Stats": [
-        {
-            "stat": "+[80-130]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Cooldown Recovery Increased by [5-10]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+15 to Vitality",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+8 to All Attributes",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Magic Skill Damage increased by [8-20]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "All Damage Taken Reduced by 3%",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Mevius' Mighty Helmet",
+  "Tier": "S",
+  "Level": "65",
+  "Defense": "99.9076-125",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "+[80-130]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Cooldown Recovery Increased by [5-10]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+15 to Vitality",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+8 to All Attributes",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Magic Skill Damage increased by [8-20]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "All Damage Taken Reduced by 3%",
+      "class": "stat-default"
+    }
+  ]
 }

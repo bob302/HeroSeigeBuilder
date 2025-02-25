@@ -1,8 +1,80 @@
 {
-    "Icon": "ability_7_icon.webp",
-    "Image": "output/classes\\demonspawn\\bone-conjurer\\ability_7_icon.webp",
-    "Name": "Spinal Tap",
-    "Required Skill(s)": "Cartilage Build Up",
-    "Required Level": "24",
-    "Position": { "x": 1, "y": 3 }
+  "Icon": "ability_7_icon.webp",
+  "Image": "output/classes\\demonspawn\\bone-conjurer\\ability_7_icon.webp",
+  "Name": "Spinal Tap",
+  "Required Skill(s)": "Cartilage Build Up",
+  "Required Level": "24",
+  "Position": { "x": 1, "y": 3 },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Inevitable Carnage",
+      "description": "Increases spinal tap's area of effect radius."
+    },
+    {
+      "id": 3,
+      "name": "Hell's Reach",
+      "description": "Increases the maximum cast range of spinal tap."
+    },
+    {
+      "id": 4,
+      "name": "Blood and Gore",
+      "description": "Spinal tap executes enemies below a threshold of life causing them to explode with increased area of effect radius dealing increased damage."
+    },
+    {
+      "id": 5,
+      "name": "Vampiric Tendencies",
+      "description": "Increases damage dealt to bleeding targets."
+    },
+    {
+      "id": 6,
+      "name": "Bringer of Pain",
+      "description": "Chance to unleash an additional spinal tap."
+    },
+    {
+      "id": 7,
+      "name": "Increase in Suffering",
+      "description": "Increases damage dealt by spinal tap."
+    },
+    {
+      "id": 8,
+      "name": "Restoring Agony",
+      "description": "Chance to replenish a portion of your maximum mana on hit."
+    },
+    {
+      "id": 9,
+      "name": "Additive Curse",
+      "description": "Increases the maximum stacks of cartilage build up."
+    },
+    {
+      "id": 10,
+      "name": "Healing Torture",
+      "description": "Increases the area of effect radius of spinal tap healing you for a portion of your maximum life per hit."
+    },
+    {
+      "id": 11,
+      "name": "Demonic Grip",
+      "description": "Chance to inflict arcane break on hit."
+    },
+    {
+      "id": 12,
+      "name": "Spinal Explosion",
+      "description": "Spines ripped from monsters have a chance to explode dealing additional damage."
+    },
+    {
+      "id": 13,
+      "name": "Violent Rip",
+      "description": "Chance to inflict bleeding on hit."
+    },
+    {
+      "id": 14,
+      "name": "Internal Bleeding",
+      "description": "Spinal tap inflicts increased bleeding on hit. If the target is already bleeding, increase the tick frequency of existing bleed until it consumes the bleeding dealing increased damage."
+    },
+    {
+      "id": 15,
+      "name": "Eternal Suffering",
+      "description": "Conjure piercing bone spikes flying towards targets on hit dealing additional damage."
+    }
+  ]
 }

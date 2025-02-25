@@ -1,26 +1,26 @@
 {
-    "Item": "Thunderstone Amulet",
-    "Tier": "S",
-    "Level": "97",
-    "Type": "Amulet",
-    "Size": "1x2",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[1-3] to Lightning Skills",
-            "class": "stat-lightning"
-        },
-        {
-            "stat": "+[140-160] to Lightning Skill Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Lightning Skill Damage increased by [15-30]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[40-50]% to Lightning Resistance",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Thunderstone Amulet",
+  "Tier": "S",
+  "Level": "97",
+  "Type": "Amulet",
+  "Size": "1x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[1-3] to Lightning Skills",
+      "class": "stat-lightning"
+    },
+    {
+      "stat": "+[140-160] to Lightning Skill Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Lightning Skill Damage increased by [15-30]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[40-50]% to Lightning Resistance",
+      "class": "stat-default"
+    }
+  ]
 }

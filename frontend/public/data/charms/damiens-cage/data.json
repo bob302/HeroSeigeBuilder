@@ -1,22 +1,22 @@
 {
-    "Item": "Damien's Cage",
-    "Tier": "S",
-    "Level": "65",
-    "Type": "Charm",
-    "Size": "2x2",
-    "Rarity": "Satanic Set",
-    "Stats": [
-        {
-            "stat": "+[1-3] to Arcane Skills",
-            "class": "stat-arcane"
-        },
-        {
-            "stat": "+[10-35] to Intelligence",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[20-45]% to Arcane Resistance",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Damien's Cage",
+  "Tier": "S",
+  "Level": "65",
+  "Type": "Charm",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "+[1-3] to Arcane Skills",
+      "class": "stat-arcane"
+    },
+    {
+      "stat": "+[10-35] to Intelligence",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[20-45]% to Arcane Resistance",
+      "class": "stat-default"
+    }
+  ]
 }

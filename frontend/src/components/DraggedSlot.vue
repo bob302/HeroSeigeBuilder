@@ -1,9 +1,9 @@
 <template>
   <div class="dragged-slot" :style="dragStyle()">
-    <Item 
-      v-if="editorContext.itemOnCursor?.item?.data" 
-      :equipment="editorContext.itemOnCursor.item.data" 
-      :showSockets="true" 
+    <Item
+      v-if="editorContext.itemOnCursor?.item?.data"
+      :equipment="editorContext.itemOnCursor.item.data"
+      :showSockets="true"
       :pointerEvents="false"
     />
   </div>
@@ -16,10 +16,10 @@ import type { CSSProperties } from "vue";
 import type EditorContext from "../models/EditorContext";
 
 @Component({
-  components: { Item }
+  components: { Item },
 })
 export default class DraggedSlot extends Vue {
-  @Inject({from: 'editorContext'}) 
+  @Inject({ from: "editorContext" })
   readonly editorContext!: EditorContext;
 
   mouseX: number = -1000;
@@ -27,11 +27,11 @@ export default class DraggedSlot extends Vue {
 
   dragStyle(): CSSProperties {
     return {
-      position: 'fixed',
+      position: "fixed",
       top: `${this.mouseY}px`,
       left: `${this.mouseX}px`,
-      transform: 'translate(-50%, -50%)',
-      zIndex: 1000
+      transform: "translate(-50%, -50%)",
+      zIndex: 1000,
     };
   }
 
@@ -41,11 +41,11 @@ export default class DraggedSlot extends Vue {
   }
 
   mounted() {
-    document.addEventListener('mousemove', this.handleMouseMove);
+    document.addEventListener("mousemove", this.handleMouseMove);
   }
 
   beforeDestroy() {
-    document.removeEventListener('mousemove', this.handleMouseMove);
+    document.removeEventListener("mousemove", this.handleMouseMove);
   }
 }
 </script>
@@ -56,5 +56,4 @@ export default class DraggedSlot extends Vue {
   transition: transform 0.3s ease-out;
   will-change: transform;
 }
-
 </style>

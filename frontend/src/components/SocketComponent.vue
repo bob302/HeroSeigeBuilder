@@ -2,24 +2,31 @@
   <div class="socket-wrapper">
     <img :src="socketImage" class="socket" />
     <div class="socketable">
-      <img v-if="socketable" :src="socketable.image" class="socketable-image" draggable="false">
+      <img
+        v-if="socketable"
+        :src="socketable.image"
+        class="socketable-image"
+        draggable="false"
+      />
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Vue, Prop } from 'vue-facing-decorator';
-import type { Socketable } from '../models/Equipment';
+import { Component, Vue, Prop } from "vue-facing-decorator";
+import type { Socketable } from "../models/Equipment";
 
 @Component({
-  emits: []
+  emits: [],
 })
 export default class Socket extends Vue {
-  @Prop({type: Object, required: false}) socketable!: Socketable
-  @Prop({type: Boolean, required: true}) prismatic!: boolean
+  @Prop({ type: Object, required: false }) socketable!: Socketable;
+  @Prop({ type: Boolean, required: true }) prismatic!: boolean;
 
   get socketImage() {
-    return this.prismatic ? '/img/editor/socket-prismatic.png' : '/img/editor/socket-normal.png'
+    return this.prismatic
+      ? "/img/editor/socket-prismatic.png"
+      : "/img/editor/socket-normal.png";
   }
 }
 </script>

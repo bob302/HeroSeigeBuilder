@@ -1,13 +1,13 @@
 {
-    "Item": "Old",
-    "Tier": "D",
-    "Level": "11",
-    "Type": "Socketable",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+25% Enhanced Damage",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Old",
+  "Tier": "D",
+  "Level": "11",
+  "Type": "Socketable",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+25% Enhanced Damage",
+      "class": "stat-default"
+    }
+  ]
 }

@@ -1,26 +1,26 @@
 {
-    "Item": "Elder's Heart",
-    "Tier": "B",
-    "Level": "42",
-    "Type": "Amulet",
-    "Size": "1x2",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[30-45]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[7-10]% Increased Attack Rating",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+15 to All Attributes",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+20% to All Resistances",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Elder's Heart",
+  "Tier": "B",
+  "Level": "42",
+  "Type": "Amulet",
+  "Size": "1x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[30-45]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[7-10]% Increased Attack Rating",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+15 to All Attributes",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+20% to All Resistances",
+      "class": "stat-default"
+    }
+  ]
 }

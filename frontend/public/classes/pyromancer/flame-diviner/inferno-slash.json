@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_4_icon.webp",
-    "Image": "output/classes\\pyromancer\\flame-diviner\\ability_4_icon.webp",
-    "Name": "Inferno Slash",
-    "Required Skill(s)": "Fire Enchant",
-    "Required Level": "8",
-    "Position": { "x": 1, "y": 1 }
+  "Icon": "ability_4_icon.webp",
+  "Image": "output/classes\\pyromancer\\flame-diviner\\ability_4_icon.webp",
+  "Name": "Inferno Slash",
+  "Required Skill(s)": "Fire Enchant",
+  "Required Level": "8",
+  "Position": {
+    "x": 1,
+    "y": 1
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Infernal Reach",
+      "description": "Increases the attack range of inferno slash."
+    },
+    {
+      "id": 3,
+      "name": "Scattering Flame",
+      "description": "Increases attack rating when using inferno slash."
+    },
+    {
+      "id": 4,
+      "name": "Infernal Cleave",
+      "description": "Inferno slash is now a 360 degree area of effect attack."
+    },
+    {
+      "id": 5,
+      "name": "Molten Ground",
+      "description": "Chance on striking to set the ground on fire."
+    },
+    {
+      "id": 6,
+      "name": "Piercing Flame",
+      "description": "Inflicts fire break on hit."
+    },
+    {
+      "id": 7,
+      "name": "Stacked Burn",
+      "description": "Chance on hit to gain a stacking fire skill damage buff."
+    },
+    {
+      "id": 8,
+      "name": "Scorching Slash",
+      "description": "Increases the damage dealt by inferno slash."
+    },
+    {
+      "id": 9,
+      "name": "Nerve Damage",
+      "description": "Chance to stun on hit."
+    },
+    {
+      "id": 10,
+      "name": "Flies of Agony",
+      "description": "Inferno slash now sends burning fireflies towards monsters on hit."
+    },
+    {
+      "id": 11,
+      "name": "Accelerated Fumes",
+      "description": "Chance on attack to gain increased attack speed."
+    },
+    {
+      "id": 12,
+      "name": "Igniting Wind",
+      "description": "Chance on attack to perform an additional attack."
+    },
+    {
+      "id": 13,
+      "name": "Third Degree Burns",
+      "description": "Increases damage dealt to burning targets."
+    },
+    {
+      "id": 14,
+      "name": "Searing Fork",
+      "description": "Inferno slash sends multiple smaller waves that split on the first hit."
+    },
+    {
+      "id": 15,
+      "name": "Fearful Flames",
+      "description": "Inferno slash now knocks back monsters inflicting Burning and dealing increased Damage."
+    }
+  ]
 }

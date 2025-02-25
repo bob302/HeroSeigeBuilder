@@ -1,8 +1,80 @@
 {
-    "Icon": "ability_1_icon.webp",
-    "Image": "output/classes\\jotunn\\son-of-aurgelmir\\ability_1_icon.webp",
-    "Name": "Flash Freeze",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 0, "y": 0 }
+  "Icon": "ability_1_icon.webp",
+  "Image": "output/classes\\jotunn\\son-of-aurgelmir\\ability_1_icon.webp",
+  "Name": "Flash Freeze",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": { "x": 0, "y": 0 },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Hail Force",
+      "description": "Increases the damage dealt by flash freeze."
+    },
+    {
+      "id": 3,
+      "name": "Excess Cold",
+      "description": "Increases the amount of icicles unleashed by frost orb."
+    },
+    {
+      "id": 4,
+      "name": "Icicle Bombardment",
+      "description": "Frost orb now unleashes icicles with every hit."
+    },
+    {
+      "id": 5,
+      "name": "Precise Tundra",
+      "description": "Increases attack rating when using flash freeze."
+    },
+    {
+      "id": 6,
+      "name": "Fractured Ice",
+      "description": "Chance for icicles to fork on hit."
+    },
+    {
+      "id": 7,
+      "name": "Nordic Frenzy",
+      "description": "Increases damage dealt to frozen targets."
+    },
+    {
+      "id": 8,
+      "name": "Boreal Reach",
+      "description": "Increases the area of effect radius of flash freeze."
+    },
+    {
+      "id": 9,
+      "name": "Freezing Rage",
+      "description": "Gain a stack of freezing rage on hit increasing your damage and attack speed."
+    },
+    {
+      "id": 10,
+      "name": "Coldflash Volley",
+      "description": "Unleash multiple icicles in an arc dealing increased damage and inflicting cold break. Does not require hitting a monster."
+    },
+    {
+      "id": 11,
+      "name": "Gelid Sequence",
+      "description": "Increases the amount of bounces for flash freeze."
+    },
+    {
+      "id": 12,
+      "name": "Eternal Cascade",
+      "description": "Chance to unleash another frost orb when it expires."
+    },
+    {
+      "id": 13,
+      "name": "Froststep",
+      "description": "Decreases movement diminish when using flash freeze."
+    },
+    {
+      "id": 14,
+      "name": "Recurving Stalactites",
+      "description": "Icicles from frost orb return to target location after a short duration dealing additional damage."
+    },
+    {
+      "id": 15,
+      "name": "Swirling Wintershard ",
+      "description": "Frost orb now orbits you for a short duration frequently unleashing icicles."
+    }
+  ]
 }

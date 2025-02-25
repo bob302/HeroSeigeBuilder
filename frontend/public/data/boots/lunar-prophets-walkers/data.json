@@ -1,35 +1,35 @@
 {
-    "Item": "Lunar Prophet's Walkers",
-    "Tier": "A",
-    "Level": "57",
-    "Defense": "68.7051-87",
-    "Type": "Boots",
-    "Size": "2x2",
-    "Rarity": "Satanic Set",
-    "Stats": [
-        {
-            "stat": "+[50-80]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+40% Increased Movement Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[10-15] to Energy",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+10 to Intelligence",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[30-50]% to Cold Resistance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Cannot be Frozen",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Lunar Prophet's Walkers",
+  "Tier": "A",
+  "Level": "57",
+  "Defense": "68.7051-87",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "+[50-80]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+40% Increased Movement Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[10-15] to Energy",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+10 to Intelligence",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[30-50]% to Cold Resistance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Cannot be Frozen",
+      "class": "stat-default"
+    }
+  ]
 }

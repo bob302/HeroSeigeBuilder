@@ -1,18 +1,18 @@
 {
-    "Item": "Hardened Steel Defender",
-    "Tier": "S",
-    "Level": "81",
-    "Type": "Charm",
-    "Size": "1x2",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[25-40] to Armor",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Life Increased by [10-15]%",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Hardened Steel Defender",
+  "Tier": "S",
+  "Level": "81",
+  "Type": "Charm",
+  "Size": "1x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[25-40] to Armor",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Life Increased by [10-15]%",
+      "class": "stat-default"
+    }
+  ]
 }

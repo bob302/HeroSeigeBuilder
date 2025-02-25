@@ -1,14 +1,14 @@
 {
-    "Item": "Plague Shot",
-    "Tier": "SS",
-    "Level": "92",
-    "Type": "Charm",
-    "Size": "2x1",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[4-12] to [Booster Shot]",
-            "class": "stat-spell"
-        }
-    ]
+  "Item": "Plague Shot",
+  "Tier": "SS",
+  "Level": "92",
+  "Type": "Charm",
+  "Size": "2x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[4-12] to [Booster Shot]",
+      "class": "stat-spell"
+    }
+  ]
 }

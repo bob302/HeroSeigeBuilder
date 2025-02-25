@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_1_icon.webp",
-    "Image": "output/classes\\marauder\\gladiator\\ability_1_icon.webp",
-    "Name": "Serrated Chains",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 0, "y": 0 }
+  "Icon": "ability_1_icon.webp",
+  "Image": "output/classes\\marauder\\gladiator\\ability_1_icon.webp",
+  "Name": "Serrated Chains",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": {
+    "x": 0,
+    "y": 0
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "More Reach",
+      "description": "Increases the area of effect radius of serrated chains."
+    },
+    {
+      "id": 3,
+      "name": "Effective Steel",
+      "description": "Increases the damage dealt by serrated chains."
+    },
+    {
+      "id": 4,
+      "name": "Thousand Wounds",
+      "description": "Serrated chains now stack ripping them off violently when reaching maximum stacks inflicting bleeding on the target."
+    },
+    {
+      "id": 5,
+      "name": "Open Their Wounds",
+      "description": "Increases damage dealt to bleeding targets."
+    },
+    {
+      "id": 6,
+      "name": "Rust Poisoning",
+      "description": "Chance to inflict poisoned on hit."
+    },
+    {
+      "id": 7,
+      "name": "Power over Precision",
+      "description": "Increases the damage dealt by serrated chains decreasing attack rating."
+    },
+    {
+      "id": 8,
+      "name": "Experienced Gladiator",
+      "description": "Increases attack rating when using serrated chains."
+    },
+    {
+      "id": 9,
+      "name": "Precision over Power",
+      "description": "Ignore a portion of target defense when using serrated chains."
+    },
+    {
+      "id": 10,
+      "name": "Rusted Throns",
+      "description": "Increases the tick frequency of serrated chains."
+    },
+    {
+      "id": 11,
+      "name": "Sweeping Slash",
+      "description": "Increases the area of effect width decreasing the length of serrated chains."
+    },
+    {
+      "id": 12,
+      "name": "Pierce the Plating",
+      "description": "Chance to inflict armor break on hit."
+    },
+    {
+      "id": 13,
+      "name": "Bouncing Chains",
+      "description": "Chance to unleash chains bouncing between multiple monsters on hit inflicting serrated chains."
+    },
+    {
+      "id": 14,
+      "name": "Rawest Power",
+      "description": "Perform a whirling attack hitting monsters around you with increased area of effect radius."
+    },
+    {
+      "id": 15,
+      "name": "Gladiator's Dash",
+      "description": "Dash forward a short distance before performing an area of effect attack dealing increased damagee."
+    }
+  ]
 }

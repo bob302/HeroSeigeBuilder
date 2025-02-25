@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_7_icon.webp",
-    "Image": "output/classes\\nomad\\vagabond\\ability_7_icon.webp",
-    "Name": "Scimitar Charge",
-    "Required Skill(s)": "Chainslice",
-    "Required Level": "24",
-    "Position": { "x": 0, "y": 3 }
+  "Icon": "ability_7_icon.webp",
+  "Image": "output/classes\\nomad\\vagabond\\ability_7_icon.webp",
+  "Name": "Scimitar Charge",
+  "Required Skill(s)": "Chainslice",
+  "Required Level": "24",
+  "Position": {
+    "x": 0,
+    "y": 3
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Sharpened Dash",
+      "description": "Increases damage dealt by scimitar charge."
+    },
+    {
+      "id": 3,
+      "name": "Whirling Radius",
+      "description": "Increases the area of effect radius of scimitar charge."
+    },
+    {
+      "id": 4,
+      "name": "Scimitar Storm",
+      "description": "Throw multiple scimitars in a circle around you on hit."
+    },
+    {
+      "id": 5,
+      "name": "Lethal Reach",
+      "description": "Increases the traveling distance of scimitar charge."
+    },
+    {
+      "id": 6,
+      "name": "Dashing Reflexes",
+      "description": "Increases attack rating when using scimitar charge."
+    },
+    {
+      "id": 7,
+      "name": "Keep the Distance",
+      "description": "Knock monsters back dealing increased damage on hit."
+    },
+    {
+      "id": 8,
+      "name": "Deadly Rush",
+      "description": "Increases travel speed when using scimitar charge."
+    },
+    {
+      "id": 9,
+      "name": "Mind Over Matter",
+      "description": "Decreases the mana cost of scimitar charge."
+    },
+    {
+      "id": 10,
+      "name": "Phantom Charge",
+      "description": "Mark the point of impact sending phantom nomads from random directions towards the mark casting scimitar charge for a short period."
+    },
+    {
+      "id": 11,
+      "name": "Doubleslash",
+      "description": "Chance to swirl an additional time on hit."
+    },
+    {
+      "id": 12,
+      "name": "Debilitating Swirl",
+      "description": "Chance to stun monsters on hit."
+    },
+    {
+      "id": 13,
+      "name": "Unhinged Slash",
+      "description": "Increases damage dealt to stunned targets."
+    },
+    {
+      "id": 14,
+      "name": "Slow Painful Death",
+      "description": "Deal a portion of your damage as bleeding with increased effectiveness."
+    },
+    {
+      "id": 15,
+      "name": "Static Blade Vortex",
+      "description": "Scimitar charge now slows enemies on hit leaving behind a pulsating whirl for a short period."
+    }
+  ]
 }

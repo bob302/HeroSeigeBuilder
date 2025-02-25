@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_2_icon.webp",
-    "Image": "output/classes\\nomad\\vagabond\\ability_2_icon.webp",
-    "Name": "Eye of Ra",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 2, "y": 0 }
+  "Icon": "ability_2_icon.webp",
+  "Image": "output/classes\\nomad\\vagabond\\ability_2_icon.webp",
+  "Name": "Eye of Ra",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": {
+    "x": 2,
+    "y": 0
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Sunburn",
+      "description": "Increases the maximum targets affected by eye of ra."
+    },
+    {
+      "id": 3,
+      "name": "Ray's of Wisdom",
+      "description": "Increases damage dealt by sun rays based on your energy."
+    },
+    {
+      "id": 4,
+      "name": "God of Gods",
+      "description": "Unleash eye of ra on all nearby monsters. Eye of Ra now has a cooldown. "
+    },
+    {
+      "id": 5,
+      "name": "Solar Flow",
+      "description": "Increases the range of the sun rays."
+    },
+    {
+      "id": 6,
+      "name": "Ultra Violet Radiation",
+      "description": "Chance on hit to inflict burning for a portion of the damage dealt by eye of ra."
+    },
+    {
+      "id": 7,
+      "name": "Scorching Sun",
+      "description": "Increases damage dealt to burning targets."
+    },
+    {
+      "id": 8,
+      "name": "Ra's Wrath",
+      "description": "Increases the amount of sun rays additionally inflicting slow on hit."
+    },
+    {
+      "id": 9,
+      "name": "Heat Paralysis",
+      "description": "Inflicts fire break on hit."
+    },
+    {
+      "id": 10,
+      "name": "Lightbringer",
+      "description": "Eye of Ra unleashes a storm of light pillars at the last target. "
+    },
+    {
+      "id": 11,
+      "name": "Piercing Sunlight",
+      "description": "Increases critical strike damage dealt by eye of ra."
+    },
+    {
+      "id": 12,
+      "name": "Armed Light",
+      "description": "Increases attack rating when using eye of ra."
+    },
+    {
+      "id": 13,
+      "name": "Piercing Radiation",
+      "description": "Inflicts armor break on hit."
+    },
+    {
+      "id": 14,
+      "name": "Pillar of Light",
+      "description": "Unleash pillars of light in a narrow line each dealing damage over time and slowing on hit. "
+    },
+    {
+      "id": 15,
+      "name": "Orbiting the Sun",
+      "description": "Unleash multiple light pillars orbiting you dealing increased damage."
+    }
+  ]
 }

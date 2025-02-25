@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_3_icon.webp",
-    "Image": "output/classes\\nomad\\wanderer\\ability_3_icon.webp",
-    "Name": "Sand Tremors",
-    "Required Skill(s)": "Sand Carver",
-    "Required Level": "8",
-    "Position": { "x": 0, "y": 1 }
+  "Icon": "ability_3_icon.webp",
+  "Image": "output/classes\\nomad\\wanderer\\ability_3_icon.webp",
+  "Name": "Sand Tremors",
+  "Required Skill(s)": "Sand Carver",
+  "Required Level": "8",
+  "Position": {
+    "x": 0,
+    "y": 1
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Amplified Frequency",
+      "description": "Chance on attack to spawn additional tremors."
+    },
+    {
+      "id": 3,
+      "name": "Light Footwork",
+      "description": "Decreases movement diminish when using sand tremors."
+    },
+    {
+      "id": 4,
+      "name": "Shrouding Sand",
+      "description": "Striking monsters now enshrouds you in a sandstorm which gradually shrinks and disappears. Striking additional enemies causes it to grow larger and last longer."
+    },
+    {
+      "id": 5,
+      "name": "Oasis Impaler",
+      "description": "Chance on hit to inflict bleeding for a portion of the damage."
+    },
+    {
+      "id": 6,
+      "name": "Internal Bleeding",
+      "description": "Increases damage to bleeding targets."
+    },
+    {
+      "id": 7,
+      "name": "Waves of Despair",
+      "description": "Increases the area of effect radius of sand tremors."
+    },
+    {
+      "id": 8,
+      "name": "Shock Therapy",
+      "description": "Increases the damage dealt by sand tremors."
+    },
+    {
+      "id": 9,
+      "name": "Tremor's Reach",
+      "description": "Increases attack range when using sand tremors."
+    },
+    {
+      "id": 10,
+      "name": "Dune Warrior",
+      "description": "Striking monsters adds a stack of dune warrior sending multiple tornados dealing additional damage in an arc upon reaching maximum stacks."
+    },
+    {
+      "id": 11,
+      "name": "Conjuring Winds",
+      "description": "Chance on hit to send a sand tornado towards the target dealing additional damage."
+    },
+    {
+      "id": 12,
+      "name": "Exchange of Life",
+      "description": "Killing monsters with sand tremors restores your life."
+    },
+    {
+      "id": 13,
+      "name": "Area of Impact",
+      "description": "Increases critical strike damage dealt by sand tremors."
+    },
+    {
+      "id": 14,
+      "name": "Pulsating Tremors",
+      "description": "Tremors now travel a short distance dealing additional damage."
+    },
+    {
+      "id": 15,
+      "name": "Night at the Desert",
+      "description": "Tremors deal increased damage and inflict permafrost on hit."
+    }
+  ]
 }

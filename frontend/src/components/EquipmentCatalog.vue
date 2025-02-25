@@ -1,43 +1,57 @@
 <template>
-    <div class="catalog">
-      <ItemDisplay v-for="(item) in catalogItems"
-      :showSockets="showSockets" 
-      :key="item.uuid" 
-      :equipment="item" 
+  <div class="catalog">
+    <ItemDisplay
+      v-for="item in catalogItems"
+      :showSockets="showSockets"
+      :key="item.uuid"
+      :equipment="item"
       :src="itemBackgroundSrc"
-      @item-display-on-mouse-enter="itemOnMouseEnter"  
-      @item-display-on-mouse-leave="itemOnMouseLeave"
-      @click="handleItemClick(item)" 
-      />
-   </div>
+      @click="handleItemClick(item)"
+    />
+  </div>
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from 'vue-facing-decorator';
-import ItemDisplay from './ItemDisplay.vue';
-import { BaseItem, Equipment } from '../models/Equipment';
-
-
+import { Component, Inject, Prop, Vue } from "vue-facing-decorator";
+import ItemDisplay from "./ItemDisplay.vue";
+import { BaseItem, CharmEquipment } from "../models/Equipment";
+import type EditorContext from "../models/EditorContext";
+import { Item } from "../models/Item";
+import { Point2D } from "../models/Point2D";
 
 @Component({
   components: { ItemDisplay },
-  emits: ['item-click', 'item-on-mouse-enter', 'item-on-mouse-leave']
 })
 export default class EquipmentCatalog extends Vue {
+  @Inject({ from: "editorContext" })
+  readonly editorContext!: EditorContext;
   @Prop({ type: Array, required: true }) catalogItems!: BaseItem[];
-  @Prop({ type: String, required: false }) itemBackgroundSrc: string = "/img/editor/item-background.png";
+  @Prop({ type: String, required: false }) itemBackgroundSrc: string =
+    "/img/editor/item-background.png";
   @Prop({ type: Boolean, required: false }) showSockets: boolean = false;
 
-  itemOnMouseEnter(item: BaseItem) {
-    this.$emit('item-on-mouse-enter', item)
-  }
+  handleItemClick(equipment: BaseItem) {
+    const targetInventory =
+      equipment instanceof CharmEquipment
+        ? this.editorContext.charmInventory
+        : this.editorContext.mainInventory;
 
-  itemOnMouseLeave() {
-    this.$emit('item-on-mouse-leave')
-  }
-
-  private handleItemClick(item: BaseItem) {
-    this.$emit('item-click', item);
+    if (
+      !targetInventory.addItem(
+        new Item(
+          equipment.clone(),
+          new Point2D(equipment.size.width, equipment.size.height),
+        ),
+      )
+    ) {
+      this.editorContext.mainInventory.addItem(
+        new Item(
+          equipment.clone(),
+          new Point2D(equipment.size.width, equipment.size.height),
+        ),
+      );
+      this.$emit("item-added");
+    }
   }
 }
 </script>

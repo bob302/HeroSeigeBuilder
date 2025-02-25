@@ -1,62 +1,62 @@
 {
-    "Item": "St. Draxis Longsaw",
-    "Tier": "SS",
-    "Level": "99",
-    "Damage": "N/A",
-    "APS": "N/A",
-    "DPS": "N/A",
-    "Type": "Chainsaw",
-    "TwoHanded": true,
-    "Size": "2x3",
-    "Rarity": "Angelic",
-    "Stats": [
-        {
-            "stat": "20% Chance when Striking [Tree Trunk Triumph] Level 73",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "+[650-825]% Enhanced Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[4-6] to All Skills",
-            "class": "stat-allskills"
-        },
-        {
-            "stat": "+40% Increased Movement Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[40-80]% Increased Attack Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+30% Increased Attack Rating",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+25% Chance to Open Wounds",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+50 to Strength",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+50 to Dexterity",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Attack Damage increased by [35-55]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Attacks can hit multiple enemies",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Socketed (4-6)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "St. Draxis Longsaw",
+  "Tier": "SS",
+  "Level": "99",
+  "Damage": "N/A",
+  "APS": "N/A",
+  "DPS": "N/A",
+  "Type": "Chainsaw",
+  "TwoHanded": true,
+  "Size": "2x3",
+  "Rarity": "Angelic",
+  "Stats": [
+    {
+      "stat": "20% Chance when Striking [Tree Trunk Triumph] Level 73",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+[650-825]% Enhanced Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[4-6] to All Skills",
+      "class": "stat-allskills"
+    },
+    {
+      "stat": "+40% Increased Movement Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[40-80]% Increased Attack Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+30% Increased Attack Rating",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+25% Chance to Open Wounds",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+50 to Strength",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+50 to Dexterity",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Attack Damage increased by [35-55]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Attacks can hit multiple enemies",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Socketed (4-6)",
+      "class": "stat-default"
+    }
+  ]
 }

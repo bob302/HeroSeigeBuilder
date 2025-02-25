@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_5_icon.webp",
-    "Image": "output/classes\\shieldlancer\\knight\\ability_5_icon.webp",
-    "Name": "Shield Wall",
-    "Required Skill(s)": "Honed Defenses",
-    "Required Level": "16",
-    "Position": { "x": 0, "y": 2 }
+  "Icon": "ability_5_icon.webp",
+  "Image": "output/classes\\shieldlancer\\knight\\ability_5_icon.webp",
+  "Name": "Shield Wall",
+  "Required Skill(s)": "Honed Defenses",
+  "Required Level": "16",
+  "Position": {
+    "x": 0,
+    "y": 2
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Spiked Shields",
+      "description": "Increases the damage dealt by shield wall."
+    },
+    {
+      "id": 3,
+      "name": "Durable Wall",
+      "description": "Increases the durability and duration of shield wall."
+    },
+    {
+      "id": 4,
+      "name": "Gravitational Aegis",
+      "description": "Shield wall orbits in an orbit around you with increased projectile speed and increased amount of shields."
+    },
+    {
+      "id": 5,
+      "name": "More Shields",
+      "description": "Increases the amount of shields in shield wall."
+    },
+    {
+      "id": 6,
+      "name": "Split Reflection",
+      "description": "Chance to unleash spikes dealing damage towards the attacker when blocking a projectile."
+    },
+    {
+      "id": 7,
+      "name": "Defensive Radius",
+      "description": "Increases the orbiting radius of shield wall."
+    },
+    {
+      "id": 8,
+      "name": "Shield Growth",
+      "description": "Increases the size of shield wall."
+    },
+    {
+      "id": 9,
+      "name": "Critical Thorn",
+      "description": "Chance to critically hit dealing increased critical strike damage with shield wall."
+    },
+    {
+      "id": 10,
+      "name": "Insatiable Bulwark",
+      "description": "Blocking projectiles and attacks buff the shields increasing damage and size."
+    },
+    {
+      "id": 11,
+      "name": "Noxious Shields",
+      "description": "Chance to inflict poisoned when struck."
+    },
+    {
+      "id": 12,
+      "name": "Breaking Spikes",
+      "description": "Chance to inflict arcane break on hit."
+    },
+    {
+      "id": 13,
+      "name": "Dissolving Corrosion",
+      "description": "Increases damage dealt to poisoned targets."
+    },
+    {
+      "id": 14,
+      "name": "Porkupine Carapace",
+      "description": "Chance to inflict bleeding on hit with increased bleeding frequency."
+    },
+    {
+      "id": 15,
+      "name": "Shield Vortex",
+      "description": "Unleash a tornado of shields towards target location pulling nearby monsters towards it."
+    }
+  ]
 }

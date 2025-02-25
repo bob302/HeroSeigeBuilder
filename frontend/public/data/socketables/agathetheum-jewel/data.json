@@ -1,13 +1,13 @@
 {
-    "Item": "Agathetheum Jewel",
-    "Tier": "B",
-    "Level": "30",
-    "Type": "Socketable",
-    "Rarity": "Heroic",
-    "Stats": [
-        {
-            "stat": "+75% of Damage Returned to the Attacker",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Agathetheum Jewel",
+  "Tier": "B",
+  "Level": "30",
+  "Type": "Socketable",
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "+75% of Damage Returned to the Attacker",
+      "class": "stat-default"
+    }
+  ]
 }

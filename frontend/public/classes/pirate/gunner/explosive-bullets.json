@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_5_icon.webp",
-    "Image": "output/classes\\pirate\\gunner\\ability_5_icon.webp",
-    "Name": "Explosive Bullets",
-    "Required Skill(s)": "Buckshot",
-    "Required Level": "16",
-    "Position": { "x": 0, "y": 2 }
+  "Icon": "ability_5_icon.webp",
+  "Image": "output/classes\\pirate\\gunner\\ability_5_icon.webp",
+  "Name": "Explosive Bullets",
+  "Required Skill(s)": "Buckshot",
+  "Required Level": "16",
+  "Position": {
+    "x": 0,
+    "y": 2
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Grouping Up",
+      "description": "Chance to attach an additional explosive to a nearby target on hit."
+    },
+    {
+      "id": 3,
+      "name": "Gunner's Glory",
+      "description": "Increases the damage dealt by explosive bullets when wielding a gun."
+    },
+    {
+      "id": 4,
+      "name": "Chain Reaction",
+      "description": "Explosive bullet now explodes multiple times."
+    },
+    {
+      "id": 5,
+      "name": "Shattering Blast",
+      "description": "Inflicts armor break on hit."
+    },
+    {
+      "id": 6,
+      "name": "Sudden Scatter",
+      "description": "Chance on attack to fire an additional explosive bullet."
+    },
+    {
+      "id": 7,
+      "name": "Boss Killer",
+      "description": "Increases the damage dealt by explosive bullets against bosses."
+    },
+    {
+      "id": 8,
+      "name": "Multiplosion",
+      "description": "Chance on hit to unleash additional explosions."
+    },
+    {
+      "id": 9,
+      "name": "Explosion Site",
+      "description": "Increases the explosion area of effect radius for explosive bullet."
+    },
+    {
+      "id": 10,
+      "name": "Penetrating Trail",
+      "description": "Explosive bullet now pierces and sticks explosives to all monsters hit."
+    },
+    {
+      "id": 11,
+      "name": "Target Locked",
+      "description": "Increases attack rating when using explosive bullets."
+    },
+    {
+      "id": 12,
+      "name": "Napalm Infusion",
+      "description": "Chance to inflict burning on hit."
+    },
+    {
+      "id": 13,
+      "name": "Gasoline",
+      "description": "Increases damage dealt to burning targets."
+    },
+    {
+      "id": 14,
+      "name": "Shotwave",
+      "description": "On hit create a shockwave of explosions towards the target dealing increased damage."
+    },
+    {
+      "id": 15,
+      "name": "Blast Pulse",
+      "description": "Explosive bullet now deals increased damage and knocks nearby monsters back with massive force."
+    }
+  ]
 }

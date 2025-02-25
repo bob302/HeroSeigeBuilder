@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_8_icon.webp",
-    "Image": "output/classes\\pirate\\gunner\\ability_8_icon.webp",
-    "Name": "Bomb Barrage",
-    "Required Skill(s)": "Cannonball",
-    "Required Level": "24",
-    "Position": { "x": 2, "y": 3 }
+  "Icon": "ability_8_icon.webp",
+  "Image": "output/classes\\pirate\\gunner\\ability_8_icon.webp",
+  "Name": "Bomb Barrage",
+  "Required Skill(s)": "Cannonball",
+  "Required Level": "24",
+  "Position": {
+    "x": 2,
+    "y": 3
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Bombardation",
+      "description": "Increases the amount of bombs thrown."
+    },
+    {
+      "id": 3,
+      "name": "Barrage Blasting Radius",
+      "description": "Increases explosion area of effect of bomb barrage."
+    },
+    {
+      "id": 4,
+      "name": "Crossed Spot",
+      "description": "Mark a location where to fire all bombs."
+    },
+    {
+      "id": 5,
+      "name": "Bombination",
+      "description": "Increases the frequency of bombs."
+    },
+    {
+      "id": 6,
+      "name": "Explosive Barrage",
+      "description": "Increases the damage dealt by bomb barrage."
+    },
+    {
+      "id": 7,
+      "name": "Piercing Blastwave",
+      "description": "Inflicts fire break on hit."
+    },
+    {
+      "id": 8,
+      "name": "Scaled Blastradius",
+      "description": "Increases damage dealt based on your explosion area of effect stat."
+    },
+    {
+      "id": 9,
+      "name": "Molten Heat Bombs",
+      "description": "Bombs have a chance to scorch the ground dealing additional damage."
+    },
+    {
+      "id": 10,
+      "name": "Rain of Bombs",
+      "description": "Now throw a single bomb marking the target location and dropping multiple bombs from the sky."
+    },
+    {
+      "id": 11,
+      "name": "Sharp Scatter",
+      "description": "Chance for bombs to shatter into fragments inflicting bleeding when exploding."
+    },
+    {
+      "id": 12,
+      "name": "Quick Barrage",
+      "description": "Increases the projectile speed of bomb barrage."
+    },
+    {
+      "id": 13,
+      "name": "Critical Explosion",
+      "description": "Chance to critically hit with increased critical strike damage."
+    },
+    {
+      "id": 14,
+      "name": "Bomb Shower",
+      "description": "Fire multiple bombs in all directions from you."
+    },
+    {
+      "id": 15,
+      "name": "Rapid Barrage",
+      "description": "Rapidly fire bombs with increased speed dealing area of effect damage and knocking monsters back on hit."
+    }
+  ]
 }

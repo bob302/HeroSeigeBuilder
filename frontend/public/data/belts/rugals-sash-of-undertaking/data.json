@@ -1,39 +1,39 @@
 {
-    "Item": "Rugal's Sash of Undertaking",
-    "Tier": "SS",
-    "Level": "98",
-    "Defense": "160.25137-184",
-    "Type": "Belt",
-    "Size": "2x1",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "12% Chance when Struck [Meat Shield] Level 32",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "+[110-130]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+20 to All Attributes",
-            "class": "stat-default"
-        },
-        {
-            "stat": "-[8-18]% to Enemy Arcane Resistance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Physical Damage Taken Reduced by [8-15]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+30% to All Resistances",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Belt Slots: 5",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Rugal's Sash of Undertaking",
+  "Tier": "SS",
+  "Level": "98",
+  "Defense": "160.25137-184",
+  "Type": "Belt",
+  "Size": "2x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "12% Chance when Struck [Meat Shield] Level 32",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+[110-130]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+20 to All Attributes",
+      "class": "stat-default"
+    },
+    {
+      "stat": "-[8-18]% to Enemy Arcane Resistance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Physical Damage Taken Reduced by [8-15]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+30% to All Resistances",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Belt Slots: 5",
+      "class": "stat-default"
+    }
+  ]
 }

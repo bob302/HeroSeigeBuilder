@@ -1,35 +1,35 @@
 {
-    "Item": "Battle Caster's Gauntlets",
-    "Tier": "S",
-    "Level": "78",
-    "Defense": "47.3034-61",
-    "Type": "Gloves",
-    "Size": "2x2",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[30-60]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[20-30]% Faster Cast Rate",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Magic Skill Damage increased by [15-25]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Explosion area of effect increased by [10-20]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[30-45]% Defense vs Missiles",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+20 to Energy (Based on Level)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Battle Caster's Gauntlets",
+  "Tier": "S",
+  "Level": "78",
+  "Defense": "47.3034-61",
+  "Type": "Gloves",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[30-60]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[20-30]% Faster Cast Rate",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Magic Skill Damage increased by [15-25]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Explosion area of effect increased by [10-20]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[30-45]% Defense vs Missiles",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+20 to Energy (Based on Level)",
+      "class": "stat-default"
+    }
+  ]
 }

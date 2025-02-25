@@ -1,39 +1,39 @@
 {
-    "Item": "Earth Shaper's Belt",
-    "Tier": "S",
-    "Level": "85",
-    "Defense": "97.2076-119",
-    "Type": "Belt",
-    "Size": "2x1",
-    "Rarity": "Satanic Set",
-    "Stats": [
-        {
-            "stat": "+[45-75]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[18-25] to Armor",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Replenish Mana [8-15]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[35-50] to Life",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[25-40] to Mana",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+5% to All Resistances",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Belt Slots: 5",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Earth Shaper's Belt",
+  "Tier": "S",
+  "Level": "85",
+  "Defense": "97.2076-119",
+  "Type": "Belt",
+  "Size": "2x1",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "+[45-75]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[18-25] to Armor",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Replenish Mana [8-15]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[35-50] to Life",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[25-40] to Mana",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+5% to All Resistances",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Belt Slots: 5",
+      "class": "stat-default"
+    }
+  ]
 }

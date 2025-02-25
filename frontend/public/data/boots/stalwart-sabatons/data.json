@@ -1,35 +1,35 @@
 {
-    "Item": "Stalwart Sabatons",
-    "Tier": "C",
-    "Level": "22",
-    "Defense": "16.2010-23",
-    "Type": "Boots",
-    "Size": "2x2",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[25-40]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[0-1] to All Skills",
-            "class": "stat-allskills"
-        },
-        {
-            "stat": "+[10-20]% Increased Movement Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Replenish Mana 25%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[50-75] to Life",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[50-75] to Mana",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Stalwart Sabatons",
+  "Tier": "C",
+  "Level": "22",
+  "Defense": "16.2010-23",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[25-40]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[0-1] to All Skills",
+      "class": "stat-allskills"
+    },
+    {
+      "stat": "+[10-20]% Increased Movement Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Replenish Mana 25%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[50-75] to Life",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[50-75] to Mana",
+      "class": "stat-default"
+    }
+  ]
 }

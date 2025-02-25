@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_8_icon.webp",
-    "Image": "output/classes\\amazon\\huntress\\ability_8_icon.webp",
-    "Name": "Death from Above",
-    "Required Skill(s)": "Caustic Spearhead",
-    "Required Level": "24",
-    "Position": { "x": 2, "y": 3 }
+  "Icon": "ability_8_icon.webp",
+  "Image": "output/classes\\amazon\\huntress\\ability_8_icon.webp",
+  "Name": "Death from Above",
+  "Required Skill(s)": "Caustic Spearhead",
+  "Required Level": "24",
+  "Position": {
+    "x": 2,
+    "y": 3
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Rapid Spearhandling",
+      "description": "Increases cast rate when using death from above."
+    },
+    {
+      "id": 3,
+      "name": "Heavy Spears",
+      "description": "Increases falling speed and damage dealt by death from above."
+    },
+    {
+      "id": 4,
+      "name": "Spear Delivery",
+      "description": "Throw multiple spears in an arc unleashing death from above on hit."
+    },
+    {
+      "id": 5,
+      "name": "Icebreaking Spearshower",
+      "description": "Increases damage dealt by death from above to monsters at maximum life."
+    },
+    {
+      "id": 6,
+      "name": "Spearhandler's Intellect",
+      "description": "Decreases mana cost when using death from above."
+    },
+    {
+      "id": 7,
+      "name": "Need for Speed",
+      "description": "Death from above deals additional damage based on your bonus movement speed."
+    },
+    {
+      "id": 8,
+      "name": "Beast Slayer",
+      "description": "Increases damage dealt to bosses."
+    },
+    {
+      "id": 9,
+      "name": "Safeheaven",
+      "description": "If there are no nearby enemies, death from above covers a larger area with increased damage."
+    },
+    {
+      "id": 10,
+      "name": "Storm of Spears",
+      "description": "Multiple waves of spears rain down over time in a larger area that slowly follows the closest enemy. Death from above now has a small cooldown."
+    },
+    {
+      "id": 11,
+      "name": "Critical Arrowfall",
+      "description": "Now has a chance to critically strike dealing increased damage based on your critical strike damage."
+    },
+    {
+      "id": 12,
+      "name": "Stacking Life",
+      "description": "Increase your maximum life and mana on hit for a short period."
+    },
+    {
+      "id": 13,
+      "name": "Dual Spearshower",
+      "description": "Chance to fire an additional death from above."
+    },
+    {
+      "id": 14,
+      "name": "Ancient Device",
+      "description": "Summon an ancient device periodically firing death from above on nearby targets based on your cooldown recovery."
+    },
+    {
+      "id": 15,
+      "name": "Detonation Shower",
+      "description": "Chance on landing for spears to explode dealing increased damage."
+    }
+  ]
 }

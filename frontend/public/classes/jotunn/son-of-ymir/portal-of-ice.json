@@ -1,8 +1,80 @@
 {
-    "Icon": "ability_7_icon.webp",
-    "Image": "output/classes\\jotunn\\son-of-ymir\\ability_7_icon.webp",
-    "Name": "Portal of Ice",
-    "Required Skill(s)": "Icicles",
-    "Required Level": "24",
-    "Position": { "x": 0, "y": 3 }
+  "Icon": "ability_7_icon.webp",
+  "Image": "output/classes\\jotunn\\son-of-ymir\\ability_7_icon.webp",
+  "Name": "Portal of Ice",
+  "Required Skill(s)": "Icicles",
+  "Required Level": "24",
+  "Position": { "x": 0, "y": 3 },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Ice Travel",
+      "description": "Increases the range of portal of ice."
+    },
+    {
+      "id": 3,
+      "name": "Cold-enhanced Warp ",
+      "description": "Increases the damage dealt by portal of ice."
+    },
+    {
+      "id": 4,
+      "name": "Hailstorm Orb",
+      "description": "Conjure a static orb of frost at target location for a short duration."
+    },
+    {
+      "id": 5,
+      "name": "Spiky Approach",
+      "description": "Chance on cast to conjure multiple orbiting icicles dealing a portion of the damage."
+    },
+    {
+      "id": 6,
+      "name": "Engulfing Nova",
+      "description": "Increases the area of effect radius of portal of ice."
+    },
+    {
+      "id": 7,
+      "name": "Blink Faster",
+      "description": "Increases cast rate when using portal of ice."
+    },
+    {
+      "id": 8,
+      "name": "Corrosive Frostbite",
+      "description": "Chance to inflict cold break on hit."
+    },
+    {
+      "id": 9,
+      "name": "Shredding Chillstep",
+      "description": "Gain a stack of shredding chillstep on cast increasing your cold skill damage for a short duration."
+    },
+    {
+      "id": 10,
+      "name": "Crystallized Pinnacles",
+      "description": "Chance to unleash small frost novas on hit inflicting frostbite."
+    },
+    {
+      "id": 11,
+      "name": "Efficient Iceblink",
+      "description": "Reduces the mana cost of portal of ice."
+    },
+    {
+      "id": 12,
+      "name": "Cryo Armor",
+      "description": "Increases your all resistances on cast for a short duration."
+    },
+    {
+      "id": 13,
+      "name": "Icecold Bloodthirst",
+      "description": "Chance to critically hit dealing increased critical strike damage."
+    },
+    {
+      "id": 14,
+      "name": "Winter Aparition",
+      "description": "Chance to summon a small blizzard on hit for a short duration."
+    },
+    {
+      "id": 15,
+      "name": "Permafrost Voidpull",
+      "description": "Increases damage and area of effect radius pulling monsters towards you on hit."
+    }
+  ]
 }

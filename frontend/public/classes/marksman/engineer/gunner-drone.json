@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_8_icon.webp",
-    "Image": "output/classes\\marksman\\engineer\\ability_8_icon.webp",
-    "Name": "Gunner Drone",
-    "Required Skill(s)": "Master Mechanic",
-    "Required Level": "24",
-    "Position": { "x": 0, "y": 4 }
+  "Icon": "ability_8_icon.webp",
+  "Image": "output/classes\\marksman\\engineer\\ability_8_icon.webp",
+  "Name": "Gunner Drones",
+  "Required Skill(s)": "Master Mechanic",
+  "Required Level": "24",
+  "Position": {
+    "x": 0,
+    "y": 4
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Multitude",
+      "description": "Increases the amount of drones summoned."
+    },
+    {
+      "id": 3,
+      "name": "Rapidfire",
+      "description": "Increases the rate of fire for drones."
+    },
+    {
+      "id": 4,
+      "name": "Circuit Breaker",
+      "description": "Drones now fire chain lightning dealing their damage as lightning and inflicting lightning break. "
+    },
+    {
+      "id": 5,
+      "name": "Mecha Tinkering",
+      "description": "Increases the duration of drones."
+    },
+    {
+      "id": 6,
+      "name": "Explosive Toolkit",
+      "description": "Chance on hit for projectile to explode on impact dealing additional area of effect damage."
+    },
+    {
+      "id": 7,
+      "name": "Heat Unit",
+      "description": "Increases the damage dealt by drones."
+    },
+    {
+      "id": 8,
+      "name": "Detection",
+      "description": "Increases attack range of gunner drones."
+    },
+    {
+      "id": 9,
+      "name": "Burning Shot",
+      "description": "Chance on hit to inflict burning."
+    },
+    {
+      "id": 10,
+      "name": "Nanodrones",
+      "description": "Drone amount significantly increased. Your drones are super tiny and form two circles around you. Their attacks no longer chain but deal damage in a small area around the target."
+    },
+    {
+      "id": 11,
+      "name": "Burst Engine",
+      "description": "Chance on attack to shoot additional projectiles in sequence."
+    },
+    {
+      "id": 12,
+      "name": "Immolating Impact",
+      "description": "Unleash a small fire nova when hitting a burning target."
+    },
+    {
+      "id": 13,
+      "name": "Splitting Shot",
+      "description": "Gunner drones now fires multiple projectiles in an arc."
+    },
+    {
+      "id": 14,
+      "name": "C.Y.C.L.O.P.S.",
+      "description": "Drones now fire a constant laser beam that sticks onto monsters dealing arcane damage four times a second until they die."
+    },
+    {
+      "id": 15,
+      "name": "M.E.C.H.A.",
+      "description": "Now only spawn a single drone scaling its damage based on the amount of drones and shooting at an increased rate of fire."
+    }
+  ]
 }

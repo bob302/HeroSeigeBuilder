@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_7_icon.webp",
-    "Image": "output/classes\\necromancer\\venomancer\\ability_7_icon.webp",
-    "Name": "Bone Spirit",
-    "Required Skill(s)": "Bone Spear",
-    "Required Level": "24",
-    "Position": { "x": 0, "y": 3 }
+  "Icon": "ability_7_icon.webp",
+  "Image": "output/classes\\necromancer\\venomancer\\ability_7_icon.webp",
+  "Name": "Bone Spirit",
+  "Required Skill(s)": "Bone Spear",
+  "Required Level": "24",
+  "Position": {
+    "x": 0,
+    "y": 3
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Divide Soul",
+      "description": "Bone spirit unleashes additional souls on hit."
+    },
+    {
+      "id": 3,
+      "name": "Purifying Essence",
+      "description": "Increases the damage dealt by bone spirit."
+    },
+    {
+      "id": 4,
+      "name": "Ghouls of Agony",
+      "description": "No longer explodes on hit but travels forwards slowly dealing damage over time."
+    },
+    {
+      "id": 5,
+      "name": "Life Infusion",
+      "description": "Increases the explosion area of effect radius of bone spirit."
+    },
+    {
+      "id": 6,
+      "name": "Ancient Possession",
+      "description": "Bone spirits grow larger and deal more damage over time while traveling."
+    },
+    {
+      "id": 7,
+      "name": "Cycle of Life",
+      "description": "Decreases the cooldown of bone spirit."
+    },
+    {
+      "id": 8,
+      "name": "Touch of Arcana",
+      "description": "Inflicts arcane break on hit."
+    },
+    {
+      "id": 9,
+      "name": "Mark Target",
+      "description": "Increases the damage dealt to bosses."
+    },
+    {
+      "id": 10,
+      "name": "Spirit Festival",
+      "description": "Consume multiple corpses in a radius around you summoning a bone spirit from each. Cooldown is now increased."
+    },
+    {
+      "id": 11,
+      "name": "Follow the Leader",
+      "description": "Increases the damage dealt by bone spirits explosion."
+    },
+    {
+      "id": 12,
+      "name": "Spirits Unleashed",
+      "description": "Increases bone spirit size and damage scaling with your explosion area of effect stat."
+    },
+    {
+      "id": 13,
+      "name": "Soul infusion",
+      "description": "When passing through one of the necromancers summons or allies bone spirits heals them for a portion of their maximum life."
+    },
+    {
+      "id": 14,
+      "name": "Furnace of Souls",
+      "description": "Summon increased amount of souls inflicting burning on hit."
+    },
+    {
+      "id": 15,
+      "name": "Soul Sacrifice",
+      "description": "Now consumes a portion of your mana on hit converting it into additional damage."
+    }
+  ]
 }

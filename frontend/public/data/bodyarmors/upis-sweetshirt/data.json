@@ -1,43 +1,43 @@
 {
-    "Item": "Upi's Sweetshirt",
-    "Tier": "B",
-    "Level": "40",
-    "Defense": "204.00156-252",
-    "Type": "Body Armor",
-    "Size": "2x3",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[160-180]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+15 to Vitality",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Replenish Life 10%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Physical Damage Taken Reduced by [4-8]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+25 to Vitality (Based on Level)",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+10% to All Resistances",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[20-30]% Increased Magic Find",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Socketed (1-4)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Upi's Sweetshirt",
+  "Tier": "B",
+  "Level": "40",
+  "Defense": "204.00156-252",
+  "Type": "Body Armor",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[160-180]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+15 to Vitality",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Replenish Life 10%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Physical Damage Taken Reduced by [4-8]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+25 to Vitality (Based on Level)",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+10% to All Resistances",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[20-30]% Increased Magic Find",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Socketed (1-4)",
+      "class": "stat-default"
+    }
+  ]
 }

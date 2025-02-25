@@ -1,8 +1,80 @@
 {
-    "Icon": "ability_4_icon.webp",
-    "Image": "output/classes\\exo\\solar-prophet\\ability_4_icon.webp",
-    "Name": "Solar Dash",
-    "Required Skill(s)": "Solar Flare",
-    "Required Level": "8",
-    "Position": { "x": 2, "y": 1 }
+  "Icon": "ability_4_icon.webp",
+  "Image": "output/classes\\exo\\solar-prophet\\ability_4_icon.webp",
+  "Name": "Solar Dash",
+  "Required Skill(s)": "Solar Flare",
+  "Required Level": "8",
+  "Position": { "x": 2, "y": 1 },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Interstellar Traveller",
+      "description": "Increases the speed of solar dash."
+    },
+    {
+      "id": 3,
+      "name": "Burn Burn BURN",
+      "description": "Inflicts burning on hit."
+    },
+    {
+      "id": 4,
+      "name": "Bursting Flames",
+      "description": "Flames now have a chance to explode into multiple fire balls into all directions when expiring."
+    },
+    {
+      "id": 5,
+      "name": "Solar Burst",
+      "description": "Unleash a fiery explosion at the end dealing increased damage and inflicting burning on hit."
+    },
+    {
+      "id": 6,
+      "name": "Restoring Flames",
+      "description": "Gain increased life and mana replenish on cast for a short duration when solar form is active."
+    },
+    {
+      "id": 7,
+      "name": "Cooldown Lap",
+      "description": "Decreases the speed of solar dash."
+    },
+    {
+      "id": 8,
+      "name": "Plasma Dash",
+      "description": "Chance to stun targets on hit."
+    },
+    {
+      "id": 9,
+      "name": "To Ashes",
+      "description": "Increases the damage dealt by solar dash."
+    },
+    {
+      "id": 10,
+      "name": "Photon Dash",
+      "description": "Dash with the speed of light unleashing burning flames below target on collision dealing increased damage over time."
+    },
+    {
+      "id": 11,
+      "name": "Protective Cover",
+      "description": "Gain increased damage reduction for a short duration when using solar dash."
+    },
+    {
+      "id": 12,
+      "name": "Intense Flames",
+      "description": "Increases the tick frequency of solar dash flames."
+    },
+    {
+      "id": 13,
+      "name": "Shooting Star",
+      "description": "Increases the speed of solar dash unleashing fireballs around you at the end dealing a portion of the damage."
+    },
+    {
+      "id": 14,
+      "name": "Solar Carnage",
+      "description": "Rapidly unleash fire balls arcing on your sides while dashing."
+    },
+    {
+      "id": 15,
+      "name": "The Sun Goddess",
+      "description": "Summon multiple orbiting solar orbs decreasing your dashing speed."
+    }
+  ]
 }

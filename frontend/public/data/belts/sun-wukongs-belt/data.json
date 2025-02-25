@@ -1,35 +1,35 @@
 {
-    "Item": "Sun Wukong's Belt",
-    "Tier": "A",
-    "Level": "48",
-    "Defense": "69.0054-84",
-    "Type": "Belt",
-    "Size": "2x1",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[50-75]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+10 to Vitality",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Replenish Life [10-15]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+175 to Life (Based on Level)",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[3-8]% to All Resistances",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Belt Slots: 4",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Sun Wukong's Belt",
+  "Tier": "A",
+  "Level": "48",
+  "Defense": "69.0054-84",
+  "Type": "Belt",
+  "Size": "2x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[50-75]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+10 to Vitality",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Replenish Life [10-15]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+175 to Life (Based on Level)",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[3-8]% to All Resistances",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Belt Slots: 4",
+      "class": "stat-default"
+    }
+  ]
 }

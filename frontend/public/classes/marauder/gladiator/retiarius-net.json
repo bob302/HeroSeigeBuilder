@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_4_icon.webp",
-    "Image": "output/classes\\marauder\\gladiator\\ability_4_icon.webp",
-    "Name": "Retiarius Net",
-    "Required Skill(s)": "None",
-    "Required Level": "8",
-    "Position": { "x": 2, "y": 1 }
+  "Icon": "ability_4_icon.webp",
+  "Image": "output/classes\\marauder\\gladiator\\ability_4_icon.webp",
+  "Name": "Retiarius Net",
+  "Required Skill(s)": "None",
+  "Required Level": "8",
+  "Position": {
+    "x": 2,
+    "y": 1
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Bigger Web",
+      "description": "Increases the area of effect radius of retiarius net."
+    },
+    {
+      "id": 3,
+      "name": "Well Knitted Net",
+      "description": "Increases the damage dealt by retiarius net."
+    },
+    {
+      "id": 4,
+      "name": "Rocket Boosted Net",
+      "description": "Throw retiarius net towards the nearest monsters with increased speed dealing increased damage."
+    },
+    {
+      "id": 5,
+      "name": "Gladiators Resilience",
+      "description": "Decreases movement diminish when using retiarius net."
+    },
+    {
+      "id": 6,
+      "name": "Throwing Technique",
+      "description": "Increases the projectile speed of retiarius net."
+    },
+    {
+      "id": 7,
+      "name": "Bouncing Net",
+      "description": "Chance to bounce towards a nearby monster when landing."
+    },
+    {
+      "id": 8,
+      "name": "Target for Destruction",
+      "description": "Chance to rain down a spike ball on hit dealing additional damage."
+    },
+    {
+      "id": 9,
+      "name": "Sharp String Net",
+      "description": "Chance to inflict bleeding on hit."
+    },
+    {
+      "id": 10,
+      "name": "Arena Dominator",
+      "description": "Pull nearby monsters towards you rooting them in place. Retiarius net now has a cooldown."
+    },
+    {
+      "id": 11,
+      "name": "Multinet Throw",
+      "description": "Chance on cast to unleash an additional retiarius net."
+    },
+    {
+      "id": 12,
+      "name": "Devastating Net",
+      "description": "Increases damage to targets inflicted with serrated chains."
+    },
+    {
+      "id": 13,
+      "name": "Elastic Strings",
+      "description": "Chance to pull nearby monsters towards the point of impact when landing."
+    },
+    {
+      "id": 14,
+      "name": "Metal Net",
+      "description": "Increases the area of effect radius and damage slowing monsters on hit instead of rooting them."
+    },
+    {
+      "id": 15,
+      "name": "Ricocheting Net",
+      "description": "Retiarius net bounces between multiple monsters increasing its damage dealt with every bounce."
+    }
+  ]
 }

@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_1_icon.webp",
-    "Image": "output/classes\\shaman\\elementalist\\ability_1_icon.webp",
-    "Name": "Tectonic Boulder",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 0, "y": 0 }
+  "Icon": "ability_1_icon.webp",
+  "Image": "output/classes\\shaman\\elementalist\\ability_1_icon.webp",
+  "Name": "Tectonic Boulder",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": {
+    "x": 0,
+    "y": 0
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Bouncy Boulder",
+      "description": "Increases the amount of bounces."
+    },
+    {
+      "id": 3,
+      "name": "Stoned Mind",
+      "description": "Decreases the mana cost of tectonic boulder."
+    },
+    {
+      "id": 4,
+      "name": "Tiny Stones",
+      "description": "Unleash multiple smaller boulders in an arc."
+    },
+    {
+      "id": 5,
+      "name": "Boulder Momentum",
+      "description": "Increases the projectile speed of tectonic boulder."
+    },
+    {
+      "id": 6,
+      "name": "Stone Density",
+      "description": "Increases damage dealt by tectonic boulder."
+    },
+    {
+      "id": 7,
+      "name": "Fractured Balance",
+      "description": "Knock monsters back on hit dealing increased damage."
+    },
+    {
+      "id": 8,
+      "name": "Crushing Boulder",
+      "description": "Chance to inflict arcane break on hit."
+    },
+    {
+      "id": 9,
+      "name": "Chunky Stone",
+      "description": "Increases the size of tectonic boulder."
+    },
+    {
+      "id": 10,
+      "name": "Stone Slinger",
+      "description": "Throw boulders with increased projectile speed causing them to bounce off terrain."
+    },
+    {
+      "id": 11,
+      "name": "Frosted Pebble",
+      "description": "Chance on cast to unleash a frozen boulder inflicting freezing on hit."
+    },
+    {
+      "id": 12,
+      "name": "Frostbiting Boulder",
+      "description": "Increases damage dealt to frozen targets."
+    },
+    {
+      "id": 13,
+      "name": "Fragmentation",
+      "description": "Increases damage dealt to stunned targets."
+    },
+    {
+      "id": 14,
+      "name": "Colossal Boulder",
+      "description": "Unleash a boulder with increased size and damage stunning monsters on hit. Tectonic boulder now has a cooldown."
+    },
+    {
+      "id": 15,
+      "name": "Molten Boulder",
+      "description": "Conjure a molten boulder leaving behind a trail of lava inflicting monsters with burning on hit."
+    }
+  ]
 }

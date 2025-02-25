@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_5_icon.webp",
-    "Image": "output/classes\\demonslayer\\executioner\\ability_5_icon.webp",
-    "Name": "Slice of Shadows",
-    "Required Skill(s)": "Fast Slices",
-    "Required Level": "16",
-    "Position": { "x": 0, "y": 2 }
+  "Icon": "ability_5_icon.webp",
+  "Image": "output/classes\\demonslayer\\executioner\\ability_5_icon.webp",
+  "Name": "Slice of Shadows",
+  "Required Skill(s)": "Fast Slices",
+  "Required Level": "16",
+  "Position": {
+    "x": 0,
+    "y": 2
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Floating Shadow",
+      "description": "Increases projectile speed."
+    },
+    {
+      "id": 3,
+      "name": "Strenghtened Veil",
+      "description": "Increases damage dealt by slice of shadows based on your strength."
+    },
+    {
+      "id": 4,
+      "name": "Shadow Extraction",
+      "description": "Perform an empowered attack unleashing small shadows from the target on hit."
+    },
+    {
+      "id": 5,
+      "name": "Shadow Duality",
+      "description": "Chance to unleash an additional slice of shadows on attack."
+    },
+    {
+      "id": 6,
+      "name": "Mist of Darkness",
+      "description": "Increases attack rating when using slice of shadows."
+    },
+    {
+      "id": 7,
+      "name": "Stacking Shadow",
+      "description": "Gain a stacking damage buff for a short period on hit."
+    },
+    {
+      "id": 8,
+      "name": "Crushing Veil",
+      "description": "Chance to inflict armor break on hit."
+    },
+    {
+      "id": 9,
+      "name": "Cold Shadow",
+      "description": "Chance on hit to freeze enemies."
+    },
+    {
+      "id": 10,
+      "name": "Scorching Shadow",
+      "description": "Unleash a shadow ball of fire bouncing from terrain and inflicting burning on hit."
+    },
+    {
+      "id": 11,
+      "name": "Frostbitten Mist",
+      "description": "Increases damage dealt to frozen targets."
+    },
+    {
+      "id": 12,
+      "name": "Bitter Smoke",
+      "description": "Increases critical strike damage when using slice of shadows."
+    },
+    {
+      "id": 13,
+      "name": "Looming Mist",
+      "description": "Increases the size of slice of shadows."
+    },
+    {
+      "id": 14,
+      "name": "Shadow's Arc",
+      "description": "Unleash additional shadows in an arc."
+    },
+    {
+      "id": 15,
+      "name": "Lingering Shadows",
+      "description": "Gain stacks of lingering shadows on hit. At maximum stacks your next slice of shadows deals increased damage with increased size."
+    }
+  ]
 }

@@ -1,54 +1,54 @@
 {
-    "Item": "Royal Decapitator",
-    "Tier": "S",
-    "Level": "84",
-    "Damage": "482.00444-520",
-    "APS": "1.001",
-    "DPS": "482.00444-520",
-    "Type": "Chainsaw",
-    "TwoHanded": true,
-    "Size": "2x3",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[500-550]% Enhanced Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[2-4] to All Skills",
-            "class": "stat-allskills"
-        },
-        {
-            "stat": "+[3-6] to [Chainsaw Massacre]",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "+30% Chance for a Crushing Blow",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[1550-1700] to Additive Physical Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Slows target by 20%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Magic Skill Damage increased by [10-20]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+100 to Strength (Based on Level)",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Attacks can hit multiple enemies",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Socketed (2-4)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Royal Decapitator",
+  "Tier": "S",
+  "Level": "84",
+  "Damage": "482.00444-520",
+  "APS": "1.001",
+  "DPS": "482.00444-520",
+  "Type": "Chainsaw",
+  "TwoHanded": true,
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[500-550]% Enhanced Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[2-4] to All Skills",
+      "class": "stat-allskills"
+    },
+    {
+      "stat": "+[3-6] to [Chainsaw Massacre]",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+30% Chance for a Crushing Blow",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[1550-1700] to Additive Physical Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Slows target by 20%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Magic Skill Damage increased by [10-20]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+100 to Strength (Based on Level)",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Attacks can hit multiple enemies",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Socketed (2-4)",
+      "class": "stat-default"
+    }
+  ]
 }

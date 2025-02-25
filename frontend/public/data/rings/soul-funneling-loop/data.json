@@ -1,22 +1,22 @@
 {
-    "Item": "Soul Funneling Loop",
-    "Tier": "D",
-    "Level": "14",
-    "Type": "Ring",
-    "Size": "1x1",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[2-4]% Life stolen per Hit",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[2-4]% Mana stolen per Hit",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+5 to All Attributes",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Soul Funneling Loop",
+  "Tier": "D",
+  "Level": "14",
+  "Type": "Ring",
+  "Size": "1x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[2-4]% Life stolen per Hit",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[2-4]% Mana stolen per Hit",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+5 to All Attributes",
+      "class": "stat-default"
+    }
+  ]
 }

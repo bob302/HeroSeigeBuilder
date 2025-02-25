@@ -1,58 +1,58 @@
 {
-    "Item": "St. Rexis Sundering Axe",
-    "Tier": "SS",
-    "Level": "100",
-    "Damage": "745.10683-808",
-    "APS": "2.902.75-3.04",
-    "DPS": "2166.501877-2456",
-    "Type": "Axe",
-    "TwoHanded": false,
-    "Size": "2x3",
-    "Rarity": "Angelic",
-    "Stats": [
-        {
-            "stat": "23% Chance when Striking [Fault Line] Level 147",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "+[775-885]% Enhanced Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[3-4] to All Skills",
-            "class": "stat-allskills"
-        },
-        {
-            "stat": "+[45-60]% Increased Attack Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+50% Chance for a Crushing Blow",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[12-20]% Life stolen per Hit",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+75% of target Defense ignored",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+75 to Strength",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+45 Life After each Kill",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Attacks can hit multiple enemies",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Socketed (3-5)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "St. Rexis Sundering Axe",
+  "Tier": "SS",
+  "Level": "100",
+  "Damage": "745.10683-808",
+  "APS": "2.902.75-3.04",
+  "DPS": "2166.501877-2456",
+  "Type": "Axe",
+  "TwoHanded": false,
+  "Size": "2x3",
+  "Rarity": "Angelic",
+  "Stats": [
+    {
+      "stat": "23% Chance when Striking [Fault Line] Level 147",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+[775-885]% Enhanced Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[3-4] to All Skills",
+      "class": "stat-allskills"
+    },
+    {
+      "stat": "+[45-60]% Increased Attack Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+50% Chance for a Crushing Blow",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[12-20]% Life stolen per Hit",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+75% of target Defense ignored",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+75 to Strength",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+45 Life After each Kill",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Attacks can hit multiple enemies",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Socketed (3-5)",
+      "class": "stat-default"
+    }
+  ]
 }

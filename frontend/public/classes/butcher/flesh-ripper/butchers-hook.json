@@ -1,8 +1,80 @@
 {
-    "Icon": "ability_5_icon.webp",
-    "Image": "output/classes\\butcher\\flesh-ripper\\ability_5_icon.webp",
-    "Name": "Butchers Hook",
-    "Required Skill(s)": "Chain Rip",
-    "Required Level": "16",
-    "Position": { "x": 0, "y": 2 }
+  "Icon": "ability_5_icon.webp",
+  "Image": "output/classes\\butcher\\flesh-ripper\\ability_5_icon.webp",
+  "Name": "Butchers Hook",
+  "Required Skill(s)": "Chain Rip",
+  "Required Level": "16",
+  "Position": { "x": 0, "y": 2 },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Everlasting Anger",
+      "description": "Increases the duration of butchers hook."
+    },
+    {
+      "id": 3,
+      "name": "Backed by Rage",
+      "description": "Increases the projectile speed of butchers hook."
+    },
+    {
+      "id": 4,
+      "name": "Concussive Blow",
+      "description": "Butchers hook circles onces and slams into target location unleashing a corpse explosion with increased size and damage based on the amount of enemies captured in the hook."
+    },
+    {
+      "id": 5,
+      "name": "Hook Discharge",
+      "description": "Chance on cast to unleash an additional butchers hook."
+    },
+    {
+      "id": 6,
+      "name": "Carcass Carrier",
+      "description": "Increases the size of butchers hook."
+    },
+    {
+      "id": 7,
+      "name": "Fresh Meat",
+      "description": "Chance to inflict bleeding on hit."
+    },
+    {
+      "id": 8,
+      "name": "Pierce the Torso",
+      "description": "Chance to inflict armor break on hit."
+    },
+    {
+      "id": 9,
+      "name": "Spin of Death",
+      "description": "Increases the damage dealt by butchers hook."
+    },
+    {
+      "id": 10,
+      "name": "Welcome to Hell",
+      "description": "Unleash butchers hook towards target location with increased range and damage returning back after a short duration. Butchers hook no longer has a cooldown."
+    },
+    {
+      "id": 11,
+      "name": "Hellsent",
+      "description": "Gain increased movement speed and phasing when using butchers hook."
+    },
+    {
+      "id": 12,
+      "name": "Immaculate Butcher",
+      "description": "Increases the critical strike damage dealt by butchers hook."
+    },
+    {
+      "id": 13,
+      "name": "Bring the Carnage",
+      "description": "Decreases the cooldown of butchers hook."
+    },
+    {
+      "id": 14,
+      "name": "Critical Velocity",
+      "description": "Increases the velocity of butchers hook over time causing it to deal damage more frequently."
+    },
+    {
+      "id": 15,
+      "name": "Master of Meat Hooks",
+      "description": "Unleash multiple smaller hooks."
+    }
+  ]
 }

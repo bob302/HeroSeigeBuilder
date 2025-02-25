@@ -1,39 +1,39 @@
 {
-    "Item": "Grimbone's Marchers",
-    "Tier": "SS",
-    "Level": "100",
-    "Defense": "306.20263-350",
-    "Type": "Boots",
-    "Size": "2x2",
-    "Rarity": "Heroic",
-    "Stats": [
-        {
-            "stat": "+[220-250]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[1-2] to All Skills",
-            "class": "stat-allskills"
-        },
-        {
-            "stat": "+[25-50]% Increased Movement Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[20-30]% Faster Cast Rate",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Magic Skill Damage increased by [15-35]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Poison Length Reduced by 50%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Cannot be Frozen",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Grimbone's Marchers",
+  "Tier": "SS",
+  "Level": "100",
+  "Defense": "306.20263-350",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "+[220-250]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[1-2] to All Skills",
+      "class": "stat-allskills"
+    },
+    {
+      "stat": "+[25-50]% Increased Movement Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[20-30]% Faster Cast Rate",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Magic Skill Damage increased by [15-35]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Poison Length Reduced by 50%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Cannot be Frozen",
+      "class": "stat-default"
+    }
+  ]
 }

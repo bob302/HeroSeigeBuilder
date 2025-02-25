@@ -1,55 +1,55 @@
 {
-    "Item": "Isarius Ironthorn Breastplate",
-    "Tier": "SS",
-    "Level": "94",
-    "Defense": "652.50525-780",
-    "Type": "Body Armor",
-    "Size": "2x3",
-    "Rarity": "Heroic",
-    "Stats": [
-        {
-            "stat": "5% Chance when Struck [Combat Order] Level 21",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "+[150-225]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[3-5] to All Skills",
-            "class": "stat-allskills"
-        },
-        {
-            "stat": "+[1-3] to [Thorn of Vitality]",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "Extra Damage to Stunned Monsters [15-25]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[35-50] to Vitality",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+40 to Armor",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[175-350]% of Damage Returned to the Attacker",
-            "class": "stat-default"
-        },
-        {
-            "stat": "All Damage Taken Reduced by [11-16]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[25-50]% to All Resistances",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Socketed (3-4)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Isarius Ironthorn Breastplate",
+  "Tier": "SS",
+  "Level": "94",
+  "Defense": "652.50525-780",
+  "Type": "Body Armor",
+  "Size": "2x3",
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "5% Chance when Struck [Combat Order] Level 21",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+[150-225]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[3-5] to All Skills",
+      "class": "stat-allskills"
+    },
+    {
+      "stat": "+[1-3] to [Thorn of Vitality]",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "Extra Damage to Stunned Monsters [15-25]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[35-50] to Vitality",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+40 to Armor",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[175-350]% of Damage Returned to the Attacker",
+      "class": "stat-default"
+    },
+    {
+      "stat": "All Damage Taken Reduced by [11-16]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[25-50]% to All Resistances",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Socketed (3-4)",
+      "class": "stat-default"
+    }
+  ]
 }

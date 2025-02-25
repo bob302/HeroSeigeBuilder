@@ -1,35 +1,35 @@
 {
-    "Item": "Bronze Legion Girdle",
-    "Tier": "D",
-    "Level": "10",
-    "Defense": "5.704-8",
-    "Type": "Belt",
-    "Size": "2x1",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[30-50]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Replenish Mana [30-35]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[15-25] to Mana",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+1 to Light Radius",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+5% to All Resistances",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Belt Slots: 3",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Bronze Legion Girdle",
+  "Tier": "D",
+  "Level": "10",
+  "Defense": "5.704-8",
+  "Type": "Belt",
+  "Size": "2x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[30-50]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Replenish Mana [30-35]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[15-25] to Mana",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+1 to Light Radius",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+5% to All Resistances",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Belt Slots: 3",
+      "class": "stat-default"
+    }
+  ]
 }

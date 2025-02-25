@@ -1,31 +1,31 @@
 {
-    "Item": "Storm's Dawn",
-    "Tier": "C",
-    "Level": "20",
-    "Defense": "12.008-16",
-    "Type": "Belt",
-    "Size": "2x1",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "Lightning Skill Damage increased by [5-12]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "-5% to Enemy Lightning Resistance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[30-40] to Mana",
-            "class": "stat-default"
-        },
-        {
-            "stat": "-40% to Lightning Resistance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Belt Slots: 3",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Storm's Dawn",
+  "Tier": "C",
+  "Level": "20",
+  "Defense": "12.008-16",
+  "Type": "Belt",
+  "Size": "2x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "Lightning Skill Damage increased by [5-12]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "-5% to Enemy Lightning Resistance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[30-40] to Mana",
+      "class": "stat-default"
+    },
+    {
+      "stat": "-40% to Lightning Resistance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Belt Slots: 3",
+      "class": "stat-default"
+    }
+  ]
 }

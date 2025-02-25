@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_8_icon.webp",
-    "Image": "output/classes\\paladin\\lionheart\\ability_8_icon.webp",
-    "Name": "Fist of the Heavens",
-    "Required Skill(s)": "Holy Nova, Holy Hammer",
-    "Required Level": "24",
-    "Position": { "x": 1, "y": 3 }
+  "Icon": "ability_8_icon.webp",
+  "Image": "output/classes\\paladin\\lionheart\\ability_8_icon.webp",
+  "Name": "Fist of the Heavens",
+  "Required Skill(s)": "Holy Nova, Holy Hammer",
+  "Required Level": "24",
+  "Position": {
+    "x": 1,
+    "y": 3
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "One with the Faith",
+      "description": "Increases the amount of projectiles."
+    },
+    {
+      "id": 3,
+      "name": "Guardian Angels",
+      "description": "Increases damage dealt by fist of the heavens."
+    },
+    {
+      "id": 4,
+      "name": "Divine Explosion",
+      "description": "Fist of heavens grows in size according to the amount of projectiles shocking the ground dealing damage in an increased area of effect radius."
+    },
+    {
+      "id": 5,
+      "name": "Punish the Sinners",
+      "description": "Chance to inflict arcane break on hit."
+    },
+    {
+      "id": 6,
+      "name": "Trust in Faith",
+      "description": "Decreases fist of the heavens mana cost."
+    },
+    {
+      "id": 7,
+      "name": "Heaven's Wrath",
+      "description": "Holy bolts now return back to the point of impact dealing increased damage."
+    },
+    {
+      "id": 8,
+      "name": "Heaven's Might",
+      "description": "Chance to stun target on hit."
+    },
+    {
+      "id": 9,
+      "name": "Divine Reach",
+      "description": "Increases cast rate when using fist of the heavens."
+    },
+    {
+      "id": 10,
+      "name": "Tiring Combat",
+      "description": "Summon multiple smaller fist of the heavens orbiting you and unleashing holy bolts on hit."
+    },
+    {
+      "id": 11,
+      "name": "Crusader of Heavens",
+      "description": "Chance on cast to summon an additional fist."
+    },
+    {
+      "id": 12,
+      "name": "Halting Luminosity",
+      "description": "Inflicts slow on hit."
+    },
+    {
+      "id": 13,
+      "name": "Blessed One",
+      "description": "Fist of the heavens no longer fires holy bolts. Instead unleash a holy nova scaling its damage based on projectile amount."
+    },
+    {
+      "id": 14,
+      "name": "Forceful Salvation",
+      "description": "Unleash the fist towards target location pulsating holy bolts as it travels and then returns back to you."
+    },
+    {
+      "id": 15,
+      "name": "Immaculate Warrior",
+      "description": "Smash with the fist dealing increased damage based on projectile amount inflicting arcane break and knocking back targets. "
+    }
+  ]
 }

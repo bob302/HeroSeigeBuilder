@@ -1,8 +1,8 @@
 {
-    "Icon": "ability_8_icon.webp",
-    "Image": "output/classes\\shieldlancer\\champion\\ability_8_icon.webp",
-    "Name": "Armor Crush",
-    "Required Skill(s)": "Battle Charge",
-    "Required Level": "24",
-    "Position": { "x": 2, "y": 3 }
+  "Icon": "ability_8_icon.webp",
+  "Image": "output/classes\\shieldlancer\\champion\\ability_8_icon.webp",
+  "Name": "Armor Crush",
+  "Required Skill(s)": "Battle Charge",
+  "Required Level": "24",
+  "Position": { "x": 2, "y": 3 }
 }

@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_1_icon.webp",
-    "Image": "output/classes\\amazon\\valkyrie\\ability_1_icon.webp",
-    "Name": "Astrope's Gift",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 1, "y": 0 }
+  "Icon": "ability_1_icon.webp",
+  "Image": "output/classes\\amazon\\valkyrie\\ability_1_icon.webp",
+  "Name": "Astrope's Gift",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": {
+    "x": 1,
+    "y": 0
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Master of Javelin",
+      "description": "Fire additional projectiles when using a throwing weapon."
+    },
+    {
+      "id": 3,
+      "name": "Power Current",
+      "description": "Increases damage dealt by astrope’s gift."
+    },
+    {
+      "id": 4,
+      "name": "Surging Stormbolt",
+      "description": "Lightning strikes now unleash an AoE pulse with increased area of effect radius and damage."
+    },
+    {
+      "id": 5,
+      "name": "Astrope's Curse",
+      "description": "Chance to inflict lightning break on hit."
+    },
+    {
+      "id": 6,
+      "name": "Astrope's Revenge",
+      "description": "Chance to unleash an additional lightning bolt on hit."
+    },
+    {
+      "id": 7,
+      "name": "Rapid Momentum",
+      "description": "Grants you a stacking attack speed buff on hit. All stacks are lost if you miss."
+    },
+    {
+      "id": 8,
+      "name": "Lifestasis",
+      "description": "Lightning bolts deal increased damage based on target life."
+    },
+    {
+      "id": 9,
+      "name": "Ending Fate",
+      "description": "Increases damage to bosses when using polearms."
+    },
+    {
+      "id": 10,
+      "name": "Eye of Storm",
+      "description": "Summon a storm following you and rapidly shrinking. Hitting a monster causes the storm to grow in size."
+    },
+    {
+      "id": 11,
+      "name": "Astrope's Agility",
+      "description": "Decreases movement diminish when using astrope’s gift."
+    },
+    {
+      "id": 12,
+      "name": "Astrope's Dexterity",
+      "description": "Increases attack rating when using astrope’s gift."
+    },
+    {
+      "id": 13,
+      "name": "Zapping Voltage",
+      "description": "Chance to inflict stasis on hit."
+    },
+    {
+      "id": 14,
+      "name": "Thundering Storm",
+      "description": "Summons a thundering storm dealing area of effect damage for a short period instead of a lightning bolt."
+    },
+    {
+      "id": 15,
+      "name": "Critical Thunderbolt",
+      "description": "Lightning bolts can critically hit dealing increased critical strike damage when using polearms."
+    }
+  ]
 }

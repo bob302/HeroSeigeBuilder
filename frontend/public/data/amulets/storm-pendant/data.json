@@ -1,26 +1,26 @@
 {
-    "Item": "Storm Pendant",
-    "Tier": "B",
-    "Level": "40",
-    "Type": "Amulet",
-    "Size": "1x2",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[1-2] to Lightning Skills",
-            "class": "stat-lightning"
-        },
-        {
-            "stat": "+10 to Energy",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[80-120] to Lightning Skill Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+40% to Lightning Resistance",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Storm Pendant",
+  "Tier": "B",
+  "Level": "40",
+  "Type": "Amulet",
+  "Size": "1x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[1-2] to Lightning Skills",
+      "class": "stat-lightning"
+    },
+    {
+      "stat": "+10 to Energy",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[80-120] to Lightning Skill Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+40% to Lightning Resistance",
+      "class": "stat-default"
+    }
+  ]
 }

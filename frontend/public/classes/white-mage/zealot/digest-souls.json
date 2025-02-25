@@ -1,8 +1,8 @@
 {
-    "Icon": "ability_3_icon.webp",
-    "Image": "output/classes\\whitemage\\zealot\\ability_3_icon.webp",
-    "Name": "Digest Souls",
-    "Required Skill(s)": "Martyr",
-    "Required Level": "8",
-    "Position": { "x": 0, "y": 1 }
+  "Icon": "ability_3_icon.webp",
+  "Image": "output/classes\\whitemage\\zealot\\ability_3_icon.webp",
+  "Name": "Digest Souls",
+  "Required Skill(s)": "Martyr",
+  "Required Level": "8",
+  "Position": { "x": 0, "y": 1 }
 }

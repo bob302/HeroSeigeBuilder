@@ -1,39 +1,39 @@
 {
-    "Item": "Clan Leader's Pride",
-    "Tier": "D",
-    "Level": "14",
-    "Defense": "29.4521-39",
-    "Type": "Body Armor",
-    "Size": "2x3",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "10% Chance when Struck [Fan of Knives] Level 7",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "+[12-20]% Enhanced Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[90-115]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[6-15] to Strength",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[6-12] to Armor",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[12-20]% to All Resistances",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Socketed (0-3)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Clan Leader's Pride",
+  "Tier": "D",
+  "Level": "14",
+  "Defense": "29.4521-39",
+  "Type": "Body Armor",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "10% Chance when Struck [Fan of Knives] Level 7",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+[12-20]% Enhanced Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[90-115]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[6-15] to Strength",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[6-12] to Armor",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[12-20]% to All Resistances",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Socketed (0-3)",
+      "class": "stat-default"
+    }
+  ]
 }

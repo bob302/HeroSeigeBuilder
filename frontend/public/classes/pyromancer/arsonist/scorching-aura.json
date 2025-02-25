@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_3_icon.webp",
-    "Image": "output/classes\\pyromancer\\arsonist\\ability_3_icon.webp",
-    "Name": "Scorching Aura",
-    "Required Skill(s)": "Breath of Fire",
-    "Required Level": "8",
-    "Position": { "x": 0, "y": 1 }
+  "Icon": "ability_3_icon.webp",
+  "Image": "output/classes\\pyromancer\\arsonist\\ability_3_icon.webp",
+  "Name": "Scorching Aura",
+  "Required Skill(s)": "Breath of Fire",
+  "Required Level": "8",
+  "Position": {
+    "x": 0,
+    "y": 1
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Scorched Lands",
+      "description": "Increases the area of effect radius of scorching aura."
+    },
+    {
+      "id": 3,
+      "name": "Sixt Degree Burns",
+      "description": "Increases the damage dealt by scorching aura."
+    },
+    {
+      "id": 4,
+      "name": "Searing Burst",
+      "description": "Frequently unleash small bursts of fire dealing additional damage stunning monsters on hit."
+    },
+    {
+      "id": 5,
+      "name": "Burning Necrosis",
+      "description": "Inflicts fire break on hit."
+    },
+    {
+      "id": 6,
+      "name": "Flaming Fissure",
+      "description": "Chance on hit to release a flaming fissure beneath monsters knocking them into the air dealing additional damage."
+    },
+    {
+      "id": 7,
+      "name": "Rapid Burning",
+      "description": "Increases the tick rate of scorching aura."
+    },
+    {
+      "id": 8,
+      "name": "Burnt Feet",
+      "description": "Increases your movement speed while scorching aura is active."
+    },
+    {
+      "id": 9,
+      "name": "IGNITE THE FLAMES",
+      "description": "Damaging monsters now builds up flaming ignition stacks unleashing a fiery pulse at max stacks."
+    },
+    {
+      "id": 10,
+      "name": "RELEASE THE CHAOS",
+      "description": "Ignite the flames now additionally unleashes piercing fireballs spiraling outwards dealing additional damage."
+    },
+    {
+      "id": 11,
+      "name": "Ground Blaze",
+      "description": "Chance on hit to slow monsters and light a blaze at their feet."
+    },
+    {
+      "id": 12,
+      "name": "Scorching Agony",
+      "description": "Increases damage dealt to burning targets."
+    },
+    {
+      "id": 13,
+      "name": "Burn Them All",
+      "description": "Inflicts burning for a portion of scorching auras damage on hit."
+    },
+    {
+      "id": 14,
+      "name": "Burning Soul",
+      "description": "Increases the damage of scorching aura based on your maximum life."
+    },
+    {
+      "id": 15,
+      "name": "Scorching Harvester",
+      "description": "Frequently send out fiery souls dealing damage replenishing a portion of your maximum life."
+    }
+  ]
 }

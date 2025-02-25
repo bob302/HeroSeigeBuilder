@@ -1,8 +1,80 @@
 {
-    "Icon": "ability_6_icon.webp",
-    "Image": "output/classes\\exo\\lunar-prophet\\ability_6_icon.webp",
-    "Name": "Lunar Orbit",
-    "Required Skill(s)": "Asteroid",
-    "Required Level": "16",
-    "Position": { "x": 1, "y": 2 }
+  "Icon": "ability_6_icon.webp",
+  "Image": "output/classes\\exo\\lunar-prophet\\ability_6_icon.webp",
+  "Name": "Lunar Orbit",
+  "Required Skill(s)": "Asteroid",
+  "Required Level": "16",
+  "Position": { "x": 1, "y": 2 },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Tidal Collision",
+      "description": "Increases the damage dealt by lunar orbit."
+    },
+    {
+      "id": 3,
+      "name": "Full Moon",
+      "description": "Increases the duration of lunar orbit."
+    },
+    {
+      "id": 4,
+      "name": "Crescent Moon",
+      "description": "Lunar orbit is now a toggle that drains a portion of your mana to passively summon moons with increased damage while active. Recasting or running out of mana will deactivate lunar orbit."
+    },
+    {
+      "id": 5,
+      "name": "Extrasolar Moons",
+      "description": "Increases the amount of moons in lunar orbit."
+    },
+    {
+      "id": 6,
+      "name": "Magnetic Pull",
+      "description": "Increases the orbital speed of lunar orbit."
+    },
+    {
+      "id": 7,
+      "name": "Loss of Orbit",
+      "description": "Chance to ricochet towards another nearby monster on hit before returning back to orbit."
+    },
+    {
+      "id": 8,
+      "name": "Celestial Collapse",
+      "description": "Chance for moons to explode into shrapnel when expiring dealing a portion of their damage."
+    },
+    {
+      "id": 9,
+      "name": "Lunar Cycle",
+      "description": "Chance to inflict cold break on hit."
+    },
+    {
+      "id": 10,
+      "name": "Devastating Nebula",
+      "description": "Chance to conjure cosmic fog at target location on hit dealing a portion of the damage over time inflicting slow."
+    },
+    {
+      "id": 11,
+      "name": "Tidalwaves",
+      "description": "Chance to unleash a tsunami towards target location on hit."
+    },
+    {
+      "id": 12,
+      "name": "Mass Meets Mass",
+      "description": "Increases damage dealt to bosses."
+    },
+    {
+      "id": 13,
+      "name": "Heavy Core",
+      "description": "Knock monsters back on hit dealing increased damage."
+    },
+    {
+      "id": 14,
+      "name": "Lunar Architect",
+      "description": "Increases the amount of moons in lunar orbit summoning all moons at once."
+    },
+    {
+      "id": 15,
+      "name": "Orbit Breakout",
+      "description": "When moons expire they are sent outwards bouncing on walls and terrain."
+    }
+  ]
 }

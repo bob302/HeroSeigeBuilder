@@ -1,54 +1,54 @@
 {
-    "Item": "Revenant's Lasher",
-    "Tier": "SS",
-    "Level": "94",
-    "Damage": "339.30308-372",
-    "APS": "2.272.1-2.44",
-    "DPS": "776.00646-906",
-    "Type": "Mace",
-    "TwoHanded": false,
-    "Size": "2x2",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "10% Chance when Attacking [Vengeance] Level 34",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "+[430-480]% Enhanced Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[20-40]% Increased Attack Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[6-15]% Increased Attack Rating",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[8-12]% Mana stolen per Hit",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[1300-1650] to Additive Lightning Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Lightning Skill Damage increased by [18-40]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "-[15-25]% to Enemy Lightning Resistance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+15% Lightning Damage Absorbed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+60% to Lightning Resistance",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Revenant's Lasher",
+  "Tier": "SS",
+  "Level": "94",
+  "Damage": "339.30308-372",
+  "APS": "2.272.1-2.44",
+  "DPS": "776.00646-906",
+  "Type": "Mace",
+  "TwoHanded": false,
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "10% Chance when Attacking [Vengeance] Level 34",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+[430-480]% Enhanced Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[20-40]% Increased Attack Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[6-15]% Increased Attack Rating",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[8-12]% Mana stolen per Hit",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[1300-1650] to Additive Lightning Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Lightning Skill Damage increased by [18-40]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "-[15-25]% to Enemy Lightning Resistance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+15% Lightning Damage Absorbed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+60% to Lightning Resistance",
+      "class": "stat-default"
+    }
+  ]
 }

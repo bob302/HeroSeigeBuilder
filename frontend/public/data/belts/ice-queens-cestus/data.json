@@ -1,39 +1,39 @@
 {
-    "Item": "Ice Queen's Cestus",
-    "Tier": "S",
-    "Level": "96",
-    "Defense": "99.4084-116",
-    "Type": "Belt",
-    "Size": "2x1",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[60-70]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+20 to Energy",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Cold Skill Damage increased by [10-25]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[8-15]% of Damage Taken goes to Mana",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[40-50]% to Cold Resistance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Cannot be Frozen",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Belt Slots: 5",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Ice Queen's Cestus",
+  "Tier": "S",
+  "Level": "96",
+  "Defense": "99.4084-116",
+  "Type": "Belt",
+  "Size": "2x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[60-70]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+20 to Energy",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Cold Skill Damage increased by [10-25]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[8-15]% of Damage Taken goes to Mana",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[40-50]% to Cold Resistance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Cannot be Frozen",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Belt Slots: 5",
+      "class": "stat-default"
+    }
+  ]
 }

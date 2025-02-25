@@ -1,18 +1,18 @@
 {
-    "Item": "Praetorian Blood",
-    "Tier": "S",
-    "Level": "68",
-    "Type": "Potion",
-    "Size": "1x2",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[1-5] to [Vampirism]",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "Gain increased Life Steal.",
-            "class": "item-lore"
-        }
-    ]
+  "Item": "Praetorian Blood",
+  "Tier": "S",
+  "Level": "68",
+  "Type": "Potion",
+  "Size": "1x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[1-5] to [Vampirism]",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "Gain increased Life Steal.",
+      "class": "item-lore"
+    }
+  ]
 }

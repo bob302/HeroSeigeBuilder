@@ -1,8 +1,80 @@
 {
-    "Icon": "ability_5_icon.webp",
-    "Image": "output/classes\\illusionist\\sand-manipulator\\ability_5_icon.webp",
-    "Name": "Circle of Guardians",
-    "Required Skill(s)": "Sand Guardians",
-    "Required Level": "16",
-    "Position": { "x": 0, "y": 2 }
+  "Icon": "ability_5_icon.webp",
+  "Image": "output/classes\\illusionist\\sand-manipulator\\ability_5_icon.webp",
+  "Name": "Circle of Guardians",
+  "Required Skill(s)": "Sand Guardians",
+  "Required Level": "16",
+  "Position": { "x": 0, "y": 2 },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Rapid Deployment",
+      "description": "Decreases the cooldown of circle of guardians."
+    },
+    {
+      "id": 3,
+      "name": "Peer Pressure",
+      "description": "Increases the damage dealt by circle of guardians."
+    },
+    {
+      "id": 4,
+      "name": "Desert's Army",
+      "description": "Summon a wall of guardians marching forward dealing increased damage, knocking monsters back on hit."
+    },
+    {
+      "id": 5,
+      "name": "Battalion of Guardians",
+      "description": "Increases the amount of sand guardians summoned."
+    },
+    {
+      "id": 6,
+      "name": "Devastating Lunge",
+      "description": "Chance to stun monsters on hit."
+    },
+    {
+      "id": 7,
+      "name": "Lasting Sand Kingdom",
+      "description": "Increases the duration of circle of guardians."
+    },
+    {
+      "id": 8,
+      "name": "Well Trained Troops",
+      "description": "Increases the attack speed of circle of guardians."
+    },
+    {
+      "id": 9,
+      "name": "Magic Infused Blade",
+      "description": "Chance to inflict arcane break on hit."
+    },
+    {
+      "id": 10,
+      "name": "Seven Nation Army",
+      "description": "Increases the amount and damage of circle of guardians."
+    },
+    {
+      "id": 11,
+      "name": "Far Reaching Spears",
+      "description": "Increases the attack range of circle of guardians."
+    },
+    {
+      "id": 12,
+      "name": "Everflowing Sands",
+      "description": "Sand guardians gain increased duration based on your energy."
+    },
+    {
+      "id": 13,
+      "name": "Manipulation",
+      "description": "Increases the damage dealt by circle of guardians but each active guardian frequently drains your mana."
+    },
+    {
+      "id": 14,
+      "name": "Ancient Sand Goliath",
+      "description": "Summon an ancient sand goliath with increased size and damage based on summon amount for a short duration."
+    },
+    {
+      "id": 15,
+      "name": "Arcanic Sand Tether",
+      "description": "Create an arcanic sand tether between you and the circle of guardians dealing damage over time to monsters on hit."
+    }
+  ]
 }

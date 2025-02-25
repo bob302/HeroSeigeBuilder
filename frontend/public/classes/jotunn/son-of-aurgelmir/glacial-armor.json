@@ -1,8 +1,8 @@
 {
-    "Icon": "ability_8_icon.webp",
-    "Image": "output/classes\\jotunn\\son-of-aurgelmir\\ability_8_icon.webp",
-    "Name": "Glacial Armor",
-    "Required Skill(s)": "Absolute Zero",
-    "Required Level": "24",
-    "Position": { "x": 2, "y": 3 }
+  "Icon": "ability_8_icon.webp",
+  "Image": "output/classes\\jotunn\\son-of-aurgelmir\\ability_8_icon.webp",
+  "Name": "Glacial Armor",
+  "Required Skill(s)": "Absolute Zero",
+  "Required Level": "24",
+  "Position": { "x": 2, "y": 3 }
 }

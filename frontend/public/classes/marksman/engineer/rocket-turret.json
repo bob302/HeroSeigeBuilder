@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_9_icon.webp",
-    "Image": "output/classes\\marksman\\engineer\\ability_9_icon.webp",
-    "Name": "Rocket Turret",
-    "Required Skill(s)": "Cannon Turret",
-    "Required Level": "30",
-    "Position": { "x": 2, "y": 4 }
+  "Icon": "ability_9_icon.webp",
+  "Image": "output/classes\\marksman\\engineer\\ability_9_icon.webp",
+  "Name": "Rocket Turret",
+  "Required Skill(s)": "Cannon Turret",
+  "Required Level": "30",
+  "Position": {
+    "x": 2,
+    "y": 4
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Mini Sarmat",
+      "description": "Increases the amount of rockets fired by rocket turret."
+    },
+    {
+      "id": 3,
+      "name": "Blasting Power",
+      "description": "Increases the damage dealt by rocket turret."
+    },
+    {
+      "id": 4,
+      "name": "Locked On",
+      "description": "Fires a bigger barrage of missiles that target an area dealing massive damage over three seconds. Attack speed reduced."
+    },
+    {
+      "id": 5,
+      "name": "Rocket Turrets",
+      "description": "Increases the maximum amount of rocket turrets."
+    },
+    {
+      "id": 6,
+      "name": "Mininuke",
+      "description": "Increases explosion area of effect of rocket turret projectiles."
+    },
+    {
+      "id": 7,
+      "name": "Multiblast",
+      "description": "Chance on hit for rocket turret projectiles to explode additional times with increased damage."
+    },
+    {
+      "id": 8,
+      "name": "Fragmenting Blast",
+      "description": "Inflicts arcane break on hit."
+    },
+    {
+      "id": 9,
+      "name": "Field Scanner",
+      "description": "Increases the range of rocket turret."
+    },
+    {
+      "id": 10,
+      "name": "The Boom Box",
+      "description": "Rocket turret turns into an exploding turret that repeatedly explodes in place dealing increased damage to monsters hit."
+    },
+    {
+      "id": 11,
+      "name": "Blastwave",
+      "description": "Chance on hit to create a shockwave of additional explosions."
+    },
+    {
+      "id": 12,
+      "name": "Quick Silo",
+      "description": "Increases the rate of fire for rocket turret."
+    },
+    {
+      "id": 13,
+      "name": "Stun Blast",
+      "description": "Chance on hit to knockback and stun target dealing additional damage."
+    },
+    {
+      "id": 14,
+      "name": "Barret Shot",
+      "description": "Instead fires a single .50 Cal sniper round that explodes on first monster hit dealing massive attack damage."
+    },
+    {
+      "id": 15,
+      "name": "Big Bertha",
+      "description": "Increases the damage, projectile speed and explosion area of effect radius of the rockets."
+    }
+  ]
 }

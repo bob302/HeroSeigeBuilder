@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_6_icon.webp",
-    "Image": "output/classes\\amazon\\valkyrie\\ability_6_icon.webp",
-    "Name": "Storm Dash",
-    "Required Skill(s)": "Feint",
-    "Required Level": "16",
-    "Position": { "x": 2, "y": 2 }
+  "Icon": "ability_6_icon.webp",
+  "Image": "output/classes\\amazon\\valkyrie\\ability_6_icon.webp",
+  "Name": "Storm Dash",
+  "Required Skill(s)": "Feint",
+  "Required Level": "16",
+  "Position": {
+    "x": 2,
+    "y": 2
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Agile Zapper",
+      "description": "Increases the frequency of chain lightnings."
+    },
+    {
+      "id": 3,
+      "name": "Zapping Force",
+      "description": "Increases damage dealt by storm dash."
+    },
+    {
+      "id": 4,
+      "name": "Lightning Trail",
+      "description": "Leave behind a trail of lightning inflicting electrified and lightning break."
+    },
+    {
+      "id": 5,
+      "name": "Bouncing Current",
+      "description": "Increases the amount of chain lightning bounces."
+    },
+    {
+      "id": 6,
+      "name": "Thunderfall",
+      "description": "Chain lightning has a chance to call down a thunderbolt on the target dealing additional damage."
+    },
+    {
+      "id": 7,
+      "name": "Hopping Surge",
+      "description": "Increases the maximum range of storm dash."
+    },
+    {
+      "id": 8,
+      "name": "Landing Surge",
+      "description": "When landing unleash a lightning explosion for additional area of effect damage and stunning on hit."
+    },
+    {
+      "id": 9,
+      "name": "Lightning Strikes",
+      "description": "Unleash lightning strikes on nearby monsters when landing."
+    },
+    {
+      "id": 10,
+      "name": "Pillar of Storm",
+      "description": "Leave behind a pillar of storm. Pillars of storm are linked with a chain of lightning dealing damage and inflicting stasis on hit."
+    },
+    {
+      "id": 11,
+      "name": "Voltage Struck",
+      "description": "Chance to stun on hit."
+    },
+    {
+      "id": 12,
+      "name": "Electric Current",
+      "description": "Increases damage dealt to stunned targets."
+    },
+    {
+      "id": 13,
+      "name": "Agility Over Power",
+      "description": "You can now travel through terrain but the damage of storm dash is reduced."
+    },
+    {
+      "id": 14,
+      "name": "Storm Orbs",
+      "description": "Landing on monsters summons lightning bolts orbiting around you continuously zapping nearby monsters with chain lightning. Storm dash now has a cooldown."
+    },
+    {
+      "id": 15,
+      "name": "Storm Gates",
+      "description": "Blink to target location summoning a lightning storm unleashing chain lightning on hit."
+    }
+  ]
 }

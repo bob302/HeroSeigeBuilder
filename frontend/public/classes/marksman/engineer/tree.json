@@ -1,11 +1,11 @@
 [
-    "frag-grenade.json",
-    "arrow-turret.json",
-    "landmine.json",
-    "beacon.json",
-    "turret-mastery.json",
-    "cannon-turret.json",
-    "master-mechanic.json",
-    "gunner-drone.json",
-    "rocket-turret.json"
+  "frag-grenade.json",
+  "arrow-turret.json",
+  "landmine.json",
+  "beacon.json",
+  "turret-mastery.json",
+  "cannon-turret.json",
+  "master-mechanic.json",
+  "gunner-drone.json",
+  "rocket-turret.json"
 ]

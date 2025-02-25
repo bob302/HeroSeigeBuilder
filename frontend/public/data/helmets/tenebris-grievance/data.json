@@ -1,39 +1,39 @@
 {
-    "Item": "Tenebris' Grievance",
-    "Tier": "S",
-    "Level": "88",
-    "Defense": "154.00120-188",
-    "Type": "Helmet",
-    "Size": "2x2",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[100-135]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[1-2] to All Skills",
-            "class": "stat-allskills"
-        },
-        {
-            "stat": "+[15-30]% Increased Attack Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[200-350] to Attack Rating",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[35-75] to Strength",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[10-15] to Vitality",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+75 to Damage (Based on Level)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Tenebris' Grievance",
+  "Tier": "S",
+  "Level": "88",
+  "Defense": "154.00120-188",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[100-135]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[1-2] to All Skills",
+      "class": "stat-allskills"
+    },
+    {
+      "stat": "+[15-30]% Increased Attack Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[200-350] to Attack Rating",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[35-75] to Strength",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[10-15] to Vitality",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+75 to Damage (Based on Level)",
+      "class": "stat-default"
+    }
+  ]
 }

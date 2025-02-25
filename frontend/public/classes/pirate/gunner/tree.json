@@ -1,11 +1,11 @@
 [
-    "buckshot.json",
-    "grenade-jump.json",
-    "explosive-barrel.json",
-    "cannonball.json",
-    "explosive-bullets.json",
-    "powder-trail.json",
-    "kneecap.json",
-    "bomb-barrage.json",
-    "rapid-fire.json"
+  "buckshot.json",
+  "grenade-jump.json",
+  "explosive-barrel.json",
+  "cannonball.json",
+  "explosive-bullets.json",
+  "powder-trail.json",
+  "kneecap.json",
+  "bomb-barrage.json",
+  "rapid-fire.json"
 ]

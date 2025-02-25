@@ -1,47 +1,47 @@
 {
-    "Item": "Magister's Robe",
-    "Tier": "C",
-    "Level": "30",
-    "Defense": "65.4040-92",
-    "Type": "Body Armor",
-    "Size": "2x3",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[80-90]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+1 to All Skills",
-            "class": "stat-allskills"
-        },
-        {
-            "stat": "+30% Faster Cast Rate",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[10-15] to Energy",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Replenish Mana 15%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Physical Damage Taken Reduced by 8%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+50% to Arcane Resistance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+5% to Maximum Arcane Resist",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Socketed (0-2)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Magister's Robe",
+  "Tier": "C",
+  "Level": "30",
+  "Defense": "65.4040-92",
+  "Type": "Body Armor",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[80-90]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+1 to All Skills",
+      "class": "stat-allskills"
+    },
+    {
+      "stat": "+30% Faster Cast Rate",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[10-15] to Energy",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Replenish Mana 15%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Physical Damage Taken Reduced by 8%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+50% to Arcane Resistance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+5% to Maximum Arcane Resist",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Socketed (0-2)",
+      "class": "stat-default"
+    }
+  ]
 }

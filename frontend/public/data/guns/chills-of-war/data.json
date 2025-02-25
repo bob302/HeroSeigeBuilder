@@ -1,46 +1,46 @@
 {
-    "Item": "Chills of War",
-    "Tier": "B",
-    "Level": "36",
-    "Damage": "134.50108-161",
-    "APS": "2.192.1-2.27",
-    "DPS": "296.50227-366",
-    "Type": "Gun",
-    "TwoHanded": false,
-    "Size": "2x2",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[350-475]% Enhanced Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[20-30]% Increased Attack Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[4-8]% Mana stolen per Hit",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Slows target by 15%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+10 to Strength",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+10 to Dexterity",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[45-70] to Additive Cold Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[8-12] Mana After each Kill",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Chills of War",
+  "Tier": "B",
+  "Level": "36",
+  "Damage": "134.50108-161",
+  "APS": "2.192.1-2.27",
+  "DPS": "296.50227-366",
+  "Type": "Gun",
+  "TwoHanded": false,
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[350-475]% Enhanced Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[20-30]% Increased Attack Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[4-8]% Mana stolen per Hit",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Slows target by 15%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+10 to Strength",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+10 to Dexterity",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[45-70] to Additive Cold Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[8-12] Mana After each Kill",
+      "class": "stat-default"
+    }
+  ]
 }

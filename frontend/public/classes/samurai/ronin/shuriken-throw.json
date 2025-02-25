@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_2_icon.webp",
-    "Image": "output/classes\\samurai\\ronin\\ability_2_icon.webp",
-    "Name": "Shuriken Throw",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 2, "y": 0 }
+  "Icon": "ability_2_icon.webp",
+  "Image": "output/classes\\samurai\\ronin\\ability_2_icon.webp",
+  "Name": "Shuriken Throw",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": {
+    "x": 2,
+    "y": 0
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Pointy Edges",
+      "description": "Increases critical strike chance."
+    },
+    {
+      "id": 3,
+      "name": "Quickthrow",
+      "description": "Increases projectile speed."
+    },
+    {
+      "id": 4,
+      "name": "Shadow Shuriken",
+      "description": "Throw a single big shuriken dealing increased damage, stunning and returning to you. If re-casted while shuriken exists, teleport to the shurikens position throwing smaller shurikens in all directions."
+    },
+    {
+      "id": 5,
+      "name": "Forceful Flight",
+      "description": "Increases damage dealt by shurikens."
+    },
+    {
+      "id": 6,
+      "name": "Twin Shurikens",
+      "description": "Throw additional shurikens with increased mana cost."
+    },
+    {
+      "id": 7,
+      "name": "Shady Trickster",
+      "description": "While standing in smoke bomb thrown shurikens grant you a brief moment of invisibility and increased dodge chance."
+    },
+    {
+      "id": 8,
+      "name": "Starstruck",
+      "description": "Chance on critical strikes to split shurikens into smaller shurikens in a cone behind the target."
+    },
+    {
+      "id": 9,
+      "name": "Empowering Shurikens",
+      "description": "Chance on hit to increase your attack speed and attack damage for a short duration."
+    },
+    {
+      "id": 10,
+      "name": "Slicing Ricochet",
+      "description": "Shurikens now ricochet from monster hits and terrain inflicting bleeding on hit."
+    },
+    {
+      "id": 11,
+      "name": "Sharp stars",
+      "description": "Increases critical strike damage dealt by shurikens."
+    },
+    {
+      "id": 12,
+      "name": "Throwing Profiency",
+      "description": "Increases attack rating while wielding a throwing weapon."
+    },
+    {
+      "id": 13,
+      "name": "Manainfused Shurikens",
+      "description": "Increases the damage dealt by shurikens according to mana spent."
+    },
+    {
+      "id": 14,
+      "name": "Cutting Field",
+      "description": "Shurikens now stop mid air and float for a short period and explode into sharp metal shrapnel around it dealing damage and slowing on hit."
+    },
+    {
+      "id": 15,
+      "name": "Ripping Flesh",
+      "description": "Shurikens now attach to monsters on hit and are ripped off back to the samurai after a short period or if the samurai moves far away enough. Shuriken throw now has a cooldown."
+    }
+  ]
 }

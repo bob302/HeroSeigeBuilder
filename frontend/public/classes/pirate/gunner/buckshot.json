@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_1_icon.webp",
-    "Image": "output/classes\\pirate\\gunner\\ability_1_icon.webp",
-    "Name": "Buckshot",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 0, "y": 0 }
+  "Icon": "ability_1_icon.webp",
+  "Image": "output/classes\\pirate\\gunner\\ability_1_icon.webp",
+  "Name": "Buckshot",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": {
+    "x": 0,
+    "y": 0
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Black Powder",
+      "description": "Increases damage dealt by buckshot."
+    },
+    {
+      "id": 3,
+      "name": "Stack of Slugs",
+      "description": "Increases the amount of buckshot trails."
+    },
+    {
+      "id": 4,
+      "name": "Big Slugs",
+      "description": "Projectiles are now bigger and travel farther also knocking monsters back."
+    },
+    {
+      "id": 5,
+      "name": "Spiced Up",
+      "description": "Inflicts burning on hit."
+    },
+    {
+      "id": 6,
+      "name": "Eye Patch",
+      "description": "Chance to stun on hit."
+    },
+    {
+      "id": 7,
+      "name": "Scorched Slugshot",
+      "description": "Increases damage dealt to burning targets."
+    },
+    {
+      "id": 8,
+      "name": "Longshot",
+      "description": "Increases the range of buckshot."
+    },
+    {
+      "id": 9,
+      "name": "Colossus Slugs",
+      "description": "Buckshot projectile size increased."
+    },
+    {
+      "id": 10,
+      "name": "Slick Slugs",
+      "description": "Projectiles now chain off of the target with decreased damage."
+    },
+    {
+      "id": 11,
+      "name": "Targeted Slugs",
+      "description": "Increases the attack rating when using buckshot."
+    },
+    {
+      "id": 12,
+      "name": "Firearm Expert",
+      "description": "Increases the attack speed of buckshot while wielding a gun."
+    },
+    {
+      "id": 13,
+      "name": "Sluglust",
+      "description": "Killing an enemy with buckshot increases your fire damage for a short period of time."
+    },
+    {
+      "id": 14,
+      "name": "One Slug to End Them All",
+      "description": "Fire a single slug scaling a portion of its damage from the amount of total projectiles."
+    },
+    {
+      "id": 15,
+      "name": "Circle of Slugs",
+      "description": "Fire multiple waves of slugs in every direction. Buckshot now has a cooldown."
+    }
+  ]
 }

@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_5_icon.webp",
-    "Image": "output/classes\\paladin\\lionheart\\ability_5_icon.webp",
-    "Name": "Holy Nova",
-    "Required Skill(s)": "Holy Retribution",
-    "Required Level": "16",
-    "Position": { "x": 1, "y": 2 }
+  "Icon": "ability_5_icon.webp",
+  "Image": "output/classes\\paladin\\lionheart\\ability_5_icon.webp",
+  "Name": "Holy Nova",
+  "Required Skill(s)": "Holy Retribution",
+  "Required Level": "16",
+  "Position": {
+    "x": 1,
+    "y": 2
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Crusade Allies",
+      "description": "Allies healed by holy nova take reduced damage for a short period."
+    },
+    {
+      "id": 3,
+      "name": "Practical Punishment",
+      "description": "Chance to stun monsters on hit."
+    },
+    {
+      "id": 4,
+      "name": "Righteous Transaction",
+      "description": "Steal a portion of target life on hit over time."
+    },
+    {
+      "id": 5,
+      "name": "Strength Prayer",
+      "description": "Increases area of effect radius of holy nova."
+    },
+    {
+      "id": 6,
+      "name": "Strong Faith",
+      "description": "Increases the damage dealt by holy nova."
+    },
+    {
+      "id": 7,
+      "name": "Spiritual Awakening",
+      "description": "Holy nova no longer heals you or your allies but recovers a portion of your maximum mana instead."
+    },
+    {
+      "id": 8,
+      "name": "Restore Light",
+      "description": "Holy nova heals you for a portion of your missing life."
+    },
+    {
+      "id": 9,
+      "name": "Blessing Buff",
+      "description": "Chance on cast to increase your and allied arcane damage and magic find for a short period."
+    },
+    {
+      "id": 10,
+      "name": "Faith's Winds",
+      "description": "Unleash multiple smaller orbiting novas around you."
+    },
+    {
+      "id": 11,
+      "name": "Warrior's Light",
+      "description": "Increases damage dealt by holy nova scaling with your vitality."
+    },
+    {
+      "id": 12,
+      "name": "Deliver Consequences",
+      "description": "Increases damage dealt by holy nova and gives a chance to instantly execute non-boss targets affected by mark of judgement."
+    },
+    {
+      "id": 13,
+      "name": "Heaven's Chosen",
+      "description": "Chance on cast to unleash an additional holy nova."
+    },
+    {
+      "id": 14,
+      "name": "Mark of Judgement",
+      "description": "Mark target monsters with judgement on hit causing them to take increased damage on hit consuming the mark."
+    },
+    {
+      "id": 15,
+      "name": "Remote Prayer",
+      "description": "Holy nova now heals all allies within the same area with increased power."
+    }
+  ]
 }

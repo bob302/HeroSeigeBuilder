@@ -1,26 +1,26 @@
 {
-    "Item": "Juggernaut's Emblem",
-    "Tier": "S",
-    "Level": "92",
-    "Type": "Amulet",
-    "Size": "1x2",
-    "Rarity": "Satanic Set",
-    "Stats": [
-        {
-            "stat": "+[1-2] to Physical Skills",
-            "class": "stat-physical"
-        },
-        {
-            "stat": "Replenish Life [15-25]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[35-45] to Life",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Physical Damage Taken Reduced by [5-10]%",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Juggernaut's Emblem",
+  "Tier": "S",
+  "Level": "92",
+  "Type": "Amulet",
+  "Size": "1x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "+[1-2] to Physical Skills",
+      "class": "stat-physical"
+    },
+    {
+      "stat": "Replenish Life [15-25]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[35-45] to Life",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Physical Damage Taken Reduced by [5-10]%",
+      "class": "stat-default"
+    }
+  ]
 }

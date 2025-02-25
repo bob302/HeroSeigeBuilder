@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_1_icon.webp",
-    "Image": "output/classes\\marksman\\engineer\\ability_1_icon.webp",
-    "Name": "Frag Grenade",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 0, "y": 0 }
+  "Icon": "ability_1_icon.webp",
+  "Image": "output/classes\\marksman\\engineer\\ability_1_icon.webp",
+  "Name": "Frag Grenade",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": {
+    "x": 0,
+    "y": 0
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Shrapnel",
+      "description": "Increases the amount of shrapnel when using frag grenade."
+    },
+    {
+      "id": 3,
+      "name": "Fatal Range",
+      "description": "Increases the explosion area of effect radius."
+    },
+    {
+      "id": 4,
+      "name": "Cluster Bomb",
+      "description": "Throw a cluster bomb exploding into multiple frag grenades around the impact point."
+    },
+    {
+      "id": 5,
+      "name": "Detonating",
+      "description": "Increases the damage dealt by frag grenade."
+    },
+    {
+      "id": 6,
+      "name": "Fragging Penetration",
+      "description": "Inflicts arcane break on hit."
+    },
+    {
+      "id": 7,
+      "name": "Incendiary Grenade",
+      "description": "Inflicts burning on hit."
+    },
+    {
+      "id": 8,
+      "name": "Increased Potency",
+      "description": "Increased the size of frag grenade and shrapnel."
+    },
+    {
+      "id": 9,
+      "name": "Flash Bang",
+      "description": "Stun monsters on hit."
+    },
+    {
+      "id": 10,
+      "name": "Giga Grenade",
+      "description": "Throw a huge grenade with increased explosion radius and damage."
+    },
+    {
+      "id": 11,
+      "name": "Stunning Casualty",
+      "description": "Increased damage dealt to stunned targets."
+    },
+    {
+      "id": 12,
+      "name": "Blasting Wave",
+      "description": "Knock monsters back on hit dealing additional damage and stunning when hitting terrain."
+    },
+    {
+      "id": 13,
+      "name": "Smell of Burning",
+      "description": "Increases damage dealt to burning targets."
+    },
+    {
+      "id": 14,
+      "name": "Grenadier",
+      "description": "Throw frag grenades rapidly into all directions."
+    },
+    {
+      "id": 15,
+      "name": "Flames and Explosions",
+      "description": "Incendiary grenades sets the area under monsters hit on fire dealing additional fire damage causing burning."
+    }
+  ]
 }

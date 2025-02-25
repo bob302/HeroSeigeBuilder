@@ -1,8 +1,80 @@
 {
-    "Icon": "ability_4_icon.webp",
-    "Image": "output/classes\\exo\\lunar-prophet\\ability_4_icon.webp",
-    "Name": "Asteroid",
-    "Required Skill(s)": "Tsunami",
-    "Required Level": "8",
-    "Position": { "x": 2, "y": 1 }
+  "Icon": "ability_4_icon.webp",
+  "Image": "output/classes\\exo\\lunar-prophet\\ability_4_icon.webp",
+  "Name": "Asteroid",
+  "Required Skill(s)": "Tsunami",
+  "Required Level": "8",
+  "Position": { "x": 2, "y": 1 },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Astral Crush",
+      "description": "Increases the damage dealt by asteroid."
+    },
+    {
+      "id": 3,
+      "name": "Asteroid Aftershock",
+      "description": "Chance on cast to unleash an additional asteroid."
+    },
+    {
+      "id": 4,
+      "name": "Wave of Asteroids",
+      "description": "Unleash multiple asteroids in a shockwave from the point of impact."
+    },
+    {
+      "id": 5,
+      "name": "Impact Speed",
+      "description": "Increases the falling speed and maximum cast range of asteroid."
+    },
+    {
+      "id": 6,
+      "name": "World Ending Impact",
+      "description": "Increases the area of effect radius of asteroid."
+    },
+    {
+      "id": 7,
+      "name": "A Gift From Space",
+      "description": "Chance to critically hit dealing increased critical strike damage."
+    },
+    {
+      "id": 8,
+      "name": "Clairvoyant Prophet",
+      "description": "Reduces the mana cost of asteroid."
+    },
+    {
+      "id": 9,
+      "name": "Sharp Asteroids",
+      "description": "Chance to inflict frostbite on hit."
+    },
+    {
+      "id": 10,
+      "name": "Planetary Collapse",
+      "description": "Unleash a colossal asteroid causing a massive explosion unleashing a massive tsunami dealing increased damage with increased area of effect radius. Asteroid now has a cooldown."
+    },
+    {
+      "id": 11,
+      "name": "Frozen Core",
+      "description": "Chance to inflict cold break on hit."
+    },
+    {
+      "id": 12,
+      "name": "Coldshatter Impact",
+      "description": "Increases damage dealt to frostbitten targets."
+    },
+    {
+      "id": 13,
+      "name": "Perseids",
+      "description": "Chance to drop smaller asteroids at target location on hit."
+    },
+    {
+      "id": 14,
+      "name": "Geomagnetic Reversal",
+      "description": "Asteroid unleashes multiple tsunami waves in an arc towards target direction."
+    },
+    {
+      "id": 15,
+      "name": "Galactic Cataclysm",
+      "description": "Summon a continous rain of asteroids around you for a short period. Asteroid now has a cooldown."
+    }
+  ]
 }

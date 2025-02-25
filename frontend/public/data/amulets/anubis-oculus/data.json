@@ -1,26 +1,26 @@
 {
-    "Item": "Anubis Oculus",
-    "Tier": "S",
-    "Level": "81",
-    "Type": "Amulet",
-    "Size": "1x1",
-    "Rarity": "Satanic Set",
-    "Stats": [
-        {
-            "stat": "+15 to Vitality",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Replenish Life [8-15]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[35-50] to Life",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Life Increased by [1-4]%",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Anubis Oculus",
+  "Tier": "S",
+  "Level": "81",
+  "Type": "Amulet",
+  "Size": "1x1",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "+15 to Vitality",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Replenish Life [8-15]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[35-50] to Life",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Life Increased by [1-4]%",
+      "class": "stat-default"
+    }
+  ]
 }

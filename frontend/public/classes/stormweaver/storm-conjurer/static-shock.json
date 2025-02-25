@@ -1,8 +1,80 @@
 {
-    "Icon": "ability_7_icon.webp",
-    "Image": "output/classes\\stormweaver\\storm-conjurer\\ability_7_icon.webp",
-    "Name": "Static Shock",
-    "Required Skill(s)": "None",
-    "Required Level": "24",
-    "Position": { "x": 0, "y": 3 }
+  "Icon": "ability_7_icon.webp",
+  "Image": "output/classes\\stormweaver\\storm-conjurer\\ability_7_icon.webp",
+  "Name": "Static Shock",
+  "Required Skill(s)": "None",
+  "Required Level": "24",
+  "Position": { "x": 0, "y": 3 },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "High Voltage Shock",
+      "description": "Increases the damage dealt by static shock."
+    },
+    {
+      "id": 3,
+      "name": "Uprising Charge",
+      "description": "Decreases the cooldown of static shock."
+    },
+    {
+      "id": 4,
+      "name": "Self Ionization",
+      "description": "Static shock follows you with increased duration inflicting statick shock to nearby monsters."
+    },
+    {
+      "id": 5,
+      "name": "Field of Shock",
+      "description": "Increases the area of effect radius of static shock."
+    },
+    {
+      "id": 6,
+      "name": "Initial Zap",
+      "description": "Static shock shocks monsters with an initial hit dealing increased damage."
+    },
+    {
+      "id": 7,
+      "name": "Multishock",
+      "description": "Chance on cast to unleash an additional static shock."
+    },
+    {
+      "id": 8,
+      "name": "Storms Reach",
+      "description": "Increases the maximum cast range of static shock."
+    },
+    {
+      "id": 9,
+      "name": "Storm Infused Vains",
+      "description": "Increases the tick frequency of static shock."
+    },
+    {
+      "id": 10,
+      "name": "Ultimate Static Current",
+      "description": "Chance on tick to unleash a lightning surge towards the target."
+    },
+    {
+      "id": 11,
+      "name": "Lingering Electricity",
+      "description": "Increases the duration of static shock."
+    },
+    {
+      "id": 12,
+      "name": "Charged Shock",
+      "description": "Chance on cast to increase the damage dealt by static shock."
+    },
+    {
+      "id": 13,
+      "name": "Weakening Strike",
+      "description": "Inflicts lightning break on hit."
+    },
+    {
+      "id": 14,
+      "name": "Leeching Shock",
+      "description": "Chance on tick to restore a portion of your maximum mana dealing increased damage and stunning the target."
+    },
+    {
+      "id": 15,
+      "name": "Thunders Embrace",
+      "description": "Increases the area of effect radius inflicting stasis on hit."
+    }
+  ]
 }

@@ -1,43 +1,43 @@
 {
-    "Item": "Molten Steel Cataphract",
-    "Tier": "B",
-    "Level": "40",
-    "Defense": "315.62225-407",
-    "Type": "Body Armor",
-    "Size": "2x3",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[150-225]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+2 to Fire Skills",
-            "class": "stat-fire"
-        },
-        {
-            "stat": "-[8-25]% to Enemy Fire Resistance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+75% Faster Hit Recovery",
-            "class": "stat-default"
-        },
-        {
-            "stat": "All Damage Taken Reduced by 8%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+75% to Fire Resistance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+5% to Maximum Fire Resist",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Socketed (1-3)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Molten Steel Cataphract",
+  "Tier": "B",
+  "Level": "40",
+  "Defense": "315.62225-407",
+  "Type": "Body Armor",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[150-225]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+2 to Fire Skills",
+      "class": "stat-fire"
+    },
+    {
+      "stat": "-[8-25]% to Enemy Fire Resistance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+75% Faster Hit Recovery",
+      "class": "stat-default"
+    },
+    {
+      "stat": "All Damage Taken Reduced by 8%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+75% to Fire Resistance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+5% to Maximum Fire Resist",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Socketed (1-3)",
+      "class": "stat-default"
+    }
+  ]
 }

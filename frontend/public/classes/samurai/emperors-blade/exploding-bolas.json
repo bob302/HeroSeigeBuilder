@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_2_icon.webp",
-    "Image": "output/classes\\samurai\\emperors-blade\\ability_2_icon.webp",
-    "Name": "Exploding Bolas",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 2, "y": 0 }
+  "Icon": "ability_2_icon.webp",
+  "Image": "output/classes\\samurai\\emperors-blade\\ability_2_icon.webp",
+  "Name": "Exploding Bolas",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": {
+    "x": 2,
+    "y": 0
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Explosive Outburst",
+      "description": "Increases the explosion area of effect radius of exploding bolas."
+    },
+    {
+      "id": 3,
+      "name": "Improved Design",
+      "description": "Increases the damage dealt by exploding bolas."
+    },
+    {
+      "id": 4,
+      "name": "Loaded Charge",
+      "description": "Bolas are stuck on enemies for a longer period of time, dealing damage to them during this period causes the explosion to gain increased damage & size up to 5 times."
+    },
+    {
+      "id": 5,
+      "name": "Close Impact",
+      "description": "Inflicts arcane break on hit."
+    },
+    {
+      "id": 6,
+      "name": "Fastbol",
+      "description": "Increases projectile speed."
+    },
+    {
+      "id": 7,
+      "name": "Multibolas",
+      "description": "Throw multiple bolas in an arc."
+    },
+    {
+      "id": 8,
+      "name": "Low Blow",
+      "description": "Bolas have a chance on hit to stun the enemy."
+    },
+    {
+      "id": 9,
+      "name": "Another One",
+      "description": "Chance for bolas to explode an additional time."
+    },
+    {
+      "id": 10,
+      "name": "Bola'd Stasis",
+      "description": "Bola now grabs all enemies on its path and pulls nearby enemies towards it when hitting terrain."
+    },
+    {
+      "id": 11,
+      "name": "Tough Fall",
+      "description": "Increases damage dealt to stunned targets."
+    },
+    {
+      "id": 12,
+      "name": "Speedslinger",
+      "description": "Increases cast rate when using exploding bolas."
+    },
+    {
+      "id": 13,
+      "name": "Longer Ropes",
+      "description": "Bolas now pierce allowing them to attach to multiple targets dealing increased damage."
+    },
+    {
+      "id": 14,
+      "name": "Clusterducks",
+      "description": "Throw multiple explosive rubberducks that bounce towards a nearby target before exploding."
+    },
+    {
+      "id": 15,
+      "name": "Magnetic String",
+      "description": "Monsters caught by bolas are pulled towards the first target."
+    }
+  ]
 }

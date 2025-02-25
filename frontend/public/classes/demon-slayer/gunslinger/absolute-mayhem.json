@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_9_icon.webp",
-    "Image": "output/classes\\demonslayer\\gunslinger\\ability_9_icon.webp",
-    "Name": "Absolute Mayhem",
-    "Required Skill(s)": "Bullet Hell",
-    "Required Level": "30",
-    "Position": { "x": 1, "y": 4 }
+  "Icon": "ability_9_icon.webp",
+  "Image": "output/classes\\demonslayer\\gunslinger\\ability_9_icon.webp",
+  "Name": "Absolute Mayhem",
+  "Required Skill(s)": "Bullet Hell",
+  "Required Level": "30",
+  "Position": {
+    "x": 1,
+    "y": 4
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Mayhem Up",
+      "description": "Increases the amount of bullets fired with absolute mayhem."
+    },
+    {
+      "id": 3,
+      "name": "Absolute Carnage",
+      "description": "Increases damage dealt by absolute mayhem."
+    },
+    {
+      "id": 4,
+      "name": "Impact Shrapnel",
+      "description": "Bullets now break into fragments traveling in an arc behind the target dealing area of effect damage."
+    },
+    {
+      "id": 5,
+      "name": "Colossal Barrel",
+      "description": "Increases the projectile speed of absolute mayhem bullets."
+    },
+    {
+      "id": 6,
+      "name": "Stocked Capacity",
+      "description": "Decreases the cooldown of absolute mayhem."
+    },
+    {
+      "id": 7,
+      "name": "Hypothermic Rounds",
+      "description": "Chance to inflict freeze on hit."
+    },
+    {
+      "id": 8,
+      "name": "Bonehit",
+      "description": "Chance to knock monsters back dealing increased damage."
+    },
+    {
+      "id": 9,
+      "name": "Explosive Empowered Rounds",
+      "description": "Chance for bullets to explode and fragment on hit unleashing shrapnel around the target."
+    },
+    {
+      "id": 10,
+      "name": "Maniac Mayhem",
+      "description": "The Demonslayer changes his weapon into a demonic minigun which uncontrollably fires bullets for a short duration before breaking."
+    },
+    {
+      "id": 11,
+      "name": "Fear the Gun",
+      "description": "Increases critical strike damage dealt by absolute mayhem."
+    },
+    {
+      "id": 12,
+      "name": "Bicep Curls",
+      "description": "Decreases movement diminish when using absolute mayhem."
+    },
+    {
+      "id": 13,
+      "name": "Frostbiting Bullets",
+      "description": "Increases damage to freezing targets."
+    },
+    {
+      "id": 14,
+      "name": "Line of Fire",
+      "description": "Fire additional trail of bullets in an arc."
+    },
+    {
+      "id": 15,
+      "name": "Explosion Vacuum",
+      "description": "Fire a single bullet which vacuums all nearby monsters and unleashes a big explosion."
+    }
+  ]
 }

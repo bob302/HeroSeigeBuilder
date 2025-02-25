@@ -1,50 +1,50 @@
 {
-    "Item": "Molten Hammer",
-    "Tier": "S",
-    "Level": "86",
-    "Damage": "118.00100-137",
-    "APS": "2.101.95-2.25",
-    "DPS": "251.00194-308",
-    "Type": "Mace",
-    "TwoHanded": false,
-    "Size": "2x2",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "5% Chance when Striking [Fire Enchant] Level 17",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "+[210-280]% Enhanced Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[30-50]% Increased Attack Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[8-15]% Increased Attack Rating",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[1340-1420] to Additive Fire Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Fire Skill Damage increased by [12-25]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+15% Fire Damage Absorbed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+75% to Fire Resistance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Socketed (1-3)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Molten Hammer",
+  "Tier": "S",
+  "Level": "86",
+  "Damage": "118.00100-137",
+  "APS": "2.101.95-2.25",
+  "DPS": "251.00194-308",
+  "Type": "Mace",
+  "TwoHanded": false,
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "5% Chance when Striking [Fire Enchant] Level 17",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+[210-280]% Enhanced Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[30-50]% Increased Attack Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[8-15]% Increased Attack Rating",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[1340-1420] to Additive Fire Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Fire Skill Damage increased by [12-25]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+15% Fire Damage Absorbed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+75% to Fire Resistance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Socketed (1-3)",
+      "class": "stat-default"
+    }
+  ]
 }

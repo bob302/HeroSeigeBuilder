@@ -1,8 +1,80 @@
 {
-    "Icon": "ability_9_icon.webp",
-    "Image": "output/classes\\exo\\lunar-prophet\\ability_9_icon.webp",
-    "Name": "Black Hole",
-    "Required Skill(s)": "Lunar Orbit",
-    "Required Level": "30",
-    "Position": { "x": 1, "y": 4 }
+  "Icon": "ability_9_icon.webp",
+  "Image": "output/classes\\exo\\lunar-prophet\\ability_9_icon.webp",
+  "Name": "Black Hole",
+  "Required Skill(s)": "Lunar Orbit",
+  "Required Level": "30",
+  "Position": { "x": 1, "y": 4 },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Event Horizon",
+      "description": "Increases the damage dealt by black hole."
+    },
+    {
+      "id": 3,
+      "name": "Super Massive",
+      "description": "Increases the area of effect radius of black hole."
+    },
+    {
+      "id": 4,
+      "name": "Galaxy Devouring Growth",
+      "description": "Chance to frequently grow larger over time gaining increased damage. Black hole duration is decreased."
+    },
+    {
+      "id": 5,
+      "name": "Time = Space",
+      "description": "Increases the tick frequency of black hole."
+    },
+    {
+      "id": 6,
+      "name": "Mass Density",
+      "description": "Increases the duration of black hole."
+    },
+    {
+      "id": 7,
+      "name": "Interstellar Radiation",
+      "description": "Chance to unleash cosmic flares from the center of the black hole towards targets on hit dealing a portion of its damage."
+    },
+    {
+      "id": 8,
+      "name": "Watermelting Cold",
+      "description": "Chance to inflict frostbite on hit."
+    },
+    {
+      "id": 9,
+      "name": "Time Bender",
+      "description": "Reduces the cooldown of black hole."
+    },
+    {
+      "id": 10,
+      "name": "Empowered Singularity",
+      "description": "Black hole rapidly pulls monsters towards its singularity on hit before expiring. Black hole no longer has a cooldown."
+    },
+    {
+      "id": 11,
+      "name": "Time Traveler",
+      "description": "Gain increased movement speed and phasing for a short duration when inside the black hole."
+    },
+    {
+      "id": 12,
+      "name": "Subzero Frequency",
+      "description": "Increases damage dealt to frostbitten targets."
+    },
+    {
+      "id": 13,
+      "name": "Singularity",
+      "description": "Chance to rapidly pull monsters towards the singularity on hit dealing additional damage."
+    },
+    {
+      "id": 14,
+      "name": "Hidden in Plain Sight",
+      "description": "Summon multiple smaller orbiting black holes dealing a portion of the damage."
+    },
+    {
+      "id": 15,
+      "name": "Supermassive Black Hole",
+      "description": "Summon a supermassive black hole dealing a portion of the damage frequently draining a portion of your maximum mana. Running out of mana causes the black hole to expire."
+    }
+  ]
 }

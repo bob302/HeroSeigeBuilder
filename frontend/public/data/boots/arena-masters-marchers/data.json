@@ -1,39 +1,39 @@
 {
-    "Item": "Arena Master's Marchers",
-    "Tier": "S",
-    "Level": "89",
-    "Defense": "123.0099-148",
-    "Type": "Boots",
-    "Size": "2x2",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[90-130]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[1-2] to Physical Skills",
-            "class": "stat-physical"
-        },
-        {
-            "stat": "+55% Increased Movement Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[20-30]% Increased Attack Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[5-10]% Chance for a Crushing Blow",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[135-150] to Additive Physical Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+15 to Dexterity",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Arena Master's Marchers",
+  "Tier": "S",
+  "Level": "89",
+  "Defense": "123.0099-148",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[90-130]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[1-2] to Physical Skills",
+      "class": "stat-physical"
+    },
+    {
+      "stat": "+55% Increased Movement Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[20-30]% Increased Attack Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[5-10]% Chance for a Crushing Blow",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[135-150] to Additive Physical Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+15 to Dexterity",
+      "class": "stat-default"
+    }
+  ]
 }

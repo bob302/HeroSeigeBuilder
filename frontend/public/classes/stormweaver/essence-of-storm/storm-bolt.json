@@ -1,8 +1,80 @@
 {
-    "Icon": "ability_2_icon.webp",
-    "Image": "output/classes\\stormweaver\\essence-of-storm\\ability_2_icon.webp",
-    "Name": "Storm Bolt",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 2, "y": 0 }
+  "Icon": "ability_2_icon.webp",
+  "Image": "output/classes\\stormweaver\\essence-of-storm\\ability_2_icon.webp",
+  "Name": "Storm Bolt",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": { "x": 2, "y": 0 },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Bolts of Devastation",
+      "description": "Increases the damage dealt by storm bolt."
+    },
+    {
+      "id": 3,
+      "name": "Beaming Cast",
+      "description": "Increases the projectile speed of storm bolt."
+    },
+    {
+      "id": 4,
+      "name": "Pulsating Bolt",
+      "description": "Unleash a piercing and pulsating storm bolt with increased area of effect radius and damage."
+    },
+    {
+      "id": 5,
+      "name": "Expanding Storm",
+      "description": "Increases the projectile size of storm bolt."
+    },
+    {
+      "id": 6,
+      "name": "Static Explosion",
+      "description": "Increases the area of effect radius of storm bolt."
+    },
+    {
+      "id": 7,
+      "name": "Tiny Storms",
+      "description": "Chance on cast to unleash multiple smaller storm bolts in a barrage."
+    },
+    {
+      "id": 8,
+      "name": "Shocked Steps",
+      "description": "Decreases movement diminish when using storm bolt."
+    },
+    {
+      "id": 9,
+      "name": "Quantity of Power",
+      "description": "Chance on cast to fire an additional storm bolt."
+    },
+    {
+      "id": 10,
+      "name": "Magnetize",
+      "description": "Pull all nearby monsters towards the target on hit causing a large electromagnetic explosion slowing and dealing increased damage."
+    },
+    {
+      "id": 11,
+      "name": "Unleash Discharge",
+      "description": "Chance to pull nearby monsters towards the target on hit dealing increased damage inflicting the target with lightning break."
+    },
+    {
+      "id": 12,
+      "name": "Storm Breeds Storm",
+      "description": "Chance to summon a small storm cloud for a short duration at target location on hit."
+    },
+    {
+      "id": 13,
+      "name": "Bouncing Bolts",
+      "description": "Storm bolts can bounce off of terrain multiple times refreshing its lifetime."
+    },
+    {
+      "id": 14,
+      "name": "Bouncing Charge",
+      "description": "Unleash a piercing storm bolt bouncing between nearby monsters on hit increasing the damage dealt with each bounce."
+    },
+    {
+      "id": 15,
+      "name": "Storm Claw",
+      "description": "Chance to unleash multiple surges of lightning in an arc towards target on hit."
+    }
+  ]
 }

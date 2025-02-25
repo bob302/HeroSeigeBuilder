@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_7_icon.webp",
-    "Image": "output/classes\\whitemage\\zealot\\ability_7_icon.webp",
-    "Name": "Satans Mark",
-    "Required Skill(s)": "Restless Spirits",
-    "Required Level": "24",
-    "Position": { "x": 1, "y": 3 }
+  "Icon": "ability_7_icon.webp",
+  "Image": "output/classes\\whitemage\\zealot\\ability_7_icon.webp",
+  "Name": "Satans Mark",
+  "Required Skill(s)": "Restless Spirits",
+  "Required Level": "24",
+  "Position": {
+    "x": 1,
+    "y": 3
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Heil Satan",
+      "description": "Increases the damage dealt by satan's mark."
+    },
+    {
+      "id": 3,
+      "name": "Long Lasting Darkness",
+      "description": "Increases the duration of satan's mark."
+    },
+    {
+      "id": 4,
+      "name": "The Black Mass",
+      "description": "Satan's mark unleashes chains of unholy lightning when struck by black mass executing low life monsters on hit."
+    },
+    {
+      "id": 5,
+      "name": "Mark of the Beast",
+      "description": "Chance on cast to spawn crows circling around the target location for a short duration dealing additional damage."
+    },
+    {
+      "id": 6,
+      "name": "Grasp of Lucifer",
+      "description": "Increases the area of effect radius of satan's mark."
+    },
+    {
+      "id": 7,
+      "name": "Satanic Transe",
+      "description": "Increases the amount of stacks applied to targets."
+    },
+    {
+      "id": 8,
+      "name": "Blood Ritual",
+      "description": "Increases the blood ripple area of effect radius of satan's mark."
+    },
+    {
+      "id": 9,
+      "name": "The Black Bible",
+      "description": "Chance to apply satan's mark to nearby monsters on hit."
+    },
+    {
+      "id": 10,
+      "name": "Soul Combustion",
+      "description": "Satan's mark causes target souls to explode after a short delay dealing increased damage."
+    },
+    {
+      "id": 11,
+      "name": "Messenger of Satan",
+      "description": "Decreases the cooldown of satan's mark."
+    },
+    {
+      "id": 12,
+      "name": "Reach of Darkness",
+      "description": "Increases the maximum cast range of satan's mark."
+    },
+    {
+      "id": 13,
+      "name": "False Prophecy",
+      "description": "Chance to inflict burning on hit."
+    },
+    {
+      "id": 14,
+      "name": "The Rapture",
+      "description": "Satan's mark is applied to monsters around you on a large radius with increased stacks. Satan's mark now has an increased cooldown."
+    },
+    {
+      "id": 15,
+      "name": "The Devil In I",
+      "description": "Stuns monsters affected by satan's mark inflicting arcane break."
+    }
+  ]
 }

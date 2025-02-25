@@ -1,43 +1,43 @@
 {
-    "Item": "Deep Chilled Marchers",
-    "Tier": "S",
-    "Level": "86",
-    "Defense": "116.00104-128",
-    "Type": "Boots",
-    "Size": "2x2",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[30-60]% Enhanced Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[70-100]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[1-2] to Cold Skills",
-            "class": "stat-cold"
-        },
-        {
-            "stat": "+[25-55]% Increased Movement Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+15 to Dexterity",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Cold Skill Damage increased by [15-20]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+50% to Cold Resistance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[3-5]% to Maximum Cold Resist",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Deep Chilled Marchers",
+  "Tier": "S",
+  "Level": "86",
+  "Defense": "116.00104-128",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[30-60]% Enhanced Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[70-100]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[1-2] to Cold Skills",
+      "class": "stat-cold"
+    },
+    {
+      "stat": "+[25-55]% Increased Movement Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+15 to Dexterity",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Cold Skill Damage increased by [15-20]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+50% to Cold Resistance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[3-5]% to Maximum Cold Resist",
+      "class": "stat-default"
+    }
+  ]
 }

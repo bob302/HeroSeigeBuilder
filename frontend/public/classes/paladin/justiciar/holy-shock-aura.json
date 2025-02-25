@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_5_icon.webp",
-    "Image": "output/classes\\paladin\\justiciar\\ability_5_icon.webp",
-    "Name": "Holy Shock Aura",
-    "Required Skill(s)": "None",
-    "Required Level": "16",
-    "Position": { "x": 1, "y": 2 }
+  "Icon": "ability_5_icon.webp",
+  "Image": "output/classes\\paladin\\justiciar\\ability_5_icon.webp",
+  "Name": "Holy Shock Aura",
+  "Required Skill(s)": "None",
+  "Required Level": "16",
+  "Position": {
+    "x": 1,
+    "y": 2
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Adjusted Fuses",
+      "description": "Chance to trigger a lightning explosion dealing additional damage on hit."
+    },
+    {
+      "id": 3,
+      "name": "Larger Grid",
+      "description": "Increases the area of effect radius of holy shock aura."
+    },
+    {
+      "id": 4,
+      "name": "Surging Wrath",
+      "description": "Increases the hit frequency and damage dealt by holy shock aura."
+    },
+    {
+      "id": 5,
+      "name": "Double the Hz",
+      "description": "Increases the hit frequency of holy shock aura."
+    },
+    {
+      "id": 6,
+      "name": "Voltage Increase",
+      "description": "Increases damage dealt by holy shock aura."
+    },
+    {
+      "id": 7,
+      "name": "Rupturing Lightning",
+      "description": "Chance to inflict lightning break on hit."
+    },
+    {
+      "id": 8,
+      "name": "Concentrated Aura",
+      "description": "Holy shock aura now deals increased damage in a cone in front of you instead."
+    },
+    {
+      "id": 9,
+      "name": "Charge Mark",
+      "description": "Chance to inflict stasis on hit."
+    },
+    {
+      "id": 10,
+      "name": "Gathering Storm",
+      "description": "Stack up static energy from monsters inside the aura radius and release a massive storm of lightning novas dealing damage on an increased radius."
+    },
+    {
+      "id": 11,
+      "name": "Conduit",
+      "description": "Increases damage dealt to bosses."
+    },
+    {
+      "id": 12,
+      "name": "Friendly Electron Flow",
+      "description": "Gain a stacking buff increasing lightning damage on hit."
+    },
+    {
+      "id": 13,
+      "name": "Defensive Charge",
+      "description": "Chance to increase your defense and lightning resistance on hit."
+    },
+    {
+      "id": 14,
+      "name": "Lightning Tether",
+      "description": "Holy shock aura no longer deals periodical damage. Instead creates a tether of lightning between you and all monsters inside its radius dealing constant damage."
+    },
+    {
+      "id": 15,
+      "name": "Chain Thunder",
+      "description": "Unleash chain lightning on hit dealing increased damage."
+    }
+  ]
 }

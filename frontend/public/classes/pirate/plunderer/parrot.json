@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_4_icon.webp",
-    "Image": "output/classes\\pirate\\plunderer\\ability_4_icon.webp",
-    "Name": "Parrot",
-    "Required Skill(s)": "None",
-    "Required Level": "8",
-    "Position": { "x": 2, "y": 1 }
+  "Icon": "ability_4_icon.webp",
+  "Image": "output/classes\\pirate\\plunderer\\ability_4_icon.webp",
+  "Name": "Parrot",
+  "Required Skill(s)": "None",
+  "Required Level": "8",
+  "Position": {
+    "x": 2,
+    "y": 1
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Peck Peck",
+      "description": "Increases parrot attack speed."
+    },
+    {
+      "id": 3,
+      "name": "Birdstrike",
+      "description": "Increases parrot movement speed."
+    },
+    {
+      "id": 4,
+      "name": "Screech",
+      "description": "Parrots now send a traveling screeching wave on attack knocking monsters back dealing increased damage."
+    },
+    {
+      "id": 5,
+      "name": "Flock Gathering",
+      "description": "Increases the maximum amount of parrots."
+    },
+    {
+      "id": 6,
+      "name": "GM Crops",
+      "description": "Increases the life and damage dealt by parrots."
+    },
+    {
+      "id": 7,
+      "name": "Birdflu Vax",
+      "description": "Increases the resistances of parrots."
+    },
+    {
+      "id": 8,
+      "name": "Target Practise",
+      "description": "Increases the damage dealt by parrots against bosses."
+    },
+    {
+      "id": 9,
+      "name": "Pirate's Best Friend",
+      "description": "Chance on hit to reduce target's damage dealt."
+    },
+    {
+      "id": 10,
+      "name": "Pecking Order",
+      "description": "Parrots now unleash a frozen nova every five attacks with increased radius and damage."
+    },
+    {
+      "id": 11,
+      "name": "Upper Wing",
+      "description": "Increases damage dealt to stunned targets."
+    },
+    {
+      "id": 12,
+      "name": "Beak of Steel",
+      "description": "Increases the damage dealt by parrot."
+    },
+    {
+      "id": 13,
+      "name": "Killing Command",
+      "description": "Parrots have a chance on hit to enrage, significantly increasing their attack speed and damage for a short duration before dying."
+    },
+    {
+      "id": 14,
+      "name": "Pecking Pack",
+      "description": "Summon all parrots with one cast empowering the parrots with increased attack speed. Parrot now has a cooldown."
+    },
+    {
+      "id": 15,
+      "name": "Captain's Parrot",
+      "description": "Now only summon one big parrot scaling with the amount of total parrots attacking with increased radius and damage."
+    }
+  ]
 }

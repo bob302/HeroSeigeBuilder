@@ -1,31 +1,31 @@
 {
-    "Item": "Venom's Talons",
-    "Tier": "S",
-    "Level": "78",
-    "Defense": "45.4034-57",
-    "Type": "Gloves",
-    "Size": "2x2",
-    "Rarity": "Satanic Set",
-    "Stats": [
-        {
-            "stat": "+[30-50]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[2-4] to [Poison Breath]",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "+8 to Energy",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Poison Skill Damage increased by [10-25]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+40% to Poison Resistance",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Venom's Talons",
+  "Tier": "S",
+  "Level": "78",
+  "Defense": "45.4034-57",
+  "Type": "Gloves",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "+[30-50]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[2-4] to [Poison Breath]",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+8 to Energy",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Poison Skill Damage increased by [10-25]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+40% to Poison Resistance",
+      "class": "stat-default"
+    }
+  ]
 }

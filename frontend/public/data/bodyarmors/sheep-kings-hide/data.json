@@ -1,43 +1,43 @@
 {
-    "Item": "Sheep King's Hide",
-    "Tier": "S",
-    "Level": "74",
-    "Defense": "924.75830-1020",
-    "Type": "Body Armor",
-    "Size": "2x3",
-    "Rarity": "Satanic Set",
-    "Stats": [
-        {
-            "stat": "+[220-250]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+1 to All Skills",
-            "class": "stat-allskills"
-        },
-        {
-            "stat": "Physical Damage Taken Reduced by 10%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+125 to Life (Based on Level)",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+75% Enhanced Damage (Based on Level)",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[25-30]% to Arcane Resistance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[1-5]% to Maximum Arcane Resist",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Socketed (1-4)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Sheep King's Hide",
+  "Tier": "S",
+  "Level": "74",
+  "Defense": "924.75830-1020",
+  "Type": "Body Armor",
+  "Size": "2x3",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "+[220-250]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+1 to All Skills",
+      "class": "stat-allskills"
+    },
+    {
+      "stat": "Physical Damage Taken Reduced by 10%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+125 to Life (Based on Level)",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+75% Enhanced Damage (Based on Level)",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[25-30]% to Arcane Resistance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[1-5]% to Maximum Arcane Resist",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Socketed (1-4)",
+      "class": "stat-default"
+    }
+  ]
 }

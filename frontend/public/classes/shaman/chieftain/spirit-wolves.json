@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_4_icon.webp",
-    "Image": "output/classes\\shaman\\chieftain\\ability_4_icon.webp",
-    "Name": "Spirit Wolves",
-    "Required Skill(s)": "None",
-    "Required Level": "8",
-    "Position": { "x": 2, "y": 1 }
+  "Icon": "ability_4_icon.webp",
+  "Image": "output/classes\\shaman\\chieftain\\ability_4_icon.webp",
+  "Name": "Spirit Wolves",
+  "Required Skill(s)": "None",
+  "Required Level": "8",
+  "Position": {
+    "x": 2,
+    "y": 1
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Sharpened Teeth",
+      "description": "Increases damage dealt by spirit wolves."
+    },
+    {
+      "id": 3,
+      "name": "Wolf Pack",
+      "description": "Increases the maximum amount of spirit wolves."
+    },
+    {
+      "id": 4,
+      "name": "Spiritual Rabies",
+      "description": "Chance on attack to become enraged increasing movement speed and damage dealt for a short period."
+    },
+    {
+      "id": 5,
+      "name": "Astral Fur",
+      "description": "Increases the damage reduction of spirit wolves."
+    },
+    {
+      "id": 6,
+      "name": "Cleave Slash",
+      "description": "Increases the area of effect radius and splash damage dealt to monsters around the target."
+    },
+    {
+      "id": 7,
+      "name": "Wolf's Claw",
+      "description": "Chance to inflict bleeding on hit."
+    },
+    {
+      "id": 8,
+      "name": "Ravaging Strike",
+      "description": "Bleeding targets emit damage taken to nearby enemies."
+    },
+    {
+      "id": 9,
+      "name": "Pack Leader",
+      "description": "Increases the attack speed of spirit wolves."
+    },
+    {
+      "id": 10,
+      "name": "Howling Pack",
+      "description": "Increases spirit wolves movement speed and maximum summon amount."
+    },
+    {
+      "id": 11,
+      "name": "Pummeling Rage",
+      "description": "Chance to knock monsters back dealing increased damage on hit."
+    },
+    {
+      "id": 12,
+      "name": "Rupturing Slice",
+      "description": "Chance to deal a critical strike on attack."
+    },
+    {
+      "id": 13,
+      "name": "Wounding Trail",
+      "description": "Increases damage dealt to bleeding targets."
+    },
+    {
+      "id": 14,
+      "name": "Alpha",
+      "description": "Summon a single lone wolf scaling its damage and life according to the maximum amount of wolves."
+    },
+    {
+      "id": 15,
+      "name": "Lightning Fangs",
+      "description": "Chance to unleash surges of chain lightning on hit dealing increased damage."
+    }
+  ]
 }

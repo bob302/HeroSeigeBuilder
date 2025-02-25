@@ -1,50 +1,50 @@
 {
-    "Item": "Sacred Whip",
-    "Tier": "A",
-    "Level": "65",
-    "Damage": "136.40122-152",
-    "APS": "2.272.27",
-    "DPS": "310.50277-344",
-    "Type": "Mace",
-    "TwoHanded": false,
-    "Size": "2x2",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[280-320]% Enhanced Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+30% Increased Attack Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+50% Chance for a Crushing Blow",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[675-785] to Additive Lightning Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "-25% to Enemy Lightning Resistance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+10% to All Resistances",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[5-10]% Extra Gold Dropped From Kills",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[20-35]% Increased Magic Find",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Socketed (0-4)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Sacred Whip",
+  "Tier": "A",
+  "Level": "65",
+  "Damage": "136.40122-152",
+  "APS": "2.272.27",
+  "DPS": "310.50277-344",
+  "Type": "Mace",
+  "TwoHanded": false,
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[280-320]% Enhanced Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+30% Increased Attack Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+50% Chance for a Crushing Blow",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[675-785] to Additive Lightning Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "-25% to Enemy Lightning Resistance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+10% to All Resistances",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[5-10]% Extra Gold Dropped From Kills",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[20-35]% Increased Magic Find",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Socketed (0-4)",
+      "class": "stat-default"
+    }
+  ]
 }

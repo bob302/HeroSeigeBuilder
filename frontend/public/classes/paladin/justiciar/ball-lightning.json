@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_6_icon.webp",
-    "Image": "output/classes\\paladin\\justiciar\\ability_6_icon.webp",
-    "Name": "Ball Lightning",
-    "Required Skill(s)": "None",
-    "Required Level": "16",
-    "Position": { "x": 2, "y": 2 }
+  "Icon": "ability_6_icon.webp",
+  "Image": "output/classes\\paladin\\justiciar\\ability_6_icon.webp",
+  "Name": "Ball Lightning",
+  "Required Skill(s)": "None",
+  "Required Level": "16",
+  "Position": {
+    "x": 2,
+    "y": 2
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Outbursting Charge",
+      "description": "Increases the damage dealt by ball lightning."
+    },
+    {
+      "id": 3,
+      "name": "Thicker Coil",
+      "description": "Gain increased lightning resistance when using ball lightning."
+    },
+    {
+      "id": 4,
+      "name": "Hovering Bolt",
+      "description": "Become an orb of lightning and hover to the target location unleashing chain lightning on nearby monsters."
+    },
+    {
+      "id": 5,
+      "name": "Flash from the Sky",
+      "description": "Increases the critical strike damage when using ball lightning."
+    },
+    {
+      "id": 6,
+      "name": "Overcharge",
+      "description": "Chance to critically hit when using ball lightning."
+    },
+    {
+      "id": 7,
+      "name": "Rapid Retreat",
+      "description": "When landing gain increased movement speed and defense for a short period."
+    },
+    {
+      "id": 8,
+      "name": "Charged Bolts",
+      "description": "When landing additionally unleash multiple charged bolts bouncing off of terrain dealing additional damage. "
+    },
+    {
+      "id": 9,
+      "name": "Phantom Ball",
+      "description": "Chance when casting to summon phantom illusions jumping into nearby monsters dealing additional damage."
+    },
+    {
+      "id": 10,
+      "name": "Charging Ball",
+      "description": "Unleash a charged storm of lightning on nearby monsters when landing dealing increased damage with increased area of effect radius. Ball lightning now has a cooldown."
+    },
+    {
+      "id": 11,
+      "name": "Within the Storm",
+      "description": "Chance when landing to render you immune to all damage for a short period."
+    },
+    {
+      "id": 12,
+      "name": "Efficient Vains",
+      "description": "Decreases the mana cost of ball lightning."
+    },
+    {
+      "id": 13,
+      "name": "Angelic Interference",
+      "description": "When below 25% life ball lightning gains increased speed, damage, area of effect and knocks monsters into the air."
+    },
+    {
+      "id": 14,
+      "name": "Pulsating Thunderball",
+      "description": "When landing you instead bounce multiple times releasing electrified pulses with increased damage and area of effect radius when landing."
+    },
+    {
+      "id": 15,
+      "name": "Righteous Leap",
+      "description": "When landing taunt nearby monsters and increases your damage return for a short period."
+    }
+  ]
 }

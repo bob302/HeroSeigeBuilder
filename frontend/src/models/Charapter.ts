@@ -3,102 +3,149 @@ import type { EquipmentSubtype } from "./Equipment";
 import SkillTree from "./SkillTree";
 
 export default class Charapter {
-  public name: string
-  public image: string
-  public description: string
-  public skillTrees: SkillTree[] = []
+  public name: string;
+  public image: string;
+  public description: string;
+  public skillTrees: SkillTree[] = [];
   public restrictions: Set<EquipmentSubtype> = new Set();
 
   constructor(name: string, description: string, image: string) {
     this.name = name;
-    this.description = description
-    this.image = image
+    this.description = description;
+    this.image = image;
   }
 
   addSkillTree(skillTree: SkillTree) {
-    this.skillTrees.push(skillTree)
+    this.skillTrees.push(skillTree);
   }
 
   reset() {
-    this.skillTrees.forEach(tree => {
-      tree.reset()
+    this.skillTrees.forEach((tree) => {
+      tree.reset();
     });
   }
 
   setWeaponRestrictions(restrictions: Set<EquipmentSubtype>) {
-    this.restrictions = restrictions
+    this.restrictions = restrictions;
   }
 
   public canEquip(subtype: EquipmentSubtype): boolean {
     return this.restrictions.has(subtype);
   }
-
   /**
-   * Serializes the Charapter instance into a plain object.
+   * Сериализует экземпляр Charapter в плоский объект.
+   * Сохраняется динамическое состояние каждого дерева навыков.
    */
   serialize(): any {
     return {
       name: this.name,
       image: this.image,
       description: this.description,
-      // Serialize each SkillTree
-      skillTrees: this.skillTrees.map(tree => tree.serialize()),
-      // Serialize the restrictions as an array
-      restrictions: Array.from(this.restrictions)
+      // Сохраняем динамическое состояние каждого SkillTree
+      skillTrees: this.skillTrees.map((tree) => tree.serialize()),
+      // Сериализуем ограничения в виде массива
+      restrictions: Array.from(this.restrictions),
     };
   }
 
   /**
-   * Deserializes a plain object into a Charapter instance.
-   * Assumes that SkillTree.deserialize() is available.
+   * Асинхронно загружает Charapter из ассетов и применяет сохранённое динамическое состояние,
+   * если оно было передано.
+   *
+   * @param className Имя класса (например, "amazon")
+   * @param savedState (Необязательно) Данные, сохранённые ранее через serialize.
+   * @returns Promise<Charapter | undefined> Загруженный Charapter с восстановленным динамическим состоянием.
    */
-  static deserialize(data: any): Charapter {
-    const char = new Charapter(data.name, data.description, data.image);
-    // Rebuild the skill trees from their serialized form
-    char.skillTrees = data.skillTrees.map((treeData: any) => SkillTree.deserialize(treeData));
-    // Reconstruct the restrictions set
-    char.restrictions = new Set<EquipmentSubtype>(data.restrictions);
-    return char;
-  }
-
-  static async parseCharapter(className: string): Promise<Charapter | undefined> {
+  static async loadWithState(
+    className: string,
+    savedState?: any,
+  ): Promise<Charapter | null> {
+    className = ColorUtils.unformatString(className);
     const imagePath = `/classes/${className}/icon.webp`;
     const jsonPath = `/classes/class-names.json`;
-    const formattedClassName = ColorUtils.formatString(className)
+    const formattedClassName = ColorUtils.formatString(className);
 
     try {
-        const response = await fetch(jsonPath);
-        if (!response.ok) {
-            throw new Error(`Не удалось загрузить JSON: ${response.statusText}`);
+      const response = await fetch(jsonPath);
+      if (!response.ok) {
+        throw new Error(`Не удалось загрузить JSON: ${response.statusText}`);
+      }
+      const classData: Record<string, string[]> = await response.json();
+
+      const treesNames = classData[className];
+
+      if (!treesNames) {
+        console.warn(`Класс ${className} не найден.`);
+        return null;
+      }
+
+      const char = new Charapter(formattedClassName, "", imagePath);
+
+      // Для каждого дерева навыков загружаем статическую структуру с применением сохранённого состояния (если оно есть)
+      const treePromises = treesNames.map(async (treeName) => {
+        let treeSavedState = undefined;
+        if (savedState && Array.isArray(savedState.skillTrees)) {
+          treeSavedState = savedState.skillTrees.find(
+            (t: any) => t.name === ColorUtils.formatString(treeName),
+          );
         }
 
-        const classData: Record<string, string[]> = await response.json();
+        const skillTree = await SkillTree.loadWithState(
+          className,
+          treeName,
+          treeSavedState,
+        );
+        char.addSkillTree(skillTree);
+      });
 
-        const treesNames = classData[className];
+      await Promise.all(treePromises);
 
-        if (!treesNames) {
-            console.warn(`Класс ${className} не найден.`);
-            return undefined;
-        }
+      if (savedState && Array.isArray(savedState.restrictions)) {
+        char.restrictions = new Set(savedState.restrictions);
+      }
 
-        const char = new Charapter(formattedClassName, "", imagePath);
-
-        const treePromises = treesNames.map(async (treeName) => {
-            const skillTree = await SkillTree.parseSkillTree(className, treeName);
-            char.addSkillTree(skillTree);
-        });
-
-        await Promise.all(treePromises);
-
-        return char;
+      return char;
     } catch (error) {
-        console.error(`Ошибка при загрузке ${formattedClassName}:`, error);
-        return undefined;
+      console.error(`Ошибка при загрузке ${formattedClassName}:`, error);
+      return null;
     }
-}
+  }
 
+  static async parseCharapter(
+    className: string,
+  ): Promise<Charapter | undefined> {
+    const imagePath = `/classes/${className}/icon.webp`;
+    const jsonPath = `/classes/class-names.json`;
+    const formattedClassName = ColorUtils.formatString(className);
 
+    try {
+      const response = await fetch(jsonPath);
+      if (!response.ok) {
+        throw new Error(`Не удалось загрузить JSON: ${response.statusText}`);
+      }
 
+      const classData: Record<string, string[]> = await response.json();
 
-  
+      const treesNames = classData[className];
+
+      if (!treesNames) {
+        console.warn(`Класс ${className} не найден.`);
+        return undefined;
+      }
+
+      const char = new Charapter(formattedClassName, "", imagePath);
+
+      const treePromises = treesNames.map(async (treeName) => {
+        const skillTree = await SkillTree.parseSkillTree(className, treeName);
+        char.addSkillTree(skillTree);
+      });
+
+      await Promise.all(treePromises);
+
+      return char;
+    } catch (error) {
+      console.error(`Ошибка при загрузке ${formattedClassName}:`, error);
+      return undefined;
+    }
+  }
 }

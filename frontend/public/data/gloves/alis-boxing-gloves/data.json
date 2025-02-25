@@ -1,31 +1,31 @@
 {
-    "Item": "Ali's Boxing Gloves",
-    "Tier": "SS",
-    "Level": "98",
-    "Defense": "32.0026-38",
-    "Type": "Gloves",
-    "Size": "2x2",
-    "Rarity": "Heroic",
-    "Stats": [
-        {
-            "stat": "+1 to All Skills",
-            "class": "stat-allskills"
-        },
-        {
-            "stat": "[Cornered] Level [1-5]",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+30% Increased Movement Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[25-50]% Increased Attack Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Extra Damage to Stunned Monsters [25-50]%",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Ali's Boxing Gloves",
+  "Tier": "SS",
+  "Level": "98",
+  "Defense": "32.0026-38",
+  "Type": "Gloves",
+  "Size": "2x2",
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "+1 to All Skills",
+      "class": "stat-allskills"
+    },
+    {
+      "stat": "[Cornered] Level [1-5]",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+30% Increased Movement Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[25-50]% Increased Attack Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Extra Damage to Stunned Monsters [25-50]%",
+      "class": "stat-default"
+    }
+  ]
 }

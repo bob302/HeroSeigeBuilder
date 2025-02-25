@@ -1,13 +1,13 @@
 {
-    "Item": "Ol",
-    "Tier": "D",
-    "Level": "11",
-    "Type": "Socketable",
-    "Rarity": "Common",
-    "Stats": [
-        {
-            "stat": "+50 to Attack Rating",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Ol",
+  "Tier": "D",
+  "Level": "11",
+  "Type": "Socketable",
+  "Rarity": "Common",
+  "Stats": [
+    {
+      "stat": "+50 to Attack Rating",
+      "class": "stat-default"
+    }
+  ]
 }

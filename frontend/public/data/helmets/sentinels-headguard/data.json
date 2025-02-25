@@ -1,31 +1,31 @@
 {
-    "Item": "Sentinel's Headguard",
-    "Tier": "D",
-    "Level": "12",
-    "Defense": "7.605-11",
-    "Type": "Helmet",
-    "Size": "2x2",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[20-30]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+5 to Vitality",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Physical Damage Taken Reduced by [3-5]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[10-15]% to All Resistances",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Socketed (0-1)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Sentinel's Headguard",
+  "Tier": "D",
+  "Level": "12",
+  "Defense": "7.605-11",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[20-30]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+5 to Vitality",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Physical Damage Taken Reduced by [3-5]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[10-15]% to All Resistances",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Socketed (0-1)",
+      "class": "stat-default"
+    }
+  ]
 }

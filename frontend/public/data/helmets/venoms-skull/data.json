@@ -1,39 +1,39 @@
 {
-    "Item": "Venom's Skull",
-    "Tier": "A",
-    "Level": "59",
-    "Defense": "99.9076-125",
-    "Type": "Helmet",
-    "Size": "2x2",
-    "Rarity": "Satanic Set",
-    "Stats": [
-        {
-            "stat": "+[80-130]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+1 to Poison Skills",
-            "class": "stat-poison"
-        },
-        {
-            "stat": "+1 to Arcane Skills",
-            "class": "stat-arcane"
-        },
-        {
-            "stat": "+25 to Energy",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Replenish Mana 15%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Mana Increased by 2%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+50% to Poison Resistance",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Venom's Skull",
+  "Tier": "A",
+  "Level": "59",
+  "Defense": "99.9076-125",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "+[80-130]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+1 to Poison Skills",
+      "class": "stat-poison"
+    },
+    {
+      "stat": "+1 to Arcane Skills",
+      "class": "stat-arcane"
+    },
+    {
+      "stat": "+25 to Energy",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Replenish Mana 15%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Mana Increased by 2%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+50% to Poison Resistance",
+      "class": "stat-default"
+    }
+  ]
 }

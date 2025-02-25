@@ -1,66 +1,66 @@
 {
-    "Item": "Abomination's Gut Ripper",
-    "Tier": "SS",
-    "Level": "98",
-    "Damage": "625.60563-689",
-    "APS": "1.941.37-2.5",
-    "DPS": "1247.00771-1723",
-    "Type": "Axe",
-    "TwoHanded": true,
-    "Size": "2x3",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "10% Chance after each Kill [Bone Storm] Level 42",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "2% Chance when Striking [Chainslice] Level 125",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "+[660-740]% Enhanced Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[5-10] to Physical Skills",
-            "class": "stat-physical"
-        },
-        {
-            "stat": "Attack Range Increased by [25-40]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[10-100]% Increased Attack Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+25% Chance to Open Wounds",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Slows target by 75%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Unholy Stat",
-            "class": "stat-unholy"
-        },
-        {
-            "stat": "+100 to Strength (Based on Level)",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+50 to Dexterity (Based on Level)",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Attacks can hit multiple enemies",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Socketed (1-4)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Abomination's Gut Ripper",
+  "Tier": "SS",
+  "Level": "98",
+  "Damage": "625.60563-689",
+  "APS": "1.941.37-2.5",
+  "DPS": "1247.00771-1723",
+  "Type": "Axe",
+  "TwoHanded": true,
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "10% Chance after each Kill [Bone Storm] Level 42",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "2% Chance when Striking [Chainslice] Level 125",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+[660-740]% Enhanced Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[5-10] to Physical Skills",
+      "class": "stat-physical"
+    },
+    {
+      "stat": "Attack Range Increased by [25-40]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[10-100]% Increased Attack Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+25% Chance to Open Wounds",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Slows target by 75%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Unholy Stat",
+      "class": "stat-unholy"
+    },
+    {
+      "stat": "+100 to Strength (Based on Level)",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+50 to Dexterity (Based on Level)",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Attacks can hit multiple enemies",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Socketed (1-4)",
+      "class": "stat-default"
+    }
+  ]
 }

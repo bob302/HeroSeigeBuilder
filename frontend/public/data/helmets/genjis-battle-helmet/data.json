@@ -1,31 +1,31 @@
 {
-    "Item": "Genji's Battle Helmet",
-    "Tier": "A",
-    "Level": "56",
-    "Defense": "99.9076-125",
-    "Type": "Helmet",
-    "Size": "2x2",
-    "Rarity": "Satanic Set",
-    "Stats": [
-        {
-            "stat": "+[80-130]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[20-30]% Increased Attack Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[80-150] to Attack Rating",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[5-10]% of target Defense ignored",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+15 to Strength",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Genji's Battle Helmet",
+  "Tier": "A",
+  "Level": "56",
+  "Defense": "99.9076-125",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "+[80-130]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[20-30]% Increased Attack Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[80-150] to Attack Rating",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[5-10]% of target Defense ignored",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+15 to Strength",
+      "class": "stat-default"
+    }
+  ]
 }

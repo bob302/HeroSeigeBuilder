@@ -1,13 +1,13 @@
 {
-    "Item": "Fel",
-    "Tier": "C",
-    "Level": "41",
-    "Type": "Socketable",
-    "Rarity": "Unknown",
-    "Stats": [
-        {
-            "stat": "+10 to Strength",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Fel",
+  "Tier": "C",
+  "Level": "41",
+  "Type": "Socketable",
+  "Rarity": "Unknown",
+  "Stats": [
+    {
+      "stat": "+10 to Strength",
+      "class": "stat-default"
+    }
+  ]
 }

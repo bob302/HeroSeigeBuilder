@@ -1,13 +1,13 @@
 {
-    "Item": "Ert",
-    "Tier": "C",
-    "Level": "21",
-    "Type": "Socketable",
-    "Rarity": "Common",
-    "Stats": [
-        {
-            "stat": "Lightning Skill Damage increased by 5%",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Ert",
+  "Tier": "C",
+  "Level": "21",
+  "Type": "Socketable",
+  "Rarity": "Common",
+  "Stats": [
+    {
+      "stat": "Lightning Skill Damage increased by 5%",
+      "class": "stat-default"
+    }
+  ]
 }

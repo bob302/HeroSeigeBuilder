@@ -1,8 +1,8 @@
 {
-    "Icon": "ability_5_icon.webp",
-    "Image": "output/classes\\stormweaver\\essence-of-storm\\ability_5_icon.webp",
-    "Name": "Wave Length",
-    "Required Skill(s)": "None",
-    "Required Level": "16",
-    "Position": { "x": 0, "y": 2 }
+  "Icon": "ability_5_icon.webp",
+  "Image": "output/classes\\stormweaver\\essence-of-storm\\ability_5_icon.webp",
+  "Name": "Wave Length",
+  "Required Skill(s)": "None",
+  "Required Level": "16",
+  "Position": { "x": 0, "y": 2 }
 }

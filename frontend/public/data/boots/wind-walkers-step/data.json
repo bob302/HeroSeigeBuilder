@@ -1,43 +1,43 @@
 {
-    "Item": "Wind Walker's Step",
-    "Tier": "SS",
-    "Level": "99",
-    "Defense": "143.00120-167",
-    "Type": "Boots",
-    "Size": "2x2",
-    "Rarity": "Heroic",
-    "Stats": [
-        {
-            "stat": "+[130-160]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[80-100]% Increased Movement Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+100% Increased Jumping Power",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[12-20] to All Attributes",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Magic Skill Damage increased by 25%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[15-25]% Faster Hit Recovery",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[25-40]% Defense vs Missiles",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Movement Phasing",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Wind Walker's Step",
+  "Tier": "SS",
+  "Level": "99",
+  "Defense": "143.00120-167",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "+[130-160]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[80-100]% Increased Movement Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+100% Increased Jumping Power",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[12-20] to All Attributes",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Magic Skill Damage increased by 25%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[15-25]% Faster Hit Recovery",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[25-40]% Defense vs Missiles",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Movement Phasing",
+      "class": "stat-default"
+    }
+  ]
 }

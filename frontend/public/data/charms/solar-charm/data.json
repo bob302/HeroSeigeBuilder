@@ -1,18 +1,18 @@
 {
-    "Item": "Solar Charm",
-    "Tier": "S",
-    "Level": "67",
-    "Type": "Charm",
-    "Size": "2x2",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "-[15-35]% to Enemy Fire Resistance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "-75% to Fire Resistance",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Solar Charm",
+  "Tier": "S",
+  "Level": "67",
+  "Type": "Charm",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "-[15-35]% to Enemy Fire Resistance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "-75% to Fire Resistance",
+      "class": "stat-default"
+    }
+  ]
 }

@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_1_icon.webp",
-    "Image": "output/classes\\shieldlancer\\knight\\ability_1_icon.webp",
-    "Name": "Shield Slam",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 0, "y": 0 }
+  "Icon": "ability_1_icon.webp",
+  "Image": "output/classes\\shieldlancer\\knight\\ability_1_icon.webp",
+  "Name": "Shield Slam",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": {
+    "x": 0,
+    "y": 0
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Obsidian Shield",
+      "description": "Increases the damage dealt by shield slam."
+    },
+    {
+      "id": 3,
+      "name": "Gradient Strikes",
+      "description": "Increases the attack rating of shield slam."
+    },
+    {
+      "id": 4,
+      "name": "Groundquake Bulwark",
+      "description": "Smash your shield into the ground unleashing an earthquake pulling monsters towards you on hit. Earthquake damage and area of effect radius are increased based on your armor. Shield slam now has a cooldown. "
+    },
+    {
+      "id": 5,
+      "name": "Concussive Bash",
+      "description": "Chance to stun enemies on hit."
+    },
+    {
+      "id": 6,
+      "name": "Skull Fracture",
+      "description": "Increases damage dealt to stunned enemies."
+    },
+    {
+      "id": 7,
+      "name": "Offensive Safeguard",
+      "description": "Deal increased damage based on the block rating of your shield."
+    },
+    {
+      "id": 8,
+      "name": "Field Coverage",
+      "description": "Increases the area of effect of shield slam."
+    },
+    {
+      "id": 9,
+      "name": "Violent Bash",
+      "description": "Chance on attack to increase the damage and area of effect radius of shield slam."
+    },
+    {
+      "id": 10,
+      "name": "Captain Tarethiel",
+      "description": "Throw your shield with increased size and damage. The shield returns to you after a short duration dealing additional damage. Shield slam now has a cooldown."
+    },
+    {
+      "id": 11,
+      "name": "Hardening Stance",
+      "description": "Chance to increase your damage return on hit for a short duration."
+    },
+    {
+      "id": 12,
+      "name": "Vanguard",
+      "description": "Gain a stack of vanguard on hit increasing your damage reduction for a short duration."
+    },
+    {
+      "id": 13,
+      "name": "Rogue Shield",
+      "description": "Chance to summon an orbiting shield on hit for a short duration."
+    },
+    {
+      "id": 14,
+      "name": "Knight's Templar",
+      "description": "Throw your shield with force causing it to bounce from the ground and terrain."
+    },
+    {
+      "id": 15,
+      "name": "Thorned Aegis",
+      "description": "Chance to gain a stack of thorned aegis on hit. Throw shields at monsters when taking damage while thorned aegis is active."
+    }
+  ]
 }

@@ -1,8 +1,8 @@
 {
-    "Icon": "ability_4_icon.webp",
-    "Image": "output/classes\\demonspawn\\bone-conjurer\\ability_4_icon.webp",
-    "Name": "Ossification",
-    "Required Skill(s)": "None",
-    "Required Level": "8",
-    "Position": { "x": 2, "y": 1 }
+  "Icon": "ability_4_icon.webp",
+  "Image": "output/classes\\demonspawn\\bone-conjurer\\ability_4_icon.webp",
+  "Name": "Ossification",
+  "Required Skill(s)": "None",
+  "Required Level": "8",
+  "Position": { "x": 2, "y": 1 }
 }

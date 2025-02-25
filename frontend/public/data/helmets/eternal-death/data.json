@@ -1,59 +1,59 @@
 {
-    "Item": "Eternal Death",
-    "Tier": "SS",
-    "Level": "100",
-    "Defense": "N/A",
-    "Type": "Helmet",
-    "Size": "2x2",
-    "Rarity": "Unholy",
-    "Stats": [
-        {
-            "stat": "20% Chance when Struck [Wall of Eternity] Level 1",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "+[450-600]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[4-5] to All Skills",
-            "class": "stat-allskills"
-        },
-        {
-            "stat": "+[1-3] to [Eternal Armor]",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "+[50-75] to Vitality",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[50-75] to Armor",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Replenish Life [75-100]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+100% Faster Hit Recovery",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Life Increased by [22-30]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[750-1000]% of Damage Returned to the Attacker",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Unbreakable",
-            "class": "stat-unbreakable"
-        },
-        {
-            "stat": "Socketed (4)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Eternal Death",
+  "Tier": "SS",
+  "Level": "100",
+  "Defense": "N/A",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Unholy",
+  "Stats": [
+    {
+      "stat": "20% Chance when Struck [Wall of Eternity] Level 1",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+[450-600]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[4-5] to All Skills",
+      "class": "stat-allskills"
+    },
+    {
+      "stat": "+[1-3] to [Eternal Armor]",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+[50-75] to Vitality",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[50-75] to Armor",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Replenish Life [75-100]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+100% Faster Hit Recovery",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Life Increased by [22-30]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[750-1000]% of Damage Returned to the Attacker",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Unbreakable",
+      "class": "stat-unbreakable"
+    },
+    {
+      "stat": "Socketed (4)",
+      "class": "stat-default"
+    }
+  ]
 }

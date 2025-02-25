@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_6_icon.webp",
-    "Image": "output/classes\\viking\\berserker\\ability_6_icon.webp",
-    "Name": "Whirlwind",
-    "Required Skill(s)": "None",
-    "Required Level": "16",
-    "Position": { "x": 2, "y": 2 }
+  "Icon": "ability_6_icon.webp",
+  "Image": "output/classes\\viking\\berserker\\ability_6_icon.webp",
+  "Name": "Whirlwind",
+  "Required Skill(s)": "None",
+  "Required Level": "16",
+  "Position": {
+    "x": 2,
+    "y": 2
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Sharp Winds",
+      "description": "Increases attack rating when using whirlwind."
+    },
+    {
+      "id": 3,
+      "name": "Wounding Spin",
+      "description": "Increases the damage dealt by whirlwind."
+    },
+    {
+      "id": 4,
+      "name": "Sharpened Blades",
+      "description": "Greatly increases area of effect radius dealing increased damage at the outer edge. "
+    },
+    {
+      "id": 5,
+      "name": "Deadly Blow",
+      "description": "Increases critical strike damage when using whirlwind."
+    },
+    {
+      "id": 6,
+      "name": "Typhoon",
+      "description": "Increases the area of effect radius of whirlwind."
+    },
+    {
+      "id": 7,
+      "name": "Airborne Debris",
+      "description": "Increases the critical strike chance when using whirlwind."
+    },
+    {
+      "id": 8,
+      "name": "Cycloning Step",
+      "description": "Increases your movement speed while using whirlwind."
+    },
+    {
+      "id": 9,
+      "name": "Second Wind",
+      "description": "Chance on hit to unleash a twister."
+    },
+    {
+      "id": 10,
+      "name": "Airborne",
+      "description": "Knock monsters high into air causing them to take increased damage upon landing."
+    },
+    {
+      "id": 11,
+      "name": "Burning Air",
+      "description": "Convert a portion of your damage to fire damage."
+    },
+    {
+      "id": 12,
+      "name": "Trail of Fire",
+      "description": "Leave a trail of fire behind you inflicting monsters with burning."
+    },
+    {
+      "id": 13,
+      "name": "Scorching Heat",
+      "description": "Increases damage dealt to burning targets."
+    },
+    {
+      "id": 14,
+      "name": "Detonation",
+      "description": "Store damage dealt to monsters unleashing it when whirlwind ends dealing damage on a large radius around you."
+    },
+    {
+      "id": 15,
+      "name": "Negative Pressure",
+      "description": "monsters at the edge of the whirlwind radius are sucked within the whirlwind."
+    }
+  ]
 }

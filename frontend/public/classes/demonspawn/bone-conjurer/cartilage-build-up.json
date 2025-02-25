@@ -1,8 +1,8 @@
 {
-    "Icon": "ability_5_icon.webp",
-    "Image": "output/classes\\demonspawn\\bone-conjurer\\ability_5_icon.webp",
-    "Name": "Cartilage Build Up",
-    "Required Skill(s)": "Bone Storm, Impale",
-    "Required Level": "16",
-    "Position": { "x": 1, "y": 2 }
+  "Icon": "ability_5_icon.webp",
+  "Image": "output/classes\\demonspawn\\bone-conjurer\\ability_5_icon.webp",
+  "Name": "Cartilage Build Up",
+  "Required Skill(s)": "Bone Storm, Impale",
+  "Required Level": "16",
+  "Position": { "x": 1, "y": 2 }
 }

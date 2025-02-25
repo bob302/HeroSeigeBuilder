@@ -1,38 +1,38 @@
 {
-    "Item": "Earth Shaper's Talons",
-    "Tier": "S",
-    "Level": "49",
-    "Damage": "51.0048-54",
-    "APS": "1.251.25",
-    "DPS": "64.0060-68",
-    "Type": "Claw",
-    "TwoHanded": false,
-    "Size": "2x2",
-    "Rarity": "Satanic Set",
-    "Stats": [
-        {
-            "stat": "12% Chance when Casting [Earth Bind] Level 27",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "+[2-4] to Arcane Skills",
-            "class": "stat-arcane"
-        },
-        {
-            "stat": "Arcane Skill Damage increased by [25-40]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Replenish Mana 25%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+560 to Mana",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+25% to All Resistances",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Earth Shaper's Talons",
+  "Tier": "S",
+  "Level": "49",
+  "Damage": "51.0048-54",
+  "APS": "1.251.25",
+  "DPS": "64.0060-68",
+  "Type": "Claw",
+  "TwoHanded": false,
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "12% Chance when Casting [Earth Bind] Level 27",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+[2-4] to Arcane Skills",
+      "class": "stat-arcane"
+    },
+    {
+      "stat": "Arcane Skill Damage increased by [25-40]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Replenish Mana 25%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+560 to Mana",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+25% to All Resistances",
+      "class": "stat-default"
+    }
+  ]
 }

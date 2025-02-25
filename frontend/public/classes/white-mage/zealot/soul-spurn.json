@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_4_icon.webp",
-    "Image": "output/classes\\whitemage\\zealot\\ability_4_icon.webp",
-    "Name": "Soul Spurn",
-    "Required Skill(s)": "Shadow Bolt",
-    "Required Level": "8",
-    "Position": { "x": 1, "y": 1 }
+  "Icon": "ability_4_icon.webp",
+  "Image": "output/classes\\whitemage\\zealot\\ability_4_icon.webp",
+  "Name": "Soul Spurn",
+  "Required Skill(s)": "Shadow Bolt",
+  "Required Level": "8",
+  "Position": {
+    "x": 1,
+    "y": 1
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Last Mortal Act",
+      "description": "Ripped souls deal a portion of the damage."
+    },
+    {
+      "id": 3,
+      "name": "Solidify",
+      "description": "Increases the damage dealt by soul spurn."
+    },
+    {
+      "id": 4,
+      "name": "Soulfilled Tradeoff",
+      "description": "Increases the damage dealt by soul spurn but decreases the area of effect radius."
+    },
+    {
+      "id": 5,
+      "name": "Repeating Reaping",
+      "description": "Chance on cast to deal increased damage."
+    },
+    {
+      "id": 6,
+      "name": "Consume",
+      "description": "Chance on cast to unleash an additional soul spurn."
+    },
+    {
+      "id": 7,
+      "name": "Highway to Purgatory",
+      "description": "Increases the speed of ripped souls."
+    },
+    {
+      "id": 8,
+      "name": "Restore",
+      "description": "Soul spurn recovers a portion of your maximum mana on hit."
+    },
+    {
+      "id": 9,
+      "name": "Revitalise",
+      "description": "Soul spurn recovers a portion of your maximum life on hit."
+    },
+    {
+      "id": 10,
+      "name": "Harvest the Damned",
+      "description": "Monsters killed by soul spurn inflicts you with a buff increasing your arcane damage, life replenish and mana replenish for a short duration."
+    },
+    {
+      "id": 11,
+      "name": "Floating Cultist",
+      "description": "Reduces movement diminish when using soul spurn."
+    },
+    {
+      "id": 12,
+      "name": "Shattering Destruction",
+      "description": "Chance to inflict arcane break on hit."
+    },
+    {
+      "id": 13,
+      "name": "Corrupted Rapture",
+      "description": "Increases the area of effect radius of soul spurn."
+    },
+    {
+      "id": 14,
+      "name": "Purgatory",
+      "description": "Soul spurn becomes a toggle skill ripping souls from monsters around you draining a portion of your maximum life frequently."
+    },
+    {
+      "id": 15,
+      "name": "Lifeline Tether",
+      "description": "Rip souls for all nearby allies restoring their mana and life."
+    }
+  ]
 }

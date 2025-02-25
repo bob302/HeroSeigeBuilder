@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_2_icon.webp",
-    "Image": "output/classes\\paladin\\lionheart\\ability_2_icon.webp",
-    "Name": "Holy Bolt",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 2, "y": 0 }
+  "Icon": "ability_2_icon.webp",
+  "Image": "output/classes\\paladin\\lionheart\\ability_2_icon.webp",
+  "Name": "Holy Bolt",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": {
+    "x": 2,
+    "y": 0
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Divine Combustion",
+      "description": "Inflicts burning for a portion of the damage."
+    },
+    {
+      "id": 3,
+      "name": "Heaven's Help",
+      "description": "Increases projectile speed."
+    },
+    {
+      "id": 4,
+      "name": "Rolling Judgement",
+      "description": "Holy bolt travels slower but grows larger over time ticking faster and dealing increased damage based on it's size."
+    },
+    {
+      "id": 5,
+      "name": "Lightforce",
+      "description": "Unleash a pulse of holy essence dealing area of effect damage on hit."
+    },
+    {
+      "id": 6,
+      "name": "Bolt Rampage",
+      "description": "Unleash multiple holy bolts with halved damage."
+    },
+    {
+      "id": 7,
+      "name": "Rewarded by the Angels",
+      "description": "Chance to replenish a portion of your maximum life on hit."
+    },
+    {
+      "id": 8,
+      "name": "Call of Justice",
+      "description": "Chance to ricochet into a nerby monster with increased damage on hit."
+    },
+    {
+      "id": 9,
+      "name": "Strengthened Will",
+      "description": "Increases damage dealt by holy bolt."
+    },
+    {
+      "id": 10,
+      "name": "Divine Assbeating",
+      "description": "Unleash righteous fists instead attaching on to monsters on hit dealing damage over time and exploding dealing area of effect damage."
+    },
+    {
+      "id": 11,
+      "name": "Spoils of Holy War",
+      "description": "Chance on kill to drop increased amount of gold."
+    },
+    {
+      "id": 12,
+      "name": "Illumination",
+      "description": "Chance on hit to summon a pillar of light inflicting arcane break and dealing area of effect damage."
+    },
+    {
+      "id": 13,
+      "name": "Reveal the Sinners",
+      "description": "Mark targets as sinners on hit. Damaging a sinner unleashes holy smite dealing additional arcane damage."
+    },
+    {
+      "id": 14,
+      "name": "Touch of Righteousness",
+      "description": "Unleash a holy nova on allied impact healing allies and damaging foes."
+    },
+    {
+      "id": 15,
+      "name": "Righteous Path",
+      "description": "Unleash a barrage of holy bolts dealing increased damage. Holy bolt now has a cooldown."
+    }
+  ]
 }

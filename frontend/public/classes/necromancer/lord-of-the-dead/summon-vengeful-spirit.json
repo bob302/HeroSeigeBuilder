@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_9_icon.webp",
-    "Image": "output/classes\\necromancer\\lord-of-the-dead\\ability_9_icon.webp",
-    "Name": "Summon Vengeful Spirit",
-    "Required Skill(s)": "Summon Damned Legion",
-    "Required Level": "30",
-    "Position": { "x": 2, "y": 4 }
+  "Icon": "ability_9_icon.webp",
+  "Image": "output/classes\\necromancer\\lord-of-the-dead\\ability_9_icon.webp",
+  "Name": "Summon Vengeful Spirit",
+  "Required Skill(s)": "Summon Damned Legion",
+  "Required Level": "30",
+  "Position": {
+    "x": 2,
+    "y": 4
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Hostile Intelligence",
+      "description": "Increases vengeful spirits damage based on your intelligence."
+    },
+    {
+      "id": 3,
+      "name": "Nimble Spirit",
+      "description": "Increases the movement speed of vengeful spirit."
+    },
+    {
+      "id": 4,
+      "name": "Contaminated Spirit",
+      "description": "Vengeful spirit now deals poison damage inflicting poisoned for a portion of its damage. Additionally gains a chance to unleash a poison nova on hit."
+    },
+    {
+      "id": 5,
+      "name": "Swift Bolts",
+      "description": "Increases the attack speed of vengeful spirit."
+    },
+    {
+      "id": 6,
+      "name": "Eternal Vengeance",
+      "description": "Increases vengeful spirits life."
+    },
+    {
+      "id": 7,
+      "name": "Forking Bolts",
+      "description": "Attacks by vengeful spirit have a chance to fork creating multiple chain lightnings."
+    },
+    {
+      "id": 8,
+      "name": "Critical Wrath",
+      "description": "Attacks always critically strike targets at max health dealing increased damage stunning them."
+    },
+    {
+      "id": 9,
+      "name": "Stacking Pain",
+      "description": "Increases damage dealt to stunned targets."
+    },
+    {
+      "id": 10,
+      "name": "Vengeful Poltergeist",
+      "description": "Vengeful spirit now summons bone spirits and tornados in addition to its normal attack."
+    },
+    {
+      "id": 11,
+      "name": "Vacuuming Apparation",
+      "description": "Chance on attack to summon a ghastly whirlpool that pulls nearby targets into it."
+    },
+    {
+      "id": 12,
+      "name": "Extended Lightning",
+      "description": "Chain lightning from vengeful spirit chains to additional targets."
+    },
+    {
+      "id": 13,
+      "name": "Retaliatory Transfusion",
+      "description": "Vengeful spirit gains an aura that drains a portion of common monster max health per second to heal itself."
+    },
+    {
+      "id": 14,
+      "name": "Hatred Reinforcements",
+      "description": "You can now summon additional vengeful spirits."
+    },
+    {
+      "id": 15,
+      "name": "Sacrificial Offering",
+      "description": "Your vengeful spirit now absorbs the stats of all nearby necromancer summons killing them in the process. You can no longer summon any minion while vengeful spirit is active."
+    }
+  ]
 }

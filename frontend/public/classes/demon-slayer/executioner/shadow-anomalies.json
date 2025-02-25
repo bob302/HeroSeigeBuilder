@@ -1,8 +1,8 @@
 {
-    "Icon": "ability_6_icon.webp",
-    "Image": "output/classes\\demonslayer\\executioner\\ability_6_icon.webp",
-    "Name": "Shadow Anomalies",
-    "Required Skill(s)": "Demon's Calling",
-    "Required Level": "16",
-    "Position": { "x": 1, "y": 2 }
+  "Icon": "ability_6_icon.webp",
+  "Image": "output/classes\\demonslayer\\executioner\\ability_6_icon.webp",
+  "Name": "Shadow Anomalies",
+  "Required Skill(s)": "Demon's Calling",
+  "Required Level": "16",
+  "Position": { "x": 1, "y": 2 }
 }

@@ -1,31 +1,31 @@
 {
-    "Item": "Zealot's Deathbringers",
-    "Tier": "S",
-    "Level": "78",
-    "Defense": "55.0042-69",
-    "Type": "Gloves",
-    "Size": "2x2",
-    "Rarity": "Satanic Set",
-    "Stats": [
-        {
-            "stat": "+[60-80]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+1 to Arcane Skills",
-            "class": "stat-arcane"
-        },
-        {
-            "stat": "+[20-30]% Faster Cast Rate",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Arcane Skill Damage increased by [15-25]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Replenish Mana 15%",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Zealot's Deathbringers",
+  "Tier": "S",
+  "Level": "78",
+  "Defense": "55.0042-69",
+  "Type": "Gloves",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "+[60-80]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+1 to Arcane Skills",
+      "class": "stat-arcane"
+    },
+    {
+      "stat": "+[20-30]% Faster Cast Rate",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Arcane Skill Damage increased by [15-25]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Replenish Mana 15%",
+      "class": "stat-default"
+    }
+  ]
 }

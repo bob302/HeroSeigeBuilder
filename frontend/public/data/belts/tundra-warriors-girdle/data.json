@@ -1,35 +1,35 @@
 {
-    "Item": "Tundra Warrior's Girdle",
-    "Tier": "B",
-    "Level": "38",
-    "Defense": "36.2026-47",
-    "Type": "Belt",
-    "Size": "2x1",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[30-45]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[50-75] to Attack Rating",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[20-30] to Additive Physical Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+10 to Strength",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+10 to Dexterity",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Belt Slots: 4",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Tundra Warrior's Girdle",
+  "Tier": "B",
+  "Level": "38",
+  "Defense": "36.2026-47",
+  "Type": "Belt",
+  "Size": "2x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[30-45]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[50-75] to Attack Rating",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[20-30] to Additive Physical Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+10 to Strength",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+10 to Dexterity",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Belt Slots: 4",
+      "class": "stat-default"
+    }
+  ]
 }

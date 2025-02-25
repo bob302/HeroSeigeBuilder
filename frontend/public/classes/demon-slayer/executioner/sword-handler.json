@@ -1,8 +1,8 @@
 {
-    "Icon": "ability_4_icon.webp",
-    "Image": "output/classes\\demonslayer\\executioner\\ability_4_icon.webp",
-    "Name": "Sword Handler",
-    "Required Skill(s)": "Heart Attack",
-    "Required Level": "8",
-    "Position": { "x": 2, "y": 1 }
+  "Icon": "ability_4_icon.webp",
+  "Image": "output/classes\\demonslayer\\executioner\\ability_4_icon.webp",
+  "Name": "Sword Handler",
+  "Required Skill(s)": "Heart Attack",
+  "Required Level": "8",
+  "Position": { "x": 2, "y": 1 }
 }

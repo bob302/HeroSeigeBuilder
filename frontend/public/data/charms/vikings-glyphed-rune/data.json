@@ -1,22 +1,22 @@
 {
-    "Item": "Viking's Glyphed Rune",
-    "Tier": "S",
-    "Level": "60",
-    "Type": "Charm",
-    "Size": "2x2",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[25-50]% Enhanced Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Attack Damage increased by [15-35]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Physical Damage Taken Reduced by value1%",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Viking's Glyphed Rune",
+  "Tier": "S",
+  "Level": "60",
+  "Type": "Charm",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[25-50]% Enhanced Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Attack Damage increased by [15-35]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Physical Damage Taken Reduced by value1%",
+      "class": "stat-default"
+    }
+  ]
 }

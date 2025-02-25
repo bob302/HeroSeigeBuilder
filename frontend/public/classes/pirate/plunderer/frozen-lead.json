@@ -1,8 +1,8 @@
 {
-    "Icon": "ability_3_icon.webp",
-    "Image": "output/classes\\pirate\\plunderer\\ability_3_icon.webp",
-    "Name": "Frozen Lead",
-    "Required Skill(s)": "Freezing Chain Shot",
-    "Required Level": "8",
-    "Position": { "x": 1, "y": 1 }
+  "Icon": "ability_3_icon.webp",
+  "Image": "output/classes\\pirate\\plunderer\\ability_3_icon.webp",
+  "Name": "Frozen Lead",
+  "Required Skill(s)": "Freezing Chain Shot",
+  "Required Level": "8",
+  "Position": { "x": 1, "y": 1 }
 }

@@ -1,8 +1,80 @@
 {
-    "Icon": "ability_1_icon.webp",
-    "Image": "output/classes\\illusionist\\sand-manipulator\\ability_1_icon.webp",
-    "Name": "Sand Guardians",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 0, "y": 0 }
+  "Icon": "ability_1_icon.webp",
+  "Image": "output/classes\\illusionist\\sand-manipulator\\ability_1_icon.webp",
+  "Name": "Sand Guardians",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": { "x": 0, "y": 0 },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Hardened Sandstone",
+      "description": "Increases the damage dealt by sand guardians."
+    },
+    {
+      "id": 3,
+      "name": "Durable Sand",
+      "description": "Increases the duration of sand guardians."
+    },
+    {
+      "id": 4,
+      "name": "Guardian Nevermore",
+      "description": "Sand guardians now move around with you dealing increased damage."
+    },
+    {
+      "id": 5,
+      "name": "Deserts Gladiators",
+      "description": "Chance to unleash an additional attack."
+    },
+    {
+      "id": 6,
+      "name": "Sand Frenzy",
+      "description": "Increases the attack speed of sand guardians."
+    },
+    {
+      "id": 7,
+      "name": "Battle IQ",
+      "description": "Sand guardians periodically dash a short distance towards the closest monster if not in combat."
+    },
+    {
+      "id": 8,
+      "name": "Reserve Army",
+      "description": "Chance to summon an additional sand guardian on cast."
+    },
+    {
+      "id": 9,
+      "name": "Lunge Attack",
+      "description": "Increases the attack range of sand guardians."
+    },
+    {
+      "id": 10,
+      "name": "Guardians of the Orbital Sand",
+      "description": "Sand guardians now orbit around you, striking nearby monsters. Sand guardians now have a cooldown."
+    },
+    {
+      "id": 11,
+      "name": "Dashing Sandstrike",
+      "description": "Chance on attack to dash through the target monster dealing area of effect damage."
+    },
+    {
+      "id": 12,
+      "name": "Sand's Edge",
+      "description": "Chance to critically hit dealing increased critical strike damage."
+    },
+    {
+      "id": 13,
+      "name": "Deadly Guardians",
+      "description": "Increases the size and damage dealt by sand guardians, decreasing the duration."
+    },
+    {
+      "id": 14,
+      "name": "Sand Mages",
+      "description": "Summon sand mages zapping monsters from afar with arcane surges."
+    },
+    {
+      "id": 15,
+      "name": "Sacrifice for the Throne",
+      "description": "Sand guardians immediately seek the nearest monster, charging towards it, exploding, and dealing increased damage, inflicting arcane break on hit."
+    }
+  ]
 }

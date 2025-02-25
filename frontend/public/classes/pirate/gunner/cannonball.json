@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_4_icon.webp",
-    "Image": "output/classes\\pirate\\gunner\\ability_4_icon.webp",
-    "Name": "Cannonball",
-    "Required Skill(s)": "Grenade Jump",
-    "Required Level": "8",
-    "Position": { "x": 2, "y": 1 }
+  "Icon": "ability_4_icon.webp",
+  "Image": "output/classes\\pirate\\gunner\\ability_4_icon.webp",
+  "Name": "Cannonball",
+  "Required Skill(s)": "Grenade Jump",
+  "Required Level": "8",
+  "Position": {
+    "x": 2,
+    "y": 1
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Cannon Scatter",
+      "description": "Increases the amount of chain bounces."
+    },
+    {
+      "id": 3,
+      "name": "Shrapnel Count",
+      "description": "Increases the amount of shrapnel from cannonball explosion."
+    },
+    {
+      "id": 4,
+      "name": "Bomb Trail",
+      "description": "Cannonball no longer chains but is now piercing and unleashes bombs on every monster hit. "
+    },
+    {
+      "id": 5,
+      "name": "Cannon Accuracy",
+      "description": "Increases the attack rating when using cannonball."
+    },
+    {
+      "id": 6,
+      "name": "Steel Balls",
+      "description": "Increases the damage dealt by cannonball."
+    },
+    {
+      "id": 7,
+      "name": "Slowmode",
+      "description": "Increases the damage dealt by cannonball shrapnel."
+    },
+    {
+      "id": 8,
+      "name": "Artillery Farshot",
+      "description": "Increases the range of cannonball."
+    },
+    {
+      "id": 9,
+      "name": "Empowered Blasting Powder",
+      "description": "Increases the projectile speed of cannonball shrapnel."
+    },
+    {
+      "id": 10,
+      "name": "Rolling Balls",
+      "description": "Fire rolling cannon balls traveling forward on the ground exploding with increased radius and inflicting burning on hit."
+    },
+    {
+      "id": 11,
+      "name": "Mayday",
+      "description": "Increases the size and explosion area of effect radius of cannonball."
+    },
+    {
+      "id": 12,
+      "name": "Slay the Weak",
+      "description": "Increases damage dealt to burning targets."
+    },
+    {
+      "id": 13,
+      "name": "Blasting Balls",
+      "description": "Cannonball no longer explodes on hit but instead knocks monsters back with increased damage according to the amount of shrapnel."
+    },
+    {
+      "id": 14,
+      "name": "Blast the Horizon",
+      "description": "Fire multiple cannonballs in an arc with decreased damage and bounces. "
+    },
+    {
+      "id": 15,
+      "name": "Mega Shot",
+      "description": "Fire a mega cannon ball with increased damage unleashing additional cannonballs around the impact location."
+    }
+  ]
 }

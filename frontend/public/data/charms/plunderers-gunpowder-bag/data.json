@@ -1,14 +1,14 @@
 {
-    "Item": "Plunderer's Gunpowder Bag",
-    "Tier": "S",
-    "Level": "72",
-    "Type": "Charm",
-    "Size": "1x2",
-    "Rarity": "Satanic Set",
-    "Stats": [
-        {
-            "stat": "+[1-3] to Random Skill",
-            "class": "stat-spell"
-        }
-    ]
+  "Item": "Plunderer's Gunpowder Bag",
+  "Tier": "S",
+  "Level": "72",
+  "Type": "Charm",
+  "Size": "1x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "+[1-3] to Random Skill",
+      "class": "stat-spell"
+    }
+  ]
 }

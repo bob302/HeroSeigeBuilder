@@ -1,31 +1,31 @@
 {
-    "Item": "Darkhide Boots",
-    "Tier": "C",
-    "Level": "24",
-    "Defense": "18.4012-26",
-    "Type": "Boots",
-    "Size": "2x2",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[40-60]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+20% Increased Movement Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[3-5]% Life stolen per Hit",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[4-6]% Mana stolen per Hit",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+15 to Dexterity",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Darkhide Boots",
+  "Tier": "C",
+  "Level": "24",
+  "Defense": "18.4012-26",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[40-60]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+20% Increased Movement Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[3-5]% Life stolen per Hit",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[4-6]% Mana stolen per Hit",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+15 to Dexterity",
+      "class": "stat-default"
+    }
+  ]
 }

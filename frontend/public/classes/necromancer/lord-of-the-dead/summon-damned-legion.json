@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_8_icon.webp",
-    "Image": "output/classes\\necromancer\\lord-of-the-dead\\ability_8_icon.webp",
-    "Name": "Summon Damned Legion",
-    "Required Skill(s)": "Raise Skeleton Mage",
-    "Required Level": "24",
-    "Position": { "x": 2, "y": 3 }
+  "Icon": "ability_8_icon.webp",
+  "Image": "output/classes\\necromancer\\lord-of-the-dead\\ability_8_icon.webp",
+  "Name": "Summon Damned Legion",
+  "Required Skill(s)": "Raise Skeleton Mage",
+  "Required Level": "24",
+  "Position": {
+    "x": 2,
+    "y": 3
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Unhallowed Authority",
+      "description": "Increases the damage dealt by damned legion."
+    },
+    {
+      "id": 3,
+      "name": "Undead Leadership",
+      "description": "Chance on hit to inspire nearby allies increasing their attack speed and damage for a short period."
+    },
+    {
+      "id": 4,
+      "name": "Abombination",
+      "description": "Summon an frenzied Abomination instead that deals increased Damage for a short period of time before exploding dealing massively increased damage to nearby monsters."
+    },
+    {
+      "id": 5,
+      "name": "Infused with Blood",
+      "description": "Increases the life of damned legion based on your maximum life."
+    },
+    {
+      "id": 6,
+      "name": "Colossus Smash",
+      "description": "Attacks deal a portion of their damage to enemies around the target."
+    },
+    {
+      "id": 7,
+      "name": "Vile Shock",
+      "description": "Chance on attack to cast shockwave dealing area of effect damage and stunning monsters in a line."
+    },
+    {
+      "id": 8,
+      "name": "Mass Legion",
+      "description": "Increases the maximum amount of damned legions."
+    },
+    {
+      "id": 9,
+      "name": "Unholy Reverberation",
+      "description": "Chance on attack for damned legion to stun nearby monsters."
+    },
+    {
+      "id": 10,
+      "name": "Catastrophic Legion",
+      "description": "Summon a single damned legion with increased damage and life. Additionally grows the size of damned legion scaling from the legion's maximum life."
+    },
+    {
+      "id": 11,
+      "name": "Profane Zeal",
+      "description": "Chance to perform an additional attack."
+    },
+    {
+      "id": 12,
+      "name": "Legionnaire Agility",
+      "description": "Increases the attack speed of damned legion."
+    },
+    {
+      "id": 13,
+      "name": "Crimson Aura",
+      "description": "Damned legion has an aura around them that pulses every second dealing a portion of their life as damage to nearby monsters."
+    },
+    {
+      "id": 14,
+      "name": "Thorned Revenant",
+      "description": "Damned legion gains damage return based on your total damage return."
+    },
+    {
+      "id": 15,
+      "name": "Damned Sharpshooter",
+      "description": "Instead summon a legion marksman firing explosive bolts with a giant ballista."
+    }
+  ]
 }

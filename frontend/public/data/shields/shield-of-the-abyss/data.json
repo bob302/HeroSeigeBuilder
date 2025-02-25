@@ -1,48 +1,48 @@
 {
-    "Item": "Shield of the Abyss",
-    "Tier": "SS",
-    "Level": "96",
-    "Defense": "484.00408-560",
-    "Block": "60",
-    "Type": "Shield",
-    "Size": "2x3",
-    "Rarity": "Heroic",
-    "Stats": [
-        {
-            "stat": "+[240-300]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[3-5] to Cold Skills",
-            "class": "stat-cold"
-        },
-        {
-            "stat": "+1337 to Cold Skill Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Cold Skill Damage increased by [15-40]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "-[8-20]% to Enemy Cold Resistance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+75% to Cold Resistance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[3-5]% to Maximum Cold Resist",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Cannot be Frozen",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Socketed (0-2)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Shield of the Abyss",
+  "Tier": "SS",
+  "Level": "96",
+  "Defense": "484.00408-560",
+  "Block": "60",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "+[240-300]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[3-5] to Cold Skills",
+      "class": "stat-cold"
+    },
+    {
+      "stat": "+1337 to Cold Skill Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Cold Skill Damage increased by [15-40]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "-[8-20]% to Enemy Cold Resistance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+75% to Cold Resistance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[3-5]% to Maximum Cold Resist",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Cannot be Frozen",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Socketed (0-2)",
+      "class": "stat-default"
+    }
+  ]
 }

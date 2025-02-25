@@ -1,22 +1,22 @@
 {
-    "Item": "Pyramid Pendant",
-    "Tier": "B",
-    "Level": "46",
-    "Type": "Amulet",
-    "Size": "1x2",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[10-15] to Vitality",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Replenish Life [10-15]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[20-30] to Life",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Pyramid Pendant",
+  "Tier": "B",
+  "Level": "46",
+  "Type": "Amulet",
+  "Size": "1x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[10-15] to Vitality",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Replenish Life [10-15]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[20-30] to Life",
+      "class": "stat-default"
+    }
+  ]
 }

@@ -1,37 +1,37 @@
 {
-    "Item": "Spellshard",
-    "Tier": "A",
-    "Level": "56",
-    "Damage": "34.0032-36",
-    "APS": "2.272.1-2.44",
-    "DPS": "78.0068-88",
-    "Type": "Spellblade",
-    "TwoHanded": false,
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[20-30]% Faster Cast Rate",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[20-40]% Increased Attack Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[480-490] to Attack Rating",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[8-16] Mana per second",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[550-670] to Arcane Skill Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[10-15]% to All Resistances",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Spellshard",
+  "Tier": "A",
+  "Level": "56",
+  "Damage": "34.0032-36",
+  "APS": "2.272.1-2.44",
+  "DPS": "78.0068-88",
+  "Type": "Spellblade",
+  "TwoHanded": false,
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[20-30]% Faster Cast Rate",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[20-40]% Increased Attack Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[480-490] to Attack Rating",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[8-16] Mana per second",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[550-670] to Arcane Skill Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[10-15]% to All Resistances",
+      "class": "stat-default"
+    }
+  ]
 }

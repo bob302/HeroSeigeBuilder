@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_2_icon.webp",
-    "Image": "output/classes\\redneck\\logger\\ability_2_icon.webp",
-    "Name": "Chainsaw Slash",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 2, "y": 0 }
+  "Icon": "ability_2_icon.webp",
+  "Image": "output/classes\\redneck\\logger\\ability_2_icon.webp",
+  "Name": "Chainsaw Slash",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": {
+    "x": 2,
+    "y": 0
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Wider Chain",
+      "description": "Increases the attack area of effect radius of chainslaw slash."
+    },
+    {
+      "id": 3,
+      "name": "Accelerated Chain",
+      "description": "Increases the damage dealt by chainsaw slash."
+    },
+    {
+      "id": 4,
+      "name": "Giant Slash",
+      "description": "Every 4th attack unleashes a giant slash dealing increased damage and inflicting armor break."
+    },
+    {
+      "id": 5,
+      "name": "Double The Logging",
+      "description": "Chance to attach an additional chainsaw on hit."
+    },
+    {
+      "id": 6,
+      "name": "Rupturing Slash",
+      "description": "Chance on inflict bleeding on hit."
+    },
+    {
+      "id": 7,
+      "name": "Chaining Uppercut",
+      "description": "Chance on hit to send monsters airborne dealing increased area of effect damage when landing."
+    },
+    {
+      "id": 8,
+      "name": "The Motor Goes BRRRRR",
+      "description": "Increases chainsaw slash attack speed while wielding a chainsaw."
+    },
+    {
+      "id": 9,
+      "name": "Bigger Saw",
+      "description": "Increases the area of effect radius and size of rotating chainsaws."
+    },
+    {
+      "id": 10,
+      "name": "Sawing Momentum",
+      "description": "Enemies killed while a chainsaw is attached to them release the chainsaws outwards. If they hit a new target, they attach themselves to them instead."
+    },
+    {
+      "id": 11,
+      "name": "Strengthened Bloodlust",
+      "description": "Increases rotating chainsaw damage and size based on your total strength."
+    },
+    {
+      "id": 12,
+      "name": "Malfunctioning Chainsaw",
+      "description": "Chainsaws explode after expiring dealing additional damage and stunning nearby enemies."
+    },
+    {
+      "id": 13,
+      "name": "Bloody Carnage",
+      "description": "Increases damage dealt to bleeding enemies."
+    },
+    {
+      "id": 14,
+      "name": "Woodcutter's Madness",
+      "description": "Every 3rd hit unleashes a spinning attack with increased radius and dealing increased damage."
+    },
+    {
+      "id": 15,
+      "name": "Gas To The Chainsaws",
+      "description": "Each target can only have one chainsaw attached to them but striking them again causes it to reset its duration, growing in size and dealing additional damage up to 10 times."
+    }
+  ]
 }

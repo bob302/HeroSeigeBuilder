@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_4_icon.webp",
-    "Image": "output/classes\\redneck\\hillbilly\\ability_4_icon.webp",
-    "Name": "Tire Fire",
-    "Required Skill(s)": "Pipe Bombs",
-    "Required Level": "8",
-    "Position": { "x": 2, "y": 1 }
+  "Icon": "ability_4_icon.webp",
+  "Image": "output/classes\\redneck\\hillbilly\\ability_4_icon.webp",
+  "Name": "Tire Fire",
+  "Required Skill(s)": "Pipe Bombs",
+  "Required Level": "8",
+  "Position": {
+    "x": 2,
+    "y": 1
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Tire Density",
+      "description": "Increases the damage dealt by tire fire."
+    },
+    {
+      "id": 3,
+      "name": "Increased Stock",
+      "description": "Increases the projectile speed of tire fire."
+    },
+    {
+      "id": 4,
+      "name": "Monster Truck Tire",
+      "description": "Now sends out a big monster truck tire stunning and knocking monsters up on hit dealing increased damage. Tire fire now has a cooldown."
+    },
+    {
+      "id": 5,
+      "name": "Scaling Up",
+      "description": "Increases the size of tires."
+    },
+    {
+      "id": 6,
+      "name": "Hard Hitter",
+      "description": "Knocks monsters back with increased damage."
+    },
+    {
+      "id": 7,
+      "name": "Bouncy Tire",
+      "description": "Tires now bounce over gaps and short terrain dealing a damaging area of effect pulse when landing."
+    },
+    {
+      "id": 8,
+      "name": "Flaming Tire",
+      "description": "Inflicts burning on hit."
+    },
+    {
+      "id": 9,
+      "name": "Overheated",
+      "description": "Increases damage dealt to burning targets."
+    },
+    {
+      "id": 10,
+      "name": "Loose Tire",
+      "description": "Send out a bouncing tire dealing increased area of effect damage every time it lands."
+    },
+    {
+      "id": 11,
+      "name": "The Machinist",
+      "description": "Increases faster cast rate when casting tire fire."
+    },
+    {
+      "id": 12,
+      "name": "Oily Tire",
+      "description": "Tire now leaves a trail of oil behind with increased radius."
+    },
+    {
+      "id": 13,
+      "name": "Impact Angle",
+      "description": "Tires now bounce off of high terrain and environment increasing its damage per impact."
+    },
+    {
+      "id": 14,
+      "name": "Mini Tires",
+      "description": "Now send out multiple smaller tires in an arc."
+    },
+    {
+      "id": 15,
+      "name": "Donuts",
+      "description": "Tires now spiral outwards inflicting fire break on hit."
+    }
+  ]
 }

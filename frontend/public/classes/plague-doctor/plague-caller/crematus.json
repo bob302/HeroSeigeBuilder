@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_2_icon.webp",
-    "Image": "output/classes\\plaguedoctor\\plague-caller\\ability_2_icon.webp",
-    "Name": "Crematus",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 2, "y": 0 }
+  "Icon": "ability_2_icon.webp",
+  "Image": "output/classes\\plaguedoctor\\plague-caller\\ability_2_icon.webp",
+  "Name": "Crematus",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": {
+    "x": 2,
+    "y": 0
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Gas Cilynder",
+      "description": "Increases the duration of crematus."
+    },
+    {
+      "id": 3,
+      "name": "Potent Exhaling",
+      "description": "Increases the damage dealt by crematus."
+    },
+    {
+      "id": 4,
+      "name": "Spiraling Cremation",
+      "description": "Unleash multiple swirling flames around you dealing increased damage."
+    },
+    {
+      "id": 5,
+      "name": "Corrosive Burning",
+      "description": "Chance to inflict burning on hit."
+    },
+    {
+      "id": 6,
+      "name": "Corrosive Embers",
+      "description": "Chance to inflict poison break on hit."
+    },
+    {
+      "id": 7,
+      "name": "Trifurcate Blow",
+      "description": "Chance on cast to unleash two additional trails of crematus dealing a portion of the damage."
+    },
+    {
+      "id": 8,
+      "name": "Toxic Dragonflight",
+      "description": "Gain increased movement speed when casting crematus."
+    },
+    {
+      "id": 9,
+      "name": "Toxiamplified Alveoli",
+      "description": "Increases the area of effect radius of crematus."
+    },
+    {
+      "id": 10,
+      "name": "Toxin Container",
+      "description": "Throw a plague container at target location unleashing crematus into all directions for a short duration. The plague container eventually explodes dealing area of effect damage and stunning nearby monsters."
+    },
+    {
+      "id": 11,
+      "name": "Tachypnea",
+      "description": "Decreases movement diminish when using crematus."
+    },
+    {
+      "id": 12,
+      "name": "Engulfing Pyre ",
+      "description": "Chance to burst the ground on flames at burning targets location on hit dealing a portion of the damage over time."
+    },
+    {
+      "id": 13,
+      "name": "Bursting Pustules",
+      "description": "Damaging a monster with crematus inflicts a stack of pustules. At full stacks unleash a burst of poison dealing area of effect damage."
+    },
+    {
+      "id": 14,
+      "name": "Farflames",
+      "description": "Increases the projectile speed, size and damage dealt by crematus."
+    },
+    {
+      "id": 15,
+      "name": "Unstable Contamination",
+      "description": "Activate/Deactivate to leave behind a trail of poisonous gas dealing damage over time and slowing targets. Drains mana constantly."
+    }
+  ]
 }

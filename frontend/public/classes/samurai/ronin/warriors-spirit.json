@@ -1,8 +1,8 @@
 {
-    "Icon": "ability_7_icon.webp",
-    "Image": "output/classes\\samurai\\ronin\\ability_7_icon.webp",
-    "Name": "Warriors Spirit",
-    "Required Skill(s)": "Smoke Bomb",
-    "Required Level": "24",
-    "Position": { "x": 0, "y": 3 }
+  "Icon": "ability_7_icon.webp",
+  "Image": "output/classes\\samurai\\ronin\\ability_7_icon.webp",
+  "Name": "Warriors Spirit",
+  "Required Skill(s)": "Smoke Bomb",
+  "Required Level": "24",
+  "Position": { "x": 0, "y": 3 }
 }

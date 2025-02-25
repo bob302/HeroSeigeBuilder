@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_9_icon.webp",
-    "Image": "output/classes\\whitemage\\zealot\\ability_9_icon.webp",
-    "Name": "Black Mass",
-    "Required Skill(s)": "None",
-    "Required Level": "30",
-    "Position": { "x": 1, "y": 4 }
+  "Icon": "ability_9_icon.webp",
+  "Image": "output/classes\\whitemage\\zealot\\ability_9_icon.webp",
+  "Name": "Black Mass",
+  "Required Skill(s)": "None",
+  "Required Level": "30",
+  "Position": {
+    "x": 1,
+    "y": 4
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Dark Gathering",
+      "description": "Increases the amount of cultists."
+    },
+    {
+      "id": 3,
+      "name": "Cult's Migration",
+      "description": "Increases the movement speed of cultists."
+    },
+    {
+      "id": 4,
+      "name": "Shadow Puppets",
+      "description": "Summon a static cultist. The cultist emmits a portion of all damage taken to nearby monsters as area of effect damage."
+    },
+    {
+      "id": 5,
+      "name": "Loyal Followers",
+      "description": "Decreases the cooldown of black mass."
+    },
+    {
+      "id": 6,
+      "name": "Raise Morale",
+      "description": "Decreases the mana costs of black mass."
+    },
+    {
+      "id": 7,
+      "name": "The Devil Within",
+      "description": "Chance to unleash a ripple of blood on hit dealing additional damage."
+    },
+    {
+      "id": 8,
+      "name": "Darkness Infused",
+      "description": "Increases the damage dealt by black mass."
+    },
+    {
+      "id": 9,
+      "name": "Bloated Followers",
+      "description": "Increases the size of cultists."
+    },
+    {
+      "id": 10,
+      "name": "Cult Bishops",
+      "description": "Send forward a cult bishop inflicting burning, dealing increased damage according to your energy and stunning monsters on hit."
+    },
+    {
+      "id": 11,
+      "name": "Crowd Stomp",
+      "description": "Chance to stun monsters on hit."
+    },
+    {
+      "id": 12,
+      "name": "Eternal Corruption",
+      "description": "Chance on cast to summon an additional black mass."
+    },
+    {
+      "id": 13,
+      "name": "Murder Frenzy",
+      "description": "Increases damage dealt to stunned targets."
+    },
+    {
+      "id": 14,
+      "name": "Protective Circle",
+      "description": "Increased amount of cultists are now summoned in a circle around target location."
+    },
+    {
+      "id": 15,
+      "name": "Loyal Followers",
+      "description": "Summon a horde of static cultists at target location for a short duration dealing increased damage."
+    }
+  ]
 }

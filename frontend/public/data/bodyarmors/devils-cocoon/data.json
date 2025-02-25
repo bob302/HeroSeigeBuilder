@@ -1,39 +1,39 @@
 {
-    "Item": "Devil's Cocoon",
-    "Tier": "S",
-    "Level": "74",
-    "Defense": "652.50525-780",
-    "Type": "Body Armor",
-    "Size": "2x3",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[150-225]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Fire Skill Damage increased by [25-40]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "-[15-25]% to Enemy Fire Resistance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+125 to Vitality (Based on Level)",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[50-75]% to Fire Resistance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+5% to Maximum Fire Resist",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Socketed (2-5)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Devil's Cocoon",
+  "Tier": "S",
+  "Level": "74",
+  "Defense": "652.50525-780",
+  "Type": "Body Armor",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[150-225]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Fire Skill Damage increased by [25-40]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "-[15-25]% to Enemy Fire Resistance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+125 to Vitality (Based on Level)",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[50-75]% to Fire Resistance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+5% to Maximum Fire Resist",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Socketed (2-5)",
+      "class": "stat-default"
+    }
+  ]
 }

@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_1_icon.webp",
-    "Image": "output/classes\\pyromancer\\arsonist\\ability_1_icon.webp",
-    "Name": "Breath of Fire",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 0, "y": 0 }
+  "Icon": "ability_1_icon.webp",
+  "Image": "output/classes\\pyromancer\\arsonist\\ability_1_icon.webp",
+  "Name": "Breath of Fire",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": {
+    "x": 0,
+    "y": 0
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Expanding Heat",
+      "description": "Increases the size of breath of fire."
+    },
+    {
+      "id": 3,
+      "name": "Burning Haze",
+      "description": "Increases the damage dealt by breath of fire."
+    },
+    {
+      "id": 4,
+      "name": "Hydra's Breeze",
+      "description": "Unleash additional breaths in an arc."
+    },
+    {
+      "id": 5,
+      "name": "Heat Combustion",
+      "description": "Chance on hit to unleash burning fragments from the target dealing damage to other nearby targets."
+    },
+    {
+      "id": 6,
+      "name": "Double Breeze",
+      "description": "Chance on cast to unleash an additional breath of fire."
+    },
+    {
+      "id": 7,
+      "name": "Scorching Exhale",
+      "description": "Increased the length of breath of fire."
+    },
+    {
+      "id": 8,
+      "name": "Burning Lungs",
+      "description": "Inflicts burning on hit."
+    },
+    {
+      "id": 9,
+      "name": "Collateral Ignition",
+      "description": "Chance on hit to spread burning to monsters around the target."
+    },
+    {
+      "id": 10,
+      "name": "Molten Orb",
+      "description": "Breath of fire now summons a molten orb traveling forwards breathing fire towards the closest target."
+    },
+    {
+      "id": 11,
+      "name": "Burst of Heat",
+      "description": "Chance on hit to unleash a small fire nova if target is burning."
+    },
+    {
+      "id": 12,
+      "name": "Breaking Point",
+      "description": "Chance to inflict fire break on burning targets."
+    },
+    {
+      "id": 13,
+      "name": "Reverse Hypthermia",
+      "description": "Increases damage dealt to burning targets."
+    },
+    {
+      "id": 14,
+      "name": "Chain of Fire",
+      "description": "Breath of fire now chains multiple times."
+    },
+    {
+      "id": 15,
+      "name": "Scorching Hellflame",
+      "description": "Breath of fire now applies stacks of Hellflame which will unleash a fiery pulse of area of effect damage when reaching max stacks."
+    }
+  ]
 }

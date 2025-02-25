@@ -1,26 +1,26 @@
 {
-    "Item": "Giant's Band of Strength",
-    "Tier": "SS",
-    "Level": "98",
-    "Type": "Ring",
-    "Size": "1x1",
-    "Rarity": "Heroic",
-    "Stats": [
-        {
-            "stat": "+[1-3] to All Skills",
-            "class": "stat-allskills"
-        },
-        {
-            "stat": "+[4-12]% Increased Critical Strike Chance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[35-50] to Strength",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+5 to Attack Rating (Based on Level)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Giant's Band of Strength",
+  "Tier": "SS",
+  "Level": "98",
+  "Type": "Ring",
+  "Size": "1x1",
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "+[1-3] to All Skills",
+      "class": "stat-allskills"
+    },
+    {
+      "stat": "+[4-12]% Increased Critical Strike Chance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[35-50] to Strength",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+5 to Attack Rating (Based on Level)",
+      "class": "stat-default"
+    }
+  ]
 }

@@ -1,58 +1,58 @@
 {
-    "Item": "Scarred Battle Darts",
-    "Tier": "SS",
-    "Level": "93",
-    "Damage": "474.90428-522",
-    "APS": "2.502.4-2.59",
-    "DPS": "1189.501027-1352",
-    "Type": "Throwing Weapon",
-    "TwoHanded": false,
-    "Size": "2x2",
-    "Rarity": "Heroic",
-    "Stats": [
-        {
-            "stat": "+[590-625]% Enhanced Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+2 to All Skills",
-            "class": "stat-allskills"
-        },
-        {
-            "stat": "+[2-5] to Physical Skills",
-            "class": "stat-physical"
-        },
-        {
-            "stat": "+[30-40]% Increased Attack Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[15-25]% Increased Critical Strike Chance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[10-20]% Chance for a Crushing Blow",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+8% Increased Attack Rating",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[5-8]% Life stolen per Hit",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[30-60]% Increased Critical Strike Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[20-30]% of target Defense ignored",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Socketed (1)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Scarred Battle Darts",
+  "Tier": "SS",
+  "Level": "93",
+  "Damage": "474.90428-522",
+  "APS": "2.502.4-2.59",
+  "DPS": "1189.501027-1352",
+  "Type": "Throwing Weapon",
+  "TwoHanded": false,
+  "Size": "2x2",
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "+[590-625]% Enhanced Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+2 to All Skills",
+      "class": "stat-allskills"
+    },
+    {
+      "stat": "+[2-5] to Physical Skills",
+      "class": "stat-physical"
+    },
+    {
+      "stat": "+[30-40]% Increased Attack Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[15-25]% Increased Critical Strike Chance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[10-20]% Chance for a Crushing Blow",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+8% Increased Attack Rating",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[5-8]% Life stolen per Hit",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[30-60]% Increased Critical Strike Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[20-30]% of target Defense ignored",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Socketed (1)",
+      "class": "stat-default"
+    }
+  ]
 }

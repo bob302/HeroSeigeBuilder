@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_8_icon.webp",
-    "Image": "output/classes\\shieldlancer\\knight\\ability_8_icon.webp",
-    "Name": "Counter",
-    "Required Skill(s)": "Damage Reflect, Taunt",
-    "Required Level": "24",
-    "Position": { "x": 2, "y": 3 }
+  "Icon": "ability_8_icon.webp",
+  "Image": "output/classes\\shieldlancer\\knight\\ability_8_icon.webp",
+  "Name": "Counter",
+  "Required Skill(s)": "Damage Reflect, Taunt",
+  "Required Level": "24",
+  "Position": {
+    "x": 2,
+    "y": 3
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Sharp Vengeance",
+      "description": "Increases the damage dealt by counter."
+    },
+    {
+      "id": 3,
+      "name": "Vengeful Hit",
+      "description": "Chance to critically hit dealing increased critical strike damage."
+    },
+    {
+      "id": 4,
+      "name": "Insatiable Challenger",
+      "description": "Casting counter taunts all nearby monsters inflicting armor break."
+    },
+    {
+      "id": 5,
+      "name": "Double Edge",
+      "description": "Chance to throw additional lances when struck."
+    },
+    {
+      "id": 6,
+      "name": "Rupturing Lance",
+      "description": "Chance to inflict bleeding on hit."
+    },
+    {
+      "id": 7,
+      "name": "Spell Reflection",
+      "description": "Counter also reflects non-physical projectiles and attacks dealing a portion of the damage."
+    },
+    {
+      "id": 8,
+      "name": "Battle Magus",
+      "description": "Increases the duration of counter."
+    },
+    {
+      "id": 9,
+      "name": "Lusting Blood",
+      "description": "Chance to replenish a portion of your maximum life on hit."
+    },
+    {
+      "id": 10,
+      "name": "Versus the World",
+      "description": "Counter no longer throws lances at monsters but gives you a chance to block incoming damage reflecting it back to the attacker with intense power. "
+    },
+    {
+      "id": 11,
+      "name": "Stunning Lance",
+      "description": "Chance to stun monsters on hit."
+    },
+    {
+      "id": 12,
+      "name": "Cheap Counter",
+      "description": "Increases damage dealt to stunned targets."
+    },
+    {
+      "id": 13,
+      "name": "Bursting Lances",
+      "description": "Chance to throw multiple piercing lances around you when struck."
+    },
+    {
+      "id": 14,
+      "name": "Volley Build-up",
+      "description": "During its duration counter stores all damage taken. When expiring throw javelins at nearby monsters unleashing the stored damage taken."
+    },
+    {
+      "id": 15,
+      "name": "Give No Quarter",
+      "description": "Counter no longer has a duration but instead frequently drains your life and mana. Counter can be activated and deactivated and no longer has a cooldown."
+    }
+  ]
 }

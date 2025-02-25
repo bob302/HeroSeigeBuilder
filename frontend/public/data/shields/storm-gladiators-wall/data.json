@@ -1,36 +1,36 @@
 {
-    "Item": "Storm Gladiator's Wall",
-    "Tier": "B",
-    "Level": "54",
-    "Defense": "86.4053-120",
-    "Block": "40",
-    "Type": "Shield",
-    "Size": "2x3",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "10% Chance after Blocking [Lightning Fury] Level [5-10]",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "+[140-200]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[160-180] to Additive Lightning Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+3 to Light Radius",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[25-35]% to All Resistances",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+30% to Lightning Resistance",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Storm Gladiator's Wall",
+  "Tier": "B",
+  "Level": "54",
+  "Defense": "86.4053-120",
+  "Block": "40",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "10% Chance after Blocking [Lightning Fury] Level [5-10]",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+[140-200]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[160-180] to Additive Lightning Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+3 to Light Radius",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[25-35]% to All Resistances",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+30% to Lightning Resistance",
+      "class": "stat-default"
+    }
+  ]
 }

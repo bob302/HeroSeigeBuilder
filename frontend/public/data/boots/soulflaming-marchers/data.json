@@ -1,35 +1,35 @@
 {
-    "Item": "Soulflaming Marchers",
-    "Tier": "SS",
-    "Level": "100",
-    "Defense": "137.20115-160",
-    "Type": "Boots",
-    "Size": "2x2",
-    "Rarity": "Heroic",
-    "Stats": [
-        {
-            "stat": "+[120-150]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[1-2] to All Skills",
-            "class": "stat-allskills"
-        },
-        {
-            "stat": "+40% Increased Movement Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Unholy Stat",
-            "class": "stat-unholy"
-        },
-        {
-            "stat": "Unholy Stat",
-            "class": "stat-unholy"
-        },
-        {
-            "stat": "Unholy Stat",
-            "class": "stat-unholy"
-        }
-    ]
+  "Item": "Soulflaming Marchers",
+  "Tier": "SS",
+  "Level": "100",
+  "Defense": "137.20115-160",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "+[120-150]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[1-2] to All Skills",
+      "class": "stat-allskills"
+    },
+    {
+      "stat": "+40% Increased Movement Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Unholy Stat",
+      "class": "stat-unholy"
+    },
+    {
+      "stat": "Unholy Stat",
+      "class": "stat-unholy"
+    },
+    {
+      "stat": "Unholy Stat",
+      "class": "stat-unholy"
+    }
+  ]
 }

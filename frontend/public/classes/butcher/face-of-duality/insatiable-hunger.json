@@ -1,8 +1,8 @@
 {
-    "Icon": "ability_9_icon.webp",
-    "Image": "output/classes\\butcher\\face-of-duality\\ability_9_icon.webp",
-    "Name": "Insatiable Hunger",
-    "Required Skill(s)": "Awakening Fury",
-    "Required Level": "30",
-    "Position": { "x": 1, "y": 4 }
+  "Icon": "ability_9_icon.webp",
+  "Image": "output/classes\\butcher\\face-of-duality\\ability_9_icon.webp",
+  "Name": "Insatiable Hunger",
+  "Required Skill(s)": "Awakening Fury",
+  "Required Level": "30",
+  "Position": { "x": 1, "y": 4 }
 }

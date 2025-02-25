@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_7_icon.webp",
-    "Image": "output/classes\\demonslayer\\gunslinger\\ability_7_icon.webp",
-    "Name": "Shredder Trap",
-    "Required Skill(s)": "None",
-    "Required Level": "24",
-    "Position": { "x": 0, "y": 3 }
+  "Icon": "ability_7_icon.webp",
+  "Image": "output/classes\\demonslayer\\gunslinger\\ability_7_icon.webp",
+  "Name": "Shredder Trap",
+  "Required Skill(s)": "None",
+  "Required Level": "24",
+  "Position": {
+    "x": 0,
+    "y": 3
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Sharp Edged Shredders",
+      "description": "Increases the damage dealt by shredder trap."
+    },
+    {
+      "id": 3,
+      "name": "Blood Hungry Blades",
+      "description": "Chance for shredder trap to grow larger on hit."
+    },
+    {
+      "id": 4,
+      "name": "Comeback with a Cut",
+      "description": "Shredders now home back to you after a short period dealing damage on the way."
+    },
+    {
+      "id": 5,
+      "name": "Bits and Pieces",
+      "description": "Chance to unleash smaller flying shredders on hit dealing additional damage."
+    },
+    {
+      "id": 6,
+      "name": "Ripping Shredderblade",
+      "description": "Inflicts bleeding on hit."
+    },
+    {
+      "id": 7,
+      "name": "Slayer's Adrenaline",
+      "description": "Decreases movement diminish when using shredder trap."
+    },
+    {
+      "id": 8,
+      "name": "Less is More",
+      "description": "Decreases mana cost when using shredder trap."
+    },
+    {
+      "id": 9,
+      "name": "Forging Hands",
+      "description": "Increases cast rate when using shredder trap."
+    },
+    {
+      "id": 10,
+      "name": "Gigashredder",
+      "description": "Unleash a big shredder that slowly homes towards the closest monster on range. You can now only spawn one shredder."
+    },
+    {
+      "id": 11,
+      "name": "Cutting Power",
+      "description": "Chance to inflict arcane break on hit."
+    },
+    {
+      "id": 12,
+      "name": "Slay the Wounded",
+      "description": "Increases damage dealt to bleeding targets."
+    },
+    {
+      "id": 13,
+      "name": "Bigger and Sharper Blades",
+      "description": "Increases the size of shredders."
+    },
+    {
+      "id": 14,
+      "name": "Woodshop",
+      "description": "Throw multiple smaller shredders at once. Shredder trap now has a cooldown."
+    },
+    {
+      "id": 15,
+      "name": "Circular Cutting",
+      "description": "Unleash multiple orbiting shredders around you."
+    }
+  ]
 }

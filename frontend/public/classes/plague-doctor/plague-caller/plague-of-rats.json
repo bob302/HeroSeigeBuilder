@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_3_icon.webp",
-    "Image": "output/classes\\plaguedoctor\\plague-caller\\ability_3_icon.webp",
-    "Name": "Plague of Rats",
-    "Required Skill(s)": "None",
-    "Required Level": "8",
-    "Position": { "x": 0, "y": 1 }
+  "Icon": "ability_3_icon.webp",
+  "Image": "output/classes\\plaguedoctor\\plague-caller\\ability_3_icon.webp",
+  "Name": "Plague of Rats",
+  "Required Skill(s)": "None",
+  "Required Level": "8",
+  "Position": {
+    "x": 0,
+    "y": 1
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Horde of Rats",
+      "description": "Increases the projectile amount of plague of rats."
+    },
+    {
+      "id": 3,
+      "name": "Gnawing Rodents",
+      "description": "Increases the damage dealt by plague of rats."
+    },
+    {
+      "id": 4,
+      "name": "Ratsunami",
+      "description": "Summon increased amount of piercing rats bouncing off of high terrain."
+    },
+    {
+      "id": 5,
+      "name": "Lab Grown Rats",
+      "description": "Increases the size of plague of rats."
+    },
+    {
+      "id": 6,
+      "name": "Bite Tethering",
+      "description": "Decreases the mana cost of plague of rats."
+    },
+    {
+      "id": 7,
+      "name": "Plague Carriers",
+      "description": "Chance for rats to explode into plagued chunks of meat dealing damage and inflicting poisoned on hit."
+    },
+    {
+      "id": 8,
+      "name": "Painful Bite",
+      "description": "Chance to critically hit with increased critical strike damage."
+    },
+    {
+      "id": 9,
+      "name": "Rodent Handler",
+      "description": "Increases cast rate when using plague of rats."
+    },
+    {
+      "id": 10,
+      "name": "Ratpocalypse",
+      "description": "Summon increased amount of rats in a circle around target location moving towards the center. Plague of rats now has a cooldown."
+    },
+    {
+      "id": 11,
+      "name": "Leptospirosis",
+      "description": "Chance to inflict poison break on hit."
+    },
+    {
+      "id": 12,
+      "name": "Nimble Trainer",
+      "description": "Decreases movement diminish when using plague of rats."
+    },
+    {
+      "id": 13,
+      "name": "Plaguemausers",
+      "description": "Increases the projectile speed of plague of rats."
+    },
+    {
+      "id": 14,
+      "name": "Rat Den",
+      "description": "Summon a rat den at target location constantly sending rats towards nearby monsters. Plague of rats now has a cooldown."
+    },
+    {
+      "id": 15,
+      "name": "Spreading Infestation",
+      "description": "Increases the proc chance and poisoned damage of plague carriers. Plague carriers now additionally sends multiple piercing rats towards nearby monsters."
+    }
+  ]
 }

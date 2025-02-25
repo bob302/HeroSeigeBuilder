@@ -1,66 +1,66 @@
 {
-    "Item": "Headsman's Bloodthirster",
-    "Tier": "SS",
-    "Level": "96",
-    "Damage": "996.00819-1173",
-    "APS": "1.001",
-    "DPS": "996.00819-1173",
-    "Type": "Axe",
-    "TwoHanded": true,
-    "Size": "2x4",
-    "Rarity": "Heroic",
-    "Stats": [
-        {
-            "stat": "+[810-920]% Enhanced Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[5-9] to Physical Skills",
-            "class": "stat-physical"
-        },
-        {
-            "stat": "+[1-5] to [Execution]",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "+10% Increased Critical Strike Chance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+25% of target Defense ignored",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Extra Damage to Bleeding Monsters [30-50]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+20 to Strength",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+30 to Dexterity",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Physical Damage Taken Reduced by [8-14]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Magic Damage Taken Reduced by [8-14]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+1200 to Attack Rating (Based on Level)",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Attacks can hit multiple enemies",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Socketed (2-5)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Headsman's Bloodthirster",
+  "Tier": "SS",
+  "Level": "96",
+  "Damage": "996.00819-1173",
+  "APS": "1.001",
+  "DPS": "996.00819-1173",
+  "Type": "Axe",
+  "TwoHanded": true,
+  "Size": "2x4",
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "+[810-920]% Enhanced Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[5-9] to Physical Skills",
+      "class": "stat-physical"
+    },
+    {
+      "stat": "+[1-5] to [Execution]",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+10% Increased Critical Strike Chance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+25% of target Defense ignored",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Extra Damage to Bleeding Monsters [30-50]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+20 to Strength",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+30 to Dexterity",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Physical Damage Taken Reduced by [8-14]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Magic Damage Taken Reduced by [8-14]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+1200 to Attack Rating (Based on Level)",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Attacks can hit multiple enemies",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Socketed (2-5)",
+      "class": "stat-default"
+    }
+  ]
 }

@@ -1,31 +1,31 @@
 {
-    "Item": "USB's Cord",
-    "Tier": "D",
-    "Level": "11",
-    "Defense": "11.4012-12",
-    "Type": "Belt",
-    "Size": "2x1",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+128% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+32 to Attack Rating",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+8 to Additive Lightning Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+64 to Mana",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Belt Slots: 3",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "USB's Cord",
+  "Tier": "D",
+  "Level": "11",
+  "Defense": "11.4012-12",
+  "Type": "Belt",
+  "Size": "2x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+128% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+32 to Attack Rating",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+8 to Additive Lightning Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+64 to Mana",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Belt Slots: 3",
+      "class": "stat-default"
+    }
+  ]
 }

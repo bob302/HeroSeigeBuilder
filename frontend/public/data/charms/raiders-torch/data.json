@@ -1,22 +1,22 @@
 {
-    "Item": "Raider's Torch",
-    "Tier": "S",
-    "Level": "61",
-    "Type": "Charm",
-    "Size": "1x2",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[10-25]% Increased Attack Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Attack Damage increased by [8-20]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[3-5] to Light Radius",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Raider's Torch",
+  "Tier": "S",
+  "Level": "61",
+  "Type": "Charm",
+  "Size": "1x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[10-25]% Increased Attack Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Attack Damage increased by [8-20]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[3-5] to Light Radius",
+      "class": "stat-default"
+    }
+  ]
 }

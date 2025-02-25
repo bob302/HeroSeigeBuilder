@@ -1,8 +1,80 @@
 {
-    "Icon": "ability_3_icon.webp",
-    "Image": "output/classes\\jotunn\\son-of-aurgelmir\\ability_3_icon.webp",
-    "Name": "Freezing Leap",
-    "Required Skill(s)": "Flash Freeze",
-    "Required Level": "8",
-    "Position": { "x": 0, "y": 1 }
+  "Icon": "ability_3_icon.webp",
+  "Image": "output/classes\\jotunn\\son-of-aurgelmir\\ability_3_icon.webp",
+  "Name": "Freezing Leap",
+  "Required Skill(s)": "Flash Freeze",
+  "Required Level": "8",
+  "Position": { "x": 0, "y": 1 },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Leap Force",
+      "description": "Increases the damage dealt by freezing leap."
+    },
+    {
+      "id": 3,
+      "name": "Extended Field",
+      "description": "Increases the maximum range of freezing leap."
+    },
+    {
+      "id": 4,
+      "name": "Superhero Landing",
+      "description": "Unleash an arc of shockwaves towards target location when landing."
+    },
+    {
+      "id": 5,
+      "name": "Dazing Impact",
+      "description": "Chance to stun targets on hit."
+    },
+    {
+      "id": 6,
+      "name": "Grand Impact",
+      "description": "Increases the area of effect radius of freezing leap."
+    },
+    {
+      "id": 7,
+      "name": "Concentrated Detonation",
+      "description": "Increases the damage dealt of freezing leap decreasing its area of effect radius."
+    },
+    {
+      "id": 8,
+      "name": "Echoing Frostquake ",
+      "description": "Chance to unleash an additional shockwave when landing."
+    },
+    {
+      "id": 9,
+      "name": "Hare Spirit",
+      "description": "Increases landing recovery when using freezing leap."
+    },
+    {
+      "id": 10,
+      "name": "Frostbending Leap",
+      "description": "Pull nearby monsters towards you when landing with increased area of effect radius inflicting elemental break."
+    },
+    {
+      "id": 11,
+      "name": "Artic Vulnerability ",
+      "description": "Chance to inflict cold break on hit."
+    },
+    {
+      "id": 12,
+      "name": "Overwhelming Impacts",
+      "description": "Increases damage dealt to stunned targets."
+    },
+    {
+      "id": 13,
+      "name": "Frosted Territory",
+      "description": "Ground below landing location is left frosted dealing damage over time and slowing monsters."
+    },
+    {
+      "id": 14,
+      "name": "Seismic Icequake",
+      "description": "Leave the ground trembling after landing causing additional echos."
+    },
+    {
+      "id": 15,
+      "name": "Tectonic Stampede",
+      "description": "Charge towards target location followed by a shockwave of ice."
+    }
+  ]
 }

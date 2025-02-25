@@ -1,22 +1,22 @@
 {
-    "Item": "Jack's Pumpkin Spice",
-    "Tier": "S",
-    "Level": "75",
-    "Type": "Charm",
-    "Size": "2x2",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[15-30] to Vitality",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Explosion area of effect increased by [5-10]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[10-20] Life After each Kill",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Jack's Pumpkin Spice",
+  "Tier": "S",
+  "Level": "75",
+  "Type": "Charm",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[15-30] to Vitality",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Explosion area of effect increased by [5-10]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[10-20] Life After each Kill",
+      "class": "stat-default"
+    }
+  ]
 }

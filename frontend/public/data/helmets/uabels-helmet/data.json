@@ -1,39 +1,39 @@
 {
-    "Item": "Uabel's Helmet",
-    "Tier": "B",
-    "Level": "34",
-    "Defense": "59.4543-76",
-    "Type": "Helmet",
-    "Size": "2x2",
-    "Rarity": "Satanic Set",
-    "Stats": [
-        {
-            "stat": "+[65-100]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+1 to All Skills",
-            "class": "stat-allskills"
-        },
-        {
-            "stat": "Replenish Mana 15%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+100 to Life",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+100 to Mana",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+15 Mana After each Kill",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+10% Increased Magic Find",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Uabel's Helmet",
+  "Tier": "B",
+  "Level": "34",
+  "Defense": "59.4543-76",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "+[65-100]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+1 to All Skills",
+      "class": "stat-allskills"
+    },
+    {
+      "stat": "Replenish Mana 15%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+100 to Life",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+100 to Mana",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+15 Mana After each Kill",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+10% Increased Magic Find",
+      "class": "stat-default"
+    }
+  ]
 }

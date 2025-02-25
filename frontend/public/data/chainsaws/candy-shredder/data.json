@@ -1,54 +1,54 @@
 {
-    "Item": "Candy Shredder",
-    "Tier": "SS",
-    "Level": "94",
-    "Damage": "439.20418-461",
-    "APS": "2.292.21-2.38",
-    "DPS": "1010.00923-1097",
-    "Type": "Chainsaw",
-    "TwoHanded": false,
-    "Size": "2x3",
-    "Rarity": "Heroic",
-    "Stats": [
-        {
-            "stat": "+220% Enhanced Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[30-40]% Increased Attack Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+40% Chance for a Deadly Blow",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[825-935] to Attack Rating",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[8-12]% Life stolen per Hit",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[30-50]% of target Defense ignored",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[1475-1600] to Additive Arcane Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+17 Mana After each Kill",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+400% Enhanced Damage (Based on Level)",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Socketed (2-4)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Candy Shredder",
+  "Tier": "SS",
+  "Level": "94",
+  "Damage": "439.20418-461",
+  "APS": "2.292.21-2.38",
+  "DPS": "1010.00923-1097",
+  "Type": "Chainsaw",
+  "TwoHanded": false,
+  "Size": "2x3",
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "+220% Enhanced Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[30-40]% Increased Attack Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+40% Chance for a Deadly Blow",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[825-935] to Attack Rating",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[8-12]% Life stolen per Hit",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[30-50]% of target Defense ignored",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[1475-1600] to Additive Arcane Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+17 Mana After each Kill",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+400% Enhanced Damage (Based on Level)",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Socketed (2-4)",
+      "class": "stat-default"
+    }
+  ]
 }

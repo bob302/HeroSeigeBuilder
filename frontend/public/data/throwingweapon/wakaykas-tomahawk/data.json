@@ -1,42 +1,42 @@
 {
-    "Item": "Wakayka's Tomahawk",
-    "Tier": "A",
-    "Level": "64",
-    "Damage": "205.60167-245",
-    "APS": "2.232.02-2.43",
-    "DPS": "466.00337-595",
-    "Type": "Throwing Weapon",
-    "TwoHanded": false,
-    "Size": "2x2",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[420-580]% Enhanced Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[50-80]% Increased Attack Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+50% Chance for a Deadly Blow",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+75% of target Defense ignored",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+25% Chance to Open Wounds",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Attack Damage increased by [50-75]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Socketed (0-2)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Wakayka's Tomahawk",
+  "Tier": "A",
+  "Level": "64",
+  "Damage": "205.60167-245",
+  "APS": "2.232.02-2.43",
+  "DPS": "466.00337-595",
+  "Type": "Throwing Weapon",
+  "TwoHanded": false,
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[420-580]% Enhanced Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[50-80]% Increased Attack Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+50% Chance for a Deadly Blow",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+75% of target Defense ignored",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+25% Chance to Open Wounds",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Attack Damage increased by [50-75]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Socketed (0-2)",
+      "class": "stat-default"
+    }
+  ]
 }

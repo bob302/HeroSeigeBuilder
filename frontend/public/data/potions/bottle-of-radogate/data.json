@@ -1,18 +1,18 @@
 {
-    "Item": "Bottle of Radogate",
-    "Tier": "S",
-    "Level": "68",
-    "Type": "Potion",
-    "Size": "1x2",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[1-5] to [Fleet Footwork]",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "Gain Increased Movement Speed and Phasing.",
-            "class": "item-lore"
-        }
-    ]
+  "Item": "Bottle of Radogate",
+  "Tier": "S",
+  "Level": "68",
+  "Type": "Potion",
+  "Size": "1x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[1-5] to [Fleet Footwork]",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "Gain Increased Movement Speed and Phasing.",
+      "class": "item-lore"
+    }
+  ]
 }

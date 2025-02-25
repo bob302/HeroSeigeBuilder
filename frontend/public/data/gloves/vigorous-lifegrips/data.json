@@ -1,27 +1,27 @@
 {
-    "Item": "Vigorous Lifegrips",
-    "Tier": "C",
-    "Level": "30",
-    "Defense": "7.676-10",
-    "Type": "Gloves",
-    "Size": "2x2",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[15-20]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[15-25]% Increased Movement Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[75-125] to Life",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[75-125] to Mana",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Vigorous Lifegrips",
+  "Tier": "C",
+  "Level": "30",
+  "Defense": "7.676-10",
+  "Type": "Gloves",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[15-20]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[15-25]% Increased Movement Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[75-125] to Life",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[75-125] to Mana",
+      "class": "stat-default"
+    }
+  ]
 }

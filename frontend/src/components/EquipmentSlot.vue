@@ -16,32 +16,33 @@
   </div>
 </template>
 
-
 <script lang="ts">
-import { Component, Inject, Prop, Vue, Watch } from 'vue-facing-decorator';
-import { Slot } from '../models/Slot';
-import { Cell, HightLightCellState, type CellStyle } from '../models/Cell';
-import CellComponent from './CellComponent.vue';
-import SlotComponent from './SlotComponent.vue';
-import type EditorContext from '../models/EditorContext';
-import { EquipmentType } from '../models/Equipment';
-import { Point2D } from '../models/Point2D';
-import { Item } from '../models/Item';
-import { EquipmentSlot } from '../models/EquipmentSlot';
+import { Component, Inject, Prop, Vue, Watch } from "vue-facing-decorator";
+import { Slot } from "../models/Slot";
+import { Cell, HightLightCellState, type CellStyle } from "../models/Cell";
+import CellComponent from "./CellComponent.vue";
+import SlotComponent from "./SlotComponent.vue";
+import type EditorContext from "../models/EditorContext";
+import { EquipmentType } from "../models/Equipment";
+import { Point2D } from "../models/Point2D";
+import { Item } from "../models/Item";
+import { EquipmentSlot } from "../models/EquipmentSlot";
 
 @Component({
   components: {
     SlotComponent,
     CellComponent,
-}, emits: ['slot-mouse-enter', 'slot-mouse-leave']})
+  },
+  emits: ["slot-mouse-enter", "slot-mouse-leave"],
+})
 export default class EquipmentSlotComponent extends Vue {
-  @Inject({from: 'editorContext'}) 
+  @Inject({ from: "editorContext" })
   readonly editorContext!: EditorContext;
-  
-  @Prop({type: String, required: true}) 
+
+  @Prop({ type: String, required: true })
   readonly slotName!: string;
 
-  @Prop({required: false}) 
+  @Prop({ required: false })
   readonly cellStyle!: CellStyle;
 
   get equipmentSlot(): EquipmentSlot {
@@ -54,24 +55,25 @@ export default class EquipmentSlotComponent extends Vue {
     this.initializeComponents();
   }
 
-  @Watch('equipment')
+  @Watch("equipment")
   onEquipmentChanged() {
     this.initializeComponents();
   }
 
   private initializeComponents() {
     this.equipmentSlot.cell = new Cell(new Point2D(1, 1));
-    this.equipmentSlot.cell.setCellStyle(this.cellStyle)
-    
-    if (this.equipmentSlot.style.background !== '') {
-      this.equipmentSlot.cell.getCellStyle().background = this.equipmentSlot.style.background
+    this.equipmentSlot.cell.setCellStyle(this.cellStyle);
+
+    if (this.equipmentSlot.style.background !== "") {
+      this.equipmentSlot.cell.getCellStyle().background =
+        this.equipmentSlot.style.background;
     }
 
     this.equipmentSlot.slot = new Slot(
-      new Item(this.equipmentSlot.equipment, new Point2D(1, 1))
+      new Item(this.equipmentSlot.equipment, new Point2D(1, 1)),
     );
 
-    this.equipmentSlot.slot.item = null
+    this.equipmentSlot.slot.item = null;
     this.isInitialized = true;
   }
 
@@ -84,76 +86,80 @@ export default class EquipmentSlotComponent extends Vue {
   }
 
   isTypeValid(type: EquipmentType) {
-    return this.equipmentSlot.equipment.type === type ? HightLightCellState.ValidPlacement : HightLightCellState.InvalidPlacement
+    return this.equipmentSlot.equipment.type === type
+      ? HightLightCellState.ValidPlacement
+      : HightLightCellState.InvalidPlacement;
   }
 
   pickupItem() {
-    if (this.editorContext.itemOnCursor !== null) return
-    this.editorContext.itemOnCursor = this.equipmentSlot.slot.clone()
-    this.equipmentSlot.slot.onCursor = true
-    this.equipmentSlot.slot.item = null
-
+    if (this.editorContext.itemOnCursor !== null) return;
+    this.editorContext.itemOnCursor = this.equipmentSlot.slot.clone();
+    this.equipmentSlot.slot.onCursor = true;
+    this.equipmentSlot.slot.item = null;
   }
 
   placeItem() {
-    if (this.editorContext.itemOnCursor === null) return
-    const copy = this.editorContext.itemOnCursor.clone()
-    this.equipmentSlot.slot = copy
-    this.editorContext.itemOnCursor = null
-    
+    if (this.editorContext.itemOnCursor === null) return;
+    const copy = this.editorContext.itemOnCursor.clone();
+    this.equipmentSlot.slot = copy;
+    this.editorContext.itemOnCursor = null;
   }
 
   swapItem() {
-    if (this.editorContext.itemOnCursor === null) return
-    const copy = this.equipmentSlot.slot.clone()
-    const cursor = this.editorContext.itemOnCursor.clone()
-    cursor.onCursor = false
-    copy.onCursor = true
-    this.equipmentSlot.slot = cursor
-    this.editorContext.itemOnCursor = copy
+    if (this.editorContext.itemOnCursor === null) return;
+    const copy = this.equipmentSlot.slot.clone();
+    const cursor = this.editorContext.itemOnCursor.clone();
+    cursor.onCursor = false;
+    copy.onCursor = true;
+    this.equipmentSlot.slot = cursor;
+    this.editorContext.itemOnCursor = copy;
   }
 
   onClickOnCell() {
     if (this.editorContext.itemOnCursor === null) {
       this.placeItem();
     } else {
-      this.swapItem()
+      this.swapItem();
     }
   }
 
-   // ПЕРЕПИСАТЬ
-   onSlotClick() {
-    if (this.editorContext.itemOnCursor !== null && this.equipmentSlot.slot.item !== null) {
-      this.swapItem()
+  // ПЕРЕПИСАТЬ
+  onSlotClick() {
+    if (
+      this.editorContext.itemOnCursor !== null &&
+      this.equipmentSlot.slot.item !== null
+    ) {
+      this.swapItem();
     } else {
       if (this.equipmentSlot.slot.item) {
-        this.pickupItem()
+        this.pickupItem();
       } else {
-        this.placeItem()
+        this.placeItem();
       }
 
-      this.onSlotMouseLeave()
+      this.onSlotMouseLeave();
     }
   }
 
-  onSlotHover(data: {slot: Slot, pos: {x: number, y: number}}) {
-    if (!data.slot.item) return
+  onSlotHover(slot: Slot) {
+    if (!slot.item) return;
 
-    this.$emit('slot-mouse-enter', {equipment: data.slot.item.data, pos: {x: data.pos.x, y: data.pos.y}})
+    this.$emit("slot-mouse-enter", slot.item.data);
 
-    this.onCellHover()
+    this.onCellHover();
   }
 
   onSlotMouseLeave() {
-    this.$emit('slot-mouse-leave')
-    this.onCellMouseLeave()
+    this.$emit("slot-mouse-leave");
+    this.onCellMouseLeave();
   }
-
 
   onCellHover() {
     if (!this.editorContext.itemOnCursor?.item) return;
-    
-    const state = this.isTypeValid(this.editorContext.itemOnCursor?.item.data.type)
+
+    const state = this.isTypeValid(
+      this.editorContext.itemOnCursor?.item.data.type,
+    );
     this.updateHighlight(state);
   }
 
@@ -162,17 +168,11 @@ export default class EquipmentSlotComponent extends Vue {
     this.resetCellHighlights();
   }
 
-onCellCreated(cell: Cell): void {
+  onCellCreated(cell: Cell): void {}
 
-}
+  onSlotCreated(slot: Slot): void {}
 
-onSlotCreated(slot: Slot): void {
-  
-}
-
-onSlotRemoved(slot: Slot): void {
-
-}
+  onSlotRemoved(slot: Slot): void {}
 }
 </script>
 
@@ -191,4 +191,11 @@ onSlotRemoved(slot: Slot): void {
   left: 0%;
 }
 
+@media (max-width: 768px) {
+  .equipment-slot .slot-container {
+    width: 75%;
+    height: 75%;
+    left: 15%;
+  }
+}
 </style>

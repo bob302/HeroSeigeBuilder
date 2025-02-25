@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_1_icon.webp",
-    "Image": "output/classes\\nomad\\wanderer\\ability_1_icon.webp",
-    "Name": "Sand Carver",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 0, "y": 0 }
+  "Icon": "ability_1_icon.webp",
+  "Image": "output/classes\\nomad\\wanderer\\ability_1_icon.webp",
+  "Name": "Sand Carver",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": {
+    "x": 0,
+    "y": 0
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Desert Mix",
+      "description": "Increases the amount of sand thrown."
+    },
+    {
+      "id": 3,
+      "name": "Concentrated Sand",
+      "description": "Increases the damage dealt by sand carver."
+    },
+    {
+      "id": 4,
+      "name": "Eviscerate",
+      "description": "Critical strikes cause the nomad to throw sand in a circle around him stunning and dealing additional damage."
+    },
+    {
+      "id": 5,
+      "name": "Glass Shards",
+      "description": "Thrown sand has a chance to inflict bleeding on hit."
+    },
+    {
+      "id": 6,
+      "name": "Special Pouch",
+      "description": "Increases the damage dealt to bosses by sand carver."
+    },
+    {
+      "id": 7,
+      "name": "Vortex Master",
+      "description": "Chance on kill to spawn a small sand vortex."
+    },
+    {
+      "id": 8,
+      "name": "Combat Skills",
+      "description": "Chance on hit to gain increased dodge chance for a short period."
+    },
+    {
+      "id": 9,
+      "name": "Swift Strikes",
+      "description": "Increases attack speed when using sand carver."
+    },
+    {
+      "id": 10,
+      "name": "Desert's Blade",
+      "description": "Chance on attack to summon a big tornado pulling in and dealing additional damage to nearby monsters."
+    },
+    {
+      "id": 11,
+      "name": "Raw Power",
+      "description": "Increases attack damage dealt by sand carver."
+    },
+    {
+      "id": 12,
+      "name": "Headwind",
+      "description": "Increases the projectile speed of sand thrown."
+    },
+    {
+      "id": 13,
+      "name": "Sand Infusion",
+      "description": "Chance to inflict armor break and arcane break on hit."
+    },
+    {
+      "id": 14,
+      "name": "Parasitical Sand",
+      "description": "Thrown sand now sticks to the targets dealing damage over time for a short period."
+    },
+    {
+      "id": 15,
+      "name": "Piercing Sands",
+      "description": "Thrown sand is now piercing and has a chance to fork on hit."
+    }
+  ]
 }

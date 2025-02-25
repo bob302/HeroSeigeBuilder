@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_7_icon.webp",
-    "Image": "output/classes\\pirate\\plunderer\\ability_7_icon.webp",
-    "Name": "Anchor Swing",
-    "Required Skill(s)": "Set Sail",
-    "Required Level": "24",
-    "Position": { "x": 1, "y": 3 }
+  "Icon": "ability_7_icon.webp",
+  "Image": "output/classes\\pirate\\plunderer\\ability_7_icon.webp",
+  "Name": "Anchor Swing",
+  "Required Skill(s)": "Set Sail",
+  "Required Level": "24",
+  "Position": {
+    "x": 1,
+    "y": 3
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "On The Deck",
+      "description": "Decreases movement diminish when using anchor swing."
+    },
+    {
+      "id": 3,
+      "name": "Rusted Chain",
+      "description": "Inflicts cold break on hit."
+    },
+    {
+      "id": 4,
+      "name": "Anchoring the Anchor",
+      "description": "Throw the anchor on target location unleashing another anchor swinging around that one with increased radius."
+    },
+    {
+      "id": 5,
+      "name": "Spin to Win",
+      "description": "Increases the duration of anchor swing."
+    },
+    {
+      "id": 6,
+      "name": "Sharpened Bill",
+      "description": "Increases damage dealt by anchor."
+    },
+    {
+      "id": 7,
+      "name": "Baby Anchor",
+      "description": "Chance on cast to summon a small anchor spinning close to the pirate."
+    },
+    {
+      "id": 8,
+      "name": "iAnchor",
+      "description": "Chance on cast to unleash an additional anchor."
+    },
+    {
+      "id": 9,
+      "name": "Frozen Tip",
+      "description": "Increases damage dealt by anchor and freezes monsters on hit."
+    },
+    {
+      "id": 10,
+      "name": "Trembling Smash",
+      "description": "Send the anchor forward unleashing a shockwave of torrents to all directions when hitting terrain."
+    },
+    {
+      "id": 11,
+      "name": "Cold Smash",
+      "description": "Increases damage to frozen targets."
+    },
+    {
+      "id": 12,
+      "name": "Man of War",
+      "description": "Increases anchor size and area of effect radius."
+    },
+    {
+      "id": 13,
+      "name": "Aerodynamic Chain",
+      "description": "Increases the spinning speed."
+    },
+    {
+      "id": 14,
+      "name": "Extended Weight",
+      "description": "Anchor now has an additional spinning anchor attached to it."
+    },
+    {
+      "id": 15,
+      "name": "Colossal Anchor",
+      "description": "Unleash a massive anchor covering a wide radius with increased damage. Anchor swing now has a cooldown."
+    }
+  ]
 }

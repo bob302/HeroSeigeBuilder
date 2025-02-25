@@ -1,32 +1,32 @@
 {
-    "Item": "Leprechauns Greed",
-    "Tier": "S",
-    "Level": "87",
-    "Defense": "295.00238-352",
-    "Block": "35",
-    "Type": "Shield",
-    "Size": "2x3",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[180-220]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+35% Magic Find (Based on Level)",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[40-60]% Extra Gold Dropped From Kills",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[20-40]% Increased Magic Find",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Socketed (2-4)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Leprechauns Greed",
+  "Tier": "S",
+  "Level": "87",
+  "Defense": "295.00238-352",
+  "Block": "35",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[180-220]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+35% Magic Find (Based on Level)",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[40-60]% Extra Gold Dropped From Kills",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[20-40]% Increased Magic Find",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Socketed (2-4)",
+      "class": "stat-default"
+    }
+  ]
 }

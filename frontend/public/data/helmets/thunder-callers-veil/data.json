@@ -1,35 +1,35 @@
 {
-    "Item": "Thunder Caller's Veil",
-    "Tier": "S",
-    "Level": "78",
-    "Defense": "130.0099-161",
-    "Type": "Helmet",
-    "Size": "2x2",
-    "Rarity": "Satanic Set",
-    "Stats": [
-        {
-            "stat": "+[80-130]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[1-3] to Lightning Skills",
-            "class": "stat-lightning"
-        },
-        {
-            "stat": "+10% Faster Cast Rate",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+15 to Intelligence",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+15 to Vitality",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[30-40]% to Lightning Resistance",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Thunder Caller's Veil",
+  "Tier": "S",
+  "Level": "78",
+  "Defense": "130.0099-161",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "+[80-130]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[1-3] to Lightning Skills",
+      "class": "stat-lightning"
+    },
+    {
+      "stat": "+10% Faster Cast Rate",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+15 to Intelligence",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+15 to Vitality",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[30-40]% to Lightning Resistance",
+      "class": "stat-default"
+    }
+  ]
 }

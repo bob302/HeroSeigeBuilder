@@ -1,22 +1,22 @@
 {
-    "Item": "Lost Dieties Authority",
-    "Tier": "S",
-    "Level": "85",
-    "Type": "Amulet",
-    "Size": "1x2",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[400-450] to Attack Rating",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[10-15] Life After each Kill",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[35-45]% to All Resistances",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Lost Dieties Authority",
+  "Tier": "S",
+  "Level": "85",
+  "Type": "Amulet",
+  "Size": "1x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[400-450] to Attack Rating",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[10-15] Life After each Kill",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[35-45]% to All Resistances",
+      "class": "stat-default"
+    }
+  ]
 }

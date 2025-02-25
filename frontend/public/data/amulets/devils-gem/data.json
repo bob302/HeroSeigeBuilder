@@ -1,26 +1,26 @@
 {
-    "Item": "Devil's Gem",
-    "Tier": "S",
-    "Level": "81",
-    "Type": "Amulet",
-    "Size": "1x2",
-    "Rarity": "Satanic Set",
-    "Stats": [
-        {
-            "stat": "-[5-15]% to Enemy Arcane Resistance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Replenish Mana [10-15]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+30 to Energy (Based on Level)",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[40-60]% to Arcane Resistance",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Devil's Gem",
+  "Tier": "S",
+  "Level": "81",
+  "Type": "Amulet",
+  "Size": "1x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "-[5-15]% to Enemy Arcane Resistance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Replenish Mana [10-15]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+30 to Energy (Based on Level)",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[40-60]% to Arcane Resistance",
+      "class": "stat-default"
+    }
+  ]
 }

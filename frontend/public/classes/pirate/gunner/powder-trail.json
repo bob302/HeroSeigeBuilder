@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_6_icon.webp",
-    "Image": "output/classes\\pirate\\gunner\\ability_6_icon.webp",
-    "Name": "Powder Trail",
-    "Required Skill(s)": "Explosive Barrel",
-    "Required Level": "16",
-    "Position": { "x": 1, "y": 2 }
+  "Icon": "ability_6_icon.webp",
+  "Image": "output/classes\\pirate\\gunner\\ability_6_icon.webp",
+  "Name": "Powder Trail",
+  "Required Skill(s)": "Explosive Barrel",
+  "Required Level": "16",
+  "Position": {
+    "x": 1,
+    "y": 2
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Napalm Powder",
+      "description": "Chance to inflict burning on hit."
+    },
+    {
+      "id": 3,
+      "name": "Spinning Barrel",
+      "description": "Increases the projectile speed of powder trail."
+    },
+    {
+      "id": 4,
+      "name": "Barrel of Barrels",
+      "description": "Send forward a big barrel exploding on hit dealing damage and sending smaller barrels to all directions."
+    },
+    {
+      "id": 5,
+      "name": "Blowing Up",
+      "description": "Increases the damage dealt by barrel explosions."
+    },
+    {
+      "id": 6,
+      "name": "Colliding Barrel",
+      "description": "Increases the damage dealt by powder trail barrels."
+    },
+    {
+      "id": 7,
+      "name": "Heated Powder",
+      "description": "Increases damage to burning targets."
+    },
+    {
+      "id": 8,
+      "name": "Stacked Fumes",
+      "description": "Every time the barrel hits an enemy it gives you a stacking buff increasing fire skill damage."
+    },
+    {
+      "id": 9,
+      "name": "Powder Detonation",
+      "description": "Chance to unleash a fiery pulse dealing additional damage on hit."
+    },
+    {
+      "id": 10,
+      "name": "Flaming Barrels",
+      "description": "Send forward multiple barrels. Explosions now sets the ground on fire slowing and dealing damage."
+    },
+    {
+      "id": 11,
+      "name": "Dual Barrel",
+      "description": "Chance on cast to unleash an additional barrel."
+    },
+    {
+      "id": 12,
+      "name": "Mage of the Trails",
+      "description": "Increases cast rate when using powder trail."
+    },
+    {
+      "id": 13,
+      "name": "Shortened Fuse",
+      "description": "Increases explosion area of effect but decreases traveling time."
+    },
+    {
+      "id": 14,
+      "name": "Fragmenting Barrel",
+      "description": "The barrel stops into terrain or on monster hit releasing flying bombs in an arc forward after exploding."
+    },
+    {
+      "id": 15,
+      "name": "Heavy Barrel",
+      "description": "Send forward a slowly rolling barrel that knocks monsters back dealing increased damage and stunning them."
+    }
+  ]
 }

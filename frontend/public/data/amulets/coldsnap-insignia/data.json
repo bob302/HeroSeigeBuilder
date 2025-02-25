@@ -1,26 +1,26 @@
 {
-    "Item": "Coldsnap Insignia",
-    "Tier": "C",
-    "Level": "30",
-    "Type": "Amulet",
-    "Size": "1x1",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+10 to Intelligence",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Cold Skill Damage increased by [5-15]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Magic Skill Damage increased by 5%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[30-40]% to Cold Resistance",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Coldsnap Insignia",
+  "Tier": "C",
+  "Level": "30",
+  "Type": "Amulet",
+  "Size": "1x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+10 to Intelligence",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Cold Skill Damage increased by [5-15]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Magic Skill Damage increased by 5%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[30-40]% to Cold Resistance",
+      "class": "stat-default"
+    }
+  ]
 }

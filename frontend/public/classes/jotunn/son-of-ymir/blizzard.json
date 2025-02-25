@@ -1,8 +1,80 @@
 {
-    "Icon": "ability_9_icon.webp",
-    "Image": "output/classes\\jotunn\\son-of-ymir\\ability_9_icon.webp",
-    "Name": "Blizzard",
-    "Required Skill(s)": "Orb of Frost",
-    "Required Level": "30",
-    "Position": { "x": 1, "y": 4 }
+  "Icon": "ability_9_icon.webp",
+  "Image": "output/classes\\jotunn\\son-of-ymir\\ability_9_icon.webp",
+  "Name": "Blizzard",
+  "Required Skill(s)": "Orb of Frost",
+  "Required Level": "30",
+  "Position": { "x": 1, "y": 4 },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Intensified Snowfall",
+      "description": "Increases the damage dealt by blizzard."
+    },
+    {
+      "id": 3,
+      "name": "Eternal Winter",
+      "description": "Increases the duration of blizzard."
+    },
+    {
+      "id": 4,
+      "name": "Snowstorm Maelstrom",
+      "description": "Increases the area of effect radius of blizzard inflicting frostbite and a strong slow on hit."
+    },
+    {
+      "id": 5,
+      "name": "Frost Domain",
+      "description": "Increases the area of effect radius of blizzard."
+    },
+    {
+      "id": 6,
+      "name": "Crackling Ice",
+      "description": "Chance to stun targets on hit dealing increased damage."
+    },
+    {
+      "id": 7,
+      "name": "Tracking Snowinds",
+      "description": "Blizzard slowly moves towards the nearest monster."
+    },
+    {
+      "id": 8,
+      "name": "Corrosive Ice",
+      "description": "Chance to inflict frostbite on hit."
+    },
+    {
+      "id": 9,
+      "name": "Hypothermic Temperature",
+      "description": "Chance to inflict cold break on hit."
+    },
+    {
+      "id": 10,
+      "name": "Snowmageddon",
+      "description": "Blizzard gains increased size and projectile frequency over time dropping a huge boulder when expiring.."
+    },
+    {
+      "id": 11,
+      "name": "Winter Echoes",
+      "description": "Chance on cast to summon an additional blizzard."
+    },
+    {
+      "id": 12,
+      "name": "Cold Necrosis",
+      "description": "Increases damage dealt to frostbitten targets."
+    },
+    {
+      "id": 13,
+      "name": "Chilling Coldsnap",
+      "description": "Monsters killed by blizzard explode into icicles dealing additional damage to nearby monsters."
+    },
+    {
+      "id": 14,
+      "name": "Frost Flurries",
+      "description": "Ice chunks explode into frozen novas when hitting the ground dealing area of effect damage."
+    },
+    {
+      "id": 15,
+      "name": "Frigid Eruption",
+      "description": "Unleash a shockwave of blizzards towards target location. Blizzard no longer has a cooldown."
+    }
+  ]
 }

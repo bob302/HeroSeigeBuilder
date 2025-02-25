@@ -1,46 +1,46 @@
 {
-    "Item": "Thor's Battle Sword",
-    "Tier": "S",
-    "Level": "56",
-    "Damage": "179.40154-206",
-    "APS": "1.501.5",
-    "DPS": "269.50231-308",
-    "Type": "Sword",
-    "Size": "2x3",
-    "TwoHanded": false,
-    "Rarity": "Satanic Set",
-    "Stats": [
-        {
-            "stat": "+[220-280]% Enhanced Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[2-4] to Arcane Skills",
-            "class": "stat-arcane"
-        },
-        {
-            "stat": "+25 to Energy",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+15 to All Attributes",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Arcane Skill Damage increased by [20-35]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Replenish Mana 30%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[12-20] Mana After each Kill",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+75% to Arcane Resistance",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Thor's Battle Sword",
+  "Tier": "S",
+  "Level": "56",
+  "Damage": "179.40154-206",
+  "APS": "1.501.5",
+  "DPS": "269.50231-308",
+  "Type": "Sword",
+  "Size": "2x3",
+  "TwoHanded": false,
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "+[220-280]% Enhanced Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[2-4] to Arcane Skills",
+      "class": "stat-arcane"
+    },
+    {
+      "stat": "+25 to Energy",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+15 to All Attributes",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Arcane Skill Damage increased by [20-35]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Replenish Mana 30%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[12-20] Mana After each Kill",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+75% to Arcane Resistance",
+      "class": "stat-default"
+    }
+  ]
 }

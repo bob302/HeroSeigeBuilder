@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_9_icon.webp",
-    "Image": "output/classes\\whitemage\\divine-being\\ability_9_icon.webp",
-    "Name": "Mana Orb",
-    "Required Skill(s)": "None",
-    "Required Level": "30",
-    "Position": { "x": 0, "y": 4 }
+  "Icon": "ability_9_icon.webp",
+  "Image": "output/classes\\whitemage\\divine-being\\ability_9_icon.webp",
+  "Name": "Mana Orb",
+  "Required Skill(s)": "None",
+  "Required Level": "30",
+  "Position": {
+    "x": 0,
+    "y": 4
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Conduit",
+      "description": "Increases the mana replenish from mana orb."
+    },
+    {
+      "id": 3,
+      "name": "Mana Incursion",
+      "description": "Increases the damage dealt by mana orb."
+    },
+    {
+      "id": 4,
+      "name": "Energy Orbit",
+      "description": "Summon multiple mana orbs orbitting you and dealing damage based on your energy. Consumes all of your mana on cast."
+    },
+    {
+      "id": 5,
+      "name": "Burst of Energy",
+      "description": "Chance to critically hit dealing increased critical strike damage according to your energy."
+    },
+    {
+      "id": 6,
+      "name": "Energy Charges",
+      "description": "Increases the duration of mana orb."
+    },
+    {
+      "id": 7,
+      "name": "Corrupting Manapulse",
+      "description": "Chance to inflict arcane break on hit."
+    },
+    {
+      "id": 8,
+      "name": "Meditation",
+      "description": "Reduces the cooldown of mana orb."
+    },
+    {
+      "id": 9,
+      "name": "Mage's Might",
+      "description": "Increases the area of effect radius of mana orb."
+    },
+    {
+      "id": 10,
+      "name": "Compacting Power",
+      "description": "Summon a mana orb with increased duration and size. Each mana pulse now increases its damage but shrinks it in size."
+    },
+    {
+      "id": 11,
+      "name": "Amplified Magic",
+      "description": "Increases the tick frequency of mana orb."
+    },
+    {
+      "id": 12,
+      "name": "Heaven's Aid",
+      "description": "Chance to summon an additional mana orb at target location on hit."
+    },
+    {
+      "id": 13,
+      "name": "Energy Fountain",
+      "description": "Increases damage dealt to stunned targets."
+    },
+    {
+      "id": 14,
+      "name": "Chosen One",
+      "description": "Summon a mana orb within you gaining increased life replenish, mana replenish and arcane damage for the duration of mana orb."
+    },
+    {
+      "id": 15,
+      "name": "Hauling Manawell",
+      "description": "Conjure a flying mana orb pulling monsters into its core on hit."
+    }
+  ]
 }

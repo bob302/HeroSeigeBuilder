@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_6_icon.webp",
-    "Image": "output/classes\\nomad\\wanderer\\ability_6_icon.webp",
-    "Name": "Sand Gush",
-    "Required Skill(s)": "Cloud of Sand",
-    "Required Level": "16",
-    "Position": { "x": 2, "y": 2 }
+  "Icon": "ability_6_icon.webp",
+  "Image": "output/classes\\nomad\\wanderer\\ability_6_icon.webp",
+  "Name": "Sand Gush",
+  "Required Skill(s)": "Cloud of Sand",
+  "Required Level": "16",
+  "Position": {
+    "x": 2,
+    "y": 2
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Desert's Sand",
+      "description": "Increases the area of effect radius of sand gush."
+    },
+    {
+      "id": 3,
+      "name": "Gushing Winds",
+      "description": "Chance on cast to increase the size and damage of tornados."
+    },
+    {
+      "id": 4,
+      "name": "Desert Cyclones",
+      "description": "Tornados spawn multiple small cyclones on hit."
+    },
+    {
+      "id": 5,
+      "name": "Piercing Sand",
+      "description": "Increases the damage dealt by sand gush."
+    },
+    {
+      "id": 6,
+      "name": "Stranded Impact",
+      "description": "Increases damage dealt to stunned targets."
+    },
+    {
+      "id": 7,
+      "name": "Armor Piercing Flow",
+      "description": "Inflicts arcane break on hit."
+    },
+    {
+      "id": 8,
+      "name": "Gusting Winds",
+      "description": "Increases the speed of sand tornados."
+    },
+    {
+      "id": 9,
+      "name": "Desert Storm",
+      "description": "Increases the amount of sand tornados."
+    },
+    {
+      "id": 10,
+      "name": "Dust Devils",
+      "description": "Unleash small dust devils bouncing off of walls and unleashing a pulse of sand on hit."
+    },
+    {
+      "id": 11,
+      "name": "Overwhelming Sand",
+      "description": "Tornados have a chance on hit to inflict bleeding for a portion of the damage."
+    },
+    {
+      "id": 12,
+      "name": "Contaminated Wounds",
+      "description": "Increases damage dealt to bleeding targets."
+    },
+    {
+      "id": 13,
+      "name": "Tamed Winds",
+      "description": "Tornados now spin outwards following the nomad."
+    },
+    {
+      "id": 14,
+      "name": "Sandstorm",
+      "description": "Cast continuous gushes around you for a short period with increased radius and damage. Sand Gush now has a cooldown."
+    },
+    {
+      "id": 15,
+      "name": "Sand Tornado",
+      "description": "Send out a sand tornado casting sand gush continuously."
+    }
+  ]
 }

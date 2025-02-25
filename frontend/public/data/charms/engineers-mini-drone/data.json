@@ -1,14 +1,14 @@
 {
-    "Item": "Engineer's Mini Drone",
-    "Tier": "S",
-    "Level": "78",
-    "Type": "Charm",
-    "Size": "2x2",
-    "Rarity": "Satanic Set",
-    "Stats": [
-        {
-            "stat": "+[1-3] to Random Skill",
-            "class": "stat-spell"
-        }
-    ]
+  "Item": "Engineer's Mini Drone",
+  "Tier": "S",
+  "Level": "78",
+  "Type": "Charm",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "+[1-3] to Random Skill",
+      "class": "stat-spell"
+    }
+  ]
 }

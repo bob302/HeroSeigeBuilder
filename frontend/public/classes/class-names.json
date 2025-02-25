@@ -1,5 +1,5 @@
 {
-  "viking": ["berserker","shield-bearer"],
+  "viking": ["berserker", "shield-bearer"],
   "pyromancer": ["arsonist", "flame-diviner"],
   "marksman": ["sharpshooter", "engineer"],
   "pirate": ["gunner", "plunderer"],

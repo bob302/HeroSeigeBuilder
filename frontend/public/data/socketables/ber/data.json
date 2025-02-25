@@ -1,13 +1,13 @@
 {
-    "Item": "Ber",
-    "Tier": "S",
-    "Level": "63",
-    "Type": "Socketable",
-    "Rarity": "Heroic",
-    "Stats": [
-        {
-            "stat": "+8% Chance for a Crushing Blow",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Ber",
+  "Tier": "S",
+  "Level": "63",
+  "Type": "Socketable",
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "+8% Chance for a Crushing Blow",
+      "class": "stat-default"
+    }
+  ]
 }

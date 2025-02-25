@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_3_icon.webp",
-    "Image": "output/classes\\samurai\\ronin\\ability_3_icon.webp",
-    "Name": "Quickslash",
-    "Required Skill(s)": "Battle Glance",
-    "Required Level": "8",
-    "Position": { "x": 0, "y": 1 }
+  "Icon": "ability_3_icon.webp",
+  "Image": "output/classes\\samurai\\ronin\\ability_3_icon.webp",
+  "Name": "Quickslash",
+  "Required Skill(s)": "Battle Glance",
+  "Required Level": "8",
+  "Position": {
+    "x": 0,
+    "y": 1
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Lightspeed",
+      "description": "Increases dash speed."
+    },
+    {
+      "id": 3,
+      "name": "Greater Slash",
+      "description": "Increases quickslash area of effect radius."
+    },
+    {
+      "id": 4,
+      "name": "Plan Ahead",
+      "description": "Summon a shadow dashing towards your aim multiple times dealing damage to all monsters hit. After it expires you quickly dash following the same path with massively increased damage."
+    },
+    {
+      "id": 5,
+      "name": "Dual Hit",
+      "description": "Increases the amount of performed slashes."
+    },
+    {
+      "id": 6,
+      "name": "Exposed Weakness",
+      "description": "Chance on hit to stun the target."
+    },
+    {
+      "id": 7,
+      "name": "Top to Bottom",
+      "description": "Increases attack rating when using quickslash."
+    },
+    {
+      "id": 8,
+      "name": "Exploitation",
+      "description": "Increases the damage dealt to stunned targets."
+    },
+    {
+      "id": 9,
+      "name": "Spirit Double",
+      "description": "Summon shadow performing quickslash towards a nearby monster dealing a portion of the damage."
+    },
+    {
+      "id": 10,
+      "name": "Now You See Me",
+      "description": "Slash with increased area of effect radius and damage dropping a smoke bomb at target location."
+    },
+    {
+      "id": 11,
+      "name": "Origin Point",
+      "description": "Leave a shadow behind slashing monsters around it dealing a portion of the damage."
+    },
+    {
+      "id": 12,
+      "name": "Lost Teachings",
+      "description": "Increases the range of quickslash."
+    },
+    {
+      "id": 13,
+      "name": "Switch it Up",
+      "description": "Quickslash no longer deals damage in a circle and instead deals damage to the closest target and a cone behind them firing multiple piercing kunai."
+    },
+    {
+      "id": 14,
+      "name": "Multiplicative Duality",
+      "description": "Spirit double now spawns multiple shadows dashing with increased speed and damage."
+    },
+    {
+      "id": 15,
+      "name": "Mechanical Advantage",
+      "description": "Dash an increased range sending explosive kunai in an aura at your wake."
+    }
+  ]
 }

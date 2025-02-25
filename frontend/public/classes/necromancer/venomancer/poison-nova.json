@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_9_icon.webp",
-    "Image": "output/classes\\necromancer\\venomancer\\ability_9_icon.webp",
-    "Name": "Poison Nova",
-    "Required Skill(s)": "Cursed Ground ",
-    "Required Level": "30",
-    "Position": { "x": 1, "y": 4 }
+  "Icon": "ability_9_icon.webp",
+  "Image": "output/classes\\necromancer\\venomancer\\ability_9_icon.webp",
+  "Name": "Poison Nova",
+  "Required Skill(s)": "Cursed Ground ",
+  "Required Level": "30",
+  "Position": {
+    "x": 1,
+    "y": 4
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Hollow Fangs",
+      "description": "Increases the amount of poison projectiles."
+    },
+    {
+      "id": 3,
+      "name": "Potent Venom",
+      "description": "Increases the damage dealt by poison nova."
+    },
+    {
+      "id": 4,
+      "name": "Poison Cloud",
+      "description": "Instead of releasing projectiles poison nova instead causes an explosion centered around the necromancer dealing increased damage based on projectile amount."
+    },
+    {
+      "id": 5,
+      "name": "Embrace the Venom",
+      "description": "Increases the poisoned amount when dealing damage with poison nova."
+    },
+    {
+      "id": 6,
+      "name": "Conjurer's Might",
+      "description": "Increases the projectile speed of poison nova."
+    },
+    {
+      "id": 7,
+      "name": "Venom's Reach",
+      "description": "Chance to spread poison to nearby monsters on hit."
+    },
+    {
+      "id": 8,
+      "name": "Weakening Infection",
+      "description": "Chance to reduce targets damage dealt on hit."
+    },
+    {
+      "id": 9,
+      "name": "Down with the Sickness",
+      "description": "Chance to slow and inflict poison break on hit."
+    },
+    {
+      "id": 10,
+      "name": "Puppet Master",
+      "description": "Cast a poison nova from all nearby poisoned enemies with increased damage based on poisoned. Poison nova now has a cooldown."
+    },
+    {
+      "id": 11,
+      "name": "Amplifying Mark",
+      "description": "Increases damage dealt to poisoned targets."
+    },
+    {
+      "id": 12,
+      "name": "Overwhelming Presence",
+      "description": "Increases the size of poison projectiles."
+    },
+    {
+      "id": 13,
+      "name": "Toxic Twist",
+      "description": "Poison nova projectiles now orbit outwards with increased duration."
+    },
+    {
+      "id": 14,
+      "name": "Virulent Blink",
+      "description": "Teleport to cast location hexing enemies on hit."
+    },
+    {
+      "id": 15,
+      "name": "Center of Epidemy",
+      "description": "Poison nova projectiles have a chance to return to the necromancer dealing damage and increasing the necromancers poison damage on return."
+    }
+  ]
 }

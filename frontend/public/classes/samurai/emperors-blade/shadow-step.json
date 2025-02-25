@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_7_icon.webp",
-    "Image": "output/classes\\samurai\\emperors-blade\\ability_7_icon.webp",
-    "Name": "Shadow Step",
-    "Required Skill(s)": "Omnislash",
-    "Required Level": "24",
-    "Position": { "x": 0, "y": 3 }
+  "Icon": "ability_7_icon.webp",
+  "Image": "output/classes\\samurai\\emperors-blade\\ability_7_icon.webp",
+  "Name": "Shadow Step",
+  "Required Skill(s)": "Omnislash",
+  "Required Level": "24",
+  "Position": {
+    "x": 0,
+    "y": 3
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Traversal",
+      "description": "Increases teleport distance."
+    },
+    {
+      "id": 3,
+      "name": "Calm And Collected",
+      "description": "Decreases the mana cost of shadow step."
+    },
+    {
+      "id": 4,
+      "name": "Daggerstorms",
+      "description": "Additionally summons a storm of daggers from the sky on hit."
+    },
+    {
+      "id": 5,
+      "name": "Groundshaker",
+      "description": "Chance to stun monsters on hit."
+    },
+    {
+      "id": 6,
+      "name": "Improved Lethality",
+      "description": "Increases damage dealt to stunned enemies."
+    },
+    {
+      "id": 7,
+      "name": "Shadow Ally",
+      "description": "Chance on cast to summon shadow clones to mimic your shadow step on a nearby target."
+    },
+    {
+      "id": 8,
+      "name": "Stepping Stone",
+      "description": "Stunning an enemy with shadow step increases your damage & cast rate for a short period stacking up to eight times."
+    },
+    {
+      "id": 9,
+      "name": "Sonic Boom",
+      "description": "Chance on cast to deal damage additional times upon arrival."
+    },
+    {
+      "id": 10,
+      "name": "Pulsating Shadows",
+      "description": "Shadow step now pulsates additional times inflicting arcane break."
+    },
+    {
+      "id": 11,
+      "name": "Crushing Step",
+      "description": "Inflict armor break on hit."
+    },
+    {
+      "id": 12,
+      "name": "Planned Out",
+      "description": "Increases cast rate when using shadow step."
+    },
+    {
+      "id": 13,
+      "name": "Speed Demon",
+      "description": "Increases area of effect radius for a portion of your bonus movement speed."
+    },
+    {
+      "id": 14,
+      "name": "Bargain With Demons",
+      "description": "When landing nearby corpses are consumed to unleash a shadow explosion dealing area of effect damage and inflict burning."
+    },
+    {
+      "id": 15,
+      "name": "Vortex Step",
+      "description": "Pull nearby monsters towards you unleashing bolts of shadow energy into all directions when landing dealing additional damage and stunning them."
+    }
+  ]
 }

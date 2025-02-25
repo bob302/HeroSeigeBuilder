@@ -1,35 +1,35 @@
 {
-    "Item": "Engineer's Toolbelt",
-    "Tier": "S",
-    "Level": "82",
-    "Defense": "97.2076-119",
-    "Type": "Belt",
-    "Size": "2x1",
-    "Rarity": "Satanic Set",
-    "Stats": [
-        {
-            "stat": "+[45-75]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+10% Increased Movement Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+20% Faster Cast Rate",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Arcane Skill Damage increased by [12-20]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Explosion area of effect increased by [20-40]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Belt Slots: 5",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Engineer's Toolbelt",
+  "Tier": "S",
+  "Level": "82",
+  "Defense": "97.2076-119",
+  "Type": "Belt",
+  "Size": "2x1",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "+[45-75]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+10% Increased Movement Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+20% Faster Cast Rate",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Arcane Skill Damage increased by [12-20]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Explosion area of effect increased by [20-40]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Belt Slots: 5",
+      "class": "stat-default"
+    }
+  ]
 }

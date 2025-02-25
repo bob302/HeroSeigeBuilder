@@ -1,54 +1,54 @@
 {
-    "Item": "Frozen Carver",
-    "Tier": "B",
-    "Level": "38",
-    "Damage": "79.0060-98",
-    "APS": "1.351.35",
-    "DPS": "107.0081-133",
-    "Type": "Mace",
-    "TwoHanded": false,
-    "Size": "2x2",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "8% Chance when Striking [Flash Freeze] Level 14",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "+[150-250]% Enhanced Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[90-150] to Attack Rating",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[3-6]% Life stolen per Hit",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+10 to Strength",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[335-460] to Additive Cold Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[4-8] Mana After each Kill",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+50% to Cold Resistance",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Cannot be Frozen",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Socketed (0-3)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Frozen Carver",
+  "Tier": "B",
+  "Level": "38",
+  "Damage": "79.0060-98",
+  "APS": "1.351.35",
+  "DPS": "107.0081-133",
+  "Type": "Mace",
+  "TwoHanded": false,
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "8% Chance when Striking [Flash Freeze] Level 14",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+[150-250]% Enhanced Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[90-150] to Attack Rating",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[3-6]% Life stolen per Hit",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+10 to Strength",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[335-460] to Additive Cold Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[4-8] Mana After each Kill",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+50% to Cold Resistance",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Cannot be Frozen",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Socketed (0-3)",
+      "class": "stat-default"
+    }
+  ]
 }

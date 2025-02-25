@@ -1,58 +1,58 @@
 {
-    "Item": "Crusader Halberd",
-    "Tier": "B",
-    "Level": "45",
-    "Damage": "178.20160-197",
-    "APS": "1.601.6",
-    "DPS": "285.50256-315",
-    "Type": "Polearm",
-    "TwoHanded": true,
-    "Size": "2x3",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[280-310]% Enhanced Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[1-2] to All Skills",
-            "class": "stat-allskills"
-        },
-        {
-            "stat": "+[20-30]% Increased Movement Speed",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+235 to Attack Rating",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Replenish Life [10-15]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Physical Damage Taken Reduced by 10%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+25 to Life (Based on Level)",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+50 to Damage (Based on Level)",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[20-30]% to All Resistances",
-            "class": "stat-default"
-        },
-        {
-            "stat": "[Fanaticism Aura] Level [8-12]",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Socketed (0-4)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Crusader Halberd",
+  "Tier": "B",
+  "Level": "45",
+  "Damage": "178.20160-197",
+  "APS": "1.601.6",
+  "DPS": "285.50256-315",
+  "Type": "Polearm",
+  "TwoHanded": true,
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[280-310]% Enhanced Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[1-2] to All Skills",
+      "class": "stat-allskills"
+    },
+    {
+      "stat": "+[20-30]% Increased Movement Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+235 to Attack Rating",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Replenish Life [10-15]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Physical Damage Taken Reduced by 10%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+25 to Life (Based on Level)",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+50 to Damage (Based on Level)",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[20-30]% to All Resistances",
+      "class": "stat-default"
+    },
+    {
+      "stat": "[Fanaticism Aura] Level [8-12]",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Socketed (0-4)",
+      "class": "stat-default"
+    }
+  ]
 }

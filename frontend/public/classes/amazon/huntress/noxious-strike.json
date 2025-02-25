@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_2_icon.webp",
-    "Image": "output/classes\\amazon\\huntress\\ability_2_icon.webp",
-    "Name": "Noxious Strike",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 2, "y": 0 }
+  "Icon": "ability_2_icon.webp",
+  "Image": "output/classes\\amazon\\huntress\\ability_2_icon.webp",
+  "Name": "Noxious Strike",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": {
+    "x": 2,
+    "y": 0
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Corrosive Force",
+      "description": "Increases damage dealt by noxious strike."
+    },
+    {
+      "id": 3,
+      "name": "Touch of Noxus",
+      "description": "Increases poisoned damage inflicted by noxious strike."
+    },
+    {
+      "id": 4,
+      "name": "Spinning Speartips",
+      "description": "Throw multiple spears on your third attack in an arc. The spears start spinning when hitting the ground dealing area of effect damage for a short period."
+    },
+    {
+      "id": 5,
+      "name": "Empowered Toxins",
+      "description": "Increases damage dealt to poisoned targets."
+    },
+    {
+      "id": 6,
+      "name": "Noxious Bolts",
+      "description": "Increases projectile count on your third attack."
+    },
+    {
+      "id": 7,
+      "name": "Noxian Slash",
+      "description": "Increases the damage and area of effect of your third attack."
+    },
+    {
+      "id": 8,
+      "name": "Corrosive Reach",
+      "description": "Increased attack damage and attack range while wielding a polearm."
+    },
+    {
+      "id": 9,
+      "name": "Envenoming Empowerment",
+      "description": "Killing a monster with noxious strike grants you a burst of movement speed."
+    },
+    {
+      "id": 10,
+      "name": "Noxious Sequence",
+      "description": "Perform additional spin attacks after the third one."
+    },
+    {
+      "id": 11,
+      "name": "Glimmering Venom",
+      "description": "Increases poison damage dealt by noxious strike."
+    },
+    {
+      "id": 12,
+      "name": "Crushing Corrosion",
+      "description": "Chance to inflict poison break on hit."
+    },
+    {
+      "id": 13,
+      "name": "Noxious Duality",
+      "description": "Chance on attack to perform an additional noxious strike."
+    },
+    {
+      "id": 14,
+      "name": "Explosive Toxins",
+      "description": "Poison projectiles explode on hit, dissolving into an acidic pool inflicting poison break and dealing additional damage. Acidic pool area of effect radius is increased based on your dexterity."
+    },
+    {
+      "id": 15,
+      "name": "Elemental Fragmentation",
+      "description": "Increases damage dealt by noxious strike and inflicts stacking elemental break on hit."
+    }
+  ]
 }

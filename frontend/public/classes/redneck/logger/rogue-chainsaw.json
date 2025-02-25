@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_7_icon.webp",
-    "Image": "output/classes\\redneck\\logger\\ability_7_icon.webp",
-    "Name": "Rogue Chainsaw",
-    "Required Skill(s)": "Revved Up",
-    "Required Level": "24",
-    "Position": { "x": 0, "y": 3 }
+  "Icon": "ability_7_icon.webp",
+  "Image": "output/classes\\redneck\\logger\\ability_7_icon.webp",
+  "Name": "Rogue Chainsaw",
+  "Required Skill(s)": "Revved Up",
+  "Required Level": "24",
+  "Position": {
+    "x": 0,
+    "y": 3
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Overheating Engine",
+      "description": "Increases the spinning speed of rogue chainsaws."
+    },
+    {
+      "id": 3,
+      "name": "Ripping Impact",
+      "description": "Chance to inflict bleeding on hit."
+    },
+    {
+      "id": 4,
+      "name": "Slice Em Up",
+      "description": "Chainsaws now slowly travel forward with increased size and damage."
+    },
+    {
+      "id": 5,
+      "name": "Handling Skills",
+      "description": "Increases the cast rate of rogue chainsaw while wielding a chainsaw."
+    },
+    {
+      "id": 6,
+      "name": "Rough Chains",
+      "description": "Increases the damage dealt by rogue chainsaw."
+    },
+    {
+      "id": 7,
+      "name": "Engine Gone Wild",
+      "description": "When expiring, the chainsaws launch into the direction they are facing, dealing additional damage and bouncing off of terrain."
+    },
+    {
+      "id": 8,
+      "name": "Chaining Chainsaws",
+      "description": "Launched chainsaws have a chance to chain when they first hit an enemy."
+    },
+    {
+      "id": 9,
+      "name": "Empty The Workbag",
+      "description": "Chance on cast to throw additional rogue chainsaw."
+    },
+    {
+      "id": 10,
+      "name": "Circle of Cutting",
+      "description": "Throw multiple rogue chainsaws in a circle around you, traveling back to you upon landing."
+    },
+    {
+      "id": 11,
+      "name": "Ruthless Chainsaws",
+      "description": "Increases damage dealt to bleeding targets."
+    },
+    {
+      "id": 12,
+      "name": "Consumed Rupture",
+      "description": "When hitting a bleeding monster, consume the bleeding debuff and unleash an explosion of blood scaling with the bleeding damage."
+    },
+    {
+      "id": 13,
+      "name": "Full Gas Tank",
+      "description": "Increases the duration of rogue chainsaws."
+    },
+    {
+      "id": 14,
+      "name": "Shredding Squad",
+      "description": "Launch multiple rogue chainsaws in an arc instead of throwing them on the ground."
+    },
+    {
+      "id": 15,
+      "name": "Homing Chainsaws",
+      "description": "Rogue chainsaws now home towards the closest monster."
+    }
+  ]
 }

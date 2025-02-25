@@ -1,39 +1,39 @@
 {
-    "Item": "Arcane Robes of Authority",
-    "Tier": "S",
-    "Level": "74",
-    "Defense": "532.50441-624",
-    "Type": "Body Armor",
-    "Size": "2x3",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[110-160]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[1-2] to All Skills",
-            "class": "stat-allskills"
-        },
-        {
-            "stat": "+[30-40]% Faster Cast Rate",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[15-20] to Energy",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Replenish Mana 35%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Mana Increased by [10-15]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Socketed (0-3)",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Arcane Robes of Authority",
+  "Tier": "S",
+  "Level": "74",
+  "Defense": "532.50441-624",
+  "Type": "Body Armor",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[110-160]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[1-2] to All Skills",
+      "class": "stat-allskills"
+    },
+    {
+      "stat": "+[30-40]% Faster Cast Rate",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[15-20] to Energy",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Replenish Mana 35%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Mana Increased by [10-15]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Socketed (0-3)",
+      "class": "stat-default"
+    }
+  ]
 }

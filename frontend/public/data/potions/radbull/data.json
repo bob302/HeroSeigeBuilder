@@ -1,18 +1,18 @@
 {
-    "Item": "Radbull",
-    "Tier": "S",
-    "Level": "68",
-    "Type": "Potion",
-    "Size": "1x2",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[1-5] to [Hyper Activity]",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "Gain Increased Attack Speed and Movement Speed.",
-            "class": "item-lore"
-        }
-    ]
+  "Item": "Radbull",
+  "Tier": "S",
+  "Level": "68",
+  "Type": "Potion",
+  "Size": "1x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[1-5] to [Hyper Activity]",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "Gain Increased Attack Speed and Movement Speed.",
+      "class": "item-lore"
+    }
+  ]
 }

@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_5_icon.webp",
-    "Image": "output/classes\\viking\\berserker\\ability_5_icon.webp",
-    "Name": "Ymir's Champion",
-    "Required Skill(s)": "Zeal",
-    "Required Level": "16",
-    "Position": { "x": 1, "y": 2 }
+  "Icon": "ability_5_icon.webp",
+  "Image": "output/classes\\viking\\berserker\\ability_5_icon.webp",
+  "Name": "Ymir's Champion",
+  "Required Skill(s)": "Zeal",
+  "Required Level": "16",
+  "Position": {
+    "x": 1,
+    "y": 2
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Viking's Carnage",
+      "description": "Increases the damage dealt by ymir's champion."
+    },
+    {
+      "id": 3,
+      "name": "Raging Sustain",
+      "description": "Increases the duration of axes."
+    },
+    {
+      "id": 4,
+      "name": "Collateral Damage",
+      "description": "Whenever the axes hit a target they send another piercing axe outwards in a straight line towards the target."
+    },
+    {
+      "id": 5,
+      "name": "Slashing Cleavers",
+      "description": "Increases the size of axes."
+    },
+    {
+      "id": 6,
+      "name": "Rimeforged Hatchet",
+      "description": "Increases damage dealt to frozen targets."
+    },
+    {
+      "id": 7,
+      "name": "Ymir's Focus",
+      "description": "Increases attack rating when using ymir's champion."
+    },
+    {
+      "id": 8,
+      "name": "Expanding Territory",
+      "description": "Increases the orbit radius of axes."
+    },
+    {
+      "id": 9,
+      "name": "Rapid Spinning",
+      "description": "Increases the projectile speed of axes."
+    },
+    {
+      "id": 10,
+      "name": "Shattering Axes",
+      "description": "At the end of their duration the axes shatter into weapon shards dealing additional damage."
+    },
+    {
+      "id": 11,
+      "name": "Frosted Blow",
+      "description": "Chance to unleash an ice nova on hit."
+    },
+    {
+      "id": 12,
+      "name": "Rending Hatchet",
+      "description": "Increases critical strike damage dealt by ymir's champion."
+    },
+    {
+      "id": 13,
+      "name": "Power of Multitude",
+      "description": "Increases axes amount but damage dealt is split between axes summoned."
+    },
+    {
+      "id": 14,
+      "name": "Chainslicing Tomahawk",
+      "description": "Axes now chain through monsters and then return back to you dealing damage to monsters in its path."
+    },
+    {
+      "id": 15,
+      "name": "Scattering Battlegear",
+      "description": "Axes now fly into a random spot in a cone in front of you and start spinning on the ground dealing increased damage."
+    }
+  ]
 }

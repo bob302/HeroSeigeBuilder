@@ -1,35 +1,35 @@
 {
-    "Item": "Lunar Prophet's Tiara",
-    "Tier": "A",
-    "Level": "62",
-    "Defense": "125.0094-157",
-    "Type": "Helmet",
-    "Size": "2x2",
-    "Rarity": "Satanic Set",
-    "Stats": [
-        {
-            "stat": "+[80-130]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[1-2] to Cold Skill Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[10-15] to Intelligence",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+35 to Mana",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[6-12] Mana After each Kill",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[1-5]% Cold Damage Absorbed",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Lunar Prophet's Tiara",
+  "Tier": "A",
+  "Level": "62",
+  "Defense": "125.0094-157",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "+[80-130]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[1-2] to Cold Skill Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[10-15] to Intelligence",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+35 to Mana",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[6-12] Mana After each Kill",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[1-5]% Cold Damage Absorbed",
+      "class": "stat-default"
+    }
+  ]
 }

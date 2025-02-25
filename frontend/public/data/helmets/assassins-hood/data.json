@@ -1,39 +1,39 @@
 {
-    "Item": "Assassin's Hood",
-    "Tier": "S",
-    "Level": "74",
-    "Defense": "142.00108-176",
-    "Type": "Helmet",
-    "Size": "2x2",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[80-120]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[2-3] to Physical Skills",
-            "class": "stat-physical"
-        },
-        {
-            "stat": "Cooldown Recovery Increased by [10-30]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[4-8]% Increased Attack Rating",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Attack Damage increased by [10-20]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Physical Damage Taken Reduced by [4-8]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[5-15]% to All Resistances",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Assassin's Hood",
+  "Tier": "S",
+  "Level": "74",
+  "Defense": "142.00108-176",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[80-120]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[2-3] to Physical Skills",
+      "class": "stat-physical"
+    },
+    {
+      "stat": "Cooldown Recovery Increased by [10-30]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[4-8]% Increased Attack Rating",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Attack Damage increased by [10-20]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Physical Damage Taken Reduced by [4-8]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[5-15]% to All Resistances",
+      "class": "stat-default"
+    }
+  ]
 }

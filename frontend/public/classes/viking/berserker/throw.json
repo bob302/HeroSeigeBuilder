@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_3_icon.webp",
-    "Image": "output/classes\\viking\\berserker\\ability_3_icon.webp",
-    "Name": "Throw!",
-    "Required Skill(s)": "Seismic Slam",
-    "Required Level": "8",
-    "Position": { "x": 0, "y": 1 }
+  "Icon": "ability_3_icon.webp",
+  "Image": "output/classes\\viking\\berserker\\ability_3_icon.webp",
+  "Name": "Throw!",
+  "Required Skill(s)": "Seismic Slam",
+  "Required Level": "8",
+  "Position": {
+    "x": 0,
+    "y": 1
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Home Run",
+      "description": "Increases the range of throw."
+    },
+    {
+      "id": 3,
+      "name": "Raging Power",
+      "description": "Increases the damage dealt by throw."
+    },
+    {
+      "id": 4,
+      "name": "Ragesling",
+      "description": "Throws the monster faster, dealing massively increased damage to it and causing it to explode into meat chunks that deal damage to nearby monsters if it dies from the throw."
+    },
+    {
+      "id": 5,
+      "name": "Power Throw",
+      "description": "Increases the projectile speed of throw."
+    },
+    {
+      "id": 6,
+      "name": "Colossal Liftoff",
+      "description": "Increases throw's damage by a portion of monsters maximum life."
+    },
+    {
+      "id": 7,
+      "name": "Flipper",
+      "description": "Thrown monsters bounce off of walls increasing damage dealt with every bounce."
+    },
+    {
+      "id": 8,
+      "name": "Power Fall",
+      "description": "Thrown monsters smash into the ground with force causing ground fragments to fly around dealing damage."
+    },
+    {
+      "id": 9,
+      "name": "Breaking Fall",
+      "description": "Thrown monsters inflict arcane break on hit."
+    },
+    {
+      "id": 10,
+      "name": "Echoing Throw",
+      "description": "When thrown monster lands it shocks the ground multiple times with increased damage."
+    },
+    {
+      "id": 11,
+      "name": "Bouncing Around",
+      "description": "Thrown monster bounce off the ground dealing increased damage with every bounce."
+    },
+    {
+      "id": 12,
+      "name": "Bulls Eye",
+      "description": "When directly hitting another monster, cause the monster to be knocked up dealing area of effect damage when landing."
+    },
+    {
+      "id": 13,
+      "name": "Dive Bomb",
+      "description": "Increases landing area of effect radius of throw."
+    },
+    {
+      "id": 14,
+      "name": "Vacuum Pitch",
+      "description": "When thrown monster lands it pulls nearby monsters towards it."
+    },
+    {
+      "id": 15,
+      "name": "Dimensional Pitch",
+      "description": "Additionally throw shadow copies of the monster with increased damage."
+    }
+  ]
 }

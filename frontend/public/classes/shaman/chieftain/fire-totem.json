@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_7_icon.webp",
-    "Image": "output/classes\\shaman\\chieftain\\ability_7_icon.webp",
-    "Name": "Fire Totem",
-    "Required Skill(s)": "Storm Totem",
-    "Required Level": "24",
-    "Position": { "x": 0, "y": 3 }
+  "Icon": "ability_7_icon.webp",
+  "Image": "output/classes\\shaman\\chieftain\\ability_7_icon.webp",
+  "Name": "Fire Totem",
+  "Required Skill(s)": "Storm Totem",
+  "Required Level": "24",
+  "Position": {
+    "x": 0,
+    "y": 3
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Fire Master",
+      "description": "Increases the maximum amount of fire totems."
+    },
+    {
+      "id": 3,
+      "name": "Flame Scorching",
+      "description": "Chance to inflict burning on hit."
+    },
+    {
+      "id": 4,
+      "name": "Firestorm Totems",
+      "description": "Fire totem unleashes swirling flames orbiting outwards with increased damage but decreased duration."
+    },
+    {
+      "id": 5,
+      "name": "Scattering Flames",
+      "description": "Chance to inflict fire break on hit."
+    },
+    {
+      "id": 6,
+      "name": "Overheated Flames",
+      "description": "Increases damage dealt by fire totem."
+    },
+    {
+      "id": 7,
+      "name": "Burning Radius",
+      "description": "Increases the size of fire totem."
+    },
+    {
+      "id": 8,
+      "name": "Light the Soil",
+      "description": "Chance to leave ground burning beneath monsters on hit dealing additional damage."
+    },
+    {
+      "id": 9,
+      "name": "Arcfire",
+      "description": "Chance to unleash additional flames in an arc."
+    },
+    {
+      "id": 10,
+      "name": "Paralyzing Napalm",
+      "description": "Increases damage and size of flames inflicting slow on hit."
+    },
+    {
+      "id": 11,
+      "name": "Gas into the Flames",
+      "description": "Chance for flames to grow in size on hit."
+    },
+    {
+      "id": 12,
+      "name": "Totemscorch",
+      "description": "Increases damage dealt to burning targets."
+    },
+    {
+      "id": 13,
+      "name": "Flamescarred Sentry",
+      "description": "Fire totem now burns monsters around it for a portion of its damage."
+    },
+    {
+      "id": 14,
+      "name": "Homing Flames",
+      "description": "Flames become homing towards the nearest target dealing a portion of the damage."
+    },
+    {
+      "id": 15,
+      "name": "Multiplying Fire",
+      "description": "Chance on hit to summon an additional fire totem at the target's location for a short time."
+    }
+  ]
 }

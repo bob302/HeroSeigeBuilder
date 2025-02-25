@@ -1,46 +1,46 @@
 {
-    "Item": "Blood of Abaddon",
-    "Tier": "SS",
-    "Level": "98",
-    "Damage": "37.0032-42",
-    "APS": "1.141.14",
-    "DPS": "42.5037-48",
-    "Type": "Cane",
-    "TwoHanded": true,
-    "Size": "2x4",
-    "Rarity": "Heroic",
-    "Stats": [
-        {
-            "stat": "+[2-4] to All Skills",
-            "class": "stat-allskills"
-        },
-        {
-            "stat": "+[12-20] to [Blood Surge]",
-            "class": "stat-spell"
-        },
-        {
-            "stat": "+[6-10] Mana per second",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[30-40] to Energy",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[15-20] to Vitality",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Arcane Skill Damage increased by [25-45]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Replenish Mana [35-45]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[420-440] to Mana",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Blood of Abaddon",
+  "Tier": "SS",
+  "Level": "98",
+  "Damage": "37.0032-42",
+  "APS": "1.141.14",
+  "DPS": "42.5037-48",
+  "Type": "Cane",
+  "TwoHanded": true,
+  "Size": "2x4",
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "+[2-4] to All Skills",
+      "class": "stat-allskills"
+    },
+    {
+      "stat": "+[12-20] to [Blood Surge]",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+[6-10] Mana per second",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[30-40] to Energy",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[15-20] to Vitality",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Arcane Skill Damage increased by [25-45]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Replenish Mana [35-45]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[420-440] to Mana",
+      "class": "stat-default"
+    }
+  ]
 }

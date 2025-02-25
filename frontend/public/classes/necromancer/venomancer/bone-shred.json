@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_1_icon.webp",
-    "Image": "output/classes\\necromancer\\venomancer\\ability_1_icon.webp",
-    "Name": "Bone Shred",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 0, "y": 0 }
+  "Icon": "ability_1_icon.webp",
+  "Image": "output/classes\\necromancer\\venomancer\\ability_1_icon.webp",
+  "Name": "Bone Shred",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": {
+    "x": 0,
+    "y": 0
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Endochondral Ossification",
+      "description": "Increases the amount of bone shreds."
+    },
+    {
+      "id": 3,
+      "name": "LRP5 Gene",
+      "description": "Increases the damage dealt by bone shred."
+    },
+    {
+      "id": 4,
+      "name": "Bomb of Bones",
+      "description": "Throw a bonebomb that explodes into an increased amount of bone shred into all directions."
+    },
+    {
+      "id": 5,
+      "name": "Remodelling",
+      "description": "Decreases mana cost when using bone shred."
+    },
+    {
+      "id": 6,
+      "name": "Bone Disruption",
+      "description": "Increases projectile speed of the bone shreds."
+    },
+    {
+      "id": 7,
+      "name": "Osteochondroma",
+      "description": "Chance on cast to increase the damage and size of bones."
+    },
+    {
+      "id": 8,
+      "name": "Quick Growth",
+      "description": "Increases cast rate when using bone shred."
+    },
+    {
+      "id": 9,
+      "name": "Bonerang",
+      "description": "Bone shreds now return to the necromancer dealing increased damage."
+    },
+    {
+      "id": 10,
+      "name": "Skeletal Split",
+      "description": "Bone shreds split into multiple piercing shreds on hit."
+    },
+    {
+      "id": 11,
+      "name": "Exposed Fracture",
+      "description": "Chance to inflict bleeding on hit."
+    },
+    {
+      "id": 12,
+      "name": "Infected Wound",
+      "description": "Increases damage dealt to bleeding targets."
+    },
+    {
+      "id": 13,
+      "name": "Bone Spurs",
+      "description": "Chance on cast to unleash additional bone shreds."
+    },
+    {
+      "id": 14,
+      "name": "Shattering Carcass",
+      "description": "Bone shreds now explode into piercing bone shards on hit."
+    },
+    {
+      "id": 15,
+      "name": "Orbiting Remains",
+      "description": "Bone shred now orbits the necromancer with increased damage and are sent outwards after a short period if they do not hit a target."
+    }
+  ]
 }

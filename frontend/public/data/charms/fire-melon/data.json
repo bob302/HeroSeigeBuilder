@@ -1,30 +1,30 @@
 {
-    "Item": "Fire Melon",
-    "Tier": "SS",
-    "Level": "94",
-    "Type": "Charm",
-    "Size": "2x2",
-    "Rarity": "Angelic",
-    "Stats": [
-        {
-            "stat": "+[4-6] to Fire Skills",
-            "class": "stat-fire"
-        },
-        {
-            "stat": "+1337 to Additive Fire Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+1337 to Fire Skill Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Fire Skill Damage increased by [15-25]%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[40-50]% to Fire Resistance",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Fire Melon",
+  "Tier": "SS",
+  "Level": "94",
+  "Type": "Charm",
+  "Size": "2x2",
+  "Rarity": "Angelic",
+  "Stats": [
+    {
+      "stat": "+[4-6] to Fire Skills",
+      "class": "stat-fire"
+    },
+    {
+      "stat": "+1337 to Additive Fire Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+1337 to Fire Skill Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Fire Skill Damage increased by [15-25]%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[40-50]% to Fire Resistance",
+      "class": "stat-default"
+    }
+  ]
 }

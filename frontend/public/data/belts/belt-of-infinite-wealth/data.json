@@ -1,39 +1,39 @@
 {
-    "Item": "Belt of Infinite Wealth",
-    "Tier": "SS",
-    "Level": "100",
-    "Defense": "92.1076-109",
-    "Type": "Belt",
-    "Size": "2x1",
-    "Rarity": "Heroic",
-    "Stats": [
-        {
-            "stat": "+[45-60]% Enhanced Defense",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Physical Damage Taken Reduced by 10%",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+25% Magic Find (Based on Level)",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[25-40]% Extra Gold Dropped From Kills",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[20-25]% Increased Magic Find",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[1-5]% Increased Experience Gain",
-            "class": "stat-default"
-        },
-        {
-            "stat": "Belt Slots: 5",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Belt of Infinite Wealth",
+  "Tier": "SS",
+  "Level": "100",
+  "Defense": "92.1076-109",
+  "Type": "Belt",
+  "Size": "2x1",
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "+[45-60]% Enhanced Defense",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Physical Damage Taken Reduced by 10%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+25% Magic Find (Based on Level)",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[25-40]% Extra Gold Dropped From Kills",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[20-25]% Increased Magic Find",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[1-5]% Increased Experience Gain",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Belt Slots: 5",
+      "class": "stat-default"
+    }
+  ]
 }

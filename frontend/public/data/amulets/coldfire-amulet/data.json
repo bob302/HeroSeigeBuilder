@@ -1,26 +1,26 @@
 {
-    "Item": "Coldfire Amulet",
-    "Tier": "S",
-    "Level": "96",
-    "Type": "Amulet",
-    "Size": "1x2",
-    "Rarity": "Satanic",
-    "Stats": [
-        {
-            "stat": "+[10-15]% Increased Attack Rating",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[250-370] to Attack Rating",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[370-410] to Additive Fire Damage",
-            "class": "stat-default"
-        },
-        {
-            "stat": "+[370-410] to Additive Cold Damage",
-            "class": "stat-default"
-        }
-    ]
+  "Item": "Coldfire Amulet",
+  "Tier": "S",
+  "Level": "96",
+  "Type": "Amulet",
+  "Size": "1x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+[10-15]% Increased Attack Rating",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[250-370] to Attack Rating",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[370-410] to Additive Fire Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+[370-410] to Additive Cold Damage",
+      "class": "stat-default"
+    }
+  ]
 }

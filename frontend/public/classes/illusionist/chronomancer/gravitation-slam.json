@@ -1,8 +1,80 @@
 {
-    "Icon": "ability_2_icon.webp",
-    "Image": "output/classes\\illusionist\\ability_2_icon.webp",
-    "Name": "Gravitation Slam",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 2, "y": 0 }
+  "Icon": "ability_2_icon.webp",
+  "Image": "output/classes\\illusionist\\ability_2_icon.webp",
+  "Name": "Gravitation Slam",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": { "x": 2, "y": 0 },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Earth's Pull",
+      "description": "Increases the damage dealt by gravitation slam."
+    },
+    {
+      "id": 3,
+      "name": "Astral Chaos",
+      "description": "Gravitation slam executes monsters below a threshold."
+    },
+    {
+      "id": 4,
+      "name": "Void Slam",
+      "description": "Increases the area of effect radius pulling monsters towards the center of mass on hit inflicting shadow burning. Gravitation slam now has a cooldown."
+    },
+    {
+      "id": 5,
+      "name": "Shaken With Magic",
+      "description": "Chance to inflict arcane break on hit."
+    },
+    {
+      "id": 6,
+      "name": "Gravity at Will",
+      "description": "Increases cast rate when using gravitation slam."
+    },
+    {
+      "id": 7,
+      "name": "Floating Range",
+      "description": "Increases the area of effect radius of gravitation slam."
+    },
+    {
+      "id": 8,
+      "name": "Self-help",
+      "description": "Chance to knock monsters into air on hit dealing a portion of their life as additional damage."
+    },
+    {
+      "id": 9,
+      "name": "Stunned by Force",
+      "description": "Chance to stun targets on hit."
+    },
+    {
+      "id": 10,
+      "name": "Antigravity Slam",
+      "description": "Knock monsters back from the center of impact with force unleashing homing void souls seeking nearby monsters."
+    },
+    {
+      "id": 11,
+      "name": "Gravitational Radius",
+      "description": "Increases the maximum cast range of gravitation slam."
+    },
+    {
+      "id": 12,
+      "name": "Deep Slam",
+      "description": "Chance to critically hit dealing increased damage equal to your arcane skill damage."
+    },
+    {
+      "id": 13,
+      "name": "Force of Gravity",
+      "description": "Increases damage dealt to stunned targets."
+    },
+    {
+      "id": 14,
+      "name": "Gravitation Wave",
+      "description": "Unleash a shockwave of gravitation slams towards target direction with increased radius."
+    },
+    {
+      "id": 15,
+      "name": "Dimensional Slam",
+      "description": "Smash monsters into a black hole causing them to re-appear from an additional white hole knocked up dealing increased area of effect damage when landing."
+    }
+  ]
 }

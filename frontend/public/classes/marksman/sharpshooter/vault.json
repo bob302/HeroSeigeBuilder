@@ -1,8 +1,83 @@
 {
-    "Icon": "ability_2_icon.webp",
-    "Image": "output/classes\\marksman\\sharpshooter\\ability_2_icon.webp",
-    "Name": "Vault",
-    "Required Skill(s)": "None",
-    "Required Level": "1",
-    "Position": { "x": 2, "y": 0 }
+  "Icon": "ability_2_icon.webp",
+  "Image": "output/classes\\marksman\\sharpshooter\\ability_2_icon.webp",
+  "Name": "Vault",
+  "Required Skill(s)": "None",
+  "Required Level": "1",
+  "Position": {
+    "x": 2,
+    "y": 0
+  },
+  "Subskills": [
+    {
+      "id": 2,
+      "name": "Forest Parkour",
+      "description": "Increases vault length."
+    },
+    {
+      "id": 3,
+      "name": "Vaultshot",
+      "description": "Increases the damage dealt by vault."
+    },
+    {
+      "id": 4,
+      "name": "Multivault",
+      "description": "Vault now fires multiple projectiles in an arc."
+    },
+    {
+      "id": 5,
+      "name": "Eagle Eye",
+      "description": "Increases attack rating when vaulting."
+    },
+    {
+      "id": 6,
+      "name": "Rapidshot",
+      "description": "Increases the amount of projectiles fired when vaulting."
+    },
+    {
+      "id": 7,
+      "name": "High Leap",
+      "description": "Increases air time when vaulting. Vault can now go over hard terrain."
+    },
+    {
+      "id": 8,
+      "name": "Landing Strike",
+      "description": "When landing fire projectiles in a circle around you."
+    },
+    {
+      "id": 9,
+      "name": "Hunter's Aim",
+      "description": "Projectiles from vault now pierce and bounce off of terrain with increased damage and speed."
+    },
+    {
+      "id": 10,
+      "name": "iArrow",
+      "description": "Turn into a big arrow dealing damage to monsters on your path. Upon landing cause a big explosion pulse dealing damage to monsters around you."
+    },
+    {
+      "id": 11,
+      "name": "Wounding Shot",
+      "description": "Vault projectiles inflict bleeding on hit."
+    },
+    {
+      "id": 12,
+      "name": "Trail of Blood",
+      "description": "Increases damage dealt to bleeding targets."
+    },
+    {
+      "id": 13,
+      "name": "Explosive Trail",
+      "description": "Vault now leaves a trail of explosions with increased damage and area of effect."
+    },
+    {
+      "id": 14,
+      "name": "Leaping Cyclone",
+      "description": "Vault fires orbiting projectiles that fly in all directions."
+    },
+    {
+      "id": 15,
+      "name": "Safespace",
+      "description": "When landing from leap knock back all monsters around you and drop raining arrows on them."
+    }
+  ]
 }
