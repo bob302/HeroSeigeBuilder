@@ -12,7 +12,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Inject, Prop, Vue } from "vue-facing-decorator";
+import { Component, Inject, Prop, toNative, Vue } from "vue-facing-decorator";
 import ItemDisplay from "./ItemDisplay.vue";
 import { BaseItem, CharmEquipment } from "../models/Equipment";
 import type EditorContext from "../models/EditorContext";
@@ -22,7 +22,7 @@ import { Point2D } from "../models/Point2D";
 @Component({
   components: { ItemDisplay },
 })
-export default class EquipmentCatalog extends Vue {
+class EquipmentCatalog extends Vue {
   @Inject({ from: "editorContext" })
   readonly editorContext!: EditorContext;
   @Prop({ type: Array, required: true }) catalogItems!: BaseItem[];
@@ -54,6 +54,8 @@ export default class EquipmentCatalog extends Vue {
     }
   }
 }
+
+export default toNative(EquipmentCatalog)
 </script>
 
 <style>

@@ -86,7 +86,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Inject, Prop, Vue, Watch } from "vue-facing-decorator";
+import { Component, Inject, toNative, Vue, Watch } from "vue-facing-decorator";
 import {
   Equipment,
   EquipmentType,
@@ -106,12 +106,12 @@ import { equipmentService } from "../service/EquipmentService";
   },
   emits: ["close"],
 })
-export default class CatalogModal extends Vue {
+class CatalogModal extends Vue {
   @Inject({ from: "editorContext" })
   readonly editorContext!: EditorContext;
   public allCatalogItems: BaseItem[] = [];
   private loadedTypes = new Set<string>();
-  private isLoading = false;
+  public isLoading = false;
 
   public nameFilter: string = "";
   public typeFilter: EquipmentType = EquipmentType.Misc;
@@ -240,6 +240,8 @@ export default class CatalogModal extends Vue {
     this.$emit("close");
   }
 }
+
+export default toNative(CatalogModal)
 </script>
 
 <style scoped>

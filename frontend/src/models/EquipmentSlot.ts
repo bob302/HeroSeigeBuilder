@@ -1,7 +1,6 @@
-// models/EquipmentSlot.ts
-import { Cell, type CellStyle, HightLightCellState } from "./Cell";
+import { Cell, type CellStyle } from "./Cell";
 import { Slot } from "./Slot";
-import { BaseItem, Equipment } from "./Equipment";
+import { BaseItem } from "./Equipment";
 import { Point2D } from "./Point2D";
 import { Item } from "./Item";
 

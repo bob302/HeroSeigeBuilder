@@ -30,7 +30,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Inject, Prop, Vue, Watch } from "vue-facing-decorator";
+import { Component, Inject, Prop, toNative, Vue } from "vue-facing-decorator";
 import { Inventory } from "../models/Inventory";
 import { Slot } from "../models/Slot";
 import { Cell, HightLightCellState } from "../models/Cell";
@@ -46,7 +46,7 @@ import type EditorContext from "../models/EditorContext";
   },
   emits: ["slot-mouse-enter", "slot-mouse-leave"],
 })
-export default class InventoryGrid extends Vue {
+class InventoryGrid extends Vue {
   @Inject({ from: "editorContext" })
   readonly editorContext!: EditorContext;
 
@@ -155,7 +155,7 @@ export default class InventoryGrid extends Vue {
     };
   }
 
-  private getCellPositionStyle(cell: Cell) {
+  getCellPositionStyle(cell: Cell) {
     return {
       gridColumn: cell.coordinates.x + 1,
       gridRow: cell.coordinates.y + 1,
@@ -163,7 +163,7 @@ export default class InventoryGrid extends Vue {
     };
   }
 
-  private getSlotStyle(slot: Slot) {
+  getSlotStyle(slot: Slot) {
     const start = slot.item?.getStartCoordinates();
     if (!start) return {};
 
@@ -174,12 +174,14 @@ export default class InventoryGrid extends Vue {
     };
   }
 
-  onCellCreated(cell: Cell): void {}
+  onCellCreated(): void {}
 
-  onSlotCreated(slot: Slot): void {}
+  onSlotCreated(): void {}
 
-  onSlotRemoved(slot: Slot): void {}
+  onSlotRemoved(): void {}
 }
+
+export default toNative(InventoryGrid)
 </script>
 
 <style scoped>

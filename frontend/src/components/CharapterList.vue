@@ -20,14 +20,14 @@
 </template>
 
 <script lang="ts">
-import { Component, Inject, Prop, Vue } from "vue-facing-decorator";
+import { Component, Inject, toNative, Vue } from "vue-facing-decorator";
 import Charapter from "../models/Charapter";
 import type EditorContext from "../models/EditorContext";
 
 @Component({
   emits: ["charapter-selected"],
 })
-export default class CharapterList extends Vue {
+class CharapterList extends Vue {
   @Inject({ from: "editorContext" })
   readonly editorContext!: EditorContext;
   public charapters: Charapter[] = [];
@@ -62,6 +62,7 @@ export default class CharapterList extends Vue {
     this.$emit("charapter-selected");
   }
 }
+export default toNative(CharapterList)
 </script>
 
 <style scoped>

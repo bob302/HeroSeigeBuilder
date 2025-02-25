@@ -25,13 +25,13 @@
 </template>
 
 <script lang="ts">
-import { Component, Inject, Prop, Vue } from "vue-facing-decorator";
+import { Component, Inject, Prop, toNative, Vue } from "vue-facing-decorator";
 import type SubSkillNode from "../models/SubskillNode";
 import type SubSkillTree from "../models/SubSkillTree";
 import type EditorContext from "../models/EditorContext";
 
 @Component({emits: ['learn-skill']})
-export default class SubSkillNodeComponent extends Vue {
+class SubSkillNodeComponent extends Vue {
   @Inject({ from: "editorContext" })
   readonly editorContext!: EditorContext;
 
@@ -72,6 +72,8 @@ export default class SubSkillNodeComponent extends Vue {
     this.$emit("learn-skill", this.skill.id);
   }
 }
+
+export default toNative(SubSkillNodeComponent)
 </script>
 
 <style scoped>

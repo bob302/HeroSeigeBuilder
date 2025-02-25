@@ -46,11 +46,11 @@
 </template>
 
 <script lang="ts">
-import { Component, Inject, Vue } from "vue-facing-decorator";
+import { Component, Inject, toNative, Vue } from "vue-facing-decorator";
 import type EditorContext from "../models/EditorContext";
 
 @Component
-export default class AttributeList extends Vue {
+class AttributeList extends Vue {
   @Inject({ from: "editorContext" })
   readonly editorContext!: EditorContext;
 
@@ -104,6 +104,8 @@ export default class AttributeList extends Vue {
     this.increaseAttribute(attribute, this.editorContext.getAttributePoints());
   }
 }
+
+export default toNative(AttributeList)
 </script>
 
 <style scoped>

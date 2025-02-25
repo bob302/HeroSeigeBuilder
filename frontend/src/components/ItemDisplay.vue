@@ -11,7 +11,7 @@
         />
       </div>
       <div class="frame">
-        <img :src="this.src" alt="Item frame" class="background" />
+        <img :src="src" alt="Item frame" class="background" />
       </div>
     </div>
   </div>
@@ -19,14 +19,14 @@
 
 <script lang="ts">
 import type { Equipment } from "../models/Equipment";
-import { Component, Prop, Vue } from "vue-facing-decorator";
+import { Component, Prop, toNative, Vue } from "vue-facing-decorator";
 import ItemComponent from "./ItemComponent.vue";
 
 @Component({
   components: { ItemComponent },
   emits: ["item-display-on-mouse-enter", "item-display-on-mouse-leave"],
 })
-export default class ItemDisplay extends Vue {
+class ItemDisplay extends Vue {
   @Prop({ type: Object, required: true }) equipment!: Equipment;
   @Prop({ type: Boolean, required: true }) showSockets!: boolean;
   @Prop({ type: String, required: true }) src!: string;
@@ -44,6 +44,8 @@ export default class ItemDisplay extends Vue {
     this.$emit("item-display-on-mouse-leave");
   }
 }
+
+export default toNative(ItemDisplay)
 </script>
 
 <style scoped>

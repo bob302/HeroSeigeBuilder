@@ -2,25 +2,25 @@
   <div
     class="item-container"
     :style="pointerEvents ? 'pointer-events: all' : 'pointer-events: none'"
-    @mouseenter="this.onMouseEnter"
-    @mouseleave="this.onMouseLeave"
+    @mouseenter="onMouseEnter"
+    @mouseleave="onMouseLeave"
   >
     <!-- Отображаем изображение предмета, если оно есть -->
     <img
-      v-if="this.equipment.image"
-      :src="this.equipment.image"
+      v-if="equipment.image"
+      :src="equipment.image"
       class="item-image"
       draggable="false"
     />
 
     <!-- Отображение сокетов -->
     <div
-      v-if="isEquipment && this.showSockets"
-      :class="[this.socketLayoutClass, 'socket-container']"
+      v-if="isEquipment && showSockets"
+      :class="[socketLayoutClass, 'socket-container']"
     >
       <div
         v-for="(socket, index) in (
-          this.equipment as Equipment
+          equipment as Equipment
         ).sockets.list.slice(0, 6)"
         :key="index"
         :class="['socket', `socket-${index + 1}`]"
@@ -37,14 +37,14 @@
 <script lang="ts">
 import SocketComponent from "./SocketComponent.vue";
 import { BaseItem, Equipment, Socketable } from "../models/Equipment";
-import { Component, Inject, Prop, Vue } from "vue-facing-decorator";
+import { Component, Inject, Prop, toNative, Vue } from "vue-facing-decorator";
 import type EditorContext from "../models/EditorContext";
 
 @Component({
   components: { SocketComponent, Equipment },
   emits: ["item-on-mouse-enter", "item-on-mouse-leave"],
 })
-export default class ItemComponent extends Vue {
+class ItemComponent extends Vue {
   @Inject({ from: "editorContext" })
   readonly editorContext!: EditorContext;
   @Prop({ type: Object, required: true }) equipment!: BaseItem;
@@ -57,12 +57,12 @@ export default class ItemComponent extends Vue {
 
   insertSocketable(socketable: Socketable) {
     if (!(this.equipment instanceof Equipment)) return;
-    const sockets = [...(this.equipment as Equipment).sockets.list]; // Create a new array
+    const sockets = [...(this.equipment as Equipment).sockets.list];
     const index = sockets.findIndex((s) => !s.socketable);
 
     if (index !== -1) {
-      sockets[index] = { ...sockets[index], socketable }; // Create new object
-      (this.equipment as Equipment).sockets.list = sockets; // Replace array reference
+      sockets[index] = { ...sockets[index], socketable };
+      (this.equipment as Equipment).sockets.list = sockets;
       this.$emit("socket-inserted", socketable);
       return true;
     }
@@ -91,17 +91,19 @@ export default class ItemComponent extends Vue {
     }
   }
 
-  onMouseEnter(event: MouseEvent) {
+  onMouseEnter() {
     if (!this.equipment) return;
     this.editorContext.updateStatDisplay(this.equipment);
     this.$emit("item-on-mouse-enter", this.equipment);
   }
 
-  onMouseLeave(event: MouseEvent) {
+  onMouseLeave() {
     this.editorContext.resetStatDisplay();
     this.$emit("item-on-mouse-leave");
   }
 }
+
+export default toNative(ItemComponent)
 </script>
 
 <style scoped>

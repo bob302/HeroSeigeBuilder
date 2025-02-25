@@ -71,7 +71,7 @@ export class ItemParser {
     const subtype = rawItem.Type;
 
     const type =
-      (Object.entries(EquipmentSubtypes).find(([key, subtypes]) =>
+      (Object.entries(EquipmentSubtypes).find(([subtypes]) =>
         subtypes.includes(subtype),
       )?.[0] as EquipmentType) || EquipmentType.Special;
 

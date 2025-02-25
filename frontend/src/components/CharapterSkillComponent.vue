@@ -40,7 +40,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Inject, Prop, Vue } from "vue-facing-decorator";
+import { Component, Inject, Prop, toNative, Vue } from "vue-facing-decorator";
 import CharapterSkill from "../models/CharapterSkill";
 import SkillTree from "../models/SkillTree";
 import type EditorContext from "../models/EditorContext";
@@ -48,7 +48,7 @@ import type EditorContext from "../models/EditorContext";
 @Component({
   emits: ["skill-learned", "toggle-subskills"],
 })
-export default class CharacterSkill extends Vue {
+class CharapterSkillComponent extends Vue {
   @Inject({ from: "editorContext" })
   readonly editorContext!: EditorContext;
 
@@ -75,6 +75,8 @@ export default class CharacterSkill extends Vue {
     this.$emit("toggle-subskills", this.skill);
   }
 }
+
+export default toNative(CharapterSkillComponent)
 </script>
 
 <style scoped>

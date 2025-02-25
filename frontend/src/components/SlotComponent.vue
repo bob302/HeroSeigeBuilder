@@ -14,7 +14,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Inject, Prop, Vue } from "vue-facing-decorator";
+import { Component, Prop, toNative, Vue } from "vue-facing-decorator";
 import { Slot } from "../models/Slot";
 import type { CSSProperties } from "vue";
 import ItemComponent from "./ItemComponent.vue";
@@ -25,10 +25,10 @@ import ItemComponent from "./ItemComponent.vue";
   },
   emits: ["slot-click", "slot-mouse-enter", "slot-mouse-leave"],
 })
-export default class SlotComponent extends Vue {
+class SlotComponent extends Vue {
   @Prop({ type: Slot, required: true }) slotData!: Slot;
 
-  onClick(event: MouseEvent) {
+  onClick() {
     if (!this.slotData) return;
     this.$emit("slot-click", this.slotData);
   }
@@ -60,6 +60,8 @@ export default class SlotComponent extends Vue {
     }
   }
 }
+
+export default toNative(SlotComponent)
 </script>
 
 <style scoped>

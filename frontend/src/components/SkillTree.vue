@@ -23,18 +23,19 @@
 <script lang="ts">
 import { Component, Inject, Prop, Vue, Watch } from "vue-facing-decorator";
 import SkillTree from "../models/SkillTree";
-import CharapterSkill from "./CharapterSkill.vue";
+import CharapterSkill from "../models/CharapterSkill";
+import CharapterSkillComponent from "./CharapterSkillComponent.vue";
 import CharapterSkillModel from "../models/CharapterSkill";
 import type EditorContext from "../models/EditorContext";
-import type CharacterSkill from "./CharapterSkill.vue";
+import { toNative } from "vue-facing-decorator";
 
 @Component({
   components: {
-    CharapterSkill,
+    CharapterSkillComponent,
   },
   emits: ["toggle-subskills"],
 })
-export default class SkillTreeComponent extends Vue {
+class SkillTreeComponent extends Vue {
   @Prop({ type: Object, required: true }) skillTree!: SkillTree;
   @Inject({ from: "editorContext" })
   readonly editorContext!: EditorContext;
@@ -45,7 +46,7 @@ export default class SkillTreeComponent extends Vue {
     this.createConnections();
   }
 
-  onToggleSubSkills(skill: CharacterSkill) {
+  onToggleSubSkills(skill: CharapterSkill) {
     this.$emit("toggle-subskills", skill);
   }
 
@@ -113,6 +114,8 @@ export default class SkillTreeComponent extends Vue {
     };
   }
 }
+
+export default toNative(SkillTreeComponent)
 </script>
 
 <style scoped>

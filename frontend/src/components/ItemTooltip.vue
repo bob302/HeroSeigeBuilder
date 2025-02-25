@@ -49,7 +49,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Ref, Vue, Watch } from "vue-facing-decorator";
+import { Component, Prop, Ref, toNative, Vue, Watch } from "vue-facing-decorator";
 import {
   BaseItem,
   Equipment,
@@ -62,7 +62,7 @@ import EquipmentSocketsTooltip from "./EquipmentSocketsTooltip.vue";
 @Component({
   components: { EquipmentSocketsTooltip },
 })
-export default class EquipmentTooltip extends Vue {
+class ItemTooltip extends Vue {
   @Prop({ required: true }) item!: BaseItem;
   @Prop({ required: true }) pos!: { x: number; y: number };
 
@@ -207,6 +207,8 @@ export default class EquipmentTooltip extends Vue {
     );
   }
 }
+
+export default toNative(ItemTooltip)
 </script>
 
 <style scoped>

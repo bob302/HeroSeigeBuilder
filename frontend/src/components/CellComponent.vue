@@ -2,22 +2,22 @@
   <div
     class="cell-content"
     :style="style"
-    @mouseenter="this.onMouseEnter"
-    @mouseleave="this.onMouseLeave"
-    @click="this.onClick"
+    @mouseenter="onMouseEnter"
+    @mouseleave="onMouseLeave"
+    @click="onClick"
     @dragover.prevent
   ></div>
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from "vue-facing-decorator";
+import { Component, Prop, toNative, Vue } from "vue-facing-decorator";
 import { Cell } from "../models/Cell";
 import type { CSSProperties } from "vue";
 
 @Component({
   emits: ["cell-click", "cell-mouse-enter", "cell-mouse-leave"],
 })
-export default class CellComponent extends Vue {
+class CellComponent extends Vue {
   @Prop({ type: Cell, required: true }) cellData!: Cell;
 
   onMouseEnter(): void {
@@ -76,6 +76,7 @@ export default class CellComponent extends Vue {
     }
   }
 }
+export default toNative(CellComponent)
 </script>
 
 <style scoped></style>

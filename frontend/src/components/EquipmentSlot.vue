@@ -17,7 +17,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Inject, Prop, Vue, Watch } from "vue-facing-decorator";
+import { Component, Inject, Prop, toNative, Vue, Watch } from "vue-facing-decorator";
 import { Slot } from "../models/Slot";
 import { Cell, HightLightCellState, type CellStyle } from "../models/Cell";
 import CellComponent from "./CellComponent.vue";
@@ -35,7 +35,7 @@ import { EquipmentSlot } from "../models/EquipmentSlot";
   },
   emits: ["slot-mouse-enter", "slot-mouse-leave"],
 })
-export default class EquipmentSlotComponent extends Vue {
+class EquipmentSlotComponent extends Vue {
   @Inject({ from: "editorContext" })
   readonly editorContext!: EditorContext;
 
@@ -168,12 +168,14 @@ export default class EquipmentSlotComponent extends Vue {
     this.resetCellHighlights();
   }
 
-  onCellCreated(cell: Cell): void {}
+  onCellCreated(): void {}
 
-  onSlotCreated(slot: Slot): void {}
+  onSlotCreated(): void {}
 
-  onSlotRemoved(slot: Slot): void {}
+  onSlotRemoved(): void {}
 }
+
+export default toNative(EquipmentSlotComponent)
 </script>
 
 <style scoped>

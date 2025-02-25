@@ -13,13 +13,13 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue, Prop } from "vue-facing-decorator";
+import { Component, Vue, Prop, toNative } from "vue-facing-decorator";
 import type { Socketable } from "../models/Equipment";
 
 @Component({
   emits: [],
 })
-export default class Socket extends Vue {
+class Socket extends Vue {
   @Prop({ type: Object, required: false }) socketable!: Socketable;
   @Prop({ type: Boolean, required: true }) prismatic!: boolean;
 
@@ -29,6 +29,8 @@ export default class Socket extends Vue {
       : "/img/editor/socket-normal.png";
   }
 }
+
+export default toNative(Socket)
 </script>
 
 <style scoped>

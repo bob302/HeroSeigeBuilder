@@ -49,13 +49,12 @@
 </template>
 
 <script lang="ts">
-import { Component, Inject, Prop, Vue, Watch } from "vue-facing-decorator";
+import { Component, Inject, toNative, Vue } from "vue-facing-decorator";
 import EditorContext from "../models/EditorContext";
 import InventoryGrid from "./InventoryGrid.vue";
 import { Point2D } from "../models/Point2D";
 import { Inventory } from "../models/Inventory";
 import {
-  BaseItem,
   CharmEquipment,
   createEquipment,
   Equipment,
@@ -78,7 +77,7 @@ import ItemDisplay from "./ItemDisplay.vue";
     EquipmentSlotComponent,
   },
 })
-export default class TheInventory extends Vue {
+class TheInventory extends Vue {
   @Inject({ from: "editorContext" })
   readonly editorContext!: EditorContext;
   imageCache = new Map<string, HTMLImageElement>();
@@ -200,6 +199,8 @@ export default class TheInventory extends Vue {
     this.editorContext.clearEquipment();
   }
 }
+
+export default toNative(TheInventory)
 </script>
 
 <style>

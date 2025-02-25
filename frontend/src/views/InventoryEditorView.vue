@@ -85,13 +85,13 @@
 </template>
 
 <script lang="ts">
-import { Component, Provide, Vue } from "vue-facing-decorator";
+import { Component, Provide, toNative, Vue } from "vue-facing-decorator";
 import TheInventory from "../components/TheInventory.vue";
 import SkillTreeComponent from "../components/SkillTree.vue";
-import CharapterList from "../components/ClassSelection.vue";
+import CharapterList from "../components/CharapterList.vue";
 import AttributeList from "../components/AttributeList.vue";
 import EditorContext, { EditorViewState } from "../models/EditorContext";
-import { ref, type Reactive } from "vue";
+import { type Reactive } from "vue";
 import EditorContextProvider from "../models/EditorContextProvider";
 import { equipmentService } from "../service/EquipmentService";
 import CatalogModal from "../components/CatalogModal.vue";
@@ -110,7 +110,7 @@ import type CharapterSkill from "../models/CharapterSkill";
     SubSkillTreeComponent,
   },
 })
-export default class InventoryEditorView extends Vue {
+class InventoryEditorView extends Vue {
   @Provide()
   editorContext: Reactive<EditorContext> = EditorContextProvider.getContext();
 
@@ -213,6 +213,8 @@ export default class InventoryEditorView extends Vue {
     }
   }
 }
+
+export default toNative(InventoryEditorView)
 </script>
 
 <style scoped>

@@ -27,7 +27,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from "vue-facing-decorator";
+import { Component, Prop, toNative, Vue } from "vue-facing-decorator";
 import SubSkillTree from "../models/SubSkillTree";
 import SubSkillNodeComponent from "./SubSkillNodeComponent.vue";
 import type SubSkillNode from "../models/SubskillNode";
@@ -38,7 +38,7 @@ import type SubSkillNode from "../models/SubskillNode";
   },
   emits: ["close"],
 })
-export default class SubSkillTreeComponent extends Vue {
+class SubSkillTreeComponent extends Vue {
   @Prop({ type: Object, required: true }) skillTree!: SubSkillTree;
   skillNodes: SubSkillNode[] = [];
   skillConnections: { from: SubSkillNode; to: SubSkillNode }[] = [];
@@ -113,6 +113,8 @@ export default class SubSkillTreeComponent extends Vue {
     };
   }
 }
+
+export default toNative(SubSkillTreeComponent)
 </script>
 
 <style scoped>

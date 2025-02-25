@@ -14,40 +14,27 @@ import { Vue, Component, Inject } from "vue-facing-decorator";
 import Item from "./ItemComponent.vue";
 import type { CSSProperties } from "vue";
 import type EditorContext from "../models/EditorContext";
+import { toNative } from "vue-facing-decorator";
 
 @Component({
   components: { Item },
 })
-export default class DraggedSlot extends Vue {
+class DraggedSlot extends Vue {
   @Inject({ from: "editorContext" })
   readonly editorContext!: EditorContext;
-
-  mouseX: number = -1000;
-  mouseY: number = -1000;
 
   dragStyle(): CSSProperties {
     return {
       position: "fixed",
-      top: `${this.mouseY}px`,
-      left: `${this.mouseX}px`,
+      top: `${this.editorContext.mousePosition.y}px`,
+      left: `${this.editorContext.mousePosition.x}px`,
       transform: "translate(-50%, -50%)",
       zIndex: 1000,
     };
   }
-
-  handleMouseMove(e: MouseEvent) {
-    this.mouseX = e.clientX;
-    this.mouseY = e.clientY;
-  }
-
-  mounted() {
-    document.addEventListener("mousemove", this.handleMouseMove);
-  }
-
-  beforeDestroy() {
-    document.removeEventListener("mousemove", this.handleMouseMove);
-  }
 }
+
+export default toNative(DraggedSlot)
 </script>
 
 <style scoped>
