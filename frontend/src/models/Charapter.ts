@@ -139,6 +139,10 @@ export default class Charapter {
         const skillTreeInstance = await SkillTree.parseSkillTree(className, treeName);
         char.addSkillTree(skillTreeInstance);
       });
+
+      if (weaponRestrictions.length === 0) {
+        char.addWeaponRestrictions('Shield');
+      }
   
       const weaponRestrictionPromises = weaponRestrictions.map(async (restriction) => {
         char.addWeaponRestrictions(restriction);

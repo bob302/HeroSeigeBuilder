@@ -136,7 +136,6 @@ export default class EditorContext {
   }
 
   public putItemInEquipmentSlot(es: EquipmentSlot, item: Item): boolean {
-    if (item === null) return false
     if (item.uniqueId === this.itemOnCursor?.item?.uniqueId) {
       es.slot.item = item.copy()
       this.removeSlotFromCursor()

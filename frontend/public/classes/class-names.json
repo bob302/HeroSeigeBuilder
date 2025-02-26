@@ -1,7 +1,7 @@
 {
   "viking": {
     "skillTree": ["berserker", "shield-bearer"],
-    "weaponRestrictions": ["Sword", "Dagger", "Mace", "Axe", "Claw", "Polearm", "Chainsaw", "Staff", "Cane", "Bow", "Gun", "Throwing Weapon", "Shield"]
+    "weaponRestrictions": ["Sword", "Dagger", "Mace", "Axe", "Claw", "Polearm", "Chainsaw", "Staff", "Cane", "Bow", "Gun", "Throwing Weapon"]
   },
   "pyromancer": {
     "skillTree": ["arsonist", "flame-diviner"],
@@ -9,7 +9,7 @@
   },
   "marksman": {
     "skillTree": ["sharpshooter", "engineer"],
-    "weaponRestrictions": ["Sword", "Dagger", "Mace", "Axe", "Claw", "Polearm", "Chainsaw", "Staff", "Cane", "Bow", "Gun", "Throwing Weapon", "Shield"]
+    "weaponRestrictions": ["Sword", "Dagger", "Mace", "Axe", "Claw", "Polearm", "Chainsaw", "Staff", "Cane", "Bow", "Gun", "Throwing Weapon"]
   },
   "pirate": {
     "skillTree": ["gunner", "plunderer"],
@@ -17,11 +17,11 @@
   },
   "nomad": {
     "skillTree": ["wanderer", "vagabond"],
-    "weaponRestrictions": ["Sword", "Dagger", "Mace", "Axe", "Claw", "Polearm", "Chainsaw", "Staff", "Cane", "Bow", "Gun", "Throwing Weapon", "Shield"]
+    "weaponRestrictions": ["Sword", "Dagger", "Mace", "Axe", "Claw", "Polearm", "Chainsaw", "Staff", "Cane", "Bow", "Gun", "Throwing Weapon"]
   },
   "redneck": {
     "skillTree": ["hillbilly", "logger"],
-    "weaponRestrictions": ["Sword", "Dagger", "Mace", "Axe", "Claw", "Polearm", "Chainsaw", "Staff", "Cane", "Bow", "Gun", "Throwing Weapon", "Shield"]
+    "weaponRestrictions": ["Sword", "Dagger", "Mace", "Axe", "Claw", "Polearm", "Chainsaw", "Staff", "Cane", "Bow", "Gun", "Throwing Weapon"]
   },
   "necromancer": {
     "skillTree": ["lord-of-the-dead", "venomancer"],
@@ -29,7 +29,7 @@
   },
   "samurai": {
     "skillTree": ["emperors-blade", "ronin"],
-    "weaponRestrictions": ["Sword", "Dagger", "Mace", "Axe", "Claw", "Polearm", "Chainsaw", "Staff", "Cane", "Bow", "Gun", "Throwing Weapon", "Shield"]
+    "weaponRestrictions": ["Sword", "Dagger", "Mace", "Axe", "Claw", "Polearm", "Chainsaw", "Staff", "Cane", "Bow", "Gun", "Throwing Weapon"]
   },
   "paladin": {
     "skillTree": ["justiciar", "lionheart"],
@@ -37,11 +37,11 @@
   },
   "amazon": {
     "skillTree": ["huntress", "valkyrie"],
-    "weaponRestrictions": ["Sword", "Dagger", "Mace", "Axe", "Claw", "Polearm", "Chainsaw", "Staff", "Cane", "Bow", "Gun", "Throwing Weapon", "Shield"]
+    "weaponRestrictions": ["Sword", "Dagger", "Mace", "Axe", "Claw", "Polearm", "Chainsaw", "Staff", "Cane", "Bow", "Gun", "Throwing Weapon"]
   },
   "demon-slayer": {
     "skillTree": ["gunslinger", "executioner"],
-    "weaponRestrictions": ["Sword", "Dagger", "Mace", "Axe", "Claw", "Polearm", "Chainsaw", "Staff", "Cane", "Bow", "Gun", "Throwing Weapon", "Shield"]
+    "weaponRestrictions": ["Sword", "Dagger", "Mace", "Axe", "Claw", "Polearm", "Chainsaw", "Staff", "Cane", "Bow", "Gun", "Throwing Weapon"]
   },
   "demonspawn": {
     "skillTree": ["bone-conjurer", "blood-lord"],
@@ -57,7 +57,7 @@
   },
   "marauder": {
     "skillTree": ["gladiator", "juggernaut"],
-    "weaponRestrictions": ["Sword", "Dagger", "Mace", "Axe", "Claw", "Polearm", "Chainsaw", "Staff", "Cane", "Bow", "Gun", "Throwing Weapon", "Shield"]
+    "weaponRestrictions": ["Sword", "Dagger", "Mace", "Axe", "Claw", "Polearm", "Chainsaw", "Staff", "Cane", "Bow", "Gun", "Throwing Weapon"]
   },
   "plague-doctor": {
     "skillTree": ["plague-caller", "sanguine-physician"],
@@ -65,7 +65,7 @@
   },
   "shield-lancer": {
     "skillTree": ["champion", "knight"],
-    "weaponRestrictions": ["Sword", "Dagger", "Mace", "Axe", "Claw", "Polearm", "Chainsaw", "Staff", "Cane", "Bow", "Gun", "Throwing Weapon", "Shield"]
+    "weaponRestrictions": ["Sword", "Dagger", "Mace", "Axe", "Claw", "Polearm", "Chainsaw", "Staff", "Cane", "Bow", "Gun", "Throwing Weapon"]
   },
   "jotunn": {
     "skillTree": ["son-of-aurgelmir", "son-of-ymir"],
@@ -81,7 +81,7 @@
   },
   "butcher": {
     "skillTree": ["face-of-duality", "flesh-ripper"],
-    "weaponRestrictions": ["Sword", "Dagger", "Mace", "Axe", "Claw", "Polearm", "Chainsaw", "Staff", "Cane", "Bow", "Gun", "Throwing Weapon", "Shield"]
+    "weaponRestrictions": ["Sword", "Dagger", "Mace", "Axe", "Claw", "Polearm", "Chainsaw", "Staff", "Cane", "Bow", "Gun", "Throwing Weapon"]
   },
   "stormweaver": {
     "skillTree": ["essence-of-storm", "storm-conjurer"],

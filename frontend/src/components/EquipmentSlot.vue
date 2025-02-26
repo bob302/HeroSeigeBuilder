@@ -89,8 +89,11 @@ class EquipmentSlotComponent extends Vue {
   }
 
   placeItem() {
+    
     const onCursor = this.editorContext.getItemOnCursor(); 
-    if (onCursor === null || !onCursor.item ) return
+    if (onCursor === null || !onCursor.item) return
+    
+    if (this.equipmentSlot.isRestricted(undefined, onCursor.item?.data.subtype)) return
     
     this.editorContext.putItemInEquipmentSlot(this.equipmentSlot, onCursor.item)
   }
@@ -102,29 +105,33 @@ class EquipmentSlotComponent extends Vue {
 
     if (!onCursor) return
 
-    this.editorContext.pickupSlotOnCursor(this.equipmentSlot.slot)
-    this.editorContext.putItemInEquipmentSlot(this.equipmentSlot, onCursor.item!)
+    if (this.equipmentSlot.isRestricted(undefined, onCursor.item?.data.subtype)) return
+
+    const slotCopy = this.equipmentSlot.slot.clone()
+    if (this.editorContext.putItemInEquipmentSlot(this.equipmentSlot, onCursor.item!)) {
+      this.editorContext.pickupSlotOnCursor(slotCopy)
+    }
+    
   }
 
   onClickOnCell() {
     const item = this.editorContext.getItemOnCursor(); 
     if (item !== null) {
       if (this.equipmentSlot.isRestricted(undefined, item.item?.data.subtype)) return
-      this.swapItem();
+      this.placeItem();
     }
   }
 
   // ПЕРЕПИСАТЬ
   onSlotClick() {
-    if (this.editorContext.isItemOnCursor()) {
+    if (this.editorContext.isItemOnCursor() && this.equipmentSlot.slot.item !== null) {
       const item = this.editorContext.getItemOnCursor(); 
+      
       if (!item?.item) return
-
-      if (this.equipmentSlot.isRestricted(undefined, item.item?.data.subtype)) return
-  
+      
       this.swapItem();
     } else {
-      if (this.equipmentSlot.slot.item) {
+      if (this.equipmentSlot.slot.item !== null) {
         this.pickupItem();
       } else {
         this.placeItem();

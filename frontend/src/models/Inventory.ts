@@ -237,6 +237,11 @@ export class Inventory {
     if (this.isRestricted(item.data.subtype)) return false;
 
     if (destination.isValid()) {
+      if (item.uniqueId === this.editorContext.getItemOnCursor()?.item?.uniqueId) {
+        item = item.copy()
+        this.editorContext.removeSlotFromCursor()
+      }
+
       item.setStartCoordinates(destination);
       const data = new Slot(item);
       data.onCursor = false;
@@ -256,13 +261,9 @@ export class Inventory {
     const slot = this.slots.find((s) => s.item?.uniqueId === item.uniqueId);
     if (!slot) return;
 
-    const currentCoords = item.getStartCoordinates();
-
     this.removeItem(item);
 
-    this.editorContext.pickupSlotOnCursor(new Slot(item));
-
-    item.setStartCoordinates(currentCoords);
+    this.editorContext.pickupSlotOnCursor(slot);
   }
 
   moveItem(slot: Slot, destination: Point2D): void {
@@ -396,10 +397,20 @@ export class Inventory {
     const onCursor = this.editorContext.getItemOnCursor()
 
     if (!onCursor?.item) return
+  
+    const slot = this.slots.find(s => s.item?.uniqueId === item.uniqueId)
 
-    this.setItem(onCursor.item, destination);
-    this.pickupItem(item);
+    if (!slot) return
+
+    if (this.isRestricted(slot.item?.data.subtype!)) return
+
+    if(this.setItem(onCursor.item, destination)) {
+      this.editorContext.pickupSlotOnCursor(slot)
+
+    }
+    
   }
+
 
   tryInsertSocketable(item: Item): boolean {
     const socketable = this.editorContext.getItemOnCursor()?.item?.data;
