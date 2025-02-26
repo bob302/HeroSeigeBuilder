@@ -1,4 +1,3 @@
-import type { EquipmentSubtype } from "./Equipment";
 import { Point2D } from "./Point2D";
 
 export enum CellState {

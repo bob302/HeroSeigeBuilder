@@ -1,6 +1,6 @@
 import { Cell, type CellStyle } from "./Cell";
 import { Slot } from "./Slot";
-import { BaseItem, EquipmentSubtypes, EquipmentType, getEquipmentTypeBySubtype, type EquipmentSubtype } from "./Equipment";
+import { BaseItem, EquipmentType, getEquipmentTypeBySubtype, type EquipmentSubtype } from "./Equipment";
 import { Point2D } from "./Point2D";
 import { Item } from "./Item";
 

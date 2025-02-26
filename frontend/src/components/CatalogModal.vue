@@ -224,7 +224,7 @@ class CatalogModal extends Vue {
     if (!this.loadedTypes.has(newType)) {
       this.isLoading = true;
 
-      const loaded = await equipmentService.loadType(newType);
+      const loaded = await equipmentService.loadType(newType as EquipmentType);
 
       loaded.forEach((item) => {
         this.allCatalogItems.push(item);

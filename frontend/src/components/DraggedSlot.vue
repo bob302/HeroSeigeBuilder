@@ -1,8 +1,8 @@
 <template>
   <div class="dragged-slot" :style="dragStyle()">
     <Item
-      v-if="editorContext.itemOnCursor?.item?.data"
-      :equipment="editorContext.itemOnCursor.item.data"
+      v-if="editorContext.getItemOnCursor()?.item?.data"
+      :equipment="editorContext.getItemOnCursor()!.item!.data"
       :showSockets="true"
       :pointerEvents="false"
     />
