@@ -25,6 +25,9 @@
   --color-background: rgba(0, 0, 0, 0.8);
   --color-border: #ffffff;
   --color-subskill-name: #ff5100;
+  --color-button: #28314b;
+  --color-button-hover:rgb(102, 35, 99)b;
+  --color-modal: #22315e7a;
   /* Colors Tiers*/
   --color-s: #f3c632;
   --color-a: #e69650;

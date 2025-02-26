@@ -74,7 +74,7 @@ class EquipmentService {
       const paths: string[] = await response.json();
       this.groupPathsByType(paths);
       // Socketables
-      this.loadType("Misc");
+      this.loadType(EquipmentType.Misc);
 
       if (onLoaded) {
         onLoaded();
@@ -132,7 +132,7 @@ class EquipmentService {
       case "guns":
         return EquipmentType.Weapon;
       case "helmets":
-        return EquipmentType.Weapon;
+        return EquipmentType.Armor;
       case "maces":
         return EquipmentType.Weapon;
       case "polearms":
@@ -142,7 +142,7 @@ class EquipmentService {
       case "rings":
         return EquipmentType.Accessory;
       case "shields":
-        return EquipmentType.Armor;
+        return EquipmentType.Offhand;
       case "socketables":
         return EquipmentType.Misc;
       case "spellblades":
@@ -160,7 +160,7 @@ class EquipmentService {
     }
   }
 
-  public async loadType(type: string): Promise<BaseItem[]> {
+  public async loadType(type: EquipmentType): Promise<BaseItem[]> {
     if (this.typeCache.has(type)) {
       return this.typeCache.get(type)!;
     }

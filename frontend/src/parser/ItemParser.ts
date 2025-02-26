@@ -68,6 +68,7 @@ export class ItemParser {
 
   static parseWikiItem(rawItem: any): BaseItem {
     const subtype = rawItem.Type;
+
     //@ts-ignore
     const type = Object.entries(EquipmentSubtypes).find(([key, subtypes]) =>
       subtypes.includes(subtype)
@@ -158,6 +159,7 @@ export class ItemParser {
         ...commonProps,
         armorStats: { defense: rawItem.defense || "0" },
       };
+      
       return new ArmorEquipment(armorProps);
     } else if (type === EquipmentType.Weapon) {
       let twoHanded = false;

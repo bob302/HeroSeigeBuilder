@@ -40,8 +40,9 @@ class CharapterList extends Vue {
         throw new Error(`Не удалось загрузить JSON: ${response.statusText}`);
       }
 
-      const classData: Record<string, string[]> = await response.json();
+      const classData: Record<string, { skillTree: string[], weaponRestrictions: string[] }> = await response.json();
       const classNames = Object.keys(classData);
+
       const charapterPromises = classNames.map((className) =>
         Charapter.parseCharapter(className),
       );
@@ -57,7 +58,7 @@ class CharapterList extends Vue {
 
   selectCharapter(charapter: Charapter) {
     charapter.reset();
-    this.editorContext.selectedCharapter = charapter;
+    this.editorContext.selectCharapter(charapter)
     this.editorContext.resetSkillPoints();
     this.$emit("charapter-selected");
   }

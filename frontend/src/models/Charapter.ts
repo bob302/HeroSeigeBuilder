@@ -25,8 +25,10 @@ export default class Charapter {
     });
   }
 
-  setWeaponRestrictions(restrictions: Set<EquipmentSubtype>) {
-    this.restrictions = restrictions;
+  addWeaponRestrictions(...restrictions: Array<EquipmentSubtype>) {
+    restrictions.forEach( restriction => {
+      this.restrictions.add(restriction)
+    })
   }
 
   public canEquip(subtype: EquipmentSubtype): boolean {
@@ -111,37 +113,39 @@ export default class Charapter {
     }
   }
 
-  static async parseCharapter(
-    className: string,
-  ): Promise<Charapter | undefined> {
+  static async parseCharapter(className: string): Promise<Charapter | undefined> {
     const imagePath = `/classes/${className}/icon.webp`;
     const jsonPath = `/classes/class-names.json`;
     const formattedClassName = ColorUtils.formatString(className);
-
+  
     try {
       const response = await fetch(jsonPath);
       if (!response.ok) {
         throw new Error(`Не удалось загрузить JSON: ${response.statusText}`);
       }
-
-      const classData: Record<string, string[]> = await response.json();
-
-      const treesNames = classData[className];
-
-      if (!treesNames) {
-        console.warn(`Класс ${className} не найден.`);
-        return undefined;
+  
+      const classData: Record<string, { skillTree: string[], weaponRestrictions: string[] }> = await response.json();
+  
+      const classInfo = classData[className];
+      if (!classInfo) {
+        console.warn(`Class ${className} not found.`);
       }
-
+  
+      const { skillTree, weaponRestrictions } = classInfo;
+  
       const char = new Charapter(formattedClassName, "", imagePath);
-
-      const treePromises = treesNames.map(async (treeName) => {
-        const skillTree = await SkillTree.parseSkillTree(className, treeName);
-        char.addSkillTree(skillTree);
+  
+      const treePromises = skillTree.map(async (treeName) => {
+        const skillTreeInstance = await SkillTree.parseSkillTree(className, treeName);
+        char.addSkillTree(skillTreeInstance);
       });
-
-      await Promise.all(treePromises);
-
+  
+      const weaponRestrictionPromises = weaponRestrictions.map(async (restriction) => {
+        char.addWeaponRestrictions(restriction);
+      });
+      
+      await Promise.all([...treePromises, ...weaponRestrictionPromises]);
+  
       return char;
     } catch (error) {
       console.error(`Ошибка при загрузке ${formattedClassName}:`, error);
@@ -149,3 +153,4 @@ export default class Charapter {
     }
   }
 }
+  

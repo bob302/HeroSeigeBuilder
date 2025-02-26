@@ -1,7 +1,10 @@
+import { HightLightCellState } from "./Cell";
 import Charapter from "./Charapter";
-import type { BaseItem } from "./Equipment";
+import type { BaseItem, EquipmentSubtype } from "./Equipment";
 import { EquipmentSlot } from "./EquipmentSlot";
 import { Inventory } from "./Inventory";
+import type { Item } from "./Item";
+import { Point2D } from "./Point2D";
 import { Slot } from "./Slot";
 import type SubSkillTree from "./SubSkillTree";
 
@@ -11,10 +14,11 @@ export enum EditorViewState {
   Tooltip = "tooltip",
   SubSkillTree = "subSkillTree",
   Info = "info",
+  Restrictions = "Restrictions"
 }
 
 export default class EditorContext {
-  itemOnCursor: Slot | null = null;
+  private itemOnCursor: Slot | null = null;
   lookingAt: BaseItem | null = null;
   mousePosition: { x: number; y: number } = { x: -1000, y: -1000 };
   inventories: Map<string, Inventory> = new Map();
@@ -22,7 +26,7 @@ export default class EditorContext {
   public currentView: EditorViewState = EditorViewState.None;
   public activeSubSkillTree: SubSkillTree | null = null;
 
-  selectedCharapter: Charapter | null = null;
+  private selectedCharapter: Charapter | null = null;
   private skillPoints: number = 100;
   private attributePoints: number = 400;
 
@@ -35,7 +39,119 @@ export default class EditorContext {
 
   public onDeserialization: (() => void) | null = null;
 
+  private topSlotUnlocked = false;
+  private bottomSlotUnlocked = false;
+
   constructor() {}
+
+  public isTopSlotUnlocked() {
+    return this.topSlotUnlocked
+  }
+
+  public isBottmoSlotUnlocked() {
+    return this.bottomSlotUnlocked
+  }
+
+  unlockCharmTopSlot() {
+    this.topSlotUnlocked = !this.topSlotUnlocked;
+
+    this.charmInventory.setIsUnlockedCell(
+      new Point2D(0, 3),
+      this.topSlotUnlocked,
+    );
+  }
+
+  unlockCharmBottomSLot() {
+    this.bottomSlotUnlocked = !this.bottomSlotUnlocked;
+
+    this.charmInventory.setIsUnlockedCell(
+      new Point2D(2, 7),
+      this.bottomSlotUnlocked,
+    );
+  }
+
+  public getSelectedCharapter(): Charapter | null {
+    return this.selectedCharapter
+  }
+
+  public selectCharapter(charapter: Charapter): void {
+    this.selectedCharapter = charapter
+    this.updateRestrictions("weapon", charapter.restrictions)
+  }
+
+  updateRestrictions(slotName: string, restrictions: Set<EquipmentSubtype>) {
+    const equipmentSlot: EquipmentSlot | undefined = this.equipmentSlots.get(slotName)
+
+    if (equipmentSlot) {
+      equipmentSlot.setRestrictions(restrictions)
+      const item = equipmentSlot.slot.item
+      if (item) {
+        if (equipmentSlot.isRestricted(undefined, item?.data.subtype)) {
+          this.mainInventory.addItem(item)
+          equipmentSlot.slot.item = null
+          equipmentSlot.cell.setHighlightState(HightLightCellState.None);
+        } 
+      }
+    }
+  }
+
+  public removeSlotFromCursor(): boolean {
+    if (this.itemOnCursor === null) {
+      console.error("There is no item on the cursor!")
+      return false
+    }
+
+    this.itemOnCursor = null
+
+    return true
+  }
+
+  public pickupSlotOnCursor(slot: Slot): boolean {
+    if (this.itemOnCursor !== null) {
+      console.error("The item is already on the cursor!")
+      console.trace()
+      return false
+    }
+
+    this.itemOnCursor = slot.clone();
+    this.itemOnCursor.onCursor = true
+
+    this.equipmentSlots.forEach(eq => {
+      const toRemove = eq.slot.item?.uniqueId === slot.item?.uniqueId
+      if (toRemove) {
+        eq.slot.item = null
+        return true
+      }
+    })
+
+    this.inventories.forEach(inv => {
+      const toRemove = inv.slots.find(s => slot.item?.uniqueId === s.item?.uniqueId)
+      if (toRemove) {
+        inv.removeItemBySlot(toRemove)
+        return true
+      }
+    })
+
+    return false
+  }
+
+  public putItemInEquipmentSlot(es: EquipmentSlot, item: Item): boolean {
+    if (item === null) return false
+    if (item.uniqueId === this.itemOnCursor?.item?.uniqueId) {
+      es.slot.item = item.copy()
+      this.removeSlotFromCursor()
+      return true
+    }
+    return false
+  }
+
+  isItemOnCursor(): boolean {
+    return this.itemOnCursor !== null
+  }
+
+  getItemOnCursor(): Slot | null {
+    return this.itemOnCursor
+  }
 
   public setView(view: EditorViewState, payload?: any) {
     this.currentView = view;

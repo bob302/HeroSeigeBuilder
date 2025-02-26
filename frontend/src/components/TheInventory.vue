@@ -19,23 +19,6 @@
 
       <InventoryGrid class="charm-inventory-wrapper" :inventoryName="'charm'" />
 
-      <div class="buttons">
-        <button @click="clearInventory">
-          <span class="clear-inventory">Clear Inventory</span>
-        </button>
-        <button @click="clearCharnInventory">
-          <span class="clear-inventory">Clear Charm Inventory</span>
-        </button>
-        <button @click="clearEquipment">
-          <span class="clear-inventory">Clear Equipment</span>
-        </button>
-        <button @click="unlockCharmTopSlot">
-          <span class="clear-inventory">Unlock Top Slot</span>
-        </button>
-        <button @click="unlockCharmBottomSLot">
-          <span class="clear-inventory">Unlock Bottom Slot</span>
-        </button>
-      </div>
     </div>
   </div>
 
@@ -58,6 +41,7 @@ import {
   CharmEquipment,
   createEquipment,
   Equipment,
+  type EquipmentSubtype,
 } from "../models/Equipment";
 import DraggedSlot from "./DraggedSlot.vue";
 // @ts-ignore
@@ -84,21 +68,15 @@ class TheInventory extends Vue {
 
   async created() {
     const charmInventoryStyle = {
-      height: "2.5rem",
-      width: "2.5rem",
-      border: "8px solid",
-      borderImage: "/img/editor/cell-charm-background.jpg",
-      isEdge: false,
-      background: "",
+      height: "3.5rem",
+      width: "3.5rem",
+      background: "/img/editor/cell-charm-background.jpg",
     };
 
     const mainInventoryStyle = {
-      height: "2.5rem",
-      width: "2.5rem",
-      border: "8px solid",
-      borderImage: "/img/editor/cell-background.jpg",
-      isEdge: false,
-      background: "",
+      height: "3.5rem",
+      width: "3.5rem",
+      background: "/img/editor/cell-background.jpg",
     };
 
     const charmInventory = new Inventory(
@@ -106,11 +84,17 @@ class TheInventory extends Vue {
       new Point2D(3, 11),
       charmInventoryStyle,
     );
+
     const mainInventory = new Inventory(
       this.editorContext,
       new Point2D(8, 11),
       mainInventoryStyle,
     );
+
+    charmInventory.needToBeSerialized = true
+    const charmInventoryWhitelist: Set<EquipmentSubtype> = new Set()
+    charmInventoryWhitelist.add('Charm')
+    charmInventory.setRestrictions(charmInventoryWhitelist)
 
     this.editorContext.inventories.set("charm", charmInventory);
     this.editorContext.inventories.set("main", mainInventory);
@@ -121,13 +105,14 @@ class TheInventory extends Vue {
         config.style,
         config.slotName,
       );
+      if (config.restrictions && config.restrictions?.size > 0) {
+        slot.setRestrictions(config.restrictions)
+      }
       this.editorContext.equipmentSlots.set(config.slotName, slot);
     });
   }
 
   dummyEquipment = createEquipment({ name: "???", level: "???" });
-  topSlotUnlocked = true;
-  bottomSlotUnlocked = true;
 
   get slotsConfig(): SlotConfig[] {
     return EquipmentSlot.getslotsConfig();
@@ -153,22 +138,6 @@ class TheInventory extends Vue {
     );
   }
 
-  unlockCharmTopSlot() {
-    this.editorContext.charmInventory.setIsUnlockedCell(
-      new Point2D(0, 3),
-      this.topSlotUnlocked,
-    );
-    this.topSlotUnlocked = !this.topSlotUnlocked;
-  }
-
-  unlockCharmBottomSLot() {
-    this.editorContext.charmInventory.setIsUnlockedCell(
-      new Point2D(2, 7),
-      this.bottomSlotUnlocked,
-    );
-    this.bottomSlotUnlocked = !this.bottomSlotUnlocked;
-  }
-
   onCatalogItemClick(equipment: Equipment) {
     if (equipment instanceof CharmEquipment) {
       this.editorContext.charmInventory.addItem(
@@ -185,18 +154,6 @@ class TheInventory extends Vue {
         ),
       );
     }
-  }
-
-  clearInventory() {
-    this.editorContext.mainInventory.clear();
-  }
-
-  clearCharnInventory() {
-    this.editorContext.charmInventory.clear();
-  }
-
-  clearEquipment() {
-    this.editorContext.clearEquipment();
   }
 }
 
@@ -394,7 +351,7 @@ export default toNative(TheInventory)
 .buttons > * {
   border: none;
   cursor: pointer;
-  border-radius: 5px;
+  background: var(--color-button);
   height: 2rem;
 }
 

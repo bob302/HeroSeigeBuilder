@@ -5,15 +5,12 @@
     @mouseenter="onMouseEnter"
     @mouseleave="onMouseLeave"
   >
-    <!-- Отображаем изображение предмета, если оно есть -->
     <img
-      v-if="equipment.image"
-      :src="equipment.image"
+      :src="equipment.image ? equipment.image : 'img/editor/fallback-icon.webp'"
       class="item-image"
       draggable="false"
     />
 
-    <!-- Отображение сокетов -->
     <div
       v-if="isEquipment && showSockets"
       :class="[socketLayoutClass, 'socket-container']"
@@ -125,10 +122,9 @@ export default toNative(ItemComponent)
     filter 0.5s ease-in-out;
   z-index: 1;
   user-select: none;
-}
 
-.item-image:hover {
-  scale: 200%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .socket-container {

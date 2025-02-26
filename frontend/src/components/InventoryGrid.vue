@@ -59,7 +59,7 @@ class InventoryGrid extends Vue {
 
   private updateHighlight(base: Point2D, state: HightLightCellState) {
     this.editorContext
-      .itemOnCursor!.item!.getSizeInCells()
+      .getItemOnCursor()!.item!.getSizeInCells()
       .forEach((offset) => {
         const coord = base.add(offset);
         const cell = this.getInventory().getCell(coord);
@@ -80,10 +80,11 @@ class InventoryGrid extends Vue {
   }
 
   onClickOnCell(cellData: Cell) {
-    if (!this.editorContext.itemOnCursor?.item) return;
+    const onCursor = this.editorContext.getItemOnCursor()
+    if (!onCursor?.item) return;
 
     const isValid = this.getInventory().doesItemFit(
-      this.editorContext.itemOnCursor.item.getSizeInCells() as Point2D[],
+      onCursor.item.getSizeInCells() as Point2D[],
       cellData.coordinates,
     );
     if (
@@ -94,9 +95,8 @@ class InventoryGrid extends Vue {
     }
   }
 
-  // ПЕРЕПИСАТЬ
   onSlotClick(slotData: Slot) {
-    if (this.editorContext.itemOnCursor || !slotData.item) {
+    if (this.editorContext.getItemOnCursor() || !slotData.item) {
       this.placeItem(slotData.item?.startCoordinates!);
     } else {
       this.getInventory().pickupItem(slotData.item);
@@ -121,16 +121,17 @@ class InventoryGrid extends Vue {
   }
 
   onCellHover(cell: Cell) {
-    if (!this.editorContext.itemOnCursor?.item) return;
-    const state = this.getInventory().doesItemFit(
-      this.editorContext.itemOnCursor.item.getSizeInCells() as Point2D[],
-      cell.coordinates,
+    const onCursor = this.editorContext.getItemOnCursor();
+    if (!onCursor?.item) return;
+    const state = this.getInventory().doesItemFitWithType(
+      onCursor.item.getSizeInCells() as Point2D[],
+      cell.coordinates, onCursor.item.data.subtype
     );
     this.updateHighlight(cell.coordinates, state);
   }
 
   onCellMouseLeave() {
-    if (!this.editorContext.itemOnCursor?.item) return;
+    if (!this.editorContext.getItemOnCursor()?.item) return;
     this.resetCellHighlights();
   }
 
@@ -158,8 +159,7 @@ class InventoryGrid extends Vue {
   getCellPositionStyle(cell: Cell) {
     return {
       gridColumn: cell.coordinates.x + 1,
-      gridRow: cell.coordinates.y + 1,
-      backgroundImage: `linear-gradient(135deg, ${cell.getColor()}, rgba(0, 0, 0, 0.2)), url("/img/editor/item-background.png")`,
+      gridRow: cell.coordinates.y + 1
     };
   }
 

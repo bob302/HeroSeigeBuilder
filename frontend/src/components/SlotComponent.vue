@@ -1,13 +1,11 @@
 <template>
-  <div class="slot-container" :style="style" @click="onClick">
+  <div class="slot-container" :style="style" @click="onClick" @mouseenter="onMouseEnter" @mouseleave="onMouseLeave">
     <div v-if="!slotData.onCursor" class="slot-content">
       <ItemComponent
         v-if="slotData.item?.data"
         :equipment="slotData.item?.data"
         :showSockets="true"
         :pointerEvents="true"
-        @item-on-mouse-enter="onMouseEnter"
-        @item-on-mouse-leave="onMouseLeave"
       />
     </div>
   </div>

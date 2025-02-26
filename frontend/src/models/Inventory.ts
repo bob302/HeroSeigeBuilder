@@ -1,5 +1,5 @@
 import { Cell, CellState, HightLightCellState, type CellStyle } from "./Cell";
-import { Equipment, Socketable } from "./Equipment";
+import { Equipment, Socketable, type EquipmentSubtype } from "./Equipment";
 import type EditorContext from "./EditorContext";
 import { Item } from "./Item";
 import { Point2D } from "./Point2D";
@@ -26,6 +26,9 @@ export class Inventory {
   onInventoryUpdated: (() => void)[] = [];
   needToBeSerialized: boolean = false;
 
+  private restrictions: Set<EquipmentSubtype> = new Set()
+  isBlacklist: boolean = false; 
+
   constructor(parent: EditorContext, gridSize: Point2D, cellStyle: CellStyle) {
     this.editorContext = parent;
     this.gridSize = gridSize;
@@ -34,6 +37,21 @@ export class Inventory {
     this.slots = [];
     this.initGrid();
     this.applyCellStyle();
+  }
+
+  private isRestricted(subtype: EquipmentSubtype): boolean {
+    if (this.restrictions.size === 0) return false;
+    return this.isBlacklist
+      ? this.restrictions.has(subtype) // Blacklist mode: block listed items
+      : !this.restrictions.has(subtype); // Whitelist mode: allow only listed items
+  }
+
+  getRestrictions() {
+    return this.restrictions
+  }
+
+  setRestrictions(restrictions: Set<EquipmentSubtype>) {
+    this.restrictions = restrictions;
   }
 
   applyCellStyle() {
@@ -66,10 +84,6 @@ export class Inventory {
       for (let y = 0; y < this.gridSize.y; y++) {
         const coords = new Point2D(x, y);
         const data = new Cell(coords);
-
-        if (x === this.gridSize.x - 1) {
-          data.getCellStyle().isEdge = true;
-        }
 
         this.cellsData.push(data);
       }
@@ -128,6 +142,24 @@ export class Inventory {
     return !!cell && cell.getState() === CellState.Free && cell.isUnlocked();
   }
 
+  doesItemFitWithType(
+    sizeInCells: Point2D[],
+    coordinates: Point2D,
+    subType: EquipmentSubtype,
+    swap = false
+  ): HightLightCellState {
+    const baseCheck = this.doesItemFit(sizeInCells, coordinates, swap);
+  
+    if (baseCheck !== HightLightCellState.ValidPlacement) {
+      return baseCheck;
+    }
+  
+    return this.isRestricted(subType)
+      ? HightLightCellState.InvalidPlacement
+      : HightLightCellState.ValidPlacement;
+  }
+  
+
   doesItemFit(
     sizeInCells: Point2D[],
     coordinates: Point2D,
@@ -182,6 +214,8 @@ export class Inventory {
   }
 
   addItem(item: Item): boolean {
+    if (this.isRestricted(item.data.subtype)) return false;
+
     const coordinates = this.findFreeSpaceForItem(
       item.getSizeInCells() as Point2D[],
     );
@@ -200,6 +234,8 @@ export class Inventory {
   }
 
   setItem(item: Item, destination: Point2D): boolean {
+    if (this.isRestricted(item.data.subtype)) return false;
+
     if (destination.isValid()) {
       item.setStartCoordinates(destination);
       const data = new Slot(item);
@@ -224,16 +260,16 @@ export class Inventory {
 
     this.removeItem(item);
 
-    this.editorContext.itemOnCursor = new Slot(item);
+    this.editorContext.pickupSlotOnCursor(new Slot(item));
 
     item.setStartCoordinates(currentCoords);
-
-    this.editorContext.itemOnCursor.onCursor = true;
   }
 
   moveItem(slot: Slot, destination: Point2D): void {
     const item = slot.item;
     if (!item) return;
+
+    if (this.isRestricted(item.data.subtype)) return;
 
     this.updateCellsForItem(
       item.getStartCoordinates(),
@@ -241,9 +277,9 @@ export class Inventory {
       CellState.Free,
     );
 
-    if (item.uniqueId === this.editorContext.itemOnCursor?.item?.uniqueId) {
+    if (item.uniqueId === this.editorContext.getItemOnCursor()?.item?.uniqueId) {
       this.slots.push(new Slot(item));
-      this.editorContext.itemOnCursor = null;
+      this.editorContext.removeSlotFromCursor();
     }
 
     item.setStartCoordinates(destination);
@@ -258,16 +294,15 @@ export class Inventory {
   }
 
   private findFreeSpaceForItem(sizeInCells: Point2D[]): Point2D {
-    return (
-      this.cellsData.find(
-        (cell) =>
-          cell.getState() === CellState.Free &&
-          (this.doesItemFit(sizeInCells, cell.coordinates, true) ===
-            HightLightCellState.ValidPlacement ||
-            this.doesItemFit(sizeInCells, cell.coordinates, true) ===
-              HightLightCellState.Replacement),
-      )?.coordinates || new Point2D(-1, -1)
-    );
+    for (const cell of this.cellsData) {
+      if (cell.getState() === CellState.Free) {
+        const fitState = this.doesItemFit(sizeInCells, cell.coordinates, true);
+        if (fitState === HightLightCellState.ValidPlacement || fitState === HightLightCellState.Replacement) {
+          return cell.coordinates;
+        }
+      }
+    }
+    return new Point2D(-1, -1);
   }
 
   private getConflictingItems(position: Point2D, item: Item): Set<Item> {
@@ -316,9 +351,9 @@ export class Inventory {
     );
 
     if (
-      this.editorContext.itemOnCursor?.item?.uniqueId === slot.item?.uniqueId
+      this.editorContext.getItemOnCursor()?.item?.uniqueId === slot.item?.uniqueId
     ) {
-      this.editorContext.itemOnCursor = null;
+      this.editorContext.removeSlotFromCursor();
     }
 
     this.slots.splice(slotIndex, 1);
@@ -341,9 +376,9 @@ export class Inventory {
     const itemSize = slot.item!.getSizeInCells() as Point2D[];
 
     if (
-      this.editorContext.itemOnCursor?.item?.uniqueId === itemToRemove.uniqueId
+      this.editorContext.getItemOnCursor()?.item?.uniqueId === itemToRemove.uniqueId
     ) {
-      this.editorContext.itemOnCursor = null;
+      this.editorContext.removeSlotFromCursor();
     }
 
     this.slots.splice(slotIndex, 1);
@@ -356,15 +391,19 @@ export class Inventory {
   }
 
   swapItem(item: Item, destination: Point2D) {
-    if (this.editorContext.itemOnCursor === null) return;
-    if (this.editorContext.itemOnCursor.item === null) return;
+    if (!this.editorContext.isItemOnCursor()) return;
 
-    this.setItem(this.editorContext.itemOnCursor.item, destination);
+    const onCursor = this.editorContext.getItemOnCursor()
+
+    if (!onCursor?.item) return
+
+    this.setItem(onCursor.item, destination);
     this.pickupItem(item);
   }
 
   tryInsertSocketable(item: Item): boolean {
-    const socketable = this.editorContext.itemOnCursor?.item?.data;
+    const socketable = this.editorContext.getItemOnCursor()?.item?.data;
+
     if (socketable === null) return false;
     if (socketable instanceof Socketable && item.data instanceof Equipment) {
       if (item.data.insertSocketable(socketable)) {
@@ -375,11 +414,15 @@ export class Inventory {
   }
 
   placeItemOnCursor(destination: Point2D) {
-    if (this.editorContext.itemOnCursor === null) return;
-    if (this.editorContext.itemOnCursor.item === null) return;
+    if (!this.editorContext.isItemOnCursor()) return;
+
+    const onCursor = this.editorContext.getItemOnCursor()
+
+    if (!onCursor?.item) return
+    
     const conflicts = this.getConflictingItems(
       destination,
-      this.editorContext.itemOnCursor.item,
+      onCursor.item,
     );
 
     if (conflicts.size > 1) return;
@@ -390,11 +433,12 @@ export class Inventory {
 
       this.swapItem(toSwap, destination);
     } else {
-      this.moveItem(this.editorContext.itemOnCursor, destination);
+      this.moveItem(onCursor, destination);
     }
   }
 
   handleInventoryUpdate(): void {
+    if (this.onInventoryUpdated.length === 0) return;
     this.onInventoryUpdated.forEach((callback) => callback());
   }
 
@@ -425,7 +469,7 @@ export class Inventory {
         uFalse: unlockedCells.map((c) => c.join(",")).join(";"), // Сжатые координаты
         mask: unlockedMask.join(""), // Битовая строка
       },
-      slots: this.slots.map((slot) => slot.serialize()),
+      slots: this.needToBeSerialized ? this.slots.map((slot) => slot.serialize()) : [],
       style: this.cellStyle,
     };
   }

@@ -23,7 +23,6 @@ import { Cell, HightLightCellState, type CellStyle } from "../models/Cell";
 import CellComponent from "./CellComponent.vue";
 import SlotComponent from "./SlotComponent.vue";
 import type EditorContext from "../models/EditorContext";
-import { EquipmentType } from "../models/Equipment";
 import { Point2D } from "../models/Point2D";
 import { Item } from "../models/Item";
 import { EquipmentSlot } from "../models/EquipmentSlot";
@@ -32,8 +31,7 @@ import { EquipmentSlot } from "../models/EquipmentSlot";
   components: {
     SlotComponent,
     CellComponent,
-  },
-  emits: ["slot-mouse-enter", "slot-mouse-leave"],
+  }
 })
 class EquipmentSlotComponent extends Vue {
   @Inject({ from: "editorContext" })
@@ -85,50 +83,45 @@ class EquipmentSlotComponent extends Vue {
     this.equipmentSlot.cell.setHighlightState(HightLightCellState.None);
   }
 
-  isTypeValid(type: EquipmentType) {
-    return this.equipmentSlot.equipment.type === type
-      ? HightLightCellState.ValidPlacement
-      : HightLightCellState.InvalidPlacement;
-  }
-
   pickupItem() {
-    if (this.editorContext.itemOnCursor !== null) return;
-    this.editorContext.itemOnCursor = this.equipmentSlot.slot.clone();
-    this.equipmentSlot.slot.onCursor = true;
-    this.equipmentSlot.slot.item = null;
+    if (this.editorContext.isItemOnCursor()) return
+    this.editorContext.pickupSlotOnCursor(this.equipmentSlot.slot);
   }
 
   placeItem() {
-    if (this.editorContext.itemOnCursor === null) return;
-    const copy = this.editorContext.itemOnCursor.clone();
-    this.equipmentSlot.slot = copy;
-    this.editorContext.itemOnCursor = null;
+    const onCursor = this.editorContext.getItemOnCursor(); 
+    if (onCursor === null || !onCursor.item ) return
+    
+    this.editorContext.putItemInEquipmentSlot(this.equipmentSlot, onCursor.item)
   }
 
   swapItem() {
-    if (this.editorContext.itemOnCursor === null) return;
-    const copy = this.equipmentSlot.slot.clone();
-    const cursor = this.editorContext.itemOnCursor.clone();
-    cursor.onCursor = false;
-    copy.onCursor = true;
-    this.equipmentSlot.slot = cursor;
-    this.editorContext.itemOnCursor = copy;
+    if (!this.editorContext.isItemOnCursor()) return
+
+    const onCursor = this.editorContext.getItemOnCursor(); 
+
+    if (!onCursor) return
+
+    this.editorContext.pickupSlotOnCursor(this.equipmentSlot.slot)
+    this.editorContext.putItemInEquipmentSlot(this.equipmentSlot, onCursor.item!)
   }
 
   onClickOnCell() {
-    if (this.editorContext.itemOnCursor === null) {
-      this.placeItem();
-    } else {
+    const item = this.editorContext.getItemOnCursor(); 
+    if (item !== null) {
+      if (this.equipmentSlot.isRestricted(undefined, item.item?.data.subtype)) return
       this.swapItem();
     }
   }
 
   // ПЕРЕПИСАТЬ
   onSlotClick() {
-    if (
-      this.editorContext.itemOnCursor !== null &&
-      this.equipmentSlot.slot.item !== null
-    ) {
+    if (this.editorContext.isItemOnCursor()) {
+      const item = this.editorContext.getItemOnCursor(); 
+      if (!item?.item) return
+
+      if (this.equipmentSlot.isRestricted(undefined, item.item?.data.subtype)) return
+  
       this.swapItem();
     } else {
       if (this.equipmentSlot.slot.item) {
@@ -141,30 +134,25 @@ class EquipmentSlotComponent extends Vue {
     }
   }
 
-  onSlotHover(slot: Slot) {
-    if (!slot.item) return;
-
-    this.$emit("slot-mouse-enter", slot.item.data);
-
+  onSlotHover() {
     this.onCellHover();
   }
 
   onSlotMouseLeave() {
-    this.$emit("slot-mouse-leave");
     this.onCellMouseLeave();
   }
 
   onCellHover() {
-    if (!this.editorContext.itemOnCursor?.item) return;
+    const item = this.editorContext.getItemOnCursor(); 
+    if (!item) return;
 
-    const state = this.isTypeValid(
-      this.editorContext.itemOnCursor?.item.data.type,
-    );
+    const state = this.equipmentSlot.isRestricted(undefined, item.item?.data.subtype) ? HightLightCellState.InvalidPlacement : HightLightCellState.ValidPlacement
+
     this.updateHighlight(state);
   }
 
   onCellMouseLeave() {
-    if (!this.editorContext.itemOnCursor?.item) return;
+    if (!this.editorContext.getItemOnCursor()?.item) return;
     this.resetCellHighlights();
   }
 

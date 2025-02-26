@@ -56,24 +56,14 @@ class CellComponent extends Vue {
       width: `calc(${cellStyle.width} * ${scaleFactor})`,
       ...(cellStyle.background
         ? {
-            backgroundImage: `url(${cellStyle.background})`,
+            backgroundImage: `conic-gradient(${this.cellData.getColor()}, ${this.cellData.getColor()}), url(${cellStyle.background})`,
             backgroundSize: "cover",
           }
         : {
             border: cellStyle.border,
-            borderImage: this.borderBackground(),
+            borderImage: `url('${this.cellData.getCellStyle().borderImage}') 6 round`,
           }),
     };
-  }
-
-  borderBackground(): string {
-    if (this.cellData.getCellStyle().borderImage === "") {
-      return this.cellData.getCellStyle().isEdge
-        ? "url('/img/editor/cell-background-edge.png') 6 round"
-        : "url('/img/editor/cell-background.png') 6 round";
-    } else {
-      return `url('${this.cellData.getCellStyle().borderImage}') 6 round`;
-    }
   }
 }
 export default toNative(CellComponent)

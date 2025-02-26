@@ -1,3 +1,4 @@
+import type { EquipmentSubtype } from "./Equipment";
 import { Point2D } from "./Point2D";
 
 export enum CellState {
@@ -17,7 +18,6 @@ export interface CellStyle {
   height: string;
   border?: string;
   borderImage?: string;
-  isEdge: boolean;
   background?: string;
 }
 export class Cell {
@@ -29,17 +29,17 @@ export class Cell {
     width: "2.5rem",
     height: "2.5rem",
     border: "8px solid",
-    isEdge: false,
     background: "",
     borderImage: "",
   };
+
   private unlocked: boolean = true;
 
-  defaultColor: string = "black";
-  validColor: string = "green";
-  invalidColor: string = "red";
-  replacementColor: string = "none";
-  occupiedColor: string = "#344feb";
+  defaultColor: string = "rgba(0, 0, 0, 0)";
+  validColor: string = "rgba(100, 185, 50, 0.3)";
+  invalidColor: string = "rgba(185, 80, 50, 0.3)";
+  replacementColor: string = "rgba(185, 185, 50, 0.3)";
+  occupiedColor: string = "rgba(50, 150, 185, 0.3)";
 
   constructor(coordinates: Point2D) {
     this.highhlightState = HightLightCellState.None;

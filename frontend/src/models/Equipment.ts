@@ -13,6 +13,7 @@ export enum EquipmentRarity {
 
 export enum EquipmentType {
   Weapon = "Weapon",
+  Offhand = "Offhand",
   Armor = "Armor",
   Accessory = "Accessory",
   Special = "Special",
@@ -38,15 +39,26 @@ export const EquipmentSubtypes: Record<EquipmentType, string[]> = {
     "Flask",
     "Throwing Weapon",
   ],
-  [EquipmentType.Armor]: ["Helmet", "Body Armor", "Gloves", "Boots", "Shield"],
+  [EquipmentType.Armor]: ["Helmet", "Body Armor", "Gloves", "Boots"],
+  [EquipmentType.Offhand]: ["Shield"],
   [EquipmentType.Accessory]: ["Amulet", "Ring", "Belt"],
   [EquipmentType.Special]: ["Charm", "Glyph", "Relic", "Potion"],
   [EquipmentType.Misc]: ["Socketable"],
 };
 
+export function getEquipmentTypeBySubtype(subtype: EquipmentSubtype): EquipmentType | undefined {
+  for (const typeKey in EquipmentSubtypes) {
+    const type = typeKey as EquipmentType;
+    if (EquipmentSubtypes[type].includes(subtype)) {
+      return type;
+    }
+  }
+  return undefined;
+}
+
 export type EquipmentSubtype = (typeof EquipmentSubtypes)[EquipmentType][number];
 
-export function isValidSubtype(type: EquipmentType, subtype: string): boolean {
+export function isValidSubtype(type: EquipmentType, subtype: EquipmentSubtype): boolean {
   return EquipmentSubtypes[type]?.includes(subtype) ?? false;
 }
 
@@ -80,7 +92,7 @@ export interface BaseItemProps {
   isLoading?: boolean;
   size: { width: number; height: number };
   type: EquipmentType;
-  subtype: string;
+  subtype: EquipmentSubtype;
   rarity: EquipmentRarity;
   tier: EquipmentTier;
   level: string;
@@ -98,7 +110,7 @@ export class BaseItem {
   public tier: EquipmentTier;
   public level: string;
   public type: EquipmentType;
-  public subtype: string;
+  public subtype: EquipmentSubtype;
 
   constructor(props: BaseItemProps) {
     this.uuid = uuidv4();
