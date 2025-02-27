@@ -76,14 +76,14 @@ export default class EditorContext {
 
   public selectCharapter(charapter: Charapter): void {
     this.selectedCharapter = charapter
-    this.updateRestrictions("weapon", charapter.restrictions)
+    this.updateRestrictions("weapon", charapter.restrictions, charapter.isBlackList())
   }
 
-  updateRestrictions(slotName: string, restrictions: Set<EquipmentSubtype>) {
+  updateRestrictions(slotName: string, restrictions: Set<EquipmentSubtype>, blacklist = false) {
     const equipmentSlot: EquipmentSlot | undefined = this.equipmentSlots.get(slotName)
 
     if (equipmentSlot) {
-      equipmentSlot.setRestrictions(restrictions)
+      equipmentSlot.setRestrictions(restrictions, blacklist)
       const item = equipmentSlot.slot.item
       if (item) {
         if (equipmentSlot.isRestricted(undefined, item?.data.subtype)) {

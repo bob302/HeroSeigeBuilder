@@ -178,7 +178,7 @@ class ItemTooltip extends Vue {
       }
     } else {
       if (this.posExceedsHalfScreen) {
-        x -= this.tooltipDimensions.width;
+        x -= this.tooltipDimensions.width * 1.15;
       }
       if (this.posYExceedsHalfScreen) {
         y -= this.tooltipDimensions.height * 1.05;

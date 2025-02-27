@@ -421,7 +421,7 @@ export default toNative(InventoryEditorView)
 
 /* Main */
 .main-content {
-  margin-left: 10%;
+  margin-left: 9.8%;
 }
 .container {
   display: grid;
@@ -442,7 +442,7 @@ export default toNative(InventoryEditorView)
   justify-content: center;
   transition: transform 0.5s ease;
   background: var(--color-background);
-  z-index: 1000;
+  z-index: 10;
 }
 
 /* Buttons */

@@ -8,6 +8,7 @@ export default class Charapter {
   public description: string;
   public skillTrees: SkillTree[] = [];
   public restrictions: Set<EquipmentSubtype> = new Set();
+  private blackList: boolean = false;
 
   constructor(name: string, description: string, image: string) {
     this.name = name;
@@ -25,15 +26,20 @@ export default class Charapter {
     });
   }
 
+  invertRestrictionsMode() {
+    this.blackList = !this.blackList
+  }
+
+  isBlackList() {
+    return this.blackList
+  }
+
   addWeaponRestrictions(...restrictions: Array<EquipmentSubtype>) {
     restrictions.forEach(restriction => {
       this.restrictions.add(restriction)
     })
   }
 
-  public canEquip(subtype: EquipmentSubtype): boolean {
-    return this.restrictions.has(subtype);
-  }
   /**
   * Serializes a Charapter instance into a flat object.
   * Saves the dynamic state of each skill tree.
@@ -71,7 +77,7 @@ export default class Charapter {
           (t: any) => t.name === tree.name
         );
         if (treeSavedState) {
-          await tree.applyState(treeSavedState);
+          tree.applyState(treeSavedState);
         }
       }
     }
@@ -113,6 +119,7 @@ export default class Charapter {
 
       if (weaponRestrictions.length === 0) {
         char.addWeaponRestrictions('Shield');
+        char.invertRestrictionsMode()
       }
 
       const weaponRestrictionPromises = weaponRestrictions.map(async (restriction) => {
