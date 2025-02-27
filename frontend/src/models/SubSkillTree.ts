@@ -154,6 +154,7 @@ export default class SubSkillTree {
     const levelMasks = [0, 0, 0, 0, 0];
     let primaryMask = 0;
     let initialMask = 0;
+    const points = this.points;
 
     for (const node of this.nodes.values()) {
       if (node.level > 0 && !node.isInitial()) hasLearnedSkills = true;
@@ -167,7 +168,10 @@ export default class SubSkillTree {
       if (node.isInitial()) initialMask |= bit;
     }
 
-    return hasLearnedSkills ? { levelMasks, primaryMask, initialMask } : null;
+    console.log(points, 'sususus');
+    
+
+    return hasLearnedSkills ? { levelMasks, primaryMask, initialMask, points } : null;
   }
 
   /**
@@ -178,8 +182,10 @@ export default class SubSkillTree {
    */
   static deserialize(data: any): SubSkillTree {
     const tree = new SubSkillTree();
-    const { levelMasks, primaryMask, initialMask } = data;
+    const { levelMasks, primaryMask, initialMask, points } = data;
 
+    tree.points = points
+    
     for (const node of tree.nodes.values()) {
       const bit = 1 << (node.id - 1);
       let level = 0;

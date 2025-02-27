@@ -60,10 +60,11 @@
         <i v-if="editorContext.isBottmoSlotUnlocked()" class="fa-solid fa-lock-open mobile-icon"></i>
         <i v-if="!editorContext.isBottmoSlotUnlocked()" class="fa-solid fa-lock mobile-icon"></i>
       </button>
+
       
       </div>
       </Transition>
-    
+      <VersionComponent />
   </nav>
   <div class="container">
     <div class="column main-content">
@@ -145,6 +146,7 @@ import CatalogModal from "../components/CatalogModal.vue";
 import ItemTooltip from "../components/ItemTooltip.vue";
 import SubSkillTreeComponent from "../components/SubsSkillTree.vue";
 import type CharapterSkill from "../models/CharapterSkill";
+import VersionComponent from "../components/Version.vue"
 
 @Component({
   components: {
@@ -155,6 +157,7 @@ import type CharapterSkill from "../models/CharapterSkill";
     CatalogModal,
     ItemTooltip,
     SubSkillTreeComponent,
+    VersionComponent
   },
 })
 class InventoryEditorView extends Vue {
@@ -189,6 +192,7 @@ class InventoryEditorView extends Vue {
     if (routeLink) {
       this.importContext();
     }
+
   }
 
   unmounted() {
@@ -562,6 +566,7 @@ export default toNative(InventoryEditorView)
   .container,
   .main-content {
     padding: 0;
+    margin: 0;
   }
   .side-nav {
     position: fixed;
@@ -614,6 +619,14 @@ export default toNative(InventoryEditorView)
   }
   .mobile-icon {
     display: inline;
+  }
+
+  .serialization {
+    padding-bottom: 15vh;
+  }
+
+  .serialization-buttons button {
+    width: 90%;
   }
 }
 

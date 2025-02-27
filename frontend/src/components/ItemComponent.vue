@@ -9,6 +9,8 @@
       :src="equipment.image ? equipment.image : 'img/editor/fallback-icon.webp'"
       class="item-image"
       draggable="false"
+      :style="{ transform: `scale(${computedScale})` }"
+      @load="onImageLoad"
     />
 
     <div
@@ -48,6 +50,9 @@ class ItemComponent extends Vue {
   @Prop({ type: Boolean, required: false }) pointerEvents: boolean = false;
   @Prop({ type: Boolean, required: false }) showSockets: boolean = false;
 
+  naturalWidth = 0;
+  naturalHeight = 0;
+
   get isEquipment(): boolean {
     return this.equipment instanceof Equipment;
   }
@@ -64,6 +69,18 @@ class ItemComponent extends Vue {
       return true;
     }
     return false;
+  }
+
+  get computedScale(): number {
+    if (!this.naturalWidth || !this.naturalHeight) return 1.25;
+    const maxSize = 96;
+    return Math.min(maxSize / this.naturalWidth, maxSize / this.naturalHeight);
+  }
+
+  onImageLoad(event: Event) {
+    const img = event.target as HTMLImageElement;
+    this.naturalWidth = img.naturalWidth;
+    this.naturalHeight = img.naturalHeight;
   }
 
   emptySockets(): void {
@@ -115,17 +132,16 @@ export default toNative(ItemComponent)
 }
 
 .item-image {
-  scale: 125%;
   image-rendering: pixelated;
   transition:
-    transform 0.5s ease-in-out,
-    filter 0.5s ease-in-out;
+    transform 0.3s ease-in-out,
+    filter 0.3s ease-in-out;
   z-index: 1;
   user-select: none;
-
   max-width: 100%;
   max-height: 100%;
 }
+
 
 .socket-container {
   display: grid;
