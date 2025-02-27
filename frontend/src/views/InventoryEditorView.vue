@@ -306,7 +306,7 @@ class InventoryEditorView extends Vue {
       return;
     }
     
-    const shortLink = `${appHost}/editor/${result.key}`;
+    const shortLink = `${appHost}editor/${result.key}`;
     await navigator.clipboard.writeText(shortLink);
     alert(`Link copied to clipboard. ${result.isPermanent ? 'Build link will not be deleted.' : `Build link will be deleted in ${result.linkLefespan} seconds.`}`);
   } catch (error) {
