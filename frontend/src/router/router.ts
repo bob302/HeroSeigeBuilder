@@ -11,7 +11,7 @@ const routes = [
     component: () => import("../views/AboutView.vue"), // Lazy-load
   },
   {
-    path: "/editor",
+    path: "/editor/:link?",
     name: "editor",
     component: () => import("../views/InventoryEditorView.vue"), // Lazy-load
   },

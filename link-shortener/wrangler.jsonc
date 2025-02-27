@@ -1,0 +1,52 @@
+/**
+ * For more details on how to configure Wrangler, refer to:
+ * https://developers.cloudflare.com/workers/wrangler/configuration/
+ */
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "link-shortener",
+	"main": "src/index.ts",
+	"compatibility_date": "2025-02-24",
+	"observability": {
+		"enabled": true
+	},
+  "kv_namespaces": [
+    {
+      "binding": "LINKS",
+      "id": "69934c32203948c6ac5ee72dd82693c0"
+    },
+    {
+      "binding": "RATE_LIMIT",
+      "id": "c065e654674144bd948c7d86b1c1bcd8"
+    }
+  ]
+  /**
+   * Smart Placement
+   * Docs: https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
+   */
+  // "placement": { "mode": "smart" },
+
+  /**
+   * Bindings
+   * Bindings allow your Worker to interact with resources on the Cloudflare Developer Platform, including
+   * databases, object storage, AI inference, real-time communication and more.
+   * https://developers.cloudflare.com/workers/runtime-apis/bindings/
+   */
+
+  /**
+   * Note: Use secrets to store sensitive data.
+   * https://developers.cloudflare.com/workers/configuration/secrets/
+   */
+
+  /**
+   * Static Assets
+   * https://developers.cloudflare.com/workers/static-assets/binding/
+   */
+  // "assets": { "directory": "./public/", "binding": "ASSETS" },
+
+  /**
+   * Service Bindings (communicate between multiple Workers)
+   * https://developers.cloudflare.com/workers/wrangler/configuration/#service-bindings
+   */
+  // "services": [{ "binding": "MY_SERVICE", "service": "my-service" }]
+}

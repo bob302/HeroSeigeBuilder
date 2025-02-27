@@ -84,10 +84,18 @@
       </div>
 
       <div class="serialization">
-        <h2>Serialization test</h2>
         <div class="serialization-buttons">
-          <button @click="exportContext">Export</button>
-          <button @click="importContext">Import</button>
+          <div class="section">
+            <button @click="exportContext">Generate Link</button>
+          <div>
+            <p>Permanent Token:</p>
+            <input v-model="permanentToken" type="text">
+          </div>
+          </div>
+          <div class="section">
+            <button @click="exportToFile">Export to File</button>
+          <button @click="importFromFile">Import from File</button>
+          </div>
         </div>
       </div>
     </div>
@@ -165,6 +173,7 @@ class InventoryEditorView extends Vue {
   isPrimaryVisible: boolean = true;
   isSecondaryVisible: boolean = false;
   isMobile: boolean = false;
+  permanentToken: string = '';
 
   mounted() {
     equipmentService.initialize(() => {
@@ -175,6 +184,11 @@ class InventoryEditorView extends Vue {
 
     this.checkMobile();
     window.addEventListener('resize', this.checkMobile);
+
+    const routeLink = this.$route.params.link as string | undefined;
+    if (routeLink) {
+      this.importContext();
+    }
   }
 
   unmounted() {
@@ -230,7 +244,6 @@ class InventoryEditorView extends Vue {
   checkMobile() {
     this.isMobile = window.innerWidth <= 768;
     
-    // Автоматически показывать оба меню на десктопе
     if (!this.isMobile) {
       this.isMenuVisible = true;
       this.isPrimaryVisible = true;
@@ -240,7 +253,7 @@ class InventoryEditorView extends Vue {
 
   toggleMenu() {
     this.isMenuVisible = !this.isMenuVisible;
-    // Сбрасываем состояния при закрытии меню
+
     if (!this.isMenuVisible) {
       this.isPrimaryVisible = true;
       this.isSecondaryVisible = false;
@@ -272,35 +285,121 @@ class InventoryEditorView extends Vue {
   }
 
   async exportContext() {
+  const workerHost = import.meta.env.VITE_WORKER_HOST;
+  const appHost = import.meta.env.VITE_APP_HOST;
+  try {
     const serialized = this.editorContext.serialize();
-    const json = JSON.stringify(serialized);
-
-    navigator.clipboard.writeText(json);
-    // alert("Placeholder")
+    const response = await fetch(`${workerHost}/`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ data: serialized, token: this.permanentToken}),
+    });
+    
+    if (!response.ok) {
+      alert(`Export failed: ${response.status} ${response.statusText}`);
+      return;
+    }
+    
+    const result = await response.json();
+    if (!result.key) {
+      alert("Invalid response from server");
+      return;
+    }
+    
+    const shortLink = `${appHost}/editor/${result.key}`;
+    await navigator.clipboard.writeText(shortLink);
+    alert(`Link copied to clipboard. ${result.isPermanent ? 'Build link will not be deleted.' : `Build link will be deleted in ${result.linkLefespan} seconds.`}`);
+  } catch (error) {
+    console.error("Export error:", error);
+    alert("Error during export. Check console for details.");
   }
+}
 
-  async importContext() {
+async importContext() {
+  const workerHost = import.meta.env.VITE_WORKER_HOST;
+  const urlKey = window.location.pathname.split("/").pop();
+  if (!urlKey) return;
+
+  try {
+    const response = await fetch(`${workerHost}/${urlKey}`);
+    
+    if (!response.ok) {
+      alert(`Import failed: ${response.status} ${response.statusText}`);
+      return;
+    }
+    
+    const data = await response.json();
+    const newContext = await EditorContext.deserialize(data);
+
+    EditorContextProvider.setContext(newContext);
+    this.editorContext = EditorContextProvider.getContext();
+    alert(`Import complete!`);
+  } catch (error) {
+    console.error("Deserialization error:", error);
+    alert("Error during import. Check console for details.");
+  }
+}
+
+async exportToFile() {
+  try {
+    const serialized = this.editorContext.serialize();
+    const json = JSON.stringify(serialized, null, 2);
+    const blob = new Blob([json], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+
+    const selectedCharapter = this.editorContext.getSelectedCharapter();
+    const baseName = selectedCharapter?.name || "context";
+
+    const now = new Date();
+    const datePart = now.toISOString().split("T")[0];
+    const timePart = now.toTimeString().split(" ")[0].replace(/:/g, "-");
+    const filename = `${baseName}_${datePart}_${timePart}.json`;
+
+    link.download = filename;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+    alert("Context exported to file successfully.");
+  } catch (error) {
+    console.error("Export to file error:", error);
+    alert("Error during file export. Check console for details.");
+  }
+}
+
+
+
+  async importFromFile() {
     try {
-      let userPrompt = prompt("Please enter data", "");
-      let data;
-      if (userPrompt == null || userPrompt == "") {
-        data = "User cancelled the prompt.";
-      } else {
-        data = userPrompt;
-      }
-      const parsed = JSON.parse(data);
-      const newContext = EditorContext.deserialize(parsed);
-      newContext.then((context) => {
-        EditorContextProvider.setContext(context);
-        this.editorContext = EditorContextProvider.getContext();
-        // alert('Deserialization successful!');
-        console.log("Deserialization successful!", this.editorContext);
-      });
+      const input = document.createElement("input");
+      input.type = "file";
+      input.accept = "application/json";
+      input.onchange = async () => {
+        if (input.files && input.files.length > 0) {
+          const file = input.files[0];
+          const text = await file.text();
+          try {
+            const parsed = JSON.parse(text);
+            const newContext = await EditorContext.deserialize(parsed);
+            EditorContextProvider.setContext(newContext);
+            this.editorContext = EditorContextProvider.getContext();
+            alert("Context imported from file successfully.");
+          } catch (error) {
+            console.error("Import from file error:", error);
+            alert("Error during file import. Check console for details.");
+          }
+        }
+      };
+      input.click();
     } catch (error) {
-      console.error("Deserialization error:", error);
-      alert("Error during deserialization. Check console for details.");
+      console.error("Import from file setup error:", error);
+      alert("Error during file import setup. Check console for details.");
     }
   }
+
+
 }
 
 export default toNative(InventoryEditorView)
@@ -343,6 +442,7 @@ export default toNative(InventoryEditorView)
   justify-content: center;
   transition: transform 0.5s ease;
   background: var(--color-background);
+  z-index: 1000;
 }
 
 /* Buttons */
@@ -354,7 +454,8 @@ export default toNative(InventoryEditorView)
   width: 100%;
 }
 .primary-buttons button,
-.secondary-buttons button {
+.secondary-buttons button,
+.serialization-buttons button {
   padding: 0.8rem 1rem;
   margin: 0.1rem;
   background: var(--color-button);
@@ -367,7 +468,7 @@ export default toNative(InventoryEditorView)
   max-height: 15%;
   width: 10rem;
 }
-.side-nav button:hover {
+.side-nav button:hover, .serialization-buttons button:hover {
   background: var(--color-button-hover);
   transform: translateX(5px);
 }
@@ -404,19 +505,28 @@ export default toNative(InventoryEditorView)
   background: var(--color-background);
   padding-bottom: 2rem;
 }
-.serialization-test,
-.serialization {
-  margin-top: 2rem;
-  padding: 1rem;
-  background: var(--color-background);
-  border: 1px solid #ccc;
-  border-radius: 8px;
-}
+
 .serialization-buttons {
   display: flex;
-  gap: 1rem;
-  margin-bottom: 1rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background: var(--color-background);
+  border: 1px solid var(--color-border);
+  margin: 1rem;
 }
+
+.serialization-buttons section {
+  display: flex;
+  flex-direction: row;
+}
+
+.serialization-buttons > * {
+  padding: 1rem;
+}
+
+
+
 
 /* Modal*/
 .info-modal,
