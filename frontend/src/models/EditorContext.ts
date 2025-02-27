@@ -153,6 +153,10 @@ export default class EditorContext {
   }
 
   public setView(view: EditorViewState, payload?: any) {
+    if (this.currentView === view) {
+      this.resetView()
+      return
+    }
     this.currentView = view;
     if (view === EditorViewState.SubSkillTree && payload) {
       this.activeSubSkillTree = payload;

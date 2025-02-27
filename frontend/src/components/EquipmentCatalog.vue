@@ -62,7 +62,7 @@ export default toNative(EquipmentCatalog)
 .catalog {
   display: grid;
   align-content: flex-start;
-  grid-template-columns: 1fr repeat(10, 1fr) 1fr;
+  grid-template-columns: repeat(10, 1fr);
   width: 100%;
   max-width: 100%;
   max-height: 100%;
@@ -75,5 +75,21 @@ export default toNative(EquipmentCatalog)
 .catalog > * {
   scale: 0.65;
   margin: -1.8rem -0.9rem -1.8rem -0.9rem;
+}
+
+@media (max-width: 768px) {
+  .catalog {
+    grid-template-columns: repeat(3, 1fr);
+    min-width: 0;
+    overflow-x: auto;
+    padding: 0 1rem;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .catalog > * {
+    scale: 0.85;
+    margin: -0.5rem;
+    min-width: 80px;
+  }
 }
 </style>

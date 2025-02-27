@@ -1,34 +1,41 @@
 <template>
   <div class="catalog-modal" @click.self="close">
+  <div v-if="isMobile" class="catalog-toggle-filters">
+    <button @click="toggleFilters">
+      <i class="fa-solid fa-filter"></i>
+    </button>
+  </div>
     <div class="modal-content">
-      <div class="filters">
-        <div class="filter-column">
-          <p>Type:</p>
+      <div class="filters" v-if="filtersVisible">
+
+        <div class="filter-wrapper">
+          <p class="desktop-text">Type:</p>
           <select v-model="typeFilter">
             <option v-for="type in EquipmentType" :value="type">
               {{ type }}
             </option>
           </select>
-          <p>Subtype:</p>
+        </div>
+        <div class="filter-wrapper">
+          <p class="desktop-text">Subtype:</p>
           <select v-model="subtypeFilter">
             <option :value="null">all</option>
-            <option
-              v-for="subtype in EquipmentSubtypes[typeFilter]"
-              :value="subtype"
-            >
+            <option v-for="subtype in EquipmentSubtypes[typeFilter]" :value="subtype">
               {{ subtype }}
             </option>
           </select>
         </div>
-        <div class="filter-column">
-          <p>Rarity:</p>
+        <div class="filter-wrapper">
+          <p class="desktop-text">Rarity:</p>
           <select v-model="rarityFilter">
             <option :value="null">any</option>
             <option v-for="rarity in EquipmentRarity" :value="rarity">
               {{ rarity }}
             </option>
           </select>
-          <p>Tier:</p>
+        </div>
+        <div class="filter-wrapper">
+          <p class="desktop-text">Tier:</p>
           <select v-model="tierFilter">
             <option :value="null">any</option>
             <option v-for="tier in EquipmentTier" :value="tier">
@@ -36,50 +43,54 @@
             </option>
           </select>
         </div>
-        <div class="filter-column">
-          <p>Level:</p>
+
+        <div class="filter-wrapper">
+          <p class="desktop-text">Level:</p>
           <select v-model="levelSort">
             <option value="">any</option>
             <option value="asc">Ascending</option>
             <option value="desc">Descending</option>
           </select>
-          <p>Sockets:</p>
+        </div>
+        <div class="filter-wrapper">
+          <p class="desktop-text">Sockets:</p>
           <select v-model="socketsSort">
             <option value="">any</option>
             <option value="asc">Ascending</option>
             <option value="desc">Descending</option>
           </select>
         </div>
-        <div class="filter-column">
-          <div class="one-handed" v-if="typeFilter === EquipmentType.Weapon">
-            <p>1-Handed?:</p>
+
+        <div class="filter-wrapper" v-if="typeFilter === EquipmentType.Weapon">
+            <p class="desktop-text">1-Handed?:</p>
             <select v-model="oneHandedFilter">
               <option value="">any</option>
               <option value="1-Handed">1-Handed</option>
               <option value="2-Handed">2-Handed</option>
             </select>
-          </div>
 
-          <p>Show Sockets:</p>
-          <input type="checkbox" v-model="showSockets" />
         </div>
-        <div class="filter-column">
-          <p>Search by Name:</p>
-          <input v-model="nameFilter" placeholder="by Name" />
-          <p>Search by Stat Name:</p>
-          <input v-model="statsFilter" placeholder="by Stat" />
+        <div class="filter-wrapper">
+          <p class="desktop-text">Show Sockets:</p>
+          <img class="sockets-button"
+            :src="showSockets ? '/img/editor/socket-button-hide.png' : '/img/editor/socket-button-show.png'"
+            @click="showSockets = !showSockets" />
+        </div>
+        <div class="filter-wrapper">
+          <p class="desktop-text">Search by Name:</p>
+          <input type="text" v-model="nameFilter" placeholder="by Name" />
+          </div>
+          <div class="filter-wrapper">
+          <p class="desktop-text">Search by Stat:</p>
+          <input type="text" v-model="statsFilter" placeholder="by Stat" />
         </div>
       </div>
 
       <div class="catalog-wrapper">
         <div v-if="isLoading" class="loading-overlay">Loading items...</div>
 
-        <EquipmentCatalog
-          v-else
-          :catalogItems="filteredCatalogItems"
-          :itemBackgroundSrc="`/img/editor/item-background.png`"
-          :showSockets="showSockets"
-        />
+        <EquipmentCatalog v-else :catalogItems="filteredCatalogItems"
+          :itemBackgroundSrc="`/img/editor/item-background.png`" :showSockets="showSockets" />
       </div>
     </div>
   </div>
@@ -124,6 +135,9 @@ class CatalogModal extends Vue {
   public filteredCatalogItems: BaseItem[] = [];
   public oneHandedFilter: "1-Handed" | "2-Handed" | "" = "";
   public showSockets = false;
+
+  public isMobile: boolean = false;
+  public filtersVisible: boolean = true;
 
   created() {
     this.updateCatalogItems();
@@ -239,6 +253,27 @@ class CatalogModal extends Vue {
   close() {
     this.$emit("close");
   }
+
+  toggleFilters() {
+    this.filtersVisible = !this.filtersVisible 
+  }
+
+  checkMobile() {
+    this.isMobile = window.innerWidth <= 768;
+
+    if (!this.isMobile) {
+      this.filtersVisible = true
+    }
+  }
+
+  mounted() {
+    this.checkMobile();
+    window.addEventListener('resize', this.checkMobile);
+  }
+
+  unmounted() {
+    window.removeEventListener('resize', this.checkMobile);
+  }
 }
 
 export default toNative(CatalogModal)
@@ -260,8 +295,8 @@ export default toNative(CatalogModal)
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
   bottom: 0;
+  right: 0;
   background: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
@@ -270,26 +305,116 @@ export default toNative(CatalogModal)
 }
 
 .catalog-wrapper {
-  min-height: 28rem;
+  min-width: 75%;
 }
 
 .modal-content {
-  width: 90%;
-  max-height: 40rem;
+  max-width: 90%;
+  max-height: 75%;
   overflow-y: auto;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
-.filter-column > * {
-  width: 90%;
-  padding-right: 2rem;
+.filter-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: start;
+  margin-left: 1rem;
+}
+
+.filter-wrapper > *{
+  width: 100%;
 }
 
 .filters {
+  position: relative;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   width: 100%;
-  height: 10rem;
-  padding-bottom: 2rem;
 }
+
+.sockets-button {
+  width: 2rem;
+  height: 2rem;
+}
+
+.one-handed {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+select, input[type="text"], input[type="checkbox"] {
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: 1px solid var(--color-border);
+  background: var(--color-button);
+  color: #f0e6d2;
+  max-width: 100%;
+}
+
+.catalog-toggle-filters {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1001;
+  width: 3.5rem;
+  height: 3.5rem;
+  background: var(--color-button);
+}
+
+.catalog-toggle-filters button {
+  padding: 0.8rem 1rem;
+  margin: 0.1rem;
+  background: var(--color-button);
+  border: var(--color-border);
+  color: #f0e6d2;
+  cursor: pointer;
+  border-radius: 1px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .filters {
+    position: fixed;
+    top: 10%;
+    left: 5%;
+    min-height: 0;
+    z-index: 1005;
+    max-width: 90vw;
+    background-color: var(--color-background);
+  }
+
+  .catalog-modal {
+    min-height: 0;
+    max-height: 100vh;
+  }
+  .filter-wrapper {
+    justify-content: space-between;
+  }
+  .mobile-icon {
+    display: inline;
+  }
+
+  .catalog-toggle-filters {
+    display: inline;
+  }
+}
+
+@media (min-width: 769px) {
+  .desktop-text {
+    display: inline;
+  }
+  .catalog-toggle-filters {
+    display: none;
+  }
+}
+
 </style>
