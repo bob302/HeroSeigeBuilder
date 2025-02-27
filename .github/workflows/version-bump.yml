@@ -19,7 +19,7 @@ jobs:
 
       - name: Bump version
         run: |
-          VERSION_FILE="version.json"
+          VERSION_FILE="frontend/public/version.json"
           CURRENT_VERSION=$(jq -r '.version' $VERSION_FILE)
           NEW_VERSION=$(echo $CURRENT_VERSION | awk -F. '{$NF++; print $1"."$2"."$3}' OFS='.')
           jq --arg new_version "$NEW_VERSION" '.version = $new_version' $VERSION_FILE > tmp.json && mv tmp.json $VERSION_FILE
