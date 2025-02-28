@@ -42,7 +42,7 @@ export default class EditorContext {
   private topSlotUnlocked = false;
   private bottomSlotUnlocked = false;
 
-  constructor() {}
+  constructor() { }
 
   public isTopSlotUnlocked() {
     return this.topSlotUnlocked
@@ -90,7 +90,7 @@ export default class EditorContext {
           this.mainInventory.addItem(item)
           equipmentSlot.slot.item = null
           equipmentSlot.cell.setHighlightState(HightLightCellState.None);
-        } 
+        }
       }
     }
   }
@@ -266,7 +266,7 @@ export default class EditorContext {
         key,
         inv.serialize(),
       ]),
-      // Здесь используем метод serialize у Charapter, который сохраняет динамическое состояние
+
       selectedCharapter: this.selectedCharapter
         ? this.selectedCharapter.serialize()
         : null,
@@ -284,41 +284,50 @@ export default class EditorContext {
     };
   }
 
-  /**
-   * Воссоздаёт экземпляр EditorContext из сериализованных данных.
-   * Метод является асинхронным, поскольку загрузка выбранного Charapter с динамическим состоянием требует асинхронной загрузки ассетов.
-   */
+  /*
+  * Recreates an EditorContext instance from serialized data.
+  */
   static async deserialize(data: any): Promise<EditorContext> {
     const context = new EditorContext();
 
-    // Восстанавливаем selectedCharapter с использованием loadWithState, чтобы динамическое состояние было применено.
-    if (data.selectedCharapter) {
-      // Предполагаем, что в данных сохранённого состояния для selectedCharapter содержится его имя.
-      const className = data.selectedCharapter.name;
-      context.selectedCharapter = await Charapter.loadWithState(
-        className,
-        data.selectedCharapter,
+    if (data.equipmentSlots) {
+      context.equipmentSlots = new Map(
+        data.equipmentSlots.map(([key, slotData]: [string, any]) => {
+          if (key !== slotData.slotName) {
+            throw new Error(`Key mismatch: expected '${key}', but name = '${slotData.slotName}}'`);
+          }
+          return [key, EquipmentSlot.deserialize(slotData)];
+        })
       );
-    } else {
-      context.selectedCharapter = null;
     }
+
 
     if (data.inventories) {
       context.inventories = new Map(
-        data.inventories.map(([key, invData]: [string, any]) => [
-          key,
-          Inventory.deserialize(invData, context),
-        ]),
+        data.inventories.map(([key, invData]: [string, any]) => {
+          if (key !== invData.name) {
+            throw new Error(`Key mismatch: expected '${key}', but name = '${invData.name}'`);
+          }
+          return [key, Inventory.deserialize(invData, context)];
+        })
       );
     }
 
-    if (data.equipmentSlots) {
-      context.equipmentSlots = new Map(
-        data.equipmentSlots.map(([key, slotData]: [string, any]) => [
-          key,
-          EquipmentSlot.deserialize(slotData),
-        ]),
+
+    if (data.selectedCharapter) {
+      const className = data.selectedCharapter.name;
+      const charapter = await Charapter.loadWithState(
+        className,
+        data.selectedCharapter,
       );
+
+      if (charapter) {
+        context.selectedCharapter = charapter
+        context.updateRestrictions("weapon", charapter.restrictions, charapter.isBlackList())
+      }
+
+    } else {
+      context.selectedCharapter = null;
     }
 
     context.itemOnCursor = null;

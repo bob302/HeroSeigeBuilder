@@ -309,8 +309,10 @@ export default toNative(CatalogModal)
 }
 
 .modal-content {
-  max-width: 90%;
+  max-width: 80%;
   max-height: 75%;
+  min-height: 75%;
+  min-width: 80%;
   overflow-y: auto;
   display: flex;
   flex-direction: row-reverse;
@@ -390,6 +392,10 @@ select, input[type="text"], input[type="checkbox"] {
     z-index: 1005;
     max-width: 90vw;
     background-color: var(--color-background);
+  }
+  .modal-content {
+    min-height: 0;
+    min-width: 0;
   }
 
   .catalog-modal {
