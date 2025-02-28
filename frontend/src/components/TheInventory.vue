@@ -41,7 +41,6 @@ import {
   CharmEquipment,
   createEquipment,
   Equipment,
-  type EquipmentSubtype,
 } from "../models/Equipment";
 import DraggedSlot from "./DraggedSlot.vue";
 // @ts-ignore
@@ -67,34 +66,18 @@ class TheInventory extends Vue {
   imageCache = new Map<string, HTMLImageElement>();
 
   async created() {
-    const charmInventoryStyle = {
-      height: "3.5rem",
-      width: "3.5rem",
-      background: "/img/editor/cell-charm-background.jpg",
-    };
-
-    const mainInventoryStyle = {
-      height: "3.5rem",
-      width: "3.5rem",
-      background: "/img/editor/cell-background.jpg",
-    };
 
     const charmInventory = new Inventory(
       this.editorContext,
-      new Point2D(3, 11),
-      charmInventoryStyle,
+      'charm'
     );
 
     const mainInventory = new Inventory(
       this.editorContext,
-      new Point2D(8, 11),
-      mainInventoryStyle,
+      'main'
     );
 
     charmInventory.needToBeSerialized = true
-    const charmInventoryWhitelist: Set<EquipmentSubtype> = new Set()
-    charmInventoryWhitelist.add('Charm')
-    charmInventory.setRestrictions(charmInventoryWhitelist)
 
     this.editorContext.inventories.set("charm", charmInventory);
     this.editorContext.inventories.set("main", mainInventory);

@@ -168,9 +168,6 @@ export default class SubSkillTree {
       if (node.isInitial()) initialMask |= bit;
     }
 
-    console.log(points, 'sususus');
-    
-
     return hasLearnedSkills ? { levelMasks, primaryMask, initialMask, points } : null;
   }
 

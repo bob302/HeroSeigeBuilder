@@ -39,15 +39,9 @@ export class EquipmentSlot {
     this.slot.item = null;
   }
 
-  serialize() {
-    return {
-      slot: this.slot.serialize(),
-      slotName: this.slotName,
-    };
-  }
-
   isRestricted(type?: EquipmentType, subtype?: EquipmentSubtype): boolean {
     // If restrictions are empty, return false (no restrictions)
+       
     if (this.restrictions.size === 0) {
       return false;
     }
@@ -88,6 +82,13 @@ export class EquipmentSlot {
     this.isBlacklist = isBlacklist;
   }
 
+  serialize() {
+    return {
+      slot: this.slot.serialize(),
+      slotName: this.slotName,
+    };
+  }
+
   static deserialize(data: any): EquipmentSlot {
     const equipment =
       data.data &&
@@ -105,6 +106,10 @@ export class EquipmentSlot {
     }
 
     const slot = new EquipmentSlot(equipment, slotConfig.style, data.slotName);
+
+    if (slotConfig.restrictions && slotConfig.restrictions?.size > 0) {
+      slot.setRestrictions(slotConfig.restrictions)
+    }
 
     slot.cell = new Cell(new Point2D(1, 1));
     slot.cell.setCellStyle(slotConfig.style);

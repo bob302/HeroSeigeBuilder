@@ -8,16 +8,23 @@ import { Slot } from "./Slot";
 export type ItemConstructor = new (data: Equipment, size: Point2D) => Item;
 
 export interface SerializedInventory {
-  gridSize: [x: number, y: number];
+  name: string
   cellsData: {
     uFalse: string; // Сжатые координаты, например: "0,3;0,7;2,3;2,7"
     mask: string; // Битовая строка, например: "1110100111..."
   };
   slots: any[];
+}
+
+export interface InventoryConfig {
+  name: string;
+  gridSize: {x: number, y: number};
   style: CellStyle;
+  restrictions: Set<EquipmentSubtype>
 }
 
 export class Inventory {
+  name: string
   gridSize!: Point2D;
   cellsData: Cell[] = [];
   slots: Slot[] = [];
@@ -29,10 +36,18 @@ export class Inventory {
   private restrictions: Set<EquipmentSubtype> = new Set()
   isBlacklist: boolean = false; 
 
-  constructor(parent: EditorContext, gridSize: Point2D, cellStyle: CellStyle) {
+  constructor(parent: EditorContext, name: string) {
     this.editorContext = parent;
-    this.gridSize = gridSize;
-    this.cellStyle = cellStyle;
+    this.name = name
+    const config = Inventory.getConfigByName(name)
+
+    if (!config) {
+      throw new Error(`No config for name ${name}`)
+    }
+    
+    this.restrictions = config.restrictions
+    this.gridSize = new Point2D(config.gridSize.x, config.gridSize.y);
+    this.cellStyle = config.style;
     this.cellsData = [];
     this.slots = [];
     this.initGrid();
@@ -50,8 +65,8 @@ export class Inventory {
     return this.restrictions
   }
 
-  setRestrictions(restrictions: Set<EquipmentSubtype>) {
-    this.restrictions = restrictions;
+  addRestriction(restriction: EquipmentSubtype) {
+      this.restrictions.add(restriction)
   }
 
   applyCellStyle() {
@@ -475,13 +490,12 @@ export class Inventory {
     });
 
     return {
-      gridSize: [this.gridSize.x, this.gridSize.y],
+      name: this.name,
       cellsData: {
         uFalse: unlockedCells.map((c) => c.join(",")).join(";"), // Сжатые координаты
         mask: unlockedMask.join(""), // Битовая строка
       },
-      slots: this.needToBeSerialized ? this.slots.map((slot) => slot.serialize()) : [],
-      style: this.cellStyle,
+      slots: this.needToBeSerialized ? this.slots.map((slot) => slot.serialize()) : []
     };
   }
 
@@ -492,10 +506,17 @@ export class Inventory {
     data: SerializedInventory,
     parent: EditorContext,
   ): Inventory {
-    const gridSize = new Point2D(data.gridSize[0], data.gridSize[1]);
-    const inventory = new Inventory(parent, gridSize, data.style);
+    const inventory = new Inventory(parent, data.name);
+    const config = Inventory.getConfigByName(data.name);
 
+    if (!config) {
+      throw new Error(`No config for name ${name}`)
+    }
+    const gridSize = config.gridSize;
+    const style = config.style;
+    const restrictions = config.restrictions;
     const cellsMap = new Map<string, boolean>(); // Кеш для быстрого поиска
+    
     if (data.cellsData?.uFalse) {
       data.cellsData.uFalse
         .split(";")
@@ -514,15 +535,53 @@ export class Inventory {
 
         const cell = new Cell(new Point2D(x, y));
         cell.setIsUnlocked(cellsMap.has(key) ? false : isUnlocked);
-        cell.setCellStyle(data.style);
+        cell.setCellStyle(style);
         inventory.cellsData.push(cell);
       }
     }
 
+    if (restrictions) {
+      restrictions.forEach(restriction => {
+        inventory.addRestriction(restriction);
+      })
+    }
     // Десериализация слотов
     inventory.slots = data.slots.map((slotData) => Slot.deserialize(slotData));
     inventory.handleInventoryUpdate();
 
+    console.log("inv", inventory);
+    
+
     return inventory;
   }
+
+  static getConfigByName(name: string): InventoryConfig | undefined {
+    return Inventory.getInventoriesConfig().find( c => c.name === name)
+  }
+
+
+  static getInventoriesConfig(): InventoryConfig[] {
+    return [
+      {
+        name: 'charm',
+        gridSize: {x: 3, y: 11},
+        style: {
+          height: "3.5rem",
+          width: "3.5rem",
+          background: "/img/editor/cell-charm-background.jpg",
+        },
+        restrictions: new Set(['Charm'])
+      },
+      {
+        name: 'main',
+        gridSize: {x: 8, y: 11},
+        style: {
+          height: "3.5rem",
+          width: "3.5rem",
+          background: "/img/editor/cell-background.jpg",
+        },
+        restrictions: new Set([])
+      },
+    ]
+  } 
 }
