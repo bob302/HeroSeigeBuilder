@@ -12,7 +12,7 @@ class VersionComponent extends Vue {
   public version: string = "";
 
   async mounted() {
-    const res = await fetch("/version.json");
+    const res = await fetch(import.meta.env.BASE_URL + "version.json");
     const data = await res.json();
     this.version = data.version;
   }
