@@ -29,6 +29,6 @@ jobs:
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
-          git add version.json
+          git add frontend/public/version.json
           git commit -m "Bump version to $NEW_VERSION" || echo "No changes to commit"
           git push
