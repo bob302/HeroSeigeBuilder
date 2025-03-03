@@ -42,7 +42,7 @@ import CatalogModal from "./CatalogModal.vue";
 import EquipmentSlotComponent from "./EquipmentSlot.vue";
 import { EquipmentSlot, type SlotConfig } from "../models/EquipmentSlot";
 import ItemDisplay from "./CatalogItem.vue";
-import { computed, type CSSProperties } from "vue";
+import { type CSSProperties } from "vue";
 
 @Component({
   components: {

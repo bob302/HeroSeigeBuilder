@@ -63,6 +63,7 @@ class ItemComponent extends Vue {
     this.onMouseEnter()
   }
 
+  //@ts-ignore
   onMouseUpCallback(duration: number, distance: number, isLongPress: boolean) {
   if (!isLongPress) {
     this.onItemClick()

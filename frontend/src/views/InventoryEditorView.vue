@@ -75,7 +75,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Provide, Ref, toNative, Vue } from "vue-facing-decorator";
+import { Component, Provide, toNative, Vue } from "vue-facing-decorator";
 import TheInventory from "../components/TheInventory.vue";
 import SkillTreeComponent from "../components/SkillTree.vue";
 import CharapterList from "../components/CharapterList.vue";
