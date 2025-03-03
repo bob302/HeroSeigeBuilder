@@ -1,10 +1,10 @@
 <template>
-  <div
-    ref="tooltipRoot"
-    class="equipment-tooltip"
-    :style="tooltipPositionStyles"
-  >
+  <div ref="tooltipRoot" class="equipment-tooltip" :style="tooltipPositionStyles">
     <div class="tooltip-content">
+      <button v-if="isMobile" class="mobile-close-button" @click="$emit('close')">
+        ×
+      </button>
+
       <div class="equipment-main">
         <div class="equipment-header">
           <p :class="nameColorClass">{{ item.name }}</p>
@@ -13,11 +13,7 @@
 
         <div class="equipment-stats">
           <ul class="stats-list">
-            <li
-              v-for="stat in item.stats"
-              :key="stat.name"
-              v-html="formatStat(stat)"
-            />
+            <li v-for="stat in item.stats" :key="stat.name" v-html="formatStat(stat) " />
 
             <div v-if="isWeapon" class="weapon-details">
               <p class="equipment-subtype">[{{ item.subtype }}]</p>
@@ -40,10 +36,7 @@
         </div>
       </div>
 
-      <EquipmentSocketsTooltip
-        v-if="hasSocketables"
-        :sockets="(item as Equipment).sockets.list"
-      />
+      <EquipmentSocketsTooltip v-if="hasSocketables" :sockets="(item as Equipment).sockets.list" />
     </div>
   </div>
 </template>
@@ -100,14 +93,11 @@ class ItemTooltip extends Vue {
   }
 
   get tooltipPositionStyles() {
-    const baseStyles = {
+    return {
       borderColor: this.borderColor,
-      touchAction: "none",
-    };
-
-    return this.isMobile
-      ? { ...baseStyles, transform: this.mobileTransform }
-      : { ...baseStyles, left: this.desktopX, top: this.desktopY };
+      left: this.desktopX, 
+      top: this.desktopY
+    }
   }
 
   get borderColor() {
@@ -133,10 +123,6 @@ class ItemTooltip extends Vue {
 
   get isMobile() {
     return this.screenWidth < 768;
-  }
-
-  get mobileTransform() {
-    return `translate(${this.calculatedPosition.x}px, ${this.calculatedPosition.y}px)`;
   }
 
   get desktopX() {
@@ -165,35 +151,20 @@ class ItemTooltip extends Vue {
   }
 
   updatePosition() {
-    let x = this.pos.x;
-    let y = this.pos.y;
-
-    if (this.isMobile) {
-      x = (this.screenWidth - this.tooltipDimensions.width) / 2;
-      y = (this.screenHeight - this.tooltipDimensions.height) / 2;
-
-      if (this.shouldFullscreen) {
-        x = 0;
-        y = 0;
-      }
-    } else {
-      if (this.posExceedsHalfScreen) {
-        x -= this.tooltipDimensions.width * 1.15;
-      }
-      if (this.posYExceedsHalfScreen) {
-        y -= this.tooltipDimensions.height * 1.05;
-      }
-    }
-
-    this.calculatedPosition = { x, y };
+  if (this.isMobile) {
+    this.calculatedPosition = { x: 0, y: 0 };
+    return;
   }
 
-  get shouldFullscreen() {
-    return (
-      this.tooltipDimensions.width * 2 > this.screenWidth ||
-      this.tooltipDimensions.height * 2 > this.screenHeight
-    );
+  let x = this.pos.x;
+  let y = 50;
+  
+  if (this.posExceedsHalfScreen) {
+    x -= this.tooltipDimensions.width * 1.15;
   }
+  
+  this.calculatedPosition = { x, y };
+}
 
   get posExceedsHalfScreen() {
     return (
@@ -222,6 +193,19 @@ export default toNative(ItemTooltip)
   z-index: 200;
   backdrop-filter: var(--blur-amount);
   font-family: var(--font-family-primary);
+  max-width: 50vw;
+}
+
+.mobile-close-button {
+  position: absolute;
+  top: 5%;
+  right: 7.5%;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 201;
 }
 
 .name-common {
@@ -402,14 +386,28 @@ export default toNative(ItemTooltip)
 }
 
 @media (max-width: 768px) {
-  ::v-deep(.stat-container) {
-    margin-top: -2rem;
+  .equipment-tooltip {
+    max-width: 100vw;
+    max-height: 100vh;
+    width: 90vw;
+    height: 84vh;
+    border-radius: 0;
+    top: 0;
+    left: 0;
+    overflow-y: scroll;
   }
+
   .tooltip {
     padding: 0rem;
   }
-  .stats-list {
-    margin: 0;
+
+  .tooltip-content {
+    flex-direction: column;
   }
+
+  .equipment-stats {
+    font-size: 0.9rem;
+  }
+
 }
 </style>

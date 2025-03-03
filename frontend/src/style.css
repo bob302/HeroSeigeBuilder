@@ -3,6 +3,13 @@
   line-height: 1.5;
   font-weight: 400;
 
+  --scale-factor: 1vw;
+
+  @media (max-width: 768px) {
+    --scale-factor: calc(max(1vw, 1vh) * 1.75);
+  }
+
+
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
@@ -13,7 +20,7 @@
   -moz-osx-font-smoothing: grayscale;
 
   /* Colors */
-  --color-background: #00000099;
+  --color-background: #000000;
   --color-primary: #d6ac2f;
   --color-satanic: #c81717;
   --color-angelic: #fdfea5;
@@ -67,6 +74,37 @@ h5 {
 #app {
   text-align: center;
 }
+
+button {
+  background: var(--color-button);
+  border: var(--color-border);
+  color: #f0e6d2;
+  cursor: pointer;
+  border-radius: 1px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: var(--color-button-hover);
+}
+
+.button-danger {
+  background-color: rgba(255, 55, 0, 0.5);
+}
+
+.button-warning {
+  background-color: rgba(125, 55, 0, 0.5);
+}
+
+.button-success {
+  background-color: rgba(55, 125, 0, 0.5);
+}
+
+.button-info {
+  background-color: rgba(0, 55, 125, 0.5);
+}
+
 
 @media (prefers-color-scheme: light) {
   :root {

@@ -14,7 +14,8 @@ export enum EditorViewState {
   Tooltip = "tooltip",
   SubSkillTree = "subSkillTree",
   Info = "info",
-  Restrictions = "Restrictions"
+  Restrictions = "restrictions",
+  Confirmation = "confirmation"
 }
 
 export default class EditorContext {
@@ -42,7 +43,38 @@ export default class EditorContext {
   private topSlotUnlocked = false;
   private bottomSlotUnlocked = false;
 
+  confirmationResolver: ((result: boolean) => void) | null = null;
+  confirmationMessage = "";
+
+  private scaleFactor = 1;
+
   constructor() { }
+
+  public getScaleFactor(): number {
+    return this.scaleFactor
+  }
+
+  public setScaleFactor(scaleFactor: number) {
+    this.scaleFactor = scaleFactor
+  }
+
+  showConfirm(message: string): Promise<boolean> {
+    this.confirmationMessage = message;
+    this.currentView = EditorViewState.Confirmation;
+
+    return new Promise((resolve) => {
+      this.confirmationResolver = resolve;
+    });
+  }
+
+  resolveConfirmation(result: boolean) {
+    if (this.confirmationResolver) {
+      this.confirmationResolver(result);
+      this.confirmationResolver = null;
+      this.confirmationMessage = "";
+      this.currentView = EditorViewState.None;
+    }
+  }
 
   public isTopSlotUnlocked() {
     return this.topSlotUnlocked

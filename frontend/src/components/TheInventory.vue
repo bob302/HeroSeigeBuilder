@@ -3,17 +3,9 @@
     <div class="content-section-1">
       <InventoryGrid class="inventory-wrapper" :inventoryName="'main'" />
 
-      <div class="equipment-wrapper">
-        <div
-          v-for="slot in slotsConfig"
-          :key="slot.slotName"
-          :class="slot.classes"
-        >
-          <EquipmentSlotComponent
-            :slotName="slot.slotName"
-            :equipment="dummyEquipment"
-            :cellStyle="slot.style"
-          />
+      <div class="equipment-wrapper" :style="equipmentStyle">
+        <div v-for="slot in slotsConfig" :key="slot.slotName" :class="slot.classes">
+          <EquipmentSlotComponent :slotName="slot.slotName" :equipment="dummyEquipment" :cellStyle="slot.style" />
         </div>
       </div>
 
@@ -49,7 +41,8 @@ import { Item } from "../models/Item";
 import CatalogModal from "./CatalogModal.vue";
 import EquipmentSlotComponent from "./EquipmentSlot.vue";
 import { EquipmentSlot, type SlotConfig } from "../models/EquipmentSlot";
-import ItemDisplay from "./ItemDisplay.vue";
+import ItemDisplay from "./CatalogItem.vue";
+import { type CSSProperties } from "vue";
 
 @Component({
   components: {
@@ -100,7 +93,7 @@ class TheInventory extends Vue {
   get slotsConfig(): SlotConfig[] {
     return EquipmentSlot.getslotsConfig();
   }
-
+  
   mounted() {
     this.editorContext.charmInventory.setIsUnlockedCell(
       new Point2D(2, 3),
@@ -120,6 +113,19 @@ class TheInventory extends Vue {
       false,
     );
   }
+
+  get equipmentStyle(): CSSProperties {
+    const scaleFactor = this.editorContext.getScaleFactor()
+
+    return {
+      display: "grid",
+      rowGap: `${5 * scaleFactor}rcap`,
+      columnGap: `${5 * scaleFactor}rcap`,
+      maxWidth: `${scaleFactor === 0.75 ? 100 : 100 * scaleFactor}%`,
+      maxHeight: `${scaleFactor === 0.75 ? 100 : 100 * scaleFactor}%`,
+    };
+  }
+
 
   onCatalogItemClick(equipment: Equipment) {
     if (equipment instanceof CharmEquipment) {
@@ -162,10 +168,11 @@ export default toNative(TheInventory)
 }
 
 .content-section-1 {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: space-around;
+  background-color: var(--color-background);
 }
 
 .column-right {
@@ -191,10 +198,10 @@ export default toNative(TheInventory)
     ". gloves gloves flask1 flask2 flask3 flask4 boots boots"
     ". gloves gloves flask1 flask2 flask3 flask4 boots boots"
     ". . . . . . . . .";
-  grid-gap: 5cap;
-  justify-items: anchor-center;
-  align-items: anchor-center;
+  justify-items: center;
+  align-items: center;
   z-index: 15;
+  margin: 0 4vw 0 4vw;
 }
 
 .the-inventory-container {
@@ -204,69 +211,67 @@ export default toNative(TheInventory)
   justify-content: center;
   align-items: center;
 }
-
 .helm {
-  width: 6.7rem;
-  height: 6.7rem;
+  width: calc(6.7 * var(--scale-factor));
+  height: calc(6.7 * var(--scale-factor));
   grid-area: helm;
-  margin-left: 3.5rem;
-  margin-top: 7.6rem;
 }
 .amulet {
-  width: 3.52rem;
-  height: 3.84rem;
+  width: calc(3.52 * var(--scale-factor));
+  height: calc(3.84 * var(--scale-factor));
   grid-area: amulet;
-  margin-left: 3.5rem;
-  margin-top: 4.5rem;
 }
 .weapon {
-  width: 10rem;
-  height: 15rem;
+  width: calc(10 * var(--scale-factor));
+  height: calc(15 * var(--scale-factor));
   grid-area: weapon;
-  margin-left: 4.9rem;
-  margin-top: 3.5rem;
 }
 .body-armour {
-  width: 6.7rem;
-  height: 11.3rem;
+  width: calc(6.7 * var(--scale-factor));
+  height: calc(11.3 * var(--scale-factor));
   grid-area: body-armour;
-  margin-left: 3.3rem;
-  margin-top: 4.8rem;
 }
 .offhand {
-  width: 10rem;
-  height: 15rem;
+  width: calc(10 * var(--scale-factor));
+  height: calc(15 * var(--scale-factor));
   grid-area: offhand;
-  margin-right: 2.5rem;
-  margin-top: 3.5rem;
 }
 .ring {
-  width: 3.52rem;
-  height: 3.84rem;
+  width: calc(3.52 * var(--scale-factor));
+  height: calc(3.84 * var(--scale-factor));
   grid-area: ring;
-  margin-left: 2.5rem;
-  margin-top: 2.5rem;
 }
 .belt {
-  width: 6.7rem;
-  height: 3.84rem;
+  width: calc(6.7 * var(--scale-factor));
+  height: calc(3.84 * var(--scale-factor));
   grid-area: belt;
-  margin-left: 3rem;
-  margin-top: 2.5rem;
 }
-
 .ring2 {
-  width: 3.52rem;
-  height: 3.84rem;
+  width: calc(3.52 * var(--scale-factor));
+  height: calc(3.84 * var(--scale-factor));
   grid-area: ring2;
-  margin-left: 4rem;
-  margin-top: 2.5rem;
 }
 .gloves {
-  width: 6.7rem;
-  height: 6.7rem;
+  width: calc(6.7 * var(--scale-factor));
+  height: calc(6.7 * var(--scale-factor));
   grid-area: gloves;
-  margin-left: 3.5rem;
+}
+.flask {
+  width: calc(3.2 * var(--scale-factor));
+  height: calc(7.2 * var(--scale-factor));
+}
+.relic {
+  width: calc(3.52 * var(--scale-factor));
+  height: calc(3.84 * var(--scale-factor));
+}
+.charm {
+  width: calc(3.52 * var(--scale-factor));
+  height: calc(3.52 * var(--scale-factor));
+}
+.boots {
+  width: calc(6.7 * var(--scale-factor));
+  height: calc(6.7 * var(--scale-factor));
+  grid-area: boots;
 }
 
 .flask1 {
@@ -298,32 +303,6 @@ export default toNative(TheInventory)
   grid-area: relic5;
 }
 
-.flask {
-  width: 3.2rem;
-  height: 7.2rem;
-  margin-left: 2.5rem;
-  margin-top: 0.4rem;
-}
-
-.relic {
-  width: 3.52rem;
-  height: 3.84rem;
-  margin-left: 7rem;
-  margin-top: 2rem;
-}
-
-.charm {
-  width: 3.52rem;
-  height: 3.52rem;
-}
-
-.boots {
-  width: 6.7rem;
-  height: 6.7rem;
-  grid-area: boots;
-  margin-right: 3rem;
-}
-
 .buttons {
   display: flex;
   flex-direction: column;
@@ -340,19 +319,20 @@ export default toNative(TheInventory)
 
 @media (max-width: 768px) {
   .equipment-wrapper {
-    display: grid;
-    grid-gap: 0cap;
     grid-template-rows: auto;
-    grid-template-columns: auto;
+    grid-template-columns: repeat(6, 1rem);
     grid-template-areas:
+      " weapon weapon weapon offhand offhand offhand"
+      " weapon weapon weapon offhand offhand offhand"
+      " weapon weapon weapon offhand offhand offhand"
       " weapon weapon weapon offhand offhand offhand"
       " body-armour body-armour ring belt belt ring2"
       " body-armour body-armour flask1 flask2 flask3 flask4"
       " body-armour body-armour flask1 flask2 flask3 flask4"
       " helm helm gloves gloves boots boots"
+      " helm helm gloves gloves boots boots"
       "relic1 relic2 relic3 relic4 relic5 amulet";
-    justify-content: start;
-    align-items: start;
+    align-content: center;
 
     order: 1;
   }
@@ -370,6 +350,7 @@ export default toNative(TheInventory)
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 5vh;
   }
 
   .inventory-wrapper {

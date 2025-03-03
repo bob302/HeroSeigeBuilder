@@ -1,26 +1,26 @@
 <template>
   <div class="catalog">
-    <ItemDisplay
+    <CatalogItem
       v-for="item in catalogItems"
       :showSockets="showSockets"
       :key="item.uuid"
       :equipment="item"
       :src="itemBackgroundSrc"
-      @click="handleItemClick(item)"
+      @item-click="handleItemClick(item)"
     />
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Inject, Prop, toNative, Vue } from "vue-facing-decorator";
-import ItemDisplay from "./ItemDisplay.vue";
+import CatalogItem from "./CatalogItem.vue";
 import { BaseItem, CharmEquipment } from "../models/Equipment";
 import type EditorContext from "../models/EditorContext";
 import { Item } from "../models/Item";
 import { Point2D } from "../models/Point2D";
 
 @Component({
-  components: { ItemDisplay },
+  components: { CatalogItem },
 })
 class EquipmentCatalog extends Vue {
   @Inject({ from: "editorContext" })
