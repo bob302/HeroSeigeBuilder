@@ -16,7 +16,7 @@
         >
           +5
         </button>
-        <button
+        <button class="max-button"
           @click="maximizeAttribute(attr.key)"
           :disabled="editorContext.getAttributePoints() === 0"
         >
@@ -32,7 +32,7 @@
 
     <div class="action-buttons">
       <button
-        class="spread-button"
+        class="distribute-button"
         @click="spreadEvenly"
         :disabled="editorContext.getAttributePoints() === 0"
       >
@@ -113,13 +113,13 @@ export default toNative(AttributeList)
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 1rem;
 }
 
 .attribute {
   display: grid;
   grid-template-columns: 1fr auto auto;
-  gap: 10px;
+  gap: 1rem;
   width: 100%;
   align-items: center;
 }
@@ -132,7 +132,6 @@ export default toNative(AttributeList)
 
 .buttons button {
   aspect-ratio: 1;
-  max-width: 2rem;
 }
 
 .attribute-text {
@@ -147,7 +146,7 @@ export default toNative(AttributeList)
 
 .points-wrapper {
   display: flex;
-  gap: 10px;
+  gap: 1rem;
   align-items: center;
 }
 
@@ -157,25 +156,22 @@ export default toNative(AttributeList)
 
 .action-buttons {
   display: flex;
-  gap: 10px;
-  margin-top: 10px;
+  gap: 10%
 }
 
 .spread-button,
 .max-button,
 .reset-button {
-  padding: 5px 10px;
-  border: none;
+  width: 100%;
   cursor: pointer;
-  border-radius: 5px;
 }
 
-.spread-button {
+.distribute-button {
   background: #5bc0de;
   color: white;
 }
 
-.spread-button:hover {
+.distribute-button:hover {
   background: #31b0d5;
 }
 

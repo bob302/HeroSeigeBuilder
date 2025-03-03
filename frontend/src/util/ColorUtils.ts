@@ -20,6 +20,26 @@ export default class ColorUtils {
     }
   }
 
+  static rarityToColorRGBA(rarity: EquipmentRarity | null): string {
+    switch (rarity) {
+      case "Common":
+        return "rgba(214, 172, 47, 0.6)"; 
+      case "Satanic":
+        return "rgba(200, 23, 23, 0.6)";
+      case "Angelic":
+        return "rgba(253, 254, 165, 0.6)"; 
+      case "Unholy":
+        return "rgba(199, 54, 100, 0.6)"; 
+      case "Heroic":
+        return "rgba(0, 225, 154, 0.6)"; 
+      case "Satanic Set":
+        return "rgba(11, 176, 26, 0.6)"; 
+      default:
+        return "rgba(0, 0, 0, 0)";
+    }
+  }
+  
+
   static rarityToBackground(rarity: EquipmentRarity | null): string {
     switch (rarity) {
       case "Satanic":

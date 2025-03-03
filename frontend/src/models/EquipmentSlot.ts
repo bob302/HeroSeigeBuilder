@@ -126,11 +126,9 @@ export class EquipmentSlot {
         hasItem: true,
         hasClick: true,
         style: {
-          width: "6.7rem",
-          height: "6.7rem",
           border: "8px solid",
           borderImage: "",
-          background: "/img/editor/slot-helm.JPEG",
+          background: "/img/editor/slot-helm.png",
         },
         restrictions: new Set(['Helmet'])
       },
@@ -140,11 +138,9 @@ export class EquipmentSlot {
         hasItem: true,
         hasClick: true,
         style: {
-          width: "3.52rem",
-          height: "3.84rem",
           border: "8px solid",
           borderImage: "",
-          background: "/img/editor/slot-amulet.JPEG",
+          background: "/img/editor/slot-amulet.png",
         },
         restrictions: new Set(['Amulet'])
       },
@@ -154,11 +150,9 @@ export class EquipmentSlot {
         hasItem: true,
         hasClick: true,
         style: {
-          width: "10rem",
-          height: "15rem",
           border: "8px solid",
           borderImage: "",
-          background: "/img/editor/slot-weapon.JPEG",
+          background: "/img/editor/slot-weapon.png",
         },
         restrictions: new Set([EquipmentType.Weapon])
       },
@@ -168,11 +162,9 @@ export class EquipmentSlot {
         hasItem: true,
         hasClick: true,
         style: {
-          width: "6.7rem",
-          height: "11.3rem",
           border: "8px solid",
           borderImage: "",
-          background: "/img/editor/slot-body.JPEG",
+          background: "/img/editor/slot-body.png",
         },
         restrictions: new Set(['Body Armor'])
       },
@@ -182,11 +174,9 @@ export class EquipmentSlot {
         hasItem: true,
         hasClick: true,
         style: {
-          width: "10rem",
-          height: "15rem",
           border: "8px solid",
           borderImage: "",
-          background: "/img/editor/slot-offhand.JPEG",
+          background: "/img/editor/slot-offhand.png",
         },
         restrictions: new Set([EquipmentType.Offhand])
       },
@@ -196,11 +186,9 @@ export class EquipmentSlot {
         hasItem: true,
         hasClick: true,
         style: {
-          width: "3.52rem",
-          height: "3.84rem",
           border: "8px solid",
           borderImage: "",
-          background: "/img/editor/slot-ring.JPEG",
+          background: "/img/editor/slot-ring.png",
         },
         restrictions: new Set(['Ring'])
       },
@@ -210,11 +198,9 @@ export class EquipmentSlot {
         hasItem: true,
         hasClick: true,
         style: {
-          width: "6.7rem",
-          height: "3.84rem",
           border: "8px solid",
           borderImage: "",
-          background: "/img/editor/slot-belt.JPEG",
+          background: "/img/editor/slot-belt.png",
         },
         restrictions: new Set(['Belt'])
 
@@ -225,11 +211,9 @@ export class EquipmentSlot {
         hasItem: true,
         hasClick: true,
         style: {
-          width: "3.52rem",
-          height: "3.84rem",
           border: "8px solid",
           borderImage: "",
-          background: "/img/editor/slot-ring.JPEG",
+          background: "/img/editor/slot-ring.png",
         },
         restrictions: new Set(['Ring'])
 
@@ -240,11 +224,9 @@ export class EquipmentSlot {
         hasItem: true,
         hasClick: true,
         style: {
-          width: "6.7rem",
-          height: "6.7rem",
           border: "8px solid",
           borderImage: "",
-          background: "/img/editor/slot-gloves.JPEG",
+          background: "/img/editor/slot-gloves.png",
         },
         restrictions: new Set(['Gloves'])
       },
@@ -254,11 +236,9 @@ export class EquipmentSlot {
         hasItem: true,
         hasClick: true,
         style: {
-          width: "6.7rem",
-          height: "6.7rem",
           border: "8px solid",
           borderImage: "",
-          background: "/img/editor/slot-boots.JPEG",
+          background: "/img/editor/slot-boots.png",
         },
         restrictions: new Set(['Boots'])
       },
@@ -268,11 +248,9 @@ export class EquipmentSlot {
         hasItem: true,
         hasClick: true,
         style: {
-          width: "3.2rem",
-          height: "7.2rem",
           border: "8px solid",
           borderImage: "",
-          background: "/img/editor/slot-flask.JPEG",
+          background: "/img/editor/slot-flask.png",
         },
         restrictions: new Set(['Potion'])
       },
@@ -282,11 +260,9 @@ export class EquipmentSlot {
         hasItem: true,
         hasClick: true,
         style: {
-          width: "3.2rem",
-          height: "7.2rem",
           border: "8px solid",
           borderImage: "",
-          background: "/img/editor/slot-flask.JPEG",
+          background: "/img/editor/slot-flask.png",
         },
         restrictions: new Set(['Potion'])
       },
@@ -296,11 +272,9 @@ export class EquipmentSlot {
         hasItem: true,
         hasClick: true,
         style: {
-          width: "3.2rem",
-          height: "7.2rem",
           border: "8px solid",
           borderImage: "",
-          background: "/img/editor/slot-flask.JPEG",
+          background: "/img/editor/slot-flask.png",
         },
         restrictions: new Set(['Potion'])
       },
@@ -310,11 +284,9 @@ export class EquipmentSlot {
         hasItem: true,
         hasClick: true,
         style: {
-          width: "3.2rem",
-          height: "7.2rem",
           border: "8px solid",
           borderImage: "",
-          background: "/img/editor/slot-flask.JPEG",
+          background: "/img/editor/slot-flask.png",
         },
         restrictions: new Set(['Potion'])
       },
@@ -324,11 +296,9 @@ export class EquipmentSlot {
         hasItem: true,
         hasClick: true,
         style: {
-          width: "3.52rem",
-          height: "3.84rem",
           border: "8px solid",
           borderImage: "",
-          background: "/img/editor/slot-relic.JPEG",
+          background: "/img/editor/slot-relic.png",
         },
         restrictions: new Set(['Relic'])
       },
@@ -338,11 +308,9 @@ export class EquipmentSlot {
         hasItem: true,
         hasClick: true,
         style: {
-          width: "3.52rem",
-          height: "3.84rem",
           border: "8px solid",
           borderImage: "",
-          background: "/img/editor/slot-relic.JPEG",
+          background: "/img/editor/slot-relic.png",
         },
         restrictions: new Set(['Relic'])
       },
@@ -352,11 +320,9 @@ export class EquipmentSlot {
         hasItem: true,
         hasClick: true,
         style: {
-          width: "3.52rem",
-          height: "3.84rem",
           border: "8px solid",
           borderImage: "",
-          background: "/img/editor/slot-relic.JPEG",
+          background: "/img/editor/slot-relic.png",
         },
         restrictions: new Set(['Relic'])
       },
@@ -366,11 +332,9 @@ export class EquipmentSlot {
         hasItem: true,
         hasClick: true,
         style: {
-          width: "3.52rem",
-          height: "3.84rem",
           border: "8px solid",
           borderImage: "",
-          background: "/img/editor/slot-relic.JPEG",
+          background: "/img/editor/slot-relic.png",
         },
         restrictions: new Set(['Relic'])
       },
@@ -380,11 +344,9 @@ export class EquipmentSlot {
         hasItem: true,
         hasClick: true,
         style: {
-          width: "3.52rem",
-          height: "3.84rem",
           border: "8px solid",
           borderImage: "",
-          background: "/img/editor/slot-relic.JPEG",
+          background: "/img/editor/slot-relic.png",
         },
         restrictions: new Set(['Relic'])
       },

@@ -1,20 +1,20 @@
 <template>
   <div class="inventory-grid-wrapper">
     <!-- Cell Grid -->
-    <div class="cell-grid" :style="getGridStyle()">
+    <div class="cell-grid" :style="[getGridStyle, { pointerEvents: cellClickCooldown ? 'none' : 'auto' }]">
       <CellComponent
         v-for="(cell, index) in getInventory().cellsData"
         :key="'cell-' + index"
         :cellData="cell"
         :style="getCellPositionStyle(cell)"
         @cell-click="onClickOnCell"
-        @cell-mouse-enter="onCellHover"
-        @cell-mouse-leave="onCellMouseLeave"
+        @mouse-enter="onCellHover"
+        @mouse-leave="onCellMouseLeave"
       />
     </div>
 
     <!-- Slot Grid -->
-    <div class="slot-grid" :style="getGridStyle()">
+    <div class="slot-grid" :style="getGridStyle">
       <SlotComponent
         v-for="(slotData, index) in getInventory().slots"
         :key="'slot-' + index"
@@ -22,8 +22,8 @@
         :style="getSlotStyle(slotData)"
         :cell-size="cellSize"
         @slot-click="onSlotClick"
-        @slot-mouse-enter="onSlotHover"
-        @slot-mouse-leave="onSlotMouseLeave"
+        @mouse-enter="onSlotHover"
+        @mouse-leave="onSlotMouseLeave"
       />
     </div>
   </div>
@@ -38,6 +38,12 @@ import { Point2D } from "../models/Point2D";
 import CellComponent from "./CellComponent.vue";
 import SlotComponent from "./SlotComponent.vue";
 import type EditorContext from "../models/EditorContext";
+import type { CSSProperties } from "vue";
+
+enum GridType {
+  cell,
+  slot
+}
 
 @Component({
   components: {
@@ -51,7 +57,18 @@ class InventoryGrid extends Vue {
   readonly editorContext!: EditorContext;
 
   @Prop({ type: String, required: true }) inventoryName!: "main" | "charm";
-  @Prop({ type: Number, required: false }) cellSize: number = 2.5;
+
+  GridType = GridType
+
+  public cellClickCooldown = false;
+
+  cellSize() : number {
+    const size = this.getInventory().cellStyle.size
+    if (!size) {
+      throw new Error(`Inventory cell size ${this.inventoryName} not set in config`)
+    }
+    return size
+  }
 
   getInventory(): Inventory {
     return this.editorContext.inventories.get(this.inventoryName)!;
@@ -102,6 +119,11 @@ class InventoryGrid extends Vue {
       this.getInventory().pickupItem(slotData.item);
       this.onSlotMouseLeave();
     }
+
+    this.cellClickCooldown = true;
+    setTimeout(() => {
+      this.cellClickCooldown = false;
+    }, 300);
   }
 
   onSlotHover(slot: Slot) {
@@ -145,14 +167,16 @@ class InventoryGrid extends Vue {
     return -1;
   }
 
-  getGridStyle() {
+  get getGridStyle(): CSSProperties {
     const { x, y } = this.getInventory().gridSize;
+    const scaleFactor = this.editorContext.getScaleFactor()
+    
     return {
       display: "grid",
       gridTemplateColumns: `repeat(${x}, 1fr)`,
       gridTemplateRows: `repeat(${y}, 1fr)`,
-      maxWidth: `${x * this.cellSize}rem`,
-      maxHeight: `${y * this.cellSize}rem`,
+      width: `${x * this.cellSize() * scaleFactor}rem`,
+      height: `${y * this.cellSize() * scaleFactor}rem`
     };
   }
 
@@ -188,6 +212,7 @@ export default toNative(InventoryGrid)
 .inventory-grid-wrapper {
   display: grid;
   position: relative;
+  max-width: 90%;
 }
 
 .cell-grid {
@@ -197,9 +222,9 @@ export default toNative(InventoryGrid)
 }
 
 .slot-grid {
-  pointer-events: none;
   grid-row: 1;
   grid-column: 1;
   z-index: 2;
+  pointer-events: none;
 }
 </style>

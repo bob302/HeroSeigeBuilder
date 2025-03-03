@@ -1,16 +1,17 @@
 <template>
   <div
+    ref="itemContainer"
     class="item-container"
     :style="pointerEvents ? 'pointer-events: all' : 'pointer-events: none'"
     @mouseenter="onMouseEnter"
     @mouseleave="onMouseLeave"
-  >
+    v-on-long-press="[onLongPressCallback, { delay: 750, onMouseUp: onMouseUpCallback, modifiers: {stop: true}}]"
+    >
     <img
       :src="equipment.image ? equipment.image : 'img/editor/fallback-icon.webp'"
       class="item-image"
       draggable="false"
       :style="{ transform: `scale(${computedScale})` }"
-      @load="onImageLoad"
     />
 
     <div
@@ -38,10 +39,15 @@ import SocketComponent from "./SocketComponent.vue";
 import { BaseItem, Equipment, Socketable } from "../models/Equipment";
 import { Component, Inject, Prop, toNative, Vue } from "vue-facing-decorator";
 import type EditorContext from "../models/EditorContext";
+import { vOnLongPress } from '@vueuse/components'
 
 @Component({
-  components: { SocketComponent, Equipment },
-  emits: ["item-on-mouse-enter", "item-on-mouse-leave"],
+  name: "ItemComponent",
+  components: { SocketComponent, Equipment, vOnLongPress},
+  directives: {
+      'on-long-press': vOnLongPress
+    },
+  emits: ["show-tooltip", "hide-tooltip", "item-click"],
 })
 class ItemComponent extends Vue {
   @Inject({ from: "editorContext" })
@@ -50,8 +56,17 @@ class ItemComponent extends Vue {
   @Prop({ type: Boolean, required: false }) pointerEvents: boolean = false;
   @Prop({ type: Boolean, required: false }) showSockets: boolean = false;
 
-  naturalWidth = 0;
-  naturalHeight = 0;
+  onLongPressCallback(e: PointerEvent) {
+    e.stopPropagation()
+    this.onMouseEnter()
+  }
+
+  //@ts-ignore
+  onMouseUpCallback(duration: number, distance: number, isLongPress: boolean) {
+  if (!isLongPress) {
+    this.onItemClick()
+  }
+}
 
   get isEquipment(): boolean {
     return this.equipment instanceof Equipment;
@@ -72,15 +87,13 @@ class ItemComponent extends Vue {
   }
 
   get computedScale(): number {
-    if (!this.naturalWidth || !this.naturalHeight) return 1.25;
-    const maxSize = 96;
-    return Math.min(maxSize / this.naturalWidth, maxSize / this.naturalHeight);
-  }
-
-  onImageLoad(event: Event) {
-    const img = event.target as HTMLImageElement;
-    this.naturalWidth = img.naturalWidth;
-    this.naturalHeight = img.naturalHeight;
+    const maxSize = 2.0;
+    if (this.equipment.size.height === 1 && this.equipment.size.width === 1 ) {
+      return maxSize
+    }
+    
+    return Math.min(maxSize / Math.log(this.equipment.size.width) / 1.5, 
+    maxSize / Math.log(this.equipment.size.height));
   }
 
   emptySockets(): void {
@@ -105,18 +118,23 @@ class ItemComponent extends Vue {
     }
   }
 
+  onItemClick() {
+    if (!this.equipment) return;
+    this.$emit("item-click", this.equipment);
+  }
+
   onMouseEnter() {
     if (!this.equipment) return;
     this.editorContext.updateStatDisplay(this.equipment);
-    this.$emit("item-on-mouse-enter", this.equipment);
+    this.$emit("show-tooltip", this.equipment);
   }
 
   onMouseLeave() {
     this.editorContext.resetStatDisplay();
-    this.$emit("item-on-mouse-leave");
+    this.$emit("hide-tooltip");
   }
 }
-
+export {ItemComponent}
 export default toNative(ItemComponent)
 </script>
 
@@ -133,9 +151,6 @@ export default toNative(ItemComponent)
 
 .item-image {
   image-rendering: pixelated;
-  transition:
-    transform 0.3s ease-in-out,
-    filter 0.3s ease-in-out;
   z-index: 1;
   user-select: none;
   max-width: 100%;
@@ -194,14 +209,14 @@ export default toNative(ItemComponent)
 }
 
 .five-layout {
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(5, 1.4rem);
+  grid-template-rows: repeat(5, 1.7rem);
   grid-template-areas:
-    ". . ."
-    "s1 . s2"
-    ". s3 ."
-    "s4 . s5"
-    ". . .";
+    ". . . . ."
+    ". s1 . s2 ."
+    ". . s3 . ."
+    ". s4 . s5 ."
+    ". . . . .";
   grid-column-gap: 0.2em;
 }
 

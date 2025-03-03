@@ -1,6 +1,7 @@
 <template>
   <div class="equipment-slot" v-if="equipmentSlot">
     <CellComponent
+      class ="equipment-slot-cell"
       :cellData="equipmentSlot.cell"
       @cell-click="onClickOnCell"
       @cell-mouse-enter="onCellHover"
@@ -8,8 +9,9 @@
     />
 
     <SlotComponent
+      class="equipment-slot-slot"
       :slot-data="equipmentSlot.slot"
-      @slot-click="onSlotClick"
+      @click="onSlotClick"
       @slot-mouse-enter="onSlotHover"
       @slot-mouse-leave="onSlotMouseLeave"
     />
@@ -186,13 +188,5 @@ export default toNative(EquipmentSlotComponent)
   height: 100%;
   top: 0%;
   left: 0%;
-}
-
-@media (max-width: 768px) {
-  .equipment-slot .slot-container {
-    width: 75%;
-    height: 75%;
-    left: 15%;
-  }
 }
 </style>
