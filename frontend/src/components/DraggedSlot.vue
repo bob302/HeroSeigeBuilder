@@ -1,6 +1,6 @@
 <template>
   <div class="dragged-slot" :style="dragStyle()">
-    <Item
+    <ItemComponent
       v-if="editorContext.getItemOnCursor()?.item?.data"
       :equipment="editorContext.getItemOnCursor()!.item!.data"
       :showSockets="true"
@@ -11,13 +11,13 @@
 
 <script lang="ts">
 import { Vue, Component, Inject } from "vue-facing-decorator";
-import Item from "./ItemComponent.vue";
 import type { CSSProperties } from "vue";
 import type EditorContext from "../models/EditorContext";
 import { toNative } from "vue-facing-decorator";
+import ItemComponent from "./ItemComponent.vue";
 
 @Component({
-  components: { Item },
+  components: { ItemComponent },
 })
 class DraggedSlot extends Vue {
   @Inject({ from: "editorContext" })

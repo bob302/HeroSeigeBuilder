@@ -421,7 +421,6 @@ export class Inventory {
 
     if(this.setItem(onCursor.item, destination)) {
       this.editorContext.pickupSlotOnCursor(slot)
-
     }
     
   }
@@ -566,8 +565,7 @@ export class Inventory {
         name: 'charm',
         gridSize: {x: 3, y: 11},
         style: {
-          height: "3.5rem",
-          width: "3.5rem",
+          size: 3.5,
           background: "/img/editor/cell-charm-background.jpg",
         },
         restrictions: new Set(['Charm'])
@@ -576,8 +574,7 @@ export class Inventory {
         name: 'main',
         gridSize: {x: 8, y: 11},
         style: {
-          height: "3.5rem",
-          width: "3.5rem",
+          size: 3.5,
           background: "/img/editor/cell-background.jpg",
         },
         restrictions: new Set([])

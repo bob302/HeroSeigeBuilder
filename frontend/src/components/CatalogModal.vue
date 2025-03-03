@@ -363,23 +363,15 @@ select, input[type="text"], input[type="checkbox"] {
 .catalog-toggle-filters {
   position: fixed;
   top: 0;
-  right: 0;
+  right: 1%;
   z-index: 1001;
-  width: 3.5rem;
-  height: 3.5rem;
-  background: var(--color-button);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 5%;
 }
 
 .catalog-toggle-filters button {
-  padding: 0.8rem 1rem;
-  margin: 0.1rem;
-  background: var(--color-button);
-  border: var(--color-border);
-  color: #f0e6d2;
-  cursor: pointer;
-  border-radius: 1px;
-  font-weight: bold;
-  transition: all 0.3s ease;
+  padding: 25%;
   font-size: 1.5rem;
 }
 

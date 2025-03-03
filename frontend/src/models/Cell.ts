@@ -13,8 +13,7 @@ export enum HightLightCellState {
 }
 
 export interface CellStyle {
-  width: string;
-  height: string;
+  size?: number;
   border?: string;
   borderImage?: string;
   background?: string;
@@ -25,8 +24,7 @@ export class Cell {
   private state: CellState;
   private highhlightState: HightLightCellState;
   private cellStyle: CellStyle = {
-    width: "2.5rem",
-    height: "2.5rem",
+    size: 2.5,
     border: "8px solid",
     background: "",
     borderImage: "",
