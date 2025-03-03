@@ -128,7 +128,7 @@ export class EquipmentSlot {
         style: {
           border: "8px solid",
           borderImage: "",
-          background: "/img/editor/slot-helm.png",
+          background: "/img/equipment-slot/slot-helm.png",
         },
         restrictions: new Set(['Helmet'])
       },
@@ -140,7 +140,7 @@ export class EquipmentSlot {
         style: {
           border: "8px solid",
           borderImage: "",
-          background: "/img/editor/slot-amulet.png",
+          background: "/img/equipment-slot/slot-amulet.png",
         },
         restrictions: new Set(['Amulet'])
       },
@@ -152,7 +152,7 @@ export class EquipmentSlot {
         style: {
           border: "8px solid",
           borderImage: "",
-          background: "/img/editor/slot-weapon.png",
+          background: "/img/equipment-slot/slot-weapon.png",
         },
         restrictions: new Set([EquipmentType.Weapon])
       },
@@ -164,7 +164,7 @@ export class EquipmentSlot {
         style: {
           border: "8px solid",
           borderImage: "",
-          background: "/img/editor/slot-body.png",
+          background: "/img/equipment-slot/slot-body.png",
         },
         restrictions: new Set(['Body Armor'])
       },
@@ -176,7 +176,7 @@ export class EquipmentSlot {
         style: {
           border: "8px solid",
           borderImage: "",
-          background: "/img/editor/slot-offhand.png",
+          background: "/img/equipment-slot/slot-offhand.png",
         },
         restrictions: new Set([EquipmentType.Offhand])
       },
@@ -188,7 +188,7 @@ export class EquipmentSlot {
         style: {
           border: "8px solid",
           borderImage: "",
-          background: "/img/editor/slot-ring.png",
+          background: "/img/equipment-slot/slot-ring.png",
         },
         restrictions: new Set(['Ring'])
       },
@@ -200,7 +200,7 @@ export class EquipmentSlot {
         style: {
           border: "8px solid",
           borderImage: "",
-          background: "/img/editor/slot-belt.png",
+          background: "/img/equipment-slot/slot-belt.png",
         },
         restrictions: new Set(['Belt'])
 
@@ -213,7 +213,7 @@ export class EquipmentSlot {
         style: {
           border: "8px solid",
           borderImage: "",
-          background: "/img/editor/slot-ring.png",
+          background: "/img/equipment-slot/slot-ring.png",
         },
         restrictions: new Set(['Ring'])
 
@@ -226,7 +226,7 @@ export class EquipmentSlot {
         style: {
           border: "8px solid",
           borderImage: "",
-          background: "/img/editor/slot-gloves.png",
+          background: "/img/equipment-slot/slot-gloves.png",
         },
         restrictions: new Set(['Gloves'])
       },
@@ -238,7 +238,7 @@ export class EquipmentSlot {
         style: {
           border: "8px solid",
           borderImage: "",
-          background: "/img/editor/slot-boots.png",
+          background: "/img/equipment-slot/slot-boots.png",
         },
         restrictions: new Set(['Boots'])
       },
@@ -250,7 +250,7 @@ export class EquipmentSlot {
         style: {
           border: "8px solid",
           borderImage: "",
-          background: "/img/editor/slot-flask.png",
+          background: "/img/equipment-slot/slot-flask.png",
         },
         restrictions: new Set(['Potion'])
       },
@@ -262,7 +262,7 @@ export class EquipmentSlot {
         style: {
           border: "8px solid",
           borderImage: "",
-          background: "/img/editor/slot-flask.png",
+          background: "/img/equipment-slot/slot-flask.png",
         },
         restrictions: new Set(['Potion'])
       },
@@ -274,7 +274,7 @@ export class EquipmentSlot {
         style: {
           border: "8px solid",
           borderImage: "",
-          background: "/img/editor/slot-flask.png",
+          background: "/img/equipment-slot/slot-flask.png",
         },
         restrictions: new Set(['Potion'])
       },
@@ -286,7 +286,7 @@ export class EquipmentSlot {
         style: {
           border: "8px solid",
           borderImage: "",
-          background: "/img/editor/slot-flask.png",
+          background: "/img/equipment-slot/slot-flask.png",
         },
         restrictions: new Set(['Potion'])
       },
@@ -298,7 +298,7 @@ export class EquipmentSlot {
         style: {
           border: "8px solid",
           borderImage: "",
-          background: "/img/editor/slot-relic.png",
+          background: "/img/equipment-slot/slot-relic.png",
         },
         restrictions: new Set(['Relic'])
       },
@@ -310,7 +310,7 @@ export class EquipmentSlot {
         style: {
           border: "8px solid",
           borderImage: "",
-          background: "/img/editor/slot-relic.png",
+          background: "/img/equipment-slot/slot-relic.png",
         },
         restrictions: new Set(['Relic'])
       },
@@ -322,7 +322,7 @@ export class EquipmentSlot {
         style: {
           border: "8px solid",
           borderImage: "",
-          background: "/img/editor/slot-relic.png",
+          background: "/img/equipment-slot/slot-relic.png",
         },
         restrictions: new Set(['Relic'])
       },
@@ -334,7 +334,7 @@ export class EquipmentSlot {
         style: {
           border: "8px solid",
           borderImage: "",
-          background: "/img/editor/slot-relic.png",
+          background: "/img/equipment-slot/slot-relic.png",
         },
         restrictions: new Set(['Relic'])
       },
@@ -346,7 +346,7 @@ export class EquipmentSlot {
         style: {
           border: "8px solid",
           borderImage: "",
-          background: "/img/editor/slot-relic.png",
+          background: "/img/equipment-slot/slot-relic.png",
         },
         restrictions: new Set(['Relic'])
       },

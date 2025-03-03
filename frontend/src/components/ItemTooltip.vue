@@ -351,6 +351,7 @@ export default toNative(ItemTooltip)
   display: flex;
   justify-content: space-between;
   margin-top: 1.5rem;
+  min-width: 15vw;
 }
 
 .level-requirement,

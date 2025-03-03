@@ -86,14 +86,27 @@ class ItemComponent extends Vue {
     return false;
   }
 
+  // WTH
   get computedScale(): number {
-    const maxSize = 2.0;
-    if (this.equipment.size.height === 1 && this.equipment.size.width === 1 ) {
+    let maxSize = 1.75;
+    const ratio = this.equipment.size.height / this.equipment.size.width; 
+    
+    if (ratio === 1 ) {
+      if (this.equipment.size.width === 1) {
+        return 2;
+      }
       return maxSize
     }
+
+    if (this.equipment.size.width > 2 || this.equipment.size.height > 2) {
+      maxSize = 1
+    }
+
+    if (this.equipment.size.width > this.equipment.size.height) {
+      return Math.min(maxSize * this.equipment.size.width, maxSize * this.equipment.size.height);
+    }
     
-    return Math.min(maxSize / Math.log(this.equipment.size.width) / 1.5, 
-    maxSize / Math.log(this.equipment.size.height));
+    return Math.min(maxSize * this.equipment.size.width, maxSize * Math.log(this.equipment.size.height));
   }
 
   emptySockets(): void {
@@ -161,51 +174,43 @@ export default toNative(ItemComponent)
 .socket-container {
   display: grid;
   position: absolute;
-  gap: 0;
   pointer-events: none;
   z-index: 11;
-  place-items: center;
+  justify-content: center;
+  grid-row-gap: 1.25rem;
+  grid-column-gap: 1.25rem;
 }
 
 .one-layout {
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: 1fr;
   grid-template-areas:
-    "."
-    "s1"
-    ".";
+    "s1";
 }
 
 .two-layout {
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   grid-template-areas:
-    "."
     "s1"
-    "s2"
-    ".";
+    "s2";
 }
 
 .three-layout {
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   grid-template-areas:
-    "."
     "s1"
     "s2"
-    "s3"
-    ".";
+    "s3";
 }
 
 .four-layout {
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   grid-template-areas:
-    ". ."
     "s1  s2"
-    "s3  s4"
-    ". .";
-  grid-column-gap: 0.2em;
+    "s3  s4";
 }
 
 .five-layout {
@@ -217,7 +222,8 @@ export default toNative(ItemComponent)
     ". . s3 . ."
     ". s4 . s5 ."
     ". . . . .";
-  grid-column-gap: 0.2em;
+    grid-row-gap: 0.2rem;
+    grid-column-gap: 0.2rem;
 }
 
 .six-layout {
@@ -227,7 +233,6 @@ export default toNative(ItemComponent)
     "s1  s2"
     "s3  s4"
     "s5  s6";
-  grid-column-gap: 0.2em;
 }
 
 .socket-1 {

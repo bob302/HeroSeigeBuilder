@@ -240,6 +240,17 @@ export class Equipment extends BaseItem {
   }
 }
 
+export class Runeword extends Equipment {
+  constructor(props: RunewordProps) {
+    super(props);
+  }
+}
+
+export interface RunewordProps extends EquipmentProps {
+  runes: string[],
+  bases: EquipmentSubtype[]
+}
+
 export class Socketable extends BaseItem {
   constructor(props: BaseItemProps) {
     super({

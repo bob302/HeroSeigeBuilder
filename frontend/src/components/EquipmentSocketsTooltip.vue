@@ -16,7 +16,7 @@
             class="socketable-icon"
           />
           <div class="socketable-info">
-            <p class="socketable-name">{{ socket.socketable?.name }}</p>
+            <p class="socketable-name" :class="socket.prismatic === true ? 'prismatic' : 'normal'">{{ socket.socketable?.name }}</p>
           </div>
         </li>
       </ul>
@@ -84,8 +84,15 @@ export default defineComponent({
   flex: 1;
 }
 
-.socketable-name {
+.prismatic {
+  color: #32edf3;
+}
+
+.normal {
   color: #f3c632;
+}
+
+.socketable-name {
   font-family: "Fenris";
   font-size: 1.1rem;
 }
