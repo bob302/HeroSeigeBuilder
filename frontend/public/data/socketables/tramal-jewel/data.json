@@ -1,0 +1,13 @@
+{
+  "Item": "Tramal Jewel",
+  "Tier": "A",
+  "Level": "52",
+  "Type": "Jewel",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+10% to All Resistances",
+      "class": "stat-default"
+    }
+  ]
+}

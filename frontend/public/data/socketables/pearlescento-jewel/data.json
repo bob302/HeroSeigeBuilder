@@ -1,0 +1,13 @@
+{
+  "Item": "Pearlescento Jewel",
+  "Tier": "A",
+  "Level": "52",
+  "Type": "Jewel",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+10% Increased Attack Rating",
+      "class": "stat-default"
+    }
+  ]
+}

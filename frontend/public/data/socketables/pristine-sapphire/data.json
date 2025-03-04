@@ -1,0 +1,17 @@
+{
+  "Item": "Pristine Sapphire",
+  "Tier": "S",
+  "Level": "38",
+  "Type": "Gem",
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "+512 to Additive Cold Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+512 to Cold Skill Damage",
+      "class": "stat-default"
+    }
+  ]
+}

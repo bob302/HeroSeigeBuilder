@@ -1,0 +1,13 @@
+{
+  "Item": "Exan Jewel",
+  "Tier": "D",
+  "Level": "15",
+  "Type": "Jewel",
+  "Rarity": "Common",
+  "Stats": [
+    {
+      "stat": "Mana Increased by 5%",
+      "class": "stat-default"
+    }
+  ]
+}

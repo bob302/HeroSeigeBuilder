@@ -1,0 +1,13 @@
+{
+  "Item": "Lyrcon Jewel",
+  "Tier": "B",
+  "Level": "15",
+  "Type": "Jewel",
+  "Rarity": "Common",
+  "Stats": [
+    {
+      "stat": "+40% to Lightning Resistance",
+      "class": "stat-default"
+    }
+  ]
+}

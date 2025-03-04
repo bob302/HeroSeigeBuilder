@@ -1,0 +1,17 @@
+{
+  "Item": "Pristine Emerald",
+  "Tier": "S",
+  "Level": "38",
+  "Type": "Gem",
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "+512 to Additive Poison Damage",
+      "class": "stat-default"
+    },
+    {
+      "stat": "+512 to Poison Skill Damage",
+      "class": "stat-default"
+    }
+  ]
+}

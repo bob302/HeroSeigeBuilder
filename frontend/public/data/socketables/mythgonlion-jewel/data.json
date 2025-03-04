@@ -1,0 +1,13 @@
+{
+  "Item": "Mythgonlion Jewel",
+  "Tier": "A",
+  "Level": "52",
+  "Type": "Jewel",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+15% Faster Cast Rate",
+      "class": "stat-default"
+    }
+  ]
+}

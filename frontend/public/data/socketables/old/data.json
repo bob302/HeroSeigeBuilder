@@ -2,8 +2,8 @@
   "Item": "Old",
   "Tier": "D",
   "Level": "11",
-  "Type": "Socketable",
-  "Rarity": "Satanic",
+  "Type": "Rune",
+  "Rarity": "Common",
   "Stats": [
     {
       "stat": "+25% Enhanced Damage",

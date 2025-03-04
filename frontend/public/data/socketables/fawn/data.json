@@ -1,0 +1,17 @@
+{
+  "Item": "Fawn",
+  "Tier": "SS",
+  "Level": "100",
+  "Type": "Rune",
+  "Rarity": "Angelic",
+  "Stats": [
+    {
+      "stat": "All Damage Taken Reduced by 3%",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Unbreakable",
+      "class": "stat-unbreakable"
+    }
+  ]
+}

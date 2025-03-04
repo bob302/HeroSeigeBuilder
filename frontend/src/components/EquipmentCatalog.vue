@@ -70,6 +70,7 @@ export default toNative(EquipmentCatalog)
   overflow-y: auto;
   overflow-x: hidden;
   gap: 0.2rem;
+  background-color: var(--color-background);
 }
 
 .catalog > * {

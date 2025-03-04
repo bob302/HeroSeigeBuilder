@@ -1,0 +1,17 @@
+{
+  "Item": "Flo",
+  "Tier": "SS",
+  "Level": "100",
+  "Type": "Rune",
+  "Rarity": "Angelic",
+  "Stats": [
+    {
+      "stat": "+2% to Maximum All Resists",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Unbreakable",
+      "class": "stat-unbreakable"
+    }
+  ]
+}

@@ -106,6 +106,7 @@ import {
   EquipmentSubtypes,
   WeaponEquipment,
   BaseItem,
+  type EquipmentSubtype,
 } from "../models/Equipment";
 import type EditorContext from "../models/EditorContext";
 import EquipmentCatalog from "./EquipmentCatalog.vue";
@@ -125,8 +126,8 @@ class CatalogModal extends Vue {
   public isLoading = false;
 
   public nameFilter: string = "";
-  public typeFilter: EquipmentType = EquipmentType.Misc;
-  public subtypeFilter: string | null = null;
+  public typeFilter: EquipmentType = EquipmentType.Socketable;
+  public subtypeFilter: EquipmentSubtype | null = null;
   public rarityFilter: EquipmentRarity | null = null;
   public tierFilter: EquipmentTier | null = null;
   public statsFilter: string = "";
@@ -247,6 +248,9 @@ class CatalogModal extends Vue {
       this.loadedTypes.add(newType);
       this.isLoading = false;
     }
+
+    this.subtypeFilter = null;
+
     this.updateCatalogItems();
   }
 
@@ -337,6 +341,8 @@ export default toNative(CatalogModal)
   flex-direction: column;
   justify-content: space-around;
   width: 100%;
+  background-color: var(--color-background);
+  padding: 2rem;
 }
 
 .sockets-button {
@@ -384,6 +390,7 @@ select, input[type="text"], input[type="checkbox"] {
     z-index: 1005;
     max-width: 90vw;
     background-color: var(--color-background);
+    padding: 0;
   }
   .modal-content {
     min-height: 0;

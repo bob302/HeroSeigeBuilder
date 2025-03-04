@@ -74,7 +74,7 @@ class EquipmentService {
       const paths: string[] = await response.json();
       this.groupPathsByType(paths);
       // Socketables
-      this.loadType(EquipmentType.Misc);
+      this.loadType(EquipmentType.Socketable);
 
       if (onLoaded) {
         onLoaded();
@@ -144,7 +144,7 @@ class EquipmentService {
       case "shields":
         return EquipmentType.Offhand;
       case "socketables":
-        return EquipmentType.Misc;
+        return EquipmentType.Socketable;
       case "spellblades":
         return EquipmentType.Weapon;
       case "staves":

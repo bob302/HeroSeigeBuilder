@@ -31,7 +31,7 @@ export class ItemParser {
       size: rawItem.size,
     };
 
-    if (rawItem.subtype === "Socketable") {
+    if (rawItem.type === EquipmentType.Socketable) {
       const socketableProps = {
         ...commonProps,
       };
@@ -111,7 +111,7 @@ export class ItemParser {
       size: size,
     };
 
-    if (subtype === "Socketable") {
+    if (type === EquipmentType.Socketable) {
       const socketableProps = {
         ...commonProps,
       };

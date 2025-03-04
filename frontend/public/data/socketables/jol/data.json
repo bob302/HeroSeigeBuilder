@@ -1,0 +1,17 @@
+{
+  "Item": "Jol",
+  "Tier": "SS",
+  "Level": "100",
+  "Type": "Rune",
+  "Rarity": "Angelic",
+  "Stats": [
+    {
+      "stat": "+1 Projectile Speed",
+      "class": "stat-default"
+    },
+    {
+      "stat": "Unbreakable",
+      "class": "stat-unbreakable"
+    }
+  ]
+}

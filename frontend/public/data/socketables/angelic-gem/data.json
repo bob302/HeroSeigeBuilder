@@ -1,0 +1,13 @@
+{
+  "Item": "Angelic Gem",
+  "Tier": "S",
+  "Level": "100",
+  "Type": "Gem",
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "+1 to All Skills",
+      "class": "stat-default"
+    }
+  ]
+}

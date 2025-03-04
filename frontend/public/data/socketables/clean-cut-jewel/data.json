@@ -1,0 +1,13 @@
+{
+  "Item": "Clean Cut Jewel",
+  "Tier": "A",
+  "Level": "52",
+  "Type": "Jewel",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+20% of target Defence ignored",
+      "class": "stat-default"
+    }
+  ]
+}

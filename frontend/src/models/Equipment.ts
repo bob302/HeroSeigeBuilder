@@ -17,7 +17,7 @@ export enum EquipmentType {
   Armor = "Armor",
   Accessory = "Accessory",
   Special = "Special",
-  Misc = "Misc",
+  Socketable = "Socketable",
 }
 
 export const EquipmentSubtypes: Record<EquipmentType, string[]> = {
@@ -43,7 +43,7 @@ export const EquipmentSubtypes: Record<EquipmentType, string[]> = {
   [EquipmentType.Offhand]: ["Shield"],
   [EquipmentType.Accessory]: ["Amulet", "Ring", "Belt"],
   [EquipmentType.Special]: ["Charm", "Glyph", "Relic", "Potion"],
-  [EquipmentType.Misc]: ["Socketable"],
+  [EquipmentType.Socketable]: ["Rune", "Jewel", "Gem"],
 };
 
 export function getEquipmentTypeBySubtype(subtype: EquipmentSubtype): EquipmentType | undefined {
@@ -258,8 +258,7 @@ export class Socketable extends BaseItem {
       size: { width: 1, height: 1 },
     });
 
-    this.type = EquipmentType.Misc;
-    this.subtype = "Socketable";
+    this.type = EquipmentType.Socketable;
   }
 
   clone(): Socketable {

@@ -1,0 +1,13 @@
+{
+  "Item": "Lapis-Lazuli Jewel",
+  "Tier": "B",
+  "Level": "30",
+  "Type": "Jewel",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "+5% Increased Critical Strike Chance",
+      "class": "stat-default"
+    }
+  ]
+}
