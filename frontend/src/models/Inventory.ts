@@ -20,7 +20,8 @@ export interface InventoryConfig {
   name: string;
   gridSize: {x: number, y: number};
   style: CellStyle;
-  restrictions: Set<EquipmentSubtype>
+  restrictions: Set<EquipmentSubtype>;
+  serialize: boolean
 }
 
 export class Inventory {
@@ -31,7 +32,7 @@ export class Inventory {
   editorContext: EditorContext;
   public readonly cellStyle: CellStyle;
   onInventoryUpdated: (() => void)[] = [];
-  needToBeSerialized: boolean = false;
+  private needToBeSerialized: boolean;
 
   private restrictions: Set<EquipmentSubtype> = new Set()
   isBlacklist: boolean = false; 
@@ -40,11 +41,12 @@ export class Inventory {
     this.editorContext = parent;
     this.name = name
     const config = Inventory.getConfigByName(name)
-
+    
     if (!config) {
       throw new Error(`No config for name ${name}`)
     }
     
+    this.needToBeSerialized = config.serialize
     this.restrictions = config.restrictions
     this.gridSize = new Point2D(config.gridSize.x, config.gridSize.y);
     this.cellStyle = config.style;
@@ -488,7 +490,7 @@ export class Inventory {
       }
     });
 
-    return {
+    const tex = {
       name: this.name,
       cellsData: {
         uFalse: unlockedCells.map((c) => c.join(",")).join(";"), // Сжатые координаты
@@ -496,6 +498,10 @@ export class Inventory {
       },
       slots: this.needToBeSerialized ? this.slots.map((slot) => slot.serialize()) : []
     };
+    console.log("tex", tex);
+    console.log("tex2", this.needToBeSerialized);
+    
+    return tex 
   }
 
   /**
@@ -564,7 +570,8 @@ export class Inventory {
           size: 3.5,
           background: "/img/editor/cell-charm-background.jpg",
         },
-        restrictions: new Set(['Charm'])
+        restrictions: new Set(['Charm']),
+        serialize: true
       },
       {
         name: 'main',
@@ -573,7 +580,8 @@ export class Inventory {
           size: 3.5,
           background: "/img/editor/cell-background.jpg",
         },
-        restrictions: new Set([])
+        restrictions: new Set([]),
+        serialize: false
       },
     ]
   } 

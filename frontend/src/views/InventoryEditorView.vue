@@ -130,19 +130,20 @@ class InventoryEditorView extends Vue {
 
 
   mounted() {
-    equipmentService.initialize(() => {
-      this.isSocketablesLoaded = true;
-    });
-
-    document.addEventListener("mousemove", this.updateMousePosition);
-
+  equipmentService.initialize(() => {
+    this.isSocketablesLoaded = true;
+    
     const routeLink = this.$route.params.link as string | undefined;
     if (routeLink) {
       this.importContext();
     }
-    window.addEventListener("resize", this.onResize);
-    this.onResize()
-  }
+  });
+
+  document.addEventListener("mousemove", this.updateMousePosition);
+  
+  window.addEventListener("resize", this.onResize);
+  this.onResize();
+}
 
   unmounted() {
     document.removeEventListener("mousemove", this.updateMousePosition);
@@ -285,7 +286,7 @@ class InventoryEditorView extends Vue {
       return;
     }
     
-    const shortLink = `${appHost}editor/${result.key}`;
+    const shortLink = `${appHost}/editor/${result.key}`;
     await navigator.clipboard.writeText(shortLink);
     alert(`Link copied to clipboard. ${result.isPermanent ? 'Build link will not be deleted.' : `Build link will be deleted in ${result.linkLefespan} seconds.`}`);
   } catch (error) {

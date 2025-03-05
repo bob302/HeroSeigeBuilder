@@ -62,15 +62,13 @@ class TheInventory extends Vue {
 
     const charmInventory = new Inventory(
       this.editorContext,
-      'charm'
+      'charm',
     );
 
     const mainInventory = new Inventory(
       this.editorContext,
-      'main'
+      'main',
     );
-
-    charmInventory.needToBeSerialized = true
 
     this.editorContext.inventories.set("charm", charmInventory);
     this.editorContext.inventories.set("main", mainInventory);
