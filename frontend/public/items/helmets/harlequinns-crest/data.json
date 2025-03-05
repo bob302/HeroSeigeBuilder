@@ -1,0 +1,17 @@
+{
+  "Item": "Harlequinn's Crest",
+  "Tier": "S",
+  "Level": "92",
+  "Defense": "112.5080-145",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+2 to All Skills",
+    "+[4-8] to All Attributes",
+    "Physical Damage Taken Reduced by 10%",
+    "Magic Damage Taken Reduced by 10%",
+    "+150 to Mana (Based on Level)",
+    "+[20-30]% Increased Magic Find"
+  ]
+}

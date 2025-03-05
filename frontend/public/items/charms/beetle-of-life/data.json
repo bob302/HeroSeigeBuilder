@@ -1,0 +1,15 @@
+{
+  "Item": "Beetle of Life",
+  "Tier": "S",
+  "Level": "60",
+  "Type": "Charm",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[10-15] to Vitality",
+    "Replenish Life 8%",
+    "+[45-70] to Life",
+    "+[5-10] Life After each Kill",
+    "Life Increased by [5-10]%"
+  ]
+}

@@ -15,31 +15,27 @@ export class StatParser {
     return stats;
   }
 
-  static parseStat(
-    line: string,
-    special = false,
-  ): { html: string; stat: Stat } {
+  static parseStat(line: string, special = false): { html: string; stat: Stat } {
     const valueRegex = /(?<!\[)[+-]?\d+(?:%|)(?!\])(?=\s|$)/g;
     const rangeRegex = /\[(\d+)-(\d+)\]/g;
-    const allSkillRegex = /to All Skills/;
-    const toPoisonRegex = /to Poison Skills/;
-    const toFireRegex = /to Fire Skills/;
-    const toColdRegex = /to Cold Skills/;
-    const toArcaneRegex = /to Arcane Skills/;
-    const toPhysicalRegex = /to Physical Skills/;
-    const toLightningRegex = /to Lightning Skills/;
-    const unholyStatRegex = /Unholy Stat/;
-    const unbreakableRegex = /Unbreakable/;
-
-    const matches: Array<{
-      type: string;
-      start: number;
-      end: number;
-      content: string;
-    }> = [];
-
-    let match;
-
+  
+    // Mapping special properties: regular expression and corresponding CSS class
+    const specialMappings: { regex: RegExp; cssClass: string }[] = [
+      { regex: /to All Skills/, cssClass: 'stat-allskills' },
+      { regex: /to Arcane Skills/, cssClass: 'stat-to-arcane' },
+      { regex: /to Cold Skills/, cssClass: 'stat-to-cold' },
+      { regex: /to Fire Skills/, cssClass: 'stat-to-fire' },
+      { regex: /to Poison Skills/, cssClass: 'stat-to-poison' },
+      { regex: /to Physical Skills/, cssClass: 'stat-to-physical' },
+      { regex: /to Lightning Skills/, cssClass: 'stat-to-lightning' },
+      { regex: /Unholy Stat/, cssClass: 'stat-unholy' },
+      { regex: /Unbreakable/, cssClass: 'stat-unbreakable' },
+      { regex: /Random Skill Element/, cssClass: 'stat-random-skill' },
+    ];
+  
+    const matches: Array<{ type: string; start: number; end: number; content: string }> = [];
+    let match: RegExpExecArray | null;
+    
     while ((match = valueRegex.exec(line)) !== null) {
       matches.push({
         type: "value",
@@ -48,7 +44,7 @@ export class StatParser {
         content: match[0],
       });
     }
-
+    
     while ((match = rangeRegex.exec(line)) !== null) {
       matches.push({
         type: "range",
@@ -57,122 +53,69 @@ export class StatParser {
         content: match[0],
       });
     }
-
+    
     matches.sort((a, b) => a.start - b.start);
-
+    
     let lastPos = 0;
-    const tokens: Array<{
-      type: "value" | "range" | "description";
-      content: string;
-    }> = [];
-
+    const tokens: Array<{ type: "value" | "range" | "description"; content: string }> = [];
     for (const m of matches) {
       if (m.start > lastPos) {
         const desc = line.slice(lastPos, m.start).trim();
         if (desc) tokens.push({ type: "description", content: desc });
       }
-
       tokens.push({ type: m.type as "value" | "range", content: m.content });
       lastPos = m.end;
     }
-
     if (lastPos < line.length) {
       const desc = line.slice(lastPos).trim();
       if (desc) tokens.push({ type: "description", content: desc });
     }
+    
     const rangeMatch = line.match(/\[(\d+)-(\d+)\]/);
     const valueMatch = line.match(/([+-]?\d+%?)(?=\s*|\s?[a-zA-Z\s( )])/);
-
     const range = rangeMatch
       ? { from: parseInt(rangeMatch[1]), to: parseInt(rangeMatch[2]) }
       : { from: 0, to: 0 };
-
     const value = valueMatch ? this.parseValue(valueMatch[1]) : 0;
     const type = valueMatch?.includes("%") ? "percent" : "flat";
-
+    
     const stat: Stat = {
       raw: line,
-      name: tokens
-        .filter((t) => t.type === "description")
-        .map((t) => t.content)
-        .join(" "),
+      name: tokens.filter(t => t.type === "description").map(t => t.content).join(" "),
       value: value,
       range: range,
       type: type,
       special: special,
     };
-
+  
     if (special) {
-      const html = `<div class="stat-container"><p class="stat-special">${line}</p></div>`;
-      return { html, stat };
+      return { html: `<div class="stat-container"><p class="stat-special">${line}</p></div>`, stat };
     }
-
-    if (allSkillRegex.exec(line) !== null) {
-      const html = `<div class="stat-container"><p class="stat-allskills">${line}</p></div>`;
-      return { html, stat };
+    
+    for (const mapping of specialMappings) {
+      if (mapping.regex.test(line)) {
+        return { html: `<div class="stat-container"><p class="${mapping.cssClass}">${line}</p></div>`, stat };
+      }
     }
-
-    if (toArcaneRegex.exec(line) !== null) {
-      const html = `<div class="stat-container"><p class="stat-to-arcane">${line}</p></div>`;
-      return { html, stat };
-    }
-
-    if (toColdRegex.exec(line) !== null) {
-      const html = `<div class="stat-container"><p class="stat-to-cold">${line}</p></div>`;
-      return { html, stat };
-    }
-
-    if (toFireRegex.exec(line) !== null) {
-      const html = `<div class="stat-container"><p class="stat-to-fire">${line}</p></div>`;
-      return { html, stat };
-    }
-
-    if (toPoisonRegex.exec(line) !== null) {
-      const html = `<div class="stat-container"><p class="stat-to-poison">${line}</p></div>`;
-      return { html, stat };
-    }
-
-    if (toPhysicalRegex.exec(line) !== null) {
-      const html = `<div class="stat-container"><p class="stat-to-physical">${line}</p></div>`;
-      return { html, stat };
-    }
-
-    if (toLightningRegex.exec(line) !== null) {
-      const html = `<div class="stat-container"><p class="stat-to-lightning">${line}</p></div>`;
-      return { html, stat };
-    }
-
-    if (unholyStatRegex.exec(line) !== null) {
-      const html = `<div class="stat-container"><p class="stat-unholy">${line}</p></div>`;
-      return { html, stat };
-    }
-
-    if (unbreakableRegex.exec(line) !== null) {
-      const html = `<div class="stat-container"><p class="stat-unbreakable">${line}</p></div>`;
-      return { html, stat };
-    }
-
+    
     let html = '<div class="stat-container">';
     for (const token of tokens) {
-      switch (token.type) {
-        case "value":
-          html += `<p class="stat-description">${token.content}</p>`;
-          break;
-        case "range":
-          html += `<p class="stat-range">${token.content}</p>`;
-          break;
-        default:
-          html += `<p class="stat-description">${token.content}</p>`;
+      if (token.type === "value") {
+        html += `<p class="stat-description">${token.content}</p>`;
+      } else if (token.type === "range") {
+        html += `<p class="stat-range">${token.content}</p>`;
+      } else {
+        html += `<p class="stat-description">${token.content}</p>`;
       }
     }
     html += "</div>";
-
+    
     return { html, stat };
   }
-
+  
   static parseValue(value: string): number {
     return value.includes("%")
       ? parseInt(value.replace("%", ""))
       : parseInt(value);
   }
-}
+}  

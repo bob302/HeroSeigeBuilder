@@ -1,0 +1,22 @@
+{
+  "Item": "Pandemic Shield",
+  "Tier": "B",
+  "Level": "50",
+  "Defense": "84.6058-112",
+  "Block": "55",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "15% Chance after Blocking [Poison Nova] Level 24",
+      "class": "stat-spell"
+    },
+    "+[160-180]% Enhanced Defense",
+    "+15% Increased Chance of Blocking",
+    "+[20-30] to Vitality",
+    "+[250-350]% of Damage Returned to the Attacker",
+    "+[40-75]% to Poison Resistance",
+    "Poison Length Reduced by 25%"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "Item": "Gladiator King's Belt",
+  "Tier": "SS",
+  "Level": "100",
+  "Defense": "110.9086-136",
+  "Type": "Belt",
+  "Size": "2x1",
+  "Rarity": "Heroic",
+  "Stats": [
+    "+[65-100]% Enhanced Defense",
+    "+2 to All Skills",
+    "Extra Damage to Bleeding Monsters [40-50]%",
+    "+[10-20] to All Attributes",
+    "+15% to All Resistances",
+    "Belt Slots: 5"
+  ]
+}

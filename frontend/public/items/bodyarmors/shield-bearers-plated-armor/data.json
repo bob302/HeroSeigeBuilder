@@ -1,0 +1,18 @@
+{
+  "Item": "Shield Bearer's Plated Armor",
+  "Tier": "A",
+  "Level": "57",
+  "Defense": "357.50299-416",
+  "Type": "Body Armor",
+  "Size": "2x3",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[130-160]% Enhanced Defense",
+    "+8% Increased Attack Rating",
+    "+20 to Strength",
+    "+10 to Vitality",
+    "Replenish Life 25%",
+    "+[35-50] to Life",
+    "Socketed (0-3)"
+  ]
+}

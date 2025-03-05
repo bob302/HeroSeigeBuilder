@@ -1,0 +1,18 @@
+{
+  "Item": "Finger of Despair",
+  "Tier": "SS",
+  "Level": "100",
+  "Type": "Charm",
+  "Size": "2x3",
+  "Rarity": "Unholy",
+  "Stats": [
+    "+3 to All Skills",
+    "Unholy Stat",
+    "Unholy Stat",
+    "Unholy Stat",
+    "+[25-50] to All Attributes",
+    "-50% to All Resistances",
+    "-10% to Maximum All Resists",
+    "Unbreakable"
+  ]
+}

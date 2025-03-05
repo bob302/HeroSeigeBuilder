@@ -1,0 +1,15 @@
+{
+  "Item": "Water Melon",
+  "Tier": "SS",
+  "Level": "94",
+  "Type": "Charm",
+  "Size": "2x2",
+  "Rarity": "Angelic",
+  "Stats": [
+    "+[4-6] to Cold Skills",
+    "+1337 to Additive Cold Damage",
+    "+1337 to Cold Skill Damage",
+    "Cold Skill Damage increased by [15-25]%",
+    "+[15-20]% to Cold Resistance"
+  ]
+}

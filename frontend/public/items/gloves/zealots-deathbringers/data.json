@@ -1,0 +1,16 @@
+{
+  "Item": "Zealot's Deathbringers",
+  "Tier": "S",
+  "Level": "78",
+  "Defense": "55.0042-69",
+  "Type": "Gloves",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[60-80]% Enhanced Defense",
+    "+1 to Arcane Skills",
+    "+[20-30]% Faster Cast Rate",
+    "Arcane Skill Damage increased by [15-25]%",
+    "Replenish Mana 15%"
+  ]
+}

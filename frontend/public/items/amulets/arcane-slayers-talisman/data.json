@@ -1,0 +1,14 @@
+{
+  "Item": "Arcane Slayer's Talisman",
+  "Tier": "D",
+  "Level": "14",
+  "Type": "Amulet",
+  "Size": "1x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+1 to All Skills",
+    "+[4-8] to Energy",
+    "Replenish Mana 10%",
+    "Magic Damage Taken Reduced by 2%"
+  ]
+}

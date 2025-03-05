@@ -1,0 +1,24 @@
+{
+  "Item": "Book of Cold Death",
+  "Tier": "S",
+  "Level": "92",
+  "Damage": "45.0042-48",
+  "APS": "1.751.75",
+  "DPS": "79.0074-84",
+  "Type": "Book",
+  "TwoHanded": false,
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[3-4] to Cold Skills",
+    {
+      "stat": "+[5-8] to [Icicles]",
+      "class": "stat-spell"
+    },
+    "+30% Faster Cast Rate",
+    "+[6-10] Mana per second",
+    "Cold Skill Damage increased by [40-50]%",
+    "-[10-20]% to Enemy Cold Resistance",
+    "Socketed (0-2)"
+  ]
+}

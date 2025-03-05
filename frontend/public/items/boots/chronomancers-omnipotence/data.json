@@ -1,0 +1,15 @@
+{
+  "Item": "Chronomancer's Omnipotence",
+  "Tier": "A",
+  "Level": "60",
+  "Defense": "68.7051-87",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[50-80]% Enhanced Defense",
+    "+30% Increased Movement Speed",
+    "Cooldown Recovery Increased by [10-20]%",
+    "+[10-15]% to All Resistances"
+  ]
+}

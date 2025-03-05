@@ -1,0 +1,24 @@
+{
+  "Item": "Eagle's Claw",
+  "Tier": "SS",
+  "Level": "92",
+  "Type": "Amulet",
+  "Size": "1x2",
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "7% Chance when Attacking [Live by the Sword] Level 18",
+      "class": "stat-spell"
+    },
+    "+[50-75]% Enhanced Damage",
+    {
+      "stat": "+[7-12] to [Enraged Mania]",
+      "class": "stat-spell"
+    },
+    "+[25-40]% Increased Attack Speed",
+    "+[12-20]% Chance for a Deadly Blow",
+    "+8% Life stolen per Hit",
+    "+[12-20]% of target Defense ignored",
+    "Socketed (0-1)"
+  ]
+}

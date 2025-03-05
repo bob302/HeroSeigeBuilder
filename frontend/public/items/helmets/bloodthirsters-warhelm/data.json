@@ -1,0 +1,16 @@
+{
+  "Item": "Bloodthirster's Warhelm",
+  "Tier": "C",
+  "Level": "25",
+  "Defense": "23.8016-32",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[30-60]% Enhanced Defense",
+    "+20% Chance for a Crushing Blow",
+    "+5% Life stolen per Hit",
+    "+[50-150] to Life",
+    "+12 Life After each Kill"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "Item": "Nikita's KJ-33 Helmet",
+  "Tier": "SS",
+  "Level": "94",
+  "Defense": "206.75175-239",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Heroic",
+  "Stats": [
+    "+[150-165]% Enhanced Defense",
+    "+[1-2] to All Skills",
+    "+3 to Physical Skills",
+    "+40% Chance for a Deadly Blow",
+    "+[25-35]% Increased Attack Rating",
+    "+[8-13]% Life stolen per Hit",
+    "+[20-30]% of target Defense ignored",
+    "Attack Damage increased by [25-50]%"
+  ]
+}

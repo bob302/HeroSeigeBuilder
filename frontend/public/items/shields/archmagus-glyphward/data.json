@@ -1,0 +1,17 @@
+{
+  "Item": "Archmagus Glyphward",
+  "Tier": "C",
+  "Level": "20",
+  "Defense": "25.8021-31",
+  "Block": "25",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[50-70]% Enhanced Defense",
+    "+10 to Energy",
+    "+[5-15] to Intelligence",
+    "Replenish Life [10-15]%",
+    "+125 to Life"
+  ]
+}

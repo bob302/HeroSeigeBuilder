@@ -1,0 +1,35 @@
+{
+  "Tier": "S",
+  "Level": "100",
+  "Size": "2x3",
+  "Item": "Babylon's Fall",
+  "Rarity": "Runeword",
+  "Type": "Body Armor",
+  "Bases": [
+    "Body Armor"
+  ],
+  "Runes": [
+    "Drax",
+    "Jol",
+    "Flo",
+    "Ber"
+  ],
+  "Stats": [
+    "+407% Enhanced Defense [400-425]",
+    "+4 to All Skills",
+    "Potion Cooldown Recovery Increased by 15%",
+    "+8% Chance for a Crushing Blow",
+    "+1 to Projectile Speed",
+    "to Strength +[18-30]",
+    "Replenish Life [250-300]%",
+    "Replenish Mana [250-300]%",
+    "All Damage Taken Reduced by 15%",
+    "+1% Magic Find (Based on Level)",
+    "+2% to Maximum All Resists",
+    "+[15-25]% Extra Gold Dropped From Kills",
+    "+[150-200]% Increased Magic Find",
+    "Cannot be Frozen",
+    "Unbreakable",
+    "Socketed (4)"
+  ]
+}

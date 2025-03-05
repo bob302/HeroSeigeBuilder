@@ -1,0 +1,23 @@
+{
+  "Item": "Dragon Knight's Flail",
+  "Tier": "S",
+  "Level": "76",
+  "Damage": "175.60154-198",
+  "APS": "1.451.45",
+  "DPS": "255.00223-287",
+  "Type": "Mace",
+  "TwoHanded": false,
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[220-280]% Enhanced Damage",
+    "+3 to All Skills",
+    "+[35-40]% Faster Cast Rate",
+    "+[4-8]% Mana stolen per Hit",
+    "+[1110-1225] to Additive Arcane Damage",
+    "Replenish Life 20%",
+    "Mana Increased by [10-15]%",
+    "+[25-35]% to All Resistances",
+    "Socketed (2)"
+  ]
+}

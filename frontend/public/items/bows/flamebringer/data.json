@@ -1,0 +1,27 @@
+{
+  "Item": "Flamebringer",
+  "Tier": "S",
+  "Level": "84",
+  "Damage": "402.00297-507",
+  "APS": "1.751.75",
+  "DPS": "704.00520-888",
+  "Type": "Bow",
+  "TwoHanded": true,
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "[5-10]% Chance when Striking [Explosive Bullets] Level [15-25]",
+      "class": "stat-spell"
+    },
+    "+[350-550]% Enhanced Damage",
+    "+40% Increased Movement Speed",
+    "+40% Increased Attack Speed",
+    "+6% Mana stolen per Hit",
+    "+30 to Dexterity",
+    "+[1150-1350] to Additive Fire Damage",
+    "Fire Skill Damage increased by 15%",
+    "-25% to Enemy Fire Resistance",
+    "Socketed (2)"
+  ]
+}

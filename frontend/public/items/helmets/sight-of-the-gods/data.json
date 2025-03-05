@@ -1,0 +1,22 @@
+{
+  "Item": "Sight Of The Gods",
+  "Tier": "SS",
+  "Level": "98",
+  "Defense": "150.00108-192",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Heroic",
+  "Stats": [
+    "+[80-140]% Enhanced Defense",
+    "+[2-3] to All Skills",
+    {
+      "stat": "+1 to [Teleport]",
+      "class": "stat-spell"
+    },
+    "+[15-20] to Energy",
+    "+15 to Vitality",
+    "Magic Skill Damage increased by [20-45]%",
+    "Magic Damage Taken Reduced by [7-15]%",
+    "Half Freeze Duration"
+  ]
+}

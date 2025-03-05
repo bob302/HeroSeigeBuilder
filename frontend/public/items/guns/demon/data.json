@@ -1,0 +1,23 @@
+{
+  "Item": "Demon",
+  "Tier": "S",
+  "Level": "58",
+  "Damage": "293.40234-354",
+  "APS": "2.182.18",
+  "DPS": "640.00509-771",
+  "Type": "Gun",
+  "TwoHanded": false,
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[430-580]% Enhanced Damage",
+    "+25% Increased Attack Speed",
+    "+15% Chance for a Crushing Blow",
+    "+3% Increased Attack Rating",
+    "+[825-880] to Additive Physical Damage",
+    "+35% of target Defense ignored",
+    "+25 to Dexterity",
+    "+8 Life After each Kill",
+    "+5 Mana After each Kill"
+  ]
+}

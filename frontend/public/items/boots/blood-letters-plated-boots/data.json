@@ -1,0 +1,16 @@
+{
+  "Item": "Blood-letter's Plated Boots",
+  "Tier": "A",
+  "Level": "57",
+  "Defense": "68.7051-87",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[50-80]% Enhanced Defense",
+    "+[20-30]% Increased Movement Speed",
+    "Extra Damage to Bleeding Monsters [8-20]%",
+    "+[15-20] to Vitality",
+    "+[4-8] Life After each Kill"
+  ]
+}

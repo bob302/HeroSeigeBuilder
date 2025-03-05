@@ -1,0 +1,20 @@
+{
+  "Item": "Thunder Caller's Sash",
+  "Tier": "S",
+  "Level": "82",
+  "Defense": "90.8073-109",
+  "Type": "Belt",
+  "Size": "2x1",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[40-60]% Enhanced Defense",
+    {
+      "stat": "+[2-4] to [Symphony of Thunder]",
+      "class": "stat-spell"
+    },
+    "+[15-25] to Intelligence",
+    "+40% Defense vs Missiles",
+    "+[5-15]% of Damage Taken goes to Mana",
+    "Belt Slots: 5"
+  ]
+}

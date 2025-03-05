@@ -1,0 +1,16 @@
+{
+  "Item": "Sheep King's Crown",
+  "Tier": "S",
+  "Level": "90",
+  "Defense": "70.0060-80",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+1 to All Skills",
+    "Mana Increased by [2-5]%",
+    "+15% of Damage Returned to the Attacker",
+    "+[25-35]% of Damage Taken goes to Mana",
+    "Cannot be Frozen"
+  ]
+}

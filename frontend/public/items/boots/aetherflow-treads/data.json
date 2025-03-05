@@ -1,0 +1,16 @@
+{
+  "Item": "Aetherflow Treads",
+  "Tier": "D",
+  "Level": "8",
+  "Defense": "5.053-8",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[15-30]% Enhanced Defense",
+    "+[10-15]% Increased Movement Speed",
+    "+[20-40] to Additive Lightning Damage",
+    "+[20-30] to Life",
+    "+[5-15]% to Lightning Resistance"
+  ]
+}

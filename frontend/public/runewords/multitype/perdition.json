@@ -1,0 +1,46 @@
+{
+  "Tier": "S",
+  "Level": "67",
+  "Size": "2x3",
+  "Item": "Perdition",
+  "Rarity": "Runeword",
+  "Type": "MultiType",
+  "Bases": [
+    "Sword",
+    "Axe",
+    "Polearm",
+    "Mace",
+    "Bow",
+    "Gun",
+    "Chainsaw"
+  ],
+  "Runes": [
+    "Hel",
+    "Qi",
+    "Um",
+    "Xo",
+    "Drax"
+  ],
+  "Stats": [
+    "Attack Damage: 400 [60]",
+    "Attacks per Second: 2.17 [1.50]",
+    {
+      "stat": "5% Chance when Striking [Volcano] Level 30",
+      "class": "stat-spell"
+    },
+    "+[530-670]% Enhanced Damage",
+    "+1 to All Skills",
+    "+45% Increased Attack Speed",
+    "Cooldown Recovery Increased by 4%",
+    "+25% Chance for a Deadly Blow",
+    "+25% Chance to Open Wounds",
+    "+[7-25] to Strength",
+    "Attack Damage increased by 20%",
+    "-[40-60]% to Enemy Cold Resistance",
+    "+20% to All Resistances",
+    "Cannot be Frozen",
+    "Unbreakable",
+    "Holy Freeze Aura Level [10-18] (Holder Only)",
+    "Sacketed (5)"
+  ]
+}

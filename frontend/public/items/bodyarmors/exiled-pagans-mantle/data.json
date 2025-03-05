@@ -1,0 +1,17 @@
+{
+  "Item": "Exiled Pagan's Mantle",
+  "Tier": "SS",
+  "Level": "85",
+  "Defense": "1164.50961-1368",
+  "Type": "Body Armor",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[210-260]% Enhanced Defense",
+    "+[2-4] to All Skills",
+    "+[40-60]% Faster Cast Rate",
+    "+[25-35] to Energy",
+    "Replenish Mana 75%",
+    "Mana Increased by [15-25]%"
+  ]
+}

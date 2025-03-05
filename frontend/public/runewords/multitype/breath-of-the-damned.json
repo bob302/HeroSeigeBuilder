@@ -1,0 +1,47 @@
+{
+  "Tier": "S",
+  "Level": "69",
+  "Size": "2x3",
+  "Item": "Breath of The Damned",
+  "Rarity": "Runeword",
+  "Type": "MultiType",
+  "Bases": [
+    "Sword",
+    "Axe",
+    "Polearm",
+    "Mace",
+    "Bow",
+    "Gun",
+    "Chainsaw"
+  ],
+  "Runes": [
+    "Vex",
+    "Hel",
+    "Ol",
+    "Old",
+    "Zed",
+    "Eth"
+  ],
+  "Stats": [
+    "Attack Damage: 687 [79]",
+    "Attacks per Second: 1.75 [1.25]",
+    {
+      "stat": "30% Chance after each Kill [Poison Nova] Level 54",
+      "class": "stat-spell"
+    },
+    "+[650-800]% Enhanced Damage",
+    "+[2-4] to All Skills",
+    "+40% Increased Attack Speed",
+    "Cooldown Recovery Increased by 4%",
+    "+50 to Attack Rating",
+    "+[8-15]% Life stolen per Hit",
+    "+7% Mana stolen per Hit",
+    "+10% of target Defense ignored",
+    "+[40-60] to All Attributes",
+    "Magic Skill Damage increased by 8%",
+    "+[200-350]% of Damage Returned to the Attacker",
+    "Attacks can hit multiple enemies",
+    "Unbreakable",
+    "Socketed (6)"
+  ]
+}

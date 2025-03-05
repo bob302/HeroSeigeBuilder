@@ -1,0 +1,17 @@
+{
+  "Item": "Ashen Belt",
+  "Tier": "A",
+  "Level": "64",
+  "Defense": "69.0054-84",
+  "Type": "Belt",
+  "Size": "2x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[50-75]% Enhanced Defense",
+    "+[340-360] to Additive Fire Damage",
+    "+200 to Life (Based on Level)",
+    "+[35-50]% to Fire Resistance",
+    "+10% to Maximum Fire Resist",
+    "Belt Slots: 4"
+  ]
+}

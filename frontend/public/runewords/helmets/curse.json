@@ -1,0 +1,29 @@
+{
+  "Tier": "S",
+  "Level": "52",
+  "Size": "2x3",
+  "Item": "Curse",
+  "Rarity": "Runeword",
+  "Type": "Helmet",
+  "Bases": [
+    "Helmet"
+  ],
+  "Runes": [
+    "Sur",
+    "Mal",
+    "Um"
+  ],
+  "Stats": [
+    "+[375-625]% Enhanced Defense",
+    "+3 to Poison Skills",
+    "Random Skill Element",
+    "+[8-15] to Digest Souls",
+    "+[250-1000] to Poison Skill Damage",
+    "Magic Skill Damage increased by [20-40]%",
+    "Mana Increased by 10%",
+    "Magic Damage Taken Reduced by 7%",
+    "+[10-15]% to All Resistances",
+    "Unbreakable",
+    "Socketed (3)"
+  ]
+}

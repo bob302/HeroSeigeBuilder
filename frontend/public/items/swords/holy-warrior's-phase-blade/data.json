@@ -1,0 +1,24 @@
+{
+  "Item": "Holy Warrior's Phase Blade",
+  "Tier": "A",
+  "Level": "66",
+  "Damage": "119.60103-137",
+  "APS": "1.751.62-1.87",
+  "DPS": "211.00166-256",
+  "Type": "Sword",
+  "Size": "2x3",
+  "TwoHanded": false,
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "10% Chance when Striking [Holy Hammer] Level 27",
+      "class": "stat-spell"
+    },
+    "+[220-280]% Enhanced Damage",
+    "+[30-50]% Increased Attack Speed",
+    "+[185-220] to Attack Rating",
+    "+[3-5] to All Attributes",
+    "+[475-585] to Additive Arcane Damage",
+    "Arcane Skill Damage increased by [8-20]%"
+  ]
+}

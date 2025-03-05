@@ -1,0 +1,19 @@
+{
+  "Item": "Gladiator's Wall",
+  "Tier": "A",
+  "Level": "48",
+  "Defense": "129.9099-161",
+  "Block": "55",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[90-130]% Enhanced Defense",
+    "+5% Increased Critical Strike Chance",
+    "+4% Mana stolen per Hit",
+    "+[15-30]% Increased Critical Strike Damage",
+    "+20 to Strength",
+    "+20 to Dexterity",
+    "+75 to Damage (Based on Level)"
+  ]
+}

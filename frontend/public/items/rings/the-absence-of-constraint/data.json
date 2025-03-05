@@ -1,0 +1,13 @@
+{
+  "Item": "The Absence of Constraint",
+  "Tier": "A",
+  "Level": "54",
+  "Type": "Ring",
+  "Size": "1x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[10-25]% Faster Cast Rate",
+    "Arcane Skill Damage increased by [10-18]%",
+    "+[10-15]% of Damage Taken goes to Mana"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "Item": "Viking's Sacred Boots",
+  "Tier": "A",
+  "Level": "58",
+  "Defense": "68.7051-87",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[50-80]% Enhanced Defense",
+    "+[25-40]% Increased Movement Speed",
+    "+10% Chance for a Deadly Blow",
+    "+25 to Strength",
+    "+15 to Dexterity"
+  ]
+}

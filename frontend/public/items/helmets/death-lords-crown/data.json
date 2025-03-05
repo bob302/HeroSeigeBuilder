@@ -1,0 +1,16 @@
+{
+  "Item": "Death Lord's Crown",
+  "Tier": "A",
+  "Level": "57",
+  "Defense": "99.9076-125",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[80-130]% Enhanced Defense",
+    "+[2-3] to Arcane Skills",
+    "+15 to Energy",
+    "+15 to Intelligence",
+    "Socketed (3)"
+  ]
+}

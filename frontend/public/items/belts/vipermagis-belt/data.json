@@ -1,0 +1,17 @@
+{
+  "Item": "Vipermagi's Belt",
+  "Tier": "B",
+  "Level": "40",
+  "Defense": "36.2026-47",
+  "Type": "Belt",
+  "Size": "2x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[30-45]% Enhanced Defense",
+    "+[10-20]% Faster Cast Rate",
+    "+10 to Energy",
+    "Replenish Mana 15%",
+    "+15% to All Resistances",
+    "Belt Slots: 4"
+  ]
+}

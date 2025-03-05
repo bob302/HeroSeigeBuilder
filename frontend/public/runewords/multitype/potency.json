@@ -1,0 +1,38 @@
+{
+  "Tier": "S",
+  "Level": "65",
+  "Size": "2x3",
+  "Item": "Potency",
+  "Rarity": "Runeword",
+  "Type": "MultiType",
+  "Bases": [
+    "Claw",
+    "Bow",
+    "Gun"
+  ],
+  "Runes": [
+    "Ymn",
+    "Nut",
+    "Jah",
+    "Xo"
+  ],
+  "Stats": [
+    "Attack Damage: 633 [78]",
+    "Attacks per Second: 1.76 [1.35]",
+    {
+      "stat": "15% Chance when Striking [Blizzard] Level 30",
+      "class": "stat-spell"
+    },
+    "+[640-820]% Enhanced Damage",
+    "+30% Increased Attack Speed",
+    "+25% Chance for a Deadly Blow",
+    "+7% Life stolen per Hit",
+    "+[8-30] to Intelligence",
+    "Cold Skill Damage increased by [35-45]%",
+    "-50% to Enemy Cold Resistance",
+    "Life Increased by 10%",
+    "Unbreakable",
+    "Holy Freeze Aura Level [40-58] (Holder Only)",
+    "Socketed (4)"
+  ]
+}

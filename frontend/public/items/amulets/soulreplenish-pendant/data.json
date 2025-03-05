@@ -1,0 +1,14 @@
+{
+  "Item": "Soulreplenish Pendant",
+  "Tier": "D",
+  "Level": "21",
+  "Type": "Amulet",
+  "Size": "1x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+15 to Energy",
+    "+20 to Vitality",
+    "Replenish Life [15-30]%",
+    "Replenish Mana [20-35]%"
+  ]
+}

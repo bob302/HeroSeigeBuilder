@@ -1,0 +1,34 @@
+{
+  "Tier": "S",
+  "Level": "65",
+  "Size": "2x3",
+  "Item": "Deus Ex Machina",
+  "Rarity": "Runeword",
+  "Type": "MultiType",
+  "Bases": [
+    "Bow",
+    "Gun"
+  ],
+  "Runes": [
+    "Jah",
+    "Qi",
+    "Tor"
+  ],
+  "Stats": [
+    "Attack Damage: 646 [71]",
+    "Attacks per Second: 1.80",
+    {
+      "stat": "30% Chance when Striking [Trigger Finger] Level 58",
+      "class": "stat-spell"
+    },
+    "+[760-860]% Enhanced Damage",
+    "+[3-4] to All Skills",
+    "+[100-200] to Attack Rating",
+    "+[15-30] to All Attributes",
+    "Attack Damage increased by 20%",
+    "+2 Mana After each Kill",
+    "Life Increased by 10%",
+    "Unbreakable",
+    "Socketed (3)"
+  ]
+}

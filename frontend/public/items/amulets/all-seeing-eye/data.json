@@ -1,0 +1,15 @@
+{
+  "Item": "All Seeing Eye",
+  "Tier": "S",
+  "Level": "97",
+  "Type": "Amulet",
+  "Size": "1x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+3 to All Skills",
+    "Replenish Mana 50%",
+    "Mana Increased by [3-5]%",
+    "+5 to Light Radius",
+    "+[35-50]% Increased Magic Find"
+  ]
+}

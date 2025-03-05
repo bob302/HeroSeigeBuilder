@@ -1,0 +1,21 @@
+{
+  "Item": "Staff of Nether Flame",
+  "Tier": "B",
+  "Level": "40",
+  "Damage": "33.0028-38",
+  "APS": "1.501.5",
+  "DPS": "49.5042-57",
+  "Type": "Staff",
+  "TwoHanded": true,
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    "[Ominous Aura] Level [8-16]",
+    "+[5-50]% Faster Cast Rate",
+    "+15 to Vitality",
+    "+25 to All Attributes",
+    "Poison Skill Damage increased by [35-50]%",
+    "Fire Skill Damage increased by [35-50]%",
+    "+40 Mana After each Kill"
+  ]
+}

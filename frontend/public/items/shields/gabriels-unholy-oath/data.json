@@ -1,0 +1,27 @@
+{
+  "Item": "Gabriel's Unholy Oath",
+  "Tier": "SS",
+  "Level": "100",
+  "Defense": "3107.502640-3575",
+  "Block": "75",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Unholy",
+  "Stats": [
+    "+[450-550]% Enhanced Defense",
+    "+[1-2] to Summon Skills",
+    "+[2-3] to All Skills",
+    {
+      "stat": "+1 to [Summon Heretic]",
+      "class": "stat-spell"
+    },
+    "+1 to Summon Amount",
+    "Summon Damage Increased by [20-40]%",
+    "+[20-40] to Energy",
+    "+25 to Intelligence",
+    "+500 to Life (Based on Level)",
+    "+[30-40]% to All Resistances",
+    "Unbreakable",
+    "Socketed (4-6)"
+  ]
+}

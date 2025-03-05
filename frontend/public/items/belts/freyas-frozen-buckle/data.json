@@ -1,0 +1,24 @@
+{
+  "Item": "Freya's Frozen Buckle",
+  "Tier": "SS",
+  "Level": "100",
+  "Defense": "202.50165-240",
+  "Type": "Belt",
+  "Size": "2x1",
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "14% Chance when Casting [Frozen Boulder] Level 76",
+      "class": "stat-spell"
+    },
+    "+[120-140]% Enhanced Defense",
+    "+[2-4] to Cold Skills",
+    "+20 to Energy",
+    "+20 to Intelligence",
+    "Cold Skill Damage increased by [15-25]%",
+    "Replenish Mana [25-40]%",
+    "+[10-15]% Cold Damage Absorbed",
+    "Cannot be Frozen",
+    "Belt Slots: 5"
+  ]
+}

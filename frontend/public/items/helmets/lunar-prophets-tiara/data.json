@@ -1,0 +1,17 @@
+{
+  "Item": "Lunar Prophet's Tiara",
+  "Tier": "A",
+  "Level": "62",
+  "Defense": "125.0094-157",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[80-130]% Enhanced Defense",
+    "+[1-2] to Cold Skill Damage",
+    "+[10-15] to Intelligence",
+    "+35 to Mana",
+    "+[6-12] Mana After each Kill",
+    "+[1-5]% Cold Damage Absorbed"
+  ]
+}

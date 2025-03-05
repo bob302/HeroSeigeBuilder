@@ -1,0 +1,15 @@
+{
+  "Item": "Raven's Claw",
+  "Tier": "S",
+  "Level": "88",
+  "Type": "Amulet",
+  "Size": "1x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[10-20]% Increased Critical Strike Chance",
+    "+[20-45]% Increased Critical Strike Damage",
+    "+[10-20]% Chance to Open Wounds",
+    "+[15-25] to Strength",
+    "+10 to Dexterity"
+  ]
+}

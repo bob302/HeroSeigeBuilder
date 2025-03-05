@@ -1,0 +1,17 @@
+{
+  "Item": "Engineer's Toolbelt",
+  "Tier": "S",
+  "Level": "82",
+  "Defense": "97.2076-119",
+  "Type": "Belt",
+  "Size": "2x1",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[45-75]% Enhanced Defense",
+    "+10% Increased Movement Speed",
+    "+20% Faster Cast Rate",
+    "Arcane Skill Damage increased by [12-20]%",
+    "Explosion area of effect increased by [20-40]%",
+    "Belt Slots: 5"
+  ]
+}

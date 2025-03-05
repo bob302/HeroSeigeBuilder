@@ -80,7 +80,7 @@ enum SideNavAction {
   ClearCharmInventory = "clear-charm-inventory",
   ClearEquipment = "clear-equipment",
   UnlockCharmTopSlot = "unlock-top-slot",
-  UnlockCharmBottomSlot = "unlock-bottom-slot",
+  UnlockCharmBottomSlot = "unlock-bottom-slot"
 }
 
 @Component({

@@ -1,0 +1,15 @@
+{
+  "Item": "Arcane Pumpkin",
+  "Tier": "SS",
+  "Level": "94",
+  "Type": "Charm",
+  "Size": "2x2",
+  "Rarity": "Angelic",
+  "Stats": [
+    "+[4-6] to Arcane Skills",
+    "+1337 to Additive Arcane Damage",
+    "+1337 to Arcane Skill Damage",
+    "Arcane Skill Damage increased by [15-25]%",
+    "+[40-50]% to Arcane Resistance"
+  ]
+}

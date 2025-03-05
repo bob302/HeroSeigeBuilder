@@ -1,0 +1,14 @@
+{
+  "Item": "Champion's Medal of Valor",
+  "Tier": "S",
+  "Level": "84",
+  "Type": "Amulet",
+  "Size": "1x1",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[15-20] to Vitality",
+    "Replenish Life [8-20]%",
+    "+[40-60]% of Damage Returned to the Attacker",
+    "+[10-30]% to All Resistances"
+  ]
+}

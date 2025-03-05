@@ -1,0 +1,14 @@
+{
+  "Item": "Amulet of Colosseum",
+  "Tier": "SS",
+  "Level": "100",
+  "Type": "Amulet",
+  "Size": "2x2",
+  "Rarity": "Heroic",
+  "Stats": [
+    "+[2-4] to All Skills",
+    "+[40-80]% Faster Cast Rate",
+    "+15 to Energy",
+    "Socketed (1)"
+  ]
+}

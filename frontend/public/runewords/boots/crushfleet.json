@@ -1,0 +1,30 @@
+{
+  "Tier": "S",
+  "Level": "52",
+  "Size": "2x3",
+  "Item": "Crushfleet",
+  "Rarity": "Runeword",
+  "Type": "Boots",
+  "Bases": [
+    "Boots"
+  ],
+  "Runes": [
+    "Ber",
+    "Ber",
+    "Xo"
+  ],
+  "Stats": [
+    "7% Chance when Striking [Agility] Level 17",
+    "+[220-300]% Enhanced Defense",
+    "+[1-3] to All Skills",
+    "+[2-3] to Physical Skills",
+    "+46% Increased Movement Speed",
+    "+25% Chance for a Deadly Blow",
+    "+[4-14]% Chance for a Crushing Blow",
+    "+[200-400] to Attack Rating",
+    "+[7-15]% Mana stolen per Hit",
+    "+25% of target Defense ignored",
+    "Unbreakable",
+    "Socketed (3)"
+  ]
+}

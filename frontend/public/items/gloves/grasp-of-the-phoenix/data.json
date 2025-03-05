@@ -1,0 +1,19 @@
+{
+  "Item": "Grasp of the Phoenix",
+  "Tier": "SS",
+  "Level": "100",
+  "Defense": "108.2581-136",
+  "Type": "Gloves",
+  "Size": "2x2",
+  "Rarity": "Heroic",
+  "Stats": [
+    "+[75-100]% Enhanced Defense",
+    "+[1-2] to All Skills",
+    "+[2-5] to Fire Skills",
+    "+[20-40]% Faster Cast Rate",
+    "+8 Mana per second",
+    "Extra Damage to Burning Monsters [10-30]%",
+    "Fire Skill Damage increased by [20-35]%",
+    "+[10-15]% Fire Damage Absorbed"
+  ]
+}

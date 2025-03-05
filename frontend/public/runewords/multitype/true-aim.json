@@ -1,0 +1,38 @@
+{
+  "Tier": "S",
+  "Level": "65",
+  "Size": "2x3",
+  "Item": "True Aim",
+  "Rarity": "Runeword",
+  "Type": "MultiType",
+  "Bases": [
+    "Bow",
+    "Gun"
+  ],
+  "Runes": [
+    "Jah",
+    "Xo",
+    "Mal",
+    "Gul"
+  ],
+  "Stats": [
+    "Attack Damage: 734 [74]",
+    "Attacks per Second: 1.35",
+    {
+      "stat": "35% Chance when Struck [Amplify damage] Level 60",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "Cast when Attacking [Bone Spear] Level 76",
+      "class": "stat-spell"
+    },
+    "+[760-940]% Enhanced Damage",
+    "+25% Chance for a Deadly Blow",
+    "+45% Increased Attack Rating",
+    "+[80-300] to Additive Physical Damage",
+    "Life Increased by 10%",
+    "Magic Damage Taken Reduced by 7%",
+    "Unbreakable",
+    "Socketed (4)"
+  ]
+}

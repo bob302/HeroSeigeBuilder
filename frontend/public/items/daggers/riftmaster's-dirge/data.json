@@ -1,0 +1,26 @@
+{
+  "Item": "Riftmaster's Dirge",
+  "Tier": "SS",
+  "Level": "92",
+  "Damage": "231.30215-248",
+  "APS": "2.702.52-2.88",
+  "DPS": "628.00541-715",
+  "Type": "Dagger",
+  "TwoHanded": false,
+  "Size": "1x3",
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "10% Chance when Striking [Age Proliferation] Level 75",
+      "class": "stat-spell"
+    },
+    "+[270-300]% Enhanced Damage",
+    "+[30-40]% Increased Movement Speed",
+    "+[40-60]% Increased Attack Speed",
+    "+25% Chance for a Deadly Blow",
+    "+75% of target Defense ignored",
+    "+[850-875] to Additive Arcane Damage",
+    "-[15-30]% to Enemy Arcane Resistance",
+    "Socketed (0-2)"
+  ]
+}

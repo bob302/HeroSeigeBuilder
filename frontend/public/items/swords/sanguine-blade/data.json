@@ -1,0 +1,23 @@
+{
+  "Item": "Sanguine Blade",
+  "Tier": "C",
+  "Level": "30",
+  "Damage": "46.2538-55",
+  "APS": "2.061.97-2.14",
+  "DPS": "96.0074-118",
+  "Type": "Sword",
+  "Size": "2x3",
+  "TwoHanded": false,
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[150-175]% Enhanced Damage",
+    "+[20-30]% Increased Attack Speed",
+    "+5% Increased Attack Rating",
+    "+[6-10]% Life stolen per Hit",
+    "+6 to Vitality",
+    "Replenish Life 8%",
+    "+15 to Life",
+    "+8 Life After each Kill",
+    "Socketed (2)"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "Tier": "S",
+  "Level": "57",
+  "Size": "2x3",
+  "Item": "Kogarasumaru",
+  "Rarity": "Runeword",
+  "Type": "MultiType",
+  "Bases": [
+    "Sword",
+    "Axe",
+    "Polearm",
+    "Mace",
+    "Bow",
+    "Gun",
+    "Chainsaw"
+  ],
+  "Runes": [
+    "Um",
+    "Gul",
+    "Qi",
+    "Vex",
+    "Old"
+  ],
+  "Stats": [
+    "Attack Damage: 340 [55]",
+    "Attacks per Second: 1.50",
+    {
+      "stat": "5% Chance when Striking [Explosive Kunai] Level 29",
+      "class": "stat-spell"
+    },
+    "+[420-570]% Enhanced Damage",
+    "+1 to All Skills",
+    "+20% Chance for a Crushing Blow",
+    "+15% Increased Attack Rating",
+    "+5% Life stolen per Hit",
+    "+7% Mana stolen per Hit",
+    "+[150-300] to Additive Fire Damage",
+    "Attack Damage increased by 20%",
+    "+20% to All Resistances",
+    "Unbreakable",
+    "Socketed (5)"
+  ]
+}

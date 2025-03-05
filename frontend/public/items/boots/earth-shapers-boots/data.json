@@ -1,0 +1,16 @@
+{
+  "Item": "Earth Shaper's Boots",
+  "Tier": "A",
+  "Level": "56",
+  "Defense": "68.7051-87",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[50-80]% Enhanced Defense",
+    "+[20-30]% Increased Movement Speed",
+    "Cooldown Recovery Increased by [5-10]%",
+    "-[7-15]% to Enemy Arcane Resistance",
+    "+20% to All Resistances"
+  ]
+}

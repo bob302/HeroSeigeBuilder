@@ -1,14 +1,15 @@
 <template>
   <div class="socket-wrapper">
-    <img :src="socketImage" class="socket" />
-    <div class="socketable">
-      <img
-        v-if="socketable"
-        :src="socketable.image"
-        class="socketable-image"
-        draggable="false"
-      />
+    <div class="socket-body">
+      <div v-if="!prismatic"class="normal socket"><img src="/img/editor/socket-normal.png"/></div>
+      <div v-else class="prismatic socket"></div>
     </div>
+    <img
+    v-if="socketable"
+    :src="socketable.image"
+    class="socketable-image socket"
+    draggable="false"
+    />
   </div>
 </template>
 
@@ -23,11 +24,6 @@ class Socket extends Vue {
   @Prop({ type: Object, required: false }) socketable!: Socketable;
   @Prop({ type: Boolean, required: true }) prismatic!: boolean;
 
-  get socketImage() {
-    return this.prismatic
-      ? "/img/editor/socket-prismatic.png"
-      : "/img/editor/socket-normal.png";
-  }
 }
 
 export default toNative(Socket)
@@ -41,25 +37,50 @@ export default toNative(Socket)
 }
 
 .socket {
-  width: 2.3rem;
-  height: 2.3rem;
+  width: 19px;
+  height: 19px;
+  scale: 1.8;
   position: relative;
   z-index: 1;
-}
-
-.socketable {
-  position: absolute;
-  top: 60%;
-  left: 60%;
-  transform: translate(-50%, -50%);
-  scale: 1.6;
-  z-index: 2;
-  pointer-events: none;
+  user-select: none;
 }
 
 .socketable-image {
-  width: 1.5rem;
-  height: 1.5rem;
+  position: absolute;
+  top: 0%;
+  left: 0%;
   image-rendering: pixelated;
+  z-index: 2;
+}
+
+.socket-wrapper:has(.socketable-image) .socket-body {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.prismatic {
+  background-image: url("/img/editor/socket-prismatic-spritesheet.png");
+  position: relative;
+  animation: playv 1s steps(4) infinite, playh 1s steps(3) infinite;
+  image-rendering: pixelated;
+  transition: scale 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+@keyframes playv {
+  0% {
+    background-position-y: 0px;
+  }
+  100% {
+    background-position-y: -76px;
+  }
+}
+
+@keyframes playh {
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: -114px;
+  }
 }
 </style>

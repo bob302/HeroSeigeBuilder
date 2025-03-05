@@ -1,0 +1,15 @@
+{
+  "Item": "Aztec Coin",
+  "Tier": "S",
+  "Level": "61",
+  "Type": "Charm",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[1-3] to Light Radius",
+    "+[30-50]% to Poison Resistance",
+    "+[3-5]% to Maximum Poison Resist",
+    "+[5-10]% Extra Gold Dropped From Kills",
+    "Poison Length Reduced by 25%"
+  ]
+}

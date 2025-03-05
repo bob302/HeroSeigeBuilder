@@ -1,0 +1,24 @@
+{
+  "Tier": "S",
+  "Level": "52",
+  "Size": "2x3",
+  "Item": "Delirium Tremens",
+  "Rarity": "Runeword",
+  "Type": "Helmet",
+  "Bases": [
+    "Helmet"
+  ],
+  "Runes": [
+    "Vex",
+    "Vex"
+  ],
+  "Stats": [
+    "+[375-625]% Enhanced Defense",
+    "+[5-8] to All Skills",
+    "+1 to Drunken Delirium",
+    "+14% Mana stolen per Hit",
+    "+[50-250] to Poison Skill Damage",
+    "+[30-60] to Mana",
+    "Socketed (2)"
+  ]
+}

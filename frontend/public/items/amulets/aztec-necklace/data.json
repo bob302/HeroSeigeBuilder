@@ -1,0 +1,15 @@
+{
+  "Item": "Aztec Necklace",
+  "Tier": "S",
+  "Level": "79",
+  "Type": "Amulet",
+  "Size": "1x1",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "-[5-15]% to Enemy Poison Resistance",
+    "+30 to Dexterity (Based on Level)",
+    "+[40-60]% to Poison Resistance",
+    "+5% to Maximum Poison Resist",
+    "Poison Length Reduced by 25%"
+  ]
+}

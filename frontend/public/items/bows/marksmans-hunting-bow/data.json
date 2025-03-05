@@ -1,0 +1,23 @@
+{
+  "Item": "Marksman's Hunting Bow",
+  "Tier": "S",
+  "Level": "64",
+  "Damage": "507.40432-583",
+  "APS": "1.721.65-1.79",
+  "DPS": "878.50713-1044",
+  "Type": "Bow",
+  "TwoHanded": true,
+  "Size": "2x3",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[440-520]% Enhanced Damage",
+    "+20% Increased Movement Speed",
+    "+[10-20]% Increased Attack Speed",
+    "+20% Increased Critical Strike Chance",
+    "+[650-675] to Additive Physical Damage",
+    "+[25-40]% Increased Critical Strike Damage",
+    "+20 to Strength",
+    "+20 to Dexterity",
+    "+12 Mana After each Kill"
+  ]
+}

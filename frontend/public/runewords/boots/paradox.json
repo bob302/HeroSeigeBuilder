@@ -1,0 +1,29 @@
+{
+  "Tier": "S",
+  "Level": "52",
+  "Size": "2x3",
+  "Item": "Paradox",
+  "Rarity": "Runeword",
+  "Type": "Boots",
+  "Bases": [
+    "Boots"
+  ],
+  "Runes": [
+    "Ist",
+    "Vex"
+  ],
+  "Stats": [
+    "1% Chance when Struck [Shitamorphosis] Level 1",
+    "+[200-250]% Enhanced Defense",
+    "+2 to All Skills",
+    "+52% Increased Movement Speed",
+    "+7% Mana stolen per Hit",
+    "+[5-15] to Vitality",
+    "Magic Skill Damage increased by [8-15]%",
+    "Replenish Life 20%",
+    "Replenish Mana 20%",
+    "Physical Damage Taken Reduced by [5-10]%",
+    "+15% Increased Magic Find",
+    "Socketed (2)"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "Item": "Gem Encrusted Tower",
+  "Tier": "S",
+  "Level": "93",
+  "Defense": "308.00256-360",
+  "Block": "70",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[220-260]% Enhanced Defense",
+    "+20 to Vitality",
+    "+[150-250] to Life",
+    "+75% Faster Hit Recovery",
+    "Physical Damage Taken Reduced by [12-18]%",
+    "Magic Damage Taken Reduced by [12-18]%",
+    "+[30-40]% to All Resistances",
+    "Socketed (6)"
+  ]
+}

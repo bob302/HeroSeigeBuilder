@@ -1,0 +1,14 @@
+{
+  "Item": "High Demon's Necklace",
+  "Tier": "S",
+  "Level": "83",
+  "Type": "Amulet",
+  "Size": "1x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[1-2] to All Skills",
+    "+[3-7]% Life stolen per Hit",
+    "+[450-480] to Additive Cold Damage",
+    "+[30-50]% Defense vs Missiles"
+  ]
+}

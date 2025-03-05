@@ -1,0 +1,17 @@
+{
+  "Item": "Heaven's Might",
+  "Tier": "S",
+  "Level": "74",
+  "Defense": "2126.001612-2640",
+  "Type": "Body Armor",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[420-500]% Enhanced Defense",
+    "+[2-4] to All Skills",
+    "Physical Damage Taken Reduced by [10-15]%",
+    "Magic Damage Taken Reduced by [10-15]%",
+    "+100 to Vitality (Based on Level)",
+    "Socketed (2-6)"
+  ]
+}

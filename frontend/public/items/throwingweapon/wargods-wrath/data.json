@@ -1,0 +1,21 @@
+{
+  "Item": "Wargod's Wrath",
+  "Tier": "A",
+  "Level": "57",
+  "Damage": "174.00154-195",
+  "APS": "1.501.5",
+  "DPS": "261.50231-292",
+  "Type": "Throwing Weapon",
+  "TwoHanded": false,
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[280-340]% Enhanced Damage",
+    "+[7-15]% Increased Attack Rating",
+    "+430 to Attack Rating",
+    "+[30-40] to Strength",
+    "+125 to Life (Based on Level)",
+    "+100% Enhanced Damage (Based on Level)",
+    "+300 to Damage (Based on Level)"
+  ]
+}

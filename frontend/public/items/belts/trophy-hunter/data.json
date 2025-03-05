@@ -1,0 +1,23 @@
+{
+  "Item": "Trophy Hunter",
+  "Tier": "SS",
+  "Level": "64",
+  "Defense": "100.2078-123",
+  "Type": "Belt",
+  "Size": "2x1",
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "001% Chance after each Kill [Collector] Level 1",
+      "class": "stat-spell"
+    },
+    "+[50-80]% Enhanced Defense",
+    "+[1-2] to All Skills",
+    "+[15-35]% Increased Movement Speed",
+    "+20% Increased Attack Rating",
+    "+[5-20] to All Attributes",
+    "+[10-25] Life After each Kill",
+    "+[10-25] Mana After each Kill",
+    "Belt Slots: 5"
+  ]
+}

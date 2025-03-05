@@ -1,0 +1,10 @@
+{
+  "Item": "Tor",
+  "Tier": "D",
+  "Level": "13",
+  "Type": "Rune",
+  "Rarity": "Common",
+  "Stats": [
+    "+2 Mana After each Kill"
+  ]
+}

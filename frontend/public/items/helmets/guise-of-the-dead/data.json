@@ -1,0 +1,19 @@
+{
+  "Item": "Guise of the Dead",
+  "Tier": "A",
+  "Level": "57",
+  "Defense": "116.4093-141",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[120-160]% Enhanced Defense",
+    "+[0-2] to Poison Skills",
+    "+[3-7]% Life stolen per Hit",
+    "+[3-7]% Mana stolen per Hit",
+    "+30% of target Defense ignored",
+    "Slows target by [10-20]%",
+    "+[20-30] to Strength",
+    "+[280-320] to Additive Poison Damage"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "Item": "Battle Worn Gauntlets",
+  "Tier": "A",
+  "Level": "52",
+  "Defense": "35.1027-44",
+  "Type": "Gloves",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[50-80]% Enhanced Defense",
+    "+[20-40]% Increased Attack Speed",
+    "+[320-475] to Additive Physical Damage",
+    "+[5-8]% Mana stolen per Hit"
+  ]
+}

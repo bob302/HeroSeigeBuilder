@@ -1,0 +1,28 @@
+{
+  "Item": "Storm Fury",
+  "Tier": "SS",
+  "Level": "98",
+  "Damage": "573.00490-656",
+  "APS": "2.792.53-3.06",
+  "DPS": "1624.001240-2008",
+  "Type": "Claw",
+  "TwoHanded": false,
+  "Size": "2x2",
+  "Rarity": "Angelic",
+  "Stats": [
+    {
+      "stat": "Cast when Attacking [Lightning Fury] Level value1",
+      "class": "stat-spell"
+    },
+    "+[775-925]% Enhanced Damage",
+    "+[1-2] to All Skills",
+    "+[3-5] to Lightning Skills",
+    "+[45-75]% Increased Attack Speed",
+    "+25% Chance for a Crushing Blow",
+    "+15% Mana stolen per Hit",
+    "+2500 to Lightning Skill Damage",
+    "Lightning Skill Damage increased by [22-50]%",
+    "+35 Life After each Kill",
+    "Socketed (3)"
+  ]
+}

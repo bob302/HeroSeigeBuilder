@@ -1,0 +1,19 @@
+{
+  "Item": "Death Lord's Marchers",
+  "Tier": "A",
+  "Level": "54",
+  "Defense": "68.7051-87",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[50-80]% Enhanced Defense",
+    {
+      "stat": "+[1-3] to [Summon Mastery]",
+      "class": "stat-spell"
+    },
+    "+[20-30]% Increased Movement Speed",
+    "Arcane Skill Damage increased by [7-15]%",
+    "+[6-12]% of Damage Taken goes to Mana"
+  ]
+}

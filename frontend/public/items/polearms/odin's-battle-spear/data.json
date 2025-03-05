@@ -1,0 +1,27 @@
+{
+  "Item": "Odin's Battle Spear",
+  "Tier": "A",
+  "Level": "65",
+  "Damage": "242.80213-273",
+  "APS": "2.182.12-2.24",
+  "DPS": "532.00452-612",
+  "Type": "Polearm",
+  "TwoHanded": true,
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "8% Chance when Striking [Vengeance] Level 14",
+      "class": "stat-spell"
+    },
+    "+[280-340]% Enhanced Damage",
+    "+[25-32]% Increased Attack Speed",
+    "+[245-300] to Attack Rating",
+    "+[7-10]% Life stolen per Hit",
+    "+[850-975] to Additive Arcane Damage",
+    "+15% of Damage Taken goes to Mana",
+    "+200 to Damage (Based on Level)",
+    "+25% to All Resistances",
+    "Socketed (0-3)"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "Item": "Bob's Piece of Plywood",
+  "Tier": "C",
+  "Level": "25",
+  "Defense": "25.8021-31",
+  "Block": "40",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "5% Chance when Struck [Chainsaw Massacre] Level 40",
+      "class": "stat-spell"
+    },
+    "+[50-70]% Enhanced Defense",
+    "+[10-20]% Increased Chance of Blocking",
+    "+[3-5]% Increased Critical Strike Chance",
+    "+10 to Strength"
+  ]
+}

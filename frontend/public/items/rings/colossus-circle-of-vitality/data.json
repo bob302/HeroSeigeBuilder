@@ -1,0 +1,13 @@
+{
+  "Item": "Colossus Circle of Vitality",
+  "Tier": "C",
+  "Level": "20",
+  "Type": "Ring",
+  "Size": "1x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[10-25] to Vitality",
+    "Physical Damage Taken Reduced by [2-4]%",
+    "Magic Damage Taken Reduced by [2-4]%"
+  ]
+}

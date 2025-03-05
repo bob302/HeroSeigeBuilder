@@ -1,0 +1,20 @@
+{
+  "Item": "Godfather",
+  "Tier": "A",
+  "Level": "65",
+  "Damage": "281.00252-310",
+  "APS": "1.251.25",
+  "DPS": "351.50315-388",
+  "Type": "Sword",
+  "Size": "2x3",
+  "TwoHanded": false,
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[350-400]% Enhanced Damage",
+    "+[45-50]% Increased Attack Rating",
+    "+[15-20]% Increased Critical Strike Damage",
+    "+[15-20] to Vitality",
+    "+[40-50] to Life",
+    "+175 to Damage (Based on Level)"
+  ]
+}

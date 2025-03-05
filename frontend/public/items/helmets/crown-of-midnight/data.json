@@ -1,0 +1,15 @@
+{
+  "Item": "Crown of Midnight",
+  "Tier": "S",
+  "Level": "78",
+  "Defense": "154.00120-188",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[100-135]% Enhanced Defense",
+    "+3 to All Skills",
+    "Magic Skill Damage increased by [5-30]%",
+    "+[10-15]% of Damage Taken goes to Mana"
+  ]
+}

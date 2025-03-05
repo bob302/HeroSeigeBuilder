@@ -1,0 +1,13 @@
+{
+  "Item": "Viper's Seal of Corrosion",
+  "Tier": "C",
+  "Level": "22",
+  "Type": "Ring",
+  "Size": "1x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    "Poison Skill Damage increased by [10-15]%",
+    "+25% to Arcane Resistance",
+    "+[25-40]% to Poison Resistance"
+  ]
+}

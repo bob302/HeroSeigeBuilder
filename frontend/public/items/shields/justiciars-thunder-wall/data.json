@@ -1,0 +1,18 @@
+{
+  "Item": "Justiciar's Thunder Wall",
+  "Tier": "A",
+  "Level": "59",
+  "Defense": "129.9099-161",
+  "Block": "60",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[90-130]% Enhanced Defense",
+    "+3% Mana stolen per Hit",
+    "+[250-375] to Lightning Skill Damage",
+    "Damage Taken Reduced by [8-15]",
+    "Magic Damage Taken Reduced by 10%",
+    "+50% to Lightning Resistance"
+  ]
+}

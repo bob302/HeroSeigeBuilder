@@ -1,0 +1,18 @@
+{
+  "Item": "Sacred Robe",
+  "Tier": "A",
+  "Level": "57",
+  "Defense": "357.50299-416",
+  "Type": "Body Armor",
+  "Size": "2x3",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[130-160]% Enhanced Defense",
+    "+2 to All Skills",
+    "+[10-15] to Energy",
+    "+[5-10] to Vitality",
+    "+[10-30]% to All Resistances",
+    "+[20-30]% Increased Magic Find",
+    "Socketed (0-3)"
+  ]
+}

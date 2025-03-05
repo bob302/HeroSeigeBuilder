@@ -1,0 +1,20 @@
+{
+  "Item": "Lava King's Lost Mask",
+  "Tier": "SS",
+  "Level": "96",
+  "Defense": "70.0060-80",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Heroic",
+  "Stats": [
+    "+[1-2] to All Skills",
+    "+[2-4] to Fire Skills",
+    "+40% Faster Cast Rate",
+    "Fire Skill Damage increased by [20-35]%",
+    "-[10-20]% to Enemy Fire Resistance",
+    "+475 to Life (Based on Level)",
+    "+10% Fire Damage Absorbed",
+    "+75% to Fire Resistance",
+    "+[15-25]% Increased Magic Find"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "Item": "Arc's Walkers",
+  "Tier": "S",
+  "Level": "1",
+  "Defense": "23.0014-32",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[75-100]% Enhanced Defense",
+    "+[30-50]% Increased Movement Speed",
+    "+175 to Mana (Based on Level)",
+    "+300 to Life (Based on Level)",
+    "+50 Defense (Based on Level)",
+    "+500 to Attack Rating (Based on Level)",
+    "+[15-30]% Increased Experience Gain Below Level 100"
+  ]
+}

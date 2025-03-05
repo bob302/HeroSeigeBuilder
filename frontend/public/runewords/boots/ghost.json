@@ -1,0 +1,25 @@
+{
+  "Tier": "S",
+  "Level": "52",
+  "Size": "2x3",
+  "Item": "Ghost",
+  "Rarity": "Runeword",
+  "Type": "Boots",
+  "Bases": [
+    "Boots"
+  ],
+  "Runes": [
+    "Sal",
+    "Mal"
+  ],
+  "Stats": [
+    "+[300-550]% Enhanced Defense",
+    "+[1-2] to All Skills",
+    "+57% Increased Movement Speed",
+    "+[260-400] to Mana",
+    "+[30-50]% Defense vs Missiles",
+    "Physical Damage Taken Reduced by 7%",
+    "Magic Damage Taken Reduced by 7% Movement Phasing",
+    "Socketed (2)"
+  ]
+}

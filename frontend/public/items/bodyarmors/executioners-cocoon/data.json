@@ -1,0 +1,23 @@
+{
+  "Item": "Executioner's Cocoon",
+  "Tier": "SS",
+  "Level": "92",
+  "Defense": "1753.501575-1933",
+  "Type": "Body Armor",
+  "Size": "2x3",
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "4% Chance when Striking [Warrior's Path] Level 18",
+      "class": "stat-spell"
+    },
+    "+[375-430]% Enhanced Defense",
+    "+[2-4] to All Skills",
+    "+[1400-1800] to Attack Rating",
+    "+[10-18]% Life stolen per Hit",
+    "+[6-12]% Mana stolen per Hit",
+    "+50 to Strength",
+    "+275% Enhanced Damage (Based on Level)",
+    "Socketed (2-4)"
+  ]
+}

@@ -1,74 +1,25 @@
 import { v4 as uuidv4 } from "uuid";
 import { equipmentService } from "../service/EquipmentService";
+import { StatParser } from "../parser/StatParser";
+import { EquipmentRarity, EquipmentSubtypes, EquipmentTier, EquipmentType } from "../util/Enums";
 
-export enum EquipmentRarity {
-  Common = "Common",
-  Satanic = "Satanic",
-  "Satanic Set" = "Satanic Set",
-  Heroic = "Heroic",
-  Mythic = "Mythic",
-  Angelic = "Angelic",
-  Unholy = "Unholy",
-}
 
-export enum EquipmentType {
-  Weapon = "Weapon",
-  Offhand = "Offhand",
-  Armor = "Armor",
-  Accessory = "Accessory",
-  Special = "Special",
-  Misc = "Misc",
-}
 
-export const EquipmentSubtypes: Record<EquipmentType, string[]> = {
-  [EquipmentType.Weapon]: [
-    "Sword",
-    "Dagger",
-    "Mace",
-    "Axe",
-    "Claw",
-    "Polearm",
-    "Chainsaw",
-    "Staff",
-    "Cane",
-    "Wand",
-    "Book",
-    "Spellblade",
-    "Bow",
-    "Gun",
-    "Flask",
-    "Throwing Weapon",
-  ],
-  [EquipmentType.Armor]: ["Helmet", "Body Armor", "Gloves", "Boots"],
-  [EquipmentType.Offhand]: ["Shield"],
-  [EquipmentType.Accessory]: ["Amulet", "Ring", "Belt"],
-  [EquipmentType.Special]: ["Charm", "Glyph", "Relic", "Potion"],
-  [EquipmentType.Misc]: ["Socketable"],
-};
-
-export function getEquipmentTypeBySubtype(subtype: EquipmentSubtype): EquipmentType | undefined {
+export function getEquipmentTypeBySubtype(subtype: EquipmentSubtype): EquipmentType {
   for (const typeKey in EquipmentSubtypes) {
     const type = typeKey as EquipmentType;
     if (EquipmentSubtypes[type].includes(subtype)) {
       return type;
     }
   }
-  return undefined;
+
+  throw new Error(`No EquipmentType for ${subtype}`)
 }
 
 export type EquipmentSubtype = (typeof EquipmentSubtypes)[EquipmentType][number];
 
 export function isValidSubtype(type: EquipmentType, subtype: EquipmentSubtype): boolean {
-  return EquipmentSubtypes[type]?.includes(subtype) ?? false;
-}
-
-export enum EquipmentTier {
-  SS = "SS",
-  S = "S",
-  A = "A",
-  B = "B",
-  C = "C",
-  D = "D",
+  return subtype === "MultiType" ? true : EquipmentSubtypes[type]?.includes(subtype) ?? false;
 }
 
 export interface Socket {
@@ -130,6 +81,11 @@ export class BaseItem {
         `Invalid subtype ${props.subtype} for type ${props.type}`,
       );
     }
+  }
+
+  addStat(string : string) {
+    const stat = StatParser.parseStat(string, true).stat
+    this.stats.push(stat)
   }
 
   clone(): BaseItem {
@@ -207,6 +163,16 @@ export class Equipment extends BaseItem {
     this.sockets.list.forEach((socket) => (socket.socketable = null));
   }
 
+  cloneAsRuneword(runeword: IRuneword): Equipment & IRuneword {
+    const clonedItem = this.clone() as Equipment & IRuneword;
+    
+    clonedItem.name = runeword.name;
+    clonedItem.bases = [...runeword.bases];
+    clonedItem.runes = [...runeword.runes];
+    
+    return clonedItem;
+  }
+
   clone(): Equipment {
     return new Equipment({
       ...super.clone(),
@@ -240,6 +206,38 @@ export class Equipment extends BaseItem {
   }
 }
 
+export interface IRuneword {
+  name: string;
+  runes: string[];
+  bases: string[];
+}
+
+export function transformToRuneword<T extends Equipment>(
+  item: T, 
+  runeword: IRuneword
+): T & IRuneword {
+  const clonedItem = item.clone() as T & IRuneword;
+
+  clonedItem.name = runeword.name;
+  clonedItem.rarity = 'Runeword' as EquipmentRarity;
+  
+  clonedItem.sockets.amount = runeword.runes.length;
+  clonedItem.sockets.max = runeword.runes.length;
+  
+  clonedItem.clearSocketables();
+  
+  runeword.runes.forEach(runeStr => {
+    const rune = equipmentService.getSocketable(runeStr);
+    if (!rune) throw new Error(`Rune ${runeStr} не найдена`);
+    clonedItem.insertSocketable(rune);
+  });
+
+  (clonedItem as any).bases = [...runeword.bases];
+  (clonedItem as any).runes = [...runeword.runes];
+
+  return clonedItem;
+}
+
 export class Socketable extends BaseItem {
   constructor(props: BaseItemProps) {
     super({
@@ -247,8 +245,7 @@ export class Socketable extends BaseItem {
       size: { width: 1, height: 1 },
     });
 
-    this.type = EquipmentType.Misc;
-    this.subtype = "Socketable";
+    this.type = EquipmentType.Socketable;
   }
 
   clone(): Socketable {
@@ -399,7 +396,7 @@ export function deserialize(data: any): BaseItem {
       copiedData[k] = processValue(copiedData[k]);
     });
 
-    if (copiedData.__type === "Socketable") {
+    if (copiedData.__type === EquipmentType.Socketable) {
       const socketable = equipmentService.getSocketable(copiedData.name);
       if (!socketable)
         throw new Error(`Socketable not found: ${copiedData.name}`);

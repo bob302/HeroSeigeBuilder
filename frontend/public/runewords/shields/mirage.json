@@ -1,0 +1,35 @@
+{
+  "Tier": "S",
+  "Level": "65",
+  "Size": "2x3",
+  "Item": "Mirage",
+  "Rarity": "Runeword",
+  "Type": "Shield",
+  "Bases": [
+    "Shield"
+  ],
+  "Runes": [
+    "Vex",
+    "Vex",
+    "Xo",
+    "Jah"
+  ],
+  "Stats": [
+    "Block Chance: 65",
+    "20% Chance after Blocking [Blazing Trail] Level 29",
+    "+[60-90]% Enhanced Damage",
+    "+[3-4] το Fire Skills",
+    "+25% Chance for a Deadly Blow",
+    "+14% Mana stolen per Hit",
+    "-[20-30]% to Enemy Fire Resistance",
+    "+[30-50] to Life",
+    "+[350-400]% Defense vs Missiles",
+    "Life Increased by 10%",
+    "+[50-100]% of Damage Returned to the Attacker",
+    "+10% to Maximum Fire Resist",
+    "+5% to Maximum Lightning Resist",
+    "Unbreakable",
+    "Redemption Aura Level [10-15]",
+    "Sacketed (4)"
+  ]
+}

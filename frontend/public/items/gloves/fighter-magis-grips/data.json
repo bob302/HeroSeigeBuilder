@@ -1,0 +1,17 @@
+{
+  "Item": "Fighter Magi's Grips",
+  "Tier": "SS",
+  "Level": "100",
+  "Defense": "139.00102-177",
+  "Type": "Gloves",
+  "Size": "2x2",
+  "Rarity": "Heroic",
+  "Stats": [
+    "+[120-160]% Enhanced Defense",
+    "+[1-3] to All Skills",
+    "+[475-650] to Attack Rating",
+    "+[20-30] to Dexterity",
+    "+[8-15] to All Attributes",
+    "Magic Skill Damage increased by [25-40]%"
+  ]
+}

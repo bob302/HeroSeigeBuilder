@@ -1,0 +1,19 @@
+{
+  "Item": "Wall of the Legion",
+  "Tier": "S",
+  "Level": "93",
+  "Defense": "330.00280-380",
+  "Block": "70",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[250-280]% Enhanced Defense",
+    "+1 to All Skills",
+    "+20 to Strength",
+    "+30 to Vitality",
+    "+[350-400]% Defense vs Missiles",
+    "+40% to All Resistances",
+    "Socketed (6)"
+  ]
+}

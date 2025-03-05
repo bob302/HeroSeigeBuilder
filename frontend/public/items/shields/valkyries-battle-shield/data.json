@@ -1,0 +1,19 @@
+{
+  "Item": "Valkyrie's Battle Shield",
+  "Tier": "A",
+  "Level": "56",
+  "Defense": "129.9099-161",
+  "Block": "40",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[90-130]% Enhanced Defense",
+    "+[25-40]% Increased Chance of Blocking",
+    "+20% Faster Cast Rate",
+    "+235 to Lightning Skill Damage",
+    "+[20-30] to Life",
+    "Damage Taken Reduced by 8",
+    "+[30-50]% to Lightning Resistance"
+  ]
+}

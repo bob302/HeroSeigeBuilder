@@ -1,0 +1,25 @@
+{
+  "Item": "Commander's Sash",
+  "Tier": "S",
+  "Level": "92",
+  "Defense": "101.9078-126",
+  "Type": "Belt",
+  "Size": "2x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[50-85]% Enhanced Defense",
+    "+1 to All Skills",
+    "+10% Increased Attack Speed",
+    "+[3-5]% Life stolen per Hit",
+    "+[3-5]% Mana stolen per Hit",
+    "Slows target by 10%",
+    "+[10-15] to Strength",
+    "+[20-25] to Dexterity",
+    "+3 Mana After each Kill",
+    "-3 to Light Radius",
+    "Physical Damage Taken Reduced by [5-10]%",
+    "+[15-20]% to All Resistances",
+    "Piercing Attack",
+    "Belt Slots: 5"
+  ]
+}

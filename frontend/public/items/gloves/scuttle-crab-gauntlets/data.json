@@ -1,0 +1,17 @@
+{
+  "Item": "Scuttle Crab Gauntlets",
+  "Tier": "A",
+  "Level": "52",
+  "Defense": "32.4026-40",
+  "Type": "Gloves",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[40-65]% Enhanced Defense",
+    "+[20-30] to Vitality",
+    "+40% Defense vs Missiles",
+    "Physical Damage Taken Reduced by [7-15]%",
+    "Magic Damage Taken Reduced by [7-15]%",
+    "Half Freeze Duration"
+  ]
+}

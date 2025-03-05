@@ -1,0 +1,16 @@
+{
+  "Item": "Shield Bearer's Greaves",
+  "Tier": "A",
+  "Level": "58",
+  "Defense": "72.8055-92",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[60-90]% Enhanced Defense",
+    "+[20-30]% Increased Movement Speed",
+    "+[15-25]% of target Defense ignored",
+    "+[20-30] to Strength",
+    "+15 to Vitality"
+  ]
+}

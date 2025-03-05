@@ -1,0 +1,15 @@
+{
+  "Item": "Doctor's Grasp",
+  "Tier": "A",
+  "Level": "52",
+  "Defense": "29.1024-35",
+  "Type": "Gloves",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[30-45]% Enhanced Defense",
+    "+15 to Energy",
+    "Poison Skill Damage increased by [15-25]%",
+    "+[7-15] Mana After each Kill"
+  ]
+}

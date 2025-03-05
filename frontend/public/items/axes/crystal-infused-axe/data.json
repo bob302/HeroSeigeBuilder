@@ -1,0 +1,21 @@
+{
+  "Item": "Crystal Infused Axe",
+  "Tier": "D",
+  "Level": "10",
+  "Damage": "24.4018-31",
+  "APS": "1.351.35",
+  "DPS": "33.5025-42",
+  "Type": "Axe",
+  "TwoHanded": false,
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[125-180]% Enhanced Damage",
+    "+15% Chance for a Deadly Blow",
+    "+25% of target Defense ignored",
+    "Attack Damage increased by 10%",
+    "+3 Life After each Kill",
+    "+3 Mana After each Kill",
+    "Socketed (0-2)"
+  ]
+}

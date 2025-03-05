@@ -1,0 +1,18 @@
+{
+  "Item": "Flame Diviner's Sanctum",
+  "Tier": "A",
+  "Level": "57",
+  "Defense": "357.50299-416",
+  "Type": "Body Armor",
+  "Size": "2x3",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[130-160]% Enhanced Defense",
+    "+20 to Energy",
+    "+10 to Vitality",
+    "+5 to All Attributes",
+    "Replenish Mana 20%",
+    "Mana Increased by [2-5]%",
+    "Socketed (0-3)"
+  ]
+}

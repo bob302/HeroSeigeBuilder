@@ -1,0 +1,19 @@
+{
+  "Item": "Heavy Duty",
+  "Tier": "C",
+  "Level": "26",
+  "Defense": "19.6012-28",
+  "Type": "Belt",
+  "Size": "2x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[50-70]% Enhanced Defense",
+    "+15% Increased Movement Speed",
+    "+10 to Strength",
+    "+10 to Vitality",
+    "Replenish Life 20%",
+    "+[25-50] to Life",
+    "+[20-30]% Faster Hit Recovery",
+    "Belt Slots: 3"
+  ]
+}

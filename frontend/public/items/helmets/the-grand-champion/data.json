@@ -1,0 +1,17 @@
+{
+  "Item": "The Grand Champion",
+  "Tier": "S",
+  "Level": "84",
+  "Defense": "154.00120-188",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[100-135]% Enhanced Defense",
+    "+[25-40]% Faster Hit Recovery",
+    "+[20-35]% Defense vs Missiles",
+    "+40 to Armor (Based on Level)",
+    "+40 to Vitality (Based on Level)",
+    "+[20-35]% to All Resistances"
+  ]
+}

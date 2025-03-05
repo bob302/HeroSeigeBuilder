@@ -1,0 +1,17 @@
+{
+  "Item": "Bronze Legion Girdle",
+  "Tier": "D",
+  "Level": "10",
+  "Defense": "5.704-8",
+  "Type": "Belt",
+  "Size": "2x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[30-50]% Enhanced Defense",
+    "Replenish Mana [30-35]%",
+    "+[15-25] to Mana",
+    "+1 to Light Radius",
+    "+5% to All Resistances",
+    "Belt Slots: 3"
+  ]
+}

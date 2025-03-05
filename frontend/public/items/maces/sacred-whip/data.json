@@ -1,0 +1,23 @@
+{
+  "Item": "Sacred Whip",
+  "Tier": "A",
+  "Level": "65",
+  "Damage": "136.40122-152",
+  "APS": "2.272.27",
+  "DPS": "310.50277-344",
+  "Type": "Mace",
+  "TwoHanded": false,
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[280-320]% Enhanced Damage",
+    "+30% Increased Attack Speed",
+    "+50% Chance for a Crushing Blow",
+    "+[675-785] to Additive Lightning Damage",
+    "-25% to Enemy Lightning Resistance",
+    "+10% to All Resistances",
+    "+[5-10]% Extra Gold Dropped From Kills",
+    "+[20-35]% Increased Magic Find",
+    "Socketed (0-4)"
+  ]
+}

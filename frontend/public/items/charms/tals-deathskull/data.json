@@ -1,0 +1,14 @@
+{
+  "Item": "Tal's Deathskull",
+  "Tier": "S",
+  "Level": "92",
+  "Type": "Charm",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "Replenish Life [6-12]%",
+    "Replenish Mana [6-12]%",
+    "+[35-50] to Life",
+    "+[35-50] to Mana"
+  ]
+}

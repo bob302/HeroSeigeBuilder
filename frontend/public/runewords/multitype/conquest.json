@@ -1,0 +1,43 @@
+{
+  "Tier": "S",
+  "Level": "47",
+  "Size": "2x3",
+  "Item": "Conquest",
+  "Rarity": "Runeword",
+  "Type": "MultiType",
+  "Bases": [
+    "Mace",
+    "Polearm"
+  ],
+  "Runes": [
+    "Sal",
+    "Ymn",
+    "Co",
+    "Um"
+  ],
+  "Stats": [
+    "Attack Damage: 549 [62]",
+    "Attacks per Second: 1.50",
+    {
+      "stat": "20% Chance when Striking [Tornado] Level 36",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "16% Chance when Attacking [Orb of Frost] Level 45",
+      "class": "stat-spell"
+    },
+    "+[675-935]% Enhanced Damage",
+    "+20% increased Attack Rating",
+    "+[100-200] to Attack Rating",
+    "+7% Life stolen per Hit",
+    "+10 to Dexterity",
+    "+[5-10] to All Attributes",
+    "+[180-240] to Additive Arcane Damage",
+    "+[140-200] to Additive Fire Damage",
+    "+[22-34]% of Damage Taken goes to Mana",
+    "Physical Damage Taken Reduced by 7%",
+    "+20% to All Resistances",
+    "+25% Extra Gold Dropped From Kills",
+    "Socketed (4)"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "Item": "Golden God's Gladius",
+  "Tier": "C",
+  "Level": "26",
+  "Damage": "52.7544-62",
+  "APS": "1.601.6",
+  "DPS": "85.0070-100",
+  "Type": "Polearm",
+  "TwoHanded": false,
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "8% Chance after each Kill [Flash Heal] Level 12",
+      "class": "stat-spell"
+    },
+    "+[190-210]% Enhanced Damage",
+    "+5% Life stolen per Hit",
+    "+[5-8] to Vitality",
+    "Replenish Life [10-15]%",
+    "+[15-20] to Life",
+    "+15% Defense vs Missiles",
+    "+[8-12] Mana After each Kill",
+    "+20 to Life (Based on Level)",
+    "Socketed (0-2)"
+  ]
+}

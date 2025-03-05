@@ -1,0 +1,16 @@
+{
+  "Item": "The Curator of Secrets",
+  "Tier": "S",
+  "Level": "91",
+  "Defense": "154.00120-188",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[100-135]% Enhanced Defense",
+    "+[1-2] to All Skills",
+    "+40% Faster Cast Rate",
+    "Magic Skill Damage increased by [5-10]%",
+    "+[1-25]% to All Resistances"
+  ]
+}

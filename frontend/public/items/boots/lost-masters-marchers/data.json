@@ -1,0 +1,16 @@
+{
+  "Item": "Lost Master's Marchers",
+  "Tier": "A",
+  "Level": "56",
+  "Defense": "68.7051-87",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[50-80]% Enhanced Defense",
+    "+40% Increased Movement Speed",
+    "+30% Increased Attack Speed",
+    "+[20-30] to Dexterity",
+    "+[40-50]% Defense vs Missiles"
+  ]
+}

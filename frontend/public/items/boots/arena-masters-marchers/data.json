@@ -1,0 +1,18 @@
+{
+  "Item": "Arena Master's Marchers",
+  "Tier": "S",
+  "Level": "89",
+  "Defense": "123.0099-148",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[90-130]% Enhanced Defense",
+    "+[1-2] to Physical Skills",
+    "+55% Increased Movement Speed",
+    "+[20-30]% Increased Attack Speed",
+    "+[5-10]% Chance for a Crushing Blow",
+    "+[135-150] to Additive Physical Damage",
+    "+15 to Dexterity"
+  ]
+}

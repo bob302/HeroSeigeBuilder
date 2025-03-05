@@ -1,0 +1,12 @@
+{
+  "Item": "Apple of Evolution",
+  "Tier": "S",
+  "Level": "65",
+  "Type": "Charm",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "-[15-35]% to Enemy Poison Resistance",
+    "-75% to Poison Resistance"
+  ]
+}

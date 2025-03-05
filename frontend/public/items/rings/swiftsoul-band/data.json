@@ -1,0 +1,13 @@
+{
+  "Item": "Swiftsoul Band",
+  "Tier": "D",
+  "Level": "11",
+  "Type": "Ring",
+  "Size": "1x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[10-15]% Faster Cast Rate",
+    "Magic Skill Damage increased by [3-5]%",
+    "Replenish Life 15%"
+  ]
+}

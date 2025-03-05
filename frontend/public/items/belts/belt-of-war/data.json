@@ -1,0 +1,17 @@
+{
+  "Item": "Belt of War",
+  "Tier": "D",
+  "Level": "12",
+  "Defense": "5.704-8",
+  "Type": "Belt",
+  "Size": "2x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[30-50]% Enhanced Defense",
+    "+50 to Attack Rating",
+    "+[10-15]% Life stolen per Hit",
+    "+3 to All Attributes",
+    "+[20-35] to Life",
+    "Belt Slots: 3"
+  ]
+}

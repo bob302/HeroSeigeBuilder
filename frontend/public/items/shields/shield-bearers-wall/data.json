@@ -1,0 +1,19 @@
+{
+  "Item": "Shield Bearer's Wall",
+  "Tier": "A",
+  "Level": "65",
+  "Defense": "129.9099-161",
+  "Block": "65",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[90-130]% Enhanced Defense",
+    "+[50-75] to Attack Rating",
+    "+5% Life stolen per Hit",
+    "+40 to Strength",
+    "+10 to Dexterity",
+    "Attack Damage increased by 5%",
+    "+[20-30]% to All Resistances"
+  ]
+}

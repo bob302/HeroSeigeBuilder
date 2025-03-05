@@ -1,0 +1,19 @@
+{
+  "Item": "Crystal Infused Wand",
+  "Tier": "D",
+  "Level": "12",
+  "Damage": "5.504-7",
+  "APS": "1.501.5",
+  "DPS": "8.506-11",
+  "Type": "Wand",
+  "TwoHanded": false,
+  "Size": "1x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[3-6] Mana per second",
+    "+[35-50] to Arcane Skill Damage",
+    "Arcane Skill Damage increased by 15%",
+    "-[5-15]% to Enemy Arcane Resistance",
+    "+[30-50]% to Arcane Resistance"
+  ]
+}

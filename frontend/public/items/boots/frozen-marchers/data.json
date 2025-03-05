@@ -1,0 +1,17 @@
+{
+  "Item": "Frozen Marchers",
+  "Tier": "B",
+  "Level": "39",
+  "Defense": "35.6027-45",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[50-70]% Enhanced Defense",
+    "+[10-50]% Increased Movement Speed",
+    "Cold Skill Damage increased by [12-18]%",
+    "+[5-8]% Cold Damage Absorbed",
+    "+[40-50]% to Cold Resistance",
+    "Half Freeze Duration"
+  ]
+}

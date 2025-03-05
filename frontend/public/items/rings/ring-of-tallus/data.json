@@ -1,0 +1,13 @@
+{
+  "Item": "Ring of Tallus",
+  "Tier": "B",
+  "Level": "44",
+  "Type": "Ring",
+  "Size": "1x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+1 to All Skills",
+    "Replenish Mana [5-15]%",
+    "Life Increased by [3-5]%"
+  ]
+}

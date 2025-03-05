@@ -1,0 +1,14 @@
+{
+  "Item": "Charcoal Memento",
+  "Tier": "S",
+  "Level": "90",
+  "Type": "Amulet",
+  "Size": "1x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[20-30]% Increased Movement Speed",
+    "+[20-35]% Increased Attack Speed",
+    "+25 to Dexterity",
+    "+50% Defense vs Missiles"
+  ]
+}

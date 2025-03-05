@@ -1,0 +1,35 @@
+{
+  "Tier": "S",
+  "Level": "57",
+  "Size": "2x3",
+  "Item": "Havoc",
+  "Rarity": "Runeword",
+  "Type": "Shield",
+  "Bases": [
+    "Shield"
+  ],
+  "Runes": [
+    "Vex",
+    "Qi",
+    "Ist",
+    "Del"
+  ],
+  "Stats": [
+    "Block Chance: 65",
+    "15% Chance when Attacking [Life Tap] Level 18",
+    "+[220-260]% Enhanced Defense",
+    "+3 to All Skills",
+    "+7% Mana stolen per Hit",
+    "+[50-80] to Armor",
+    "Attack Damage increased by 20%",
+    "Arcane Skill Damage increased by 5%",
+    "+[50-150]% Faster Hit Recovery",
+    "Physical Damage Taken Reduced by 5%",
+    "+5% to Maximum Cold Resist",
+    "+5% to Maximum Fire Resist",
+    "+15% Increased Magic Find",
+    "Unbreakable",
+    "Defiance Aura Level [22-28]",
+    "Socketed (4)"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "Item": "Soul Funneling Loop",
+  "Tier": "D",
+  "Level": "14",
+  "Type": "Ring",
+  "Size": "1x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[2-4]% Life stolen per Hit",
+    "+[2-4]% Mana stolen per Hit",
+    "+5 to All Attributes"
+  ]
+}

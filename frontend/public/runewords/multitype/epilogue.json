@@ -1,0 +1,29 @@
+{
+  "Tier": "S",
+  "Level": "55",
+  "Size": "2x3",
+  "Item": "Epilogue",
+  "Rarity": "Runeword",
+  "Type": "MultiType",
+  "Bases": [
+    "Bow",
+    "Gun"
+  ],
+  "Runes": [
+    "Vex",
+    "Ymn",
+    "Gul"
+  ],
+  "Stats": [
+    "Attack Damage: 576 [71]",
+    "Attacks per Second: 1.80",
+    "+[660-720]% Enhanced Damage",
+    "+[8-16] to Explosive Bullets",
+    "+15% Increased Attack Rating",
+    "+[1500-2380] to Additive Physical Damage",
+    "+7% Life stolen per Hit",
+    "+7% Mana stolen per Hit",
+    "Fanaticism Aura Level [15-35]",
+    "Socketed (3)"
+  ]
+}

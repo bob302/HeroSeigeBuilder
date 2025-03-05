@@ -1,0 +1,30 @@
+{
+  "Tier": "S",
+  "Level": "37",
+  "Size": "2x3",
+  "Item": "Brilliance",
+  "Rarity": "Runeword",
+  "Type": "MultiType",
+  "Bases": [
+    "Wand",
+    "Dagger",
+    "Book"
+  ],
+  "Runes": [
+    "Lum",
+    "Tor"
+  ],
+  "Stats": [
+    "Attack Damage: 32",
+    "Attacks per Second: 1.25",
+    "+1 το All Skills",
+    "+30% Faster Cast Rate",
+    "+10 to Energy",
+    "+10 to All Attributes",
+    "+[75-225] to Mana",
+    "+2 Mana After each Kill",
+    "Mana Increased by [5-10]%",
+    "+0.50 to Intelligence (Based on Level)",
+    "Socketed (2)"
+  ]
+}

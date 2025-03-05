@@ -1,0 +1,18 @@
+{
+  "Item": "The Faceless Priest",
+  "Tier": "S",
+  "Level": "87",
+  "Defense": "154.00120-188",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[100-135]% Enhanced Defense",
+    "+1 to All Skills",
+    "+[20-30]% Increased Attack Speed",
+    "+150 to Attack Rating",
+    "+[7-10]% Life stolen per Hit",
+    "+[45-65] to Life",
+    "Socketed (2-3)"
+  ]
+}

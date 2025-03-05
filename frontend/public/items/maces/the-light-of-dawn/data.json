@@ -1,0 +1,27 @@
+{
+  "Item": "The Light of Dawn",
+  "Tier": "SS",
+  "Level": "98",
+  "Damage": "912.75792-1034",
+  "APS": "1.001",
+  "DPS": "913.00792-1034",
+  "Type": "Mace",
+  "TwoHanded": true,
+  "Size": "2x3",
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "20% Chance when Attacking [Apocalyptic Thunder] Level 70",
+      "class": "stat-spell"
+    },
+    "+[725-875]% Enhanced Damage",
+    "Total Attack Speed Reduced by -75%",
+    "+50% Chance for a Deadly Blow",
+    "+[85-125]% Increased Critical Strike Damage",
+    "+[35-50]% of target Defense ignored",
+    "Attack Damage increased by [50-75]%",
+    "-[50-75]% to Enemy Lightning Resistance",
+    "+1 to Strength (Based on Level)",
+    "Attacks can hit multiple enemies"
+  ]
+}

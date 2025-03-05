@@ -1,0 +1,37 @@
+{
+  "Tier": "S",
+  "Level": "100",
+  "Size": "2x3",
+  "Item": "Colossus",
+  "Rarity": "Runeword",
+  "Type": "Shield",
+  "Bases": [
+    "Shield"
+  ],
+  "Runes": [
+    "Fawn",
+    "Fawn",
+    "Jol",
+    "Drax",
+    "Jah"
+  ],
+  "Stats": [
+    "Block Chance: 50",
+    {
+      "stat": "4% Chance after Blocking [Last Stand] Level 39",
+      "class": "stat-spell"
+    },
+    "+[550-600]% Enhanced Defense",
+    "+[3-4] to All Skills",
+    "+1 to Projectile Speed",
+    "+[40-50] to Vitality",
+    "+[60-120] to Life",
+    "Life Increased by [15-50]%",
+    "+[1000-1500]% of Damage Returned to the Attacker",
+    "All Damage Taken Reduced by 6%",
+    "+50% to All Resistances",
+    "Cannot be Frozen",
+    "Unbreakable",
+    "Socketed (5)"
+  ]
+}

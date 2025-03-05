@@ -1,0 +1,19 @@
+{
+  "Item": "Marcher's of Hatred",
+  "Tier": "SS",
+  "Level": "100",
+  "Defense": "247.05202-293",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Unholy",
+  "Stats": [
+    "+[180-225]% Enhanced Defense",
+    "+[2-3] to All Skills",
+    "+[30-100]% Increased Movement Speed",
+    "+[25-40]% Faster Cast Rate",
+    "+[25-40]% Increased Attack Speed",
+    "Skill Movement Diminish decreased by [25-50]%",
+    "Unholy Stat",
+    "Unholy Stat"
+  ]
+}

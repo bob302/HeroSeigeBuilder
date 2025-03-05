@@ -1,0 +1,14 @@
+{
+  "Item": "Amethyst Knight's Amulet",
+  "Tier": "B",
+  "Level": "38",
+  "Type": "Amulet",
+  "Size": "1x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+10 to Energy",
+    "Arcane Skill Damage increased by [120-200]%",
+    "+15% to All Resistances",
+    "+50% to Arcane Resistance"
+  ]
+}

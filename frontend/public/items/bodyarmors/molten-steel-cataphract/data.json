@@ -1,0 +1,19 @@
+{
+  "Item": "Molten Steel Cataphract",
+  "Tier": "B",
+  "Level": "40",
+  "Defense": "315.62225-407",
+  "Type": "Body Armor",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[150-225]% Enhanced Defense",
+    "+2 to Fire Skills",
+    "-[8-25]% to Enemy Fire Resistance",
+    "+75% Faster Hit Recovery",
+    "All Damage Taken Reduced by 8%",
+    "+75% to Fire Resistance",
+    "+5% to Maximum Fire Resist",
+    "Socketed (1-3)"
+  ]
+}

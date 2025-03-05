@@ -1,0 +1,21 @@
+{
+  "Item": "Crystal Infused Pistol",
+  "Tier": "D",
+  "Level": "10",
+  "Damage": "37.0026-49",
+  "APS": "1.501.5",
+  "DPS": "56.0039-73",
+  "Type": "Gun",
+  "TwoHanded": false,
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[220-340]% Enhanced Damage",
+    "+20% Increased Attack Speed",
+    "+20% Chance for a Deadly Blow",
+    "+65 to Attack Rating",
+    "+[3-6]% Mana stolen per Hit",
+    "+40% of target Defense ignored",
+    "+[15-25] to Additive Arcane Damage"
+  ]
+}

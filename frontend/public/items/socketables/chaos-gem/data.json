@@ -1,0 +1,10 @@
+{
+  "Item": "Chaos Gem",
+  "Tier": "S",
+  "Level": "100",
+  "Type": "Gem",
+  "Rarity": "Heroic",
+  "Stats": [
+    "Magic Skill Damage increased by 15%"
+  ]
+}

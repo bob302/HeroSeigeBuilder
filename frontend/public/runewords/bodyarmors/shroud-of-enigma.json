@@ -1,0 +1,30 @@
+{
+  "Item": "Shroud of Enigma",
+  "Tier": "S",
+  "Level": "65",
+  "Defense": "51.5029-75",
+  "Type": "Body Armor",
+  "Bases": ["Body Armor"],
+  "Runes": ["Jah", "Uth", "Ber"],
+  "Size": "2x3",
+  "Rarity": "Runeword",
+  "Stats": [
+    "+3 to All Skills",
+    {
+      "stat": "+[2-3] to Teleport",
+      "class": "stat-spell"
+    },
+    "+[40-60]% Increased Movement Speed",
+    "+8% Chance for a Crushing Blow",
+    "+[60-120] to Life",
+    "+[12-20] Life After Each Kill",
+    "Life Increased  by [4-9]%",
+    "+15% of Damage Taken goes To Mana",
+    "Physical Damage Taken Reduced by [6-9]%",
+    "+0.75 to Strength (Based on Level)",
+    "+0.75 to Vitality (Based on Level)",
+    "+[15-50]% Increased Magic Find",
+    "Unbreakable",
+    "Socketed (3)"
+  ]
+}

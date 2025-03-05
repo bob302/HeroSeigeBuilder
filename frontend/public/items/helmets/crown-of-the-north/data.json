@@ -1,0 +1,19 @@
+{
+  "Item": "Crown of the North",
+  "Tier": "S",
+  "Level": "76",
+  "Defense": "177.50135-220",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[125-175]% Enhanced Defense",
+    "+1 to All Skills",
+    "+[1-3] to Cold Skills",
+    "+25 to Energy",
+    "Cold Skill Damage increased by [15-25]%",
+    "Physical Damage Taken Reduced by [5-15]%",
+    "+[15-30]% to All Resistances",
+    "Cannot be Frozen"
+  ]
+}

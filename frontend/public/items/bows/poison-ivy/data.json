@@ -1,0 +1,21 @@
+{
+  "Item": "Poison Ivy",
+  "Tier": "C",
+  "Level": "22",
+  "Damage": "204.00159-250",
+  "APS": "1.501.5",
+  "DPS": "306.50238-375",
+  "Type": "Bow",
+  "TwoHanded": true,
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[260-380]% Enhanced Damage",
+    "+[130-145] to Attack Rating",
+    "+7 to Strength",
+    "+7 to Dexterity",
+    "+[160-180] to Additive Poison Damage",
+    "Poison Skill Damage increased by [5-15]%",
+    "+50% to Poison Resistance"
+  ]
+}

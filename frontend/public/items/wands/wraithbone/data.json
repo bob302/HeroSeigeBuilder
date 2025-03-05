@@ -1,0 +1,19 @@
+{
+  "Item": "Wraithbone",
+  "Tier": "B",
+  "Level": "30",
+  "Damage": "19.5016-23",
+  "APS": "1.501.5",
+  "DPS": "29.5024-35",
+  "Type": "Wand",
+  "TwoHanded": false,
+  "Size": "1x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+2 to Summon Skills",
+    "+[15-25]% Increased Summon Attack Speed",
+    "+[3-5]% to Summon Resistances",
+    "+[10-20] to All Attributes",
+    "Socketed (0-2)"
+  ]
+}

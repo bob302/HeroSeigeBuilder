@@ -1,0 +1,19 @@
+{
+  "Item": "Spellshard",
+  "Tier": "A",
+  "Level": "56",
+  "Damage": "34.0032-36",
+  "APS": "2.272.1-2.44",
+  "DPS": "78.0068-88",
+  "Type": "Spellblade",
+  "TwoHanded": false,
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[20-30]% Faster Cast Rate",
+    "+[20-40]% Increased Attack Speed",
+    "+[480-490] to Attack Rating",
+    "+[8-16] Mana per second",
+    "+[550-670] to Arcane Skill Damage",
+    "+[10-15]% to All Resistances"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "Tier": "S",
+  "Level": "52",
+  "Size": "2x3",
+  "Item": "Trapped Vessel",
+  "Rarity": "Runeword",
+  "Type": "MultiType",
+  "Bases": [
+    "Flask",
+    "Wand"
+  ],
+  "Runes": [
+    "Lum",
+    "Lum",
+    "Tul"
+  ],
+  "Stats": [
+    "Attack Damage: 36",
+    "Attacks per Second: 1.25",
+    {
+      "stat": "33% Chance when Casting [Poison Nova] Level 18",
+      "class": "stat-spell"
+    },
+    "+1 to All Skills",
+    "+20 to Energy",
+    "Poison Skill Damage increased by [15-25]%",
+    "Replenish Mana [15-30]%",
+    "Socketed (3)"
+  ]
+}

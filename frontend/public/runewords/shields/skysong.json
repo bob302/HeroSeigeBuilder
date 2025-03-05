@@ -1,0 +1,39 @@
+{
+  "Tier": "S",
+  "Level": "52",
+  "Size": "2x3",
+  "Item": "Skysong",
+  "Rarity": "Runeword",
+  "Type": "Shield",
+  "Bases": [
+    "Shield",
+    "Sword",
+    "Claw",
+    "Bow",
+    "Gun",
+    "Staff",
+    "Book",
+    "Spellblade"
+  ],
+  "Runes": [
+    "Uth",
+    "Sal",
+    "Nut",
+    "Rex"
+  ],
+  "Stats": [
+    "+787% Enhanced Damage [650-880]",
+    "+3 to All Skills",
+    "+[25-35]% Faster Cast Rate",
+    "+10% Increased Attack Speed",
+    "+23 to Vitality [18-251",
+    "+[350-500] to Additive Poison Damage",
+    "+[160-180] to Arcane Skill Damage",
+    "Fire Skill Damage increased by 5%",
+    "+[80-110] to Mana",
+    "+55% Faster Hit Recovery",
+    "+15% of Damage Taken goes to Mana",
+    "Physical Damage Taken Reduced by 7%",
+    "Socketed (4)"
+  ]
+}

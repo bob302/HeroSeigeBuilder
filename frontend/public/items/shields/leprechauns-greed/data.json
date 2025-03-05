@@ -1,0 +1,17 @@
+{
+  "Item": "Leprechauns Greed",
+  "Tier": "S",
+  "Level": "87",
+  "Defense": "295.00238-352",
+  "Block": "35",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[180-220]% Enhanced Defense",
+    "+35% Magic Find (Based on Level)",
+    "+[40-60]% Extra Gold Dropped From Kills",
+    "+[20-40]% Increased Magic Find",
+    "Socketed (2-4)"
+  ]
+}

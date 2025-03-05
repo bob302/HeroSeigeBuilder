@@ -1,0 +1,10 @@
+{
+  "Item": "Aether Jewel",
+  "Tier": "D",
+  "Level": "15",
+  "Type": "Jewel",
+  "Rarity": "Common",
+  "Stats": [
+    "+15 Life After each Kill"
+  ]
+}

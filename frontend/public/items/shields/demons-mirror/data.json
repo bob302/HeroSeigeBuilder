@@ -1,0 +1,24 @@
+{
+  "Item": "Demon's Mirror",
+  "Tier": "SS",
+  "Level": "92",
+  "Defense": "1595.001330-1861",
+  "Block": "75",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Heroic",
+  "Stats": [
+    "+[250-365]% Enhanced Defense",
+    "+[2-5] to Physical Skills",
+    {
+      "stat": "+[5-10] to [Shield Slam]",
+      "class": "stat-spell"
+    },
+    "+[10-50]% Increased Attack Speed",
+    "+[30-40] to Vitality",
+    "Attack Damage increased by [10-30]%",
+    "+100% Faster Hit Recovery",
+    "+[300-600] to Life (Based on Level)",
+    "+[20-40]% to All Resistances"
+  ]
+}

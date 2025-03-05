@@ -1,0 +1,21 @@
+{
+  "Item": "Storm Gladiator's Wall",
+  "Tier": "B",
+  "Level": "54",
+  "Defense": "86.4053-120",
+  "Block": "40",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "10% Chance after Blocking [Lightning Fury] Level [5-10]",
+      "class": "stat-spell"
+    },
+    "+[140-200]% Enhanced Defense",
+    "+[160-180] to Additive Lightning Damage",
+    "+3 to Light Radius",
+    "+[25-35]% to All Resistances",
+    "+30% to Lightning Resistance"
+  ]
+}

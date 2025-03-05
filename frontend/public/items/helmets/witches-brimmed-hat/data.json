@@ -1,0 +1,16 @@
+{
+  "Item": "Witches Brimmed Hat",
+  "Tier": "S",
+  "Level": "86",
+  "Defense": "142.00108-176",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[80-120]% Enhanced Defense",
+    "+[2-3] to All Skills",
+    "Arcane Skill Damage increased by [10-20]%",
+    "-[7-15]% to Enemy Arcane Resistance",
+    "+30% to Arcane Resistance"
+  ]
+}

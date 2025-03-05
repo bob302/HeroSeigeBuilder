@@ -1,0 +1,19 @@
+{
+  "Item": "Den Glider In",
+  "Tier": "A",
+  "Level": "57",
+  "Defense": "129.9099-161",
+  "Block": "50",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[90-130]% Enhanced Defense",
+    "+[20-30]% Increased Chance of Blocking",
+    "+15 to Vitality",
+    "+35% Defense vs Missiles",
+    "+125% of Damage Returned to the Attacker",
+    "Magic Damage Taken Reduced by 15%",
+    "+[10-20]% Increased Magic Find"
+  ]
+}

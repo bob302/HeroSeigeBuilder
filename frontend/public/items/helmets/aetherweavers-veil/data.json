@@ -1,0 +1,15 @@
+{
+  "Item": "Aetherweaver's Veil",
+  "Tier": "D",
+  "Level": "13",
+  "Defense": "6.505-9",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[5-10]% Enhanced Defense",
+    "+[5-10] to Intelligence",
+    "Magic Skill Damage increased by [3-5]%",
+    "+15 to Mana"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "Item": "Brawler's Fighting Mitts",
+  "Tier": "SS",
+  "Level": "98",
+  "Defense": "32.0026-38",
+  "Type": "Gloves",
+  "Size": "2x2",
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "+[1-5] to [Face Breakers]",
+      "class": "stat-spell"
+    },
+    "+50% Increased Attack Speed",
+    "+[40-50] to Strength",
+    "+150 to Damage (Based on Level)"
+  ]
+}

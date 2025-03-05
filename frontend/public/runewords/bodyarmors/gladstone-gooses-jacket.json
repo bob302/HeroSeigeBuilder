@@ -1,0 +1,31 @@
+{
+  "Tier": "S",
+  "Level": "52",
+  "Size": "2x3",
+  "Item": "Gladstone Goose'S Jacket",
+  "Rarity": "Runeword",
+  "Type": "Body Armor",
+  "Bases": [
+    "Body Armor"
+  ],
+  "Runes": [
+    "Fel",
+    "Um",
+    "Pul",
+    "Sal"
+  ],
+  "Stats": [
+    "15% Chance when Struck [Oil Spill] Level 8",
+    "+[200-260]% Enhanced Defense",
+    "Mana Costs decreased by 3%",
+    "+10 to Strength",
+    "+10% Faster Hit Recovery",
+    "+3 to Light Radius",
+    "+5% of Damage Taken goes to Mana",
+    "Physical Damage Taken Reduced by 7%",
+    "+65% to All Resistances",
+    "+[15-50]% to Lightning Resistance",
+    "Half Freeze Duration",
+    "Socketed (4)"
+  ]
+}

@@ -1,20 +1,41 @@
-import type { EquipmentRarity } from "../models/Equipment";
+import type { EquipmentRarity, EquipmentTier } from "./Enums";
 
 export default class ColorUtils {
   static rarityToColor(rarity: EquipmentRarity | null): string {
     switch (rarity) {
       case "Common":
-        return "#d6ac2f";
+        return "var(--color-common)";
       case "Satanic":
-        return "#c81717";
+        return "var(--color-satanic)";
       case "Angelic":
-        return "#fdfea5";
+        return "var(--color-angelic)";
       case "Unholy":
-        return "#c73664";
+        return "var(--color-unholy)";
       case "Heroic":
-        return "#00e19a";
+        return "var(--color-heroic)";
       case "Satanic Set":
-        return "#0bb01a";
+        return "var(--color-satanic-set)";
+      case "Runeword":
+        return "var(--color-runeword)";
+      default:
+        return "";
+    }
+  }
+
+  static tierToColor(tier: EquipmentTier | null): string {
+    switch (tier) {
+      case "SS":
+        return "var(--color-angelic)";
+      case "S":
+        return "var(--color-s)";
+      case "A":
+        return "var(--color-a)";
+      case "B":
+        return "var(--color-b)";
+      case "C":
+        return "var(--color-c)";
+      case "D":
+        return "var(--color-d)";
       default:
         return "";
     }
@@ -34,6 +55,8 @@ export default class ColorUtils {
         return "rgba(0, 225, 154, 0.6)"; 
       case "Satanic Set":
         return "rgba(11, 176, 26, 0.6)"; 
+        case "Runeword":
+          return "rgba(199, 179, 119, 0.6)";
       default:
         return "rgba(0, 0, 0, 0)";
     }

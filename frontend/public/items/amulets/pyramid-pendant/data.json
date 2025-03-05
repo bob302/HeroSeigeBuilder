@@ -1,0 +1,13 @@
+{
+  "Item": "Pyramid Pendant",
+  "Tier": "B",
+  "Level": "46",
+  "Type": "Amulet",
+  "Size": "1x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[10-15] to Vitality",
+    "Replenish Life [10-15]%",
+    "+[20-30] to Life"
+  ]
+}

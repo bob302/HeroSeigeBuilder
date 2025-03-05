@@ -1,0 +1,15 @@
+{
+  "Item": "Chronomancer's Curio of Time",
+  "Tier": "S",
+  "Level": "85",
+  "Type": "Amulet",
+  "Size": "1x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[2-4] to All Attributes",
+    "Arcane Skill Damage increased by [4-8]%",
+    "+[25-35] to Life",
+    "+[6-12] Mana After each Kill",
+    "+[30-50]% to Arcane Resistance"
+  ]
+}

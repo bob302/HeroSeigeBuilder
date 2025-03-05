@@ -1,0 +1,18 @@
+{
+  "Item": "Anubis Torso",
+  "Tier": "A",
+  "Level": "57",
+  "Defense": "393.00338-448",
+  "Type": "Body Armor",
+  "Size": "2x3",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[160-180]% Enhanced Defense",
+    "+25 to Strength",
+    "+25 to Vitality",
+    "Replenish Life 40%",
+    "+[200-250] to Life",
+    "Life Increased by [6-10]%",
+    "Socketed (2-4)"
+  ]
+}

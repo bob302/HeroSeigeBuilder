@@ -1,0 +1,24 @@
+{
+  "Item": "Marine's Buddy",
+  "Tier": "B",
+  "Level": "34",
+  "Damage": "224.70198-252",
+  "APS": "1.831.72-1.95",
+  "DPS": "416.00340-492",
+  "Type": "Gun",
+  "TwoHanded": true,
+  "Size": "3x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[370-425]% Enhanced Damage",
+    "+[15-30]% Increased Attack Speed",
+    "+[10-20]% Increased Critical Strike Chance",
+    "+25% Chance for a Deadly Blow",
+    "+10% Increased Attack Rating",
+    "+[15-25]% Increased Critical Strike Damage",
+    "+20 to Strength",
+    "+15 to Dexterity",
+    "+[6-10] Mana After each Kill",
+    "Socketed (0-4)"
+  ]
+}

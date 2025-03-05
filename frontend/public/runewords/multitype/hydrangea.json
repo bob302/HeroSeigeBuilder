@@ -1,0 +1,36 @@
+{
+  "Tier": "S",
+  "Level": "69",
+  "Size": "2x3",
+  "Item": "Hydrangea",
+  "Rarity": "Runeword",
+  "Type": "MultiType",
+  "Bases": [
+    "Polearm",
+    "Bow",
+    "Throwing Weapon",
+    "Mace"
+  ],
+  "Runes": [
+    "Zed",
+    "Tul",
+    "Zed"
+  ],
+  "Stats": [
+    "Attack Damage: 63",
+    "Attacks per Second: 1.75",
+    "+[2-3] to All Skills (Amazon)",
+    "+8 to Poison Skills (Amazon)",
+    "+[20-30]% Increased Movement Speed",
+    "+[4-8] Mana per second",
+    "+35 to Energy",
+    "+25 to Vitality",
+    "+[2450-3200] to Poison Skill Damage",
+    "Poison Skill Damage increased by 20%",
+    "-35% to Enemy Poison Resistance",
+    "Magic Skill Damage increased by 16%",
+    "+[30-60]% to Poison Resistance",
+    "Unbreakable",
+    "Socketed (3)"
+  ]
+}

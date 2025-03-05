@@ -1,0 +1,24 @@
+{
+  "Item": "Gladiator's Wrecking Ball",
+  "Tier": "S",
+  "Level": "62",
+  "Damage": "166.40143-190",
+  "APS": "2.021.95-2.09",
+  "DPS": "338.50279-398",
+  "Type": "Mace",
+  "TwoHanded": false,
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[240-280]% Enhanced Damage",
+    {
+      "stat": "+[4-8] to [Wrecking Ball]",
+      "class": "stat-spell"
+    },
+    "+25% Increased Movement Speed",
+    "+[30-40]% Increased Attack Speed",
+    "+50% Chance for a Deadly Blow",
+    "+[820-875] to Additive Physical Damage",
+    "+15 to All Attributes"
+  ]
+}

@@ -1,15 +1,20 @@
 import {
   Socketable,
   BaseItem,
-  EquipmentType,
+  type IRuneword,
+  Equipment,
 } from "../models/Equipment";
 import { ItemParser } from "../parser/ItemParser";
+import { EquipmentRarity, EquipmentType, subtypeDirectoryMap, typeDirectoryMap } from "../util/Enums";
 
 class EquipmentService {
   private typePaths: Record<string, string[]> = {};
-  private typeCache = new Map<string, BaseItem[]>();
+  private itemCache = new Map<string, BaseItem>();
   private imageCache = new Map<string, HTMLImageElement>();
+  private fullyLoadedTypes: Set<EquipmentType> = new Set();
   private socketableMap = new Map<string, Socketable>();
+  private loadQueue: { type: EquipmentType; priority: number }[] = [];
+  private isProcessing = false;
   public isInitialized = false;
 
   private async loadImage(url: string): Promise<HTMLImageElement> {
@@ -39,16 +44,29 @@ class EquipmentService {
     });
   }
 
-  private async fetchItem(path: string): Promise<BaseItem | null> {
-    
+  private async fetchItem(path: string): Promise<BaseItem | (Equipment & IRuneword)[] |null> {
     try {
-      const dataResponse = await fetch(`${path}/data.json`);
+      if (path.startsWith("/runewords/")) {
+        return await this.fetchRuneword(path)
+      } else {
+        return await this.fetchEquipment(path)
+      }
+    } catch {
+      return null
+    }
+  }
+
+  private async fetchEquipment(path: string): Promise<BaseItem | null> {
+    try {
+      const finalPath = `${path}/data.json`
+      const imageUrl = `${path}/icon.png`;
+      
+      const dataResponse = await fetch(finalPath);
       if (!dataResponse.ok) throw new Error("Data load failed");
 
       const jsonData = await dataResponse.json();
       const parsedItem = ItemParser.parseWikiItem(jsonData);
 
-      const imageUrl = `${path}/icon.png`;
       try {
         await this.loadImage(imageUrl);
         parsedItem.image = imageUrl;
@@ -66,127 +84,160 @@ class EquipmentService {
       return null;
     }
   }
-  public async initialize(onLoaded?: () => void): Promise<void> {
+
+  private async fetchRuneword(path: string): Promise<(Equipment & IRuneword)[] | null> {
+    try {
+      const dataResponse = await fetch(path);
+      if (!dataResponse.ok) throw new Error("Data load failed");
+
+      const jsonData = await dataResponse.json();
+      const parsedRunewords = ItemParser.parseRuneword(jsonData);
+
+      return parsedRunewords;
+    } catch (error) {
+      console.error(`Error loading runewords from ${path}:`, error);
+      return null;
+    }
+  }
+
+  public async initialize(onLoad?: () => void): Promise<void> {
     if (this.isInitialized) return;
 
     try {
-      const response = await fetch("/data/index.json");
-      const paths: string[] = await response.json();
-      this.groupPathsByType(paths);
-      // Socketables
-      this.loadType(EquipmentType.Misc);
+      const responseItems = await fetch("/items/index.json");
+      const responseRunewords = await fetch("/runewords/index.json");
+      const pathsItems: string[] = await responseItems.json();
+      const pathsRunewords: string[] = await responseRunewords.json();
 
-      if (onLoaded) {
-        onLoaded();
-      }
-
+      this.groupPathsByType(pathsItems);
+      this.groupPathsByType(pathsRunewords);
+      
+      this.enqueueLoad(EquipmentType.Socketable, 10);
+      this.processQueue();
+      
       this.isInitialized = true;
+      if (onLoad) {
+        onLoad()
+      }
     } catch (error) {
       console.error("Failed to initialize equipment service:", error);
     }
   }
 
   private groupPathsByType(paths: string[]): void {
-    this.typePaths = paths.reduce(
-      (acc, path) => {
-        const [, , type] = path.split("/");
-        if (!acc[type]) acc[type] = [];
-        acc[type].push(path);
-        return acc;
-      },
-      {} as Record<string, string[]>,
-    );
+    paths.forEach((path) => {
+      const [, , type] = path.split("/");
+      if (!this.typePaths[type]) {
+        this.typePaths[type] = [];
+      }
+      this.typePaths[type].push(path);
+    });
   }
 
-  // haha
-  private getEquipmentTypeBySubtype(subtype: string): EquipmentType | null {
-    switch (subtype.toLowerCase()) {
-      case "amulets":
-        return EquipmentType.Accessory;
-      case "axes":
-        return EquipmentType.Weapon;
-      case "belts":
-        return EquipmentType.Accessory;
-      case "bodyarmors":
-        return EquipmentType.Armor;
-      case "books":
-        return EquipmentType.Weapon;
-      case "boots":
-        return EquipmentType.Armor;
-      case "bows":
-        return EquipmentType.Weapon;
-      case "canes":
-        return EquipmentType.Weapon;
-      case "chainsaws":
-        return EquipmentType.Weapon;
-      case "charms":
-        return EquipmentType.Special;
-      case "claws":
-        return EquipmentType.Weapon;
-      case "daggers":
-        return EquipmentType.Weapon;
-      case "flasks":
-        return EquipmentType.Weapon;
-      case "gloves":
-        return EquipmentType.Armor;
-      case "guns":
-        return EquipmentType.Weapon;
-      case "helmets":
-        return EquipmentType.Armor;
-      case "maces":
-        return EquipmentType.Weapon;
-      case "polearms":
-        return EquipmentType.Weapon;
-      case "potions":
-        return EquipmentType.Special;
-      case "rings":
-        return EquipmentType.Accessory;
-      case "shields":
-        return EquipmentType.Offhand;
-      case "socketables":
-        return EquipmentType.Misc;
-      case "spellblades":
-        return EquipmentType.Weapon;
-      case "staves":
-        return EquipmentType.Weapon;
-      case "swords":
-        return EquipmentType.Weapon;
-      case "throwingweapon":
-        return EquipmentType.Weapon;
-      case "wands":
-        return EquipmentType.Weapon;
-      default:
-        return null;
+
+
+getDirectoryBySubtype(subtype: string): string {
+  const key = subtype.toLowerCase();
+  const directory = subtypeDirectoryMap[key];
+  if (!directory) {
+    throw new Error(`No directory for ${key}`);
+  }
+  return directory;
+}
+
+
+
+getDirectoriesByType(type: EquipmentType): string[] {
+  const directories = typeDirectoryMap[type];
+  if (!directories) {
+    throw new Error(`No directory for type: ${type}`);
+  }
+  return directories;
+}
+
+
+  private enqueueLoad(type: EquipmentType, priority: number = 1): void {
+    const existing = this.loadQueue.find((t) => t.type === type);
+    if (existing) {
+      existing.priority = Math.max(existing.priority, priority);
+    } else {
+      this.loadQueue.push({ type, priority });
     }
+
+    this.loadQueue.sort((a, b) => b.priority - a.priority);
+    
   }
 
-  public async loadType(type: EquipmentType): Promise<BaseItem[]> {
-    if (this.typeCache.has(type)) {
-      return this.typeCache.get(type)!;
+  private async processQueue(): Promise<void> {
+    if (this.isProcessing) return;
+    this.isProcessing = true;
+
+    while (this.loadQueue.length > 0) {
+      const { type } = this.loadQueue.shift()!;
+
+      await this.loadType(type);
     }
 
-    const paths: string[] = [];
-    for (const subtype in this.typePaths) {
-      const equipmentType = this.getEquipmentTypeBySubtype(subtype);
-      if (equipmentType === type) {
-        paths.push(...this.typePaths[subtype]);
+    this.isProcessing = false;
+  }
+
+  public async loadType(type: EquipmentType): Promise<void> {
+    if (this.fullyLoadedTypes.has(type)) return;
+    
+    const paths = this.getDirectoriesByType(type).flatMap(dir => this.typePaths[dir] || []);
+    
+    const items = await Promise.all(paths.map((path) => this.fetchItem(path)));
+    
+    const validItems = items.filter((i): i is BaseItem => !!i);
+
+    const flatItems = validItems.flat();
+    
+    for (const item of flatItems) {
+      if (item instanceof Equipment && item.rarity === EquipmentRarity.Runeword) {
+        if (!this.itemCache.has(EquipmentType.Socketable)) {
+          this.enqueueLoad(EquipmentType.Socketable, 10);
+        }
+      }
+      this.itemCache.set(item.name, item);
+    }
+
+    this.fullyLoadedTypes.add(type);
+  }
+
+  public requestLoad(type: EquipmentType): void {
+    this.enqueueLoad(type, 10);
+    this.processQueue();
+  }
+
+  // Holy
+  public getItems(type: EquipmentType, onUpdate?: (items: BaseItem[]) => void): BaseItem[] {
+    const items = Array.from(this.itemCache.values()).filter(item => item.type === type) || [];
+    
+    if (onUpdate) {
+      if (!this.fullyLoadedTypes.has(type)) {
+        const intervalId = setInterval(() => {
+          const updatedItems = Array.from(this.itemCache.values()).filter(item => item.type === type) || [];
+          onUpdate(updatedItems);
+          if (this.fullyLoadedTypes.has(type)) {
+            clearInterval(intervalId);
+            onUpdate(updatedItems);
+          }
+        }, 200);
+      } else {
+        
+        onUpdate(items);
       }
     }
-
-    const items = await Promise.all(paths.map((path) => this.fetchItem(path)));
-
-    const validItems = items.filter((i): i is BaseItem => !!i);
-    this.typeCache.set(type, validItems);
-
-    return validItems;
+    
+    return items;
+  }
+  
+  public isTypeFullyLoaded(type: EquipmentType): boolean {
+    return this.fullyLoadedTypes.has(type);
   }
 
-  public getItems(type: string): BaseItem[] {
-    return this.typeCache.get(type) || [];
-  }
-
-  public getSocketable(name: string): Socketable | undefined {
-    return this.socketableMap.get(name);
+  public getSocketable(name: string): Socketable | null {
+    return this.socketableMap.get(name) ?? null;
   }
 }
 

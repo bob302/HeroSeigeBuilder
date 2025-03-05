@@ -1,0 +1,16 @@
+{
+  "Item": "Ali's Boxing Gloves",
+  "Tier": "SS",
+  "Level": "98",
+  "Defense": "32.0026-38",
+  "Type": "Gloves",
+  "Size": "2x2",
+  "Rarity": "Heroic",
+  "Stats": [
+    "+1 to All Skills",
+    "[Cornered] Level [1-5]",
+    "+30% Increased Movement Speed",
+    "+[25-50]% Increased Attack Speed",
+    "Extra Damage to Stunned Monsters [25-50]%"
+  ]
+}

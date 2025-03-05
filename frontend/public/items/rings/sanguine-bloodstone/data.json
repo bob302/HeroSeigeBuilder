@@ -1,0 +1,13 @@
+{
+  "Item": "Sanguine Bloodstone",
+  "Tier": "A",
+  "Level": "54",
+  "Type": "Ring",
+  "Size": "1x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[4-8]% Life stolen per Hit",
+    "Replenish Life [15-25]%",
+    "+[135-165] to Life"
+  ]
+}

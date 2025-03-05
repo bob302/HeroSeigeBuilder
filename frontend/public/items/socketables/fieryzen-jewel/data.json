@@ -1,0 +1,10 @@
+{
+  "Item": "Fieryzen Jewel",
+  "Tier": "C",
+  "Level": "15",
+  "Type": "Jewel",
+  "Rarity": "Common",
+  "Stats": [
+    "+40% Fire Resistance"
+  ]
+}

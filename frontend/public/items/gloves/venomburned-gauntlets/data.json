@@ -1,0 +1,18 @@
+{
+  "Item": "Venomburned Gauntlets",
+  "Tier": "D",
+  "Level": "14",
+  "Defense": "5.124-7",
+  "Type": "Gloves",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[25-30]% Enhanced Defense",
+    "Poison Skill Damage increased by [5-15]%",
+    "Fire Skill Damage increased by [5-15]%",
+    "+8% Fire Damage Absorbed",
+    "+8% Poison Damage Absorbed",
+    "+15% to All Resistances",
+    "Poison Length Reduced by 50%"
+  ]
+}

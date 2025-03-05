@@ -1,0 +1,16 @@
+{
+  "Item": "Genji's Battle Helmet",
+  "Tier": "A",
+  "Level": "56",
+  "Defense": "99.9076-125",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[80-130]% Enhanced Defense",
+    "+[20-30]% Increased Attack Speed",
+    "+[80-150] to Attack Rating",
+    "+[5-10]% of target Defense ignored",
+    "+15 to Strength"
+  ]
+}

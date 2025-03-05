@@ -1,0 +1,10 @@
+{
+  "Item": "Moonstone Gem",
+  "Tier": "S",
+  "Level": "100",
+  "Type": "Gem",
+  "Rarity": "Heroic",
+  "Stats": [
+    "+25% Increased Attack Speed"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "Item": "Clan Leader's Pride",
+  "Tier": "D",
+  "Level": "14",
+  "Defense": "29.4521-39",
+  "Type": "Body Armor",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "10% Chance when Struck [Fan of Knives] Level 7",
+      "class": "stat-spell"
+    },
+    "+[12-20]% Enhanced Damage",
+    "+[90-115]% Enhanced Defense",
+    "+[6-15] to Strength",
+    "+[6-12] to Armor",
+    "+[12-20]% to All Resistances",
+    "Socketed (0-3)"
+  ]
+}

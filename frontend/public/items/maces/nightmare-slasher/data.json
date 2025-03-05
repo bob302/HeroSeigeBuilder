@@ -1,0 +1,25 @@
+{
+  "Item": "Nightmare Slasher",
+  "Tier": "A",
+  "Level": "57",
+  "Damage": "134.60122-148",
+  "APS": "2.232.23",
+  "DPS": "301.00272-330",
+  "Type": "Mace",
+  "TwoHanded": false,
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "8% Chance when Striking [Rupture] Level 11",
+      "class": "stat-spell"
+    },
+    "+[280-310]% Enhanced Damage",
+    "+40% Increased Attack Speed",
+    "+775 to Additive Arcane Damage",
+    "-20% to Enemy Arcane Resistance",
+    "Magic Skill Damage increased by [8-18]%",
+    "+40% to Arcane Resistance",
+    "Socketed (1-3)"
+  ]
+}

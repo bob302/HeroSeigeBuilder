@@ -1,0 +1,15 @@
+{
+  "Item": "Thor's Battle Cap",
+  "Tier": "A",
+  "Level": "58",
+  "Defense": "99.9076-125",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[80-130]% Enhanced Defense",
+    "+10 to Energy",
+    "-[3-8]% to Enemy Arcane Resistance",
+    "Replenish Mana [10-15]%"
+  ]
+}

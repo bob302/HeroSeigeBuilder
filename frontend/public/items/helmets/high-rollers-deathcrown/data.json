@@ -1,0 +1,21 @@
+{
+  "Item": "High Roller's Deathcrown",
+  "Tier": "SS",
+  "Level": "1",
+  "Defense": "50.501-100",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "+1 to [Roll the Dice]",
+      "class": "stat-spell"
+    },
+    "+[1-40]% Increased Movement Speed",
+    "+[1-80] to All Attributes",
+    "Attack Damage increased by [1-100]%",
+    "Arcane Skill Damage increased by [1-100]%",
+    "+[1-400] to Life",
+    "+[1-70]% to All Resistances"
+  ]
+}

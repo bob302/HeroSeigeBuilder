@@ -1,0 +1,28 @@
+{
+  "Item": "Wraith Forged Cleaver",
+  "Tier": "SS",
+  "Level": "96",
+  "Damage": "587.40524-652",
+  "APS": "1.101.1",
+  "DPS": "646.50576-717",
+  "Type": "Axe",
+  "TwoHanded": true,
+  "Size": "2x3",
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "15% Chance when Striking [Slice of Shadows] Level 66",
+      "class": "stat-spell"
+    },
+    "+[580-640]% Enhanced Damage",
+    "+[5-10] to All Skills",
+    "+[12-18]% Life stolen per Hit",
+    "+100% Increased Critical Strike Chance",
+    "+50% of target Defense ignored",
+    "+33% Chance to Open Wounds",
+    "+[22-35] Mana After each Kill",
+    "Attacks can hit multiple enemies",
+    "[Dark Oath] Level [20-40] (Holder Only)",
+    "Socketed (0-6)"
+  ]
+}

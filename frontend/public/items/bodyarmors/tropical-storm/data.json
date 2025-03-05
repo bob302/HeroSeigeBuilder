@@ -1,0 +1,21 @@
+{
+  "Item": "Tropical Storm",
+  "Tier": "B",
+  "Level": "40",
+  "Defense": "174.00132-216",
+  "Type": "Body Armor",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "12% Chance when Struck [Astrope's Battle Maiden] Level 21",
+      "class": "stat-spell"
+    },
+    "+[120-140]% Enhanced Defense",
+    "+[1-2] to Lightning Skills",
+    "Lightning Skill Damage increased by [25-40]%",
+    "+100% Faster Hit Recovery",
+    "+[50-75]% to Lightning Resistance",
+    "Socketed (1-4)"
+  ]
+}

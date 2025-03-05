@@ -1,0 +1,23 @@
+{
+  "Item": "Poseidon's Might",
+  "Tier": "C",
+  "Level": "22",
+  "Damage": "76.5065-88",
+  "APS": "2.342.25-2.44",
+  "DPS": "181.00147-215",
+  "Type": "Polearm",
+  "TwoHanded": true,
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[150-175]% Enhanced Damage",
+    "+10% Increased Movement Speed",
+    "+[20-30]% Increased Attack Speed",
+    "+[5-10]% Increased Critical Strike Chance",
+    "+180 to Attack Rating",
+    "+[10-20]% Increased Critical Strike Damage",
+    "+15 to Strength",
+    "+[50-75] to Additive Cold Damage",
+    "Socketed (0-3)"
+  ]
+}

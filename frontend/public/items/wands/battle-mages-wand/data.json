@@ -1,0 +1,20 @@
+{
+  "Item": "Battle Mage's Wand",
+  "Tier": "B",
+  "Level": "36",
+  "Damage": "19.5016-23",
+  "APS": "1.751.75",
+  "DPS": "34.5028-41",
+  "Type": "Wand",
+  "TwoHanded": false,
+  "Size": "1x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+50% Faster Cast Rate",
+    "+[4-6] Life per second",
+    "+[4-6] Mana per second",
+    "Magic Skill Damage increased by 8%",
+    "+[50-100] to Mana",
+    "Life Increased by [3-8]%"
+  ]
+}

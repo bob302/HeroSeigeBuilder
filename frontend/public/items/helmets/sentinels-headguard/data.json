@@ -1,0 +1,16 @@
+{
+  "Item": "Sentinel's Headguard",
+  "Tier": "D",
+  "Level": "12",
+  "Defense": "7.605-11",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[20-30]% Enhanced Defense",
+    "+5 to Vitality",
+    "Physical Damage Taken Reduced by [3-5]%",
+    "+[10-15]% to All Resistances",
+    "Socketed (0-1)"
+  ]
+}

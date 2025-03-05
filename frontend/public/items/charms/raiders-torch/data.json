@@ -1,0 +1,13 @@
+{
+  "Item": "Raider's Torch",
+  "Tier": "S",
+  "Level": "61",
+  "Type": "Charm",
+  "Size": "1x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[10-25]% Increased Attack Speed",
+    "Attack Damage increased by [8-20]%",
+    "+[3-5] to Light Radius"
+  ]
+}

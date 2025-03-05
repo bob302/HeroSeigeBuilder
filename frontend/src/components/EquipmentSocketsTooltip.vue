@@ -1,7 +1,6 @@
 <!-- EquipmentSockets.vue -->
 <template>
   <div class="runes-section">
-    <div class="runes-divider"></div>
     <div class="runes-content">
       <p class="text-regular socketables-title">Socketed Runes:</p>
       <ul class="socketables-list">
@@ -16,7 +15,7 @@
             class="socketable-icon"
           />
           <div class="socketable-info">
-            <p class="socketable-name">{{ socket.socketable?.name }}</p>
+            <p class="socketable-name" :class="socket.prismatic === true ? 'prismatic' : 'normal'">{{ socket.socketable?.name }}</p>
           </div>
         </li>
       </ul>
@@ -46,20 +45,6 @@ export default defineComponent({
   min-width: 150px;
 }
 
-.runes-divider {
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 1px;
-  background: linear-gradient(
-    180deg,
-    transparent 0%,
-    rgba(199, 179, 119, 0.5) 50%,
-    transparent 100%
-  );
-}
-
 .socketables-list {
   flex: 1;
   overflow-y: auto;
@@ -84,8 +69,15 @@ export default defineComponent({
   flex: 1;
 }
 
-.socketable-name {
+.prismatic {
+  color: #32edf3;
+}
+
+.normal {
   color: #f3c632;
+}
+
+.socketable-name {
   font-family: "Fenris";
   font-size: 1.1rem;
 }

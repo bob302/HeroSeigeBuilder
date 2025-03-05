@@ -1,0 +1,25 @@
+{
+  "Item": "F4-Tactical Rifle",
+  "Tier": "S",
+  "Level": "90",
+  "Damage": "539.60504-576",
+  "APS": "2.412.22-2.59",
+  "DPS": "1305.001118-1492",
+  "Type": "Gun",
+  "TwoHanded": true,
+  "Size": "3x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[580-620]% Enhanced Damage",
+    "+2 to All Skills",
+    "+[20-40]% Increased Attack Speed",
+    "+20% Increased Critical Strike Chance",
+    "+15% Chance for a Deadly Blow",
+    "+350 to Attack Rating",
+    "+[80-100] to Additive Physical Damage",
+    "+[4-6]% Life stolen per Hit",
+    "+[20-40]% Increased Critical Strike Damage",
+    "+25% of target Defense ignored",
+    "Socketed (2)"
+  ]
+}

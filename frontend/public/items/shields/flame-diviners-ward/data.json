@@ -1,0 +1,19 @@
+{
+  "Item": "Flame Diviner's Ward",
+  "Tier": "A",
+  "Level": "60",
+  "Defense": "129.9099-161",
+  "Block": "40",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[90-130]% Enhanced Defense",
+    "+[10-20]% Faster Cast Rate",
+    "+[550-625] to Fire Skill Damage",
+    "Fire Skill Damage increased by 5%",
+    "Replenish Mana 10%",
+    "+25 to Mana",
+    "+50% to Fire Resistance"
+  ]
+}

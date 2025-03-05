@@ -1,0 +1,14 @@
+{
+  "Item": "Venom's Necklace",
+  "Tier": "S",
+  "Level": "90",
+  "Type": "Amulet",
+  "Size": "1x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[3-8] to All Attributes",
+    "+[50-80] to Additive Poison Damage",
+    "-[5-10]% to Enemy Poison Resistance",
+    "+[40-50]% to Poison Resistance"
+  ]
+}

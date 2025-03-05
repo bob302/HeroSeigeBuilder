@@ -1,0 +1,16 @@
+{
+  "Item": "Battlemagi's Rampart",
+  "Tier": "D",
+  "Level": "16",
+  "Defense": "12.509-16",
+  "Block": "20",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[50-60]% Enhanced Defense",
+    "+5 to Armor",
+    "Replenish Life 15%",
+    "Replenish Mana 10%"
+  ]
+}

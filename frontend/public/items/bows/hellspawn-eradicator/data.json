@@ -1,0 +1,28 @@
+{
+  "Item": "Hellspawn Eradicator",
+  "Tier": "S",
+  "Level": "81",
+  "Damage": "504.80408-602",
+  "APS": "1.251.25",
+  "DPS": "631.00510-752",
+  "Type": "Bow",
+  "TwoHanded": true,
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "7% Chance after each Kill [Orb of Frost] Level 40",
+      "class": "stat-spell"
+    },
+    "+[410-540]% Enhanced Damage",
+    "+75% Chance for a Deadly Blow",
+    "+75% Chance for a Crushing Blow",
+    "+35% of target Defense ignored",
+    "Slows target by 40%",
+    "+[1600-1800] to Additive Cold Damage",
+    "Cold Skill Damage increased by [20-30]%",
+    "+20 Life After each Kill",
+    "Piercing Attack",
+    "Socketed (2)"
+  ]
+}

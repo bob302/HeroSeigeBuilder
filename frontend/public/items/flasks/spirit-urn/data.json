@@ -1,0 +1,19 @@
+{
+  "Item": "Spirit Urn",
+  "Tier": "D",
+  "Level": "10",
+  "Damage": "10.008-12",
+  "APS": "1.251.25",
+  "DPS": "12.5010-15",
+  "Type": "Flask",
+  "TwoHanded": false,
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+8% Mana stolen per Hit",
+    "+[10-15] to Energy",
+    "+[2-5] to All Attributes",
+    "Replenish Mana 15%",
+    "+50 to Mana (Based on Level)"
+  ]
+}

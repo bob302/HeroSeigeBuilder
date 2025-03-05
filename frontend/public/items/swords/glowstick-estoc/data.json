@@ -1,0 +1,35 @@
+{
+  "Item": "Glowstick Estoc",
+  "Tier": "SS",
+  "Level": "95",
+  "Damage": "741.00627-855",
+  "APS": "2.492.36-2.62",
+  "DPS": "1860.501480-2241",
+  "Type": "Sword",
+  "Size": "2x3",
+  "TwoHanded": true,
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "8% Chance when Striking [Vacuuming Strike] Level 2",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "15% Chance when Attacking [Weapon Throw] Level 59",
+      "class": "stat-spell"
+    },
+    "+[725-850]% Enhanced Damage",
+    "+[3-4] to All Skills",
+    {
+      "stat": "+[1-5] to [Returning Projectiles]",
+      "class": "stat-spell"
+    },
+    "+[35-50]% Increased Attack Speed",
+    "+1750 to Attack Rating",
+    "+[40-60] to Strength",
+    "+45 to Dexterity",
+    "Attack Damage increased by [45-65]%",
+    "Attacks can hit multiple enemies",
+    "Socketed (3-5)"
+  ]
+}

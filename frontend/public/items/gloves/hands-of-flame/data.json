@@ -1,0 +1,15 @@
+{
+  "Item": "Hands of Flame",
+  "Tier": "A",
+  "Level": "52",
+  "Defense": "28.5024-34",
+  "Type": "Gloves",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[30-40]% Enhanced Defense",
+    "+[1-2] to All Skills",
+    "+[15-25]% Faster Cast Rate",
+    "Fire Skill Damage increased by [10-20]%"
+  ]
+}

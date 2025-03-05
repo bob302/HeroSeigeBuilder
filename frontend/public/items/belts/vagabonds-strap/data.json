@@ -1,0 +1,16 @@
+{
+  "Item": "Vagabond's Strap",
+  "Tier": "S",
+  "Level": "87",
+  "Defense": "97.2076-119",
+  "Type": "Belt",
+  "Size": "2x1",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[45-75]% Enhanced Defense",
+    "+[5-10]% Increased Critical Strike Chance",
+    "+[20-35]% Increased Critical Strike Damage",
+    "+250 to Damage (Based on Level)",
+    "Belt Slots: 5"
+  ]
+}

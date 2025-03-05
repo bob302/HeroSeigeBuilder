@@ -1,0 +1,24 @@
+{
+  "Item": "Steve's Punchbow",
+  "Tier": "S",
+  "Level": "84",
+  "Damage": "535.60432-640",
+  "APS": "1.501.5",
+  "DPS": "803.50648-959",
+  "Type": "Bow",
+  "TwoHanded": true,
+  "Size": "2x3",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[440-580]% Enhanced Damage",
+    "+2 to All Skills",
+    "+4% Increased Attack Rating",
+    "+[280-460] to Attack Rating",
+    "+6% Mana stolen per Hit",
+    "Slows target by 20%",
+    "+10 to All Attributes",
+    "+[550-575] to Additive Lightning Damage",
+    "+[550-575] to Additive Fire Damage",
+    "+[550-575] to Additive Cold Damage"
+  ]
+}

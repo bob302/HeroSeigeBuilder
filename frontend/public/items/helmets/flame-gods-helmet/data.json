@@ -1,0 +1,18 @@
+{
+  "Item": "Flame God's Helmet",
+  "Tier": "B",
+  "Level": "42",
+  "Defense": "59.4543-76",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[65-100]% Enhanced Defense",
+    "+[10-15]% Faster Cast Rate",
+    "+[135-185] to Fire Skill Damage",
+    "Fire Skill Damage increased by [7-15]%",
+    "+75 to Mana",
+    "+75% to Fire Resistance",
+    "+5% to Maximum Fire Resist"
+  ]
+}

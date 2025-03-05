@@ -1,0 +1,23 @@
+{
+  "Item": "The Annihilator",
+  "Tier": "D",
+  "Level": "14",
+  "Damage": "44.0036-52",
+  "APS": "1.401.4",
+  "DPS": "62.0051-73",
+  "Type": "Chainsaw",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[140-160]% Enhanced Damage",
+    "+40% Chance for a Crushing Blow",
+    "+60 to Attack Rating",
+    "+[2-4]% Mana stolen per Hit",
+    "+40% of target Defense ignored",
+    "Slows target by 20%",
+    "+[10-20] to Additive Fire Damage",
+    "+[10-20]% to All Resistances",
+    "Attacks can hit multiple enemies",
+    "Socketed (0-4)"
+  ]
+}

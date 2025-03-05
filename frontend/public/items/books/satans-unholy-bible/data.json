@@ -1,0 +1,21 @@
+{
+  "Item": "Satan's Unholy Bible",
+  "Tier": "C",
+  "Level": "27",
+  "Damage": "17.0015-19",
+  "APS": "1.751.75",
+  "DPS": "30.5027-34",
+  "Type": "Book",
+  "TwoHanded": false,
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+40% Faster Cast Rate",
+    "Magic Skill Damage increased by [20-30]%",
+    "Replenish Mana 25%",
+    "Life Increased by value1%",
+    "Physical Damage Taken Reduced by value1%",
+    "-50% to All Resistances",
+    "Socketed (0-2)"
+  ]
+}

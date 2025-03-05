@@ -1,0 +1,19 @@
+{
+  "Item": "Lichbane",
+  "Tier": "B",
+  "Level": "40",
+  "Defense": "204.00156-252",
+  "Type": "Body Armor",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[160-180]% Enhanced Defense",
+    "+[1-2] to All Skills",
+    "+15 to Energy",
+    "+10 to All Attributes",
+    "Magic Skill Damage increased by [12-30]%",
+    "Replenish Mana 50%",
+    "+35 to Energy (Based on Level)",
+    "Socketed (0-3)"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "Item": "The Iris",
+  "Tier": "C",
+  "Level": "42",
+  "Damage": "44.3828-61",
+  "APS": "2.232.02-2.43",
+  "DPS": "102.5057-148",
+  "Type": "Staff",
+  "TwoHanded": true,
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[75-125]% Enhanced Damage",
+    "+[2-3] to Arcane Skills",
+    "+[15-25]% Faster Cast Rate",
+    "+[50-80]% Increased Attack Speed",
+    "+[5-10] Mana per second",
+    "+[8-15] to Energy",
+    "+15 to Intelligence",
+    "Arcane Skill Damage increased by [20-40]%"
+  ]
+}

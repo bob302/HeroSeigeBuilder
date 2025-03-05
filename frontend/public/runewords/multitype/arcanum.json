@@ -1,0 +1,41 @@
+{
+  "Tier": "S",
+  "Level": "63",
+  "Size": "2x3",
+  "Item": "Arcanum",
+  "Rarity": "Runeword",
+  "Type": "MultiType",
+  "Bases": [
+    "Bow",
+    "Gun"
+  ],
+  "Runes": [
+    "Sur",
+    "Ber",
+    "Gul",
+    "Sal",
+    "Ist",
+    "Lum"
+  ],
+  "Stats": [
+    "Attack Damage: 705 [74]",
+    "Attacks per Second: 1.76 [1.35]",
+    {
+      "stat": "Cast when Attacking [Multishot] Level 26",
+      "class": "stat-spell"
+    },
+    "+[760-940]% Enhanced Damage",
+    "+[2-4] to All Skills",
+    "Attack Range Increased by 15%",
+    "+30% Increased Attack Speed",
+    "+8% Chance for a Crushing Blow",
+    "+15% Increased Attack Rating",
+    "+10 to Energy",
+    "Mana Increased by 10%",
+    "Physical Damage Taken Reduced by 7%",
+    "+0.45 to Intelligence (Based on Level)",
+    "+15% Increased Magic Find",
+    "Unbreakable",
+    "Socketed (6)"
+  ]
+}

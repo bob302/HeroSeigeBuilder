@@ -1,0 +1,19 @@
+{
+  "Item": "Lancer's Wall",
+  "Tier": "A",
+  "Level": "55",
+  "Defense": "129.9099-161",
+  "Block": "60",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[90-130]% Enhanced Defense",
+    "+10% Increased Chance of Blocking",
+    "+35% Defense vs Missiles",
+    "+[3-5]% Increased Defense",
+    "+200% of Damage Returned to the Attacker",
+    "Physical Damage Taken Reduced by [10-15]%",
+    "Magic Damage Taken Reduced by [10-15]%"
+  ]
+}

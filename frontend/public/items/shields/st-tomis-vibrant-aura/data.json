@@ -1,0 +1,18 @@
+{
+  "Item": "St. Tomi's Vibrant Aura",
+  "Tier": "SS",
+  "Level": "100",
+  "Defense": "946.00836-1056",
+  "Block": "50",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Angelic",
+  "Stats": [
+    "+[280-340]% Enhanced Defense",
+    "+[3-5] to All Skills",
+    "+30 to All Attributes",
+    "Damage Taken Reduced by 25",
+    "+50% to All Resistances",
+    "[Angels Vibrance] Level [1-4]"
+  ]
+}

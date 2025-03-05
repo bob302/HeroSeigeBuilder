@@ -1,0 +1,17 @@
+{
+  "Item": "Thunderburn Aegis",
+  "Tier": "D",
+  "Level": "12",
+  "Defense": "13.009-17",
+  "Block": "40",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[50-70]% Enhanced Defense",
+    "+10% Increased Attack Speed",
+    "+[8-12] to Additive Lightning Damage",
+    "+[8-12] to Additive Fire Damage",
+    "+5% to All Resistances"
+  ]
+}

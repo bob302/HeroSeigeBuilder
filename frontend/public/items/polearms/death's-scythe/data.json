@@ -1,0 +1,20 @@
+{
+  "Item": "Death's Scythe",
+  "Tier": "S",
+  "Level": "66",
+  "Damage": "432.00396-468",
+  "APS": "2.161.89-2.43",
+  "DPS": "943.50749-1138",
+  "Type": "Polearm",
+  "TwoHanded": true,
+  "Size": "2x3",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[450-500]% Enhanced Damage",
+    "+[20-30]% Increased Movement Speed",
+    "+[40-80]% Increased Attack Speed",
+    "+[1225-1350] to Attack Rating",
+    "+25 to Vitality",
+    "+[2275-3000] to Additive Cold Damage"
+  ]
+}

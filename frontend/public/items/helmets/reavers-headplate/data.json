@@ -1,0 +1,19 @@
+{
+  "Item": "Reaver's Headplate",
+  "Tier": "B",
+  "Level": "35",
+  "Defense": "43.5034-54",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[30-40]% Enhanced Defense",
+    {
+      "stat": "+[1-7] to [Whirlwind]",
+      "class": "stat-spell"
+    },
+    "+[5-15]% Increased Movement Speed",
+    "+[10-25] to Strength",
+    "Socketed (0-1)"
+  ]
+}

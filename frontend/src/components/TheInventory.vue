@@ -212,47 +212,47 @@ export default toNative(TheInventory)
   align-items: center;
 }
 .helm {
-  width: calc(6.7 * var(--scale-factor));
+  width: calc(6.6 * var(--scale-factor));
   height: calc(6.7 * var(--scale-factor));
   grid-area: helm;
 }
 .amulet {
-  width: calc(3.52 * var(--scale-factor));
-  height: calc(3.84 * var(--scale-factor));
+  width: calc(3.4 * var(--scale-factor));
+  height: calc(3.5 * var(--scale-factor));
   grid-area: amulet;
 }
 .weapon {
-  width: calc(10 * var(--scale-factor));
-  height: calc(15 * var(--scale-factor));
+  width: calc(9.8 * var(--scale-factor));
+  height: calc(13.1 * var(--scale-factor));
   grid-area: weapon;
 }
 .body-armour {
-  width: calc(6.7 * var(--scale-factor));
-  height: calc(11.3 * var(--scale-factor));
+  width: calc(6.6 * var(--scale-factor));
+  height: calc(9.9 * var(--scale-factor));
   grid-area: body-armour;
 }
 .offhand {
-  width: calc(10 * var(--scale-factor));
-  height: calc(15 * var(--scale-factor));
+  width: calc(9.8 * var(--scale-factor));
+  height: calc(13.1 * var(--scale-factor));
   grid-area: offhand;
 }
 .ring {
-  width: calc(3.52 * var(--scale-factor));
-  height: calc(3.84 * var(--scale-factor));
+  width: calc(3.4 * var(--scale-factor));
+  height: calc(3.5 * var(--scale-factor));
   grid-area: ring;
 }
 .belt {
-  width: calc(6.7 * var(--scale-factor));
-  height: calc(3.84 * var(--scale-factor));
+  width: calc(6.6 * var(--scale-factor));
+  height: calc(3.5 * var(--scale-factor));
   grid-area: belt;
 }
 .ring2 {
-  width: calc(3.52 * var(--scale-factor));
-  height: calc(3.84 * var(--scale-factor));
+  width: calc(3.4 * var(--scale-factor));
+  height: calc(3.5 * var(--scale-factor));
   grid-area: ring2;
 }
 .gloves {
-  width: calc(6.7 * var(--scale-factor));
+  width: calc(6.6 * var(--scale-factor));
   height: calc(6.7 * var(--scale-factor));
   grid-area: gloves;
 }
@@ -264,12 +264,8 @@ export default toNative(TheInventory)
   width: calc(3.52 * var(--scale-factor));
   height: calc(3.84 * var(--scale-factor));
 }
-.charm {
-  width: calc(3.52 * var(--scale-factor));
-  height: calc(3.52 * var(--scale-factor));
-}
 .boots {
-  width: calc(6.7 * var(--scale-factor));
+  width: calc(6.6 * var(--scale-factor));
   height: calc(6.7 * var(--scale-factor));
   grid-area: boots;
 }

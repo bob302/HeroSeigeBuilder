@@ -1,0 +1,15 @@
+{
+  "Item": "Ymir's Frozen Tear",
+  "Tier": "S",
+  "Level": "85",
+  "Type": "Amulet",
+  "Size": "1x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "Cold Skill Damage increased by [10-20]%",
+    "Replenish Mana [5-10]%",
+    "+[25-35] to Life",
+    "+[6-12] Mana After each Kill",
+    "+[30-50]% to Cold Resistance"
+  ]
+}

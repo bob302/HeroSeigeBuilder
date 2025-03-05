@@ -1,0 +1,25 @@
+{
+  "Item": "Crusader Halberd",
+  "Tier": "B",
+  "Level": "45",
+  "Damage": "178.20160-197",
+  "APS": "1.601.6",
+  "DPS": "285.50256-315",
+  "Type": "Polearm",
+  "TwoHanded": true,
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[280-310]% Enhanced Damage",
+    "+[1-2] to All Skills",
+    "+[20-30]% Increased Movement Speed",
+    "+235 to Attack Rating",
+    "Replenish Life [10-15]%",
+    "Physical Damage Taken Reduced by 10%",
+    "+25 to Life (Based on Level)",
+    "+50 to Damage (Based on Level)",
+    "+[20-30]% to All Resistances",
+    "[Fanaticism Aura] Level [8-12]",
+    "Socketed (0-4)"
+  ]
+}

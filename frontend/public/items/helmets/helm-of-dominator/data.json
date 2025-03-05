@@ -1,0 +1,17 @@
+{
+  "Item": "Helm of Dominator",
+  "Tier": "B",
+  "Level": "43",
+  "Defense": "92.4069-116",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[115-155]% Enhanced Defense",
+    "+[15-20] to Armor",
+    "+[25-40]% Defense vs Missiles",
+    "Life Increased by [3-5]%",
+    "+50% Enhanced Defense (Based on Level)",
+    "+[15-20]% to All Resistances"
+  ]
+}

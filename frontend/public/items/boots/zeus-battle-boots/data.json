@@ -1,0 +1,18 @@
+{
+  "Item": "Zeus' Battle Boots",
+  "Tier": "S",
+  "Level": "88",
+  "Defense": "108.2089-128",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[70-100]% Enhanced Defense",
+    "+[20-30]% Increased Movement Speed",
+    "+8 to Energy",
+    "Lightning Skill Damage increased by [20-35]%",
+    "-[7-15]% to Enemy Lightning Resistance",
+    "+8 Mana After each Kill",
+    "+[40-60]% to Lightning Resistance"
+  ]
+}

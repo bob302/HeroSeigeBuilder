@@ -1,0 +1,16 @@
+{
+  "Item": "Dante's Boots",
+  "Tier": "A",
+  "Level": "61",
+  "Defense": "68.7051-87",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[50-80]% Enhanced Defense",
+    "+30% Increased Movement Speed",
+    "+[60-100] to Attack Rating",
+    "+[10-20]% of target Defense ignored",
+    "+20 to Dexterity"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "Item": "Scarred Battle Darts",
+  "Tier": "SS",
+  "Level": "93",
+  "Damage": "474.90428-522",
+  "APS": "2.502.4-2.59",
+  "DPS": "1189.501027-1352",
+  "Type": "Throwing Weapon",
+  "TwoHanded": false,
+  "Size": "2x2",
+  "Rarity": "Heroic",
+  "Stats": [
+    "+[590-625]% Enhanced Damage",
+    "+2 to All Skills",
+    "+[2-5] to Physical Skills",
+    "+[30-40]% Increased Attack Speed",
+    "+[15-25]% Increased Critical Strike Chance",
+    "+[10-20]% Chance for a Crushing Blow",
+    "+8% Increased Attack Rating",
+    "+[5-8]% Life stolen per Hit",
+    "+[30-60]% Increased Critical Strike Damage",
+    "+[20-30]% of target Defense ignored",
+    "Socketed (1)"
+  ]
+}

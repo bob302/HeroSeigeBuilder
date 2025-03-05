@@ -1,0 +1,37 @@
+{
+  "Item": "Arachno Phobia",
+  "Tier": "SS",
+  "Level": "100",
+  "Damage": "681.40592-771",
+  "APS": "0.650.65",
+  "DPS": "443.50385-502",
+  "Type": "Bow",
+  "TwoHanded": true,
+  "Size": "2x3",
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "6% Chance after each Kill [Spiderlings] Level 1",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "8% Chance when Casting [Cursed Ground] Level 24",
+      "class": "stat-spell"
+    },
+    "+[640-720]% Enhanced Damage",
+    "+[4-6] to Poison Skills",
+    {
+      "stat": "+[8-12] to [Caustic Spearhead]",
+      "class": "stat-spell"
+    },
+    "Total Attack Speed Reduced by -35%",
+    "+[25-50]% Chance for a Deadly Blow",
+    "+[600-750] to Attack Rating",
+    "+11% Mana stolen per Hit",
+    "+75% of target Defense ignored",
+    "Extra Damage to Poisoned Monsters [40-55]%",
+    "+[1300-1800] to Additive Poison Damage",
+    "+[1400-2100] to Poison Skill Damage",
+    "Socketed (2-4)"
+  ]
+}

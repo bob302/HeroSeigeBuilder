@@ -1,0 +1,19 @@
+{
+  "Item": "Behemoth's Damascus Body",
+  "Tier": "B",
+  "Level": "40",
+  "Defense": "204.00156-252",
+  "Type": "Body Armor",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[160-180]% Enhanced Defense",
+    "+10 to All Attributes",
+    "+5% Increased Defense",
+    "+[150-300]% of Damage Returned to the Attacker",
+    "Physical Damage Taken Reduced by 10%",
+    "+[25-35]% to All Resistances",
+    "Cannot be Frozen",
+    "Socketed (1-4)"
+  ]
+}

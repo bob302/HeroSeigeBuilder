@@ -1,0 +1,27 @@
+{
+  "Item": "Arrow of Niflheim",
+  "Tier": "SS",
+  "Level": "100",
+  "Damage": "1026.00855-1197",
+  "APS": "1.501.5",
+  "DPS": "1539.501283-1796",
+  "Type": "Bow",
+  "TwoHanded": true,
+  "Size": "2x3",
+  "Rarity": "Heroic",
+  "Stats": [
+    "+[650-850]% Enhanced Damage",
+    "+[3-5] to All Skills",
+    {
+      "stat": "+[1-3] to [Lingering Frost]",
+      "class": "stat-spell"
+    },
+    "+25% Increased Movement Speed",
+    "+15% Mana stolen per Hit",
+    "+[40-50] to Strength",
+    "+65 to Dexterity",
+    "Cold Skill Damage increased by [40-70]%",
+    "-[25-40]% to Enemy Cold Resistance",
+    "+[8-15]% Cold Damage Absorbed"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "Item": "Gabriel's Brimmed Fedora",
+  "Tier": "S",
+  "Level": "81",
+  "Defense": "146.00108-184",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[80-130]% Enhanced Defense",
+    "+[3-5]% Increased Critical Strike Chance",
+    "+15 to Strength",
+    "+8 to Vitality",
+    "Attack Damage increased by [5-10]%"
+  ]
+}

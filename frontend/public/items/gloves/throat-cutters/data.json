@@ -1,0 +1,15 @@
+{
+  "Item": "Throat Cutters",
+  "Tier": "C",
+  "Level": "26",
+  "Defense": "8.857-12",
+  "Type": "Gloves",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[30-40]% Enhanced Defense",
+    "+[10-20]% Increased Attack Speed",
+    "+[5-10]% Chance for a Crushing Blow",
+    "Attack Damage increased by [10-25]%"
+  ]
+}

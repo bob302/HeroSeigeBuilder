@@ -1,0 +1,14 @@
+{
+  "Item": "Elder's Heart",
+  "Tier": "B",
+  "Level": "42",
+  "Type": "Amulet",
+  "Size": "1x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[30-45]% Enhanced Defense",
+    "+[7-10]% Increased Attack Rating",
+    "+15 to All Attributes",
+    "+20% to All Resistances"
+  ]
+}

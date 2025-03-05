@@ -1,0 +1,22 @@
+{
+  "Item": "Emblem of the Daemon",
+  "Tier": "SS",
+  "Level": "92",
+  "Type": "Ring",
+  "Size": "1x1",
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "4% Chance when Striking [Armageddon] Level 86",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "1% Chance when Attacking [Demon Form] Level 15",
+      "class": "stat-spell"
+    },
+    "+2 to All Skills",
+    "+[3-8]% Increased Critical Strike Chance",
+    "+[4-8]% Mana stolen per Hit",
+    "Extra Damage to Burning Monsters [10-30]%"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "Tier": "S",
+  "Level": "52",
+  "Size": "2x3",
+  "Item": "Nirvana",
+  "Rarity": "Runeword",
+  "Type": "Helmet",
+  "Bases": [
+    "Helmet"
+  ],
+  "Runes": [
+    "Sur",
+    "Sur",
+    "Drax"
+  ],
+  "Stats": [
+    "5% Chance when Casting [Glory] Level 12",
+    "+[75-125]% Enhanced Defense",
+    "+[2-4] to All Skills",
+    "+[30-40] to Energy",
+    "Magic Skill Damage increased by 15%",
+    "Replenish Mana 40%",
+    "Mana Increased by 20%",
+    "+0.40 to Energy (Based on Level)",
+    "Cannot be Frozen",
+    "Unbreakable",
+    "Socketed (3)"
+  ]
+}

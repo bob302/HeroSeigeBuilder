@@ -1,0 +1,16 @@
+{
+  "Item": "Thorned Wristguards",
+  "Tier": "B",
+  "Level": "37",
+  "Defense": "17.6012-24",
+  "Type": "Gloves",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[40-50]% Enhanced Defense",
+    "+[10-20] to Vitality",
+    "Replenish Life 40%",
+    "+[30-50]% of Damage Returned to the Attacker",
+    "Physical Damage Taken Reduced by 5%"
+  ]
+}

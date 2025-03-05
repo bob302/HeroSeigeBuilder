@@ -1,0 +1,14 @@
+{
+  "Item": "Fulgurite",
+  "Tier": "SS",
+  "Level": "100",
+  "Type": "Charm",
+  "Size": "1x2",
+  "Rarity": "Heroic",
+  "Stats": [
+    "+[1-2] to All Skills",
+    "+[1-15] to All Attributes",
+    "Magic Skill Damage increased by [5-35]%",
+    "+[3-20]% to All Resistances"
+  ]
+}

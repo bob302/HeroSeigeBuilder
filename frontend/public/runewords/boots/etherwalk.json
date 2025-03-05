@@ -1,0 +1,31 @@
+{
+  "Tier": "S",
+  "Level": "52",
+  "Size": "2x3",
+  "Item": "Etherwalk",
+  "Rarity": "Runeword",
+  "Type": "Boots",
+  "Bases": [
+    "Boots"
+  ],
+  "Runes": [
+    "Pul",
+    "Uth",
+    "Sur"
+  ],
+  "Stats": [
+    "3% Chance when Casting [Mana Devour] Level 21",
+    "+[220-300]% Enhanced Defense",
+    "+[1-2] to All Skills",
+    "Random Skill Element",
+    "+38% Increased Movement Speed",
+    "Mana Costs decreased by 3%",
+    "-[3-10]% to All Enemy Resistances",
+    "Magic Skill Damage increased by [15-30]%",
+    "+[60-120] to Life",
+    "Mana Increased by 10%",
+    "+15% of Damage Taken goes to Mana",
+    "Unbreakable",
+    "Socketed (3)"
+  ]
+}

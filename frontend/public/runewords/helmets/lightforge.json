@@ -1,0 +1,28 @@
+{
+  "Tier": "S",
+  "Level": "52",
+  "Size": "2x3",
+  "Item": "Lightforge",
+  "Rarity": "Runeword",
+  "Type": "Helmet",
+  "Bases": [
+    "Helmet"
+  ],
+  "Runes": [
+    "Naf",
+    "Sal",
+    "Uth"
+  ],
+  "Stats": [
+    "+75% Enhanced Defense",
+    "+10 to Energy",
+    "+10 to Vitality",
+    "+[55-95] to Mana",
+    "+45% Defense vs Missiles",
+    "+5 to Light Radius",
+    "+30% of Damage Taken goes to Mana",
+    "Physical Damage Taken Reduced by [4-7]%",
+    "Magic Damage Taken Reduced by [3-5] %",
+    "Socketed (3)"
+  ]
+}

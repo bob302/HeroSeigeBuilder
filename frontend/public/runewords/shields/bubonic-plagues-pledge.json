@@ -1,0 +1,35 @@
+{
+  "Tier": "S",
+  "Level": "69",
+  "Size": "2x3",
+  "Item": "Bubonic Plague'S Pledge",
+  "Rarity": "Runeword",
+  "Type": "Shield",
+  "Bases": [
+    "Shield"
+  ],
+  "Runes": [
+    "Gul",
+    "Gul",
+    "Zed",
+    "Jah",
+    "Jah"
+  ],
+  "Stats": [
+    "Block Chance: 50",
+    "+350% Enhanced Defense",
+    "+[1-2] to All Skills",
+    "+30% increased Attack Rating",
+    "Extra Damage to Poisoned Monsters [35-60]%",
+    "Poison Skill Damage increased by [30-50]%",
+    "-[22-30]% to Enemy Poison Resistance",
+    "Magic Skill Damage increased by 8%",
+    "+[60-120] to Life",
+    "Life Increased by 20%",
+    "+5% Poison Damage Absorbed",
+    "+20% to All Resistances",
+    "+[50-75]% to Poison Resistance",
+    "Unbreakable",
+    "Socketed (5)"
+  ]
+}

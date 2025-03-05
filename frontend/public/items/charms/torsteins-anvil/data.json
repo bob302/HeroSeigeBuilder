@@ -1,0 +1,18 @@
+{
+  "Item": "Torstein's Anvil",
+  "Tier": "SS",
+  "Level": "100",
+  "Type": "Charm",
+  "Size": "1x1",
+  "Rarity": "Heroic",
+  "Stats": [
+    "+1 to All Skills",
+    {
+      "stat": "+1 to [The Shop is Open]",
+      "class": "stat-spell"
+    },
+    "+[5-10] to All Attributes",
+    "+[5-10]% to All Resistances",
+    "+[8-15]% Extra Gold Dropped From Kills"
+  ]
+}

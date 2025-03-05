@@ -1,0 +1,14 @@
+{
+  "Item": "Elven Grace",
+  "Tier": "S",
+  "Level": "88",
+  "Type": "Ring",
+  "Size": "1x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+1 to All Skills",
+    "+18% Increased Critical Strike Chance",
+    "+[15-25]% Increased Attack Rating",
+    "+[25-35]% Increased Critical Strike Damage"
+  ]
+}

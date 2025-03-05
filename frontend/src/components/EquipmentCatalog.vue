@@ -36,17 +36,19 @@ class EquipmentCatalog extends Vue {
         ? this.editorContext.charmInventory
         : this.editorContext.mainInventory;
 
+      const clone = equipment.clone()
+        
     if (
       !targetInventory.addItem(
         new Item(
-          equipment.clone(),
+          clone,
           new Point2D(equipment.size.width, equipment.size.height),
         ),
       )
     ) {
       this.editorContext.mainInventory.addItem(
         new Item(
-          equipment.clone(),
+          clone,
           new Point2D(equipment.size.width, equipment.size.height),
         ),
       );
@@ -55,6 +57,7 @@ class EquipmentCatalog extends Vue {
   }
 }
 
+export { EquipmentCatalog }
 export default toNative(EquipmentCatalog)
 </script>
 
@@ -70,6 +73,7 @@ export default toNative(EquipmentCatalog)
   overflow-y: auto;
   overflow-x: hidden;
   gap: 0.2rem;
+  background-color: var(--color-background);
 }
 
 .catalog > * {

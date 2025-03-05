@@ -1,0 +1,25 @@
+{
+  "Tier": "S",
+  "Level": "52",
+  "Size": "2x3",
+  "Item": "Scholar",
+  "Rarity": "Runeword",
+  "Type": "Helmet",
+  "Bases": [
+    "Helmet"
+  ],
+  "Runes": [
+    "Ert",
+    "Sal"
+  ],
+  "Stats": [
+    "+1 to All Skills",
+    "+10 to Energy",
+    "Lightning Skill Damage increased by 5%",
+    "+[60-120] to Mana",
+    "+[3-5] Mana After each Kill",
+    "+2 to Light Radius",
+    "Physical Damage Taken Reduced by 14%",
+    "Socketed (2)"
+  ]
+}

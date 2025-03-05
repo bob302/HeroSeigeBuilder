@@ -73,7 +73,7 @@
         <div class="filter-wrapper">
           <p class="desktop-text">Show Sockets:</p>
           <img class="sockets-button"
-            :src="showSockets ? '/img/editor/socket-button-hide.png' : '/img/editor/socket-button-show.png'"
+            :src="showSockets ? '/img/editor/socket-button-show.png' : '/img/editor/socket-button-hide.png'"
             @click="showSockets = !showSockets" />
         </div>
         <div class="filter-wrapper">
@@ -100,16 +100,14 @@
 import { Component, Inject, toNative, Vue, Watch } from "vue-facing-decorator";
 import {
   Equipment,
-  EquipmentType,
-  EquipmentRarity,
-  EquipmentTier,
-  EquipmentSubtypes,
   WeaponEquipment,
   BaseItem,
+  type EquipmentSubtype,
 } from "../models/Equipment";
 import type EditorContext from "../models/EditorContext";
 import EquipmentCatalog from "./EquipmentCatalog.vue";
 import { equipmentService } from "../service/EquipmentService";
+import { EquipmentRarity, EquipmentSubtypes, EquipmentTier, EquipmentType } from "../util/Enums";
 
 @Component({
   components: {
@@ -120,13 +118,12 @@ import { equipmentService } from "../service/EquipmentService";
 class CatalogModal extends Vue {
   @Inject({ from: "editorContext" })
   readonly editorContext!: EditorContext;
-  public allCatalogItems: BaseItem[] = [];
   private loadedTypes = new Set<string>();
   public isLoading = false;
 
   public nameFilter: string = "";
-  public typeFilter: EquipmentType = EquipmentType.Misc;
-  public subtypeFilter: string | null = null;
+  public typeFilter: EquipmentType = EquipmentType.Socketable;
+  public subtypeFilter: EquipmentSubtype | null = null;
   public rarityFilter: EquipmentRarity | null = null;
   public tierFilter: EquipmentTier | null = null;
   public statsFilter: string = "";
@@ -234,21 +231,32 @@ class CatalogModal extends Vue {
   }
 
   @Watch("typeFilter")
-  async handleTypeChange(newType: string) {
-    if (!this.loadedTypes.has(newType)) {
-      this.isLoading = true;
+  async handleTypeChange(newType: EquipmentType) {
 
-      const loaded = await equipmentService.loadType(newType as EquipmentType);
+  this.subtypeFilter = null;
+  
+  if (!this.loadedTypes.has(newType)) {
+    this.isLoading = true;
+    equipmentService.requestLoad(newType);
 
-      loaded.forEach((item) => {
-        this.allCatalogItems.push(item);
-      });
-
-      this.loadedTypes.add(newType);
-      this.isLoading = false;
-    }
+    //@ts-ignore
+    equipmentService.getItems(newType, (items) => {
+      if (equipmentService.isTypeFullyLoaded(newType)) {
+        this.loadedTypes.add(newType);
+        this.isLoading = false;
+      }
+      this.updateCatalogItems();
+    });
+  } else {
     this.updateCatalogItems();
   }
+
+  if (this.filteredCatalogItems.length === 0) {
+    this.rarityFilter = null;
+  }
+}
+
+
 
   close() {
     this.$emit("close");
@@ -275,7 +283,7 @@ class CatalogModal extends Vue {
     window.removeEventListener('resize', this.checkMobile);
   }
 }
-
+export {CatalogModal}
 export default toNative(CatalogModal)
 </script>
 
@@ -337,6 +345,8 @@ export default toNative(CatalogModal)
   flex-direction: column;
   justify-content: space-around;
   width: 100%;
+  background-color: var(--color-background);
+  padding: 2rem;
 }
 
 .sockets-button {
@@ -384,6 +394,7 @@ select, input[type="text"], input[type="checkbox"] {
     z-index: 1005;
     max-width: 90vw;
     background-color: var(--color-background);
+    padding: 0;
   }
   .modal-content {
     min-height: 0;

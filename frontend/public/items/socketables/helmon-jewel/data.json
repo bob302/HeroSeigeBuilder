@@ -1,0 +1,10 @@
+{
+  "Item": "Helmon Jewel",
+  "Tier": "B",
+  "Level": "15",
+  "Type": "Jewel",
+  "Rarity": "Common",
+  "Stats": [
+    "+40% to Poison Resistance"
+  ]
+}

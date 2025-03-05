@@ -1,0 +1,37 @@
+{
+  "Tier": "S",
+  "Level": "61",
+  "Size": "2x3",
+  "Item": "Celestus",
+  "Rarity": "Runeword",
+  "Type": "MultiType",
+  "Bases": [
+    "Claw",
+    "Sword",
+    "Dagger",
+    "Wand",
+    "Book",
+    "Spellblade",
+    "Flask"
+  ],
+  "Runes": [
+    "Sur",
+    "Hel"
+  ],
+  "Stats": [
+    "Attack Damage: 38",
+    "Attacks per Second: 1.75",
+    "+[3-5] to Arcane Skills",
+    "Cooldown Recovery Increased by [15-25]%",
+    "+[3-6] Mana per second",
+    "+[20-35] to intelligence",
+    "+[700-950] to Arcane Skill Damage",
+    "Mana Increased by 25%",
+    "+3.50 to Life (Based on Level)",
+    "+40% to Arcane Resistance",
+    "+[20-40]% to Fire Resistance",
+    "+[20-40]% to Lightning Resistance",
+    "Unbreakable",
+    "Socketed (2)"
+  ]
+}

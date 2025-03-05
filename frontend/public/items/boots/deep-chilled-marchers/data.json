@@ -1,0 +1,19 @@
+{
+  "Item": "Deep Chilled Marchers",
+  "Tier": "S",
+  "Level": "86",
+  "Defense": "116.00104-128",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[30-60]% Enhanced Damage",
+    "+[70-100]% Enhanced Defense",
+    "+[1-2] to Cold Skills",
+    "+[25-55]% Increased Movement Speed",
+    "+15 to Dexterity",
+    "Cold Skill Damage increased by [15-20]%",
+    "+50% to Cold Resistance",
+    "+[3-5]% to Maximum Cold Resist"
+  ]
+}

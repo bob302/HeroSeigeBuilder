@@ -1,0 +1,19 @@
+{
+  "Item": "Sassy's Dislocated Foot",
+  "Tier": "SS",
+  "Level": "100",
+  "Type": "Charm",
+  "Size": "1x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+1 to All Skills",
+    "+[3-5] to Poison Skills",
+    {
+      "stat": "+[6-20] to [Poison Nova]",
+      "class": "stat-spell"
+    },
+    "-20% Increased Movement Speed",
+    "-[5-10]% to Enemy Poison Resistance",
+    "Poison Length Reduced by 50%"
+  ]
+}

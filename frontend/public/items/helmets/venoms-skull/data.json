@@ -1,0 +1,18 @@
+{
+  "Item": "Venom's Skull",
+  "Tier": "A",
+  "Level": "59",
+  "Defense": "99.9076-125",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[80-130]% Enhanced Defense",
+    "+1 to Poison Skills",
+    "+1 to Arcane Skills",
+    "+25 to Energy",
+    "Replenish Mana 15%",
+    "Mana Increased by 2%",
+    "+50% to Poison Resistance"
+  ]
+}

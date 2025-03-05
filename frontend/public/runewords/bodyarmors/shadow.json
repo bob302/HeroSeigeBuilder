@@ -1,0 +1,29 @@
+{
+  "Tier": "S",
+  "Level": "52",
+  "Size": "2x3",
+  "Item": "Shadow",
+  "Rarity": "Runeword",
+  "Type": "Body Armor",
+  "Bases": [
+    "Body Armor"
+  ],
+  "Runes": [
+    "Tul",
+    "Eth"
+  ],
+  "Stats": [
+    "+[50-75]% Enhanced Defense",
+    "+25% Increased Movement Speed",
+    "+25% Faster Cast Rate",
+    "+[100-250] to Attack Rating",
+    "+2 Mana per second",
+    "+10% of target Defense ignored",
+    "+10 to Dexterity",
+    "Poison Skill Damage increased by 5%",
+    "Replenish Mana 15%",
+    "Damage Taken Reduced by [30-200]",
+    "+50% Faster Hit Recovery",
+    "Socketed (2)"
+  ]
+}

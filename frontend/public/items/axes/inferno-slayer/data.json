@@ -1,0 +1,26 @@
+{
+  "Item": "Inferno Slayer",
+  "Tier": "S",
+  "Level": "84",
+  "Damage": "539.50507-572",
+  "APS": "1.201.2",
+  "DPS": "648.00609-687",
+  "Type": "Axe",
+  "TwoHanded": true,
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+250% Enhanced Damage",
+    {
+      "stat": "+[35-50] to [Deadly Whirl]",
+      "class": "stat-spell"
+    },
+    "+[1850-1950] to Additive Fire Damage",
+    "+[425-735] to Life",
+    "+300% Enhanced Damage (Based on Level)",
+    "+65 to Strength (Based on Level)",
+    "+50 to Vitality (Based on Level)",
+    "Attacks can hit multiple enemies",
+    "Socketed (1-4)"
+  ]
+}

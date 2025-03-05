@@ -1,0 +1,21 @@
+{
+  "Item": "Frostbitten Necrosis",
+  "Tier": "SS",
+  "Level": "100",
+  "Defense": "32.0026-38",
+  "Type": "Gloves",
+  "Size": "2x2",
+  "Rarity": "Heroic",
+  "Stats": [
+    "+2 to All Skills",
+    "+[2-5] to Cold Skills",
+    {
+      "stat": "+[10-20] to [Absolute Zero]",
+      "class": "stat-spell"
+    },
+    "+[20-35]% Faster Cast Rate",
+    "Extra Damage to Deep Frozen Monsters [15-25]%",
+    "Cold Skill Damage increased by [20-40]%",
+    "Mana Increased by [10-15]%"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "Item": "Redneck's Cap",
+  "Tier": "A",
+  "Level": "61",
+  "Defense": "99.9076-125",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[80-130]% Enhanced Defense",
+    "+10 to Strength",
+    "+10 to Vitality",
+    "+[50-60] to Life"
+  ]
+}

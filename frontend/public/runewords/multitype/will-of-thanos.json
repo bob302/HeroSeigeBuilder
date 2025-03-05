@@ -1,0 +1,53 @@
+{
+  "Tier": "S",
+  "Level": "57",
+  "Size": "2x3",
+  "Item": "Will of Thanos",
+  "Rarity": "Runeword",
+  "Type": "MultiType",
+  "Bases": [
+    "Axe",
+    "Mace",
+    "Polearm",
+    "Staff",
+    "Cane",
+    "Gun",
+    "Bow"
+  ],
+  "Runes": [
+    "Ymn",
+    "Rex",
+    "Mal",
+    "Ist",
+    "Qi"
+  ],
+  "Stats": [
+    "Attack Damage: 309 [61]",
+    "Attacks per Second: 2.10 [1.50]",
+    "+[350-490]% Enhanced Damage",
+    "+1 to All Skills",
+    {
+      "stat": "+[2-6] to Combat Orders",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+[1-6] to Defensive Shout",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+[1-4] to Odin's Fury",
+      "class": "stat-spell"
+    },
+    "+40% Increased Attack Speed",
+    "+7% Life stolen per Hit",
+    "+[8-30] to Intelligence",
+    "Attack Damage increased by 20%",
+    "Fire Skill Damage increased by 5%",
+    "Replenish Life [8-16]%",
+    "Magic Damage Taken Reduced by 7%",
+    "+15% Increased Magic Find",
+    "Attacks can hit multiple enemies",
+    "Unbreakable",
+    "Socketed (5)"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "Item": "Dante's Demon Blade",
+  "Tier": "S",
+  "Level": "68",
+  "Damage": "560.20509-612",
+  "APS": "1.811.62-2",
+  "DPS": "1024.00824-1224",
+  "Type": "Sword",
+  "Size": "2x3",
+  "TwoHanded": true,
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[520-580]% Enhanced Damage",
+    "+[30-60]% Increased Attack Speed",
+    "+20% Chance for a Deadly Blow",
+    "+1225 to Attack Rating",
+    "+25% Chance to Open Wounds",
+    "+45 to Strength",
+    "+25 to Dexterity",
+    "Attack Damage increased by [20-30]%",
+    "Attacks can hit multiple enemies"
+  ]
+}

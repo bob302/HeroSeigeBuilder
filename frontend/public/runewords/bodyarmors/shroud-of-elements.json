@@ -1,0 +1,31 @@
+{
+  "Tier": "S",
+  "Level": "52",
+  "Size": "2x3",
+  "Item": "Shroud of Element'S",
+  "Rarity": "Runeword",
+  "Type": "Body Armor",
+  "Bases": [
+    "Body Armor"
+  ],
+  "Runes": [
+    "Nut",
+    "Um",
+    "Pul",
+    "Lum"
+  ],
+  "Stats": [
+    "10% Chance when Struck [Tectonic Boulder] Level 30",
+    "+[250-290]% Enhanced Defense",
+    "+10% Increased Attack Speed",
+    "Mana Costs decreased by 3%",
+    "+[15-20] to Strength",
+    "+20 to Energy",
+    "+[15-20] to Vitality",
+    "+[5-15] to All Attributes",
+    "+60% Faster Hit Recovery",
+    "+300% Defense vs Missiles",
+    "+35% to All Resistances",
+    "Socketed (4)"
+  ]
+}

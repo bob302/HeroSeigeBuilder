@@ -1,0 +1,16 @@
+{
+  "Item": "Grimbone's Visage",
+  "Tier": "SS",
+  "Level": "100",
+  "Defense": "159.00126-192",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Heroic",
+  "Stats": [
+    "+[110-140]% Enhanced Damage",
+    "+[2-3] to All Skills",
+    "+[15-25] to Intelligence",
+    "Magic Skill Damage increased by [20-50]%",
+    "Unholy Stat"
+  ]
+}

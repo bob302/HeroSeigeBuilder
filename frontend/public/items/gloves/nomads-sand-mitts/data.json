@@ -1,0 +1,15 @@
+{
+  "Item": "Nomad's Sand Mitts",
+  "Tier": "A",
+  "Level": "52",
+  "Defense": "34.5027-42",
+  "Type": "Gloves",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[50-75]% Enhanced Defense",
+    "+[15-20]% Increased Attack Rating",
+    "+7% Life stolen per Hit",
+    "+10 to Strength"
+  ]
+}

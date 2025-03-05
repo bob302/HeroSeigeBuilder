@@ -1,0 +1,14 @@
+{
+  "Item": "Tectonic Frequency",
+  "Tier": "S",
+  "Level": "88",
+  "Type": "Ring",
+  "Size": "1x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    "Lightning Skill Damage increased by [18-30]%",
+    "-[10-20]% to Enemy Lightning Resistance",
+    "+[10-20]% Lightning Damage Absorbed",
+    "+[45-70]% to Lightning Resistance"
+  ]
+}

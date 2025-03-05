@@ -1,0 +1,24 @@
+{
+  "Item": "Steampowered Flamewalkers",
+  "Tier": "SS",
+  "Level": "92",
+  "Defense": "306.20263-350",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "6% Chance when Attacking [Blazing Trail] Level 42",
+      "class": "stat-spell"
+    },
+    "+[220-250]% Enhanced Defense",
+    "+[60-85]% Increased Movement Speed",
+    "+[8-17]% Increased Critical Strike Chance",
+    "+[28-50]% Increased Critical Strike Damage",
+    "+20 to Dexterity",
+    "+[10-20] to All Attributes",
+    "+[50-150]% Defense vs Missiles",
+    "+3 to Light Radius",
+    "+[40-75]% to Fire Resistance"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "Item": "Demon Warlord's Helm",
+  "Tier": "A",
+  "Level": "57",
+  "Defense": "99.9076-125",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[80-130]% Enhanced Defense",
+    "+[10-15]% Chance to Open Wounds",
+    "+25% Faster Hit Recovery",
+    "+85 to Life (Based on Level)",
+    "+185 to Damage (Based on Level)",
+    "+30% to All Resistances"
+  ]
+}

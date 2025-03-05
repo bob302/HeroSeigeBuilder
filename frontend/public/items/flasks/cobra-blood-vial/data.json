@@ -1,0 +1,21 @@
+{
+  "Item": "Cobra Blood Vial",
+  "Tier": "A",
+  "Level": "62",
+  "Damage": "37.5034-41",
+  "APS": "1.301.3",
+  "DPS": "49.5045-54",
+  "Type": "Flask",
+  "TwoHanded": false,
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[1-2] to All Skills",
+    "+2 to Poison Skills",
+    "+[20-30]% Faster Cast Rate",
+    "Extra Damage to Poisoned Monsters 5%",
+    "Poison Skill Damage increased by [15-25]%",
+    "-[10-15]% to Enemy Poison Resistance",
+    "Replenish Mana 35%"
+  ]
+}

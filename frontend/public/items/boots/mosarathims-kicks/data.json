@@ -1,0 +1,16 @@
+{
+  "Item": "Mos'Arathim's Kicks",
+  "Tier": "D",
+  "Level": "10",
+  "Defense": "4.953-8",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[20-25]% Enhanced Defense",
+    "+15% Increased Movement Speed",
+    "+20 to Arcane Skill Damage",
+    "Arcane Skill Damage increased by [3-5]%",
+    "+[5-10]% to All Resistances"
+  ]
+}

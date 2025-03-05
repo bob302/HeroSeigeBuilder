@@ -1,0 +1,16 @@
+{
+  "Item": "Valkyrie's Winged Helm",
+  "Tier": "A",
+  "Level": "57",
+  "Defense": "116.4093-141",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[120-160]% Enhanced Defense",
+    "+5% Increased Attack Rating",
+    "+[50-70] to Attack Rating",
+    "+20 to Strength",
+    "+10 to Dexterity"
+  ]
+}

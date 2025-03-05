@@ -1,0 +1,28 @@
+{
+  "Item": "St. Rexis Sundering Axe",
+  "Tier": "SS",
+  "Level": "100",
+  "Damage": "745.10683-808",
+  "APS": "2.902.75-3.04",
+  "DPS": "2166.501877-2456",
+  "Type": "Axe",
+  "TwoHanded": false,
+  "Size": "2x3",
+  "Rarity": "Angelic",
+  "Stats": [
+    {
+      "stat": "23% Chance when Striking [Fault Line] Level 147",
+      "class": "stat-spell"
+    },
+    "+[775-885]% Enhanced Damage",
+    "+[3-4] to All Skills",
+    "+[45-60]% Increased Attack Speed",
+    "+50% Chance for a Crushing Blow",
+    "+[12-20]% Life stolen per Hit",
+    "+75% of target Defense ignored",
+    "+75 to Strength",
+    "+45 Life After each Kill",
+    "Attacks can hit multiple enemies",
+    "Socketed (3-5)"
+  ]
+}

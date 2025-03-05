@@ -1,0 +1,22 @@
+{
+  "Item": "Elemental Claws",
+  "Tier": "D",
+  "Level": "8",
+  "Damage": "19.3515-24",
+  "APS": "1.851.85",
+  "DPS": "36.5028-45",
+  "Type": "Claw",
+  "TwoHanded": false,
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[110-140]% Enhanced Damage",
+    "+[6-12] to Additive Arcane Damage",
+    "+[6-12] to Additive Lightning Damage",
+    "+[6-12] to Additive Fire Damage",
+    "+[6-12] to Additive Cold Damage",
+    "+3 Life After each Kill",
+    "+3 Mana After each Kill",
+    "Socketed (0-2)"
+  ]
+}

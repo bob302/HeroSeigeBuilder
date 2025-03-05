@@ -1,0 +1,18 @@
+{
+  "Item": "The Colossal Avenger",
+  "Tier": "S",
+  "Level": "88",
+  "Defense": "293.50224-363",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[180-230]% Enhanced Defense",
+    "+[2-3] to All Skills",
+    "+20% Increased Attack Rating",
+    "+[4-8]% Life stolen per Hit",
+    "+[20-30] to Strength",
+    "+20 to Armor",
+    "+30% to All Resistances"
+  ]
+}

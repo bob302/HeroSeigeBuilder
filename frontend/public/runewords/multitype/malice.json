@@ -1,0 +1,32 @@
+{
+  "Tier": "S",
+  "Level": "15",
+  "Size": "2x3",
+  "Item": "Malice",
+  "Rarity": "Runeword",
+  "Type": "MultiType",
+  "Bases": [
+    "Claw",
+    "Dagger",
+    "Sword",
+    "Mace",
+    "Axe"
+  ],
+  "Runes": [
+    "Uth",
+    "Ol",
+    "Eth"
+  ],
+  "Stats": [
+    "Attack Damage: 411 [75]",
+    "Attacks per Second: 1.75",
+    "+[360-460]% Enhanced Damage",
+    "+[200-400] το Attack Rating",
+    "+[5-8]% Life stolen per Hit",
+    "+35% of target Defense ignored",
+    "+100% Chance to Open Wounds",
+    "+15% of Damage Taken goes to Mana",
+    "Attacks can hit multiple enemies",
+    "Socketed (3)"
+  ]
+}

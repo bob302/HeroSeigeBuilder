@@ -1,0 +1,17 @@
+{
+  "Item": "Crystal Infused Shield",
+  "Tier": "B",
+  "Level": "52",
+  "Defense": "57.6036-80",
+  "Block": "60",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[60-100]% Enhanced Defense",
+    "+1 to All Skills",
+    "Damage Taken Reduced by 3",
+    "+3 to Light Radius",
+    "+15% to All Resistances"
+  ]
+}

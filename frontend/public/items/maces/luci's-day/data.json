@@ -1,0 +1,27 @@
+{
+  "Item": "Luci's Day",
+  "Tier": "SS",
+  "Level": "100",
+  "Damage": "1085.62972-1200",
+  "APS": "1.001",
+  "DPS": "1086.00972-1200",
+  "Type": "Mace",
+  "TwoHanded": true,
+  "Size": "2x3",
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "35% Chance when Striking [Throw!] Level 130",
+      "class": "stat-spell"
+    },
+    "+[825-900]% Enhanced Damage",
+    "+[3-6] to All Skills",
+    "+[50-75]% Increased Critical Strike Damage",
+    "+75% of target Defense ignored",
+    "+50% Chance to Open Wounds",
+    "Extra Damage to Bleeding Monsters [20-35]%",
+    "+[40-65] to Strength",
+    "Attacks can hit multiple enemies",
+    "Socketed (3)"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "Item": "Reaper's Hood",
+  "Tier": "A",
+  "Level": "54",
+  "Defense": "99.9076-125",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[80-130]% Enhanced Defense",
+    "+[80-150] to Attack Rating",
+    "+[25-30] to Additive Physical Damage",
+    "+[2-4]% Mana stolen per Hit",
+    "+[5-10]% Chance to Open Wounds",
+    "Cannot be Frozen"
+  ]
+}

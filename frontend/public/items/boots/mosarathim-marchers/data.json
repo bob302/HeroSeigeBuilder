@@ -1,0 +1,16 @@
+{
+  "Item": "Mos'Arathim Marchers",
+  "Tier": "B",
+  "Level": "42",
+  "Defense": "33.4026-42",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[40-60]% Enhanced Defense",
+    "+30% Increased Movement Speed",
+    "+15% Chance for a Deadly Blow",
+    "+10 to Strength",
+    "+5 to Dexterity"
+  ]
+}

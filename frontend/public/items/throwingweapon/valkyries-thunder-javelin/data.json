@@ -1,0 +1,30 @@
+{
+  "Item": "Valkyrie's Thunder Javelin",
+  "Tier": "S",
+  "Level": "86",
+  "Damage": "309.30279-341",
+  "APS": "2.312.14-2.47",
+  "DPS": "718.50596-841",
+  "Type": "Throwing Weapon",
+  "TwoHanded": false,
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[480-530]% Enhanced Damage",
+    "+[2-4] to All Skills",
+    {
+      "stat": "+[3-6] to [Storm Dash]",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+[3-6] to [Thunder Goddesses Chosen]",
+      "class": "stat-spell"
+    },
+    "Attack Range Increased by [10-20]%",
+    "+[30-50]% Increased Attack Speed",
+    "+[1255-1400] to Additive Lightning Damage",
+    "Lightning Skill Damage increased by [20-35]%",
+    "-[10-20]% to Enemy Lightning Resistance",
+    "Socketed (0-3)"
+  ]
+}

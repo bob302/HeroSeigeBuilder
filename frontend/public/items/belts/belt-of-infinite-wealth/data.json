@@ -1,0 +1,18 @@
+{
+  "Item": "Belt of Infinite Wealth",
+  "Tier": "SS",
+  "Level": "100",
+  "Defense": "92.1076-109",
+  "Type": "Belt",
+  "Size": "2x1",
+  "Rarity": "Heroic",
+  "Stats": [
+    "+[45-60]% Enhanced Defense",
+    "Physical Damage Taken Reduced by 10%",
+    "+25% Magic Find (Based on Level)",
+    "+[25-40]% Extra Gold Dropped From Kills",
+    "+[20-25]% Increased Magic Find",
+    "+[1-5]% Increased Experience Gain",
+    "Belt Slots: 5"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "Item": "St. Soloyolo's Holy Bow",
+  "Tier": "SS",
+  "Level": "94",
+  "Damage": "922.58814-1032",
+  "APS": "2.302.3",
+  "DPS": "2122.501872-2373",
+  "Type": "Bow",
+  "TwoHanded": true,
+  "Size": "2x3",
+  "Rarity": "Angelic",
+  "Stats": [
+    {
+      "stat": "20% Chance when Attacking [Holy Bolt] Level [200-225]",
+      "class": "stat-spell"
+    },
+    "+[775-855]% Enhanced Damage",
+    "+40% Increased Attack Speed",
+    "+50% Increased Critical Strike Chance",
+    "+[7-10]% Life stolen per Hit",
+    "+[7-10]% Mana stolen per Hit",
+    "+[50-100]% Increased Critical Strike Damage",
+    "+30% of target Defense ignored",
+    "+[25-30] to All Attributes",
+    "Piercing Attack",
+    "Socketed (4)"
+  ]
+}

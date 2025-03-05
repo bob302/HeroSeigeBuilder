@@ -1,0 +1,19 @@
+{
+  "Item": "SUOMI FINLAND PERKELE",
+  "Tier": "S",
+  "Level": "92",
+  "Defense": "240.00200-280",
+  "Block": "50",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[150-180]% Enhanced Defense",
+    "+[2-3] to All Skills",
+    "+50% Faster Cast Rate",
+    "+20 to Energy",
+    "+12 to Vitality",
+    "+35% to All Resistances",
+    "Socketed (4)"
+  ]
+}

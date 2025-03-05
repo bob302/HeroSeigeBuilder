@@ -1,0 +1,18 @@
+{
+  "Item": "Brute's Cord",
+  "Tier": "C",
+  "Level": "28",
+  "Defense": "19.6012-28",
+  "Type": "Belt",
+  "Size": "2x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[50-70]% Enhanced Defense",
+    "+10% Increased Critical Strike Chance",
+    "+[30-50] to Additive Physical Damage",
+    "+[5-10]% Increased Critical Strike Damage",
+    "+20% of target Defense ignored",
+    "+20 to Strength",
+    "Belt Slots: 3"
+  ]
+}

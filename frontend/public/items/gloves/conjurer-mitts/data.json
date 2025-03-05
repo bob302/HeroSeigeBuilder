@@ -1,0 +1,16 @@
+{
+  "Item": "Conjurer Mitts",
+  "Tier": "B",
+  "Level": "37",
+  "Defense": "16.8011-24",
+  "Type": "Gloves",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[30-45]% Enhanced Defense",
+    "+[1-2] to All Skills",
+    "+[15-85] to Life",
+    "+[15-85] to Mana",
+    "+[5-15]% Increased Magic Find"
+  ]
+}

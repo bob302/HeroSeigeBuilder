@@ -1,0 +1,16 @@
+{
+  "Item": "Mystic Soles",
+  "Tier": "C",
+  "Level": "20",
+  "Defense": "18.0012-25",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[40-55]% Enhanced Defense",
+    "+[5-30]% Increased Movement Speed",
+    "-9% to All Resistances",
+    "+[10-20]% Increased Magic Find",
+    "+[3-5]% Increased Experience Gain"
+  ]
+}

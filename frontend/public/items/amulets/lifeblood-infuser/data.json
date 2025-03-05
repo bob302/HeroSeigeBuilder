@@ -1,0 +1,14 @@
+{
+  "Item": "Lifeblood Infuser",
+  "Tier": "D",
+  "Level": "11",
+  "Type": "Amulet",
+  "Size": "1x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[2-4]% Mana stolen per Hit",
+    "+15 to Strength",
+    "+[15-35] to Life",
+    "+4 Mana After each Kill"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "Item": "The Bucket",
+  "Tier": "S",
+  "Level": "85",
+  "Defense": "184.50153-216",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[155-170]% Enhanced Defense",
+    "+[230-250] to Life",
+    "+45% Magic Find (Based on Level)",
+    "+[15-30]% Increased Magic Find",
+    "Socketed (2-4)"
+  ]
+}

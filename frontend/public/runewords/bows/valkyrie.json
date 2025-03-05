@@ -1,0 +1,30 @@
+{
+  "Tier": "S",
+  "Level": "52",
+  "Size": "2x3",
+  "Item": "Valkyrie",
+  "Rarity": "Runeword",
+  "Type": "Bow",
+  "Bases": [
+    "Bow"
+  ],
+  "Runes": [
+    "Qi",
+    "Lem",
+    "Old"
+  ],
+  "Stats": [
+    "Attack Damage: 522 [70]",
+    "Attacks per Second: 1.80",
+    "+645% Enhanced Damage",
+    "+[2-4] to All Skills",
+    "+[200-400] to Attack Rating",
+    "+40% of target Defense ignored",
+    "Attack Damage increased by 20%",
+    "+[30-40]% to All Resistances",
+    "+20% Extra Gold Dropped From Kills",
+    "Unbreakable",
+    "Fanaticism Aura Level [18-36]",
+    "Socketed (3)"
+  ]
+}

@@ -22,11 +22,13 @@
   /* Colors */
   --color-background: #000000;
   --color-primary: #d6ac2f;
+  --color-common: #9c9c9c;
   --color-satanic: #c81717;
   --color-angelic: #fdfea5;
   --color-unholy: #c73664;
   --color-heroic: #00e19a;
   --color-satanic-set: #0bb01a;
+  --color-runeword: #c7b377;
   --color-text-primary: #ffffff;
   --color-text-secondary: #c7b377;
   --color-background: rgba(0, 0, 0, 0.8);

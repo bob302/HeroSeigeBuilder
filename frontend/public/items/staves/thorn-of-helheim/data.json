@@ -1,0 +1,24 @@
+{
+  "Item": "Thorn of Helheim",
+  "Tier": "S",
+  "Level": "1",
+  "Damage": "54.0050-58",
+  "APS": "1.251.25",
+  "DPS": "68.0063-73",
+  "Type": "Staff",
+  "TwoHanded": true,
+  "Size": "2x3",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "35% Chance when Casting [Odins Demise] Level 73",
+      "class": "stat-spell"
+    },
+    "+[3-5] to All Skills",
+    "+[25-40]% Faster Cast Rate",
+    "+1 to Projectile Speed",
+    "Magic Skill Damage increased by [25-40]%",
+    "+[8-15] Mana After each Kill",
+    "Mana Increased by 10%"
+  ]
+}

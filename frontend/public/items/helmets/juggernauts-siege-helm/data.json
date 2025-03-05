@@ -1,0 +1,19 @@
+{
+  "Item": "Juggernaut's Siege Helm",
+  "Tier": "A",
+  "Level": "54",
+  "Defense": "116.4093-141",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[120-160]% Enhanced Defense",
+    {
+      "stat": "+[2-5] to [Flail Mastery]",
+      "class": "stat-spell"
+    },
+    "+10 to Vitality",
+    "+40 to Life",
+    "+15 Life After each Kill"
+  ]
+}

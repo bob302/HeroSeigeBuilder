@@ -1,0 +1,17 @@
+{
+  "Item": "Girdle of Resilience",
+  "Tier": "D",
+  "Level": "8",
+  "Defense": "4.974-7",
+  "Type": "Belt",
+  "Size": "2x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[15-30]% Enhanced Defense",
+    "+[5-10]% Increased Movement Speed",
+    "+[3-5] to Intelligence",
+    "+30 to Life",
+    "+[15-20]% Faster Hit Recovery",
+    "Belt Slots: 3"
+  ]
+}

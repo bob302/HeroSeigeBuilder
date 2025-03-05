@@ -1,0 +1,21 @@
+{
+  "Item": "Shield of the Abyss",
+  "Tier": "SS",
+  "Level": "96",
+  "Defense": "484.00408-560",
+  "Block": "60",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Heroic",
+  "Stats": [
+    "+[240-300]% Enhanced Defense",
+    "+[3-5] to Cold Skills",
+    "+1337 to Cold Skill Damage",
+    "Cold Skill Damage increased by [15-40]%",
+    "-[8-20]% to Enemy Cold Resistance",
+    "+75% to Cold Resistance",
+    "+[3-5]% to Maximum Cold Resist",
+    "Cannot be Frozen",
+    "Socketed (0-2)"
+  ]
+}

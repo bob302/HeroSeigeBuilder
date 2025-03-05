@@ -1,0 +1,35 @@
+{
+  "Tier": "S",
+  "Level": "52",
+  "Size": "2x3",
+  "Item": "Justice",
+  "Rarity": "Runeword",
+  "Type": "Shield",
+  "Bases": [
+    "Shield"
+  ],
+  "Runes": [
+    "Drax",
+    "Zed",
+    "Sur"
+  ],
+  "Stats": [
+    "Block Chance: 50",
+    "+[350-400]% Enhanced Defense",
+    "+[2-4] to All Skills",
+    "+[12-20] to Holy Hammer (Paladin)",
+    "+15% Increased Chance of Blocking",
+    "+[20-40]% Increased Movement Speed",
+    "+35 to Energy",
+    "+40 to Armor",
+    "+20 to All Attributes",
+    "Magic Skill Damage increased by 8%",
+    "Mana Increased by 30%",
+    "Magic Damage Taken Reduced by [8-15]%",
+    "+[40-80]% to All Resistances",
+    "+[20-60]% to Lightning Resistance",
+    "Cannot be Frozen",
+    "Unbreakable",
+    "Socketed (3)"
+  ]
+}

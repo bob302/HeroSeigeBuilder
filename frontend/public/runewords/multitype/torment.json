@@ -1,0 +1,41 @@
+{
+  "Tier": "S",
+  "Level": "35",
+  "Size": "2x3",
+  "Item": "Torment",
+  "Rarity": "Runeword",
+  "Type": "MultiType",
+  "Bases": [
+    "Wand",
+    "Dagger",
+    "Book",
+    "Spellblade"
+  ],
+  "Runes": [
+    "Del",
+    "Io"
+  ],
+  "Stats": [
+    "Attack Damage: 34 Attacks per Second: 1.25",
+    "+[1-2] to All Skills (Necromancer)",
+    "+3 to Arcane Skills (Necromancer)",
+    {
+      "stat": "+[2-4] to Bone Spear (Necromancer)",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+[2-3] to Meat Shield (Necromancer)",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+[1-3] to Summon Mastery (Necromancer)",
+      "class": "stat-spell"
+    },
+    "+20% Faster Cast Rate",
+    "+10 to Vitality",
+    "Arcane Skill Damage increased by 5%",
+    "+[10-15] to Mana",
+    "+[4-20]  Mana After each Kill",
+    "Socketed (2)"
+  ]
+}

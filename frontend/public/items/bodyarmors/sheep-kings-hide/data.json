@@ -1,0 +1,19 @@
+{
+  "Item": "Sheep King's Hide",
+  "Tier": "S",
+  "Level": "74",
+  "Defense": "924.75830-1020",
+  "Type": "Body Armor",
+  "Size": "2x3",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[220-250]% Enhanced Defense",
+    "+1 to All Skills",
+    "Physical Damage Taken Reduced by 10%",
+    "+125 to Life (Based on Level)",
+    "+75% Enhanced Damage (Based on Level)",
+    "+[25-30]% to Arcane Resistance",
+    "+[1-5]% to Maximum Arcane Resist",
+    "Socketed (1-4)"
+  ]
+}

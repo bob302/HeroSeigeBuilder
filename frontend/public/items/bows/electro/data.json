@@ -1,0 +1,23 @@
+{
+  "Item": "Electro",
+  "Tier": "A",
+  "Level": "61",
+  "Damage": "306.00238-375",
+  "APS": "2.041.87-2.21",
+  "DPS": "636.50445-828",
+  "Type": "Bow",
+  "TwoHanded": true,
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[260-380]% Enhanced Damage",
+    "+[10-30]% Increased Attack Speed",
+    "+[180-250] to Attack Rating",
+    "+30 to Dexterity",
+    "+[625-665] to Additive Lightning Damage",
+    "Lightning Skill Damage increased by [4-15]%",
+    "-[4-10]% to Enemy Lightning Resistance",
+    "+50% to Lightning Resistance",
+    "+5% to Maximum Lightning Resist"
+  ]
+}

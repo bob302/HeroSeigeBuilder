@@ -1,0 +1,25 @@
+{
+  "Item": "Gabriel's Dauntless Vision",
+  "Tier": "SS",
+  "Level": "92",
+  "Defense": "2137.501650-2625",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Unholy",
+  "Stats": [
+    {
+      "stat": "15% Chance when Struck [Gabriels Revenge] Level 3",
+      "class": "stat-spell"
+    },
+    "+[450-600]% Enhanced Defense",
+    "+[3-5] to All Skills",
+    "Cooldown Recovery Increased by [30-50]%",
+    "Magic Skill Damage increased by [5-25]%",
+    "+250% Defense vs Missiles",
+    "+[4-8] to Light Radius",
+    "Physical Damage Taken Reduced by [8-15]%",
+    "Magic Damage Taken Reduced by [8-15]%",
+    "Unbreakable",
+    "Socketed (1-3)"
+  ]
+}
