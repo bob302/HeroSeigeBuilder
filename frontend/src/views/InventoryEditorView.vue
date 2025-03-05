@@ -130,19 +130,20 @@ class InventoryEditorView extends Vue {
 
 
   mounted() {
-    equipmentService.initialize(() => {
-      this.isSocketablesLoaded = true;
-    });
-
-    document.addEventListener("mousemove", this.updateMousePosition);
-
+  equipmentService.initialize(() => {
+    this.isSocketablesLoaded = true;
+    
     const routeLink = this.$route.params.link as string | undefined;
     if (routeLink) {
       this.importContext();
     }
-    window.addEventListener("resize", this.onResize);
-    this.onResize()
-  }
+  });
+
+  document.addEventListener("mousemove", this.updateMousePosition);
+  
+  window.addEventListener("resize", this.onResize);
+  this.onResize();
+}
 
   unmounted() {
     document.removeEventListener("mousemove", this.updateMousePosition);

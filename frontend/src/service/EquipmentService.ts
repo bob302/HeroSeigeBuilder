@@ -113,7 +113,7 @@ class EquipmentService {
       this.groupPathsByType(pathsRunewords);
       
       this.enqueueLoad(EquipmentType.Socketable, 10);
-      this.processQueue();
+      await this.processQueue();
       
       this.isInitialized = true;
       if (onLoad) {
