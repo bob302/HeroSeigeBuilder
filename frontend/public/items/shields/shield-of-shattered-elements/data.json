@@ -1,0 +1,18 @@
+{
+  "Item": "Shield of Shattered Elements",
+  "Tier": "D",
+  "Level": "14",
+  "Defense": "13.009-17",
+  "Block": "25",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[50-70]% Enhanced Defense",
+    "-6% to Enemy Cold Resistance",
+    "-[4-7]% to Enemy Fire Resistance",
+    "-[3-8]% to Enemy Poison Resistance",
+    "-[1-10]% to Enemy Lightning Resistance",
+    "Magic Skill Damage increased by 5%"
+  ]
+}

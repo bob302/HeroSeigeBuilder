@@ -1,0 +1,30 @@
+{
+  "Item": "Headsman's Bloodthirster",
+  "Tier": "SS",
+  "Level": "96",
+  "Damage": "996.00819-1173",
+  "APS": "1.001",
+  "DPS": "996.00819-1173",
+  "Type": "Axe",
+  "TwoHanded": true,
+  "Size": "2x3",
+  "Rarity": "Heroic",
+  "Stats": [
+    "+[810-920]% Enhanced Damage",
+    "+[5-9] to Physical Skills",
+    {
+      "stat": "+[1-5] to [Execution]",
+      "class": "stat-spell"
+    },
+    "+10% Increased Critical Strike Chance",
+    "+25% of target Defense ignored",
+    "Extra Damage to Bleeding Monsters [30-50]%",
+    "+20 to Strength",
+    "+30 to Dexterity",
+    "Physical Damage Taken Reduced by [8-14]%",
+    "Magic Damage Taken Reduced by [8-14]%",
+    "+1200 to Attack Rating (Based on Level)",
+    "Attacks can hit multiple enemies",
+    "Socketed (2-5)"
+  ]
+}

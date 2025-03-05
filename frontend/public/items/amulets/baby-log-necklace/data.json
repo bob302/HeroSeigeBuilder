@@ -1,0 +1,14 @@
+{
+  "Item": "Baby Log Necklace",
+  "Tier": "A",
+  "Level": "64",
+  "Type": "Amulet",
+  "Size": "1x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    "Replenish Life [15-30]%",
+    "+[150-225] to Life",
+    "+[75-100]% of Damage Returned to the Attacker",
+    "Physical Damage Taken Reduced by 5%"
+  ]
+}

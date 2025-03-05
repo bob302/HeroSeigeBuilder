@@ -1,0 +1,24 @@
+{
+  "Item": "Justiciar's Thunder Sash",
+  "Tier": "S",
+  "Level": "90",
+  "Defense": "97.2076-119",
+  "Type": "Belt",
+  "Size": "2x1",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[45-75]% Enhanced Defense",
+    {
+      "stat": "+[3-5] to [Lightning Fury]",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+[2-4] to [Eye of the Storm]",
+      "class": "stat-spell"
+    },
+    "+[10-15]% Faster Cast Rate",
+    "Mana Increased by [2-5]%",
+    "+[20-40]% to Arcane Resistance",
+    "Belt Slots: 5"
+  ]
+}

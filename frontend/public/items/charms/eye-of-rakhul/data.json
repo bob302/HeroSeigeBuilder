@@ -1,0 +1,18 @@
+{
+  "Item": "Eye of Rakhul",
+  "Tier": "SS",
+  "Level": "100",
+  "Type": "Charm",
+  "Size": "1x2",
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "+[3-8] to [Combat Orders]",
+      "class": "stat-spell"
+    },
+    "+[12-20] to Vitality",
+    "+20 to Armor",
+    "+60% Defense vs Missiles",
+    "+4 to Light Radius"
+  ]
+}

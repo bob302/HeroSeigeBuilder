@@ -1,0 +1,15 @@
+{
+  "Item": "Arc's Sigil",
+  "Tier": "S",
+  "Level": "1",
+  "Type": "Amulet",
+  "Size": "1x1",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+1 to All Skills",
+    "Attack Damage increased by [8-20]%",
+    "Magic Skill Damage increased by [5-15]%",
+    "Replenish Mana [25-40]%",
+    "+[15-30]% Increased Experience Gain Below Level 100"
+  ]
+}

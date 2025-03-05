@@ -1,0 +1,19 @@
+{
+  "Item": "Sobek's Fall",
+  "Tier": "SS",
+  "Level": "100",
+  "Type": "Charm",
+  "Size": "3x1",
+  "Rarity": "Unholy",
+  "Stats": [
+    {
+      "stat": "5% Chance when Casting [Shade of Sobek] Level 1",
+      "class": "stat-spell"
+    },
+    "+3 to Arcane Skills",
+    "Summon Damage Increased by [50-75]%",
+    "+8 to Light Radius",
+    "Poison Length Reduced by 50%",
+    "Unbreakable"
+  ]
+}

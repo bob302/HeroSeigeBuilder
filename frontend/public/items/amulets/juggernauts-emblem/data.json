@@ -1,0 +1,14 @@
+{
+  "Item": "Juggernaut's Emblem",
+  "Tier": "S",
+  "Level": "92",
+  "Type": "Amulet",
+  "Size": "1x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[1-2] to Physical Skills",
+    "Replenish Life [15-25]%",
+    "+[35-45] to Life",
+    "Physical Damage Taken Reduced by [5-10]%"
+  ]
+}

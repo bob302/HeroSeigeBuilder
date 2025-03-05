@@ -1,0 +1,39 @@
+{
+  "Tier": "S",
+  "Level": "63",
+  "Size": "2x3",
+  "Item": "Carnage",
+  "Rarity": "Runeword",
+  "Type": "MultiType",
+  "Bases": [
+    "Claw",
+    "Bow",
+    "Gun"
+  ],
+  "Runes": [
+    "Pul",
+    "Lum",
+    "Ber",
+    "Mal"
+  ],
+  "Stats": [
+    "Attack Damage: 729 [74]",
+    "Attacks per Second: 1.35",
+    {
+      "stat": "10% Chance when Striking [Life Tap] Level 10",
+      "class": "stat-spell"
+    },
+    "+[780-940]% Enhanced Damage",
+    "Mana Costs decreased by 3%",
+    "+38% Chance for a Crushing Blow",
+    "+250 to Attack Rating",
+    "+[7-25] to Dexterity",
+    "+10 to Energy",
+    "+[8-15] to All Attributes",
+    "+[420-460] to Additive Arcane Damage",
+    "+[420-460] to Additive Lightning Damage",
+    "Magic Damage Taken Reduced by 7%",
+    "Unbreakable",
+    "Socketed (4)"
+  ]
+}

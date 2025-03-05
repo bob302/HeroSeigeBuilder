@@ -1,0 +1,32 @@
+{
+  "Tier": "S",
+  "Level": "61",
+  "Size": "2x3",
+  "Item": "Virulence",
+  "Rarity": "Runeword",
+  "Type": "MultiType",
+  "Bases": [
+    "Flask",
+    "Wand"
+  ],
+  "Runes": [
+    "Tul",
+    "Sur",
+    "Sal"
+  ],
+  "Stats": [
+    "Attack Damage: 32",
+    "Attacks per Second: 1.25",
+    "+1 to All Skills",
+    "+[15-30] to Energy",
+    "+[1280-1425] to Poison Skill Damage",
+    "+[100-500] to Fire Skill Damage",
+    "Poison Skill Damage increased by [15-30]%",
+    "-20% to Enemy Poison Resistance",
+    "Replenish Mana 15%",
+    "Mana Increased by 25%",
+    "Physical Damage Taken Reduced by 7%",
+    "Unbreakable",
+    "Socketed (3)"
+  ]
+}

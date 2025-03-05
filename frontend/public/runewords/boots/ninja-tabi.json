@@ -1,0 +1,31 @@
+{
+  "Tier": "S",
+  "Level": "52",
+  "Size": "2x3",
+  "Item": "Ninja Tabi",
+  "Rarity": "Runeword",
+  "Type": "Boots",
+  "Bases": [
+    "Boots"
+  ],
+  "Runes": [
+    "Zed",
+    "Ber"
+  ],
+  "Stats": [
+    "+[300-350]% Enhanced Defense",
+    "+[2-3] to All Skills",
+    "+[8-18] to Evasion",
+    "+[40-50]% Increased Movement Speed",
+    "+[50-125]% Increased Jumping Power",
+    "+8% Chance for a Crushing Blow",
+    "+[3-5] Mana per second",
+    "Magic Skill Damage increased by 8%",
+    "Physical Damage Taken Reduced by [2-5]%",
+    "Magic Damage Taken Reduced by [2-5]%",
+    "Double Jump",
+    "Cannot be Frozen",
+    "Unbreakable",
+    "Socketed (2)"
+  ]
+}

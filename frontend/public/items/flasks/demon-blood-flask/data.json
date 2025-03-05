@@ -1,0 +1,19 @@
+{
+  "Item": "Demon Blood Flask",
+  "Tier": "B",
+  "Level": "44",
+  "Damage": "29.5026-33",
+  "APS": "1.251.25",
+  "DPS": "37.5033-42",
+  "Type": "Flask",
+  "TwoHanded": false,
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[1-2] to All Skills",
+    "+40% Faster Cast Rate",
+    "Replenish Mana 25%",
+    "+[150-200] to Mana",
+    "+15 Mana After each Kill"
+  ]
+}

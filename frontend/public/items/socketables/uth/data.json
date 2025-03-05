@@ -1,0 +1,10 @@
+{
+  "Item": "Uth",
+  "Tier": "D",
+  "Level": "15",
+  "Type": "Rune",
+  "Rarity": "Common",
+  "Stats": [
+    "+15% of Damage Taken goes to Mana"
+  ]
+}

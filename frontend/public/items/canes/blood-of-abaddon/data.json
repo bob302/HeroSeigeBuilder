@@ -1,0 +1,25 @@
+{
+  "Item": "Blood of Abaddon",
+  "Tier": "SS",
+  "Level": "98",
+  "Damage": "37.0032-42",
+  "APS": "1.141.14",
+  "DPS": "42.5037-48",
+  "Type": "Cane",
+  "TwoHanded": true,
+  "Size": "2x3",
+  "Rarity": "Heroic",
+  "Stats": [
+    "+[2-4] to All Skills",
+    {
+      "stat": "+[12-20] to [Blood Surge]",
+      "class": "stat-spell"
+    },
+    "+[6-10] Mana per second",
+    "+[30-40] to Energy",
+    "+[15-20] to Vitality",
+    "Arcane Skill Damage increased by [25-45]%",
+    "Replenish Mana [35-45]%",
+    "+[420-440] to Mana"
+  ]
+}

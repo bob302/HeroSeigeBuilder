@@ -1,0 +1,14 @@
+{
+  "Item": "Storm Pendant",
+  "Tier": "B",
+  "Level": "40",
+  "Type": "Amulet",
+  "Size": "1x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[1-2] to Lightning Skills",
+    "+10 to Energy",
+    "+[80-120] to Lightning Skill Damage",
+    "+40% to Lightning Resistance"
+  ]
+}

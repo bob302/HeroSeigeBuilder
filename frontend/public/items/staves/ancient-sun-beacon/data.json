@@ -1,0 +1,24 @@
+{
+  "Item": "Ancient Sun Beacon",
+  "Tier": "B",
+  "Level": "36",
+  "Damage": "33.0028-38",
+  "APS": "1.501.5",
+  "DPS": "49.5042-57",
+  "Type": "Staff",
+  "TwoHanded": true,
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "35% Chance when Casting [Fireball] Level 28",
+      "class": "stat-spell"
+    },
+    "+[750-1500] to Fire Skill Damage",
+    "Fire Skill Damage increased by [25-40]%",
+    "-15% to Enemy Fire Resistance",
+    "Replenish Mana 50%",
+    "+35 to Energy (Based on Level)",
+    "+75 to Intelligence (Based on Level)"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "Item": "Bonetti's Rapier",
+  "Tier": "SS",
+  "Level": "93",
+  "Damage": "374.75334-416",
+  "APS": "2.682.4-2.96",
+  "DPS": "1016.50801-1232",
+  "Type": "Sword",
+  "Size": "2x3",
+  "TwoHanded": false,
+  "Rarity": "Heroic",
+  "Stats": [
+    "+[475-550]% Enhanced Damage",
+    {
+      "stat": "+10 to [Parry]",
+      "class": "stat-spell"
+    },
+    "+[30-60]% Increased Attack Speed",
+    "+25% Increased Critical Strike Chance",
+    "+25% Chance for a Crushing Blow",
+    "+[375-410] to Attack Rating",
+    "+[3-6]% Life stolen per Hit",
+    "+45% Increased Critical Strike Damage",
+    "+20% Chance to Open Wounds",
+    "+[20-30] to Strength",
+    "+25% Faster Hit Recovery",
+    "Socketed (1-3)"
+  ]
+}

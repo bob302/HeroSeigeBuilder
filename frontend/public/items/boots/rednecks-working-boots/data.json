@@ -1,0 +1,17 @@
+{
+  "Item": "Redneck's Working Boots",
+  "Tier": "A",
+  "Level": "54",
+  "Defense": "68.7051-87",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[50-80]% Enhanced Defense",
+    "+30% Increased Movement Speed",
+    "+15 to Dexterity",
+    "Attack Damage increased by [12-20]%",
+    "Physical Damage Taken Reduced by [5-10]%",
+    "Magic Damage Taken Reduced by [5-10]%"
+  ]
+}

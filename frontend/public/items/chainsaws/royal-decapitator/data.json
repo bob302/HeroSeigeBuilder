@@ -1,0 +1,27 @@
+{
+  "Item": "Royal Decapitator",
+  "Tier": "S",
+  "Level": "84",
+  "Damage": "482.00444-520",
+  "APS": "1.001",
+  "DPS": "482.00444-520",
+  "Type": "Chainsaw",
+  "TwoHanded": true,
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[500-550]% Enhanced Damage",
+    "+[2-4] to All Skills",
+    {
+      "stat": "+[3-6] to [Chainsaw Massacre]",
+      "class": "stat-spell"
+    },
+    "+30% Chance for a Crushing Blow",
+    "+[1550-1700] to Additive Physical Damage",
+    "Slows target by 20%",
+    "Magic Skill Damage increased by [10-20]%",
+    "+100 to Strength (Based on Level)",
+    "Attacks can hit multiple enemies",
+    "Socketed (2-4)"
+  ]
+}

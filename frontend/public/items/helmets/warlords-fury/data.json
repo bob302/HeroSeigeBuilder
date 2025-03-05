@@ -1,0 +1,18 @@
+{
+  "Item": "Warlord's Fury",
+  "Tier": "B",
+  "Level": "37",
+  "Defense": "56.9042-73",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[60-90]% Enhanced Defense",
+    "+10% Increased Movement Speed",
+    "+[15-25]% Increased Attack Speed",
+    "+[10-15]% Increased Attack Rating",
+    "+8% Life stolen per Hit",
+    "+20 to Strength",
+    "+8 Mana After each Kill"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "Item": "Coldsnap Insignia",
+  "Tier": "C",
+  "Level": "30",
+  "Type": "Amulet",
+  "Size": "1x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+10 to Intelligence",
+    "Cold Skill Damage increased by [5-15]%",
+    "Magic Skill Damage increased by 5%",
+    "+[30-40]% to Cold Resistance"
+  ]
+}

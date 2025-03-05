@@ -1,0 +1,16 @@
+{
+  "Item": "Lost Master's Gauntlets",
+  "Tier": "S",
+  "Level": "78",
+  "Defense": "60.1045-76",
+  "Type": "Gloves",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[70-100]% Enhanced Defense",
+    "+[4-8]% Life stolen per Hit",
+    "+15 to Strength",
+    "Attack Damage increased by [15-25]%",
+    "Physical Damage Taken Reduced by 5%"
+  ]
+}

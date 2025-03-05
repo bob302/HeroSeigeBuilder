@@ -1,0 +1,14 @@
+{
+  "Item": "Spine Trophy",
+  "Tier": "S",
+  "Level": "74",
+  "Type": "Charm",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[1-3] to Physical Skills",
+    "+8% Chance for a Deadly Blow",
+    "+[4-8]% Increased Attack Rating",
+    "+[8-15] to Dexterity"
+  ]
+}

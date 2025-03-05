@@ -1,0 +1,19 @@
+{
+  "Item": "Vagabond's Ward",
+  "Tier": "A",
+  "Level": "51",
+  "Defense": "129.9099-161",
+  "Block": "48",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[90-130]% Enhanced Defense",
+    "+2 to Physical Skills",
+    "+10% Increased Attack Speed",
+    "+5 to All Attributes",
+    "Replenish Life 10%",
+    "+25 to Life",
+    "+20% to All Resistances"
+  ]
+}

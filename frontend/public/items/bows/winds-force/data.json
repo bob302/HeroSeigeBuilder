@@ -1,0 +1,25 @@
+{
+  "Item": "Wind's Force",
+  "Tier": "S",
+  "Level": "87",
+  "Damage": "506.00376-636",
+  "APS": "2.432.34-2.52",
+  "DPS": "1241.50880-1603",
+  "Type": "Bow",
+  "TwoHanded": true,
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "[5-10]% Chance after each Kill [Rapid Fire] Level [10-20]",
+      "class": "stat-spell"
+    },
+    "+[300-500]% Enhanced Damage",
+    "+[30-40]% Increased Attack Speed",
+    "+[4-7]% Mana stolen per Hit",
+    "+30 to Strength",
+    "+30 to Dexterity",
+    "+300 to Damage (Based on Level)",
+    "Socketed (2)"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "Item": "Mirror of Flesh",
+  "Tier": "S",
+  "Level": "88",
+  "Defense": "246.00192-300",
+  "Block": "75",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "18% Chance after Blocking [Meat Bomb] Level 32",
+      "class": "stat-spell"
+    },
+    "+[140-200]% Enhanced Defense",
+    "+1 to All Skills",
+    "Magic Skill Damage increased by [10-15]%",
+    "+30% Faster Hit Recovery",
+    "Physical Damage Taken Reduced by 10%"
+  ]
+}

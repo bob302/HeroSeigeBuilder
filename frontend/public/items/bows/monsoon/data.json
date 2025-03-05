@@ -1,0 +1,27 @@
+{
+  "Item": "Monsoon",
+  "Tier": "SS",
+  "Level": "82",
+  "Damage": "906.00741-1071",
+  "APS": "1.801.8",
+  "DPS": "1631.001334-1928",
+  "Type": "Bow",
+  "TwoHanded": true,
+  "Size": "2x3",
+  "Rarity": "Heroic",
+  "Stats": [
+    "+[550-750]% Enhanced Damage",
+    "+[2-4] to All Skills",
+    {
+      "stat": "+1 to [Ricochet]",
+      "class": "stat-spell"
+    },
+    "Attack Range Increased by [10-20]%",
+    "+[8-15]% Mana stolen per Hit",
+    "+[45-60] to Strength",
+    "+[40-50] to Dexterity",
+    "+1000 to Attack Rating (Based on Level)",
+    "Piercing Attack",
+    "Socketed (1-4)"
+  ]
+}

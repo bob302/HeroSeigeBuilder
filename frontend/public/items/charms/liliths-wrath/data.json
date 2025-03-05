@@ -1,0 +1,17 @@
+{
+  "Item": "Lilith's Wrath",
+  "Tier": "SS",
+  "Level": "100",
+  "Type": "Charm",
+  "Size": "1x3",
+  "Rarity": "Unholy",
+  "Stats": [
+    {
+      "stat": "8% Chance when Struck [Agony of Souls] Level 1",
+      "class": "stat-spell"
+    },
+    "Extra Damage to Burning Monsters [5-10]%",
+    "Fire Skill Damage increased by [15-40]%",
+    "Explosion area of effect increased by [5-15]%"
+  ]
+}

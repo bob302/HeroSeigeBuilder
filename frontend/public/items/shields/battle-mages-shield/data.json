@@ -1,0 +1,18 @@
+{
+  "Item": "Battle Mage's Shield",
+  "Tier": "A",
+  "Level": "58",
+  "Defense": "129.9099-161",
+  "Block": "60",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[90-130]% Enhanced Defense",
+    "+1 to All Skills",
+    "+[10-20]% Faster Cast Rate",
+    "Magic Skill Damage increased by [5-10]%",
+    "Replenish Mana 15%",
+    "+[20-30] to Mana"
+  ]
+}

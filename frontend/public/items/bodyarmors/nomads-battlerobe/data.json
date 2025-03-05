@@ -1,0 +1,19 @@
+{
+  "Item": "Nomad's Battlerobe",
+  "Tier": "A",
+  "Level": "57",
+  "Defense": "357.50299-416",
+  "Type": "Body Armor",
+  "Size": "2x3",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[130-160]% Enhanced Defense",
+    "Attack Damage increased by [5-10]%",
+    "+20% Faster Hit Recovery",
+    "+40% Defense vs Missiles",
+    "Physical Damage Taken Reduced by 8%",
+    "+10% to All Resistances",
+    "+15% Increased Magic Find",
+    "Socketed (0-3)"
+  ]
+}

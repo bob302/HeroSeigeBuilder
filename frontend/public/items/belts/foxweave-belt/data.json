@@ -1,0 +1,17 @@
+{
+  "Item": "Foxweave Belt",
+  "Tier": "B",
+  "Level": "42",
+  "Defense": "36.2026-47",
+  "Type": "Belt",
+  "Size": "2x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[30-45]% Enhanced Defense",
+    "Cold Skill Damage increased by 5%",
+    "+[30-75] to Mana",
+    "+75% to Cold Resistance",
+    "Cannot be Frozen",
+    "Belt Slots: 4"
+  ]
+}

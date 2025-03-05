@@ -1,0 +1,27 @@
+{
+  "Item": "Uabel's Wand",
+  "Tier": "S",
+  "Level": "92",
+  "Damage": "29.0026-32",
+  "APS": "1.751.75",
+  "DPS": "51.0046-56",
+  "Type": "Wand",
+  "TwoHanded": false,
+  "Size": "1x3",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "10% Chance when Casting [Arcane Infused Psychosis] Level 2",
+      "class": "stat-spell"
+    },
+    "+[4-6] to All Skills",
+    "+[40-60]% Faster Cast Rate",
+    "+[8-12] Mana per second",
+    "+[25-35] to Energy",
+    "Explosion area of effect increased by [20-40]%",
+    "Replenish Mana [75-125]%",
+    "Life Increased by value1%",
+    "Mana Increased by value1%",
+    "-50% to All Resistances"
+  ]
+}

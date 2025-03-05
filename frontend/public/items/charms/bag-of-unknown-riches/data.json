@@ -1,0 +1,14 @@
+{
+  "Item": "Bag of Unknown Riches",
+  "Tier": "S",
+  "Level": "68",
+  "Type": "Charm",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[8-15]% Extra Gold Dropped From Kills",
+    "+[25-40]% Increased Magic Find",
+    "+[1-5]% Increased Experience Gain",
+    "+[1-5]% Decreased Merchant Prices"
+  ]
+}

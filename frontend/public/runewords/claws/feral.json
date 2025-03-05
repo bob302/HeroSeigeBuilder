@@ -1,0 +1,37 @@
+{
+  "Tier": "S",
+  "Level": "100",
+  "Size": "2x3",
+  "Item": "Feral",
+  "Rarity": "Runeword",
+  "Type": "Claw",
+  "Bases": [
+    "Claw"
+  ],
+  "Runes": [
+    "Nju",
+    "Nju",
+    "Ber",
+    "Drax"
+  ],
+  "Stats": [
+    "Attack Damage: 542 [47]",
+    "Attacks per Second: 1.86 [1.25]",
+    "+[1000-1150]% Enhanced Damage",
+    "+4 to All Skills",
+    "+4 to Physical Skills",
+    "+30% Increased Movement Speed",
+    "+[45-50]% Increased Attack Speed",
+    "+15% Increased Critical Strike Chance",
+    "+25% Chance for a Deadly Blow",
+    "+8% Chance for a Crushing Blow",
+    "+50% Increased Critical Strike Damage",
+    "+25% Chance to Open Wounds",
+    "Extra Damage to Bleeding Monsters [85-100]%",
+    "-6% to All Enemy Resistances",
+    "Replenish Mana [20-40]%",
+    "Cannot be Frozen",
+    "Unbreakable",
+    "Socketed (4)"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "Item": "Odin's Battle Axe",
+  "Tier": "S",
+  "Level": "82",
+  "Damage": "442.95414-472",
+  "APS": "1.201.2",
+  "DPS": "532.00497-567",
+  "Type": "Axe",
+  "TwoHanded": true,
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "8% Chance when Striking [Shockwave] Level 17",
+      "class": "stat-spell"
+    },
+    "+[275-305]% Enhanced Damage",
+    "+[1250-1475] to Additive Physical Damage",
+    "+30% Magic Find (Based on Level)",
+    "+200% Enhanced Damage (Based on Level)",
+    "+100 to Vitality (Based on Level)",
+    "Attacks can hit multiple enemies",
+    "Socketed (1-3)"
+  ]
+}

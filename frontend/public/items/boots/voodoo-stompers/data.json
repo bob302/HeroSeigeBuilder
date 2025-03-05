@@ -1,0 +1,20 @@
+{
+  "Item": "Voodoo Stompers",
+  "Tier": "S",
+  "Level": "87",
+  "Defense": "118.5097-141",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[85-120]% Enhanced Defense",
+    "+[1-2] to Poison Skills",
+    "+55% Increased Movement Speed",
+    "+12 to Vitality",
+    "Poison Skill Damage increased by [12-20]%",
+    "-[10-15]% to Enemy Poison Resistance",
+    "+[40-60]% to Poison Resistance",
+    "+[3-5]% to Maximum Poison Resist",
+    "Poison Length Reduced by [20-30]%"
+  ]
+}

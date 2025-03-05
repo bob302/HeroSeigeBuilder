@@ -1,0 +1,15 @@
+{
+  "Item": "Unfathomable Puzzle",
+  "Tier": "S",
+  "Level": "86",
+  "Type": "Amulet",
+  "Size": "1x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "Magic Skill Damage increased by [17-30]%",
+    "Replenish Life [10-20]%",
+    "Replenish Mana [10-20]%",
+    "+[40-50] to Life",
+    "+[35-45] to Mana"
+  ]
+}

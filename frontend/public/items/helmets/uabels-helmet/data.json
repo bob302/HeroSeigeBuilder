@@ -1,0 +1,18 @@
+{
+  "Item": "Uabel's Helmet",
+  "Tier": "B",
+  "Level": "34",
+  "Defense": "59.4543-76",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[65-100]% Enhanced Defense",
+    "+1 to All Skills",
+    "Replenish Mana 15%",
+    "+100 to Life",
+    "+100 to Mana",
+    "+15 Mana After each Kill",
+    "+10% Increased Magic Find"
+  ]
+}

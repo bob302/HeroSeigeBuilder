@@ -1,0 +1,43 @@
+{
+  "Tier": "S",
+  "Level": "59",
+  "Size": "2x3",
+  "Item": "Big Joe",
+  "Rarity": "Runeword",
+  "Type": "MultiType",
+  "Bases": [
+    "Chainsaw",
+    "Mace",
+    "Polearm"
+  ],
+  "Runes": [
+    "Xo",
+    "Io",
+    "Fel",
+    "Tul",
+    "Hel",
+    "Naf"
+  ],
+  "Stats": [
+    "Attack Damage: 636 [77]",
+    "Attacks per Second: 1.69 [1.25]",
+    {
+      "stat": "15% Chance when Striking [Heavy Ball] Level 14",
+      "class": "stat-spell"
+    },
+    "+[680-740]% Enhanced Damage",
+    "+[30-40]% Increased Attack Speed",
+    "Cooldown Recovery Increased by 4%",
+    "+50% Chance for a Deadly Blow",
+    "+40% Increased Attack Rating",
+    "+[40-200] to Additive Physical Damage",
+    "+10 to Strength",
+    "+10 to Vitality",
+    "+[420-460] to Additive Fire Damage",
+    "Poison Skill Damage increased by 5%",
+    "+15% Defense vs Missiles",
+    "Attacks can hit multiple enemies",
+    "Unbreakable",
+    "Socketed (6)"
+  ]
+}

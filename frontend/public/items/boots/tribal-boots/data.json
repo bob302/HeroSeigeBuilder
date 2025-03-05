@@ -1,0 +1,17 @@
+{
+  "Item": "Tribal Boots",
+  "Tier": "B",
+  "Level": "38",
+  "Defense": "33.4026-42",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+30% Increased Movement Speed",
+    "+[40-60]% Enhanced Defense",
+    "+[65-85] to Attack Rating",
+    "+10 to Strength",
+    "+[10-15] to Dexterity",
+    "+15% to All Resistances"
+  ]
+}

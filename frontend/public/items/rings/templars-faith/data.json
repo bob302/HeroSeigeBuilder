@@ -1,0 +1,16 @@
+{
+  "Item": "Templar's Faith",
+  "Tier": "A",
+  "Level": "54",
+  "Type": "Ring",
+  "Size": "1x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "8% Chance when Struck [Odin's Fury] Level 20",
+      "class": "stat-spell"
+    },
+    "+[20-30]% of Damage Returned to the Attacker",
+    "Physical Damage Taken Reduced by 5%"
+  ]
+}

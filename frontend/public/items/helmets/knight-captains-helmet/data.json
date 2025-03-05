@@ -1,0 +1,19 @@
+{
+  "Item": "Knight Captain's Helmet",
+  "Tier": "S",
+  "Level": "76",
+  "Defense": "142.00108-176",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[80-120]% Enhanced Defense",
+    "+[20-30]% Chance for a Deadly Blow",
+    "+[250-320] to Additive Physical Damage",
+    "+30 to Strength",
+    "+30 to Dexterity",
+    "Physical Damage Taken Reduced by [4-8]%",
+    "Magic Damage Taken Reduced by [4-8]%",
+    "Socketed (1-2)"
+  ]
+}

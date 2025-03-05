@@ -1,0 +1,20 @@
+{
+  "Item": "Sacred Aegis",
+  "Tier": "A",
+  "Level": "53",
+  "Defense": "129.9099-161",
+  "Block": "60",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[90-130]% Enhanced Defense",
+    "+[4-8]% Increased Attack Rating",
+    "+4% Mana stolen per Hit",
+    "+20 to Strength",
+    "+10 to Vitality",
+    "Replenish Life [10-20]%",
+    "+[20-40] to Life",
+    "+75 to Life (Based on Level)"
+  ]
+}

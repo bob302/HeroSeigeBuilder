@@ -1,0 +1,20 @@
+{
+  "Item": "Thunder Caller's Treads",
+  "Tier": "S",
+  "Level": "57",
+  "Defense": "66.6550-84",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "8% Chance when Struck [Storm Cloud] Level 16",
+      "class": "stat-spell"
+    },
+    "+[45-75]% Enhanced Defense",
+    "+30% Increased Movement Speed",
+    "+[15-25] to Intelligence",
+    "-[6-10]% to Enemy Lightning Resistance",
+    "Mana Increased by 8%"
+  ]
+}

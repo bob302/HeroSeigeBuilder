@@ -1,7 +1,6 @@
 <!-- EquipmentSockets.vue -->
 <template>
   <div class="runes-section">
-    <div class="runes-divider"></div>
     <div class="runes-content">
       <p class="text-regular socketables-title">Socketed Runes:</p>
       <ul class="socketables-list">
@@ -44,20 +43,6 @@ export default defineComponent({
   position: relative;
   padding-left: 1rem;
   min-width: 150px;
-}
-
-.runes-divider {
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 1px;
-  background: linear-gradient(
-    180deg,
-    transparent 0%,
-    rgba(199, 179, 119, 0.5) 50%,
-    transparent 100%
-  );
 }
 
 .socketables-list {

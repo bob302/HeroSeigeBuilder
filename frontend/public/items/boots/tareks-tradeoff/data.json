@@ -1,0 +1,16 @@
+{
+  "Item": "Tarek's Tradeoff",
+  "Tier": "B",
+  "Level": "40",
+  "Defense": "31.2024-39",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[30-50]% Enhanced Defense",
+    "+[30-40]% Increased Movement Speed",
+    "+[40-75] to All Attributes",
+    "Physical Damage Taken Reduced by value1%",
+    "-53% to All Resistances"
+  ]
+}

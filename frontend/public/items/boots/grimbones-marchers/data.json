@@ -1,0 +1,18 @@
+{
+  "Item": "Grimbone's Marchers",
+  "Tier": "SS",
+  "Level": "100",
+  "Defense": "306.20263-350",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Heroic",
+  "Stats": [
+    "+[220-250]% Enhanced Defense",
+    "+[1-2] to All Skills",
+    "+[25-50]% Increased Movement Speed",
+    "+[20-30]% Faster Cast Rate",
+    "Magic Skill Damage increased by [15-35]%",
+    "Poison Length Reduced by 50%",
+    "Cannot be Frozen"
+  ]
+}

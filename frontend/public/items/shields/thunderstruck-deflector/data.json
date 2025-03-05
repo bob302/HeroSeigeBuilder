@@ -1,0 +1,17 @@
+{
+  "Item": "Thunderstruck Deflector",
+  "Tier": "B",
+  "Level": "45",
+  "Defense": "48.5033-64",
+  "Block": "25",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[50-60]% Enhanced Defense",
+    "+[20-30]% Increased Movement Speed",
+    "+15% Increased Attack Speed",
+    "+[50-450] to Additive Lightning Damage",
+    "+30% Faster Hit Recovery"
+  ]
+}

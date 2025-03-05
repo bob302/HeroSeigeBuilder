@@ -1,0 +1,17 @@
+{
+  "Item": "Hermes Boots",
+  "Tier": "S",
+  "Level": "84",
+  "Defense": "222.12168-277",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[180-225]% Enhanced Defense",
+    "+70% Increased Movement Speed",
+    "+[35-50]% Increased Jumping Power",
+    "+[18-25] to All Attributes",
+    "+[50-75]% Defense vs Missiles",
+    "+[30-40]% to All Resistances"
+  ]
+}

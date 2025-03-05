@@ -1,0 +1,17 @@
+{
+  "Item": "Stoneplate of Corruption",
+  "Tier": "SS",
+  "Level": "74",
+  "Defense": "1510.001260-1760",
+  "Type": "Body Armor",
+  "Size": "2x3",
+  "Rarity": "Heroic",
+  "Stats": [
+    "+[350-450]% Enhanced Defense",
+    "+[1-2] to All Skills",
+    "Unholy Stat",
+    "Unholy Stat",
+    "Unholy Stat",
+    "Socketed (5)"
+  ]
+}

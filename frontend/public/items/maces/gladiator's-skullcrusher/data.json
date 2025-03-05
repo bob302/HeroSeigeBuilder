@@ -1,0 +1,27 @@
+{
+  "Item": "Gladiator's Skullcrusher",
+  "Tier": "A",
+  "Level": "49",
+  "Damage": "260.50230-292",
+  "APS": "1.401.4",
+  "DPS": "365.00322-408",
+  "Type": "Mace",
+  "TwoHanded": true,
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[310-370]% Enhanced Damage",
+    "+3 to All Skills",
+    {
+      "stat": "+[4-8] to [Fast Slices]",
+      "class": "stat-spell"
+    },
+    "+[4-8]% Increased Attack Rating",
+    "+[720-780] to Additive Physical Damage",
+    "+20 to Strength",
+    "+15 to Vitality",
+    "Replenish Life [10-15]%",
+    "Attacks can hit multiple enemies",
+    "Socketed (1-3)"
+  ]
+}

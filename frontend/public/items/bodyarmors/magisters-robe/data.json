@@ -1,0 +1,20 @@
+{
+  "Item": "Magister's Robe",
+  "Tier": "C",
+  "Level": "30",
+  "Defense": "65.4040-92",
+  "Type": "Body Armor",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[80-90]% Enhanced Defense",
+    "+1 to All Skills",
+    "+30% Faster Cast Rate",
+    "+[10-15] to Energy",
+    "Replenish Mana 15%",
+    "Physical Damage Taken Reduced by 8%",
+    "+50% to Arcane Resistance",
+    "+5% to Maximum Arcane Resist",
+    "Socketed (0-2)"
+  ]
+}

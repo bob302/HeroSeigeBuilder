@@ -1,0 +1,38 @@
+{
+  "Item": "The Hope Ender",
+  "Tier": "SS",
+  "Level": "100",
+  "Damage": "1072.40920-1226",
+  "APS": "1.251.25",
+  "DPS": "1340.501149-1532",
+  "Type": "Sword",
+  "Size": "2x3",
+  "TwoHanded": true,
+  "Rarity": "Unholy",
+  "Stats": [
+    {
+      "stat": "10% Chance after each Kill [Gabriels Shadow] Level 1",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "25% Chance when Striking [Gabriels Annihilation] Level 3",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "1% Chance when Struck [Demon Form] Level 60",
+      "class": "stat-spell"
+    },
+    "+666% Enhanced Damage",
+    "+[4-7] to All Skills",
+    {
+      "stat": "+[10-20] to [Enraged Mania]",
+      "class": "stat-spell"
+    },
+    "+[15-22]% Mana stolen per Hit",
+    "+[70-90] to Strength",
+    "+[70-90] to Dexterity",
+    "Attacks can hit multiple enemies",
+    "Unbreakable",
+    "Socketed (4-6)"
+  ]
+}

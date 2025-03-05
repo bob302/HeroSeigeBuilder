@@ -1,0 +1,10 @@
+{
+  "Item": "Sal",
+  "Tier": "C",
+  "Level": "27",
+  "Type": "Rune",
+  "Rarity": "Common",
+  "Stats": [
+    "Physical Damage Taken Reduced by 7%"
+  ]
+}

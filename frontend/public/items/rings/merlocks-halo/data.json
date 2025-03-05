@@ -1,0 +1,13 @@
+{
+  "Item": "Merlock's Halo",
+  "Tier": "B",
+  "Level": "38",
+  "Type": "Ring",
+  "Size": "1x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[15-20] to Intelligence",
+    "+[45-60] to Life",
+    "+75 to Mana"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "Item": "Sand Manipulator's Mask",
+  "Tier": "S",
+  "Level": "79",
+  "Defense": "146.00108-184",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[80-130]% Enhanced Defense",
+    "+[35-50] to Mana",
+    "+[20-30]% to Arcane Resistance",
+    "+[20-30]% to Lightning Resistance"
+  ]
+}

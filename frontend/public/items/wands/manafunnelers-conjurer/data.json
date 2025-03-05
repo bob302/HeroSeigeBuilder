@@ -1,0 +1,28 @@
+{
+  "Item": "Manafunneler's Conjurer",
+  "Tier": "SS",
+  "Level": "82",
+  "Damage": "30.0020-40",
+  "APS": "1.501.5",
+  "DPS": "45.0030-60",
+  "Type": "Wand",
+  "TwoHanded": false,
+  "Size": "1x3",
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "1% Chance when Casting [Manalicious] Level 1",
+      "class": "stat-spell"
+    },
+    "+[2-3] to All Skills",
+    "+[0-6] to Cold Skills",
+    "+[0-6] to Fire Skills",
+    "+[0-6] to Lightning Skills",
+    "+[0-6] to Poison Skills",
+    "+[0-6] to Arcane Skills",
+    "+70% Faster Cast Rate",
+    "+[20-40] to Energy",
+    "Arcane Skill Damage increased by [20-30]%",
+    "Socketed (0-1)"
+  ]
+}

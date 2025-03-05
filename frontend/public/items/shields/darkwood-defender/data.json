@@ -1,0 +1,17 @@
+{
+  "Item": "Darkwood Defender",
+  "Tier": "C",
+  "Level": "23",
+  "Defense": "23.3020-27",
+  "Block": "40",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[40-50]% Enhanced Defense",
+    "+[20-30]% Increased Chance of Blocking",
+    "+8 to Strength",
+    "+15 to Energy",
+    "+15 to Vitality"
+  ]
+}

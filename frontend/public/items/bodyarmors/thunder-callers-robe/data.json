@@ -1,0 +1,19 @@
+{
+  "Item": "Thunder Caller's Robe",
+  "Tier": "S",
+  "Level": "74",
+  "Defense": "553.50483-624",
+  "Type": "Body Armor",
+  "Size": "2x3",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[130-160]% Enhanced Defense",
+    "Cooldown Recovery Increased by [5-10]%",
+    "+[10-15] to Energy",
+    "+[15-25] to Vitality",
+    "+[330-540] to Lightning Skill Damage",
+    "+250 to Mana (Based on Level)",
+    "+[20-40]% to Lightning Resistance",
+    "Socketed (2-3)"
+  ]
+}

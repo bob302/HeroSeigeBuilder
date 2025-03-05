@@ -1,0 +1,17 @@
+{
+  "Item": "Signet of Bifröst",
+  "Tier": "S",
+  "Level": "1",
+  "Type": "Ring",
+  "Size": "1x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    "Cold Skill Damage increased by [25-35]%",
+    "Cannot be Frozen",
+    {
+      "stat": "Herobound",
+      "class": "stat-spell"
+    },
+    "Socketed (1)"
+  ]
+}

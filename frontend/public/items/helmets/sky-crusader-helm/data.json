@@ -1,0 +1,18 @@
+{
+  "Item": "Sky Crusader Helm",
+  "Tier": "C",
+  "Level": "29",
+  "Defense": "26.5018-35",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[50-75]% Enhanced Defense",
+    "Cooldown Recovery Increased by 15%",
+    "+10 to Vitality",
+    "+10 to Armor",
+    "Physical Damage Taken Reduced by 10%",
+    "+[15-20]% to All Resistances",
+    "Half Freeze Duration"
+  ]
+}

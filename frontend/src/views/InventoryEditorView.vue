@@ -49,13 +49,13 @@
     :pos="editorContext.tooltipPosition" @close="editorContext.lookingAt = null"/>
 
   <TextModalComponent :isVisible="editorContext.currentView === EditorViewState.Restrictions" @close="resetViews">
-    <p>This class can use:</p>
-    <div class="restrictions-list" v-if="editorContext.getSelectedCharapter()?.restrictions.size! > 0">
+    <p v-if="!editorContext.getSelectedCharapter()?.isBlackList()"> {{ editorContext.getSelectedCharapter()!.name }} only can use:</p>
+    <div class="restrictions-list" v-if="editorContext.getSelectedCharapter()?.restrictions.size! > 0 && !editorContext.getSelectedCharapter()?.isBlackList()">
       <p v-for="(weapon, index) in editorContext.getSelectedCharapter()?.restrictions" :key="index">
         {{ weapon }}
       </p>
     </div>
-    <p v-else>This class can use any weapon.</p>
+    <p v-else>{{ editorContext.getSelectedCharapter()!.name }} can use any weapon.</p>
   </TextModalComponent>
 
   <TextModalComponent :isVisible="editorContext.currentView === EditorViewState.Info" @close="resetViews">
@@ -228,7 +228,6 @@ class InventoryEditorView extends Vue {
         this.editorContext.unlockCharmBottomSLot()
         break
       }
-
     }
   }
 

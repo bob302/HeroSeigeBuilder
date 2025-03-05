@@ -1,0 +1,17 @@
+{
+  "Item": "Mevius' Mighty Marchers",
+  "Tier": "A",
+  "Level": "57",
+  "Defense": "109.5075-144",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[50-80]% Enhanced Defense",
+    "+[20-30]% Increased Movement Speed",
+    "+[10-15] to Energy",
+    "+15 to Intelligence",
+    "+[8-15] Mana After each Kill",
+    "All Damage Taken Reduced by 3%"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "Item": "Earth Shaper's Belt",
+  "Tier": "S",
+  "Level": "85",
+  "Defense": "97.2076-119",
+  "Type": "Belt",
+  "Size": "2x1",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[45-75]% Enhanced Defense",
+    "+[18-25] to Armor",
+    "Replenish Mana [8-15]%",
+    "+[35-50] to Life",
+    "+[25-40] to Mana",
+    "+5% to All Resistances",
+    "Belt Slots: 5"
+  ]
+}

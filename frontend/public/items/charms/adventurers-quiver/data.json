@@ -1,0 +1,13 @@
+{
+  "Item": "Adventurer's Quiver",
+  "Tier": "S",
+  "Level": "64",
+  "Type": "Charm",
+  "Size": "1x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "Attack Range Increased by [10-20]%",
+    "+[15-30]% Increased Attack Speed",
+    "Charm Size [1x2]"
+  ]
+}

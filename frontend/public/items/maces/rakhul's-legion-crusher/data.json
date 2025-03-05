@@ -1,0 +1,28 @@
+{
+  "Item": "Rakhul's Legion Crusher",
+  "Tier": "SS",
+  "Level": "100",
+  "Damage": "840.00680-1000",
+  "APS": "1.141.14",
+  "DPS": "958.00776-1140",
+  "Type": "Mace",
+  "TwoHanded": true,
+  "Size": "2x3",
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "9% Chance when Attacking [King Rakhuls Carnage] Level 9",
+      "class": "stat-spell"
+    },
+    "+[700-900]% Enhanced Damage",
+    "+[2-4] to All Skills",
+    "+75% of target Defense ignored",
+    "Extra Damage to Stunned Monsters [40-80]%",
+    "+[200-350] to Strength",
+    "+[100-150] to Vitality",
+    "Unholy Stat",
+    "Unholy Stat",
+    "Attacks can hit multiple enemies",
+    "Socketed {3-6}"
+  ]
+}

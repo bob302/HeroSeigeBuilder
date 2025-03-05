@@ -1,0 +1,14 @@
+{
+  "Item": "Plunderer's Spy Glass",
+  "Tier": "S",
+  "Level": "82",
+  "Type": "Amulet",
+  "Size": "1x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[10-15] to Energy",
+    "+[445-520] to Cold Skill Damage",
+    "Cold Skill Damage increased by [8-15]%",
+    "+[30-50]% to Cold Resistance"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "Item": "Titan's Staticguards",
+  "Tier": "B",
+  "Level": "34",
+  "Defense": "17.6012-24",
+  "Type": "Gloves",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[40-50]% Enhanced Defense",
+    "+15% Increased Attack Speed",
+    "+[750-1850] to Additive Lightning Damage",
+    "Lightning Skill Damage increased by [5-30]%",
+    "+5% Lightning Damage Absorbed",
+    "+[40-50]% to Lightning Resistance"
+  ]
+}

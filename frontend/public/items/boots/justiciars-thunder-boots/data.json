@@ -1,0 +1,16 @@
+{
+  "Item": "Justiciar's Thunder Boots",
+  "Tier": "A",
+  "Level": "53",
+  "Defense": "68.7051-87",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[50-80]% Enhanced Defense",
+    "+30% Increased Movement Speed",
+    "-[8-15]% to Enemy Lightning Resistance",
+    "+[30-40]% to Lightning Resistance",
+    "+[4-10]% to Maximum Lightning Resist"
+  ]
+}

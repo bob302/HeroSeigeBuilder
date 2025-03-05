@@ -1,0 +1,17 @@
+{
+  "Item": "Plated Crimson Defenders",
+  "Tier": "A",
+  "Level": "52",
+  "Defense": "34.5027-42",
+  "Type": "Gloves",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[50-75]% Enhanced Defense",
+    "+5 to Vitality",
+    "Replenish Life [5-8]%",
+    "+[5-8] Life After each Kill",
+    "+[25-35]% of Damage Returned to the Attacker",
+    "Physical Damage Taken Reduced by [10-20]%"
+  ]
+}

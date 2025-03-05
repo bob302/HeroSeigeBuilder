@@ -1,0 +1,25 @@
+{
+  "Item": "Beacon of Shadows",
+  "Tier": "SS",
+  "Level": "98",
+  "Damage": "37.0032-42",
+  "APS": "1.251.25",
+  "DPS": "46.5040-53",
+  "Type": "Wand",
+  "TwoHanded": false,
+  "Size": "1x3",
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "10% Chance when Casting [Shadow Bolt] Level 95",
+      "class": "stat-spell"
+    },
+    "+[3-4] to All Skills",
+    "+40% Faster Cast Rate",
+    "+[4-8] Mana per second",
+    "+[30-40] to Energy",
+    "+[10-15] to Vitality",
+    "Magic Skill Damage increased by [15-40]%",
+    "Socketed (0-2)"
+  ]
+}

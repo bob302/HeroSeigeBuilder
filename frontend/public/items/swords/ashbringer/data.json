@@ -1,0 +1,21 @@
+{
+  "Item": "Ashbringer",
+  "Tier": "B",
+  "Level": "37",
+  "Damage": "179.20156-203",
+  "APS": "1.101.1",
+  "DPS": "197.50172-223",
+  "Type": "Sword",
+  "Size": "2x3",
+  "TwoHanded": true,
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[290-340]% Enhanced Damage",
+    "+[45-50]% Increased Attack Rating",
+    "+[345-355] to Additive Fire Damage",
+    "+[40-50] to Life",
+    "+100 to Damage (Based on Level)",
+    "+[25-40]% to Fire Resistance",
+    "Attacks can hit multiple enemies"
+  ]
+}

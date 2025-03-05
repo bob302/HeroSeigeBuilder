@@ -1,0 +1,17 @@
+{
+  "Item": "Mevius' Mighty Gauntlets",
+  "Tier": "S",
+  "Level": "78",
+  "Defense": "52.7539-67",
+  "Type": "Gloves",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[50-75]% Enhanced Defense",
+    "+3 to Lightning Skills",
+    "+[10-20]% Faster Cast Rate",
+    "Life Increased by [4-10]%",
+    "Mana Increased by [4-10]%",
+    "All Damage Taken Reduced by 3%"
+  ]
+}

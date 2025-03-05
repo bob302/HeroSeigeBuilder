@@ -1,0 +1,17 @@
+{
+  "Item": "Lunar Prophet's Walkers",
+  "Tier": "A",
+  "Level": "57",
+  "Defense": "68.7051-87",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[50-80]% Enhanced Defense",
+    "+40% Increased Movement Speed",
+    "+[10-15] to Energy",
+    "+10 to Intelligence",
+    "+[30-50]% to Cold Resistance",
+    "Cannot be Frozen"
+  ]
+}

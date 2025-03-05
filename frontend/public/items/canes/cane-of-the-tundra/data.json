@@ -1,0 +1,24 @@
+{
+  "Item": "Cane of the Tundra",
+  "Tier": "S",
+  "Level": "87",
+  "Damage": "37.0032-42",
+  "APS": "1.141.14",
+  "DPS": "42.5037-48",
+  "Type": "Cane",
+  "TwoHanded": true,
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "15% Chance when Casting [Blizzard] Level 44",
+      "class": "stat-spell"
+    },
+    "+[2-4] to All Skills",
+    "+[1230-1245] to Cold Skill Damage",
+    "Cold Skill Damage increased by [15-25]%",
+    "+[310-325] to Mana",
+    "+[15-35] Mana After each Kill",
+    "+[40-60]% to Cold Resistance"
+  ]
+}

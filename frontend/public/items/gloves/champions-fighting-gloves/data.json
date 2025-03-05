@@ -1,0 +1,16 @@
+{
+  "Item": "Champion's Fighting Gloves",
+  "Tier": "S",
+  "Level": "78",
+  "Defense": "65.2047-84",
+  "Type": "Gloves",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[80-120]% Enhanced Defense",
+    "+20% Chance for a Crushing Blow",
+    "+220 to Attack Rating",
+    "+[10-15] to Vitality",
+    "+35 to Strength (Based on Level)"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "Item": "Spirit Pendant",
+  "Tier": "S",
+  "Level": "85",
+  "Type": "Amulet",
+  "Size": "1x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "Cooldown Recovery Increased by 10%",
+    "+[30-45] to Life",
+    "+[15-25] to Mana",
+    "+[20-30]% to All Resistances"
+  ]
+}

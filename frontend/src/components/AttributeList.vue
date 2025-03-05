@@ -62,7 +62,7 @@ class AttributeList extends Vue {
     { key: "dexterity", label: "Dexterity" },
     { key: "intelligence", label: "Intelligence" },
     { key: "energy", label: "Energy" },
-    { key: "vitality", label: "Vitality" },
+    { key: "vitality", label: "Vitality" }
   ];
 
   spreadEvenly() {

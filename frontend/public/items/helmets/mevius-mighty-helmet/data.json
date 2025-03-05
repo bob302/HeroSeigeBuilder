@@ -1,0 +1,17 @@
+{
+  "Item": "Mevius' Mighty Helmet",
+  "Tier": "S",
+  "Level": "65",
+  "Defense": "99.9076-125",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[80-130]% Enhanced Defense",
+    "Cooldown Recovery Increased by [5-10]%",
+    "+15 to Vitality",
+    "+8 to All Attributes",
+    "Magic Skill Damage increased by [8-20]%",
+    "All Damage Taken Reduced by 3%"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "Item": "Thunder Lord's Aegis",
+  "Tier": "S",
+  "Level": "88",
+  "Defense": "191.00152-230",
+  "Block": "56",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[90-130]% Enhanced Defense",
+    "+[375-440] to Lightning Skill Damage",
+    "Lightning Skill Damage increased by [10-20]%",
+    "-[5-10]% to Enemy Lightning Resistance",
+    "Magic Damage Taken Reduced by 20%",
+    "+50% to Lightning Resistance",
+    "+10% to Maximum Lightning Resist"
+  ]
+}

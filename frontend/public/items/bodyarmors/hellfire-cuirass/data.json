@@ -1,0 +1,18 @@
+{
+  "Item": "Hellfire Cuirass",
+  "Tier": "B",
+  "Level": "40",
+  "Defense": "175.50126-225",
+  "Type": "Body Armor",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[110-150]% Enhanced Defense",
+    "+[2-3] to Fire Skills",
+    "+[60-85] to Additive Fire Damage",
+    "Replenish Life [10-15]%",
+    "+[50-60]% to Fire Resistance",
+    "+5% to Maximum Fire Resist",
+    "Socketed (0-4)"
+  ]
+}

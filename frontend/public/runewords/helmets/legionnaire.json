@@ -1,0 +1,31 @@
+{
+  "Tier": "S",
+  "Level": "52",
+  "Size": "2x3",
+  "Item": "Legionnaire",
+  "Rarity": "Runeword",
+  "Type": "Helmet",
+  "Bases": [
+    "Helmet"
+  ],
+  "Runes": [
+    "Xo",
+    "Qi",
+    "Drax"
+  ],
+  "Stats": [
+    "4% Chance when Attacking [Live by the Sword] Level 20",
+    "+[15-20]% Enhanced Damage",
+    "+[75-125]% Enhanced Defense",
+    "+[3-5] to Physical Skills",
+    "+25% Chance for a Deadly Blow",
+    "+7% Life stolen per Hit",
+    "+[5-8]% Mana stolen per Hit",
+    "+[28-35] to Strength",
+    "Attack Damage increased by 20%",
+    "+[4-15]% of Damage Taken goes to Mana",
+    "Cannot be Frozen",
+    "Unbreakable",
+    "Socketed (3)"
+  ]
+}

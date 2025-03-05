@@ -1,0 +1,29 @@
+{
+  "Item": "Hypothermia",
+  "Tier": "SS",
+  "Level": "92",
+  "Damage": "397.60348-448",
+  "APS": "1.901.9",
+  "DPS": "756.00660-852",
+  "Type": "Spellblade",
+  "TwoHanded": false,
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "8% Chance when Striking [Torrent] Level 68",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "5% Chance when Casting [Frozen Hide] Level 72",
+      "class": "stat-spell"
+    },
+    "+[520-600]% Enhanced Damage",
+    "+[3-6] to Cold Skills",
+    "+[30-40]% Faster Cast Rate",
+    "+[8-12] Mana per second",
+    "+[3000-3400] to Additive Cold Damage",
+    "+[45-60] to Cold Skill Damage",
+    "+75% to Cold Resistance",
+    "Cannot be Frozen"
+  ]
+}

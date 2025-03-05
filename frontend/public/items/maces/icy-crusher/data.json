@@ -1,0 +1,25 @@
+{
+  "Item": "Icy Crusher",
+  "Tier": "A",
+  "Level": "47",
+  "Damage": "136.40122-152",
+  "APS": "1.401.4",
+  "DPS": "191.50171-212",
+  "Type": "Mace",
+  "TwoHanded": false,
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "8% Chance when Striking [Frozen Boulder] Level 22",
+      "class": "stat-spell"
+    },
+    "+[280-320]% Enhanced Damage",
+    "+[160-180] to Attack Rating",
+    "+[4-10]% Life stolen per Hit",
+    "+[8-15] to Vitality",
+    "+[775-1000] to Additive Cold Damage",
+    "Cold Skill Damage increased by [8-18]%",
+    "Life Increased by 3%"
+  ]
+}

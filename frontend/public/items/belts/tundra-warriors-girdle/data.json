@@ -1,0 +1,17 @@
+{
+  "Item": "Tundra Warrior's Girdle",
+  "Tier": "B",
+  "Level": "38",
+  "Defense": "36.2026-47",
+  "Type": "Belt",
+  "Size": "2x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[30-45]% Enhanced Defense",
+    "+[50-75] to Attack Rating",
+    "+[20-30] to Additive Physical Damage",
+    "+10 to Strength",
+    "+10 to Dexterity",
+    "Belt Slots: 4"
+  ]
+}

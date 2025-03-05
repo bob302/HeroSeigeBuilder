@@ -1,0 +1,20 @@
+{
+  "Item": "Death's Mirror",
+  "Tier": "S",
+  "Level": "87",
+  "Damage": "179.65164-197",
+  "APS": "1.101.1",
+  "DPS": "198.00180-216",
+  "Type": "Dagger",
+  "TwoHanded": false,
+  "Size": "1x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[240-270]% Enhanced Damage",
+    "+[15-25] to Mana",
+    "+50% Magic Find (Based on Level)",
+    "+20% Extra Gold Dropped From Kills",
+    "+[25-40]% Increased Magic Find",
+    "Socketed (2)"
+  ]
+}

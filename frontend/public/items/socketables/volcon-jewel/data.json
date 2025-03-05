@@ -1,0 +1,10 @@
+{
+  "Item": "Volcon Jewel",
+  "Tier": "D",
+  "Level": "15",
+  "Type": "Jewel",
+  "Rarity": "Common",
+  "Stats": [
+    "Attack Damage increased by 10%"
+  ]
+}

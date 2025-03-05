@@ -1,0 +1,17 @@
+{
+  "Item": "Battle Caster's Gauntlets",
+  "Tier": "S",
+  "Level": "78",
+  "Defense": "47.3034-61",
+  "Type": "Gloves",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[30-60]% Enhanced Defense",
+    "+[20-30]% Faster Cast Rate",
+    "Magic Skill Damage increased by [15-25]%",
+    "Explosion area of effect increased by [10-20]%",
+    "+[30-45]% Defense vs Missiles",
+    "+20 to Energy (Based on Level)"
+  ]
+}

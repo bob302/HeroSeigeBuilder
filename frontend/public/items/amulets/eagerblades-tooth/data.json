@@ -1,0 +1,14 @@
+{
+  "Item": "Eagerblade's Tooth",
+  "Tier": "C",
+  "Level": "24",
+  "Type": "Amulet",
+  "Size": "1x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+7% Increased Critical Strike Chance",
+    "+50 to Attack Rating",
+    "+[40-60] to Additive Physical Damage",
+    "+8 to Armor"
+  ]
+}

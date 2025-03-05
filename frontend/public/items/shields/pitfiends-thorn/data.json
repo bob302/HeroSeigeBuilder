@@ -1,0 +1,20 @@
+{
+  "Item": "Pitfiend's Thorn",
+  "Tier": "S",
+  "Level": "87",
+  "Defense": "191.00152-230",
+  "Block": "52",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[90-130]% Enhanced Defense",
+    "+[20-30]% Increased Movement Speed",
+    "+30% Increased Attack Speed",
+    "+[250-400]% Increased Attack Rating",
+    "+[8-12]% Life stolen per Hit",
+    "+25% Chance to Open Wounds",
+    "Extra Damage to Bleeding Monsters [10-18]%",
+    "Socketed (2-3)"
+  ]
+}

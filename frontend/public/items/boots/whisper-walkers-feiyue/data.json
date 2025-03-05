@@ -1,0 +1,19 @@
+{
+  "Item": "Whisper Walker's Feiyue",
+  "Tier": "S",
+  "Level": "84",
+  "Defense": "108.2089-128",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[70-100]% Enhanced Defense",
+    "+1 to All Skills",
+    "+30% Increased Movement Speed",
+    "Cooldown Recovery Increased by [12-25]%",
+    "+[10-20]% Increased Attack Rating",
+    "+[7-10] to All Attributes",
+    "+125 to Damage (Based on Level)",
+    "+25 to Strength (Based on Level)"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "Item": "Jack's Pumpkin Spice",
+  "Tier": "S",
+  "Level": "75",
+  "Type": "Charm",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[15-30] to Vitality",
+    "Explosion area of effect increased by [5-10]%",
+    "+[10-20] Life After each Kill"
+  ]
+}

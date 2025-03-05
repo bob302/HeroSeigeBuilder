@@ -1,0 +1,17 @@
+{
+  "Item": "Aztec Crown",
+  "Tier": "A",
+  "Level": "60",
+  "Defense": "99.9076-125",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[80-130]% Enhanced Defense",
+    "+35 to Dexterity",
+    "+[370-390] to Additive Poison Damage",
+    "Poison Skill Damage increased by [8-15]%",
+    "+220 to Life",
+    "+50% to Poison Resistance"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "Item": "Solar Charm",
+  "Tier": "S",
+  "Level": "67",
+  "Type": "Charm",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "-[15-35]% to Enemy Fire Resistance",
+    "-75% to Fire Resistance"
+  ]
+}

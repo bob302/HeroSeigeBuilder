@@ -1,0 +1,18 @@
+{
+  "Item": "Molten Boots",
+  "Tier": "B",
+  "Level": "41",
+  "Defense": "35.6027-45",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[50-70]% Enhanced Defense",
+    "+1 to Fire Skills",
+    "+20% Increased Movement Speed",
+    "Fire Skill Damage increased by [12-18]%",
+    "+25% Faster Hit Recovery",
+    "+[5-8]% Fire Damage Absorbed",
+    "+[40-50]% to Fire Resistance"
+  ]
+}

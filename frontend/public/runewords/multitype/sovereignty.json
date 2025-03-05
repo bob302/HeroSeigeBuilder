@@ -1,0 +1,37 @@
+{
+  "Tier": "S",
+  "Level": "67",
+  "Size": "2x3",
+  "Item": "Sovereignty",
+  "Rarity": "Runeword",
+  "Type": "MultiType",
+  "Bases": [
+    "Staff",
+    "Cane",
+    "Spellblade",
+    "Book"
+  ],
+  "Runes": [
+    "Drax",
+    "Lum",
+    "Pul",
+    "Ol"
+  ],
+  "Stats": [
+    "Attack Damage: 47",
+    "Attacks per Second: 1.25",
+    {
+      "stat": "20% Chance when Casting [Shadow Bolt] Level 71",
+      "class": "stat-spell"
+    },
+    "+[3-5] to All Skills",
+    "Mana Costs decreased by 3%",
+    "+50 to Attack Rating",
+    "+[7-25] to Energy",
+    "Arcane Skill Damage increased by [25-45]%",
+    "-[15-30]% to Enemy Arcane Resistance",
+    "Cannot be Frozen",
+    "Unbreakable",
+    "Socketed (4)"
+  ]
+}

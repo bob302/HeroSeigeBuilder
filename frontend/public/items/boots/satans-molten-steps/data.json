@@ -1,0 +1,17 @@
+{
+  "Item": "Satan's Molten Steps",
+  "Tier": "A",
+  "Level": "54",
+  "Defense": "68.7051-87",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[50-80]% Enhanced Defense",
+    "+[20-35]% Increased Movement Speed",
+    "+[250-325] to Additive Fire Damage",
+    "+[160-255] to Fire Skill Damage",
+    "Fire Skill Damage increased by 10%",
+    "+[25-35]% to Fire Resistance"
+  ]
+}

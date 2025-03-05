@@ -1,0 +1,19 @@
+{
+  "Item": "Treasure Hunter's Boots",
+  "Tier": "S",
+  "Level": "82",
+  "Defense": "108.2089-128",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[70-100]% Enhanced Defense",
+    "+[50-65]% Increased Movement Speed",
+    "+10 to All Attributes",
+    "+25% Magic Find (Based on Level)",
+    "+[15-20]% Extra Gold Dropped From Kills",
+    "+15% Increased Magic Find",
+    "+[1-3]% Increased Experience Gain",
+    "Half Freeze Duration"
+  ]
+}

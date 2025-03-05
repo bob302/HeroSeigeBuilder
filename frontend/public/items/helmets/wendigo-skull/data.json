@@ -1,0 +1,15 @@
+{
+  "Item": "Wendigo Skull",
+  "Tier": "S",
+  "Level": "83",
+  "Defense": "146.00108-184",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[80-130]% Enhanced Defense",
+    "+[35-50] to Life",
+    "+[20-30]% to Fire Resistance",
+    "+[20-30]% to Lightning Resistance"
+  ]
+}

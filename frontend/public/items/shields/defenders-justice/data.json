@@ -1,0 +1,25 @@
+{
+  "Item": "Defender's Justice",
+  "Tier": "SS",
+  "Level": "98",
+  "Defense": "556.00408-704",
+  "Block": "60",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "20% Chance after Blocking [Counter] Level 73",
+      "class": "stat-spell"
+    },
+    "+[240-340]% Enhanced Defense",
+    "+[3-4] to All Skills",
+    "+[15-25] to Vitality",
+    "+35 to All Attributes",
+    "Damage Taken Reduced by 250",
+    "+125 to Mana (Based on Level)",
+    "+275 to Life (Based on Level)",
+    "+[45-75]% to All Resistances",
+    "Socketed (0-2)"
+  ]
+}

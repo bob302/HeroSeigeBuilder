@@ -1,0 +1,13 @@
+{
+  "Item": "Witches Claw",
+  "Tier": "S",
+  "Level": "65",
+  "Type": "Charm",
+  "Size": "1x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+1 to All Skills",
+    "+[3-6]% Mana stolen per Hit",
+    "+[13-20] Mana After each Kill"
+  ]
+}

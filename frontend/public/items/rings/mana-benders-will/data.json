@@ -1,0 +1,18 @@
+{
+  "Item": "Mana Bender's Will",
+  "Tier": "SS",
+  "Level": "98",
+  "Type": "Ring",
+  "Size": "1x1",
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "+[1-5] to [Mana Bender]",
+      "class": "stat-spell"
+    },
+    "+[8-15] Mana per second",
+    "+[20-50] to Energy",
+    "Replenish Mana [45-75]%",
+    "Life Increased by [5-10]%"
+  ]
+}

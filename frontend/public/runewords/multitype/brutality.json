@@ -1,0 +1,33 @@
+{
+  "Tier": "S",
+  "Level": "41",
+  "Size": "2x3",
+  "Item": "Brutality",
+  "Rarity": "Runeword",
+  "Type": "MultiType",
+  "Bases": [
+    "Claw",
+    "Axe",
+    "Mace"
+  ],
+  "Runes": [
+    "Nut",
+    "Nut",
+    "Fel",
+    "Ymn"
+  ],
+  "Stats": [
+    "Attack Damage: 236 [57]",
+    "Attacks per Second: 2.10 [1.75]",
+    "+314% Enhanced Damage [275-350]",
+    "+2 to Physical Skills",
+    "+20% Increased Attack Speed",
+    "+20% Chance for a Deadly Blow",
+    "+7% Life stolen per Hit",
+    "+10 to Strength",
+    "+[8-30] to Intelligence",
+    "Magic Skill Damage increased by [8-15]%",
+    "+225 to Life",
+    "Socketed (4)"
+  ]
+}

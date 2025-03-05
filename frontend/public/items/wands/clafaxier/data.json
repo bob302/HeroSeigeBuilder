@@ -1,0 +1,20 @@
+{
+  "Item": "Clafaxier",
+  "Tier": "C",
+  "Level": "23",
+  "Damage": "12.009-15",
+  "APS": "1.501.5",
+  "DPS": "18.5014-23",
+  "Type": "Wand",
+  "TwoHanded": false,
+  "Size": "1x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[2-6] Mana per second",
+    "+[45-70] to Poison Skill Damage",
+    "Poison Skill Damage increased by 20%",
+    "-[4-10]% to Enemy Poison Resistance",
+    "+[40-60]% to Poison Resistance",
+    "Socketed (0-2)"
+  ]
+}

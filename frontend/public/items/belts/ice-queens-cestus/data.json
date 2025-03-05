@@ -1,0 +1,18 @@
+{
+  "Item": "Ice Queen's Cestus",
+  "Tier": "S",
+  "Level": "96",
+  "Defense": "99.4084-116",
+  "Type": "Belt",
+  "Size": "2x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[60-70]% Enhanced Defense",
+    "+20 to Energy",
+    "Cold Skill Damage increased by [10-25]%",
+    "+[8-15]% of Damage Taken goes to Mana",
+    "+[40-50]% to Cold Resistance",
+    "Cannot be Frozen",
+    "Belt Slots: 5"
+  ]
+}

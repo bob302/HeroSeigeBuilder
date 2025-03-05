@@ -1,0 +1,15 @@
+{
+  "Item": "Mage's Starshroud",
+  "Tier": "C",
+  "Level": "30",
+  "Defense": "21.2015-28",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[20-40]% Enhanced Defense",
+    "+[0-1] to All Skills",
+    "+20 to Energy",
+    "+10 to Intelligence"
+  ]
+}

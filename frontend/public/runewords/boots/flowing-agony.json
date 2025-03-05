@@ -1,0 +1,30 @@
+{
+  "Tier": "S",
+  "Level": "52",
+  "Size": "2x3",
+  "Item": "Flowing Agony",
+  "Rarity": "Runeword",
+  "Type": "Boots",
+  "Bases": [
+    "Boots"
+  ],
+  "Runes": [
+    "Nju",
+    "Fawn",
+    "Jol"
+  ],
+  "Stats": [
+    "+[320-400]% Enhanced Defense",
+    "+[2-4] to All Skills",
+    "+10 to Shuriken Throw",
+    "+87% Increased Movement Speed",
+    "+[42-50]% Faster Cast Rate",
+    "+1 to Projectile Speed",
+    "-3% to All Enemy Resistances",
+    "Magic Skill Damage increased by [42-50]%",
+    "+[50-150]% Faster Hit Recovery",
+    "All Damage Taken Reduced by 3%",
+    "Unbreakable",
+    "Socketed (3)"
+  ]
+}

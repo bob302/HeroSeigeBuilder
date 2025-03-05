@@ -1,0 +1,33 @@
+{
+  "Tier": "S",
+  "Level": "55",
+  "Size": "2x3",
+  "Item": "Divinity",
+  "Rarity": "Runeword",
+  "Type": "MultiType",
+  "Bases": [
+    "Mace",
+    "Staff",
+    "Cane"
+  ],
+  "Runes": [
+    "Co",
+    "Vex",
+    "Pul",
+    "Thal"
+  ],
+  "Stats": [
+    "Attack Damage: 62",
+    "Attacks per Second: 1.50",
+    "+4 to All Skills",
+    "+50% Faster Cast Rate",
+    "Mana Costs decreased by 3%",
+    "+7% Mana stolen per Hit",
+    "+10 to Dexterity",
+    "+[7-25] to Intelligence",
+    "Cold Skill Damage increased by 5%",
+    "Replenish Life 20% Mana Increased by 15%",
+    "+[30-40] % to All Resistances",
+    "Socketed (4)"
+  ]
+}

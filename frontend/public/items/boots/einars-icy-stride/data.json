@@ -1,0 +1,16 @@
+{
+  "Item": "Einar's Icy Stride",
+  "Tier": "A",
+  "Level": "58",
+  "Defense": "68.7051-87",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[50-80]% Enhanced Defense",
+    "+[30-40]% Increased Movement Speed",
+    "+[15-25] to Strength",
+    "+25 to Dexterity",
+    "+[30-40]% to Cold Resistance"
+  ]
+}

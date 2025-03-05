@@ -1,0 +1,13 @@
+{
+  "Item": "Gambler's Demise",
+  "Tier": "B",
+  "Level": "38",
+  "Type": "Amulet",
+  "Size": "1x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[1-50] to Strength",
+    "+[1-50] to Intelligence",
+    "+[1-350] to Life"
+  ]
+}

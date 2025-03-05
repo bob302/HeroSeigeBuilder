@@ -1,0 +1,18 @@
+{
+  "Item": "Warbosses' Trophy Belt",
+  "Tier": "A",
+  "Level": "52",
+  "Defense": "69.0054-84",
+  "Type": "Belt",
+  "Size": "2x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[50-75]% Enhanced Defense",
+    "+5% Increased Critical Strike Chance",
+    "+[5-15]% Increased Critical Strike Damage",
+    "+30 to Strength",
+    "+8 to Vitality",
+    "+225 to Damage (Based on Level)",
+    "Belt Slots: 4"
+  ]
+}

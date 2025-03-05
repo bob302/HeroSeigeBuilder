@@ -1,0 +1,13 @@
+{
+  "Item": "Satanic Eye",
+  "Tier": "B",
+  "Level": "33",
+  "Type": "Ring",
+  "Size": "1x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+7 to All Attributes",
+    "Magic Damage Taken Reduced by 7%",
+    "+[10-30]% to All Resistances"
+  ]
+}

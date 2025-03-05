@@ -1,0 +1,28 @@
+{
+  "Item": "St. Draxis' Pigstick",
+  "Tier": "SS",
+  "Level": "100",
+  "Damage": "781.00660-902",
+  "APS": "3.143.05-3.23",
+  "DPS": "2463.502013-2914",
+  "Type": "Polearm",
+  "TwoHanded": false,
+  "Size": "2x3",
+  "Rarity": "Angelic",
+  "Stats": [
+    {
+      "stat": "18% Chance when Attacking [Lance Thrust] Level 98",
+      "class": "stat-spell"
+    },
+    "+[725-925]% Enhanced Damage",
+    "+4 to All Skills",
+    "+[65-75]% Increased Attack Speed",
+    "+[30-50]% Chance for a Deadly Blow",
+    "+35% Increased Attack Rating",
+    "+55 to Vitality",
+    "+55 to Armor",
+    "+[1000-1250]% of Damage Returned to the Attacker",
+    "Attacks can hit multiple enemies",
+    "Socketed (5)"
+  ]
+}

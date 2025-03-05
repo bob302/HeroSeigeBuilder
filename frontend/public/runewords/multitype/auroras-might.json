@@ -1,0 +1,33 @@
+{
+  "Tier": "S",
+  "Level": "41",
+  "Size": "2x3",
+  "Item": "Aurora's Might",
+  "Rarity": "Runeword",
+  "Type": "MultiType",
+  "Bases": [
+    "Sword",
+    "Mace"
+  ],
+  "Runes": [
+    "Ymn",
+    "Co",
+    "Fel"
+  ],
+  "Stats": [
+    "Attack Damage: 332 [62]",
+    "Attacks per Second: 1.80",
+    "+[430-550]% Enhanced Damage",
+    "+7% Life stolen per Hit",
+    "+[30-40]% of target Defense ignored",
+    "+10 to Strength",
+    "+10 to Dexterity",
+    "+[250-320] to Additive Arcane Damage",
+    "+[50-100] to Additive Lightning Damage",
+    "+[230-280] to Additive Cold Damage",
+    "+25% Faster Hit Recovery",
+    "+15% Extra Gold Dropped From Kills",
+    "Lunar Aura Level [12-28]",
+    "Sacketed (3)"
+  ]
+}

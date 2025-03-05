@@ -1,0 +1,13 @@
+{
+  "Item": "Mark of the Black Knight",
+  "Tier": "S",
+  "Level": "77",
+  "Type": "Charm",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[8-20]% Chance for a Deadly Blow",
+    "+[8-15]% Chance for a Crushing Blow",
+    "+[4-8]% Life stolen per Hit"
+  ]
+}

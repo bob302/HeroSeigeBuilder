@@ -1,0 +1,18 @@
+{
+  "Item": "Blessed Defender",
+  "Tier": "C",
+  "Level": "28",
+  "Defense": "24.9021-29",
+  "Block": "55",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[50-60]% Enhanced Defense",
+    "+[20-30]% Increased Chance of Blocking",
+    "+[18-36] to Additive Lightning Damage",
+    "+35% of Damage Returned to the Attacker",
+    "Physical Damage Taken Reduced by [2-5]%",
+    "+25% to Lightning Resistance"
+  ]
+}

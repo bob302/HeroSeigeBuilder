@@ -1,0 +1,18 @@
+{
+  "Item": "Pitfighter's Razor Belt",
+  "Tier": "C",
+  "Level": "23",
+  "Defense": "19.6012-28",
+  "Type": "Belt",
+  "Size": "2x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[50-70]% Enhanced Defense",
+    "+25% Chance for a Deadly Blow",
+    "+5% Increased Attack Rating",
+    "+[40-60] to Attack Rating",
+    "+15 to Strength",
+    "+15 to Dexterity",
+    "Belt Slots: 3"
+  ]
+}

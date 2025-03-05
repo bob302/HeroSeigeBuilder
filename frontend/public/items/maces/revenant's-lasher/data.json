@@ -1,0 +1,27 @@
+{
+  "Item": "Revenant's Lasher",
+  "Tier": "SS",
+  "Level": "94",
+  "Damage": "339.30308-372",
+  "APS": "2.272.1-2.44",
+  "DPS": "776.00646-906",
+  "Type": "Mace",
+  "TwoHanded": false,
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "10% Chance when Attacking [Vengeance] Level 34",
+      "class": "stat-spell"
+    },
+    "+[430-480]% Enhanced Damage",
+    "+[20-40]% Increased Attack Speed",
+    "+[6-15]% Increased Attack Rating",
+    "+[8-12]% Mana stolen per Hit",
+    "+[1300-1650] to Additive Lightning Damage",
+    "Lightning Skill Damage increased by [18-40]%",
+    "-[15-25]% to Enemy Lightning Resistance",
+    "+15% Lightning Damage Absorbed",
+    "+60% to Lightning Resistance"
+  ]
+}

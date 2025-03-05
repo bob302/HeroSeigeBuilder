@@ -1,0 +1,16 @@
+{
+  "Item": "Plunderer's Deck Marchers",
+  "Tier": "A",
+  "Level": "62",
+  "Defense": "68.7051-87",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[50-80]% Enhanced Defense",
+    "+[20-30]% Increased Movement Speed",
+    "-[5-10]% to Enemy Cold Resistance",
+    "+40% to Cold Resistance",
+    "Half Freeze Duration"
+  ]
+}

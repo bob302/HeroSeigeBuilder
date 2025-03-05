@@ -1,0 +1,16 @@
+{
+  "Item": "Lost Wizard's Barrier",
+  "Tier": "C",
+  "Level": "30",
+  "Defense": "29.0024-35",
+  "Block": "60",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[70-90]% Enhanced Defense",
+    "Cooldown Recovery Increased by 10%",
+    "Arcane Skill Damage increased by [7-15]%",
+    "+[2-4] to Light Radius"
+  ]
+}

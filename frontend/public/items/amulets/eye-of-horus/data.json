@@ -1,0 +1,16 @@
+{
+  "Item": "Eye of Horus",
+  "Tier": "A",
+  "Level": "65",
+  "Type": "Amulet",
+  "Size": "1x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+15 to Energy",
+    "+15 to Vitality",
+    "+[8-12] Life After each Kill",
+    "+[8-12] Mana After each Kill",
+    "Life Increased by [2-4]%",
+    "Mana Increased by [2-4]%"
+  ]
+}

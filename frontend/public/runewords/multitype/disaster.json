@@ -1,0 +1,47 @@
+{
+  "Tier": "S",
+  "Level": "69",
+  "Size": "2x3",
+  "Item": "Disaster",
+  "Rarity": "Runeword",
+  "Type": "MultiType",
+  "Bases": [
+    "Chainsaw",
+    "Polearm",
+    "Axe"
+  ],
+  "Runes": [
+    "Jah",
+    "Um",
+    "Jah",
+    "Sur",
+    "Ist",
+    "Zed"
+  ],
+  "Stats": [
+    "Attack Damage: 399 [70]",
+    "Attacks per Second: 1.20",
+    {
+      "stat": "4% Chance after each Kill [Pickup Raid] Level 78",
+      "class": "stat-spell"
+    },
+    "+[380-475]% Enhanced Damage",
+    "+[5-8] to All Skills (Redneck)",
+    "+[7-12] to Tire Fire (Redneck)",
+    "+[3-6] to Pickup Raid (Redneck)",
+    "+[3-6] to Hillbilly Rage (Redneck)",
+    "+[40-80]% Faster Cast Rate",
+    "Cooldown Recovery Increased by 35%",
+    "+[4-16]% Increased Critical Strike Chance",
+    "Extra Damage to Burning Monsters [55-80]%",
+    "+25 to All Attributes",
+    "Magic Skill Damage increased by 8%",
+    "Life Increased by 20%",
+    "Mana Increased by 10%",
+    "+[10-30]% to All Resistances",
+    "+15% Increased Magic Find",
+    "Attacks can hit multiple enemies",
+    "Unbreakable",
+    "Socketed (6)"
+  ]
+}

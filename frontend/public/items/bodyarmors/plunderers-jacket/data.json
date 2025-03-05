@@ -1,0 +1,19 @@
+{
+  "Item": "Plunderer's Jacket",
+  "Tier": "S",
+  "Level": "74",
+  "Defense": "633.00546-720",
+  "Type": "Body Armor",
+  "Size": "2x3",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[160-200]% Enhanced Defense",
+    "+[435-550] to Cold Skill Damage",
+    "-[7-15]% to Enemy Cold Resistance",
+    "Replenish Mana [20-30]%",
+    "+[1-3]% Increased Defense",
+    "+40% to Cold Resistance",
+    "+5% to Maximum Cold Resist",
+    "Socketed (0-3)"
+  ]
+}

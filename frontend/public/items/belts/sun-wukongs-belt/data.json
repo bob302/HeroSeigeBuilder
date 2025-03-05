@@ -1,0 +1,17 @@
+{
+  "Item": "Sun Wukong's Belt",
+  "Tier": "A",
+  "Level": "48",
+  "Defense": "69.0054-84",
+  "Type": "Belt",
+  "Size": "2x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[50-75]% Enhanced Defense",
+    "+10 to Vitality",
+    "Replenish Life [10-15]%",
+    "+175 to Life (Based on Level)",
+    "+[3-8]% to All Resistances",
+    "Belt Slots: 4"
+  ]
+}

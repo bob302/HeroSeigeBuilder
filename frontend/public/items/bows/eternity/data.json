@@ -1,0 +1,29 @@
+{
+  "Item": "Eternity",
+  "Tier": "SS",
+  "Level": "100",
+  "Damage": "1385.001300-1470",
+  "APS": "1.141.14",
+  "DPS": "1579.001482-1676",
+  "Type": "Bow",
+  "TwoHanded": true,
+  "Size": "2x3",
+  "Rarity": "Unholy",
+  "Stats": [
+    {
+      "stat": "15% Chance when Striking [Homing Missile] Level 80",
+      "class": "stat-spell"
+    },
+    "+[900-950]% Enhanced Damage",
+    "+5 to All Skills",
+    "Skill Movement Diminish decreased by 75%",
+    "+50% Increased Critical Strike Chance",
+    "+[150-200]% Increased Critical Strike Damage",
+    "+[3-4] to Projectile Speed",
+    "Explosion Damage increased by [75-150]%",
+    "Explosion area of effect increased by [50-65]%",
+    "Unholy Stat",
+    "Unbreakable",
+    "Socketed (4)"
+  ]
+}

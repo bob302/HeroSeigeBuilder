@@ -1,0 +1,20 @@
+{
+  "Item": "Solar Magister's Sash",
+  "Tier": "B",
+  "Level": "38",
+  "Defense": "26.0020-32",
+  "Type": "Belt",
+  "Size": "2x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "5% Chance when Striking [Supernova] Level 9",
+      "class": "stat-spell"
+    },
+    "+[5-15] to Strength",
+    "+5 to All Attributes",
+    "+[70-90] to Additive Fire Damage",
+    "+[25-40]% to Fire Resistance",
+    "Belt Slots: 4"
+  ]
+}

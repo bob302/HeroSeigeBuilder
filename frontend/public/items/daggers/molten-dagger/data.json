@@ -1,0 +1,23 @@
+{
+  "Item": "Molten Dagger",
+  "Tier": "D",
+  "Level": "8",
+  "Damage": "17.6514-22",
+  "APS": "1.501.5",
+  "DPS": "26.5020-33",
+  "Type": "Dagger",
+  "TwoHanded": false,
+  "Size": "1x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[90-120]% Enhanced Damage",
+    "+[20-30] to Attack Rating",
+    "+10 to Strength",
+    "+10 to Dexterity",
+    "+5 to Vitality",
+    "+[15-25] to Additive Fire Damage",
+    "+10% to All Resistances",
+    "+40% to Fire Resistance",
+    "Socketed (0-1)"
+  ]
+}

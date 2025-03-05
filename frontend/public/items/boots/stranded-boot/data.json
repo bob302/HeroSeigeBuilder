@@ -1,0 +1,32 @@
+{
+  "Item": "Stranded Boot",
+  "Tier": "SS",
+  "Level": "98",
+  "Defense": "337.00300-374",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "4% Chance after each Kill [Set Sail] Level 30",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "5% Chance when Casting [Anchor Swing] Level 40",
+      "class": "stat-spell"
+    },
+    "+[200-240]% Enhanced Defense",
+    "+[1-2] to All Skills",
+    "+[1-4] to Cold Skills",
+    {
+      "stat": "+1 to [Lost at Sea]",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+[1-5] to [Walson's Aid]",
+      "class": "stat-spell"
+    },
+    "+[100-110]% Increased Movement Speed",
+    "+18% to All Resistances"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "Item": "Crystal Belt",
+  "Tier": "B",
+  "Level": "41",
+  "Defense": "36.2026-47",
+  "Type": "Belt",
+  "Size": "2x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[30-45]% Enhanced Defense",
+    "+[8-15] to All Attributes",
+    "+15% Faster Hit Recovery",
+    "+[15-20]% to All Resistances",
+    "Belt Slots: 4"
+  ]
+}

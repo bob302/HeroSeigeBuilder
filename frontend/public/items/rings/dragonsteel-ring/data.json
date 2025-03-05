@@ -1,0 +1,15 @@
+{
+  "Item": "Dragonsteel Ring",
+  "Tier": "S",
+  "Level": "88",
+  "Type": "Ring",
+  "Size": "1x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[35-45] to Armor",
+    "+15 to All Attributes",
+    "Physical Damage Taken Reduced by [5-10]%",
+    "Magic Damage Taken Reduced by [5-10]%",
+    "Cannot be Frozen"
+  ]
+}

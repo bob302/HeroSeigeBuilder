@@ -1,0 +1,14 @@
+{
+  "Item": "Dark Lord's Sigil",
+  "Tier": "S",
+  "Level": "86",
+  "Type": "Amulet",
+  "Size": "1x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[1-2] to Arcane Skills",
+    "+[250-300] to Arcane Skill Damage",
+    "Arcane Skill Damage increased by [15-30]%",
+    "+[50-75]% to Arcane Resistance"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "Tier": "S",
+  "Level": "52",
+  "Size": "2x3",
+  "Item": "Arcane Bastion",
+  "Rarity": "Runeword",
+  "Type": "Shield",
+  "Bases": [
+    "Shield"
+  ],
+  "Runes": [
+    "Lum",
+    "Gul",
+    "Ert",
+    "Sal"
+  ],
+  "Stats": [
+    "Block Chance: 65",
+    "+[350-600]% Enhanced Defense",
+    "+[2-3] to All Skills",
+    "+15% Increased Attack Rating",
+    "+10 to Energy",
+    "Lightning Skill Damage increased by 5%",
+    "Magic Skill Damage increased by [8-20]%",
+    "+[25-40] to Life",
+    "+[30-75]% Faster Hit Recovery",
+    "+[150-200]% Defense vs Missiles",
+    "Physical Damage Taken Reduced by 7%",
+    "+[10-30]% to All Resistances",
+    "Socketed (4)"
+  ]
+}

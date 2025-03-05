@@ -1,0 +1,21 @@
+{
+  "Item": "Imperial Glaive",
+  "Tier": "C",
+  "Level": "26",
+  "Damage": "68.2547-90",
+  "APS": "2.312.14-2.47",
+  "DPS": "161.50100-223",
+  "Type": "Throwing Weapon",
+  "TwoHanded": false,
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[210-350]% Enhanced Damage",
+    "+1 to All Skills",
+    "+[30-50]% Increased Attack Speed",
+    "+175 to Attack Rating",
+    "+[30-40]% of target Defense ignored",
+    "+[160-180] to Additive Fire Damage",
+    "+[20-30]% to Fire Resistance"
+  ]
+}

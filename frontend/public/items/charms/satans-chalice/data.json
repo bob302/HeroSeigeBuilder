@@ -1,0 +1,13 @@
+{
+  "Item": "Satan's Chalice",
+  "Tier": "S",
+  "Level": "62",
+  "Type": "Charm",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[1-3] to Fire Skills",
+    "+[5-15] to All Attributes",
+    "+[15-45]% to Fire Resistance"
+  ]
+}

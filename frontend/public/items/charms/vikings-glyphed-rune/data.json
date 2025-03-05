@@ -1,0 +1,13 @@
+{
+  "Item": "Viking's Glyphed Rune",
+  "Tier": "S",
+  "Level": "60",
+  "Type": "Charm",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[25-50]% Enhanced Damage",
+    "Attack Damage increased by [15-35]%",
+    "Physical Damage Taken Reduced by value1%"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "Item": "Frozen Carver",
+  "Tier": "B",
+  "Level": "38",
+  "Damage": "79.0060-98",
+  "APS": "1.351.35",
+  "DPS": "107.0081-133",
+  "Type": "Mace",
+  "TwoHanded": false,
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "8% Chance when Striking [Flash Freeze] Level 14",
+      "class": "stat-spell"
+    },
+    "+[150-250]% Enhanced Damage",
+    "+[90-150] to Attack Rating",
+    "+[3-6]% Life stolen per Hit",
+    "+10 to Strength",
+    "+[335-460] to Additive Cold Damage",
+    "+[4-8] Mana After each Kill",
+    "+50% to Cold Resistance",
+    "Cannot be Frozen",
+    "Socketed (0-3)"
+  ]
+}

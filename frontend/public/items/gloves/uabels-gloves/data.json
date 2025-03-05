@@ -1,0 +1,16 @@
+{
+  "Item": "Uabel's Gloves",
+  "Tier": "B",
+  "Level": "37",
+  "Defense": "16.8011-24",
+  "Type": "Gloves",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[30-45]% Enhanced Defense",
+    "+10% Faster Cast Rate",
+    "+[5-10] to Energy",
+    "+8% of Damage Taken goes to Mana",
+    "+[10-30]% Increased Magic Find"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "Item": "Earth Goliath's Protection",
+  "Tier": "S",
+  "Level": "85",
+  "Type": "Amulet",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[20-30] to Vitality",
+    "+[3-6]% Increased Defense",
+    "+[75-125]% of Damage Returned to the Attacker",
+    "Physical Damage Taken Reduced by [5-10]%"
+  ]
+}

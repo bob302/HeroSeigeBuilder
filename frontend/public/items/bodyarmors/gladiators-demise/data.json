@@ -1,0 +1,20 @@
+{
+  "Item": "Gladiator's Demise",
+  "Tier": "A",
+  "Level": "57",
+  "Defense": "352.75306-400",
+  "Type": "Body Armor",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[15-25]% Enhanced Damage",
+    "+[120-150]% Enhanced Defense",
+    "+[5-10]% Increased Attack Rating",
+    "+15% of target Defense ignored",
+    "Attack Damage increased by [30-45]%",
+    "+[125-200] to Life",
+    "Life Increased by [4-8]%",
+    "+75 to Strength (Based on Level)",
+    "Socketed (1-4)"
+  ]
+}

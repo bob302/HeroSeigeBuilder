@@ -1,0 +1,20 @@
+{
+  "Item": "Tayrel's Chestplate",
+  "Tier": "SS",
+  "Level": "100",
+  "Defense": "4510.003485-5535",
+  "Type": "Body Armor",
+  "Size": "2x3",
+  "Rarity": "Angelic",
+  "Stats": [
+    "+[750-925]% Enhanced Defense",
+    "+[8-12] to All Skills",
+    "+[40-50]% Increased Movement Speed",
+    "+40 to All Attributes",
+    "+2500 to Life (Based on Level)",
+    "+250 to Vitality (Based on Level)",
+    "+[50-75]% to All Resistances",
+    "Cannot be Frozen",
+    "Socketed (6)"
+  ]
+}

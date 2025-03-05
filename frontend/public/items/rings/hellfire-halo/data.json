@@ -1,0 +1,14 @@
+{
+  "Item": "Hellfire Halo",
+  "Tier": "SS",
+  "Level": "100",
+  "Type": "Ring",
+  "Size": "1x1",
+  "Rarity": "Heroic",
+  "Stats": [
+    "+[3-5] to Fire Skills",
+    "Fire Skill Damage increased by [25-40]%",
+    "-[15-25]% to Enemy Fire Resistance",
+    "+[5-10]% Fire Damage Absorbed"
+  ]
+}

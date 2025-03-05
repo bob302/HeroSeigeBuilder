@@ -1,0 +1,15 @@
+{
+  "Item": "Kallik's Fury",
+  "Tier": "S",
+  "Level": "91",
+  "Type": "Amulet",
+  "Size": "1x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+1 to All Skills",
+    "+30% Increased Attack Speed",
+    "+[135-160] to Additive Lightning Damage",
+    "+37.50% Enhanced Damage (Based on Level)",
+    "+[30-40]% to Lightning Resistance"
+  ]
+}

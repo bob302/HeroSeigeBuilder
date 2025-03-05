@@ -1,8 +1,9 @@
 import { Cell, type CellStyle } from "./Cell";
 import { Slot } from "./Slot";
-import { BaseItem, EquipmentType, getEquipmentTypeBySubtype, type EquipmentSubtype } from "./Equipment";
+import { BaseItem, getEquipmentTypeBySubtype, type EquipmentSubtype } from "./Equipment";
 import { Point2D } from "./Point2D";
 import { Item } from "./Item";
+import { EquipmentType } from "../util/Enums";
 
 export interface SlotConfig {
   classes: string[];

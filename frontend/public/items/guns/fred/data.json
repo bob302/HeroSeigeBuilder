@@ -1,0 +1,22 @@
+{
+  "Item": "Fred",
+  "Tier": "B",
+  "Level": "40",
+  "Damage": "134.50108-161",
+  "APS": "2.452.27-2.62",
+  "DPS": "334.00246-422",
+  "Type": "Gun",
+  "TwoHanded": false,
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[350-475]% Enhanced Damage",
+    "+[30-50]% Increased Attack Speed",
+    "+20% Chance for a Deadly Blow",
+    "+[4-8]% Life stolen per Hit",
+    "Slows target by 15%",
+    "+15 to Strength",
+    "+15 to Dexterity",
+    "+[8-12] Life After each Kill"
+  ]
+}

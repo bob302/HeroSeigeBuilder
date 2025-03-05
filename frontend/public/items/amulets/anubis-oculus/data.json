@@ -1,0 +1,14 @@
+{
+  "Item": "Anubis Oculus",
+  "Tier": "S",
+  "Level": "81",
+  "Type": "Amulet",
+  "Size": "1x1",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+15 to Vitality",
+    "Replenish Life [8-15]%",
+    "+[35-50] to Life",
+    "Life Increased by [1-4]%"
+  ]
+}

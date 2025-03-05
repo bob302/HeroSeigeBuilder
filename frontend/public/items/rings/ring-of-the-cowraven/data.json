@@ -1,0 +1,14 @@
+{
+  "Item": "Ring of the Cowraven",
+  "Tier": "C",
+  "Level": "24",
+  "Type": "Ring",
+  "Size": "1x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[10-20]% Enhanced Damage",
+    "+8% Increased Critical Strike Chance",
+    "+[2-3]% Life stolen per Hit",
+    "+[6-15]% Increased Critical Strike Damage"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "Item": "Stormloop",
+  "Tier": "SS",
+  "Level": "100",
+  "Type": "Ring",
+  "Size": "1x1",
+  "Rarity": "Heroic",
+  "Stats": [
+    "+[3-5] to Lightning Skills",
+    "Lightning Skill Damage increased by [25-40]%",
+    "-[15-25]% to Enemy Lightning Resistance",
+    "+[5-10]% Lightning Damage Absorbed"
+  ]
+}

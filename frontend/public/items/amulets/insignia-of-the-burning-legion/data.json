@@ -1,0 +1,16 @@
+{
+  "Item": "Insignia of the Burning Legion",
+  "Tier": "C",
+  "Level": "27",
+  "Type": "Amulet",
+  "Size": "1x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "6% Chance when Attacking [Fire Enchant] Level 7",
+      "class": "stat-spell"
+    },
+    "+[10-20]% Increased Attack Speed",
+    "+15 Life After each Kill"
+  ]
+}

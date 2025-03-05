@@ -1,0 +1,16 @@
+{
+  "Item": "Onslaught Stompers",
+  "Tier": "C",
+  "Level": "24",
+  "Defense": "17.4011-24",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[35-50]% Enhanced Defense",
+    "+15% Increased Movement Speed",
+    "+[30-50] to Attack Rating",
+    "+[10-20] to Strength",
+    "+3 to All Attributes"
+  ]
+}

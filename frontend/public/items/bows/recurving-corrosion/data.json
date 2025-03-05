@@ -1,0 +1,25 @@
+{
+  "Item": "Recurving Corrosion",
+  "Tier": "SS",
+  "Level": "99",
+  "Damage": "981.00855-1107",
+  "APS": "1.501.5",
+  "DPS": "1472.001283-1661",
+  "Type": "Bow",
+  "TwoHanded": true,
+  "Size": "2x3",
+  "Rarity": "Heroic",
+  "Stats": [
+    "+[850-925]% Enhanced Damage",
+    "+[2-3] to All Skills",
+    "+[2-3] to Poison Skills",
+    "+[750-1250] to Attack Rating",
+    "Extra Damage to Poisoned Monsters [10-20]%",
+    "+40 to Strength",
+    "+65 to Dexterity",
+    "+[3500-5000] to Additive Poison Damage",
+    "Poison Skill Damage increased by [30-50]%",
+    "+8% Poison Damage Absorbed",
+    "+50% to Poison Resistance"
+  ]
+}

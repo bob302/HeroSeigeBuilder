@@ -1,0 +1,20 @@
+{
+  "Item": "Visage of Relentless Rage",
+  "Tier": "S",
+  "Level": "86",
+  "Defense": "235.00171-299",
+  "Block": "56",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[90-130]% Enhanced Defense",
+    "+15% Chance for a Deadly Blow",
+    "+5% Increased Attack Rating",
+    "+[75-110] to Additive Physical Damage",
+    "+5% Life stolen per Hit",
+    "+50 to Strength",
+    "Attack Damage increased by [8-15]%",
+    "+18 Life After each Kill"
+  ]
+}

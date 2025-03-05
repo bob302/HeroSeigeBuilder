@@ -1,0 +1,13 @@
+{
+  "Item": "Stone of Archaeology",
+  "Tier": "B",
+  "Level": "34",
+  "Type": "Amulet",
+  "Size": "1x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[10-20]% Increased Movement Speed",
+    "+[8-15]% Extra Gold Dropped From Kills",
+    "+[10-15]% Increased Magic Find"
+  ]
+}

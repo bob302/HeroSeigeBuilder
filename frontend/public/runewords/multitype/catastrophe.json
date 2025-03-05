@@ -1,0 +1,42 @@
+{
+  "Tier": "S",
+  "Level": "63",
+  "Size": "2x3",
+  "Item": "Catastrophe",
+  "Rarity": "Runeword",
+  "Type": "MultiType",
+  "Bases": [
+    "Staff",
+    "Cane",
+    "Spellblade",
+    "Book",
+    "Sword",
+    "Mace"
+  ],
+  "Runes": [
+    "Pul",
+    "Um",
+    "Sur",
+    "Ber",
+    "Lum"
+  ],
+  "Stats": [
+    "Attack Damage: 49",
+    "Attacks per Second: 1.25",
+    {
+      "stat": "20% Chance when Casting [Comet] Level 49",
+      "class": "stat-spell"
+    },
+    "Mana Costs decreased by 3%",
+    "+8% Chance for a Crushing Blow",
+    "+10 to Energy",
+    "Fire Skill Damage increased by [30-50]%",
+    "Replenish Mana [25-50]%",
+    "Mana Increased by 10%",
+    "+20% to All Resistances",
+    "+[20-40]% Increased Magic Find",
+    "Unbreakable",
+    "Scorching Aura Level [52-82] (Holder Only)",
+    "Socketed (5)"
+  ]
+}

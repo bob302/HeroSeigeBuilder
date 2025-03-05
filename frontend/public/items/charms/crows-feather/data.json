@@ -1,0 +1,13 @@
+{
+  "Item": "Crow's Feather",
+  "Tier": "D",
+  "Level": "1",
+  "Type": "Charm",
+  "Size": "3x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+15% Increased Movement Speed",
+    "+5 to All Attributes",
+    "+5% to All Resistances"
+  ]
+}

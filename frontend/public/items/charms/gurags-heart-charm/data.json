@@ -1,0 +1,13 @@
+{
+  "Item": "Gurag's Heart Charm",
+  "Tier": "S",
+  "Level": "91",
+  "Type": "Charm",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[5-8]% Increased Attack Rating",
+    "+[60-80] to Additive Physical Damage",
+    "+[15-20] to Strength"
+  ]
+}

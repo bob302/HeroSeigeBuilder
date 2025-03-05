@@ -1,0 +1,19 @@
+{
+  "Item": "The Templar",
+  "Tier": "A",
+  "Level": "61",
+  "Defense": "129.9099-161",
+  "Block": "50",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[90-130]% Enhanced Defense",
+    "+2 to All Skills",
+    "+20% Increased Movement Speed",
+    "Replenish Life [15-25]%",
+    "+[30-50] to Life",
+    "+25% Faster Hit Recovery",
+    "+[3-5]% Increased Defense"
+  ]
+}

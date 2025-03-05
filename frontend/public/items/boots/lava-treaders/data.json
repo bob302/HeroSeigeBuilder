@@ -1,0 +1,19 @@
+{
+  "Item": "Lava Treaders",
+  "Tier": "S",
+  "Level": "86",
+  "Defense": "114.0094-135",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[80-110]% Enhanced Defense",
+    "+2 to Fire Skills",
+    "+45% Increased Movement Speed",
+    "+10 to Vitality",
+    "Fire Skill Damage increased by [15-30]%",
+    "-[7-15]% to Enemy Fire Resistance",
+    "+50% to Fire Resistance",
+    "+[3-5]% to Maximum Fire Resist"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "Item": "Viking's Sacred Axe",
+  "Tier": "S",
+  "Level": "75",
+  "Damage": "310.20278-344",
+  "APS": "1.621.62",
+  "DPS": "503.00450-556",
+  "Type": "Axe",
+  "TwoHanded": true,
+  "Size": "2x3",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[285-340]% Enhanced Damage",
+    {
+      "stat": "+[3-5] to [Berserk]",
+      "class": "stat-spell"
+    },
+    "+15% Increased Movement Speed",
+    "+20% Increased Attack Speed",
+    "+[635-720] to Attack Rating",
+    "+[175-220] to Additive Lightning Damage",
+    "Attacks can hit multiple enemies",
+    "Socketed (1-3)"
+  ]
+}

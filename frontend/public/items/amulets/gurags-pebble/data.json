@@ -1,0 +1,15 @@
+{
+  "Item": "Gurag's Pebble",
+  "Tier": "S",
+  "Level": "82",
+  "Type": "Amulet",
+  "Size": "1x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+1 to Physical Skills",
+    "+15% Chance for a Crushing Blow",
+    "+[50-80] to Additive Physical Damage",
+    "+[4-8]% Life stolen per Hit",
+    "Damage Taken Reduced by [5-10]"
+  ]
+}

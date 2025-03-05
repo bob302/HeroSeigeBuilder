@@ -1,0 +1,32 @@
+{
+  "Tier": "S",
+  "Level": "63",
+  "Size": "2x3",
+  "Item": "Force",
+  "Rarity": "Runeword",
+  "Type": "Body Armor",
+  "Bases": [
+    "Body Armor"
+  ],
+  "Runes": [
+    "Del",
+    "Um",
+    "Ber",
+    "Ist"
+  ],
+  "Stats": [
+    "+75% Enhanced Defense",
+    "+2 to All Skills",
+    "+8% Chance for a Crushing Blow",
+    "+8% Life stolen per Hit",
+    "+30 to Strength",
+    "Arcane Skill Damage increased by 5%",
+    "Replenish Life 7%",
+    "Damage Taken Reduced by [30-200]",
+    "Physical Damage Taken Reduced by 8%",
+    "+85% to All Resistances",
+    "+30% Increased Magic Find",
+    "Unbreakable",
+    "Socketed (4)"
+  ]
+}

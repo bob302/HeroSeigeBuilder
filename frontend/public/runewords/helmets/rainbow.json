@@ -1,0 +1,31 @@
+{
+  "Tier": "S",
+  "Level": "52",
+  "Size": "2x3",
+  "Item": "Rainbow",
+  "Rarity": "Runeword",
+  "Type": "Helmet",
+  "Bases": [
+    "Helmet"
+  ],
+  "Runes": [
+    "Io",
+    "Jah",
+    "Pul"
+  ],
+  "Stats": [
+    "10% Chance when Struck [Chain of Holy Lightning] Level 49",
+    "+30% Enhanced Defense",
+    "Mana Costs decreased by 3%",
+    "+[7-25] to Energy",
+    "+10 to Vitality",
+    "+[20-30]% Faster Hit Recovery",
+    "Life Increased by [3-6]%",
+    "+0.65 to Mana (Based on Level)",
+    "+[5-20]% to All Resistances",
+    "+[12-25]% Increased Magic Find",
+    "Unbreakable",
+    "Holy Shock Aura Level 31 (Holder Only) [25-40]",
+    "Socketed (3)"
+  ]
+}

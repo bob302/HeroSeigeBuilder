@@ -1,0 +1,17 @@
+{
+  "Item": "Gaze of the Void",
+  "Tier": "A",
+  "Level": "46",
+  "Defense": "69.0054-84",
+  "Type": "Belt",
+  "Size": "2x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[50-75]% Enhanced Defense",
+    "Arcane Skill Damage increased by [3-8]%",
+    "-[3-8]% to Enemy Arcane Resistance",
+    "Physical Damage Taken Reduced by 5%",
+    "+[30-40]% to Arcane Resistance",
+    "Belt Slots: 4"
+  ]
+}

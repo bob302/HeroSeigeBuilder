@@ -1,5 +1,5 @@
 <template>
-  <div
+<div
     ref="itemContainer"
     class="item-container"
     :style="pointerEvents ? 'pointer-events: all' : 'pointer-events: none'"
@@ -11,7 +11,6 @@
       :src="equipment.image ? equipment.image : 'img/editor/fallback-icon.webp'"
       class="item-image"
       draggable="false"
-      :style="{ transform: `scale(${computedScale})` }"
     />
 
     <div
@@ -86,29 +85,6 @@ class ItemComponent extends Vue {
     return false;
   }
 
-  // WTH
-  get computedScale(): number {
-    let maxSize = 1.75;
-    const ratio = this.equipment.size.height / this.equipment.size.width; 
-    
-    if (ratio === 1 ) {
-      if (this.equipment.size.width === 1) {
-        return 2;
-      }
-      return maxSize
-    }
-
-    if (this.equipment.size.width > 2 || this.equipment.size.height > 2) {
-      maxSize = 1
-    }
-
-    if (this.equipment.size.width > this.equipment.size.height) {
-      return Math.min(maxSize * this.equipment.size.width, maxSize * this.equipment.size.height);
-    }
-    
-    return Math.min(maxSize * this.equipment.size.width, maxSize * Math.log(this.equipment.size.height));
-  }
-
   emptySockets(): void {
     (this.equipment as Equipment).clearSocketables();
     this.$emit("socket-cleared");
@@ -156,7 +132,6 @@ export default toNative(ItemComponent)
   position: relative;
   width: 100%;
   height: 100%;
-  top: 25%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -166,8 +141,10 @@ export default toNative(ItemComponent)
   image-rendering: pixelated;
   z-index: 1;
   user-select: none;
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Автоматическое масштабирование с сохранением пропорций */
+  scale: 1.5;
 }
 
 

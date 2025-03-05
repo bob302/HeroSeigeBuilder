@@ -1,0 +1,10 @@
+{
+  "Item": "Elemental Gem",
+  "Tier": "S",
+  "Level": "100",
+  "Type": "Gem",
+  "Rarity": "Heroic",
+  "Stats": [
+    "+15 to All Attributes"
+  ]
+}

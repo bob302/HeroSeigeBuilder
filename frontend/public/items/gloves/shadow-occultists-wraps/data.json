@@ -1,0 +1,19 @@
+{
+  "Item": "Shadow Occultist's Wraps",
+  "Tier": "SS",
+  "Level": "100",
+  "Defense": "32.0026-38",
+  "Type": "Gloves",
+  "Size": "2x2",
+  "Rarity": "Heroic",
+  "Stats": [
+    "+2 to All Skills",
+    {
+      "stat": "+[1-5] to [Shadow Weave]",
+      "class": "stat-spell"
+    },
+    "+[5-8] Mana per second",
+    "+15 to Intelligence",
+    "-[5-15]% to All Enemy Resistances"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "Item": "Shishkebab",
+  "Tier": "SS",
+  "Level": "100",
+  "Damage": "840.00680-1000",
+  "APS": "1.141.14",
+  "DPS": "958.00776-1140",
+  "Type": "Mace",
+  "TwoHanded": true,
+  "Size": "2x3",
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "22% Chance when Striking [Fresh Cut] Level 1",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "5% Chance when Attacking [Butchers Hook] Level 38",
+      "class": "stat-spell"
+    },
+    "+[700-900]% Enhanced Damage",
+    "+[2-3] to All Skills",
+    "+[3-6] to Fire Skills",
+    "+30% Increased Movement Speed",
+    "+[8-15]% Life stolen per Hit",
+    "Extra Damage to Burning Monsters [25-40]%",
+    "+[35-60] to Strength",
+    "+[5000-8500] to Additive Fire Damage",
+    "+1500 to Attack Rating (Based on Level)",
+    "Attacks can hit multiple enemies",
+    "Socketed (3-6)"
+  ]
+}

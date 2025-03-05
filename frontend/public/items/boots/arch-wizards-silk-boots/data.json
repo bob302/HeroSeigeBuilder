@@ -1,0 +1,17 @@
+{
+  "Item": "Arch Wizard's Silk Boots",
+  "Tier": "S",
+  "Level": "62",
+  "Defense": "76.9058-96",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[70-100]% Enhanced Defense",
+    "+1 to All Skills",
+    "+[20-35]% Increased Movement Speed",
+    "+[10-20] to Energy",
+    "+10 to Intelligence",
+    "+15% to All Resistances"
+  ]
+}

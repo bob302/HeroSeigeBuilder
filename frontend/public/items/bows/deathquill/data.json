@@ -1,0 +1,26 @@
+{
+  "Item": "Deathquill",
+  "Tier": "SS",
+  "Level": "95",
+  "Damage": "713.60558-870",
+  "APS": "2.252.25",
+  "DPS": "1606.001256-1956",
+  "Type": "Bow",
+  "TwoHanded": true,
+  "Size": "2x3",
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "10% Chance when Striking [Plague of Rats] Level 29",
+      "class": "stat-spell"
+    },
+    "+[520-720]% Enhanced Damage",
+    "+50% Increased Attack Speed",
+    "+[1275-1325] to Additive Poison Damage",
+    "Poison Skill Damage increased by [20-40]%",
+    "-[15-25]% to Enemy Poison Resistance",
+    "+60% to Poison Resistance",
+    "+5% to Maximum Poison Resist",
+    "Poison Length Reduced by 50%"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "Tier": "S",
+  "Level": "61",
+  "Size": "2x3",
+  "Item": "Flowing Sands",
+  "Rarity": "Runeword",
+  "Type": "MultiType",
+  "Bases": [
+    "Staff",
+    "Cane"
+  ],
+  "Runes": [
+    "Vex",
+    "Tor",
+    "Pul",
+    "Del",
+    "Hel",
+    "Sur"
+  ],
+  "Stats": [
+    "Attack Damage: 49",
+    "Attacks per Second: 1.25",
+    "+[3-4] to All Skills",
+    {
+      "stat": "+[5-12] to Sand Guardians (Illusionist)",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+[4-8] to Circle of Guardians (Illusionist)",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+[4-8] to Link of Sand (Illusionist)",
+      "class": "stat-spell"
+    },
+    "Cooldown Recovery Increased by 54%",
+    "Mana Costs decreased by 3%",
+    "+7% Mana stolen per Hit",
+    "Arcane Skill Damage increased by 5%",
+    "+[120-260] to Mana",
+    "+2 Mana After each Kill",
+    "Mana Increased by 10%",
+    "Unbreakable",
+    "Socketed (6)"
+  ]
+}

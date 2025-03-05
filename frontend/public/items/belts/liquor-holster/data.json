@@ -1,0 +1,18 @@
+{
+  "Item": "Liquor Holster",
+  "Tier": "SS",
+  "Level": "100",
+  "Defense": "101.5081-123",
+  "Type": "Belt",
+  "Size": "2x1",
+  "Rarity": "Angelic",
+  "Stats": [
+    "+[55-80]% Enhanced Defense",
+    {
+      "stat": "+[2-4] to [Liquid Containers]",
+      "class": "stat-spell"
+    },
+    "+[8-20]% Increased Movement Speed",
+    "+[18-30] to All Attributes"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "Item": "Khodo's Wedding Band",
+  "Tier": "S",
+  "Level": "88",
+  "Type": "Ring",
+  "Size": "1x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+1 to All Skills",
+    "+[15-30]% Increased Movement Speed",
+    "+[6-12]% Life stolen per Hit",
+    "+215 to Life (Based on Level)"
+  ]
+}

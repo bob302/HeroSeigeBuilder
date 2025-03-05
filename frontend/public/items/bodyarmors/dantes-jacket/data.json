@@ -1,0 +1,18 @@
+{
+  "Item": "Dante's Jacket",
+  "Tier": "A",
+  "Level": "57",
+  "Defense": "357.50299-416",
+  "Type": "Body Armor",
+  "Size": "2x3",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[130-160]% Enhanced Defense",
+    "+5% Increased Critical Strike Chance",
+    "+40 to Additive Physical Damage",
+    "+[15-25]% Increased Critical Strike Damage",
+    "+20 to Strength",
+    "+10 to Vitality",
+    "Socketed (0-3)"
+  ]
+}

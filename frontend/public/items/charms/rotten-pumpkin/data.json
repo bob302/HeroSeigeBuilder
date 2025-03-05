@@ -1,0 +1,15 @@
+{
+  "Item": "Rotten Pumpkin",
+  "Tier": "SS",
+  "Level": "94",
+  "Type": "Charm",
+  "Size": "2x2",
+  "Rarity": "Angelic",
+  "Stats": [
+    "+[4-6] to Poison Skills",
+    "+1337 to Additive Poison Damage",
+    "+1337 to Poison Skill Damage",
+    "Poison Skill Damage increased by [15-25]%",
+    "+[40-50]% to Poison Resistance"
+  ]
+}

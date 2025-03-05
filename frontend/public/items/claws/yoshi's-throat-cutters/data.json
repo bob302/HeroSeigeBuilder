@@ -1,0 +1,27 @@
+{
+  "Item": "Yoshi's Throat-Cutters",
+  "Tier": "SS",
+  "Level": "72",
+  "Damage": "331.20292-372",
+  "APS": "1.651.65",
+  "DPS": "547.00481-613",
+  "Type": "Claw",
+  "TwoHanded": false,
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[420-480]% Enhanced Damage",
+    "+[2-3] to All Skills",
+    {
+      "stat": "+[5-8] to [Omnislash]",
+      "class": "stat-spell"
+    },
+    "+35% Increased Attack Rating",
+    "+6% Life stolen per Hit",
+    "+30 to Strength",
+    "+30 to Dexterity",
+    "+[1750-1950] to Additive Fire Damage",
+    "+75% Faster Hit Recovery",
+    "Socketed (2-3)"
+  ]
+}

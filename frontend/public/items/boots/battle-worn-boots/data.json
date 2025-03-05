@@ -1,0 +1,17 @@
+{
+  "Item": "Battle Worn Boots",
+  "Tier": "S",
+  "Level": "75",
+  "Defense": "128.80104-154",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[100-140]% Enhanced Defense",
+    "+30% Increased Movement Speed",
+    "+[8-15]% Chance for a Deadly Blow",
+    "+[65-80] to Attack Rating",
+    "+[25-40] to Dexterity",
+    "+25 to Vitality"
+  ]
+}

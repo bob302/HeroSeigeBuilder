@@ -1,0 +1,14 @@
+{
+  "Item": "Stone of Premonition",
+  "Tier": "SS",
+  "Level": "98",
+  "Type": "Ring",
+  "Size": "1x1",
+  "Rarity": "Heroic",
+  "Stats": [
+    "+[1-2] to All Skills",
+    "Replenish Mana 15%",
+    "+[550-575] to Mana",
+    "Mana Increased by 25%"
+  ]
+}

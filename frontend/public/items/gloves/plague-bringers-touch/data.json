@@ -1,0 +1,21 @@
+{
+  "Item": "Plague Bringer's Touch",
+  "Tier": "SS",
+  "Level": "100",
+  "Defense": "32.0026-38",
+  "Type": "Gloves",
+  "Size": "2x2",
+  "Rarity": "Heroic",
+  "Stats": [
+    "+2 to All Skills",
+    "+[2-5] to Poison Skills",
+    {
+      "stat": "+[10-20] to [Cursed Ground]",
+      "class": "stat-spell"
+    },
+    "+[20-35]% Faster Cast Rate",
+    "Extra Damage to Poisoned Monsters [20-40]%",
+    "Poison Skill Damage increased by [20-40]%",
+    "Mana Increased by [10-15]%"
+  ]
+}

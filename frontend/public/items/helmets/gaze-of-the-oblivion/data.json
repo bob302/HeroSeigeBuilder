@@ -1,0 +1,24 @@
+{
+  "Item": "Gaze of the Oblivion",
+  "Tier": "SS",
+  "Level": "92",
+  "Defense": "900.00600-1200",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "20% Chance when Casting [Restless Spirits] Level 51",
+      "class": "stat-spell"
+    },
+    "+[300-500]% Enhanced Defense",
+    "+[3-6] to Arcane Skills",
+    "Cooldown Recovery Increased by [10-30]%",
+    "+25 to Intelligence",
+    "+[20-40] to Vitality",
+    "+[760-3240] to Arcane Skill Damage",
+    "-10 to Light Radius",
+    "+[10-30]% to All Resistances",
+    "Socketed (2)"
+  ]
+}

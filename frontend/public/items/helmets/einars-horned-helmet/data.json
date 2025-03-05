@@ -1,0 +1,16 @@
+{
+  "Item": "Einar's Horned Helmet",
+  "Tier": "A",
+  "Level": "57",
+  "Defense": "99.9076-125",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[80-130]% Enhanced Defense",
+    "+[50-75] to Attack Rating",
+    "+[2-4]% Life stolen per Hit",
+    "+[20-25]% to Cold Resistance",
+    "Socketed (2)"
+  ]
+}

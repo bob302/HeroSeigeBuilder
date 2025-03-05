@@ -1,0 +1,15 @@
+{
+  "Item": "Viking's Sacred Helmet",
+  "Tier": "A",
+  "Level": "54",
+  "Defense": "99.9076-125",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[80-130]% Enhanced Defense",
+    "+1 to All Skills",
+    "+[2-5] to All Attributes",
+    "Replenish Life 15%"
+  ]
+}

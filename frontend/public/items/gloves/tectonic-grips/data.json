@@ -1,0 +1,21 @@
+{
+  "Item": "Tectonic Grips",
+  "Tier": "SS",
+  "Level": "100",
+  "Defense": "32.0026-38",
+  "Type": "Gloves",
+  "Size": "2x2",
+  "Rarity": "Heroic",
+  "Stats": [
+    "+2 to All Skills",
+    "+[2-5] to Lightning Skills",
+    {
+      "stat": "+[8-16] to [Thunder Goddesses Chosen]",
+      "class": "stat-spell"
+    },
+    "+[20-35]% Faster Cast Rate",
+    "Lightning Skill Damage increased by [15-35]%",
+    "-15% to Enemy Lightning Resistance",
+    "Replenish Mana 75%"
+  ]
+}

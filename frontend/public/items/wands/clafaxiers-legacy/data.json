@@ -1,0 +1,27 @@
+{
+  "Item": "Clafaxier's Legacy",
+  "Tier": "SS",
+  "Level": "99",
+  "Damage": "37.0032-42",
+  "APS": "1.501.5",
+  "DPS": "55.5048-63",
+  "Type": "Wand",
+  "TwoHanded": false,
+  "Size": "1x3",
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "6% Chance when Casting [Cursed Ground] Level 32",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+[5-10] to [Master Poisoner]",
+      "class": "stat-spell"
+    },
+    "+[15-20] Mana per second",
+    "Extra Damage to Poisoned Monsters [8-15]%",
+    "Poison Skill Damage increased by [40-50]%",
+    "-[15-25]% to Enemy Poison Resistance",
+    "Socketed (2)"
+  ]
+}

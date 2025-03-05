@@ -1,0 +1,21 @@
+{
+  "Item": "Mana-Woven Walkers",
+  "Tier": "S",
+  "Level": "82",
+  "Defense": "108.2089-128",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[70-100]% Enhanced Defense",
+    {
+      "stat": "+2 to Random Skill Element",
+      "class": "stat-spell"
+    },
+    "+[30-50]% Increased Movement Speed",
+    "+[10-20]% Faster Cast Rate",
+    "Mana Costs decreased by [5-10]%",
+    "+[30-40] to Energy",
+    "Mana Increased by 20%"
+  ]
+}

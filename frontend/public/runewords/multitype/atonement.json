@@ -1,0 +1,47 @@
+{
+  "Tier": "S",
+  "Level": "65",
+  "Size": "2x3",
+  "Item": "Atonement",
+  "Rarity": "Runeword",
+  "Type": "MultiType",
+  "Bases": [
+    "Sword",
+    "Axe",
+    "Polearm",
+    "Mace",
+    "Bow",
+    "Gun",
+    "Chainsaw"
+  ],
+  "Runes": [
+    "Vex",
+    "Xo",
+    "Ber",
+    "Jah",
+    "Co"
+  ],
+  "Stats": [
+    "Attack Damage: 397 [61]",
+    "Attacks per Second: 1.50",
+    {
+      "stat": "23% Chance when Striking [Tectonic Boulder] Level 119",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "15% Chance when Attacking [Fire Nova] Level 63",
+      "class": "stat-spell"
+    },
+    "+550% Enhanced Damage",
+    "+25% Chance for a Deadly Blow",
+    "+8% Chance for a Crushing Blow",
+    "+7% Mana stolen per Hit",
+    "+30% of target Defense ignored",
+    "+[8-30] to Strength",
+    "+10 to Dexterity",
+    "+[1150-1250] to Additive Arcane Damage",
+    "Life Increased by 10%",
+    "Unbreakable",
+    "Socketed (5)"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "Item": "Assassin's Hood",
+  "Tier": "S",
+  "Level": "74",
+  "Defense": "142.00108-176",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[80-120]% Enhanced Defense",
+    "+[2-3] to Physical Skills",
+    "Cooldown Recovery Increased by [10-30]%",
+    "+[4-8]% Increased Attack Rating",
+    "Attack Damage increased by [10-20]%",
+    "Physical Damage Taken Reduced by [4-8]%",
+    "+[5-15]% to All Resistances"
+  ]
+}

@@ -7,7 +7,7 @@
 
       <div class="equipment-main">
         <div class="equipment-header">
-          <p :class="nameColorClass">{{ item.name }}</p>
+          <p :style="`color: ${rairtyColor}`">{{ item.name }}</p>
           <p class="equipment-type">{{ combinedType }}</p>
         </div>
 
@@ -29,13 +29,13 @@
               </div>
               <div class="tier-display">
                 <p class="requirement-label">Tier:</p>
-                <p :class="tierColorClass">{{ item.tier }}</p>
+                <p :style="`color: ${tierColor}`">{{ item.tier }}</p>
               </div>
             </div>
           </ul>
         </div>
       </div>
-
+      <div v-if="hasSocketables" class="divider"></div>
       <EquipmentSocketsTooltip v-if="hasSocketables" :sockets="(item as Equipment).sockets.list" />
     </div>
   </div>
@@ -48,9 +48,11 @@ import {
   Equipment,
   WeaponEquipment,
   type Stat,
+  type IRuneword
 } from "../models/Equipment";
 import { StatParser } from "../parser/StatParser";
 import EquipmentSocketsTooltip from "./EquipmentSocketsTooltip.vue";
+import ColorUtils from "../util/ColorUtils";
 
 @Component({
   components: { EquipmentSocketsTooltip },
@@ -65,6 +67,14 @@ class ItemTooltip extends Vue {
 
   readonly screenWidth = window.innerWidth;
   readonly screenHeight = window.innerHeight;
+
+
+isRuneword(obj: any): obj is IRuneword {
+  return obj &&
+    Array.isArray(obj.runes) &&
+    Array.isArray(obj.bases);
+}
+
 
   mounted() {
     this.initTooltip();
@@ -94,31 +104,18 @@ class ItemTooltip extends Vue {
 
   get tooltipPositionStyles() {
     return {
-      borderColor: this.borderColor,
+      borderColor: this.rairtyColor,
       left: this.desktopX, 
       top: this.desktopY
     }
   }
 
-  get borderColor() {
-    const colorMap = {
-      Common: "#d6ac2f",
-      Satanic: "#c81717",
-      Angelic: "#fdfea5",
-      Unholy: "#c73664",
-      Heroic: "#00e19a",
-      "Satanic Set": "#0bb01a",
-      Mythic: "#4F2395",
-    };
-    return colorMap[this.item.rarity] || "#ffffff";
+  get rairtyColor() {
+    return ColorUtils.rarityToColor(this.item.rarity)
   }
 
-  get nameColorClass() {
-    return `name-${this.item.rarity.toLowerCase().replace(" ", "-")}`;
-  }
-
-  get tierColorClass() {
-    return `tier-${this.item.tier.toLowerCase()}`;
+  get tierColor() {
+    return ColorUtils.tierToColor(this.item.tier)
   }
 
   get isMobile() {
@@ -193,7 +190,7 @@ export default toNative(ItemTooltip)
   z-index: 200;
   backdrop-filter: var(--blur-amount);
   font-family: var(--font-family-primary);
-  max-width: 50vw;
+  max-width: 100vw;
 }
 
 .mobile-close-button {
@@ -208,42 +205,15 @@ export default toNative(ItemTooltip)
   z-index: 201;
 }
 
-.name-common {
-  color: var(--color-primary);
-}
-.name-satanic {
-  color: var(--color-satanic);
-}
-.name-angelic {
-  color: var(--color-angelic);
-}
-.name-unholy {
-  color: var(--color-unholy);
-}
-.name-heroic {
-  color: var(--color-heroic);
-}
-.name-satanic-set {
-  color: var(--color-satanic-set);
-}
-
-.tier-ss {
-  color: var(--color-angelic);
-}
-.tier-s {
-  color: var(--color-s);
-}
-.tier-a {
-  color: var(--color-a);
-}
-.tier-b {
-  color: var(--color-b);
-}
-.tier-c {
-  color: var(--color-c);
-}
-.tier-d {
-  color: var(--color-d);
+.divider {
+  position: relative;
+  width: 1px;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(199, 179, 119, 0.5) 50%,
+    transparent 100%
+  );
 }
 
 ::v-deep(.stat-description) {
@@ -318,6 +288,18 @@ export default toNative(ItemTooltip)
   font-family: "Fenris";
   font-weight: 600;
 }
+::v-deep(.stat-random-skill) {
+  background-size: 100%;
+  background-repeat: repeat;
+  background-color: red;
+  background-image: linear-gradient(60deg, orange, lightblue, lime, purple, burlywood);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  font-family: "Fenris";
+  font-weight: 600;
+}
+
 
 ::v-deep(.stat-container) {
   display: flex;

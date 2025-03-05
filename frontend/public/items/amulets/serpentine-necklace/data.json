@@ -1,0 +1,14 @@
+{
+  "Item": "Serpentine Necklace",
+  "Tier": "S",
+  "Level": "87",
+  "Type": "Amulet",
+  "Size": "1x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[280-340] to Poison Skill Damage",
+    "Poison Skill Damage increased by [15-35]%",
+    "+50% to Poison Resistance",
+    "+[3-5]% to Maximum Poison Resist"
+  ]
+}

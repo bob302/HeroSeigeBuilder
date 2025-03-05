@@ -1,0 +1,21 @@
+{
+  "Item": "St. Jupe's Plate of Command",
+  "Tier": "SS",
+  "Level": "100",
+  "Defense": "2295.002108-2482",
+  "Type": "Body Armor",
+  "Size": "2x3",
+  "Rarity": "Angelic",
+  "Stats": [
+    "+[580-630]% Enhanced Defense",
+    "+5 to All Skills",
+    "+[15-30]% of Physical Damage taken as Fire",
+    "+50 to All Attributes",
+    "-[20-25]% to All Enemy Resistances",
+    "+100 to Vitality (Based on Level)",
+    "+25% to All Resistances",
+    "+50% to Fire Resistance",
+    "+[1-5]% to Maximum Fire Resist",
+    "Socketed (6)"
+  ]
+}

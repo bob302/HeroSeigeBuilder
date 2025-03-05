@@ -1,0 +1,16 @@
+{
+  "Item": "Death Knight's Visage",
+  "Tier": "D",
+  "Level": "12",
+  "Defense": "8.006-11",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[10-15]% Enhanced Damage",
+    "+[20-35]% Enhanced Defense",
+    "+30 to Attack Rating",
+    "+15 to Life",
+    "+15 to Mana"
+  ]
+}

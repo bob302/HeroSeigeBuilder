@@ -1,0 +1,13 @@
+{
+  "Item": "Philosopher's Stone",
+  "Tier": "SS",
+  "Level": "100",
+  "Type": "Amulet",
+  "Size": "1x2",
+  "Rarity": "Heroic",
+  "Stats": [
+    "+[2-4] to All Skills",
+    "+[15-40] to All Attributes",
+    "+[20-35]% to All Resistances"
+  ]
+}

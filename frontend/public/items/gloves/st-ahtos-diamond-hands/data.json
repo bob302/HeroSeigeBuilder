@@ -1,0 +1,19 @@
+{
+  "Item": "St. Ahto's Diamond Hands",
+  "Tier": "SS",
+  "Level": "100",
+  "Defense": "311.25256-368",
+  "Type": "Gloves",
+  "Size": "2x2",
+  "Rarity": "Angelic",
+  "Stats": [
+    "+[125-150]% Enhanced Damage",
+    "+[330-440]% Enhanced Defense",
+    "+[2-4] to All Skills",
+    "+[40-50]% of Physical Damage taken as Arcane",
+    "Magic Skill Damage increased by [35-50]%",
+    "+35% to Arcane Resistance",
+    "+5% to Maximum Arcane Resist",
+    "[Oasis Aura] Level [15-25]"
+  ]
+}

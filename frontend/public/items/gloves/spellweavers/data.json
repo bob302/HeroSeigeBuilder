@@ -1,0 +1,17 @@
+{
+  "Item": "Spellweavers",
+  "Tier": "SS",
+  "Level": "100",
+  "Defense": "32.0026-38",
+  "Type": "Gloves",
+  "Size": "2x2",
+  "Rarity": "Heroic",
+  "Stats": [
+    "+30% Faster Cast Rate",
+    "+[20-30] to Energy",
+    "Explosion area of effect increased by [20-30]%",
+    "Replenish Mana 15%",
+    "+20% of Damage Taken goes to Mana",
+    "+[20-30]% to All Resistances"
+  ]
+}

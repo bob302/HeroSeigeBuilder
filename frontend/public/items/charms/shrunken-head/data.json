@@ -1,0 +1,12 @@
+{
+  "Item": "Shrunken Head",
+  "Tier": "S",
+  "Level": "83",
+  "Type": "Charm",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[7-20] to Poison Skill Damage",
+    "-[3-10]% to Enemy Poison Resistance"
+  ]
+}

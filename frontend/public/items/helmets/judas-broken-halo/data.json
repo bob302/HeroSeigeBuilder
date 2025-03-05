@@ -1,0 +1,21 @@
+{
+  "Item": "Juda's Broken Halo",
+  "Tier": "B",
+  "Level": "37",
+  "Defense": "43.5034-54",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "20% Chance when Casting [Chain of Holy Lightning] Level 19",
+      "class": "stat-spell"
+    },
+    "+[30-40]% Enhanced Defense",
+    "+[15-20]% Faster Cast Rate",
+    "+[5-10] to Energy",
+    "Replenish Mana 15%",
+    "+[1-2] to Light Radius",
+    "Socketed (0-3)"
+  ]
+}

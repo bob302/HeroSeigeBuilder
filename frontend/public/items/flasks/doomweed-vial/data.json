@@ -1,0 +1,22 @@
+{
+  "Item": "Doomweed Vial",
+  "Tier": "S",
+  "Level": "76",
+  "Damage": "50.0046-54",
+  "APS": "1.251.25",
+  "DPS": "63.0058-68",
+  "Type": "Flask",
+  "TwoHanded": false,
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[2-5] to Poison Skills",
+    "Extra Damage to Poisoned Monsters [5-10]%",
+    "+15 to Energy",
+    "+15 to Intelligence",
+    "+[1500-2500] to Poison Skill Damage",
+    "Poison Skill Damage increased by [20-35]%",
+    "-[10-25]% to Enemy Poison Resistance",
+    "Replenish Mana [25-45]%"
+  ]
+}

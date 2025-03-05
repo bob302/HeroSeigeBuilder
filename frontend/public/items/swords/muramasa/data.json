@@ -1,0 +1,22 @@
+{
+  "Item": "Muramasa",
+  "Tier": "S",
+  "Level": "83",
+  "Damage": "283.80255-314",
+  "APS": "1.501.5",
+  "DPS": "426.00382-470",
+  "Type": "Sword",
+  "Size": "3x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    {
+      "stat": "10% Chance when Striking [Battle Glance] Level 27",
+      "class": "stat-spell"
+    },
+    "+[430-480]% Enhanced Damage",
+    "+20% Chance for a Crushing Blow",
+    "+15% Increased Attack Rating",
+    "+30 to Strength",
+    "Attack Damage increased by [15-25]%"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "Item": "Gladiator's Skullet",
+  "Tier": "S",
+  "Level": "78",
+  "Defense": "170.00132-208",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[120-160]% Enhanced Defense",
+    "+[15-20]% Increased Attack Speed",
+    "+[8-15]% Chance for a Crushing Blow",
+    "+[15-25] to Vitality"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "Item": "Stalwart Sabatons",
+  "Tier": "C",
+  "Level": "22",
+  "Defense": "16.2010-23",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[25-40]% Enhanced Defense",
+    "+[0-1] to All Skills",
+    "+[10-20]% Increased Movement Speed",
+    "Replenish Mana 25%",
+    "+[50-75] to Life",
+    "+[50-75] to Mana"
+  ]
+}

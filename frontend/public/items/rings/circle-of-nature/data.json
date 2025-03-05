@@ -1,0 +1,14 @@
+{
+  "Item": "Circle of Nature",
+  "Tier": "B",
+  "Level": "34",
+  "Type": "Ring",
+  "Size": "1x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[7-77] to Additive Lightning Damage",
+    "+[35-45] to Additive Poison Damage",
+    "+[25-50] to Additive Fire Damage",
+    "+40 to Additive Cold Damage"
+  ]
+}

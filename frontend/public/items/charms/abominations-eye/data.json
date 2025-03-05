@@ -1,0 +1,12 @@
+{
+  "Item": "Abomination's Eye",
+  "Tier": "SS",
+  "Level": "78",
+  "Type": "Charm",
+  "Size": "1x1",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[15-30]% to Summon Resistances",
+    "+[5-10]% Reduced damage taken by Summons"
+  ]
+}

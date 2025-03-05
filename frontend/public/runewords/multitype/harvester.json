@@ -1,0 +1,44 @@
+{
+  "Tier": "S",
+  "Level": "65",
+  "Size": "2x3",
+  "Item": "Harvester",
+  "Rarity": "Runeword",
+  "Type": "MultiType",
+  "Bases": [
+    "Sword",
+    "Axe",
+    "Chainsaw",
+    "Mace",
+    "Polearm"
+  ],
+  "Runes": [
+    "Vex",
+    "Sur",
+    "Eth",
+    "Sal",
+    "Jah"
+  ],
+  "Stats": [
+    "Attack Damage: 359 [54]",
+    "Attacks per Second: 2.21 [1.50]",
+    {
+      "stat": "15% Chance when Striking [Fire Enchant] Level 25",
+      "class": "stat-spell"
+    },
+    "+[550-660]% Enhanced Damage",
+    "+[35-50]% increased Attack Speed",
+    "+[440-500] to Additive Physical Damage",
+    "+7% Mana stolen per Hit",
+    "+45% of target Defense ignored",
+    "+20% Chance to Open Wounds",
+    "+[8-30] to Dexterity",
+    "-[20-25]% to Enemy Fire Resistance",
+    "Life Increased by 10%",
+    "Mana Increased by 10%",
+    "Physical Damage Taken Reduced by 7%",
+    "Attacks can hit multiple enemies",
+    "Unbreakable",
+    "Socketed (5)"
+  ]
+}

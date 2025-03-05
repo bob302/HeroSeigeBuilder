@@ -1,0 +1,17 @@
+{
+  "Item": "Steadfast Marchers",
+  "Tier": "A",
+  "Level": "55",
+  "Defense": "68.7051-87",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[50-80]% Enhanced Defense",
+    "+20% Increased Movement Speed",
+    "+[10-15]% Increased Attack Speed",
+    "+[5-8]% Increased Attack Rating",
+    "+25 to Dexterity",
+    "Life Increased by [7-15]%"
+  ]
+}

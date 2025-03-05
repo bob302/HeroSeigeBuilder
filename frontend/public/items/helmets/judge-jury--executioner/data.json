@@ -1,0 +1,18 @@
+{
+  "Item": "Judge, Jury & Executioner",
+  "Tier": "C",
+  "Level": "32",
+  "Defense": "26.5018-35",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[50-75]% Enhanced Defense",
+    "+115 to Attack Rating",
+    "+5% Life stolen per Hit",
+    "+[25-50]% of target Defense ignored",
+    "+5 to All Attributes",
+    "+25% to Fire Resistance",
+    "+25% to Lightning Resistance"
+  ]
+}

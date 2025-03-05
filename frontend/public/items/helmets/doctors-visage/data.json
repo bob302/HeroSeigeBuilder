@@ -1,0 +1,18 @@
+{
+  "Item": "Doctor's Visage",
+  "Tier": "S",
+  "Level": "74",
+  "Defense": "142.00108-176",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[80-120]% Enhanced Defense",
+    "+[60-80] to Additive Physical Damage",
+    "+30 to Strength",
+    "+30 to Dexterity",
+    "+[30-40] to Life",
+    "+45% to Arcane Resistance",
+    "+45% to Poison Resistance"
+  ]
+}

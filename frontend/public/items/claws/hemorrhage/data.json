@@ -1,0 +1,26 @@
+{
+  "Item": "Hemorrhage",
+  "Tier": "A",
+  "Level": "57",
+  "Damage": "145.50126-166",
+  "APS": "2.402.4",
+  "DPS": "349.50301-398",
+  "Type": "Claw",
+  "TwoHanded": false,
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "15% Chance when Striking [Rupture] Level 33",
+      "class": "stat-spell"
+    },
+    "+[280-360]% Enhanced Damage",
+    "+50% Increased Attack Speed",
+    "+35% Chance for a Crushing Blow",
+    "+15 to Strength",
+    "+15 to Dexterity",
+    "+14 Life After each Kill",
+    "+125% of Damage Returned to the Attacker",
+    "Socketed (0-2)"
+  ]
+}

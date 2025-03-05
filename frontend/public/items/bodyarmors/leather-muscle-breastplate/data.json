@@ -1,0 +1,22 @@
+{
+  "Item": "Leather Muscle Breastplate",
+  "Tier": "S",
+  "Level": "74",
+  "Defense": "652.50525-780",
+  "Type": "Body Armor",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "10% Chance when Struck [Holy Hammer] Level 29",
+      "class": "stat-spell"
+    },
+    "+[150-225]% Enhanced Defense",
+    "+[1-2] to All Skills",
+    "+175 to Life",
+    "+[10-20]% Defense vs Missiles",
+    "+30 to Vitality (Based on Level)",
+    "+[15-20]% to All Resistances",
+    "Socketed (2-3)"
+  ]
+}

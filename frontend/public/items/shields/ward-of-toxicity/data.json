@@ -1,0 +1,19 @@
+{
+  "Item": "Ward of Toxicity",
+  "Tier": "B",
+  "Level": "48",
+  "Defense": "86.4053-120",
+  "Block": "60",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[140-200]% Enhanced Defense",
+    "+[1-2] to Poison Skills",
+    "+[120-80] to Poison Skill Damage",
+    "Poison Skill Damage increased by [5-10]%",
+    "+15% to All Resistances",
+    "+50% to Poison Resistance",
+    "Poison Length Reduced by 25%"
+  ]
+}

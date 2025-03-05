@@ -1,0 +1,43 @@
+{
+  "Tier": "S",
+  "Level": "59",
+  "Size": "2x3",
+  "Item": "Fortress",
+  "Rarity": "Runeword",
+  "Type": "MultiType",
+  "Bases": [
+    "Body Armor",
+    "Axe",
+    "Mace",
+    "Sword",
+    "Staff",
+    "Bow",
+    "Gun",
+    "Polearm"
+  ],
+  "Runes": [
+    "Ol",
+    "Sal",
+    "Del",
+    "Xo"
+  ],
+  "Stats": [
+    {
+      "stat": "20% Chance when Struck [Frozen Hide] Level 65",
+      "class": "stat-spell"
+    },
+    "+250% Enhanced Damage",
+    "+850% Enhanced Defense",
+    "+25% Faster Cast Rate",
+    "+25% Chance for a Deadly Blow",
+    "+50 to Attack Rating",
+    "Arcane Skill Damage increased by 5%",
+    "Damage Taken Reduced by [10-20]",
+    "Physical Damage Taken Reduced by 7%",
+    "+1.50 to Life (Based on Level)",
+    "+[25-40]% to All Resistances",
+    "+[20-60]% to Lightning Resistance",
+    "Unbreakable",
+    "Socketed (4)"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "Item": "Assassin's Belt",
+  "Tier": "B",
+  "Level": "34",
+  "Defense": "36.2026-47",
+  "Type": "Belt",
+  "Size": "2x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[30-45]% Enhanced Defense",
+    "+[8-15]% Increased Attack Rating",
+    "+[6-10]% Life stolen per Hit",
+    "+15 to Dexterity",
+    "Physical Damage Taken Reduced by 5%",
+    "Belt Slots: 4"
+  ]
+}

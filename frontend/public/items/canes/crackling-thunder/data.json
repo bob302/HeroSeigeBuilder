@@ -1,0 +1,26 @@
+{
+  "Item": "Crackling Thunder",
+  "Tier": "SS",
+  "Level": "86",
+  "Damage": "59.0045-73",
+  "APS": "1.801.8",
+  "DPS": "106.5081-132",
+  "Type": "Cane",
+  "TwoHanded": true,
+  "Size": "2x3",
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "30% Chance when Casting [Thunder Orb] Level 3",
+      "class": "stat-spell"
+    },
+    "+[3-5] to All Skills",
+    "+[4-8] to Lightning Skills",
+    "+55 to Energy",
+    "+40 to Intelligence",
+    "Lightning Skill Damage increased by [10-60]%",
+    "-[20-30]% to Enemy Lightning Resistance",
+    "+150% Increased Magic Find",
+    "Socketed (3-6)"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "Item": "Upi's Sweetshirt",
+  "Tier": "B",
+  "Level": "40",
+  "Defense": "204.00156-252",
+  "Type": "Body Armor",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[160-180]% Enhanced Defense",
+    "+15 to Vitality",
+    "Replenish Life 10%",
+    "Physical Damage Taken Reduced by [4-8]%",
+    "+25 to Vitality (Based on Level)",
+    "+10% to All Resistances",
+    "+[20-30]% Increased Magic Find",
+    "Socketed (1-4)"
+  ]
+}

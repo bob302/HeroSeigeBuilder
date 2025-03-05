@@ -1,0 +1,28 @@
+{
+  "Item": "Astral Projector",
+  "Tier": "SS",
+  "Level": "92",
+  "Damage": "630.60509-753",
+  "APS": "1.901.9",
+  "DPS": "1198.50967-1430",
+  "Type": "Bow",
+  "TwoHanded": true,
+  "Size": "2x3",
+  "Rarity": "Heroic",
+  "Stats": [
+    "+[430-560]% Enhanced Damage",
+    "+[3-6] to Arcane Skills",
+    {
+      "stat": "+[3-6] to [Homing Missile]",
+      "class": "stat-spell"
+    },
+    "+1150 to Attack Rating",
+    "+[4-8] Mana per second",
+    "+35 to Dexterity",
+    "+[30-60] to Intelligence",
+    "+[800-1500] to Additive Arcane Damage",
+    "Arcane Skill Damage increased by [18-45]%",
+    "Explosion area of effect increased by [25-40]%",
+    "Socketed (1-3)"
+  ]
+}

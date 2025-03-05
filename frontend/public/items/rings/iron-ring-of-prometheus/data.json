@@ -1,0 +1,15 @@
+{
+  "Item": "Iron Ring of Prometheus",
+  "Tier": "S",
+  "Level": "88",
+  "Type": "Ring",
+  "Size": "1x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[20-30]% Faster Cast Rate",
+    "+[25-35] to Energy",
+    "+[25-35]% to Arcane Resistance",
+    "+[25-35]% to Fire Resistance",
+    "+[15-35]% Increased Magic Find"
+  ]
+}

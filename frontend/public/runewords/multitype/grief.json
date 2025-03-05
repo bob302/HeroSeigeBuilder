@@ -1,0 +1,45 @@
+{
+  "Tier": "S",
+  "Level": "63",
+  "Size": "2x3",
+  "Item": "Grief",
+  "Rarity": "Runeword",
+  "Type": "MultiType",
+  "Bases": [
+    "Sword",
+    "Axe",
+    "Polearm",
+    "Mace",
+    "Bow",
+    "Gun",
+    "Chainsaw"
+  ],
+  "Runes": [
+    "Eth",
+    "Tor",
+    "Xo",
+    "Mal",
+    "Ber"
+  ],
+  "Stats": [
+    "Attack Damage: 460 [58]",
+    "Attacks per Second: 2.62 [1.75]",
+    "+[600-720]% Enhanced Damage",
+    "+[2-3] to Poison Skills",
+    {
+      "stat": "+[10-18] to Master Poisoner",
+      "class": "stat-spell"
+    },
+    "+[40-50]% Increased Attack Speed",
+    "+25% Chance for a Deadly Blow",
+    "+8% Chance for a Crushing Blow",
+    "+10% of target Defense ignored",
+    "Extra Damage to Poisoned Monsters [20-30]%",
+    "+8 to Intelligence [7-251",
+    "-[20-25]% to Enemy Poison Resistance",
+    "+2 Mana After each Kill",
+    "Magic Damage Taken Reduced by 7%",
+    "Unbreakable",
+    "Socketed (5)"
+  ]
+}

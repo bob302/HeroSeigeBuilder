@@ -1,0 +1,12 @@
+{
+  "Item": "Moonshard",
+  "Tier": "S",
+  "Level": "63",
+  "Type": "Charm",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "-[15-35]% to Enemy Arcane Resistance",
+    "-75% to Arcane Resistance"
+  ]
+}

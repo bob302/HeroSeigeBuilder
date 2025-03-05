@@ -1,0 +1,16 @@
+{
+  "Item": "Storm's Dawn",
+  "Tier": "C",
+  "Level": "20",
+  "Defense": "12.008-16",
+  "Type": "Belt",
+  "Size": "2x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    "Lightning Skill Damage increased by [5-12]%",
+    "-5% to Enemy Lightning Resistance",
+    "+[30-40] to Mana",
+    "-40% to Lightning Resistance",
+    "Belt Slots: 3"
+  ]
+}

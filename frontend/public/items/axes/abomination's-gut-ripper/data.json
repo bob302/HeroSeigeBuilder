@@ -1,0 +1,33 @@
+{
+  "Item": "Abomination's Gut Ripper",
+  "Tier": "SS",
+  "Level": "98",
+  "Damage": "625.60563-689",
+  "APS": "1.941.37-2.5",
+  "DPS": "1247.00771-1723",
+  "Type": "Axe",
+  "TwoHanded": true,
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "10% Chance after each Kill [Bone Storm] Level 42",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "2% Chance when Striking [Chainslice] Level 125",
+      "class": "stat-spell"
+    },
+    "+[660-740]% Enhanced Damage",
+    "+[5-10] to Physical Skills",
+    "Attack Range Increased by [25-40]%",
+    "+[10-100]% Increased Attack Speed",
+    "+25% Chance to Open Wounds",
+    "Slows target by 75%",
+    "Unholy Stat",
+    "+100 to Strength (Based on Level)",
+    "+50 to Dexterity (Based on Level)",
+    "Attacks can hit multiple enemies",
+    "Socketed (1-4)"
+  ]
+}

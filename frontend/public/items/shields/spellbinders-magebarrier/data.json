@@ -1,0 +1,16 @@
+{
+  "Item": "Spellbinder's Magebarrier",
+  "Tier": "B",
+  "Level": "35",
+  "Defense": "50.5033-68",
+  "Block": "25",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[50-70]% Enhanced Defense",
+    "+20 to Energy",
+    "Magic Skill Damage increased by 10%",
+    "+[8-12] Mana After each Kill"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "Item": "Monkeyskin Belt",
+  "Tier": "S",
+  "Level": "58",
+  "Defense": "196.88169-225",
+  "Type": "Belt",
+  "Size": "2x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[125-150]% Enhanced Defense",
+    "+[30-40] to Vitality",
+    "Replenish Life [25-35]%",
+    "+[50-75]% Faster Hit Recovery",
+    "+75% to Cold Resistance",
+    "+75% to Fire Resistance",
+    "Belt Slots: 5"
+  ]
+}

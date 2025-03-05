@@ -1,0 +1,22 @@
+{
+  "Item": "St. Nimo's Lightbringer",
+  "Tier": "SS",
+  "Level": "100",
+  "Damage": "37.0032-42",
+  "APS": "0.770.77",
+  "DPS": "29.0025-33",
+  "Type": "Cane",
+  "TwoHanded": true,
+  "Size": "2x3",
+  "Rarity": "Angelic",
+  "Stats": [
+    "+[4-5] to All Skills",
+    "+[15-25]% Increased Movement Speed",
+    "+[8-15] to Vitality",
+    "Attack Damage increased by value1%",
+    "Magic Skill Damage increased by value1%",
+    "+[25-35]% to All Resistances",
+    "[Mirror Aura] Level 1 (Holder Only)",
+    "Socketed (4)"
+  ]
+}

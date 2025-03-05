@@ -1,0 +1,33 @@
+{
+  "Item": "The Eye of Tarethiel",
+  "Tier": "SS",
+  "Level": "92",
+  "Damage": "37.0032-42",
+  "APS": "1.251.25",
+  "DPS": "46.5040-53",
+  "Type": "Cane",
+  "TwoHanded": true,
+  "Size": "2x3",
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "13% Chance when Casting [Eye of Tarethiel] Level 72",
+      "class": "stat-spell"
+    },
+    "+[5-10] to All Skills",
+    {
+      "stat": "+8 to [Age Proliferation]",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+8 to [Temporal Heroes]",
+      "class": "stat-spell"
+    },
+    "Cooldown Recovery Increased by [20-45]%",
+    "+[30-45] to Energy",
+    "Arcane Skill Damage increased by [15-30]%",
+    "Replenish Mana [25-35]%",
+    "+[8-15] Life After each Kill",
+    "+[15-30]% to All Resistances"
+  ]
+}

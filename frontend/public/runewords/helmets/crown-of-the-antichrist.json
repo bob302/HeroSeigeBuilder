@@ -1,0 +1,28 @@
+{
+  "Tier": "S",
+  "Level": "52",
+  "Size": "2x3",
+  "Item": "Crown of The Antichrist",
+  "Rarity": "Runeword",
+  "Type": "Helmet",
+  "Bases": [
+    "Helmet"
+  ],
+  "Runes": [
+    "Nju",
+    "Zed",
+    "Jol"
+  ],
+  "Stats": [
+    "+[425-625]% Enhanced Defense",
+    "+3 to All Skills",
+    "+35 to Sword Handler",
+    "+1 to Projectile Speed",
+    "-[15-20]% to All Enemy Resistances",
+    "Magic Skill Damage increased by 8%",
+    "+[25-30]% to All Resistances",
+    "+[6-25]% to Fire Resistance",
+    "Unbreakable",
+    "Socketed (3)"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "Item": "Arcanum Asphyxiators",
+  "Tier": "SS",
+  "Level": "100",
+  "Defense": "32.0026-38",
+  "Type": "Gloves",
+  "Size": "2x2",
+  "Rarity": "Heroic",
+  "Stats": [
+    "+[2-4] to Arcane Skills",
+    "+[20-30]% Faster Cast Rate",
+    "Explosion Damage increased by [15-25]%",
+    "Arcane Skill Damage increased by [20-35]%",
+    "Explosion area of effect increased by [20-40]%",
+    "[Ominous Aura] Level [12-20]"
+  ]
+}

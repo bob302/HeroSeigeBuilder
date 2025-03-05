@@ -1,0 +1,16 @@
+{
+  "Item": "Odin's Eternal Visage",
+  "Tier": "A",
+  "Level": "57",
+  "Defense": "99.9076-125",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[80-130]% Enhanced Defense",
+    "+8 to Energy",
+    "+5 Mana After each Kill",
+    "Life Increased by [3-5]%",
+    "+[5-10]% to All Resistances"
+  ]
+}

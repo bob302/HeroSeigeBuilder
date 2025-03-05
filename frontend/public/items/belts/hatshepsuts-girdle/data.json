@@ -1,0 +1,17 @@
+{
+  "Item": "Hatshepsut's Girdle",
+  "Tier": "A",
+  "Level": "64",
+  "Defense": "65.7053-80",
+  "Type": "Belt",
+  "Size": "2x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[45-65]% Enhanced Defense",
+    "+10% Increased Attack Speed",
+    "+3 to Light Radius",
+    "+[10-20]% Extra Gold Dropped From Kills",
+    "+[5-12]% Increased Magic Find",
+    "Belt Slots: 4"
+  ]
+}

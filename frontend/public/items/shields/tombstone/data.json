@@ -1,0 +1,23 @@
+{
+  "Item": "Tombstone",
+  "Tier": "SS",
+  "Level": "100",
+  "Defense": "2036.251710-2363",
+  "Block": "80",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Heroic",
+  "Stats": [
+    "+[350-425]% Enhanced Defense",
+    "+30 to Vitality",
+    "+[40-50] to Armor",
+    "+666 to Life",
+    "+[50-80]% Faster Hit Recovery",
+    "Life Increased by [4-10]%",
+    "+[125-175]% of Damage Returned to the Attacker",
+    "+15% of Damage Taken goes to Mana",
+    "Physical Damage Taken Reduced by [8-15]%",
+    "+[5-30]% to All Resistances",
+    "Socketed (0-4)"
+  ]
+}

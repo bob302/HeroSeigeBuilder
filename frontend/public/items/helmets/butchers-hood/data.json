@@ -1,0 +1,18 @@
+{
+  "Item": "Butcher's Hood",
+  "Tier": "S",
+  "Level": "78",
+  "Defense": "178.00132-224",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[120-180]% Enhanced Defense",
+    "+[1-2] to All Skills",
+    "+[1-2] to Physical Skills",
+    "+20% Chance for a Deadly Blow",
+    "+[10-20]% of target Defense ignored",
+    "+[1-3]% to Maximum All Resists",
+    "Attacks can hit multiple enemies"
+  ]
+}

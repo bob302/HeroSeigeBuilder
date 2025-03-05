@@ -1,0 +1,15 @@
+{
+  "Item": "Air Melon",
+  "Tier": "SS",
+  "Level": "94",
+  "Type": "Charm",
+  "Size": "2x2",
+  "Rarity": "Angelic",
+  "Stats": [
+    "+[4-6] to Lightning Skills",
+    "+1337 to Additive Lightning Damage",
+    "+1337 to Lightning Skill Damage",
+    "Lightning Skill Damage increased by [15-25]%",
+    "+[40-50]% to Lightning Resistance"
+  ]
+}

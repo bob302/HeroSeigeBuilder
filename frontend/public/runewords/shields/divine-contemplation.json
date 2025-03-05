@@ -1,0 +1,31 @@
+{
+  "Tier": "S",
+  "Level": "52",
+  "Size": "2x3",
+  "Item": "Divine Contemplation",
+  "Rarity": "Runeword",
+  "Type": "Shield",
+  "Bases": [
+    "Shield"
+  ],
+  "Runes": [
+    "Rex",
+    "Ert",
+    "Tul"
+  ],
+  "Stats": [
+    "Block Chance: 65",
+    "+50% Enhanced Defense",
+    "+[8-30] to Dexterity",
+    "Lightning Skill Damage increased by 5%",
+    "Poison Skill Damage increased by 5%",
+    "Fire Skill Damage increased by 5%",
+    "+10% of Damage Taken goes to Mana",
+    "+[38-48]% to Arcane Resistance",
+    "+[38-48]% το Cold Resistance",
+    "+[38-48]% to Fire Resistance",
+    "+[38-48]% to Poison Resistance",
+    "+[38-48]% to Lightning Resistance",
+    "Socketed (3)"
+  ]
+}

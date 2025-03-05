@@ -1,0 +1,20 @@
+{
+  "Item": "Harlequinn's Veil",
+  "Tier": "SS",
+  "Level": "92",
+  "Defense": "202.50180-225",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Heroic",
+  "Stats": [
+    "+[2-5] to All Skills",
+    "+[15-25] to All Attributes",
+    "+[40-75]% Faster Hit Recovery",
+    "Physical Damage Taken Reduced by [8-12]%",
+    "Magic Damage Taken Reduced by [8-12]%",
+    "+525 to Mana (Based on Level)",
+    "+[15-30]% to All Resistances",
+    "+[25-50]% Increased Magic Find",
+    "Socketed (1-3)"
+  ]
+}

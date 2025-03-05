@@ -1,15 +1,18 @@
 import {
+  transformToRuneword,
   ArmorEquipment,
   BaseItem,
   CharmEquipment,
   Equipment,
-  EquipmentSubtypes,
-  EquipmentType,
+  getEquipmentTypeBySubtype,
   Socketable,
   WeaponEquipment,
+  type IRuneword,
   type Socket,
   type Stat,
 } from "../models/Equipment";
+import { equipmentService } from "../service/EquipmentService";
+import { EquipmentSubtypes, EquipmentType } from "../util/Enums";
 import { StatFormatter } from "../util/StatFormatter";
 import { StatParser } from "./StatParser";
 import { v4 as uuidv4 } from "uuid";
@@ -66,18 +69,57 @@ export class ItemParser {
     }
   }
 
+  static parseRuneword(rawItem: any): (Equipment & IRuneword)[] {
+    let item = ItemParser.parseWikiItem(rawItem) as Equipment;
+    const runewords: (Equipment & IRuneword)[] = [];
+    if (rawItem.Rarity === "Runeword") {
+      const bases: string[] = rawItem.Bases
+
+      let runeword: (Equipment & IRuneword) = transformToRuneword(item, {
+        name: rawItem.Item,
+        runes: rawItem.Runes,
+        bases: bases
+      }) as (Equipment & IRuneword);
+      if (bases.length > 1) {
+        bases.map(base => {
+          let temp = runeword.clone() as (Equipment & IRuneword) 
+          temp.name = `${temp.name} (${base})`
+          temp.subtype = base
+          temp.type = getEquipmentTypeBySubtype(base)
+          const imagePath: string = `/runewords/${equipmentService.getDirectoryBySubtype(temp.subtype)}/icon.png`
+          temp.image = imagePath;
+          let warning = "This Runeword is generated automatically for all possible bases."
+          temp.addStat(warning)
+          warning = "Values ​​for one-handed and two-handed items may not match the actual ones.";
+          temp.addStat(warning)
+          const formattedBases = bases.map(b => `[${b}]`).join(' ');
+          temp.addStat(formattedBases)
+          runewords.push(temp)
+        });
+      } else {
+        const imagePath: string = `/runewords/${equipmentService.getDirectoryBySubtype(runeword.subtype)}/icon.png`
+        runeword.image = imagePath;
+        runewords.push(runeword)
+      }
+
+    }
+    
+    return runewords;
+  }
+
+  
+
   static parseWikiItem(rawItem: any): BaseItem {
     const subtype = rawItem.Type;
-
+    
     //@ts-ignore
     const type = Object.entries(EquipmentSubtypes).find(([key, subtypes]) =>
       subtypes.includes(subtype)
     )?.[0] as EquipmentType || EquipmentType.Special;
-
+  
     let size = { width: 1, height: 1 };
-
     const sizeStat = rawItem.Size;
-
+    
     if (sizeStat) {
       const match = sizeStat.match(/(\d+)x?(\d*)/);
       if (match) {
@@ -85,6 +127,19 @@ export class ItemParser {
         size.height = match[2] ? parseInt(match[2]) : 1;
       }
     }
+  
+    type JsonStat = string | { stat: string; class?: string };
+
+    const processedStats: Stat[] = rawItem.Stats.map((statObj: JsonStat) => {
+      if (typeof statObj === 'string') {
+        return ItemParser.parseWikiStat(statObj, false);
+      } else if (typeof statObj === 'object' && statObj !== null) {
+        return ItemParser.parseWikiStat(statObj.stat, statObj.class === 'stat-spell');
+      } else {
+        console.warn('Unexpected stat format:', statObj);
+        return null;
+      }
+    });
 
     const commonProps = {
       uuid: uuidv4(),
@@ -101,12 +156,7 @@ export class ItemParser {
         list: [] as Socket[],
       },
       image: rawItem.Image,
-      stats: rawItem.Stats.map((statObj: { stat: string; class: string }) =>
-        ItemParser.parseWikiStat(
-          statObj.stat,
-          statObj.class === "stat-spell" ? true : false,
-        ),
-      ),
+      stats: processedStats,
       isLoading: true,
       size: size,
     };
@@ -119,15 +169,15 @@ export class ItemParser {
     }
 
     // Socket Amount
-    const socketStat = rawItem.Stats.find((stat: { stat: string }) =>
-      stat.stat.includes("Socketed"),
+    const socketStat = processedStats.find((stat: Stat) =>
+      stat.name.includes("Socketed"),
     );
     if (socketStat) {
       const prismaticRegex = /{(\d+)(?:-(\d+))?}/;
       const normalRegex = /\((\d+)(?:-(\d+))?\)/;
 
-      const prismaticMatch = socketStat.stat.match(prismaticRegex);
-      const normalMatch = socketStat.stat.match(normalRegex);
+      const prismaticMatch = socketStat.name.match(prismaticRegex);
+      const normalMatch = socketStat.name.match(normalRegex);
 
       let normalSockets = 0;
       let prismaticSockets = 0;
@@ -153,35 +203,27 @@ export class ItemParser {
         ...Array(prismaticSockets).fill({ prismatic: true }),
       ];
     }
-
+  
+    let item: Equipment;
+    
     if (type === EquipmentType.Armor) {
-      const armorProps = {
-        ...commonProps,
-        armorStats: { defense: rawItem.defense || "0" },
-      };
-      
-      return new ArmorEquipment(armorProps);
+      item = new ArmorEquipment({ ...commonProps, armorStats: { defense: rawItem.defense || "0" } });
     } else if (type === EquipmentType.Weapon) {
-      let twoHanded = false;
-
-      if (rawItem.TwoHanded) {
-        twoHanded = rawItem.TwoHanded;
-      }
-
-      const weaponProps = {
+      item = new WeaponEquipment({
         ...commonProps,
         weaponStats: {
           APSStat: rawItem.APS || "0",
           attackDamageStat: rawItem.Damage || "0",
-          twoHanded: twoHanded,
+          twoHanded: rawItem.TwoHanded || false,
         },
-      };
-      return new WeaponEquipment(weaponProps);
+      });
     } else if (subtype === "Charm") {
-      return new CharmEquipment(commonProps);
+      item = new CharmEquipment(commonProps);
     } else {
-      return new Equipment(commonProps);
+      item = new Equipment(commonProps);
     }
+  
+    return item;
   }
 
   static parseWikiStat(stat: any, special = false): Stat {

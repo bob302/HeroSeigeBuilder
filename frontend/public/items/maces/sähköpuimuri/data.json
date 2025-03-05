@@ -1,0 +1,26 @@
+{
+  "Item": "Sähköpuimuri",
+  "Tier": "SS",
+  "Level": "94",
+  "Damage": "493.30424-564",
+  "APS": "3.463.23-3.7",
+  "DPS": "1726.001368-2084",
+  "Type": "Mace",
+  "TwoHanded": false,
+  "Size": "2x2",
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "20% Chance when Striking [Storm Caller] Level 96",
+      "class": "stat-spell"
+    },
+    "+[630-780]% Enhanced Damage",
+    "+[3-5] to Lightning Skills",
+    "+[75-100]% Increased Attack Speed",
+    "+40% of target Defense ignored",
+    "Lightning Skill Damage increased by [25-40]%",
+    "-25% to Enemy Lightning Resistance",
+    "+[15-20] Mana After each Kill",
+    "Socketed (1-4)"
+  ]
+}

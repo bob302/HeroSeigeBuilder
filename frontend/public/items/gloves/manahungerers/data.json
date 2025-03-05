@@ -1,0 +1,16 @@
+{
+  "Item": "Manahungerers",
+  "Tier": "SS",
+  "Level": "100",
+  "Defense": "32.0026-38",
+  "Type": "Gloves",
+  "Size": "2x2",
+  "Rarity": "Heroic",
+  "Stats": [
+    "+3 to Cold Skills",
+    "+[15-25] to Energy",
+    "Magic Skill Damage increased by [5-20]%",
+    "Mana Increased by [40-50]%",
+    "Unholy Stat"
+  ]
+}

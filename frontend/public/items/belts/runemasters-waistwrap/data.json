@@ -1,0 +1,16 @@
+{
+  "Item": "Runemaster's Waistwrap",
+  "Tier": "C",
+  "Level": "30",
+  "Defense": "12.008-16",
+  "Type": "Belt",
+  "Size": "2x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[2-10] to Energy",
+    "+5 to Intelligence",
+    "Arcane Skill Damage increased by 12%",
+    "Magic Damage Taken Reduced by 3%",
+    "Belt Slots: 3"
+  ]
+}

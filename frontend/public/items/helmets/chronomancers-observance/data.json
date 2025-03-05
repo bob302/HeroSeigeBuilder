@@ -1,0 +1,17 @@
+{
+  "Item": "Chronomancer's Observance",
+  "Tier": "A",
+  "Level": "57",
+  "Defense": "99.9076-125",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[80-130]% Enhanced Defense",
+    "+75 to Life",
+    "+75 to Mana",
+    "+30% Defense vs Missiles",
+    "+10% to All Resistances",
+    "+15% Increased Magic Find"
+  ]
+}

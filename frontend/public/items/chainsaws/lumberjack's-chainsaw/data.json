@@ -1,0 +1,30 @@
+{
+  "Item": "Lumberjack's Chainsaw",
+  "Tier": "S",
+  "Level": "70",
+  "Damage": "373.50354-394",
+  "APS": "2.091.95-2.23",
+  "DPS": "784.00690-878",
+  "Type": "Chainsaw",
+  "TwoHanded": true,
+  "Size": "2x3",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[365-380]% Enhanced Damage",
+    {
+      "stat": "+[2-4] to [Chainsaw Mastery]",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "+[2-5] to [Revved Up]",
+      "class": "stat-spell"
+    },
+    "+[40-60]% Increased Attack Speed",
+    "+[680-700] to Attack Rating",
+    "+30 to Strength",
+    "+20 to Vitality",
+    "+[440-470] to Life",
+    "Life Increased by [2-5]%",
+    "Attacks can hit multiple enemies"
+  ]
+}

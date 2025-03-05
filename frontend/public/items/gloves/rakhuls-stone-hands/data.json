@@ -1,0 +1,18 @@
+{
+  "Item": "Rakhul's Stone Hands",
+  "Tier": "SS",
+  "Level": "100",
+  "Defense": "165.25127-204",
+  "Type": "Gloves",
+  "Size": "2x2",
+  "Rarity": "Heroic",
+  "Stats": [
+    "+[175-200]% Enhanced Defense",
+    "+[1-2] to All Skills",
+    "+[12-20] to Dexterity",
+    "+[12-20] to Vitality",
+    "+[15-25] to Armor",
+    "+150% Defense vs Missiles",
+    "+[1-4]% to Maximum All Resists"
+  ]
+}

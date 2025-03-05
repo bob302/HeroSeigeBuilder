@@ -1,0 +1,15 @@
+{
+  "Item": "Claw of the Bloodthirsty",
+  "Tier": "S",
+  "Level": "88",
+  "Type": "Amulet",
+  "Size": "1x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+5% Increased Critical Strike Chance",
+    "+[4-8]% Life stolen per Hit",
+    "+[25-40]% Increased Critical Strike Damage",
+    "+[25-40] to Strength",
+    "+[25-40] to Dexterity"
+  ]
+}

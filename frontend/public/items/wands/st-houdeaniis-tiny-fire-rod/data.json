@@ -1,0 +1,26 @@
+{
+  "Item": "St. HouDeanii's Tiny Fire Rod",
+  "Tier": "SS",
+  "Level": "96",
+  "Damage": "37.0032-42",
+  "APS": "1.751.75",
+  "DPS": "65.0056-74",
+  "Type": "Wand",
+  "TwoHanded": false,
+  "Size": "1x3",
+  "Rarity": "Angelic",
+  "Stats": [
+    {
+      "stat": "20% Chance after each Kill [Comet] Level 134",
+      "class": "stat-spell"
+    },
+    "+[2-4] to All Skills",
+    "+[2-4] to Fire Skills",
+    "+50% Faster Cast Rate",
+    "+[4-8] Mana per second",
+    "+[20-40] to Intelligence",
+    "Fire Skill Damage increased by [20-35]%",
+    "-[20-35]% to Enemy Fire Resistance",
+    "Socketed (1-3)"
+  ]
+}

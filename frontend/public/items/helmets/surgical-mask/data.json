@@ -1,0 +1,17 @@
+{
+  "Item": "Surgical Mask",
+  "Tier": "D",
+  "Level": "12",
+  "Defense": "7.805-11",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[20-35]% Enhanced Defense",
+    "+[10-15]% Faster Cast Rate",
+    "Replenish Mana 10%",
+    "+35 to Mana",
+    "+12 Mana After each Kill",
+    "Socketed (1-2)"
+  ]
+}

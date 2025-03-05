@@ -1,0 +1,20 @@
+{
+  "Item": "Shield Bearer's Crown",
+  "Tier": "A",
+  "Level": "52",
+  "Defense": "99.9076-125",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[80-130]% Enhanced Defense",
+    "+1 to All Skills",
+    {
+      "stat": "+[1-4] to [Combat Orders]",
+      "class": "stat-spell"
+    },
+    "+15 to Vitality",
+    "Replenish Life 10%",
+    "Life Increased by 2%"
+  ]
+}

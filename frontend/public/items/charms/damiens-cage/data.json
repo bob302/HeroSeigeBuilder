@@ -1,0 +1,13 @@
+{
+  "Item": "Damien's Cage",
+  "Tier": "S",
+  "Level": "65",
+  "Type": "Charm",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[1-3] to Arcane Skills",
+    "+[10-35] to Intelligence",
+    "+[20-45]% to Arcane Resistance"
+  ]
+}

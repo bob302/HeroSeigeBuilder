@@ -1,0 +1,17 @@
+{
+  "Item": "Lich Sash",
+  "Tier": "B",
+  "Level": "36",
+  "Defense": "36.2026-47",
+  "Type": "Belt",
+  "Size": "2x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[30-45]% Enhanced Defense",
+    "+1 to All Skills",
+    "Arcane Skill Damage increased by [3-8]%",
+    "Mana Increased by 5%",
+    "+[45-60]% to Arcane Resistance",
+    "Belt Slots: 4"
+  ]
+}

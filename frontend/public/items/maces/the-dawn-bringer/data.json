@@ -1,0 +1,28 @@
+{
+  "Item": "The Dawn Bringer",
+  "Tier": "SS",
+  "Level": "100",
+  "Damage": "339.30308-372",
+  "APS": "1.751.75",
+  "DPS": "594.00538-650",
+  "Type": "Mace",
+  "TwoHanded": false,
+  "Size": "2x3",
+  "Rarity": "Angelic",
+  "Stats": [
+    {
+      "stat": "35% Chance when Casting [Fist of the Heavens] Level 54",
+      "class": "stat-spell"
+    },
+    "+[430-480]% Enhanced Damage",
+    "+3 to All Skills",
+    "+[35-50]% Faster Cast Rate",
+    "+[8-12] Mana per second",
+    "+[15-35] to All Attributes",
+    "-[15-25]% to All Enemy Resistances",
+    "Magic Skill Damage increased by [18-40]%",
+    "All Damage Taken Reduced by [3-6]%",
+    "+40% to All Resistances",
+    "Socketed (3-5)"
+  ]
+}

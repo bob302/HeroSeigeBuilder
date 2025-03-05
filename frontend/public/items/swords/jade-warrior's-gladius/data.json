@@ -1,0 +1,22 @@
+{
+  "Item": "Jade Warrior's Gladius",
+  "Tier": "C",
+  "Level": "27",
+  "Damage": "103.0585-122",
+  "APS": "1.351.35",
+  "DPS": "140.00115-165",
+  "Type": "Sword",
+  "Size": "2x3",
+  "TwoHanded": true,
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[225-280]% Enhanced Damage",
+    "+[5-10] to Strength",
+    "+5 to Vitality",
+    "+[135-155] to Additive Poison Damage",
+    "+30 to Life",
+    "+5 Life After each Kill",
+    "Attacks can hit multiple enemies",
+    "Socketed (0-2)"
+  ]
+}

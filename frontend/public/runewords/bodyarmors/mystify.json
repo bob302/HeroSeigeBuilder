@@ -1,0 +1,28 @@
+{
+  "Tier": "S",
+  "Level": "52",
+  "Size": "2x3",
+  "Item": "Mystify",
+  "Rarity": "Runeword",
+  "Type": "Body Armor",
+  "Bases": [
+    "Body Armor"
+  ],
+  "Runes": [
+    "Hel",
+    "Ymn",
+    "Naf"
+  ],
+  "Stats": [
+    "10% Chance when Striking [Taunt] Level 8",
+    "8% Chance when Struck [Odin's Fury] Level 5",
+    "+[1-2] to All Skills",
+    "Cooldown Recovery Increased by 4%",
+    "+7% Life stolen per Hit",
+    "+[8-30] to Vitality",
+    "Replenish Life 10%",
+    "+15% Defense vs Missiles",
+    "+[30-40]% of Damage Returned to the Attacker",
+    "Socketed (3)"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "Item": "Rendguard of Carnage",
+  "Tier": "B",
+  "Level": "40",
+  "Defense": "50.3029-72",
+  "Block": "25",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[30-80]% Enhanced Defense",
+    "+[5-10]% Increased Critical Strike Chance",
+    "+[5-10]% Chance for a Deadly Blow",
+    "+[5-10]% Chance for a Crushing Blow",
+    "+[180-200] to Attack Rating"
+  ]
+}

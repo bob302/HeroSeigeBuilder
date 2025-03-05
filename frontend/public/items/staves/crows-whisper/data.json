@@ -1,0 +1,23 @@
+{
+  "Item": "Crow's Whisper",
+  "Tier": "SS",
+  "Level": "100",
+  "Damage": "50.0048-52",
+  "APS": "1.141.14",
+  "DPS": "57.5055-60",
+  "Type": "Staff",
+  "TwoHanded": true,
+  "Size": "2x3",
+  "Rarity": "Unholy",
+  "Stats": [
+    {
+      "stat": "10% Chance when Casting [Despair] Level 1",
+      "class": "stat-spell"
+    },
+    "+[5-8] to All Skills",
+    "+10 to Lightning Skills",
+    "Replenish Mana 150%",
+    "Unbreakable",
+    "Socketed (6)"
+  ]
+}

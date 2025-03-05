@@ -1,0 +1,29 @@
+{
+  "Item": "Stofflix Cooking Cleaver",
+  "Tier": "SS",
+  "Level": "100",
+  "Damage": "505.00459-551",
+  "APS": "2.672.47-2.88",
+  "DPS": "1360.501134-1587",
+  "Type": "Sword",
+  "Size": "2x3",
+  "TwoHanded": false,
+  "Rarity": "Unholy",
+  "Stats": [
+    {
+      "stat": "[10-15]% Chance when Casting [Supernova] Level [75-85]",
+      "class": "stat-spell"
+    },
+    "+[575-625]% Enhanced Damage",
+    "+2 to All Skills",
+    "+8 to Fire Skills",
+    "+[40-55]% Faster Cast Rate",
+    "+[50-75]% Increased Attack Speed",
+    "Extra Damage to Burning Monsters [35-50]%",
+    "+[20-30] to All Attributes",
+    "+[10000-15000] to Additive Fire Damage",
+    "Fire Skill Damage increased by 35%",
+    "Unbreakable",
+    "Socketed (4)"
+  ]
+}

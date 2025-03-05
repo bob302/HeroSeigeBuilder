@@ -1,0 +1,14 @@
+{
+  "Item": "Compass of Wealth",
+  "Tier": "SS",
+  "Level": "99",
+  "Type": "Amulet",
+  "Size": "1x2",
+  "Rarity": "Heroic",
+  "Stats": [
+    "+[15-20] to All Attributes",
+    "+35% Magic Find (Based on Level)",
+    "+[30-40]% Extra Gold Dropped From Kills",
+    "+[20-70]% Increased Magic Find"
+  ]
+}

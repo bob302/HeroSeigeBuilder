@@ -1,0 +1,19 @@
+{
+  "Item": "Gas Canister",
+  "Tier": "SS",
+  "Level": "100",
+  "Type": "Charm",
+  "Size": "2x2",
+  "Rarity": "Heroic",
+  "Stats": [
+    {
+      "stat": "8% Chance when Casting [Fuel the Flames!!] Level 3",
+      "class": "stat-spell"
+    },
+    "+[2-5] to Fire Skills",
+    {
+      "stat": "+[5-10] to [Oil Spill]",
+      "class": "stat-spell"
+    }
+  ]
+}

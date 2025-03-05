@@ -1,0 +1,16 @@
+{
+  "Item": "Gloves of Wilderness",
+  "Tier": "A",
+  "Level": "52",
+  "Defense": "28.5024-34",
+  "Type": "Gloves",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[30-40]% Enhanced Defense",
+    "+15 to Energy",
+    "Lightning Skill Damage increased by [10-20]%",
+    "Fire Skill Damage increased by [10-20]%",
+    "+125 to Mana"
+  ]
+}

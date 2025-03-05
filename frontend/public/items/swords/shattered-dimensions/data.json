@@ -1,0 +1,21 @@
+{
+  "Item": "Shattered Dimensions",
+  "Tier": "B",
+  "Level": "36",
+  "Damage": "188.10160-217",
+  "APS": "1.201.2",
+  "DPS": "226.00192-260",
+  "Type": "Sword",
+  "Size": "2x3",
+  "TwoHanded": true,
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[300-370]% Enhanced Damage",
+    "+50% Increased Movement Speed",
+    "+5% Increased Critical Strike Chance",
+    "+15% Increased Critical Strike Damage",
+    "+[30-45] to Strength",
+    "+30% Magic Find (Based on Level)",
+    "Attacks can hit multiple enemies"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "Item": "Battle Worn Visor",
+  "Tier": "B",
+  "Level": "38",
+  "Defense": "79.3060-99",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[55-85]% Enhanced Defense",
+    "+5% Life stolen per Hit",
+    "+10 to Strength",
+    "+15 Life After each Kill",
+    "+75% Enhanced Damage (Based on Level)"
+  ]
+}

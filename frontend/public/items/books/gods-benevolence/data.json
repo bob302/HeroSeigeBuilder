@@ -1,0 +1,22 @@
+{
+  "Item": "God's Benevolence",
+  "Tier": "B",
+  "Level": "41",
+  "Damage": "26.0024-28",
+  "APS": "1.751.75",
+  "DPS": "45.5042-49",
+  "Type": "Book",
+  "TwoHanded": false,
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    {
+      "stat": "10% Chance when Struck [Flash Heal] Level 30",
+      "class": "stat-spell"
+    },
+    "Magic Skill Damage increased by 10%",
+    "+20% Faster Hit Recovery",
+    "Physical Damage Taken Reduced by 15%",
+    "Socketed (0-2)"
+  ]
+}

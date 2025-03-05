@@ -1,0 +1,15 @@
+{
+  "Item": "Fire Melon",
+  "Tier": "SS",
+  "Level": "94",
+  "Type": "Charm",
+  "Size": "2x2",
+  "Rarity": "Angelic",
+  "Stats": [
+    "+[4-6] to Fire Skills",
+    "+1337 to Additive Fire Damage",
+    "+1337 to Fire Skill Damage",
+    "Fire Skill Damage increased by [15-25]%",
+    "+[40-50]% to Fire Resistance"
+  ]
+}

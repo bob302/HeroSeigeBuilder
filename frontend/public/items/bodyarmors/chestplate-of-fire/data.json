@@ -1,0 +1,18 @@
+{
+  "Item": "Chestplate of Fire",
+  "Tier": "A",
+  "Level": "57",
+  "Defense": "357.50299-416",
+  "Type": "Body Armor",
+  "Size": "2x3",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[130-160]% Enhanced Defense",
+    "+1 to All Skills",
+    "-[20-25]% to Enemy Fire Resistance",
+    "+[25-35] to Life",
+    "+[10-20] Mana After each Kill",
+    "+50 to Mana (Based on Level)",
+    "Socketed (0-3)"
+  ]
+}

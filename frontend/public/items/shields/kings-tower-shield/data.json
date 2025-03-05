@@ -1,0 +1,19 @@
+{
+  "Item": "King's Tower Shield",
+  "Tier": "S",
+  "Level": "83",
+  "Defense": "336.00272-400",
+  "Block": "70",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[240-300]% Enhanced Defense",
+    "+[15-25] to All Attributes",
+    "+30% Faster Hit Recovery",
+    "+5% Increased Defense",
+    "Physical Damage Taken Reduced by [8-15]%",
+    "Magic Damage Taken Reduced by [8-15]%",
+    "+50% to All Resistances"
+  ]
+}

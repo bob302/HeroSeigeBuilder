@@ -1,0 +1,17 @@
+{
+  "Item": "Knight's Girdle",
+  "Tier": "S",
+  "Level": "94",
+  "Defense": "105.8086-126",
+  "Type": "Belt",
+  "Size": "2x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[65-85]% Enhanced Defense",
+    "+[1-2] to All Skills",
+    "+[30-40] to Vitality",
+    "+[40-60]% of Damage Returned to the Attacker",
+    "Physical Damage Taken Reduced by [2-4]%",
+    "Belt Slots: 5"
+  ]
+}

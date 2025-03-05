@@ -1,0 +1,17 @@
+{
+  "Item": "Sand Traveler's Guise",
+  "Tier": "A",
+  "Level": "58",
+  "Defense": "171.20143-200",
+  "Type": "Helmet",
+  "Size": "2x2",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[130-170]% Enhanced Defense",
+    "+[10-15]% Increased Movement Speed",
+    "+20% Increased Attack Speed",
+    "+20% Chance to Open Wounds",
+    "+[15-20] to Strength",
+    "+8 to Vitality"
+  ]
+}

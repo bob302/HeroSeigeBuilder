@@ -42,6 +42,7 @@ export default toNative(Socket)
   scale: 1.8;
   position: relative;
   z-index: 1;
+  user-select: none;
 }
 
 .socketable-image {

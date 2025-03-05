@@ -1,0 +1,14 @@
+{
+  "Item": "Molten Ring",
+  "Tier": "S",
+  "Level": "88",
+  "Type": "Ring",
+  "Size": "1x1",
+  "Rarity": "Satanic",
+  "Stats": [
+    "+[240-275] to Additive Fire Damage",
+    "+[30-45] to Life",
+    "Life Increased by [3-5]%",
+    "+[15-25]% to Fire Resistance"
+  ]
+}

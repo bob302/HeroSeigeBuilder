@@ -1,0 +1,16 @@
+{
+  "Item": "Boots of Wild",
+  "Tier": "A",
+  "Level": "53",
+  "Defense": "68.7051-87",
+  "Type": "Boots",
+  "Size": "2x2",
+  "Rarity": "Satanic Set",
+  "Stats": [
+    "+[50-80]% Enhanced Defense",
+    "+30% Increased Movement Speed",
+    "+20% Faster Cast Rate",
+    "+50% Faster Hit Recovery",
+    "+[35-50]% Defense vs Missiles"
+  ]
+}

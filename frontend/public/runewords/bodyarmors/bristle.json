@@ -1,0 +1,33 @@
+{
+  "Tier": "S",
+  "Level": "61",
+  "Size": "2x3",
+  "Item": "Bristle",
+  "Rarity": "Runeword",
+  "Type": "Body Armor",
+  "Bases": [
+    "Body Armor"
+  ],
+  "Runes": [
+    "Rex",
+    "Qi",
+    "Sur",
+    "Eth"
+  ],
+  "Stats": [
+    "+10% of target Defense ignored",
+    "Attack Damage increased by 20%",
+    "Poison Skill Damage increased by [25-50]%",
+    "Fire Skill Damage increased by 5%",
+    "Replenish Mапа 15%",
+    "+50% Faster Hit Recovery",
+    "+15 Life After each Kill",
+    "Mana Increased by 15%",
+    "+[4-15]% of Damage Taken goes to Mana",
+    "+30% to Fire Resistance",
+    "+100% to Poison Resistance",
+    "Unbreakable",
+    "Thorns Aura Level [15-22]",
+    "Socketed (4)"
+  ]
+}

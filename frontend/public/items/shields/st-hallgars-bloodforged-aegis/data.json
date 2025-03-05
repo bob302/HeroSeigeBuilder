@@ -1,0 +1,27 @@
+{
+  "Item": "St. Hallgar's Bloodforged Aegis",
+  "Tier": "SS",
+  "Level": "100",
+  "Defense": "946.00836-1056",
+  "Block": "75",
+  "Type": "Shield",
+  "Size": "2x3",
+  "Rarity": "Angelic",
+  "Stats": [
+    {
+      "stat": "6% Chance after Blocking [Holy Shield] Level 20",
+      "class": "stat-spell"
+    },
+    "+[280-340]% Enhanced Defense",
+    "+3 to All Skills",
+    "Cooldown Recovery Increased by [5-10]%",
+    "+50 to Vitality",
+    "+40% Faster Hit Recovery",
+    "Life Increased by [4-8]%",
+    "+[15-20]% of Damage Taken goes to Life",
+    "Physical Damage Taken Reduced by [10-15]%",
+    "Magic Damage Taken Reduced by [10-15]%",
+    "+50% to All Resistances",
+    "Socketed (3-6)"
+  ]
+}

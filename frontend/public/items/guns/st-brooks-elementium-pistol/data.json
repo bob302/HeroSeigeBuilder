@@ -1,0 +1,28 @@
+{
+  "Item": "St. Brooks Elementium Pistol",
+  "Tier": "SS",
+  "Level": "100",
+  "Damage": "607.60530-686",
+  "APS": "1.851.85",
+  "DPS": "1125.00980-1270",
+  "Type": "Gun",
+  "TwoHanded": false,
+  "Size": "2x2",
+  "Rarity": "Angelic",
+  "Stats": [
+    {
+      "stat": "7% Chance when Striking [Blizzard] Level 112",
+      "class": "stat-spell"
+    },
+    {
+      "stat": "12% Chance when Attacking [Tornado] Level 119",
+      "class": "stat-spell"
+    },
+    "+[740-880]% Enhanced Damage",
+    "+[2-4] to All Skills",
+    "+1250 to Attack Rating",
+    "-[10-15]% to All Enemy Resistances",
+    "Magic Skill Damage increased by [25-45]%",
+    "Socketed (2-4)"
+  ]
+}
