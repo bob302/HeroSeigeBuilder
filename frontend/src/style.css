@@ -32,11 +32,21 @@
   --color-text-primary: #ffffff;
   --color-text-secondary: #c7b377;
   --color-background: rgba(0, 0, 0, 0.8);
-  --color-border: #ffffff;
+  --color-border: #bd8a1d;
+  --color-skill-maxed: #ff5100;
   --color-subskill-name: #ff5100;
-  --color-button: #28314b;
+  --color-button: #570a0a;
   --color-button-hover:rgb(102, 35, 99)b;
-  --color-modal: #22315e7a;
+  --color-modal: #00143fb0;
+  --color-modal-background: #000925b7;
+  --color-catalog-highlight: rgba(157, 255, 0, 0.7);
+  --color-warning: rgb(192, 0, 106);
+  --color-line: #ffffff;
+  --color-line-learned: #ff5e00;
+  --color-node: gray;
+  --color-node-maxed: #ff7f00;
+  --color-node-can-learn: #3498db;
+  --color-node-learned: #2ecc71;
   /* Colors Tiers*/
   --color-s: #f3c632;
   --color-a: #e69650;
@@ -70,7 +80,7 @@ h3,
 h4,
 h5 {
   font-family: "Fenris";
-  font-weight: 600;
+  color: var(--color-text-primary);
 }
 
 #app {
@@ -79,12 +89,15 @@ h5 {
 
 button {
   background: var(--color-button);
-  border: var(--color-border);
-  color: #f0e6d2;
+  border: 1px solid var(--color-border);
+  color: var(--color-text-secondary);
+  text-shadow: 2px 2px black;
+  text-transform: uppercase;
   cursor: pointer;
-  border-radius: 1px;
   font-weight: bold;
-  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 button:hover {
@@ -107,30 +120,32 @@ button:hover {
   background-color: rgba(0, 55, 125, 0.5);
 }
 
+@media (max-width: 768) {
+  button {
+    transition: none;
+  }
+  button:hover {
+    background: none;
+  }
+}
+
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    --color-text-primary: #ffffff;
+    --color-text-secondary: #779cc7;
+    --color-border: #FFFFFF;
+    --color-subskill-name: #ff5100;
+    --color-button: #212449;
+    --color-button-hover:rgb(102, 35, 99)b;
+    --color-warning: rgb(192, 0, 106);
+    --color-line: #181130;
+    --color-line-learned: #ff5e00;
+    --color-node: rgb(43, 43, 43);
+    --color-node-maxed: #b700ff;
+    --color-node-can-learn: #3498db;
+    --color-node-learned: #2ecc71;
   }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
-
-/* Dark Theme (default) */
-[data-theme="dark"] {
-  --color-background: rgba(0, 0, 0, 0.8);
-  --color-text-primary: #ffffff;
-}
-
-/* Light Theme */
-[data-theme="light"] {
-  --color-background: rgba(255, 255, 255, 0.9);
-  --color-text-primary: #000000;
 }
 
 /* Font-face */

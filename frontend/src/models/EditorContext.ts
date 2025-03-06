@@ -147,22 +147,24 @@ export default class EditorContext {
 
     this.itemOnCursor = slot.clone();
     this.itemOnCursor.onCursor = true
-
-    this.equipmentSlots.forEach(eq => {
-      const toRemove = eq.slot.item?.uniqueId === slot.item?.uniqueId
+    //@ts-ignore
+    for (const [key, eq] of this.equipmentSlots) {
+      const toRemove = eq.slot.item?.uniqueId === slot.item?.uniqueId;
       if (toRemove) {
-        eq.slot.item = null
+        console.trace('removed', eq.slot.item?.uniqueId);
+        eq.slot.item = null;
         return true
       }
-    })
+    }
 
-    this.inventories.forEach(inv => {
+    //@ts-ignore
+    for (const [key, inv] of this.inventories) {
       const toRemove = inv.slots.find(s => slot.item?.uniqueId === s.item?.uniqueId)
       if (toRemove) {
         inv.removeItemBySlot(toRemove)
         return true
       }
-    })
+    }
 
     return false
   }

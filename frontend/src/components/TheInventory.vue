@@ -148,9 +148,6 @@ export default toNative(TheInventory)
 </script>
 
 <style>
-.charm-inventory-wrapper {
-  background-color: var(--color-background);
-}
 .column-left {
   display: flex;
   flex-direction: column;
@@ -181,7 +178,6 @@ export default toNative(TheInventory)
 }
 
 .equipment-wrapper {
-  background-color: var(--color-background);
   display: grid;
   grid-template-columns: repeat(8, 1rem);
   grid-template-rows: repeat(8, 1rem);
@@ -307,7 +303,6 @@ export default toNative(TheInventory)
 .buttons > * {
   border: none;
   cursor: pointer;
-  background: var(--color-button);
   height: 2rem;
 }
 

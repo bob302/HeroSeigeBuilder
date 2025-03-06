@@ -6,6 +6,7 @@
       :key="item.uuid"
       :equipment="item"
       :src="itemBackgroundSrc"
+      :highlighted="item.uuid === highlightedItem"
       @item-click="handleItemClick(item)"
     />
   </div>
@@ -21,6 +22,7 @@ import { Point2D } from "../models/Point2D";
 
 @Component({
   components: { CatalogItem },
+  emits: ['item-added']
 })
 class EquipmentCatalog extends Vue {
   @Inject({ from: "editorContext" })
@@ -30,31 +32,33 @@ class EquipmentCatalog extends Vue {
     "/img/editor/item-background.png";
   @Prop({ type: Boolean, required: false }) showSockets: boolean = false;
 
-  handleItemClick(equipment: BaseItem) {
-    const targetInventory =
-      equipment instanceof CharmEquipment
-        ? this.editorContext.charmInventory
-        : this.editorContext.mainInventory;
+  highlightedItem: string | null = null
 
-      const clone = equipment.clone()
-        
-    if (
-      !targetInventory.addItem(
-        new Item(
-          clone,
-          new Point2D(equipment.size.width, equipment.size.height),
-        ),
-      )
-    ) {
-      this.editorContext.mainInventory.addItem(
-        new Item(
-          clone,
-          new Point2D(equipment.size.width, equipment.size.height),
-        ),
-      );
-      this.$emit("item-added");
-    }
+  handleItemClick(equipment: BaseItem) {
+  const targetInventory =
+    equipment instanceof CharmEquipment
+      ? this.editorContext.charmInventory
+      : this.editorContext.mainInventory;
+
+  const clone = equipment.clone();
+  const item = new Item(clone, new Point2D(equipment.size.width, equipment.size.height));
+
+  const added = targetInventory.addItem(item) || this.editorContext.mainInventory.addItem(item);
+
+  if (added) {
+    this.hightlight(equipment.uuid);
   }
+}
+
+private hightlight(uuid: string) {
+  this.$emit("item-added");
+
+    this.highlightedItem = uuid;
+    setTimeout(() => {
+      this.highlightedItem = null;
+    }, 300);
+}
+
 }
 
 export { EquipmentCatalog }

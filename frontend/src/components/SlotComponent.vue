@@ -22,14 +22,14 @@ import ItemComponent from "./ItemComponent.vue";
   components: {
     ItemComponent,
   },
-  emits: ["slot-click", "slot-mouse-enter", "slot-mouse-leave"],
+  emits: ["slot-item-click", "slot-mouse-enter", "slot-mouse-leave"],
 })
 class SlotComponent extends Vue {
   @Prop({ type: Slot, required: true }) slotData!: Slot;
 
   onClick() {
     if (!this.slotData) return;
-    this.$emit("slot-click", this.slotData);
+      this.$emit("slot-item-click", this.slotData);
   }
 
   onMouseEnter(): void {

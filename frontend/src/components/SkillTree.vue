@@ -110,7 +110,7 @@ class SkillTreeComponent extends Vue {
       top: `${fromY}px`,
       width: `${length}px`,
       transform: `rotate(${angle}deg)`,
-      background: bothLearned ? "rgb(233, 66, 0)" : "#888",
+      background: bothLearned ? "var(--color-line-learned)" : "var(--color-line)",
     };
   }
 }
@@ -122,16 +122,17 @@ export default toNative(SkillTreeComponent)
 .skill-tree {
   display: grid;
   position: relative;
-  border: 2px solid #ccc;
-  background-color: var(--color-background);
+  border: 2px solid var(--color-border);
+  z-index: 1;
 }
 
 .skill-line {
   position: absolute;
   height: 2px;
-  background: rgba(233, 66, 0, 0.6);
+  background: var(--color-line);
   transform-origin: left center;
   pointer-events: none;
+  z-index: -1;
 }
 
 .skill-tree-name {

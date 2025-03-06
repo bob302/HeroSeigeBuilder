@@ -34,7 +34,7 @@ export default toNative(TextModalComponent);
   left: 0;
   width: 100%;
   height: 100%;
-  background: var(--color-background);
+  background: var(--color-modal-background);
   display: flex;
   align-items: center;
   justify-content: center;

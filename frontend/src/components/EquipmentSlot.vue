@@ -9,11 +9,13 @@
     />
 
     <SlotComponent
+      v-if="equipmentSlot.slot.item !== null"
       class="equipment-slot-slot"
       :slot-data="equipmentSlot.slot"
-      @click="onSlotClick"
+      @slot-item-click="onSlotClick"
       @slot-mouse-enter="onSlotHover"
       @slot-mouse-leave="onSlotMouseLeave"
+      @touchend.prevent
     />
   </div>
 </template>
@@ -91,7 +93,6 @@ class EquipmentSlotComponent extends Vue {
   }
 
   placeItem() {
-    
     const onCursor = this.editorContext.getItemOnCursor(); 
     if (onCursor === null || !onCursor.item) return
     
@@ -124,7 +125,6 @@ class EquipmentSlotComponent extends Vue {
     }
   }
 
-  // ПЕРЕПИСАТЬ
   onSlotClick() {
     if (this.editorContext.isItemOnCursor() && this.equipmentSlot.slot.item !== null) {
       const item = this.editorContext.getItemOnCursor(); 

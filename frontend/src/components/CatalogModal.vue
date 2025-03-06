@@ -295,7 +295,7 @@ export default toNative(CatalogModal)
   transform: translate(-50%, -50%);
   padding: 1rem;
   background: rgba(0, 0, 0, 0.8);
-  color: white;
+  color: var(--color-text-primary);
   border-radius: 4px;
 }
 
@@ -366,7 +366,7 @@ select, input[type="text"], input[type="checkbox"] {
   padding: 0.5rem;
   border: 1px solid var(--color-border);
   background: var(--color-button);
-  color: #f0e6d2;
+  color: var(--color-text-primary);
   max-width: 100%;
 }
 

@@ -5,7 +5,7 @@
     :style="pointerEvents ? 'pointer-events: all' : 'pointer-events: none'"
     @mouseenter="onMouseEnter"
     @mouseleave="onMouseLeave"
-    v-on-long-press="[onLongPressCallback, { delay: 750, onMouseUp: onMouseUpCallback, modifiers: {stop: true}}]"
+    v-on-long-press="[onLongPressCallback, { delay: 750, distanceThreshold: 24, onMouseUp: onMouseUpCallback}]"
     >
     <img
       :src="equipment.image ? equipment.image : 'img/editor/fallback-icon.webp'"
@@ -143,19 +143,27 @@ export default toNative(ItemComponent)
   user-select: none;
   width: 100%;
   height: 100%;
-  object-fit: contain; /* Автоматическое масштабирование с сохранением пропорций */
+  object-fit: contain;
   scale: 1.5;
+  pointer-events: none;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -webkit-user-drag: none; /* Safari */
 }
 
 
 .socket-container {
   display: grid;
   position: absolute;
-  pointer-events: none;
   z-index: 11;
   justify-content: center;
   grid-row-gap: 1.25rem;
   grid-column-gap: 1.25rem;
+  pointer-events: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
 }
 
 .one-layout {
