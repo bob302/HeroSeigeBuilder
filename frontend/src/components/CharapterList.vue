@@ -70,6 +70,7 @@ export default toNative(CharapterList)
 .scrolling-wrapper {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
+  background-color: var(--color-background);
 }
 
 .card {

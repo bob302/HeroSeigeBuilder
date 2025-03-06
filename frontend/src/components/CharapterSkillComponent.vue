@@ -3,7 +3,6 @@
     class="skill"
     :class="{
       'skill-locked': !skill.learned,
-      'skill-maxed': skill.level >= skill.maxLevel,
     }"
     :style="gridPosition"
     @click="onSkillClick"
@@ -16,9 +15,9 @@
       class="skill-icon"
       draggable="false"
     />
-    <div class="skill-level">
+    <p class="skill-level" :class="skill.level >= skill.maxLevel ? 'skill-maxed' : ''">
       {{ `${skill.level}/${skill.maxLevel}` }}
-    </div>
+    </p>
     <!-- SubSkills -->
     <div v-if="skill.hasSubskillTree()" class="subskills">
       <button class="subskill-btn" @click.stop="onSubskillButtonClick">
@@ -82,8 +81,8 @@ export default toNative(CharapterSkillComponent)
 <style scoped>
 .skill-tooltip {
   position: fixed;
-  background: rgba(0, 0, 0, 0.8);
-  color: white;
+  background: var(--color-background);
+  color: var(--color-text-primary);
   padding: 5px 10px;
   border-radius: 5px;
   white-space: nowrap;
@@ -96,25 +95,25 @@ export default toNative(CharapterSkillComponent)
   position: relative;
   width: 4.5rem;
   height: 4.5rem;
-  background: rgba(0, 0, 0, 0.7);
-  color: white;
+  background: var(--color-background);
+  color: var(--color-text-primary);
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: 14px;
-  border: 1px solid white;
+  border: 1px solid var(--color-border);
   cursor: pointer;
   transition: opacity 0.3s;
   margin: auto;
 }
 
 .skill-locked {
-  opacity: 0.3;
+  opacity: 0.5;
+  background-color: black;
 }
 
 .skill-maxed {
-  color: orangered;
+  color: var(--color-skill-maxed) !important;
 }
 
 .skill-icon {
@@ -125,9 +124,10 @@ export default toNative(CharapterSkillComponent)
 
 .skill-level {
   position: absolute;
-  top: 75%;
+  top: 50%;
   left: 0;
   user-select: none;
+  color: var(--color-text-secondary);
 }
 
 .subskills {

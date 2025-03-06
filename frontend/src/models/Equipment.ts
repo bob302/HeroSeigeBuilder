@@ -2,6 +2,7 @@ import { v4 as uuidv4 } from "uuid";
 import { equipmentService } from "../service/EquipmentService";
 import { StatParser } from "../parser/StatParser";
 import { EquipmentRarity, EquipmentSubtypes, EquipmentTier, EquipmentType } from "../util/Enums";
+import { isValidImageSource } from "../util/SourceValidator";
 
 
 
@@ -66,6 +67,10 @@ export class BaseItem {
   constructor(props: BaseItemProps) {
     this.uuid = uuidv4();
     this.name = props.name;
+    if (props.image && !isValidImageSource(props.image)) {
+      throw new Error(`Potentially malicious image source detected, saved file has been modified from an external source`);
+    }
+    this.image = props.image;
     this.image = props.image;
     this.isLoading = props.isLoading ?? false;
     this.size = props.size;

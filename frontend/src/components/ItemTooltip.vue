@@ -56,6 +56,7 @@ import ColorUtils from "../util/ColorUtils";
 
 @Component({
   components: { EquipmentSocketsTooltip },
+  emits: ['close'],
 })
 class ItemTooltip extends Vue {
   @Prop({ required: true }) item!: BaseItem;
@@ -199,7 +200,7 @@ export default toNative(ItemTooltip)
   right: 7.5%;
   background: transparent;
   border: none;
-  color: white;
+  color: var(--color-text-primary);
   font-size: 2rem;
   cursor: pointer;
   z-index: 201;

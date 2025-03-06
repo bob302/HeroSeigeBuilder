@@ -498,8 +498,6 @@ export class Inventory {
       },
       slots: this.needToBeSerialized ? this.slots.map((slot) => slot.serialize()) : []
     };
-    console.log("tex", tex);
-    console.log("tex2", this.needToBeSerialized);
     
     return tex 
   }

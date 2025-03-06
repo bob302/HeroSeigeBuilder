@@ -1,5 +1,5 @@
 <template>
-  <div class="display-container" :class="{ saved: isSaved }" >
+  <div class='catalog-item' :class=" {'highlighted': highlighted}" >
     <div class="item">
       <ItemComponent :equipment="equipment" :showSockets="showSockets" :pointerEvents="true" @item-click="onItemClick"/>
     </div>
@@ -20,10 +20,10 @@ import ColorUtils from "../util/ColorUtils";
 })
 class CatalogItem extends ItemComponent {
   @Prop({ type: String, required: false }) src!: string;
+  @Prop({ type: Boolean, required: false }) highlighted = false;
+
 
   pointerEvents: boolean = false;
-  isSaved = false;
-
   ColorUtils = ColorUtils
 }
 
@@ -31,7 +31,7 @@ export default toNative(CatalogItem);
 </script>
 
 <style scoped>
-.display-container {
+.catalog-item {
   width: 7.6rem;
   height: 11.32rem;
   max-width: 7.6rem;
@@ -41,6 +41,7 @@ export default toNative(CatalogItem);
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .frame {
@@ -52,6 +53,10 @@ export default toNative(CatalogItem);
   z-index: 9;
   user-select: none;
   border: 2px solid var(--color-border);
+}
+
+.catalog-item.highlighted {
+  background-color: var(--color-catalog-highlight);
 }
 
 .item {

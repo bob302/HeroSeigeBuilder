@@ -21,7 +21,7 @@
         :slot-data="slotData"
         :style="getSlotStyle(slotData)"
         :cell-size="cellSize"
-        @slot-click="onSlotClick"
+        @slot-item-click="onSlotClick"
         @mouse-enter="onSlotHover"
         @mouse-leave="onSlotMouseLeave"
       />

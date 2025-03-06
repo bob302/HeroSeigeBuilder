@@ -10,7 +10,7 @@
       <div class="loading" v-if="editorContext.getSelectedCharapter() === null"></div>
       <div class="skill-trees-wrapper" :ref="Section.Skills" v-else>
         <AttributeList />
-        <p>{{ `Points Left: ${editorContext.getSkillPoints()}` }}</p>
+        <h3>{{ `Points Left: ${editorContext.getSkillPoints()}` }}</h3>
         <SkillTreeComponent v-for="(skillTree, index) in editorContext.getSelectedCharapter()!.skillTrees" :key="index"
           :skillTree="skillTree" @toggle-subskills="onToggleSubskills" />
       </div>
@@ -24,8 +24,7 @@
           <div class="section">
             <button class="serialization-button" @click="exportContext">Generate Link</button>
             <div>
-              <p>Permanent Token:</p>
-              <input v-model="permanentToken" type="text">
+              <input v-model="permanentToken" type="text" placeholder="Token to save permanently">
             </div>
           </div>
           <div class="section">
@@ -72,6 +71,8 @@
       {{ editorContext.confirmationMessage }}
     </div>
   </ConfirmModalComponent>
+
+
 </template>
 
 <script lang="ts">
@@ -92,6 +93,7 @@ import SideNavComponent, { SideNavAction } from "../components/SideNavComponent.
 import ConfirmModalComponent from "../components/ConfirmModalComponent.vue";
 import TextModalComponent from "../components/TextModalComponent.vue";
 import VersionComponent from "../components/VersionComponent.vue";
+import { secureParse } from "../util/SourceValidator";
 
 enum Section {
   Charapters ="charaptersSection",
@@ -264,7 +266,7 @@ class InventoryEditorView extends Vue {
     });
   }
 
-  async exportContext() {
+async exportContext() {
   const workerHost = import.meta.env.VITE_WORKER_HOST;
   const appHost = import.meta.env.VITE_APP_HOST;
   try {
@@ -307,18 +309,25 @@ async importContext() {
       alert(`Import failed: ${response.status} ${response.statusText}`);
       return;
     }
-    
-    const data = await response.json();
-    const newContext = await EditorContext.deserialize(data);
 
-    EditorContextProvider.setContext(newContext);
-    this.editorContext = EditorContextProvider.getContext();
-    alert(`Import complete!`);
+    const responseText = await response.text();
+    
+    try {
+      const secureData = secureParse(responseText);
+      const newContext = await EditorContext.deserialize(secureData);
+
+      EditorContextProvider.setContext(newContext);
+      this.editorContext = EditorContextProvider.getContext();
+    } catch (parseError) {
+      console.error("Secure parsing error:", parseError);
+      alert("Error during secure data parsing. The data may be corrupted or malicious.");
+    }
   } catch (error) {
-    console.error("Deserialization error:", error);
+    console.error("Import error:", error);
     alert("Error during import. Check console for details.");
   }
 }
+
 
 async exportToFile() {
   try {
@@ -351,33 +360,34 @@ async exportToFile() {
 
 
 
-  async importFromFile() {
-    try {
-      const input = document.createElement("input");
-      input.type = "file";
-      input.accept = "application/json";
-      input.onchange = async () => {
-        if (input.files && input.files.length > 0) {
-          const file = input.files[0];
-          const text = await file.text();
-          try {
-            const parsed = JSON.parse(text);
-            const newContext = await EditorContext.deserialize(parsed);
-            EditorContextProvider.setContext(newContext);
-            this.editorContext = EditorContextProvider.getContext();
-            alert("Context imported from file successfully.");
-          } catch (error) {
-            console.error("Import from file error:", error);
-            alert("Error during file import. Check console for details.");
-          }
+async importFromFile() {
+  try {
+    const input = document.createElement("input");
+    input.type = "file";
+    input.accept = "application/json";
+    input.onchange = async () => {
+      if (input.files && input.files.length > 0) {
+        const file = input.files[0];
+        const text = await file.text();
+        try {
+          const secureData = secureParse(text);
+          const newContext = await EditorContext.deserialize(secureData);
+          
+          EditorContextProvider.setContext(newContext);
+          this.editorContext = EditorContextProvider.getContext();
+          alert("Context imported from file successfully.");
+        } catch (error) {
+          console.error("Secure import from file error:", error);
+          alert("Error during file import. The file may be corrupted or contain malicious data.");
         }
-      };
-      input.click();
-    } catch (error) {
-      console.error("Import from file setup error:", error);
-      alert("Error during file import setup. Check console for details.");
-    }
+      }
+    };
+    input.click();
+  } catch (error) {
+    console.error("Import from file setup error:", error);
+    alert("Error during file import setup. Check console for details.");
   }
+}
 
 
 }
@@ -394,7 +404,8 @@ export default toNative(InventoryEditorView)
   display: grid;
   grid-template-columns: 1fr;
   min-height: 100vh;
-  background: url("/img/editor/background.png") repeat center center;
+  background: url("/img/editor/background.png");
+  background-size: contain;
   width: 100%;
 }
 
@@ -424,6 +435,7 @@ export default toNative(InventoryEditorView)
   align-items: center;
   gap: 1rem;
   margin: 0.75rem 0 0.75rem;
+  width: 25%;
 }
 
 

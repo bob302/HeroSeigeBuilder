@@ -43,7 +43,7 @@ export default class SubSkillTree {
         primary: false,
       },
       13: {
-        connections: [12, 14, 15],
+        connections: [11, 12, 14, 15],
         position: { x: 4.5, y: 2.5 },
         primary: false,
       },
@@ -81,7 +81,6 @@ export default class SubSkillTree {
         if (treeData) {
           if (nodeId === 1) {
             node.name = name;
-            node.description = "Base skill";
           } else {
             const nodeInfo = treeData.find((entry: any) => entry.id === nodeId);
             node.name = nodeInfo.name;
@@ -113,28 +112,55 @@ export default class SubSkillTree {
     }
   }
 
-  canLearnSkill(nodeId: number): boolean {
-    if (nodeId === 1 || nodeId === 2 || nodeId === 3) return true;
+  canLearnSkill(nodeId: number): [boolean, string] {
+    if (nodeId === 1 || nodeId === 2 || nodeId === 3) {
+        return [true, "This is an Initial Node"];
+    }
+
+    
     const node = this.nodes.get(nodeId);
-    if (!node) return false;
-    return Array.from(node.connections).some(
-      (connId) => this.nodes.get(connId)!.level >= 2,
+
+    if (!node || node.level >= node.maxLevel) return [false, "This none is already at its maximum level."];
+
+    if (!node) {
+        return [false, "Node not found"];
+    }
+
+    if (node.isPrimary()) {
+        const hasPrimaryNodeLeveled = Array.from(this.nodes.values()).some(
+            (n) => n.isPrimary() && !n.isInitial() && n.id !== nodeId && n.level > 0
+        );
+
+        if (hasPrimaryNodeLeveled) {
+            return [false, "Another primary node is already leveled"];
+        }
+    }
+
+    const hasConnectedNode = Array.from(node.connections).some(
+        (connId) => this.nodes.get(connId)!.level >= 2
     );
+
+    if (!hasConnectedNode) {
+        return [false, "No connected node with required level"];
+    }
+
+    return [true, "Can learn skill"];
   }
+
 
   learnSkill(nodeId: number): boolean {
     const node = this.nodes.get(nodeId);
-    if (!node || node.level >= node.maxLevel) return false;
-    if (!this.canLearnSkill(nodeId)) return false;
     if (this.points <= 0) return false;
-    node.level++;
+    if (!this.canLearnSkill(nodeId)[0]) return false;
+
+    node!.level++;
     this.points--;
     return true;
   }
 
   reset() {
     this.nodes.forEach(node => {
-      node.level = 0
+      if (!node.isInitial()) node.level = 0
     })
 
     this.points = 20

@@ -166,27 +166,12 @@ export default toNative(AttributeList)
   cursor: pointer;
 }
 
-.distribute-button {
-  background: #5bc0de;
-  color: white;
-}
-
 .distribute-button:hover {
   background: #31b0d5;
 }
 
-.max-button {
-  background: #5cb85c;
-  color: white;
-}
-
 .max-button:hover {
   background: #449d44;
-}
-
-.reset-button {
-  background: #d9534f;
-  color: white;
 }
 
 .reset-button:hover {
