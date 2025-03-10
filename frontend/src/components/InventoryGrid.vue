@@ -8,8 +8,8 @@
         :cellData="cell"
         :style="getCellPositionStyle(cell)"
         @cell-click="onClickOnCell"
-        @mouse-enter="onCellHover"
-        @mouse-leave="onCellMouseLeave"
+        @cell-mouse-enter="onCellHover"
+        @cell-mouse-leave="onCellMouseLeave"
       />
     </div>
 
@@ -22,8 +22,8 @@
         :style="getSlotStyle(slotData)"
         :cell-size="cellSize"
         @slot-item-click="onSlotClick"
-        @mouse-enter="onSlotHover"
-        @mouse-leave="onSlotMouseLeave"
+        @slot-mouse-enter="onSlotHover"
+        @slot-mouse-leave="onSlotMouseLeave"
       />
     </div>
   </div>
