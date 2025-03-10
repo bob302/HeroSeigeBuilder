@@ -19,8 +19,8 @@
     </div>
 
     <div v-if="equipmentSets.length === 0" class="empty-library">
-      <p>No saved equipment sets yet.</p>
-      <p>Create or import a set to get started.</p>
+      <p>No saved presets yet.</p>
+      <p>Create or import a preset to get started.</p>
     </div>
     
     <div v-else class="equipment-sets">
@@ -67,7 +67,7 @@
     <div v-if="showDeleteModal" class="modal-overlay">
       <div class="modal-content">
         <h3>Confirm Deletion</h3>
-        <p>Are you sure you want to delete the set "{{ setToDelete }}"?</p>
+        <p>Are you sure you want to delete the preset "{{ setToDelete }}"?</p>
         <p>This action cannot be undone.</p>
         <div class="form-actions">
           <button @click="showDeleteModal = false" class="cancel-btn">Cancel</button>
