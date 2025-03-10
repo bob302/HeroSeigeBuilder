@@ -32,11 +32,11 @@
     <p class="upgrade-info" v-if="!skill.isMaxed()">
       Level: {{ skill.level }} / {{ skill.maxLevel }}
     </p>
-    <p class="skill-status node-description" v-if="!tree.canLearnSkill(skill.id)[0]">
-      {{ tree.canLearnSkill(skill.id)[1] }}
+    <p class="skill-status node-description" v-if="!tree.canLearnSkill(skill)[0]">
+      {{ tree.canLearnSkill(skill)[1] }}
     </p>
     <p class="skill-status node-description" v-else-if="skill.isMaxed()">
-      {{ tree.canLearnSkill(skill.id)[1] }}
+      {{ tree.canLearnSkill(skill)[1] }}
     </p>
   </div>
 </ConfirmModalComponent>
@@ -91,7 +91,7 @@ class SubSkillNodeComponent extends Vue {
 
     if (this.skill.level > 0) {
       bgColor = "var(--color-node-learned)";
-    } else if (this.tree.canLearnSkill(this.skill.id)[0]) {
+    } else if (this.tree.canLearnSkill(this.skill)[0]) {
       bgColor = "var(--color-node-can-learn)";
     }
 

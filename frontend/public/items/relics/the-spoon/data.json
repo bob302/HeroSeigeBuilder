@@ -1,0 +1,12 @@
+{
+  "Item": "The Spoon",
+  "Tier": "S",
+  "Level": "0",
+  "Type": "Relic",
+  "Size": "1x1",
+  "Rarity": "",
+  "Stats": [
+    "Replenish Mana 30%",
+    "+50 to Mana"
+  ]
+}

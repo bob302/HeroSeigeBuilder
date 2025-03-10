@@ -38,8 +38,6 @@ export default class SkillTree {
     }
 
     if (parent.position.y > child.position.y) {
-      console.log("Parent", parent, " Child: ", child);
-
       throw new Error("Parent skill must be in a previous row");
     }
 

@@ -71,7 +71,7 @@ class InventoryGrid extends Vue {
   }
 
   getInventory(): Inventory {
-    return this.editorContext.inventories.get(this.inventoryName)!;
+    return this.editorContext.getInventories().get(this.inventoryName)!;
   }
 
   private updateHighlight(base: Point2D, state: HightLightCellState) {

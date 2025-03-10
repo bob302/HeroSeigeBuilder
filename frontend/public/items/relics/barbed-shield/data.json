@@ -1,0 +1,11 @@
+{
+  "Item": "Barbed Shield",
+  "Tier": "S",
+  "Level": "0",
+  "Type": "Relic",
+  "Size": "1x1",
+  "Rarity": "",
+  "Stats": [
+    "+200% of Damage Returned to the Attacker"
+  ]
+}

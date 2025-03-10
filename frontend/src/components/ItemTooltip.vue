@@ -13,7 +13,7 @@
 
         <div class="equipment-stats">
           <ul class="stats-list">
-            <li v-for="stat in item.stats" :key="stat.name" v-html="formatStat(stat) " />
+            <li v-for="stat in item.stats" :key="stat.raw" v-html="formatStat(stat) " />
 
             <div v-if="isWeapon" class="weapon-details">
               <p class="equipment-subtype">[{{ item.subtype }}]</p>
@@ -132,7 +132,7 @@ isRuneword(obj: any): obj is IRuneword {
   }
 
   formatStat(stat: Stat) {
-    return StatParser.parseStat(stat.raw, stat.special).html;
+    return StatParser.parseStat(stat.raw, stat.special, true).html;
   }
 
   async initTooltip() {
@@ -155,10 +155,14 @@ isRuneword(obj: any): obj is IRuneword {
   }
 
   let x = this.pos.x;
-  let y = 50;
+  let y = this.pos.y;
   
   if (this.posExceedsHalfScreen) {
     x -= this.tooltipDimensions.width * 1.15;
+  }
+
+  if (this.posYExceedsHalfScreen) {
+    y -= this.tooltipDimensions.height;
   }
   
   this.calculatedPosition = { x, y };
@@ -172,7 +176,7 @@ isRuneword(obj: any): obj is IRuneword {
 
   get posYExceedsHalfScreen() {
     return (
-      this.tooltipDimensions.height > 0 && this.pos.y > this.screenHeight / 2
+      this.tooltipDimensions.height > 0 && this.pos.y > this.screenHeight / 2 + this.tooltipDimensions.height / 2
     );
   }
 }
@@ -216,100 +220,8 @@ export default toNative(ItemTooltip)
     transparent 100%
   );
 }
-
-::v-deep(.stat-description) {
-  color: #8383df;
-  font-family: "Fenris";
-  font-weight: 600;
-  padding-left: 0.15rem;
-  padding-right: 0.15rem;
-}
-::v-deep(.stat-special) {
-  color: #f34500;
-  font-family: "Fenris";
-  font-weight: 600;
-}
-::v-deep(.stat-gem-level) {
-  color: #c7b377;
-  font-family: "Fenris";
-  font-weight: 600;
-}
-::v-deep(.stat-unbreakable) {
-  color: #cd2494;
-  font-family: "Fenris";
-  font-weight: 600;
-}
-::v-deep(.stat-unholy) {
-  color: #c73664;
-  font-family: "Fenris";
-  font-weight: 600;
-}
-::v-deep(.stat-range) {
-  color: #00ff00;
-  font-family: "Fenris";
-  font-weight: 600;
-}
-::v-deep(.stat-error) {
-  color: #ff0000;
-  font-family: "Fenris";
-  font-weight: 600;
-}
-::v-deep(.stat-allskills) {
-  color: #c7b377;
-  font-family: "Fenris";
-  font-weight: 600;
-}
-::v-deep(.stat-to-arcane) {
-  color: #853bf9;
-  font-family: "Fenris";
-  font-weight: 600;
-}
-::v-deep(.stat-to-fire) {
-  color: #fc4a28;
-  font-family: "Fenris";
-  font-weight: 600;
-}
-::v-deep(.stat-to-cold) {
-  color: #39ddfb;
-  font-family: "Fenris";
-  font-weight: 600;
-}
-::v-deep(.stat-to-poison) {
-  color: #44de00;
-  font-family: "Fenris";
-  font-weight: 600;
-}
-::v-deep(.stat-to-physical) {
-  color: #c68a59;
-  font-family: "Fenris";
-  font-weight: 600;
-}
-::v-deep(.stat-to-lightning) {
-  color: #6eedb6;
-  font-family: "Fenris";
-  font-weight: 600;
-}
-::v-deep(.stat-random-skill) {
-  background-size: 100%;
-  background-repeat: repeat;
-  background-color: red;
-  background-image: linear-gradient(60deg, orange, lightblue, lime, purple, burlywood);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  font-family: "Fenris";
-  font-weight: 600;
-}
-
-
-::v-deep(.stat-container) {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: -1.6rem;
-}
-
 .equipment-header {
+  text-align: center;
   margin-bottom: 1rem;
 }
 

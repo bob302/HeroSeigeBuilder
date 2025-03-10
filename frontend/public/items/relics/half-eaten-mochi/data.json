@@ -1,0 +1,12 @@
+{
+  "Item": "Half Eaten Mochi",
+  "Tier": "S",
+  "Level": "0",
+  "Type": "Relic",
+  "Size": "1x1",
+  "Rarity": "",
+  "Stats": [
+    "+21 Life After each Kill",
+    "+21 Mana After each Kill"
+  ]
+}

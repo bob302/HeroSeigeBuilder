@@ -39,6 +39,7 @@ export default class CharapterSkill extends BaseSkill {
   reset() {
     this.level = 0;
     this.learned = false;
+    this.subSkillTree?.reset()
   }
 
   /**

@@ -1,12 +1,12 @@
 <template>
-<div
+  <div
     ref="itemContainer"
     class="item-container"
     :style="pointerEvents ? 'pointer-events: all' : 'pointer-events: none'"
     @mouseenter="onMouseEnter"
     @mouseleave="onMouseLeave"
     v-on-long-press="[onLongPressCallback, { delay: 750, distanceThreshold: 24, onMouseUp: onMouseUpCallback}]"
-    >
+  >
     <img
       :src="equipment.image ? equipment.image : 'img/editor/fallback-icon.webp'"
       class="item-image"
@@ -14,15 +14,14 @@
     />
 
     <div
-      v-if="isEquipment && showSockets"
+      v-if="isEquipment && showSockets && shouldShowSockets"
       :class="[socketLayoutClass, 'socket-container']"
     >
       <div
-        v-for="(socket, index) in (
-          equipment as Equipment
-        ).sockets.list.slice(0, 6)"
+        v-for="(socket, index) in (equipment as Equipment).sockets.list.slice(0, maxSockets)"
         :key="index"
-        :class="['socket', `socket-${index + 1}`]"
+        class="socket"
+        :style="getSocketPosition(index, (equipment as Equipment).sockets.list.length)"
       >
         <SocketComponent
           :prismatic="socket.prismatic"
@@ -35,7 +34,7 @@
 
 <script lang="ts">
 import SocketComponent from "./SocketComponent.vue";
-import { BaseItem, Equipment, Socketable } from "../models/Equipment";
+import { BaseItem, Equipment } from "../models/Equipment";
 import { Component, Inject, Prop, toNative, Vue } from "vue-facing-decorator";
 import type EditorContext from "../models/EditorContext";
 import { vOnLongPress } from '@vueuse/components'
@@ -54,6 +53,14 @@ class ItemComponent extends Vue {
   @Prop({ type: Object, required: true }) equipment!: BaseItem;
   @Prop({ type: Boolean, required: false }) pointerEvents: boolean = false;
   @Prop({ type: Boolean, required: false }) showSockets: boolean = false;
+  
+  maxSockets = 16;
+
+  get shouldShowSockets(): boolean {
+    if (!this.isEquipment) return false;
+    const socketCount = (this.equipment as Equipment).sockets.amount;
+    return socketCount <= this.maxSockets;
+  }
 
   onLongPressCallback(e: PointerEvent) {
     e.stopPropagation()
@@ -62,27 +69,63 @@ class ItemComponent extends Vue {
 
   //@ts-ignore
   onMouseUpCallback(duration: number, distance: number, isLongPress: boolean) {
-  if (!isLongPress) {
-    this.onItemClick()
+    if (!isLongPress) {
+      this.onItemClick()
+    }
   }
-}
 
   get isEquipment(): boolean {
     return this.equipment instanceof Equipment;
   }
 
-  insertSocketable(socketable: Socketable) {
-    if (!(this.equipment instanceof Equipment)) return;
-    const sockets = [...(this.equipment as Equipment).sockets.list];
-    const index = sockets.findIndex((s) => !s.socketable);
-
-    if (index !== -1) {
-      sockets[index] = { ...sockets[index], socketable };
-      (this.equipment as Equipment).sockets.list = sockets;
-      this.$emit("socket-inserted", socketable);
-      return true;
+  getSocketPosition(index: number, totalSockets: number): string {
+    // For predetermined layouts (1-6 sockets), we use the grid-based layouts
+    if (totalSockets <= 6 && this.socketLayoutClass !== "universal-layout") {
+      return `grid-area: s${index + 1}`;
     }
-    return false;
+    
+    // Adjust radius based on socket count to prevent overcrowding
+    let outerRadius = 270;
+    let innerRadius = 45;
+    
+    // For higher socket counts, increase the outer radius further
+    if (totalSockets > 8) {
+      outerRadius = 360;
+      innerRadius = 270;
+    }
+    
+    // Determine if we need single or dual ring layout
+    const useDoubleRing = totalSockets > 10;
+    
+    // Calculate position
+    let radius = useDoubleRing 
+      ? (index < 8 ? outerRadius : innerRadius) 
+      : outerRadius;
+      
+    // Calculate the number of sockets in each ring
+    const outerRingCount = Math.min(8, totalSockets);
+    const innerRingCount = totalSockets - outerRingCount;
+    
+    // Calculate angle
+    let angle;
+    if (useDoubleRing) {
+      if (index < outerRingCount) {
+        // Outer ring
+        angle = index * (360 / outerRingCount);
+      } else {
+        // Inner ring - offset by half the angle between outer sockets for better distribution
+        const innerIndex = index - outerRingCount;
+        const angleOffset = 180 / innerRingCount;
+        angle = innerIndex * (360 / innerRingCount) + angleOffset;
+      }
+    } else {
+      angle = index * (360 / totalSockets);
+    }
+
+    const x = radius * Math.sin(angle * Math.PI / 180);
+    const y = -radius * Math.cos(angle * Math.PI / 180);
+    
+    return `transform: translate(${x}%, ${y}%) rotate(0deg);`;
   }
 
   emptySockets(): void {
@@ -105,8 +148,10 @@ class ItemComponent extends Vue {
     } else if (socketCount === 6) {
       return "six-layout";
     }
-  }
 
+    return "universal-layout";
+  }
+  
   onItemClick() {
     if (!this.equipment) return;
     this.$emit("item-click", this.equipment);
@@ -119,6 +164,11 @@ class ItemComponent extends Vue {
   }
 
   onMouseLeave() {
+    this.editorContext.resetStatDisplay();
+    this.$emit("hide-tooltip");
+  }
+
+  unmounted() {
     this.editorContext.resetStatDisplay();
     this.$emit("hide-tooltip");
   }
@@ -151,7 +201,6 @@ export default toNative(ItemComponent)
   -webkit-user-drag: none; /* Safari */
 }
 
-
 .socket-container {
   display: grid;
   position: absolute;
@@ -164,6 +213,18 @@ export default toNative(ItemComponent)
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -webkit-user-drag: none;
+}
+
+.universal-layout {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.universal-layout .socket {
+  position: absolute;
+  transform-origin: center;
 }
 
 .one-layout {
@@ -218,24 +279,5 @@ export default toNative(ItemComponent)
     "s1  s2"
     "s3  s4"
     "s5  s6";
-}
-
-.socket-1 {
-  grid-area: s1;
-}
-.socket-2 {
-  grid-area: s2;
-}
-.socket-3 {
-  grid-area: s3;
-}
-.socket-4 {
-  grid-area: s4;
-}
-.socket-5 {
-  grid-area: s5;
-}
-.socket-6 {
-  grid-area: s6;
 }
 </style>

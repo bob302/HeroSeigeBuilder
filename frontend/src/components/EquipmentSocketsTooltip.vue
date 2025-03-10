@@ -39,6 +39,9 @@ export default defineComponent({
 </script>
 
 <style scoped>
+.socketables-title {
+  text-align: center;
+}
 .runes-section {
   position: relative;
   padding-left: 1rem;

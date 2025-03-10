@@ -18,18 +18,20 @@ export class EquipmentSlot {
   public cell: Cell;
   public slot: Slot;
   public style: CellStyle;
-  public equipment: BaseItem;
   public slotName: string;
   private restrictions: Set<EquipmentSubtype | EquipmentType> = new Set();
   isBlacklist: boolean = false; 
 
-  constructor(equipment: BaseItem, style: CellStyle, slotName: string) {
+  constructor(style: CellStyle, slotName: string) {
     this.slotName = slotName;
     this.cell = new Cell(new Point2D(1, 1));
-    this.slot = new Slot(new Item(equipment, new Point2D(1, 1)));
+    this.slot = new Slot();
     this.style = style;
-    this.equipment = equipment;
     this.initialize();
+  }
+
+  putItemInSlot(item: BaseItem) {
+    this.slot.item = new Item(item)
   }
 
   private initialize() {
@@ -37,6 +39,10 @@ export class EquipmentSlot {
     if (this.style.background) {
       this.cell.getCellStyle().background = this.style.background;
     }
+    this.slot.item = null;
+  }
+
+  clear(): void {
     this.slot.item = null;
   }
 
@@ -77,7 +83,7 @@ export class EquipmentSlot {
     return this.restrictions
   }
 
-  setRestrictions(restrictions: Set<EquipmentSubtype | EquipmentType>, isBlacklist: boolean = false) {
+  async setRestrictions(restrictions: Set<EquipmentSubtype | EquipmentType>, isBlacklist: boolean = false) {
     this.restrictions.clear();
     restrictions.forEach(restriction => this.restrictions.add(restriction));
     this.isBlacklist = isBlacklist;
@@ -90,7 +96,7 @@ export class EquipmentSlot {
     };
   }
 
-  static deserialize(data: any): EquipmentSlot {
+  static async deserialize(data: any): Promise<EquipmentSlot> {
     const equipment =
       data.data &&
       typeof data.data === "object" &&
@@ -106,7 +112,12 @@ export class EquipmentSlot {
       throw new Error(`Не найден конфиг для слота: ${data.slotName}`);
     }
 
-    const slot = new EquipmentSlot(equipment, slotConfig.style, data.slotName);
+
+    const slot = new EquipmentSlot(slotConfig.style, data.slotName);
+
+    if (equipment) {
+      slot.putItemInSlot(equipment)
+    }
 
     if (slotConfig.restrictions && slotConfig.restrictions?.size > 0) {
       slot.setRestrictions(slotConfig.restrictions)
@@ -114,9 +125,24 @@ export class EquipmentSlot {
 
     slot.cell = new Cell(new Point2D(1, 1));
     slot.cell.setCellStyle(slotConfig.style);
-    slot.slot = Slot.deserialize(data.slot);
+    slot.slot = await Slot.deserialize(data.slot);
 
     return slot;
+  }
+
+  static editorSlotConfig(): SlotConfig {
+    return {
+      classes: ["editor-slot"],
+      slotName: "editor",
+      hasItem: true,
+      hasClick: true,
+      style: {
+        border: "8px solid",
+        borderImage: "",
+        background: "/img/equipment-slot/slot-editor.png",
+      },
+      restrictions: new Set([])
+    }
   }
 
   static getslotsConfig(): SlotConfig[] {

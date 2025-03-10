@@ -1,0 +1,11 @@
+{
+  "Item": "Small Charm",
+  "Tier": "S",
+  "Level": "1",
+  "Type": "Charm",
+  "Size": "1x1",
+  "Rarity": "Rare",
+  "Stats": [
+    "Use Editor"
+  ]
+}

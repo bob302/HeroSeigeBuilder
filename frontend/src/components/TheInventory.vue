@@ -4,8 +4,8 @@
       <InventoryGrid class="inventory-wrapper" :inventoryName="'main'" />
 
       <div class="equipment-wrapper" :style="equipmentStyle">
-        <div v-for="slot in slotsConfig" :key="slot.slotName" :class="slot.classes">
-          <EquipmentSlotComponent :slotName="slot.slotName" :equipment="dummyEquipment" :cellStyle="slot.style" />
+        <div v-for="slotConfig in slotsConfig" :key="slotConfig.slotName" :class="slotConfig.classes">
+          <EquipmentSlotComponent :slotName="slotConfig.slotName" />
         </div>
       </div>
 
@@ -31,7 +31,6 @@ import { Point2D } from "../models/Point2D";
 import { Inventory } from "../models/Inventory";
 import {
   CharmEquipment,
-  createEquipment,
   Equipment,
 } from "../models/Equipment";
 import DraggedSlot from "./DraggedSlot.vue";
@@ -59,7 +58,6 @@ class TheInventory extends Vue {
   imageCache = new Map<string, HTMLImageElement>();
 
   async created() {
-
     const charmInventory = new Inventory(
       this.editorContext,
       'charm',
@@ -70,23 +68,23 @@ class TheInventory extends Vue {
       'main',
     );
 
-    this.editorContext.inventories.set("charm", charmInventory);
-    this.editorContext.inventories.set("main", mainInventory);
+    this.editorContext.getInventories().set("charm", charmInventory);
+    this.editorContext.getInventories().set("main", mainInventory);
+    
 
-    this.slotsConfig.forEach((config) => {
+    this.slotsConfig.forEach(config => {
       const slot = new EquipmentSlot(
-        createEquipment({ name: "???", level: "???" }),
         config.style,
         config.slotName,
       );
+
       if (config.restrictions && config.restrictions?.size > 0) {
         slot.setRestrictions(config.restrictions)
       }
-      this.editorContext.equipmentSlots.set(config.slotName, slot);
-    });
-  }
 
-  dummyEquipment = createEquipment({ name: "???", level: "???" });
+      this.editorContext.equipmentSlots.set(config.slotName, slot);
+    })
+  }
 
   get slotsConfig(): SlotConfig[] {
     return EquipmentSlot.getslotsConfig();

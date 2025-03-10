@@ -429,9 +429,10 @@ export class Inventory {
 
 
   tryInsertSocketable(item: Item): boolean {
-    const socketable = this.editorContext.getItemOnCursor()?.item?.data;
+    const socketable = this.editorContext.getItemOnCursor()?.item?.data.clone();
 
     if (socketable === null) return false;
+    
     if (socketable instanceof Socketable && item.data instanceof Equipment) {
       if (item.data.insertSocketable(socketable)) {
         return true;
@@ -505,16 +506,17 @@ export class Inventory {
   /**
    * Reconstructs an Inventory instance from its serialized form.
    */
-  static deserialize(
+  static async deserialize(
     data: SerializedInventory,
     parent: EditorContext,
-  ): Inventory {
+  ): Promise<Inventory> {
     const inventory = new Inventory(parent, data.name);
     const config = Inventory.getConfigByName(data.name);
-
+  
     if (!config) {
-      throw new Error(`No config for name ${name}`)
+      throw new Error(`No config for name ${data.name}`)
     }
+
     const gridSize = config.gridSize;
     const style = config.style;
     const restrictions = config.restrictions;
@@ -525,9 +527,9 @@ export class Inventory {
         .split(";")
         .forEach((coord) => cellsMap.set(coord, false));
     }
-
+  
     const unlockedMask = data.cellsData?.mask ?? ""; // Берем битовую строку
-
+  
     // Заполняем `cellsData`
     inventory.cellsData = [];
     for (let x = 0; x < gridSize.x; x++) {
@@ -535,20 +537,22 @@ export class Inventory {
         const key = `${x},${y}`;
         const index = y * gridSize.x + x;
         const isUnlocked = unlockedMask[index] !== "0"; // Читаем из битовой маски
-
+  
         const cell = new Cell(new Point2D(x, y));
         cell.setIsUnlocked(cellsMap.has(key) ? false : isUnlocked);
         cell.setCellStyle(style);
         inventory.cellsData.push(cell);
       }
     }
-
+  
     if (restrictions) {
       restrictions.forEach(restriction => {
         inventory.addRestriction(restriction);
       })
     }
-    inventory.slots = data.slots.map((slotData) => Slot.deserialize(slotData));
+    
+    // Wait for all slot deserialization promises to resolve
+    inventory.slots = await Promise.all(data.slots.map((slotData) => Slot.deserialize(slotData)));
     inventory.handleInventoryUpdate();
 
     return inventory;

@@ -1,0 +1,12 @@
+{
+  "Item": "Stigmata",
+  "Tier": "S",
+  "Level": "0",
+  "Type": "Relic",
+  "Size": "1x1",
+  "Rarity": "",
+  "Stats": [
+    "Mana Costs decreased by 30%",
+    "Replenish Mana 10%"
+  ]
+}

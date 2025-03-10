@@ -15,17 +15,17 @@ import { Cell } from "../models/Cell";
 import type { CSSProperties } from "vue";
 
 @Component({
-  emits: ["cell-click", "mouse-enter", "mouse-leave"]
+  emits: ["cell-click", "cell-mouse-enter", "cell-mouse-leave"]
 })
 class CellComponent extends Vue {
   @Prop({ type: Cell, required: true }) cellData!: Cell;
 
   onMouseEnter(): void {
-    this.$emit("mouse-enter", this.cellData);
+    this.$emit("cell-mouse-enter", this.cellData);
   }
 
   onMouseLeave(): void {
-    this.$emit("mouse-leave", this.cellData);
+    this.$emit("cell-mouse-leave", this.cellData);
   }
 
   onClick(): void {

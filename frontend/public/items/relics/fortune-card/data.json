@@ -1,0 +1,12 @@
+{
+  "Item": "Fortune Card",
+  "Tier": "S",
+  "Level": "0",
+  "Type": "Relic",
+  "Size": "1x1",
+  "Rarity": "",
+  "Stats": [
+    "+30% Extra Gold Dropped From Kills",
+    "+30% Increased Magic Find"
+  ]
+}

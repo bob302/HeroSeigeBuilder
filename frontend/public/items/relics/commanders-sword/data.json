@@ -1,0 +1,12 @@
+{
+  "Item": "Commander's Sword",
+  "Tier": "S",
+  "Level": "0",
+  "Type": "Relic",
+  "Size": "1x1",
+  "Rarity": "",
+  "Stats": [
+    "-20% Increased Movement Speed",
+    "Attack Damage increased by 100%"
+  ]
+}

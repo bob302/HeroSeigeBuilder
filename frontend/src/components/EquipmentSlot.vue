@@ -22,20 +22,18 @@
 
 <script lang="ts">
 import { Component, Inject, Prop, toNative, Vue, Watch } from "vue-facing-decorator";
-import { Slot } from "../models/Slot";
 import { Cell, HightLightCellState, type CellStyle } from "../models/Cell";
 import CellComponent from "./CellComponent.vue";
 import SlotComponent from "./SlotComponent.vue";
 import type EditorContext from "../models/EditorContext";
 import { Point2D } from "../models/Point2D";
-import { Item } from "../models/Item";
-import { EquipmentSlot } from "../models/EquipmentSlot";
+import { EquipmentSlot, type SlotConfig } from "../models/EquipmentSlot";
 
 @Component({
   components: {
     SlotComponent,
     CellComponent,
-  }
+  }, emits: ['item-placed', 'item-removed']
 })
 class EquipmentSlotComponent extends Vue {
   @Inject({ from: "editorContext" })
@@ -44,11 +42,20 @@ class EquipmentSlotComponent extends Vue {
   @Prop({ type: String, required: true })
   readonly slotName!: string;
 
-  @Prop({ required: false })
-  readonly cellStyle!: CellStyle;
+  style! : CellStyle
 
   get equipmentSlot(): EquipmentSlot {
     return this.editorContext.equipmentSlots.get(this.slotName)!;
+  }
+  
+
+  get config(): SlotConfig {
+    const cfg = EquipmentSlot.getslotsConfig().find(s => s.slotName === this.slotName)
+    if (!cfg) {
+      throw Error(`No configuration for ${this.slotName}`)
+    }
+
+    return cfg
   }
 
   isInitialized = true;
@@ -62,18 +69,14 @@ class EquipmentSlotComponent extends Vue {
     this.initializeComponents();
   }
 
-  private initializeComponents() {
+  protected initializeComponents() {
     this.equipmentSlot.cell = new Cell(new Point2D(1, 1));
-    this.equipmentSlot.cell.setCellStyle(this.cellStyle);
+    this.equipmentSlot.cell.setCellStyle(this.style);
 
     if (this.equipmentSlot.style.background !== "") {
       this.equipmentSlot.cell.getCellStyle().background =
         this.equipmentSlot.style.background;
     }
-
-    this.equipmentSlot.slot = new Slot(
-      new Item(this.equipmentSlot.equipment, new Point2D(1, 1)),
-    );
 
     this.equipmentSlot.slot.item = null;
     this.isInitialized = true;
@@ -90,15 +93,18 @@ class EquipmentSlotComponent extends Vue {
   pickupItem() {
     if (this.editorContext.isItemOnCursor()) return
     this.editorContext.pickupSlotOnCursor(this.equipmentSlot.slot);
+    this.$emit('item-removed')
   }
 
   placeItem() {
     const onCursor = this.editorContext.getItemOnCursor(); 
     if (onCursor === null || !onCursor.item) return
     
-    if (this.equipmentSlot.isRestricted(undefined, onCursor.item?.data.subtype)) return
+    if (this.equipmentSlot.isRestricted(undefined, onCursor.item?.data?.subtype)) return
     
     this.editorContext.putItemInEquipmentSlot(this.equipmentSlot, onCursor.item)
+    this.$emit('item-placed', this.equipmentSlot.slot.item)
+
   }
 
   swapItem() {
@@ -108,7 +114,7 @@ class EquipmentSlotComponent extends Vue {
 
     if (!onCursor) return
 
-    if (this.equipmentSlot.isRestricted(undefined, onCursor.item?.data.subtype)) return
+    if (this.equipmentSlot.isRestricted(undefined, onCursor.item?.data?.subtype)) return
 
     const slotCopy = this.equipmentSlot.slot.clone()
     if (this.editorContext.putItemInEquipmentSlot(this.equipmentSlot, onCursor.item!)) {
@@ -120,7 +126,7 @@ class EquipmentSlotComponent extends Vue {
   onClickOnCell() {
     const item = this.editorContext.getItemOnCursor(); 
     if (item !== null) {
-      if (this.equipmentSlot.isRestricted(undefined, item.item?.data.subtype)) return
+      if (this.equipmentSlot.isRestricted(undefined, item.item?.data?.subtype)) return
       this.placeItem();
     }
   }
@@ -152,10 +158,11 @@ class EquipmentSlotComponent extends Vue {
   }
 
   onCellHover() {
+  
     const item = this.editorContext.getItemOnCursor(); 
     if (!item) return;
 
-    const state = this.equipmentSlot.isRestricted(undefined, item.item?.data.subtype) ? HightLightCellState.InvalidPlacement : HightLightCellState.ValidPlacement
+    const state = this.equipmentSlot.isRestricted(undefined, item.item?.data?.subtype) ? HightLightCellState.InvalidPlacement : HightLightCellState.ValidPlacement
 
     this.updateHighlight(state);
   }
@@ -172,6 +179,7 @@ class EquipmentSlotComponent extends Vue {
   onSlotRemoved(): void {}
 }
 
+export {EquipmentSlotComponent}
 export default toNative(EquipmentSlotComponent)
 </script>
 

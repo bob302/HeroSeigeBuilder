@@ -1,4 +1,5 @@
 import type { Stat } from "../models/Equipment";
+import { StatFormatter } from "../util/StatFormatter";
 
 export class StatParser {
   static parseStats(statsString: string): Stat[] {
@@ -15,7 +16,26 @@ export class StatParser {
     return stats;
   }
 
-  static parseStat(line: string, special = false): { html: string; stat: Stat } {
+  static parseStat(line: string, special = false, format = false): { html: string; stat: Stat } {
+    const MAX_LINE_LENGTH = 128;
+
+    const errorStat: Stat = {
+      raw: "",
+      value: 0,
+      range: {from: 0, to: 0},
+      type: "flat",
+      special: false,
+    };
+  
+    if (line.length > MAX_LINE_LENGTH) {
+      return { html: `<div class="stat-container"><p class="stat-error">to LoooOoooNnnG...</p></div>`, stat: errorStat};
+    }
+
+    if (format) {
+      line = StatFormatter.formatFromRangeToRangeWithValue(line)
+    }
+
+
     const valueRegex = /(?<!\[)[+-]?\d+(?:%|)(?!\])(?=\s|$)/g;
     const rangeRegex = /\[(\d+)-(\d+)\]/g;
   
@@ -31,6 +51,7 @@ export class StatParser {
       { regex: /Unholy Stat/, cssClass: 'stat-unholy' },
       { regex: /Unbreakable/, cssClass: 'stat-unbreakable' },
       { regex: /Random Skill Element/, cssClass: 'stat-random-skill' },
+      { regex: /\[Augment\]/, cssClass: 'stat-augment' },
     ];
   
     const matches: Array<{ type: string; start: number; end: number; content: string }> = [];
@@ -76,12 +97,12 @@ export class StatParser {
     const range = rangeMatch
       ? { from: parseInt(rangeMatch[1]), to: parseInt(rangeMatch[2]) }
       : { from: 0, to: 0 };
+    
     const value = valueMatch ? this.parseValue(valueMatch[1]) : 0;
     const type = valueMatch?.includes("%") ? "percent" : "flat";
     
     const stat: Stat = {
       raw: line,
-      name: tokens.filter(t => t.type === "description").map(t => t.content).join(" "),
       value: value,
       range: range,
       type: type,

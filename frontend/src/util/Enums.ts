@@ -12,6 +12,7 @@ export enum EquipmentRarity {
   Satanic = "Satanic",
   "Satanic Set" = "Satanic Set",
   Heroic = "Heroic",
+  Rare = "Rare",
   Mythic = "Mythic",
   Angelic = "Angelic",
   Unholy = "Unholy",
@@ -54,7 +55,8 @@ export const subtypeDirectoryMap: Record<string, string> = {
   "staff": "staves",
   "sword": "swords",
   "throwing weapon": "throwingweapon",
-  "wand": "wands"
+  "wand": "wands",
+  "relic": "relics"
 };
 
 export const typeDirectoryMap: Record<EquipmentType, string[]> = {
@@ -81,8 +83,11 @@ export const typeDirectoryMap: Record<EquipmentType, string[]> = {
     "wands",
     "multitype"
   ],
-  [EquipmentType.Special]: ["charms", "potions"]
+  [EquipmentType.Special]: ["charms", "potions", "relics"]
 };
+
+export const typeDirectoryMapAll = Object.values(typeDirectoryMap).flat();
+
 
 export const EquipmentSubtypes: Record<EquipmentType, string[]> = {
   [EquipmentType.Weapon]: [

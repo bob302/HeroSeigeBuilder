@@ -2,7 +2,8 @@
   <div class="container">
     <SideNavComponent @nav-click="handleNavClick" />
 
-    <div class="column main-content">
+    <!-- Main Content -->
+    <div class="column main-content" :class="{ 'with-sidebar': showModSidebar }">
       <div :ref="Section.Charapters">
         <CharapterList @charapter-selected="scrollToSection(Section.Skills)" />
       </div>
@@ -19,6 +20,8 @@
         <TheInventory />
       </div>
 
+      <EquipmentEditor />
+
       <div class="serialization">
         <div class="serialization-buttons">
           <div class="section">
@@ -34,22 +37,35 @@
         </div>
       </div>
     </div>
+
+    <!-- Mod Sidebar -->
+    <div class="mod-sidebar" :class="{ 'hidden': !showModSidebar }">
+      <div class="sidebar-toggle" @click="toggleModSidebar">
+        <span v-if="showModSidebar">❯</span>
+        <span v-else>❮</span>
+      </div>
+      <div class="sidebar-content">
+        <PresetItemList v-if="showModSidebar" @open-catalog-with-set="openCatalogWithSet" />
+      </div>
+    </div>
   </div>
 
   <keep-alive>
     <CatalogModal v-if="editorContext.currentView === EditorViewState.Catalog" :show="true"
-      @close="editorContext.resetView()" />
+      @close="editorContext.resetView()" :setItems="currentSetItems" :setName="currentSetName" />
   </keep-alive>
 
   <SubSkillTreeComponent v-if="editorContext.currentView === EditorViewState.SubSkillTree"
     @close="editorContext.resetView()" :skillTree="editorContext.activeSubSkillTree" />
 
   <ItemTooltip v-if="editorContext.lookingAt && !editorContext.isItemOnCursor()" :item="editorContext.lookingAt"
-    :pos="editorContext.tooltipPosition" @close="editorContext.lookingAt = null"/>
+    :pos="editorContext.tooltipPosition" @close="editorContext.lookingAt = null" />
 
   <TextModalComponent :isVisible="editorContext.currentView === EditorViewState.Restrictions" @close="resetViews">
-    <p v-if="!editorContext.getSelectedCharapter()?.isBlackList()"> {{ editorContext.getSelectedCharapter()!.name }} only can use:</p>
-    <div class="restrictions-list" v-if="editorContext.getSelectedCharapter()?.restrictions.size! > 0 && !editorContext.getSelectedCharapter()?.isBlackList()">
+    <p v-if="!editorContext.getSelectedCharapter()?.isBlackList()">
+      {{ editorContext.getSelectedCharapter()!.name }} only can use:</p>
+    <div class="restrictions-list"
+      v-if="editorContext.getSelectedCharapter()?.restrictions.size! > 0 && !editorContext.getSelectedCharapter()?.isBlackList()">
       <p v-for="(weapon, index) in editorContext.getSelectedCharapter()?.restrictions" :key="index">
         {{ weapon }}
       </p>
@@ -59,8 +75,8 @@
 
   <TextModalComponent :isVisible="editorContext.currentView === EditorViewState.Info" @close="resetViews">
     <h1>Hero Siege Builder</h1>
-    <p>All item attributes, as well as character names and skill trees, are obtained by parsing the Hero Siege wiki (<a
-    href="https://herosiege.wiki.gg/">https://herosiege.wiki.gg/</a>) and may not be complete or accurate.</p>
+    <p>All item attributes, as well as character names and skill trees, are obtained by parsing the Hero Siege wiki and from Game Assets (<a
+        href="https://herosiege.wiki.gg/">https://herosiege.wiki.gg/</a>) and may not be complete or accurate.</p>
     <VersionComponent />
   </TextModalComponent>
 
@@ -71,8 +87,6 @@
       {{ editorContext.confirmationMessage }}
     </div>
   </ConfirmModalComponent>
-
-
 </template>
 
 <script lang="ts">
@@ -94,11 +108,15 @@ import ConfirmModalComponent from "../components/ConfirmModalComponent.vue";
 import TextModalComponent from "../components/TextModalComponent.vue";
 import VersionComponent from "../components/VersionComponent.vue";
 import { secureParse } from "../util/SourceValidator";
+import EquipmentEditor from "../components/EquipmentEditor.vue";
+import PresetItemList from "../components/PresetItemList.vue";
+import type { BaseItem } from "../models/Equipment";
+import type { SavedEquipmentSet } from "../service/LocalStorageService";
 
 enum Section {
-  Charapters ="charaptersSection",
-  Skills ="skillsSection",
-  Inventory ="inventorySection",
+  Charapters = "charaptersSection",
+  Skills = "skillsSection",
+  Inventory = "inventorySection",
 }
 
 @Component({
@@ -113,7 +131,9 @@ enum Section {
     SideNavComponent,
     TextModalComponent,
     ConfirmModalComponent,
-    VersionComponent
+    VersionComponent,
+    EquipmentEditor,
+    PresetItemList
   },
 })
 class InventoryEditorView extends Vue {
@@ -121,35 +141,54 @@ class InventoryEditorView extends Vue {
   editorContext: Reactive<EditorContext> = EditorContextProvider.getContext();
 
   serializationData: string = "";
-
   EditorViewState = EditorViewState;
-
   isSocketablesLoaded = false;
-
   permanentToken: string = '';
-
   Section = Section;
-
+  
+  currentSetItems: BaseItem[] = [];
+  currentSetName: string = '';
+  
+  showModSidebar: boolean = true;
 
   mounted() {
-  equipmentService.initialize(() => {
-    this.isSocketablesLoaded = true;
-    
-    const routeLink = this.$route.params.link as string | undefined;
-    if (routeLink) {
-      this.importContext();
-    }
-  });
+    equipmentService.initialize(() => {
+      this.isSocketablesLoaded = true;
+      
+      const routeLink = this.$route.params.link as string | undefined;
+      if (routeLink) {
+        this.importContext();
+      }
+    });
 
-  document.addEventListener("mousemove", this.updateMousePosition);
-  
-  window.addEventListener("resize", this.onResize);
-  this.onResize();
-}
+    document.addEventListener("mousemove", this.updateMousePosition);
+    
+    window.addEventListener("resize", this.onResize);
+    this.onResize();
+    
+    // Load sidebar state from localStorage if available
+    const savedSidebarState = localStorage.getItem('showModSidebar');
+    if (savedSidebarState !== null) {
+      this.showModSidebar = savedSidebarState === 'true';
+    }
+  }
 
   unmounted() {
     document.removeEventListener("mousemove", this.updateMousePosition);
     window.removeEventListener("resize", this.onResize);
+  }
+
+  // Toggle sidebar visibility
+  toggleModSidebar() {
+    this.showModSidebar = !this.showModSidebar;
+    // Save state to localStorage
+    localStorage.setItem('showModSidebar', this.showModSidebar.toString());
+  }
+
+  openCatalogWithSet(set: SavedEquipmentSet) {
+    this.currentSetItems = set.items;
+    this.currentSetName = set.name;
+    this.editorContext.setView(EditorViewState.Catalog)
   }
 
   private onResize() {
@@ -163,30 +202,30 @@ class InventoryEditorView extends Vue {
   }
 
   async handleAction(action: SideNavAction) {
-  switch (action) {
-    case SideNavAction.ClearInventory: {
-      if (await this.editorContext.showConfirm("Are you sure you want to clear the inventory?")) {
-        this.editorContext.mainInventory.clear();
+    switch (action) {
+      case SideNavAction.ClearInventory: {
+        if (await this.editorContext.showConfirm("Are you sure you want to clear the inventory?")) {
+          this.editorContext.mainInventory.clear();
+        }
+        break;
       }
-      break;
-    }
-    case SideNavAction.ClearCharmInventory: {
-      if (await this.editorContext.showConfirm("Are you sure you want to clear the charm inventory?")) {
-        this.editorContext.charmInventory.clear();
+      case SideNavAction.ClearCharmInventory: {
+        if (await this.editorContext.showConfirm("Are you sure you want to clear the charm inventory?")) {
+          this.editorContext.charmInventory.clear();
+        }
+        break;
       }
-      break;
-    }
-    case SideNavAction.ClearEquipment: {
-      if (await this.editorContext.showConfirm("Are you sure you want to clear the equipment?")) {
-        this.editorContext.clearEquipment();
+      case SideNavAction.ClearEquipment: {
+        if (await this.editorContext.showConfirm("Are you sure you want to clear the equipment?")) {
+          this.editorContext.clearEquipment();
+        }
+        break;
       }
-      break;
     }
   }
-}
 
   async handleNavClick(action: SideNavAction) {
-    switch(action) {
+    switch (action) {
       case SideNavAction.Characters: {
         this.scrollToSection(Section.Charapters)
         break
@@ -238,7 +277,6 @@ class InventoryEditorView extends Vue {
     this.editorContext.resetView();
   }
 
-
   onToggleSubskills(skill: CharapterSkill) {
     if (skill.subSkillTree) {
       this.editorContext.setView(
@@ -252,8 +290,6 @@ class InventoryEditorView extends Vue {
     this.editorContext.mousePosition = { x: event.clientX, y: event.clientY };
   }
 
-
-
   scrollToSection(section: Section) {
     this.$nextTick(() => {
       const element = this.$refs[`${section}`] as HTMLElement;
@@ -266,150 +302,197 @@ class InventoryEditorView extends Vue {
     });
   }
 
-async exportContext() {
-  const workerHost = import.meta.env.VITE_WORKER_HOST;
-  const appHost = import.meta.env.VITE_APP_HOST;
-  try {
-    const serialized = this.editorContext.serialize();
-    const response = await fetch(`${workerHost}/`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ data: serialized, token: this.permanentToken}),
-    });
-    
-    if (!response.ok) {
-      alert(`Export failed: ${response.status} ${response.statusText}`);
-      return;
-    }
-    
-    const result = await response.json();
-    if (!result.key) {
-      alert("Invalid response from server");
-      return;
-    }
-    
-    const shortLink = `${appHost}/editor/${result.key}`;
-    await navigator.clipboard.writeText(shortLink);
-    alert(`Link copied to clipboard. ${result.isPermanent ? 'Build link will not be deleted.' : `Build link will be deleted in ${result.linkLefespan} seconds.`}`);
-  } catch (error) {
-    console.error("Export error:", error);
-    alert("Error during export. Check console for details.");
-  }
-}
-
-async importContext() {
-  const workerHost = import.meta.env.VITE_WORKER_HOST;
-  const urlKey = window.location.pathname.split("/").pop();
-  if (!urlKey) return;
-
-  try {
-    const response = await fetch(`${workerHost}/${urlKey}`);
-    
-    if (!response.ok) {
-      alert(`Import failed: ${response.status} ${response.statusText}`);
-      return;
-    }
-
-    const responseText = await response.text();
-    
+  async exportContext() {
+    const workerHost = import.meta.env.VITE_WORKER_HOST;
+    const appHost = import.meta.env.VITE_APP_HOST;
     try {
-      const secureData = secureParse(responseText);
-      const newContext = await EditorContext.deserialize(secureData);
-
-      EditorContextProvider.setContext(newContext);
-      this.editorContext = EditorContextProvider.getContext();
-    } catch (parseError) {
-      console.error("Secure parsing error:", parseError);
-      alert("Error during secure data parsing. The data may be corrupted or malicious.");
-    }
-  } catch (error) {
-    console.error("Import error:", error);
-    alert("Error during import. Check console for details.");
-  }
-}
-
-
-async exportToFile() {
-  try {
-    const serialized = this.editorContext.serialize();
-    const json = JSON.stringify(serialized, null, 2);
-    const blob = new Blob([json], { type: "application/json" });
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement("a");
-    link.href = url;
-
-    const selectedCharapter = this.editorContext.getSelectedCharapter();
-    const baseName = selectedCharapter?.name || "context";
-
-    const now = new Date();
-    const datePart = now.toISOString().split("T")[0];
-    const timePart = now.toTimeString().split(" ")[0].replace(/:/g, "-");
-    const filename = `${baseName}_${datePart}_${timePart}.json`;
-
-    link.download = filename;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    URL.revokeObjectURL(url);
-    alert("Context exported to file successfully.");
-  } catch (error) {
-    console.error("Export to file error:", error);
-    alert("Error during file export. Check console for details.");
-  }
-}
-
-
-
-async importFromFile() {
-  try {
-    const input = document.createElement("input");
-    input.type = "file";
-    input.accept = "application/json";
-    input.onchange = async () => {
-      if (input.files && input.files.length > 0) {
-        const file = input.files[0];
-        const text = await file.text();
-        try {
-          const secureData = secureParse(text);
-          const newContext = await EditorContext.deserialize(secureData);
-          
-          EditorContextProvider.setContext(newContext);
-          this.editorContext = EditorContextProvider.getContext();
-          alert("Context imported from file successfully.");
-        } catch (error) {
-          console.error("Secure import from file error:", error);
-          alert("Error during file import. The file may be corrupted or contain malicious data.");
-        }
+      const serialized = this.editorContext.serialize();
+      const response = await fetch(`${workerHost}/`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ data: serialized, token: this.permanentToken }),
+      });
+      
+      if (!response.ok) {
+        alert(`Export failed: ${response.status} ${response.statusText}`);
+        return;
       }
-    };
-    input.click();
-  } catch (error) {
-    console.error("Import from file setup error:", error);
-    alert("Error during file import setup. Check console for details.");
+      
+      const result = await response.json();
+      if (!result.key) {
+        alert("Invalid response from server");
+        return;
+      }
+      
+      const shortLink = `${appHost}/editor/${result.key}`;
+      await navigator.clipboard.writeText(shortLink);
+      alert(`Link copied to clipboard. ${result.isPermanent ? 'Build link will not be deleted.' : `Build link will be deleted in ${result.linkLefespan} seconds.`}`);
+    } catch (error) {
+      console.error("Export error:", error);
+      alert("Error during export. Check console for details.");
+    }
   }
-}
 
+  async importContext() {
+    const workerHost = import.meta.env.VITE_WORKER_HOST;
+    const urlKey = window.location.pathname.split("/").pop();
+    if (!urlKey) return;
 
+    try {
+      const response = await fetch(`${workerHost}/${urlKey}`);
+      
+      if (!response.ok) {
+        alert(`Import failed: ${response.status} ${response.statusText}`);
+        return;
+      }
+
+      const responseText = await response.text();
+      
+      try {
+        const secureData = secureParse(responseText);
+        const newContext = await EditorContext.deserialize(secureData);
+
+        EditorContextProvider.setContext(newContext);
+        this.editorContext = EditorContextProvider.getContext();
+      } catch (parseError) {
+        console.error("Secure parsing error:", parseError);
+        alert("Error during secure data parsing. The data may be corrupted or malicious.");
+      }
+    } catch (error) {
+      console.error("Import error:", error);
+      alert("Error during import. Check console for details.");
+    }
+  }
+
+  async exportToFile() {
+    try {
+      const serialized = this.editorContext.serialize();
+      const json = JSON.stringify(serialized, null, 2);
+      const blob = new Blob([json], { type: "application/json" });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+
+      const selectedCharapter = this.editorContext.getSelectedCharapter();
+      const baseName = selectedCharapter?.name || "context";
+
+      const now = new Date();
+      const datePart = now.toISOString().split("T")[0];
+      const timePart = now.toTimeString().split(" ")[0].replace(/:/g, "-");
+      const filename = `${baseName}_${datePart}_${timePart}.json`;
+
+      link.download = filename;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(url);
+      alert("Context exported to file successfully.");
+    } catch (error) {
+      console.error("Export to file error:", error);
+      alert("Error during file export. Check console for details.");
+    }
+  }
+
+  async importFromFile() {
+    try {
+      const input = document.createElement("input");
+      input.type = "file";
+      input.accept = "application/json";
+      input.onchange = async () => {
+        if (input.files && input.files.length > 0) {
+          const file = input.files[0];
+          const text = await file.text();
+          try {
+            const secureData = secureParse(text);
+            const newContext = await EditorContext.deserialize(secureData);
+            
+            EditorContextProvider.setContext(newContext);
+            this.editorContext = EditorContextProvider.getContext();
+            alert("Context imported from file successfully.");
+          } catch (error) {
+            console.error("Secure import from file error:", error);
+            alert("Error during file import. The file may be corrupted or contain malicious data.");
+          }
+        }
+      };
+      input.click();
+    } catch (error) {
+      console.error("Import from file setup error:", error);
+      alert("Error during file import setup. Check console for details.");
+    }
+  }
 }
 
 export default toNative(InventoryEditorView)
 </script>
 
 <style scoped>
-/* Main */
-.main-content {
-  margin-left: 10%;
-}
+/* Main Layout */
 .container {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
   min-height: 100vh;
   background: url("/img/editor/background.png");
   background-size: contain;
   width: 100%;
+  position: relative;
 }
 
-/* Test */
+/* Main Content Section */
+.main-content {
+  margin-left: 10%;
+  flex: 1;
+  transition: width 0.3s ease;
+}
+
+.main-content.with-sidebar {
+  margin-right: 10%; /* Space for the sidebar */
+}
+
+/* Mod Sidebar */
+.mod-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 10%;
+  background-color: var(--color-background, #f8f9fa);
+  border-left: 1px solid var(--color-border, #ccc);
+  transition: transform 0.3s ease;
+  z-index: 100;
+  display: flex;
+}
+
+.mod-sidebar.hidden {
+  transform: translateX(100%);
+}
+
+.sidebar-toggle {
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--color-primary, #4a5568);
+  color: white;
+  width: 20px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  font-size: 10px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-content {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  padding: 0.5rem;
+}
+
+/* Skill Trees */
 .skill-trees-wrapper {
   display: flex;
   flex-direction: row;
@@ -419,6 +502,7 @@ export default toNative(InventoryEditorView)
   padding-bottom: 2rem;
 }
 
+/* Serialization */
 .serialization-buttons {
   display: flex;
   flex-direction: row;
@@ -438,30 +522,12 @@ export default toNative(InventoryEditorView)
   width: 25%;
 }
 
-
 .serialization-button {
   width: 100%;
   height: 2rem;
 }
 
-/* Modal*/
-.info-modal,
-.restrictions-modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: var(--color-background);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
-.info-content,
-.restrictions-content {
-  position: relative;
-}
+/* Modals */
 .restrictions-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -469,10 +535,36 @@ export default toNative(InventoryEditorView)
 
 /* Responsive */
 @media (max-width: 768px) {
-  .container,
+  .container {
+    flex-direction: column;
+  }
+  
   .main-content {
     padding: 0;
     margin: 0;
+  }
+
+  .main-content.with-sidebar {
+    margin-right: 0;
+  }
+
+  .mod-sidebar {
+    width: 100%;
+    height: 80vh;
+    top: 0;
+    bottom: auto;
+    border-left: none;
+  }
+
+  .mod-sidebar.hidden {
+    transform: translateY(-100%)  rotate(180deg);
+  }
+
+  .sidebar-toggle {
+    left: 50%;
+    top: -20px;
+    transform: translateX(-50%) rotate(90deg);
+    border-radius: 4px 4px 0 0;
   }
 
   .skill-trees-wrapper {

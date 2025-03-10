@@ -1,0 +1,11 @@
+{
+  "Item": "Grand Charm",
+  "Tier": "S",
+  "Level": "1",
+  "Type": "Charm",
+  "Size": "1x3",
+  "Rarity": "Mythic",
+  "Stats": [
+    "Use Editor"
+  ]
+}

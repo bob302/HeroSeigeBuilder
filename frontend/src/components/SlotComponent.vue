@@ -17,6 +17,7 @@ import { Component, Prop, toNative, Vue } from "vue-facing-decorator";
 import { Slot } from "../models/Slot";
 import type { CSSProperties } from "vue";
 import ItemComponent from "./ItemComponent.vue";
+import ColorUtils from "../util/ColorUtils";
 
 @Component({
   components: {
@@ -50,8 +51,8 @@ class SlotComponent extends Vue {
         boxSizing: "border-box",
         borderWidth: "0.3rem",
         borderStyle: "inherit",
-        borderImage: this.slotData.item?.rarityToBackgroundImage()
-          ? `url(${this.slotData.item.rarityToBackgroundImage()}) 50 50 50 50 repeat`
+        borderImage: ColorUtils.rarityToBackground(this.slotData.item.data?.rarity!)
+          ? `url(${ColorUtils.rarityToBackground(this.slotData.item.data?.rarity!)}) 50 50 50 50 repeat`
           : "none",
         borderImageWidth: "96px",
         borderImageSlice: "64",
