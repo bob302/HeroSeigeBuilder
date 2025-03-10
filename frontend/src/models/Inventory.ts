@@ -552,8 +552,20 @@ export class Inventory {
     }
     
     // Wait for all slot deserialization promises to resolve
-    inventory.slots = await Promise.all(data.slots.map((slotData) => Slot.deserialize(slotData)));
-    inventory.handleInventoryUpdate();
+    inventory.slots = await Promise.all(data.slots.map(async (slotData) => {
+      const slot = await Slot.deserialize(slotData);
+      
+      if (slot.item) {
+        inventory.updateCellsForItem(
+          slot.item.startCoordinates,
+          slot.item.getSizeInCells() as Point2D[],
+          CellState.Occupied
+        );
+      }
+      
+      return slot;
+    }));
+  inventory.handleInventoryUpdate();
 
     return inventory;
   }
