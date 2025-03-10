@@ -13,14 +13,8 @@
 
     </div>
   </div>
-
-  <div class="content-section-2">
-    <div class="column-left">
-      <div class="column-right"></div>
-    </div>
-
-    <DraggedSlot ref="draggedSlot" />
-  </div>
+  
+  <DraggedSlot ref="draggedSlot" />
 </template>
 
 <script lang="ts">

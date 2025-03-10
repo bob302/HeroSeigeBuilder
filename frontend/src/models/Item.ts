@@ -10,7 +10,6 @@ export class Item {
   sizeInCells: Point2D[];
   cachedSize: Point2D;
   cachedSizeInCells: Point2D[];
-  isRotated: boolean = false;
   uniqueId!: string;
 
   constructor(data: BaseItem, size = new Point2D(1, 1)) {
@@ -19,7 +18,6 @@ export class Item {
     this.sizeInCells = this.calcItemSize();
     this.cachedSize = this.size;
     this.cachedSizeInCells = [...this.sizeInCells];
-    this.isRotated = false;
     this.uniqueId = uuidv4();
   }
 
@@ -87,9 +85,7 @@ export class Item {
       startCoordinates: {
         x: this.startCoordinates.x,
         y: this.startCoordinates.y,
-      },
-      isRotated: this.isRotated,
-      uniqueId: this.uniqueId,
+      }
     };
   }
 
@@ -105,8 +101,7 @@ export class Item {
     item.setStartCoordinates(
       new Point2D(serialized.startCoordinates.x, serialized.startCoordinates.y),
     );
-    item.isRotated = serialized.isRotated;
-    item.uniqueId = serialized.uniqueId;
+
     return item;
   }
 }

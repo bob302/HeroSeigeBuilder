@@ -51,17 +51,24 @@
           <i class="fa-solid fa-trash mobile-icon"></i>
         </button>
         <button @click="emitNavClick(SideNavAction.UnlockCharmTopSlot)">
-          <span class="desktop-text">Unlock Top Slot</span>
-          <i v-if="editorContext.isTopSlotUnlocked()" class="fa-solid fa-lock-open mobile-icon"></i>
-          <i v-if="!editorContext.isTopSlotUnlocked()" class="fa-solid fa-lock mobile-icon"></i>
-        </button>
-        <button @click="emitNavClick(SideNavAction.UnlockCharmBottomSlot)">
-          <span class="desktop-text">Unlock Bottom Slot</span>
-          <i v-if="editorContext.isBottmoSlotUnlocked()" class="fa-solid fa-lock-open mobile-icon"></i>
-          <i v-if="!editorContext.isBottmoSlotUnlocked()" class="fa-solid fa-lock mobile-icon"></i>
-        </button>
+        <span v-if="!editorContext.isTopSlotUnlocked()" class="desktop-text">Unlock Top Slot</span>
+        <span v-else class="desktop-text">Lock Top Slot</span>
+        <i v-if="!editorContext.isTopSlotUnlocked()" class="fa-solid fa-lock-open mobile-icon"></i>
+        <i v-else class="fa-solid fa-lock mobile-icon"></i>
+      </button>
+      <button @click="emitNavClick(SideNavAction.UnlockCharmBottomSlot)">
+        <span v-if="!editorContext.isBottomSlotUnlocked()" class="desktop-text">Unlock Bottom Slot</span>
+        <span v-else class="desktop-text">Lock Bottom Slot</span>
+        <i v-if="!editorContext.isBottomSlotUnlocked()" class="fa-solid fa-lock-open mobile-icon"></i>
+        <i v-else class="fa-solid fa-lock mobile-icon"></i>
+      </button>
       </div>
     </Transition>
+
+        <!-- Alpha Badge -->
+    <div class="alpha-badge">
+      <span>Alpha</span>
+    </div>
   </nav>
 </template>
 
@@ -197,6 +204,21 @@ export { SideNavAction };
   padding: 0.8rem 1rem;
   max-height: 15%;
   margin: 0 0.5rem 0.2rem 0.5rem;
+}
+
+.alpha-badge {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: 0 auto;
+  width: 70%;
+  background-color: var(--color-background);
+  color: var(--color-unholy);
+  border: 1px solid var(--color-unholy);
+  padding: 0.3rem 0.5rem;
+  font-weight: bold;
 }
 
 

@@ -10,16 +10,38 @@
 	"observability": {
 		"enabled": true
 	},
-  "kv_namespaces": [
-    {
-      "binding": "LINKS",
-      "id": "69934c32203948c6ac5ee72dd82693c0"
+  "env": {
+    "staging": {
+      "vars": {
+        "VITE_HOST": "http://localhost:5173"
+      },
+      "kv_namespaces": [
+      {
+        "binding": "LINKS",
+        "id": "69934c32203948c6ac5ee72dd82693c0"
+      },
+      {
+        "binding": "RATE_LIMIT",
+        "id": "c065e654674144bd948c7d86b1c1bcd8"
+      }
+    ]
     },
-    {
-      "binding": "RATE_LIMIT",
-      "id": "c065e654674144bd948c7d86b1c1bcd8"
+    "production": {
+      "vars": {
+        "VITE_HOST": "https://hero-seige-builder.pages.dev"
+      },
+      "kv_namespaces": [
+        {
+          "binding": "LINKS",
+          "id": "69934c32203948c6ac5ee72dd82693c0"
+        },
+        {
+          "binding": "RATE_LIMIT",
+          "id": "c065e654674144bd948c7d86b1c1bcd8"
+        }
+      ]
     }
-  ]
+  }
   /**
    * Smart Placement
    * Docs: https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement

@@ -118,7 +118,6 @@ export class BaseItem {
       __type: "BaseItem",
       name: this.name,
       image: this.image,
-      isLoading: this.isLoading,
       size: { ...this.size },
       type: this.type,
       subtype: this.subtype,
@@ -290,7 +289,6 @@ export class CustomSocketable extends Socketable {
     const baseItemProps: BaseItemProps = {
       name: this.name,
       image: this.image,
-      isLoading: this.isLoading,
       size: { ...this.size },
       type: this.type,
       subtype: this.subtype,

@@ -75,10 +75,19 @@
 
   <TextModalComponent :isVisible="editorContext.currentView === EditorViewState.Info" @close="resetViews">
     <h1>Hero Siege Builder</h1>
-    <p>All item attributes, as well as character names and skill trees, are obtained by parsing the Hero Siege wiki and from Game Assets (<a
-        href="https://herosiege.wiki.gg/">https://herosiege.wiki.gg/</a>) and may not be complete or accurate.</p>
+    <p>This build creation tool was designed to closely replicate the in-game experience, rather than being a spreadsheet full of tables and formulas.</p>
+    <p>It's built to be as intuitive and hassle-free as possible.</p>
+    <p>Additionally, this project serves as an opportunity to explore what frontenders actually  doing, particularly by testing Vue, since my main expertise is in backend development.</p>
+    <p>All item attributes, as well as class names and skill trees, are obtained by parsing the Hero Siege wiki (<a href="https://herosiege.wiki.gg/" class="link">https://herosiege.wiki.gg/</a>) and from Game Assets and may not be complete or accurate.</p>
+    <p>I don't plan on doing attribute calculations, at least not yet.</p>
+    <p>Issue Tracker: (<a href="https://github.com/bob302/HeroSeigeBuilder/issues" class="link">https://github.com/bob302/HeroSeigeBuilder/issues</a>)</p>
+    <p>Addblockers can block part of content.</p>
+    <div class="notice">
+      <p>Note: This application currently runs on Cloudflare Workers (free tier) and may occasionally reach the request limit.</p>
+      <p>You can use the import/export functionality to save and load your builds locally.</p>
+    </div>
     <VersionComponent />
-  </TextModalComponent>
+</TextModalComponent>
 
   <ConfirmModalComponent :isVisible="editorContext.currentView === EditorViewState.Confirmation"
     :message="editorContext.confirmationMessage" @confirm="editorContext.resolveConfirmation(true)"
@@ -303,35 +312,60 @@ class InventoryEditorView extends Vue {
   }
 
   async exportContext() {
-    const workerHost = import.meta.env.VITE_WORKER_HOST;
-    const appHost = import.meta.env.VITE_APP_HOST;
-    try {
-      const serialized = this.editorContext.serialize();
-      const response = await fetch(`${workerHost}/`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ data: serialized, token: this.permanentToken }),
-      });
-      
-      if (!response.ok) {
-        alert(`Export failed: ${response.status} ${response.statusText}`);
-        return;
-      }
-      
-      const result = await response.json();
-      if (!result.key) {
-        alert("Invalid response from server");
-        return;
-      }
-      
-      const shortLink = `${appHost}/editor/${result.key}`;
-      await navigator.clipboard.writeText(shortLink);
-      alert(`Link copied to clipboard. ${result.isPermanent ? 'Build link will not be deleted.' : `Build link will be deleted in ${result.linkLefespan} seconds.`}`);
-    } catch (error) {
-      console.error("Export error:", error);
-      alert("Error during export. Check console for details.");
+  const workerHost = import.meta.env.VITE_WORKER_HOST;
+  const appHost = import.meta.env.VITE_APP_HOST;
+  try {
+    const serialized = this.editorContext.serialize();
+    
+    // Minify JSON by removing all whitespace
+    const minifiedJSON = JSON.stringify(serialized);
+    
+    // Convert JSON to Uint8Array for compression
+    const jsonBytes = new TextEncoder().encode(minifiedJSON);
+    
+    // Compress with gzip using CompressionStream API
+    const cs = new CompressionStream('gzip');
+    const writer = cs.writable.getWriter();
+    writer.write(jsonBytes);
+    writer.close();
+    
+    // Get compressed data
+    const compressedData = await new Response(cs.readable).arrayBuffer();
+    
+    // Convert to base64 for transport
+    const base64Compressed = btoa(
+      String.fromCharCode(...new Uint8Array(compressedData))
+    );
+    
+    const response = await fetch(`${workerHost}/`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ 
+        data: base64Compressed, 
+        compressed: true,
+        token: this.permanentToken 
+      }),
+    });
+    
+    if (!response.ok) {
+      alert(`Export failed: ${response.status} ${response.statusText}`);
+      return;
     }
+    
+    const result = await response.json();
+    if (!result.key) {
+      alert("Invalid response from server");
+      return;
+    }
+    
+    const shortLink = `${appHost}/editor/${result.key}`;
+    await navigator.clipboard.writeText(shortLink);
+    alert(`Link copied to clipboard. ${result.isPermanent ? 'Build link will not be deleted.' : `Build link will be deleted in ${result.linkLefespan} seconds.`}`);
+  } catch (error) {
+    console.error("Export error:", error);
+    alert("Error during export. Check console for details.");
   }
+}
 
   async importContext() {
     const workerHost = import.meta.env.VITE_WORKER_HOST;
@@ -365,33 +399,36 @@ class InventoryEditorView extends Vue {
   }
 
   async exportToFile() {
-    try {
-      const serialized = this.editorContext.serialize();
-      const json = JSON.stringify(serialized, null, 2);
-      const blob = new Blob([json], { type: "application/json" });
-      const url = URL.createObjectURL(blob);
-      const link = document.createElement("a");
-      link.href = url;
+  try {
+    const serialized = this.editorContext.serialize();
+    
+    // Use minified JSON without pretty-printing (remove null, 2)
+    const json = JSON.stringify(serialized);
+    
+    const blob = new Blob([json], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
 
-      const selectedCharapter = this.editorContext.getSelectedCharapter();
-      const baseName = selectedCharapter?.name || "context";
+    const selectedCharapter = this.editorContext.getSelectedCharapter();
+    const baseName = selectedCharapter?.name || "context";
 
-      const now = new Date();
-      const datePart = now.toISOString().split("T")[0];
-      const timePart = now.toTimeString().split(" ")[0].replace(/:/g, "-");
-      const filename = `${baseName}_${datePart}_${timePart}.json`;
+    const now = new Date();
+    const datePart = now.toISOString().split("T")[0];
+    const timePart = now.toTimeString().split(" ")[0].replace(/:/g, "-");
+    const filename = `${baseName}_${datePart}_${timePart}.json`;
 
-      link.download = filename;
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-      URL.revokeObjectURL(url);
-      alert("Context exported to file successfully.");
-    } catch (error) {
-      console.error("Export to file error:", error);
-      alert("Error during file export. Check console for details.");
-    }
+    link.download = filename;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+    alert("Context exported to file successfully.");
+  } catch (error) {
+    console.error("Export to file error:", error);
+    alert("Error during file export. Check console for details.");
   }
+}
 
   async importFromFile() {
     try {

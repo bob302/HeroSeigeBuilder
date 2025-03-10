@@ -94,7 +94,7 @@ export default class EditorContext {
     return this.topSlotUnlocked
   }
 
-  public isBottmoSlotUnlocked() {
+  public isBottomSlotUnlocked() {
     return this.bottomSlotUnlocked
   }
 
@@ -307,7 +307,6 @@ export default class EditorContext {
    */
   serialize(): any {
     return {
-      itemOnCursor: null,
       inventories: Array.from(this.inventories.entries()).map(([key, inv]) => [
         key,
         inv.serialize(),

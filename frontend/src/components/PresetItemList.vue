@@ -2,7 +2,6 @@
   <div class="mod-list">
     <div class="mod-list-header">
       <h2>Item Presets</h2>
-      <h2>(Beta)</h2>
       <div class="storage-info">
         <div class="storage-bar">
           <div class="storage-used" :style="{ width: storagePercentage + '%' }"></div>
