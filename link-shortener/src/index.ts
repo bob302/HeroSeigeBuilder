@@ -50,11 +50,16 @@ async function generateShortKey(data: unknown, env: Env): Promise<string> {
   }
 }
 
-function createResponse(body: string, status = 200): Response {
+function createResponse(body: string, status = 200, env: Env): Response {
+  console.log(env);
+  
+
+  const origin = env.VITE_HOST
+  
   return new Response(body, {
     status,
     headers: {
-      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Origin": origin,
       "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
       "Access-Control-Allow-Headers": "Content-Type",
       "Content-Type": "application/json",
@@ -64,66 +69,101 @@ function createResponse(body: string, status = 200): Response {
 
 export default {
   async fetch(request: Request, env: Env): Promise<Response> {
-		if (!(await checkRateLimit(request, env))) {
-			return createResponse(`You have exceeded the allowed number of ${MAX_REQUESTS} requests within the last ${WINDOW_TTL} seconds.`, 429);
-		}
+    if (!(await checkRateLimit(request, env))) {
+      return createResponse(`You have exceeded the allowed number of ${MAX_REQUESTS} requests within the last ${WINDOW_TTL} seconds.`, 429, env);
+    }
 
     const url = new URL(request.url);
 
     if (request.method === "OPTIONS") {
-      return createResponse("", 204);
+      return createResponse("", 204, env);
     }
 
     if (request.method === "POST") {
-			try {
-        const body = (await request.json()) as { data: unknown; token?: string };
-		
-				if (!body.data) {
-					return createResponse("Missing 'data' field", 400);
-				}
-		
-				let key: string;
+      try {
+        const body = (await request.json()) as { 
+          data: unknown; 
+          token?: string;
+          compressed?: boolean;
+        };
+    
+        if (!body.data) {
+          return createResponse("Missing 'data' field", 400, env);
+        }
+        
+        let processedData = body.data;
+        
+        // Handle compressed data
+        if (body.compressed === true && typeof body.data === 'string') {
+          try {
+            // Decode base64 to binary
+            const binaryData = atob(body.data);
+            const bytes = new Uint8Array(binaryData.length);
+            for (let i = 0; i < binaryData.length; i++) {
+              bytes[i] = binaryData.charCodeAt(i);
+            }
+            
+            // Decompress using DecompressionStream
+            const ds = new DecompressionStream('gzip');
+            const writer = ds.writable.getWriter();
+            writer.write(bytes);
+            writer.close();
+            
+            // Get decompressed data
+            const decompressedBuffer = await new Response(ds.readable).arrayBuffer();
+            const decompressedText = new TextDecoder().decode(decompressedBuffer);
+            
+            // Parse the JSON to make sure it's valid
+            processedData = JSON.parse(decompressedText);
+          } catch (compressionError) {
+            console.error("Error decompressing data:", compressionError);
+            return createResponse("Error decompressing data", 400, env);
+          }
+        }
+    
+        let key: string;
 
-				try {
-          key = await generateShortKey(body.data, env);
+        try {
+          key = await generateShortKey(processedData, env);
         } catch (error: any) {
           // If the data already exists or the key generation failed
-          return createResponse(error.message, 409);
+          return createResponse(error.message, 409, env);
         }
   
-				const permanentToken = env.PERMANENT_TOKEN as string | undefined;
+        const permanentToken = env.PERMANENT_TOKEN as string | undefined;
         const isPermanent = body.token && permanentToken && body.token === permanentToken;
         const putOptions = isPermanent ? {} : { expirationTtl: LINK_LIFESPAN };
 
-				await env.LINKS.put(key, JSON.stringify(body.data), putOptions);
+        // Store the processedData as a string
+        await env.LINKS.put(key, JSON.stringify(processedData), putOptions);
 
-				console.log("Saved with key:", key);
-		
-				const response = { 
-					key, 
-					isPermanent: isPermanent,
-					linkLefespan: LINK_LIFESPAN
-				};
-				
-				return createResponse(JSON.stringify(response));
-			} catch (error) {
-				console.error("Error processing POST request:", error);
-				return createResponse("Invalid request body", 400);
-			}
-		}
-		
-
+        console.log("Saved with key:", key);
+    
+        const response = { 
+          key, 
+          isPermanent: isPermanent,
+          linkLefespan: LINK_LIFESPAN
+        };
+        
+        return createResponse(JSON.stringify(response), 200,env);
+      } catch (error) {
+        console.error("Error processing POST request:", error);
+        return createResponse("Invalid request body", 400, env);
+      }
+    }
+    
     if (request.method === "GET") {
       const key = url.pathname.split("/").pop();
-      if (!key) return createResponse("Key not provided", 400);
+      if (!key) return createResponse("Key not provided", 400, env);
 
       const value = await env.LINKS.get(key);
-      if (!value) return createResponse("Not found", 404);
+      if (!value) return createResponse("Not found", 404, env);
 
-      return createResponse(value);
+      console.log('responcing with value');
+      
+      return createResponse(value, 200, env);
     }
 
-    return createResponse("Method not allowed", 405);
+    return createResponse("Method not allowed", 405, env);
   },
 };
-

@@ -3,5 +3,6 @@
 interface Env {
 	LINKS: KVNamespace;
 	RATE_LIMIT: KVNamespace;
+	VITE_HOST: "http://localhost:5173" | "https://hero-seige-builder.pages.dev";
 	PERMANENT_TOKEN: string;
 }
