@@ -20,7 +20,7 @@ export class EquipmentSlot {
   public style: CellStyle;
   public slotName: string;
   private restrictions: Set<EquipmentSubtype | EquipmentType> = new Set();
-  isBlacklist: boolean = false; 
+  private blacklist: boolean = false; 
 
   constructor(style: CellStyle, slotName: string) {
     this.slotName = slotName;
@@ -28,6 +28,14 @@ export class EquipmentSlot {
     this.slot = new Slot();
     this.style = style;
     this.initialize();
+  }
+
+  isBlackList() {
+    return this.blacklist
+  }
+
+  invertRestrictionsMode() {
+    this.blacklist = !this.blacklist
   }
 
   putItemInSlot(item: BaseItem) {
@@ -48,7 +56,7 @@ export class EquipmentSlot {
 
   isRestricted(type?: EquipmentType, subtype?: EquipmentSubtype): boolean {
     // If restrictions are empty, return false (no restrictions)
-       
+
     if (this.restrictions.size === 0) {
       return false;
     }
@@ -65,16 +73,16 @@ export class EquipmentSlot {
   
     // Check if restrictions include the equipment type
     if (type && this.restrictions.has(type)) {
-      return this.isBlacklist; // If in blacklist mode, block the type, otherwise allow
+      return this.blacklist; // If in blacklist mode, block the type, otherwise allow
     }
   
     // Check if restrictions include the equipment subtype
     if (subtype && this.restrictions.has(subtype)) {
-      return this.isBlacklist; // If in blacklist mode, block the subtype, otherwise allow
+      return this.blacklist; // If in blacklist mode, block the subtype, otherwise allow
     }
   
-    // If neither the type nor the subtype is restricted, return false (or !this.isBlacklist)
-    return !this.isBlacklist;
+
+    return this.isBlackList() ? false : true;
   }
   
   
@@ -83,10 +91,10 @@ export class EquipmentSlot {
     return this.restrictions
   }
 
-  async setRestrictions(restrictions: Set<EquipmentSubtype | EquipmentType>, isBlacklist: boolean = false) {
+  async setRestrictions(restrictions: Set<EquipmentSubtype | EquipmentType>, blacklist: boolean = false) {
     this.restrictions.clear();
+    this.blacklist = blacklist;
     restrictions.forEach(restriction => this.restrictions.add(restriction));
-    this.isBlacklist = isBlacklist;
   }
 
   serialize() {
@@ -109,7 +117,7 @@ export class EquipmentSlot {
     );
 
     if (!slotConfig) {
-      throw new Error(`Не найден конфиг для слота: ${data.slotName}`);
+      throw new Error(`No config for slotName: ${data.slotName}`);
     }
 
 
