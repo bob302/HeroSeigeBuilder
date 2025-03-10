@@ -30,10 +30,10 @@ export class Slot {
     };
   }
 
-  static deserialize(data: any): Slot {
-    const item = data.item ? Item.deserialize(data.item) : null;
+  static async deserialize(data: any): Promise<Slot> {
+    const item = data.item ? await Item.deserialize(data.item) : null;
     const slot = new Slot(item);
-
+  
     return slot;
   }
 }

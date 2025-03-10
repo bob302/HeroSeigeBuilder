@@ -5,6 +5,7 @@ import { EquipmentRarity, EquipmentSubtypes, EquipmentTier, EquipmentType } from
 import { isValidImageSource } from "../util/SourceValidator";
 
 
+export const socketHardCap = 16
 
 export function getEquipmentTypeBySubtype(subtype: EquipmentSubtype): EquipmentType {
   for (const typeKey in EquipmentSubtypes) {
@@ -30,7 +31,6 @@ export interface Socket {
 
 export interface Stat {
   raw: string;
-  name: string;
   value: number;
   range: { from: number; to: number };
   type: "flat" | "percent" | "flat-range" | "percent-range";
@@ -38,7 +38,7 @@ export interface Stat {
 }
 
 export interface BaseItemProps {
-  uuid: string;
+  uuid?: string;
   name: string;
   image?: string;
   isLoading?: boolean;
@@ -47,12 +47,12 @@ export interface BaseItemProps {
   subtype: EquipmentSubtype;
   rarity: EquipmentRarity;
   tier: EquipmentTier;
-  level: string;
+  level: number;
   stats: Stat[];
 }
 
 export class BaseItem {
-  public uuid: string;
+  public uuid?: string;
   public name: string;
   public image?: string;
   public isLoading: boolean;
@@ -60,7 +60,7 @@ export class BaseItem {
   public rarity: EquipmentRarity;
   public stats: Stat[];
   public tier: EquipmentTier;
-  public level: string;
+  public level: number;
   public type: EquipmentType;
   public subtype: EquipmentSubtype;
 
@@ -88,9 +88,13 @@ export class BaseItem {
     }
   }
 
-  addStat(string : string) {
-    const stat = StatParser.parseStat(string, true).stat
+  addStat(string : string, special = false) {
+    const stat = StatParser.parseStat(string, special, true).stat
     this.stats.push(stat)
+  }
+
+  removeStat(index: number) {
+    this.stats.splice(index, 1)
   }
 
   clone(): BaseItem {
@@ -112,7 +116,6 @@ export class BaseItem {
   serialize(): BaseItemProps & { __type: string } {
     return {
       __type: "BaseItem",
-      uuid: this.uuid,
       name: this.name,
       image: this.image,
       isLoading: this.isLoading,
@@ -138,9 +141,9 @@ export class Equipment extends BaseItem {
     super(props);
 
     const sockets = {
-      amount: props.sockets.amount,
-      min: props.sockets.min,
-      max: props.sockets.max,
+      amount: props.sockets.amount > socketHardCap ? socketHardCap : props.sockets.amount,
+      min: props.sockets.min < 0 ? 0 : props.sockets.min,
+      max: props.sockets.max > socketHardCap ? socketHardCap : props.sockets.max,
       list: props.sockets.list.map((socket) => ({
         prismatic: socket.prismatic,
         socketable: socket.socketable,
@@ -217,10 +220,10 @@ export interface IRuneword {
   bases: string[];
 }
 
-export function transformToRuneword<T extends Equipment>(
+export async function transformToRuneword<T extends Equipment>(
   item: T, 
   runeword: IRuneword
-): T & IRuneword {
+): Promise<T & IRuneword> {
   const clonedItem = item.clone() as T & IRuneword;
 
   clonedItem.name = runeword.name;
@@ -231,8 +234,8 @@ export function transformToRuneword<T extends Equipment>(
   
   clonedItem.clearSocketables();
   
-  runeword.runes.forEach(runeStr => {
-    const rune = equipmentService.getSocketable(runeStr);
+  runeword.runes.forEach(async runeStr => {
+    const rune = await equipmentService.getSocketableAsync(runeStr);
     if (!rune) throw new Error(`Rune ${runeStr} не найдена`);
     clonedItem.insertSocketable(rune);
   });
@@ -263,6 +266,43 @@ export class Socketable extends BaseItem {
     return {
       __type: "Socketable",
       name: this.name,
+    };
+  }
+}
+
+export class CustomSocketable extends Socketable {
+  constructor(props: BaseItemProps) {
+    super({
+      ...props,
+    });
+
+    this.type = EquipmentType.Socketable;
+  }
+
+  clone(): CustomSocketable {
+    return new CustomSocketable({
+      ...super.clone(),
+    });
+  }
+
+  serialize(): BaseItemProps & { __type: string } {
+    // Create a serialization based on BaseItem, not Socketable
+    const baseItemProps: BaseItemProps = {
+      name: this.name,
+      image: this.image,
+      isLoading: this.isLoading,
+      size: { ...this.size },
+      type: this.type,
+      subtype: this.subtype,
+      rarity: this.rarity,
+      tier: this.tier,
+      level: this.level,
+      stats: this.stats.map((stat) => ({ ...stat })),
+    };
+    
+    return {
+      ...baseItemProps,
+      __type: "CustomSocketable",
     };
   }
 }
@@ -363,13 +403,13 @@ export function createSocket(prismatic: boolean): Socket {
 export function createEquipment(partial: Partial<EquipmentProps>): Equipment {
   const defaults: EquipmentProps = {
     uuid: uuidv4(),
-    name: "Generic Item",
+    name: "",
     type: EquipmentType.Special,
     subtype: "Charm",
     rarity: EquipmentRarity.Unholy,
     tier: EquipmentTier.SS,
     stats: [],
-    level: "100",
+    level: 100,
     sockets: { amount: 0, min: 0, max: 0, list: [] },
     image: "/img/editor/f.png",
     isLoading: false,
@@ -380,29 +420,40 @@ export function createEquipment(partial: Partial<EquipmentProps>): Equipment {
   return new Equipment(props);
 }
 
-// Deserialization function
-export function deserialize(data: any): BaseItem {
+// Asynchronous Deserialization function
+export async function deserialize(data: any): Promise<BaseItem> {
   if (data === null || typeof data !== "object") return data;
-  if (Array.isArray(data)) return data.map(deserialize) as unknown as BaseItem;
+  if (Array.isArray(data)) {
+    const results = await Promise.all(data.map(item => deserialize(item)));
+    return results as unknown as BaseItem;
+  }
 
   const copiedData = structuredClone(data);
 
-  const processValue = (value: any): any => {
-    if (value?.__type) return deserialize(value);
-    if (Array.isArray(value)) return value.map(processValue);
+  const processValue = async (value: any): Promise<any> => {
+    if (value?.__type) return await deserialize(value);
+    if (Array.isArray(value)) {
+      return await Promise.all(value.map(v => processValue(v)));
+    }
     if (typeof value === "object" && value !== null) {
-      Object.keys(value).forEach((k) => (value[k] = processValue(value[k])));
+      for (const k of Object.keys(value)) {
+        value[k] = await processValue(value[k]);
+      }
     }
     return value;
   };
 
   if (copiedData.__type) {
-    Object.keys(copiedData).forEach((k) => {
-      copiedData[k] = processValue(copiedData[k]);
-    });
+    for (const k of Object.keys(copiedData)) {
+      copiedData[k] = await processValue(copiedData[k]);
+    }
+
+    if (copiedData.__type === "CustomSocketable") {
+      return new CustomSocketable(copiedData);
+    }
 
     if (copiedData.__type === EquipmentType.Socketable) {
-      const socketable = equipmentService.getSocketable(copiedData.name);
+      const socketable = await equipmentService.getSocketableAsync(copiedData.name);
       if (!socketable)
         throw new Error(`Socketable not found: ${copiedData.name}`);
       return socketable;

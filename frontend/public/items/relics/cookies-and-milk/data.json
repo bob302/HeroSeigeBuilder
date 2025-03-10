@@ -1,0 +1,12 @@
+{
+  "Item": "Cookies & Milk",
+  "Tier": "S",
+  "Level": "0",
+  "Type": "Relic",
+  "Size": "1x1",
+  "Rarity": "",
+  "Stats": [
+    "Replenish Life 30%",
+    "Replenish Mana 30%"
+  ]
+}

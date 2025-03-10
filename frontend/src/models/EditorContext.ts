@@ -22,7 +22,7 @@ export default class EditorContext {
   private itemOnCursor: Slot | null = null;
   lookingAt: BaseItem | null = null;
   mousePosition: { x: number; y: number } = { x: -1000, y: -1000 };
-  inventories: Map<string, Inventory> = new Map();
+  private inventories: Map<string, Inventory> = new Map();
   equipmentSlots: Map<string, EquipmentSlot> = new Map();
   public currentView: EditorViewState = EditorViewState.None;
   public activeSubSkillTree: SubSkillTree | null = null;
@@ -48,7 +48,21 @@ export default class EditorContext {
 
   private scaleFactor = 1;
 
+  private editorSlot: EquipmentSlot | null = null
+
   constructor() { }
+
+  public getInventories() {
+    return this.inventories
+  }
+
+  public getEditorSlot(): EquipmentSlot | null {
+    return this.editorSlot
+  }
+
+  public setEditorSlot(es: EquipmentSlot) {
+    this.editorSlot = es
+  }
 
   public getScaleFactor(): number {
     return this.scaleFactor
@@ -118,7 +132,7 @@ export default class EditorContext {
       equipmentSlot.setRestrictions(restrictions, blacklist)
       const item = equipmentSlot.slot.item
       if (item) {
-        if (equipmentSlot.isRestricted(undefined, item?.data.subtype)) {
+        if (equipmentSlot.isRestricted(undefined, item?.data?.subtype)) {
           this.mainInventory.addItem(item)
           equipmentSlot.slot.item = null
           equipmentSlot.cell.setHighlightState(HightLightCellState.None);
@@ -141,7 +155,6 @@ export default class EditorContext {
   public pickupSlotOnCursor(slot: Slot): boolean {
     if (this.itemOnCursor !== null) {
       console.error("The item is already on the cursor!")
-      console.trace()
       return false
     }
 
@@ -151,7 +164,6 @@ export default class EditorContext {
     for (const [key, eq] of this.equipmentSlots) {
       const toRemove = eq.slot.item?.uniqueId === slot.item?.uniqueId;
       if (toRemove) {
-        console.trace('removed', eq.slot.item?.uniqueId);
         eq.slot.item = null;
         return true
       }
@@ -210,7 +222,7 @@ export default class EditorContext {
 
   clearEquipment() {
     this.equipmentSlots.forEach((slot) => {
-      slot.slot.item = null;
+      slot.clear()
     });
   }
 
@@ -323,30 +335,31 @@ export default class EditorContext {
   */
   static async deserialize(data: any): Promise<EditorContext> {
     const context = new EditorContext();
-
     if (data.equipmentSlots) {
-      context.equipmentSlots = new Map(
-        data.equipmentSlots.map(([key, slotData]: [string, any]) => {
-          if (key !== slotData.slotName) {
-            throw new Error(`Key mismatch: expected '${key}', but name = '${slotData.slotName}}'`);
-          }
-          return [key, EquipmentSlot.deserialize(slotData)];
-        })
-      );
+      context.equipmentSlots = new Map();
+
+      await Promise.all(data.equipmentSlots.map(async ([key, slotData]: [string, any]) => {
+        if (key !== slotData.slotName) {
+          throw new Error(`Key mismatch: expected '${key}', but name = '${slotData.slotName}}'`);
+        }
+        const slot = await EquipmentSlot.deserialize(slotData);
+        context.equipmentSlots.set(key, slot);
+      }));
     }
 
 
+    
     if (data.inventories) {
-      context.inventories = new Map(
-        data.inventories.map(([key, invData]: [string, any]) => {
-          if (key !== invData.name) {
-            throw new Error(`Key mismatch: expected '${key}', but name = '${invData.name}'`);
-          }
-          return [key, Inventory.deserialize(invData, context)];
-        })
-      );
+      context.inventories = new Map();
+      
+      await Promise.all(data.inventories.map(async ([key, invData]: [string, any]) => {
+        if (key !== invData.name) {
+          throw new Error(`Key mismatch: expected '${key}', but name = '${invData.name}'`);
+        }
+        const inventory = await Inventory.deserialize(invData, context);
+        context.inventories.set(key, inventory);
+      }));
     }
-
 
     if (data.selectedCharapter) {
       const className = data.selectedCharapter.name;

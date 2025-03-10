@@ -1,0 +1,12 @@
+{
+  "Item": "Butterfly Knife",
+  "Tier": "S",
+  "Level": "0",
+  "Type": "Relic",
+  "Size": "1x1",
+  "Rarity": "",
+  "Stats": [
+    "+20% Increased Attack Speed",
+    "+20% Increased Critical Strike Damage"
+  ]
+}

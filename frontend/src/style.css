@@ -1,7 +1,9 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: var(--font-family-primary);
+  color: var(--color-text-primary);
+  font-size: var(--font-size-base);
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: bold;
 
   --scale-factor: 1vw;
 
@@ -29,6 +31,8 @@
   --color-heroic: #00e19a;
   --color-satanic-set: #0bb01a;
   --color-runeword: #c7b377;
+  --color-rare: #044ed8;
+  --color-mythic: #8709cf;
   --color-text-primary: #ffffff;
   --color-text-secondary: #c7b377;
   --color-background: rgba(0, 0, 0, 0.8);
@@ -55,8 +59,8 @@
   --color-d: #5a1c14;
 
   /* Typography */
-  --font-family-primary: "Fenris", sans-serif;
-  --font-size-base: 1rem;
+  --font-family-primary: var(--font-family-primary), sans-serif;
+  --font-size-base: 0.95rem;
   --font-size-title: 1.2rem;
 
   /* Spacing */
@@ -73,17 +77,11 @@ body {
   padding: 0;
 }
 
-p,
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: "Fenris";
-  color: var(--color-text-primary);
-}
-
-#app {
   text-align: center;
 }
 
@@ -98,10 +96,21 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: var(--font-size-base);
 }
 
 button:hover {
   background: var(--color-button-hover);
+}
+
+label {
+  font-family: var(--font-family-primary);
+  color: var(--color-text-secondary);
+  text-shadow: 2px 2px black;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: var(--font-size-base);
+  cursor: pointer;
 }
 
 .button-danger {
@@ -119,6 +128,78 @@ button:hover {
 .button-info {
   background-color: rgba(0, 55, 125, 0.5);
 }
+
+.stat-allskills {
+  color: #c7b377;
+}
+
+.stat-description {
+  color: #8383df;
+  padding-left: 0.15rem;
+  padding-right: 0.15rem;
+}
+.stat-special {
+  color: #f34500;
+}
+.stat-gem-level {
+  color: #c7b377;
+}
+.stat-unbreakable {
+  color: #cd2494;
+}
+.stat-unholy {
+  color: #c73664;
+}
+.stat-range {
+  color: #00ff00;
+}
+.stat-error {
+  color: #ff0000;
+}
+
+.stat-to-arcane {
+  color: #853bf9;
+}
+.stat-to-fire {
+  color: #fc4a28;
+}
+.stat-to-cold {
+  color: #39ddfb;
+}
+.stat-to-poison {
+  color: #44de00;
+}
+.stat-to-physical {
+  color: #c68a59;
+}
+.stat-to-lightning {
+  color: #6eedb6;
+}
+.stat-random-skill {
+  background-size: 100%;
+  background-repeat: repeat;
+  background-color: red;
+  background-image: linear-gradient(60deg, orange, lightblue, lime, purple, burlywood);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+}
+.stat-augment {
+  color: #fffc4b;
+}
+.stat-error {
+  color: #9c0000;
+}
+
+.stat-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: -1.6rem;
+}
+
+
+
 
 @media (max-width: 768) {
   button {
@@ -150,7 +231,7 @@ button:hover {
 
 /* Font-face */
 @font-face {
-  font-family: "Fenris";
+  font-family: var(--font-family-primary);
   font-weight: 400;
   font-style: normal;
   font-display: auto;

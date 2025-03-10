@@ -10,72 +10,24 @@ import {
   type IRuneword,
   type Socket,
   type Stat,
+  type BaseItemProps,
+  type EquipmentProps,
+  socketHardCap,
 } from "../models/Equipment";
 import { equipmentService } from "../service/EquipmentService";
 import { EquipmentSubtypes, EquipmentType } from "../util/Enums";
-import { StatFormatter } from "../util/StatFormatter";
 import { StatParser } from "./StatParser";
 import { v4 as uuidv4 } from "uuid";
 
+
 export class ItemParser {
-  static parseItem(rawItem: any): BaseItem {
-    const commonProps = {
-      uuid: uuidv4(),
-      name: rawItem.name,
-      type: rawItem.type,
-      subtype: rawItem.subtype,
-      tier: rawItem.tier,
-      rarity: rawItem.rarity,
-      level: rawItem.level,
-      sockets: rawItem.sockets,
-      image: rawItem.image,
-      stats: rawItem.stats.map(ItemParser.parseStat),
-      isLoading: true,
-      size: rawItem.size,
-    };
-
-    if (rawItem.type === EquipmentType.Socketable) {
-      const socketableProps = {
-        ...commonProps,
-      };
-      return new Socketable(socketableProps);
-    }
-
-    if (rawItem.type === EquipmentType.Armor) {
-      const armorProps = {
-        ...commonProps,
-        armorStats: { defense: rawItem.defense || "0" },
-      };
-      return new ArmorEquipment(armorProps);
-    } else if (rawItem.type === EquipmentType.Weapon) {
-      let twoHanded = false;
-
-      if (rawItem.twoHanded) {
-        twoHanded = rawItem.twoHanded;
-      }
-      const weaponProps = {
-        ...commonProps,
-        weaponStats: {
-          APSStat: rawItem.APS || "0",
-          attackDamageStat: rawItem.Damage || "0",
-          twoHanded: twoHanded,
-        },
-      };
-      return new WeaponEquipment(weaponProps);
-    } else if (rawItem.subtype === "Charm") {
-      return new CharmEquipment(commonProps);
-    } else {
-      return new Equipment(commonProps);
-    }
-  }
-
-  static parseRuneword(rawItem: any): (Equipment & IRuneword)[] {
+  static async parseRuneword(rawItem: any): Promise<(Equipment & IRuneword)[]> {
     let item = ItemParser.parseWikiItem(rawItem) as Equipment;
     const runewords: (Equipment & IRuneword)[] = [];
     if (rawItem.Rarity === "Runeword") {
       const bases: string[] = rawItem.Bases
 
-      let runeword: (Equipment & IRuneword) = transformToRuneword(item, {
+      let runeword: (Equipment & IRuneword) = await transformToRuneword(item, {
         name: rawItem.Item,
         runes: rawItem.Runes,
         bases: bases
@@ -127,7 +79,69 @@ export class ItemParser {
         size.height = match[2] ? parseInt(match[2]) : 1;
       }
     }
+
+    const processedStats = ItemParser.processStats(rawItem)
   
+
+    const commonProps: BaseItemProps = {
+      uuid: uuidv4(),
+      name: rawItem.Item,
+      type: type,
+      subtype: subtype,
+      tier: rawItem.Tier,
+      rarity: rawItem.Rarity,
+      level: rawItem.Level,
+      image: rawItem.Image,
+      stats: processedStats,
+      isLoading: true,
+      size: size,
+    };
+
+    if (type === EquipmentType.Socketable) {
+      return new Socketable(commonProps);
+    }
+
+    const equipmentProps: EquipmentProps = {
+      ...commonProps,
+      sockets: {
+        amount: 0,
+        min: 0,
+        max: 0,
+        list: [] as Socket[],
+      },
+    } 
+
+    // Socket Amount
+ 
+    const socketStat = ItemParser.getSocketedStat(processedStats);
+    
+    if (socketStat) {
+      ItemParser.processSocketStat(socketStat, equipmentProps)
+    }
+  
+    let item: Equipment;
+    
+    if (type === EquipmentType.Armor) {
+      item = new ArmorEquipment({ ...equipmentProps, armorStats: { defense: rawItem.defense || "0" } });
+    } else if (type === EquipmentType.Weapon) {
+      item = new WeaponEquipment({
+        ...equipmentProps,
+        weaponStats: {
+          APSStat: rawItem.APS || "0",
+          attackDamageStat: rawItem.Damage || "0",
+          twoHanded: rawItem.TwoHanded || false,
+        },
+      });
+    } else if (subtype === "Charm") {
+      item = new CharmEquipment(equipmentProps);
+    } else {
+      item = new Equipment(equipmentProps);
+    }
+  
+    return item;
+  }
+
+  static processStats(rawItem: any): Stat[] {
     type JsonStat = string | { stat: string; class?: string };
 
     const processedStats: Stat[] = rawItem.Stats.map((statObj: JsonStat) => {
@@ -141,43 +155,23 @@ export class ItemParser {
       }
     });
 
-    const commonProps = {
-      uuid: uuidv4(),
-      name: rawItem.Item,
-      type: type,
-      subtype: subtype,
-      tier: rawItem.Tier,
-      rarity: rawItem.Rarity,
-      level: rawItem.Level,
-      sockets: {
-        amount: 0,
-        min: 0,
-        max: 0,
-        list: [] as Socket[],
-      },
-      image: rawItem.Image,
-      stats: processedStats,
-      isLoading: true,
-      size: size,
-    };
+    return processedStats
+  }
 
-    if (type === EquipmentType.Socketable) {
-      const socketableProps = {
-        ...commonProps,
-      };
-      return new Socketable(socketableProps);
-    }
-
-    // Socket Amount
-    const socketStat = processedStats.find((stat: Stat) =>
-      stat.name.includes("Socketed"),
+  static getSocketedStat(stats: Stat[]): Stat | undefined {
+    const socketStat = stats.find((stat: Stat) =>
+      stat.raw.includes("Socketed"),
     );
-    if (socketStat) {
+
+    return socketStat;
+  }
+
+  static processSocketStat(socketStat: Stat, props: EquipmentProps) {
       const prismaticRegex = /{(\d+)(?:-(\d+))?}/;
       const normalRegex = /\((\d+)(?:-(\d+))?\)/;
 
-      const prismaticMatch = socketStat.name.match(prismaticRegex);
-      const normalMatch = socketStat.name.match(normalRegex);
+      const prismaticMatch = socketStat.raw.match(prismaticRegex);
+      const normalMatch = socketStat.raw.match(normalRegex);
 
       let normalSockets = 0;
       let prismaticSockets = 0;
@@ -194,50 +188,36 @@ export class ItemParser {
         prismaticSockets = max;
       }
 
-      commonProps.sockets.min = normalSockets + prismaticSockets;
-      commonProps.sockets.max = normalSockets + prismaticSockets;
-      commonProps.sockets.amount = commonProps.sockets.max;
-
-      commonProps.sockets.list = [
-        ...Array(normalSockets).fill({ prismatic: false }),
-        ...Array(prismaticSockets).fill({ prismatic: true }),
-      ];
-    }
-  
-    let item: Equipment;
-    
-    if (type === EquipmentType.Armor) {
-      item = new ArmorEquipment({ ...commonProps, armorStats: { defense: rawItem.defense || "0" } });
-    } else if (type === EquipmentType.Weapon) {
-      item = new WeaponEquipment({
-        ...commonProps,
-        weaponStats: {
-          APSStat: rawItem.APS || "0",
-          attackDamageStat: rawItem.Damage || "0",
-          twoHanded: rawItem.TwoHanded || false,
-        },
-      });
-    } else if (subtype === "Charm") {
-      item = new CharmEquipment(commonProps);
-    } else {
-      item = new Equipment(commonProps);
-    }
-  
-    return item;
+      if (normalSockets + prismaticSockets <= socketHardCap) {
+        props.sockets.min = normalSockets + prismaticSockets;
+        props.sockets.max = normalSockets + prismaticSockets;
+        props.sockets.amount = props.sockets.max;
+        props.sockets.list = [
+          ...Array(normalSockets).fill(null).map(() => ({ prismatic: false, socketable: null })),
+          ...Array(prismaticSockets).fill(null).map(() => ({ prismatic: true, socketable: null })),
+        ];
+      } else {
+        props.sockets.min = 0
+        props.sockets.max = 0
+        props.sockets.amount = 0
+        props.sockets.list = [
+          ...Array(normalSockets).fill(null).map(() => ({ prismatic: false, socketable: null })),
+          ...Array(prismaticSockets).fill(null).map(() => ({ prismatic: true, socketable: null })),
+        ];
+      }
   }
 
   static parseWikiStat(stat: any, special = false): Stat {
-    
     return StatParser.parseStat(
-      StatFormatter.formatFromRangeToRangeWithValue(stat),
+      stat,
       special,
+      false
     ).stat;
   }
 
   static parseStat(stat: any): Stat {
     return {
       raw: stat.raw,
-      name: stat.name,
       value: stat.value,
       range: stat.range.from || stat.range.to ? stat.range : { from: 0, to: 0 },
       type: stat.type,

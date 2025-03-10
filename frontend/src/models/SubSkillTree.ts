@@ -112,23 +112,23 @@ export default class SubSkillTree {
     }
   }
 
-  canLearnSkill(nodeId: number): [boolean, string] {
-    if (nodeId === 1 || nodeId === 2 || nodeId === 3) {
-        return [true, "This is an Initial Node"];
+  canLearnSkill(node: SubSkillNode): [boolean, string] {
+    const id = node.id
+    if (id === 1) {
+        return [false, "This is an Initial Node"];
     }
-
-    
-    const node = this.nodes.get(nodeId);
-
-    if (!node || node.level >= node.maxLevel) return [false, "This none is already at its maximum level."];
 
     if (!node) {
-        return [false, "Node not found"];
-    }
+      return [false, "Node not found"];
+  }
+
+    if (node.level >= node.maxLevel) return [false, "This none is already at its maximum level."];
+
+
 
     if (node.isPrimary()) {
         const hasPrimaryNodeLeveled = Array.from(this.nodes.values()).some(
-            (n) => n.isPrimary() && !n.isInitial() && n.id !== nodeId && n.level > 0
+            (n) => n.isPrimary() && !n.isInitial() && n.id !== id && n.level > 0
         );
 
         if (hasPrimaryNodeLeveled) {
@@ -137,7 +137,7 @@ export default class SubSkillTree {
     }
 
     const hasConnectedNode = Array.from(node.connections).some(
-        (connId) => this.nodes.get(connId)!.level >= 2
+        (connId) => this.nodes.get(connId)!.level >= 2 || this.nodes.get(connId)?.isInitial()
     );
 
     if (!hasConnectedNode) {
@@ -150,11 +150,13 @@ export default class SubSkillTree {
 
   learnSkill(nodeId: number): boolean {
     const node = this.nodes.get(nodeId);
+    if (!node) return false
     if (this.points <= 0) return false;
-    if (!this.canLearnSkill(nodeId)[0]) return false;
-
-    node!.level++;
+    if (!this.canLearnSkill(node)[0]) return false;
+      
+    node.level++;
     this.points--;
+
     return true;
   }
 

@@ -1,0 +1,12 @@
+{
+  "Item": "Whip",
+  "Tier": "S",
+  "Level": "0",
+  "Type": "Relic",
+  "Size": "1x1",
+  "Rarity": "",
+  "Stats": [
+    "+30% Increased Attack Speed",
+    "+50 to Additive Physical Damage"
+  ]
+}

@@ -11,7 +11,7 @@
         />
 
         <SubSkillNodeComponent
-          v-for="(skill, index) in skillNodes"
+          v-for="(skill, index) in Array.from(skillTree.nodes.values())"
           :key="index"
           :skill="skill"
           :tree="skillTree"
@@ -70,7 +70,6 @@ import type SubSkillNode from "../models/SubskillNode";
 })
 class SubSkillTreeComponent extends Vue {
   @Prop({ type: Object, required: true }) skillTree!: SubSkillTree;
-  skillNodes: SubSkillNode[] = [];
   skillConnections: { from: SubSkillNode; to: SubSkillNode }[] = [];
   nodeSize = 50;
   skipConfirmation = false;
@@ -86,7 +85,7 @@ class SubSkillTreeComponent extends Vue {
   }
 
   mounted() {
-    this.buildTree();
+    this.createConnections();
     this.checkScreenSize();
     window.addEventListener('resize', this.checkScreenSize);
 
@@ -108,13 +107,13 @@ class SubSkillTreeComponent extends Vue {
 
   checkScreenSize() {
     const width = window.innerWidth;
-    // Adjust node size based on screen width
+
     if (width <= 480) {
-      this.nodeSize = 30; // Very small screens
+      this.nodeSize = 30; 
     } else if (width <= 768) {
-      this.nodeSize = 40; // Other mobile screens
+      this.nodeSize = 40;
     } else {
-      this.nodeSize = 50; // Default size on desktop
+      this.nodeSize = 50;
     }
   }
 
@@ -122,14 +121,11 @@ class SubSkillTreeComponent extends Vue {
     this.skillTree.learnSkill(id);
   }
 
-  buildTree() {
-    this.skillNodes = Array.from(this.skillTree.nodes.values());
-    this.createConnections();
-  }
-
   createConnections() {
     this.skillConnections = [];
-    for (const node of this.skillNodes) {
+    const nodes = Array.from(this.skillTree.nodes.values());
+    
+    for (const node of nodes) {
       for (const connId of node.connections) {
         const targetNode = this.skillTree.nodes.get(connId);
         if (targetNode) {
@@ -144,11 +140,11 @@ class SubSkillTreeComponent extends Vue {
   }
 
   get maxX() {
-    return Math.max(...this.skillNodes.map((s) => s.position?.x ?? 0), 0);
+    return Math.max(...Array.from(this.skillTree.nodes.values()).map((s) => s.position?.x ?? 0), 0);
   }
 
   get maxY() {
-    return Math.max(...this.skillNodes.map((s) => s.position?.y ?? 0), 0);
+    return Math.max(...Array.from(this.skillTree.nodes.values()).map((s) => s.position?.y ?? 0), 0);
   }
 
   get gridStyles() {

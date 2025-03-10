@@ -17,6 +17,7 @@
         @toggle-subskills="onToggleSubSkills"
       />
     </div>
+    <button @click="skillTree.reset()">Reset</button>
   </div>
 </template>
 
@@ -136,6 +137,7 @@ export default toNative(SkillTreeComponent)
 }
 
 .skill-tree-name {
+  text-align: center;
   color: var(--color-text-secondary);
   font-size: 2rem;
   font-weight: 400;

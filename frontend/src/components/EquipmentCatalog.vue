@@ -41,11 +41,12 @@ class EquipmentCatalog extends Vue {
       : this.editorContext.mainInventory;
 
   const clone = equipment.clone();
+  
   const item = new Item(clone, new Point2D(equipment.size.width, equipment.size.height));
 
   const added = targetInventory.addItem(item) || this.editorContext.mainInventory.addItem(item);
 
-  if (added) {
+  if (added && equipment.uuid) {
     this.hightlight(equipment.uuid);
   }
 }

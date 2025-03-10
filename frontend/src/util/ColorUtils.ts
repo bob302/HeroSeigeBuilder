@@ -1,22 +1,26 @@
-import type { EquipmentRarity, EquipmentTier } from "./Enums";
+import { EquipmentRarity, EquipmentTier } from "./Enums";
 
 export default class ColorUtils {
   static rarityToColor(rarity: EquipmentRarity | null): string {
     switch (rarity) {
-      case "Common":
+      case EquipmentRarity.Common:
         return "var(--color-common)";
-      case "Satanic":
+      case EquipmentRarity.Satanic:
         return "var(--color-satanic)";
-      case "Angelic":
+      case EquipmentRarity.Angelic:
         return "var(--color-angelic)";
-      case "Unholy":
+      case EquipmentRarity.Unholy:
         return "var(--color-unholy)";
-      case "Heroic":
+      case EquipmentRarity.Heroic:
         return "var(--color-heroic)";
-      case "Satanic Set":
+      case EquipmentRarity["Satanic Set"]:
         return "var(--color-satanic-set)";
-      case "Runeword":
+      case EquipmentRarity.Runeword:
         return "var(--color-runeword)";
+      case EquipmentRarity.Rare:
+        return "var(--color-rare)";
+      case EquipmentRarity.Mythic:
+        return "var(--color-mythic)";
       default:
         return "";
     }
@@ -24,17 +28,17 @@ export default class ColorUtils {
 
   static tierToColor(tier: EquipmentTier | null): string {
     switch (tier) {
-      case "SS":
+      case EquipmentTier.SS:
         return "var(--color-angelic)";
-      case "S":
+      case EquipmentTier.S:
         return "var(--color-s)";
-      case "A":
+      case EquipmentTier.A:
         return "var(--color-a)";
-      case "B":
+      case EquipmentTier.B:
         return "var(--color-b)";
-      case "C":
+      case EquipmentTier.C:
         return "var(--color-c)";
-      case "D":
+      case EquipmentTier.D:
         return "var(--color-d)";
       default:
         return "";
@@ -43,20 +47,24 @@ export default class ColorUtils {
 
   static rarityToColorRGBA(rarity: EquipmentRarity | null): string {
     switch (rarity) {
-      case "Common":
+      case EquipmentRarity.Common:
         return "rgba(214, 172, 47, 0.6)"; 
-      case "Satanic":
+      case EquipmentRarity.Satanic:
         return "rgba(200, 23, 23, 0.6)";
-      case "Angelic":
+      case EquipmentRarity.Angelic:
         return "rgba(253, 254, 165, 0.6)"; 
-      case "Unholy":
+      case EquipmentRarity.Unholy:
         return "rgba(199, 54, 100, 0.6)"; 
-      case "Heroic":
+      case EquipmentRarity.Heroic:
         return "rgba(0, 225, 154, 0.6)"; 
-      case "Satanic Set":
+      case EquipmentRarity["Satanic Set"]:
         return "rgba(11, 176, 26, 0.6)"; 
-        case "Runeword":
-          return "rgba(199, 179, 119, 0.6)";
+      case EquipmentRarity.Runeword:
+        return "rgba(199, 179, 119, 0.6)";
+      case EquipmentRarity.Rare:
+        return "rgba(0, 69, 219, 0.6)";
+      case EquipmentRarity.Mythic:
+        return "rgba(131, 4, 216, 0.6)";
       default:
         return "rgba(0, 0, 0, 0)";
     }

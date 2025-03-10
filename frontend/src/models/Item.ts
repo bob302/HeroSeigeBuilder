@@ -13,7 +13,7 @@ export class Item {
   isRotated: boolean = false;
   uniqueId!: string;
 
-  constructor(data: BaseItem, size: Point2D) {
+  constructor(data: BaseItem, size = new Point2D(1, 1)) {
     this.size = size;
     this.data = data;
     this.sizeInCells = this.calcItemSize();
@@ -96,12 +96,12 @@ export class Item {
   /**
    * Reconstructs an Item instance from the serialized data.
    */
-  static deserialize(serialized: any): Item {
+  static async deserialize(serialized: any): Promise<Item> {
     // Deserialize the equipment data.
     const equipment = deserialize(serialized.data);
 
     const size = new Point2D(serialized.size.x, serialized.size.y);
-    const item = new Item(equipment, size);
+    const item = new Item(await equipment, size);
     item.setStartCoordinates(
       new Point2D(serialized.startCoordinates.x, serialized.startCoordinates.y),
     );
